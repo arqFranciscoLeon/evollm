@@ -1,0 +1,24 @@
+Normalised cooperation:
+column       Aggressive  Cooperative  Neutral
+index                                        
+Aggressive     0.555778     0.666667  0.57800
+Cooperative    0.667667     1.000000  0.85750
+Neutral        0.545500     0.785500  0.77125
+
+Payoffs:
+column       Aggressive  Cooperative  Neutral
+index                                        
+Aggressive     2.222667     2.337333  2.08700
+Cooperative    2.332333     3.000000  2.57000
+Neutral        2.249500     2.930000  2.62575
+
+Results Summary:
+               Name  Median_score  Cooperation_rating  Wins  Initial_C_rate  Original_index   CC_rate   CD_rate   DC_rate   DD_rate  CC_to_C_rate  CD_to_C_rate  DC_to_C_rate  DD_to_C_rate
+Rank                                                                                                                                                                                       
+0      Aggressive_3      2.748500            0.883500   0.0             1.0               2  0.766667  0.116833  0.083000  0.033500      1.000000      0.000000      1.000000           1.0
+1      Aggressive_2      2.584833            0.777500   4.0             1.0               1  0.749667  0.027833  0.028333  0.194167      0.999000      0.000000      1.000000           0.0
+2         Neutral_1      2.582833            0.778333   0.0             1.0               5  0.750167  0.028167  0.027667  0.194000      1.000000      0.000000      1.000000           0.0
+3     Cooperative_1      2.522833            0.786333   0.0             1.0               3  0.738167  0.048167  0.023667  0.190000      1.000000      0.500000      1.000000           0.0
+4     Cooperative_2      2.522833            0.786333   0.0             1.0               4  0.738167  0.048167  0.023667  0.190000      1.000000      0.500000      1.000000           0.0
+5         Neutral_2      2.453833            0.513333   4.0             1.0               6  0.410167  0.103167  0.184167  0.302500      0.722222      0.933333      0.000000           1.0
+6      Aggressive_1      1.258333            0.084000   6.0             1.0               0  0.001000  0.083000  0.084833  0.831167      0.000000      0.000000      0.997996           0.0

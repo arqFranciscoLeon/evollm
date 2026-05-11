@@ -1,0 +1,82 @@
+% ==============================================================================
+% SECTION 1 — INTRODUCTION
+% ==============================================================================
+\section{Introduction}
+
+When \LLM-powered agents interact repeatedly in competitive settings, do
+they cooperate or defect? The question is not merely theoretical: autonomous
+\LLM agents are already deployed to negotiate contracts, allocate computational
+resources, and bid in markets \cite{Wang2024_survey}. In each of these settings,
+the long-run social welfare of the system hinges on whether evolutionary pressure
+selects for cooperative or aggressive behaviour.
+
+Willis et al.\ \cite{Willis2025_llm_ipd} provided the first systematic treatment
+of this question, using the Iterated Prisoner's Dilemma (\IPD) as a formal
+testbed. Rather than prompting \LLM{}s to output individual actions---an
+approach that prior work found unreliable \cite{Fan2024_rational}---they prompt
+models to generate \emph{complete strategies} in natural language, which are
+subsequently implemented as Python algorithms. By simulating populations of
+agents through a Moran evolutionary process, they characterised the equilibrium
+tendencies of ChatGPT-4o and Claude~3.5~Sonnet. Their central finding is a
+persistent cooperative bias: in balanced populations and under most prompting
+conditions, cooperative strategies dominate, with aggressive equilibria arising
+at substantially below prior probability.
+
+Two gaps limit the reach of that benchmark. First, the \LLM landscape has
+shifted substantially since that study. A new generation of frontier models,
+released throughout 2025--2026, incorporates extended context, revised alignment
+training, and improved reasoning capabilities. Whether their cooperative
+tendencies persist, deepen, or erode under evolutionary pressure is unknown.
+Second, the original study covered only two models from two providers, leaving
+it unclear whether cooperative bias is a universal property of frontier \LLM{}s
+or an artefact of specific training choices. No systematic cross-provider
+comparison has been conducted.
+
+We address both gaps by applying the identical experimental protocol to four
+next-generation models spanning three providers:
+\begin{itemize}
+  \item \textbf{Claude~Sonnet~4.6} (Anthropic) --- successor to Claude~3.5~Sonnet;
+  \item \textbf{Gemini~2.5~Flash} (Google) --- high-throughput frontier model;
+  \item \textbf{Gemini~3.1~Pro} (Google) --- Google's premium-tier model;
+  \item \textbf{GPT-5.4~Mini} (OpenAI) --- successor to ChatGPT-4o.
+\end{itemize}
+
+We evaluate four pre-registered hypotheses:
+\begin{description}
+  \item[\textbf{H1}] \emph{Cooperative bias persists.} Next-generation models
+    will maintain or increase the cooperative bias documented by Willis et al.,
+    reflecting continued improvements in value alignment.
+  \item[\textbf{H2}] \emph{Aggressive capability parity.} Better reasoning will
+    enable more effective aggressive strategies, reducing the payoff advantage
+    that cooperative agents currently hold over aggressive ones.
+  \item[\textbf{H3}] \emph{Cross-provider divergence.} Differences in cooperative
+    tendencies across providers will be large enough to attribute to distinct
+    training and alignment choices rather than sampling noise.
+  \item[\textbf{H4}] \emph{Noise robustness improves.} Newer models will be
+    more robust to action noise, particularly Claude, which exhibited marked
+    noise sensitivity in the original benchmark.
+\end{description}
+
+Three contributions follow from this design. First, we extend the Willis et al.\
+benchmark to four new frontier models and three providers, enabling the first
+cross-provider comparative analysis; H1 is confirmed in 9 of 12 model-prompt
+combinations, establishing cooperative bias as a broadly shared property of
+current frontier \LLM{}s. Second, we introduce the Index of Differential
+Capabilities (\ICD), a scalar summary of the aggressive--cooperative payoff gap;
+across conditions, \ICD ranges from 0.71 to 0.91, with Claude~Sonnet~4.6 under
+Self-Refine prompting reaching the highest value in the dataset (0.913). Third,
+we provide a longitudinal comparison within the Anthropic and OpenAI lineages;
+provider identity is the strongest predictor of equilibrium outcome---Gemini~2.5
+Flash produces aggressive equilibria in up to 70\% of biased-population runs,
+while GPT-5.4~Mini reaches 68\% cooperative equilibria under Refine prompting,
+confirming H3 and suggesting that alignment choices, not architectural generation
+alone, drive variation.
+
+% --- roadmap ---
+The remainder of this paper is organised as follows.
+Section~\ref{sec:related} reviews related work.
+Section~\ref{sec:method} summarises the experimental protocol.
+Section~\ref{sec:results} presents our findings.
+Section~\ref{sec:discussion} evaluates the four hypotheses and discusses
+implications for \MAS design.
+Section~\ref{sec:conclusion} concludes.

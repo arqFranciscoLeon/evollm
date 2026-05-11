@@ -1,0 +1,265 @@
+% ==============================================================================
+% SECTION 4 — RESULTS
+% ==============================================================================
+\section{Results}
+\label{sec:results}
+
+\subsection{Strategy Validation: Cooperation Propensity}
+
+Table~\ref{tab:cooperation} reports the normalised propensity to cooperate
+for the Default prompt without noise, analogous to Table~3 in Willis et al.
+
+\begin{table}[h]
+\caption{Normalised cooperation propensity (Default prompt, no noise).
+         Rows: row-player attitude; columns: opponent attitude.}
+\label{tab:cooperation}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}llccc@{}}
+\toprule
+\textbf{Model} & \textbf{Att.} & \textbf{vs A} & \textbf{vs C} & \textbf{vs N} \\
+\midrule
+\multirow{3}{*}{Claude 4.6}
+  & A & 0.000 & 0.297 & 0.286 \\
+  & C & 0.298 & 0.991 & 0.992 \\
+  & N & 0.287 & 0.993 & 1.000 \\
+\midrule
+\multirow{3}{*}{Gemini 2.5 Flash}
+  & A & 0.082 & 0.087 & 0.087 \\
+  & C & 0.088 & 1.000 & 1.000 \\
+  & N & 0.088 & 1.000 & 1.000 \\
+\midrule
+\multirow{3}{*}{Gemini 3.1 Pro}
+  & A & 0.413 & 0.629 & 0.629 \\
+  & C & 0.630 & 0.999 & 0.999 \\
+  & N & 0.630 & 0.999 & 0.999 \\
+\midrule
+\multirow{3}{*}{GPT-5.4 Mini}
+  & A & 0.006 & 0.025 & 0.023 \\
+  & C & 0.026 & 1.000 & 0.940 \\
+  & N & 0.024 & 0.940 & 0.883 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+All four models exhibit the expected attitude separation: aggressive strategies
+cooperate markedly less than cooperative or neutral strategies.
+Gemini~3.1~Pro is the notable exception, with aggressive strategies cooperating
+at 41\% even against other aggressive strategies---substantially higher than any
+model tested by Willis et al. By contrast, Gemini~2.5~Flash and GPT-5.4~Mini
+generate highly committed aggressive strategies (cooperation rates near zero
+against all opponents), while Claude~4.6 closely mirrors Claude~3.5~Sonnet's
+pattern: aggressive strategies cooperate at $\approx 0$\% against other
+aggressors but rise to $\approx 29$\% against cooperative opponents.
+
+\subsection{Head-to-Head Payoffs and Differential Capabilities}
+
+Table~\ref{tab:payoffs} presents the normalised mean payoffs across all
+25 matches for each attitude pairing (Default prompt, no noise), together with
+the \ICD (Eq.~\ref{eq:icd}).
+
+\begin{table*}[t]
+\caption{Normalised head-to-head payoffs (Default prompt, no noise) and
+         Index of Differential Capabilities (\ICD). Lower \ICD indicates
+         a larger cooperative advantage.}
+\label{tab:payoffs}
+\small
+\begin{tabular}{@{}llccccccccc@{}}
+\toprule
+\textbf{Model} & \textbf{Prompt} &
+  \multicolumn{3}{c}{\textbf{Aggressive payoff vs.}} &
+  \multicolumn{3}{c}{\textbf{Cooperative payoff vs.}} &
+  \textbf{\ICD} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}
+ &  & A & C & N & A & C & N & \\
+\midrule
+\multirow{3}{*}{Claude 4.6}
+  & Default & 1.000 & 1.893 & 1.861 & 1.890 & 2.982 & 2.988 & 0.605 \\
+  & Prose   & 1.242 & 1.917 & 1.784 & 1.507 & 3.000 & 2.836 & 0.673 \\
+  & Refine  & 2.432 & 2.820 & 2.683 & 2.772 & 2.997 & 2.924 & 0.913 \\
+\midrule
+\multirow{3}{*}{Gemini 2.5 Flash}
+  & Default & 1.232 & 1.244 & 1.244 & 1.239 & 3.000 & 3.000 & 0.514 \\
+  & Prose   & 1.290 & 1.796 & 1.551 & 0.985 & 2.574 & 2.086 & 0.822 \\
+  & Refine  & 1.486 & 2.288 & 2.022 & 1.470 & 2.998 & 2.635 & 0.816 \\
+\midrule
+\multirow{3}{*}{Gemini 3.1 Pro}
+  & Default & 1.992 & 2.400 & 2.400 & 2.397 & 2.998 & 2.998 & 0.809 \\
+  & Prose   & 1.732 & 2.147 & 2.191 & 2.026 & 3.000 & 2.928 & 0.763 \\
+  & Refine  & 2.223 & 2.337 & 2.087 & 2.332 & 3.000 & 2.570 & 0.841 \\
+\midrule
+\multirow{3}{*}{GPT-5.4 Mini}
+  & Default & 1.017 & 1.079 & 1.073 & 1.074 & 3.000 & 2.900 & 0.454 \\
+  & Prose   & 1.982 & 2.395 & 2.423 & 2.394 & 2.914 & 2.937 & 0.825 \\
+  & Refine  & 1.066 & 1.427 & 1.252 & 1.343 & 2.846 & 2.305 & 0.577 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\ICD values range from 0.454 (GPT-5.4~Mini Default) to 0.913 (Claude~4.6~Refine)
+and vary substantially across prompts. Cooperative and neutral attitudes achieve
+near-mutual-cooperation payoffs ($\approx 3.0$) in most model--prompt combinations,
+consistent with the original findings. GPT-5.4~Mini Default's \ICD of 0.454
+means aggressive strategies achieve less than half the payoff of cooperative ones;
+Claude~4.6~Refine's \ICD of 0.913 approaches payoff parity. The Self-Refine prompt
+increases \ICD in all four models, replicating the original finding that
+Self-Refine narrows the aggressive--cooperative gap. For Claude~4.6~Refine,
+this effect is particularly pronounced: aggressive strategies achieve payoffs
+of 2.43--2.82, approaching cooperative strategies at 2.77--3.00.
+
+Compared to Willis et al.'s Claude~3.5~Sonnet (Table~4 therein), Claude~4.6
+shows systematically higher payoffs for aggressive strategies under Refine,
+suggesting improved aggressive strategy generation in the newer version.
+GPT-5.4~Mini Default, however, shows weaker aggressive performance than
+ChatGPT-4o~Default (1.05 vs.\ 1.81 average), indicating that model scaling
+does not uniformly improve aggressive capability.
+
+\subsection{Evolutionary Equilibria}
+
+Table~\ref{tab:moran} reports the main Moran process results: the proportion
+of 100 runs converging to each equilibrium attitude, for all four population
+conditions. The Willis et al.\ reference values are shown for comparison.
+
+\begin{table*}[t]
+\caption{Moran process equilibrium proportions (\%A / \%C / \%N) across
+         four population conditions. Prior probability indicates the
+         baseline for each initial ratio.
+         Reference values from Willis et al.\ \cite{Willis2025_llm_ipd}
+         (Table~6) are shown in the bottom rows.
+         Bold: values highlighted in the text discussion.}
+\label{tab:moran}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llcccc@{}}
+\toprule
+\textbf{Model} & \textbf{Prompt} &
+  \textbf{4:4:4 clean} &
+  \textbf{4:4:4 noise} &
+  \textbf{8:2:2 clean} &
+  \textbf{8:2:2 noise} \\
+\cmidrule(lr){3-3}\cmidrule(lr){4-4}\cmidrule(lr){5-5}\cmidrule(lr){6-6}
+ & & (prior: 33/33/33) & (prior: 33/33/33) & (prior: 67/17/17) & (prior: 67/17/17) \\
+\midrule
+\multirow{3}{*}{Claude 4.6}
+  & Default & \textbf{2}/50/48  & 25/33/42 & 16/\textbf{46}/38 & 53/26/21 \\
+  & Prose   & 7/\textbf{55}/38  & 24/37/39 & 40/32/28          & 63/21/16 \\
+  & Refine  & 21/\textbf{40}/39 & 28/39/33 & 54/21/25          & 66/22/12 \\
+\midrule
+\multirow{3}{*}{Gemini 2.5 Flash}
+  & Default & \textbf{1}/51/48  & 24/33/43 & 21/\textbf{40}/39 & 59/16/25 \\
+  & Prose   & 22/\textbf{54}/24 & 38/25/37 & \textbf{70}/15/15 & 71/13/16 \\
+  & Refine  & 25/\textbf{41}/34 & 39/29/32 & 54/23/23          & 62/20/18 \\
+\midrule
+\multirow{3}{*}{Gemini 3.1 Pro}
+  & Default & 15/35/\textbf{50} & 23/39/38 & 43/30/27          & 63/24/13 \\
+  & Prose   & 13/36/\textbf{51} & 30/32/38 & 39/32/29          & 64/18/18 \\
+  & Refine  & 15/\textbf{51}/34 & 26/35/39 & 60/22/18          & 71/16/13 \\
+\midrule
+\multirow{3}{*}{GPT-5.4 Mini}
+  & Default & \textbf{1}/48/\textbf{51} & 17/\textbf{45}/38 & 20/39/\textbf{41} & 54/25/21 \\
+  & Prose   & 16/\textbf{44}/40          & 30/36/34          & 45/26/29          & 55/21/24 \\
+  & Refine  & \textbf{1}/\textbf{68}/31  & 23/\textbf{40}/37 & 24/\textbf{50}/26 & 58/18/24 \\
+\midrule
+\midrule
+\multirow{3}{*}{\textit{ChatGPT-4o}$^\dagger$}
+  & Default & 14/53/33 & 16/42/42 & 66/19/17 & 59/20/21 \\
+  & Prose   & 13/38/49 & 23/41/36 & 35/27/38 & 60/18/22 \\
+  & Refine  & 19/48/33 & 28/38/34 & 49/30/21 & 63/19/18 \\
+\multirow{3}{*}{\textit{Claude 3.5 Sonnet}$^\dagger$}
+  & Default & 4/49/47  & 15/37/48 & 36/24/40 & 41/20/39 \\
+  & Prose   & 14/42/44 & 17/33/50 & 41/30/29 & 61/26/13 \\
+  & Refine  & 16/51/33 & 37/34/29 & 50/22/28 & 60/18/22 \\
+\bottomrule
+\end{tabular}
+\vspace{2pt}\\
+\small$^\dagger$From Willis et al.\ \cite{Willis2025_llm_ipd}, Table~6.
+\end{table*}
+
+\paragraph{Balanced, noiseless condition (4:4:4 clean).}
+This condition provides the most direct comparison with the original benchmark.
+Nine of twelve model--prompt combinations show $\PC > \PA$, confirming
+a widespread cooperative bias. The strongest cooperative equilibria are achieved
+by GPT-5.4~Mini~Refine (68\%), Claude~4.6~Prose (55\%), and
+Gemini~2.5~Flash~Prose (54\%).
+The three exceptions are all cases where the \emph{Neutral} attitude achieves the
+plurality: Gemini~3.1~Pro~Default (15\%A/35\%C/\textbf{50\%N}),
+Gemini~3.1~Pro~Prose (13\%A/36\%C/\textbf{51\%N}), and GPT-5.4~Mini~Default
+(1\%A/48\%C/\textbf{51\%N}). Notably, none of the three exceptions is driven by
+aggressive dominance; in all three cases aggressive equilibria remain well below
+the 33\% prior. The Neutral plurality likely reflects that Gemini~3.1~Pro's
+aggressive strategies cooperate at unusually high rates (Table~\ref{tab:cooperation},
+41\% vs.\ own attitude), blurring the boundary between aggressive and neutral
+behaviour and allowing neutral strategies to benefit from mutual cooperation without
+defection penalties.
+
+Comparing within-lineage successors:
+Claude~4.6~Default achieves 2\%A/50\%C/48\%N, virtually identical to
+Claude~3.5~Sonnet~Default at 4\%A/49\%C/47\%N. This is the closest
+generational replication in the dataset.
+GPT-5.4~Mini~Default achieves 1\%A/48\%C/51\%N, lower aggressive than
+ChatGPT-4o~Default (14\%A), suggesting improved cooperative bias in the
+OpenAI lineage for this condition.
+
+\paragraph{Balanced, noisy condition (4:4:4 noise).}
+Noise consistently shifts equilibria toward aggression in all but one
+combination. Eleven of twelve model--prompt pairs show
+$\PA^{\text{noise}} > \PA^{\text{clean}}$; the exception is Gemini~3.1~Pro~Default,
+whose cooperative equilibrium fraction actually rises under noise (see
+Section~\ref{sec:noise} and Table~\ref{tab:noise}). GPT-5.4~Mini is the most
+noise-resilient: its Default cooperative equilibrium drops from 48\% to 45\%
+($\Dnoise = 3$pp). Gemini~2.5~Flash~Prose shows the largest degradation:
+cooperative equilibria collapse from 54\% to 25\% ($\Dnoise = 29$pp).
+
+\paragraph{Biased, noiseless condition (8:2:2 clean).}
+With aggressive agents as the initial majority, the prior for aggressive
+equilibria is 67\%. Below this threshold indicates resistance to aggressive
+takeover; above it indicates susceptibility. Three models beat the prior
+in all three prompt conditions (meaning cooperative/neutral resist takeover):
+Claude~4.6~Default (16\%A, well below prior) and GPT-5.4~Mini~Default
+(20\%A) and GPT-5.4~Mini~Refine (24\%A). Gemini~2.5~Flash~Prose reaches
+70\%A, matching the initial aggressive proportion---suggesting aggressive
+agents have no disadvantage.
+
+\paragraph{Biased, noisy condition (8:2:2 noise).}
+In the most adverse condition (aggressive majority with noise), all twelve
+model--prompt combinations converge to aggressive equilibria at rates of
+53--71\%, exceeding the 67\% prior in 10 of 12 cases. Once a system is
+seeded with an aggressive majority and action noise is present, convergence
+to aggressive equilibria becomes near-certain across all models evaluated.
+The two exceptions---Claude~4.6~Default (53\%) and GPT-5.4~Mini~Default
+(54\%)---remain at or below the prior.
+
+\subsection{Noise Sensitivity ($\Dnoise$)}
+\label{sec:noise}
+
+Table~\ref{tab:noise} summarises $\Dnoise$ (Eq.~\ref{eq:dnoise})
+for the balanced condition, providing a direct measure of noise robustness.
+
+\begin{table}[h]
+\caption{Noise sensitivity $\Dnoise$ (balanced population, 4:4:4).
+         Positive values indicate degradation of cooperative equilibria under noise.}
+\label{tab:noise}
+\small
+\begin{tabular}{@{}lllll@{}}
+\toprule
+\textbf{Model} & \textbf{Default} & \textbf{Prose} & \textbf{Refine} & \textbf{Avg.} \\
+\midrule
+Claude 4.6        & 17 & 18 & 1  & 12 \\
+Gemini 2.5 Flash  & 18 & 29 & 12 & 20 \\
+Gemini 3.1 Pro    & $-4$ & 4  & 16 & 5  \\
+GPT-5.4 Mini      & 3  & 8  & 28 & 13 \\
+\midrule
+\textit{Claude 3.5 Sonnet}$^\dagger$ & 12 & 9 & 17 & 13 \\
+\textit{ChatGPT-4o}$^\dagger$         & 11 & $-3$ & 10 & 6 \\
+\bottomrule
+\end{tabular}
+\vspace{2pt}\\
+\small$^\dagger$Derived from Willis et al.\ \cite{Willis2025_llm_ipd}, Table~6.
+\end{table}
+
+Gemini~3.1~Pro stands out as the most noise-robust on average ($\Dnoise = 5$pp),
+with its Default condition actually showing a slight \emph{increase} in
+cooperative equilibria under noise ($\Dnoise = -4$pp). Gemini~2.5~Flash
+is the most noise-sensitive overall (avg.\ 20pp). Claude~4.6's average
+(12pp) is essentially unchanged from Claude~3.5~Sonnet (13pp), contradicting
+the expectation that noise robustness would improve in newer models.

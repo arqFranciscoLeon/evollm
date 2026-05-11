@@ -1,0 +1,130 @@
+% ==============================================================================
+% SECTION 5 — DISCUSSION
+% ==============================================================================
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Hypothesis Evaluation}
+
+\paragraph{H1 — Cooperative bias persists (\textcolor{green!60!black}{Confirmed}).}
+The cooperative bias documented by Willis et al.\ is consistent across model generations
+and providers. In the balanced noiseless condition---the most direct comparison
+to the original benchmark---9 of 12 model--prompt combinations yield $\PC > \PA$,
+and aggressive equilibrium rates remain well below the 33\% prior for the
+majority of configurations. The successor models (Claude~4.6, GPT-5.4~Mini)
+show cooperative bias comparable to or stronger than their predecessors.
+The within-lineage consistency is striking: Claude~4.6~Default (2\%A/50\%C)
+and Claude~3.5~Sonnet~Default (4\%A/49\%C) are indistinguishable, suggesting
+that the fundamental strategic disposition of Anthropic models is stable across
+generations.
+
+We hypothesise that this stability reflects convergence in alignment training
+objectives: both models are trained with RLHF and Constitutional AI techniques
+that strongly penalise defection-like behaviours. The persistence of cooperative
+bias is consistent with this interpretation but does not rule out alternative
+explanations (e.g., convergence in the training data distribution for
+game-theoretic scenarios).
+
+\paragraph{H2 — Aggressive capability parity (\textcolor{orange}{Partially Supported}).}
+Evidence for H2 is mixed and prompt-dependent. The Self-Refine prompt increases
+\ICD in all four models, replicating the finding from the original paper that
+iterative self-critique improves aggressive strategy quality. Claude~4.6~Refine
+achieves the highest \ICD in the dataset (0.913), approaching payoff parity
+between aggressive and cooperative agents---a larger narrowing than observed
+with Claude~3.5~Sonnet~Refine. This suggests that more capable models can
+use self-refinement more effectively to generate strategic diversity.
+
+However, under Default and Prose prompts, most models show \ICD values in the
+range 0.45--0.82, not systematically higher than the original models. Moreover,
+the models with the highest \ICD under Refine (Claude~4.6 at 0.913) are also
+those where the biased condition shows the highest aggressive equilibria (54\%A),
+suggesting that capability parity may genuinely increase the viability of
+aggressive strategies. This finding reinforces the safety implication identified
+by Willis et al.: prompt engineering techniques that improve aggressive
+capabilities may inadvertently increase the risk of aggressive equilibria in deployed systems.
+
+\paragraph{H3 — Cross-provider divergence (\textcolor{green!60!black}{Confirmed}).}
+The four models exhibit substantially different evolutionary profiles.
+Two-sample $z$-tests for proportions confirm that the cross-model differences
+are not sampling artefacts. In the balanced noiseless condition (Default prompt),
+3 of 6 pairwise comparisons of $\PA$ are significant at $p < 0.001$, in each case
+contrasting Gemini~3.1~Pro (15\%) against the three models with near-zero aggressive
+equilibria ($\leq 2\%$; $z \geq 3.30$). Under biased conditions, the effect sizes
+are substantially larger: Gemini~2.5~Flash~Prose (70\%A) versus
+Claude~4.6~Default (16\%A) yields $z = 7.71$ ($p < 0.0001$), and versus
+GPT-5.4~Mini~Refine (24\%A) yields $z = 6.52$ ($p < 0.0001$).
+Gemini~2.5~Flash is systematically the
+most aggressive: its Prose and Refine prompts produce aggressive equilibrium
+rates of 22--25\% in balanced conditions and 54--70\% in biased conditions.
+GPT-5.4~Mini is the most cooperative: its Default and Refine prompts produce
+aggressive equilibria of just 1\% in balanced conditions, and it achieves
+the highest cooperative equilibrium rate in the dataset (68\% under Refine).
+Claude~4.6 and Gemini~3.1~Pro occupy an intermediate position.
+
+These cross-provider differences likely reflect distinct choices in training
+data curation, RLHF reward modelling, and safety fine-tuning. The fact that
+two Google models (Flash and Pro) differ substantially from each other---Flash
+being more aggressive, Pro being more cooperative---suggests that model scale
+and architecture matter independently of provider-level alignment decisions.
+
+\paragraph{H4 — Noise robustness improves (\textcolor{red!70!black}{Not Confirmed}).}
+The noise sensitivity of Claude~4.6 ($\Dnoise = 12$pp average) is essentially
+unchanged from Claude~3.5~Sonnet ($\Dnoise = 13$pp). Despite architectural and
+alignment improvements documented in the model release notes, Claude~4.6 does
+not show improved robustness to execution noise.
+Among the new models, Gemini~3.1~Pro is the most noise-robust (avg.\ 5pp),
+while Gemini~2.5~Flash is the most noise-sensitive (avg.\ 20pp). GPT-5.4~Mini
+shows high sensitivity under the Refine prompt ($\Dnoise = 28$pp) but strong
+robustness under Default (3pp).
+
+The failure of H4 for the Claude lineage is notable precisely because Willis et al.\
+identified Claude's noise sensitivity as a key vulnerability---and it persists
+in the successor model, at least under the Default and Prose prompts. One possible
+explanation is that noise sensitivity is not a generalisation problem (which
+better training would address) but rather a structural consequence of the
+type of strategies generated: if cooperative strategies rely on clean mutual
+cooperation signals (as Tit-For-Tat-like strategies do), noise will always
+disrupt them, regardless of model capability.
+
+\subsection{Implications for MAS Design}
+
+The findings carry direct implications for the deployment of \LLM-based
+multi-agent systems.
+
+\paragraph{Provider choice matters.}
+The choice of \LLM provider substantially
+affects the emergent equilibrium dynamics of a deployed system. A system populated
+with Gemini~2.5~Flash agents faces substantially higher risk of aggressive
+equilibria than one using GPT-5.4~Mini or Claude~4.6.
+
+\paragraph{Noise is a universal threat.}
+Across all models and prompts,
+action noise consistently shifts equilibria toward aggression in biased populations.
+Systems deployed in noisy environments (e.g., with communication errors or
+stochastic action execution) should be initialised with non-aggressive majorities,
+or designed with noise-robust cooperation mechanisms.
+
+\paragraph{Self-Refine as a double-edged tool.}
+The Refine prompt generally
+improves strategy quality but also narrows the gap between aggressive and
+cooperative capabilities. Designers should be aware that using self-refinement
+in strategy generation may inadvertently increase the viability of aggressive
+equilibria.
+
+\paragraph{Intra-generation stability is high.}
+The near-identical results
+between Claude~3.5~Sonnet and Claude~4.6~Default suggest that generational
+model updates may not substantially alter cooperative biases when the alignment
+training paradigm is unchanged.
+
+\subsection{Limitations}
+
+Estimation variance is the binding constraint on statistical precision: with
+$n=100$ Moran iterations per condition, standard errors on equilibrium proportions
+are non-trivial, and larger samples would sharpen inference. Second, the \IPD is a stylised social dilemma; results may not
+generalise to more complex multi-player or asymmetric games. Third, we use
+the same model for strategy generation and code conversion within each provider,
+which may conflate generation capability with coding capability. Fourth, model
+API versions may change over time, affecting reproducibility; we report exact
+version identifiers in our codebase (available at \url{https://github.com/[AUTHOR]/evollm}).
+% PRE-SUBMISSION: replace URL with actual repository before submission.

@@ -1,0 +1,54 @@
+% ==============================================================================
+% SECTION 6 — CONCLUSION
+% ==============================================================================
+\section{Conclusion}
+\label{sec:conclusion}
+
+We extended the Willis et al.\ \cite{Willis2025_llm_ipd} \LLM evolutionary
+game-theory benchmark to four next-generation frontier models spanning three
+providers---48 Moran process conditions, 4,800 simulation runs, identical
+experimental protocol.
+
+The headline result is that cooperative bias survives the transition to a new
+model generation: nine of twelve model--prompt combinations favour cooperative
+equilibria in balanced noiseless conditions, and within the Anthropic lineage
+Claude~4.6 is virtually indistinguishable from its predecessor.
+What differentiates outcomes is not which generation a model belongs to but
+which provider trained it. Gemini~2.5~Flash reaches up to 70\% aggressive
+equilibria; GPT-5.4~Mini reaches up to 68\% cooperative under Self-Refine.
+That cross-provider gap is larger than any intra-lineage shift we observe,
+pointing to alignment objectives---not raw capability---as the dominant
+determinant of equilibrium behaviour.
+
+The Self-Refine prompt sharpens this picture in a troubling direction.
+It narrows the aggressive--cooperative payoff gap (\ICD rises toward 1.0)
+consistently across all four models, including Claude~4.6 Refine at \ICD = 0.913.
+Prompt engineering designed to improve strategy quality may therefore
+inadvertently reduce the cooperative advantage, raising the equilibrium
+aggression rate in deployed multi-agent populations.
+Noise robustness, meanwhile, has not improved: Claude~4.6 shows
+$\Delta_{\text{noise}} \approx 12$~pp, essentially matching the 13~pp
+reported for Claude~3.5~Sonnet in the original benchmark, and biased noisy
+conditions push aggressive equilibria above 67\% in 10 of 12
+configurations across all models tested.
+
+These findings raise questions the current design cannot answer.
+Do the cross-provider differences reflect divergent RLHF reward signals,
+differences in training corpora, or systematic variation in post-training
+alignment objectives? Do cooperative equilibria persist in $n$-player or
+asymmetric games, or are they an artefact of the symmetric two-player IPD
+structure? And would mixed-provider populations---where a Gemini agent
+competes against a GPT agent---generate equilibrium dynamics that neither
+provider's models produce in isolation? The persistence of noise sensitivity
+across two Anthropic generations suggests that robustness may require
+targeted interventions beyond general capability improvements.
+
+Having this baseline makes those questions tractable.
+The benchmark protocol and complete strategy datasets are reproducible
+and extensible; % VERIFY: confirm repository URL before submission
+we release simulation code and strategy libraries so that each new
+frontier model can be slotted into the same 48-condition design,
+turning this cross-provider snapshot into a running longitudinal record.
+
+\section*{Acknowledgements}
+[Acknowledgements to be added before submission.]

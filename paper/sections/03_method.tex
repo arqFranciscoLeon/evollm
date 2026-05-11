@@ -1,0 +1,107 @@
+% ==============================================================================
+% SECTION 3 — METHOD
+% ==============================================================================
+\section{Method}
+\label{sec:method}
+
+We apply the identical experimental protocol of Willis et al.\ \cite{Willis2025_llm_ipd}
+to four new models, adding the first Google provider entry and enabling
+cross-provider comparison. We summarise the key components below.
+
+\subsection{Strategy Generation}
+
+For each combination of model and prompt style, we generate 25 natural-language
+\IPD strategies per attitude (Aggressive, Cooperative, Neutral), yielding 75
+strategies per model--prompt pair. Three prompt styles are used (Table~\ref{tab:prompts}):
+\textbf{Default} (direct elicitation with game-theoretic language),
+\textbf{Refine} (Self-Refine \cite{Madaan2023_self_refine} applied to the default
+output), and \textbf{Prose} (obfuscated scenario without game-theoretic terminology).
+
+\begin{table}[h]
+\caption{Prompt styles (following Willis et al.\ \cite{Willis2025_llm_ipd}).}
+\label{tab:prompts}
+\small
+\begin{tabular}{@{}lp{5.5cm}@{}}
+\toprule
+\textbf{Style} & \textbf{Description} \\
+\midrule
+Default & Direct prompt with game-theoretic language; strategy generated in natural language. \\
+Refine  & Default output refined via Self-Refine \cite{Madaan2023_self_refine}: the model critiques and rewrites its own strategy. \\
+Prose   & Game-theoretic framing obfuscated as a real-world scenario (e.g., trade negotiation). Strategy generated, then translated to the \IPD context. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Strategies are then converted to Python algorithms using the same \LLM that
+generated them (one per provider), preserving consistency within each provider.
+Strategies that cannot be executed without error are replaced by regeneration
+until 25 valid strategies per attitude are obtained.
+
+\subsection{Models}
+
+We apply the protocol to the four models listed in Table~\ref{tab:models}.
+These represent the direct successors of the models studied by Willis et al.\
+(Claude lineage, OpenAI lineage) and a new provider (Google).
+
+\begin{table}[h]
+\caption{Models evaluated in this study.}
+\label{tab:models}
+\small
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Model} & \textbf{Provider} & \textbf{Predecessor} & \textbf{Released} \\
+\midrule
+Claude Sonnet 4.6    & Anthropic & Claude 3.5 Sonnet  & 2025 \\
+Gemini 2.5 Flash     & Google    & (new provider)     & 2025 \\
+Gemini 3.1 Pro       & Google    & (new provider)     & 2025 \\
+GPT-5.4 Mini         & OpenAI    & ChatGPT-4o         & 2025 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{IPD Tournament}
+
+All 75 strategies compete in an all-play-all tournament using the Axelrod Python
+library \cite{Knight2016_open}. Each match consists of 1,000 rounds of the
+standard \IPD (payoff matrix: $R=3$, $S=0$, $T=5$, $P=1$). Noise conditions
+introduce a 10\% probability of action-flip per player per round. Tournaments
+are repeated 20 times.
+
+\subsection{Attitude-Agents}
+
+Following Willis et al.\ \cite{Willis2025_llm_ipd}, we define three attitude-agents,
+each uniformly sampling from its corresponding strategy set for each match.
+This captures populations of agents with distinct strategic dispositions rather
+than fixed individual strategies.
+
+\subsection{Moran Process}
+
+We simulate Moran evolutionary processes with population size $n=12$ and 100
+iterations per condition. Four population compositions are evaluated:
+\begin{enumerate}
+  \item \textbf{Balanced, clean} (4:4:4) --- equal priors;
+  \item \textbf{Biased, clean} (8:2:2) --- aggressive majority;
+  \item \textbf{Balanced, noise} (4:4:4 with noise) --- equal priors with action noise;
+  \item \textbf{Biased, noise} (8:2:2 with noise) --- aggressive majority with action noise.
+\end{enumerate}
+
+Convergence is assessed by the proportion of runs reaching each monoculture
+equilibrium (all-Aggressive, all-Cooperative, or all-Neutral).
+
+\subsection{Derived Metrics}
+
+We introduce the \emph{Index of Differential Capabilities} (\ICD) to summarise
+the head-to-head payoff gap between aggressive and cooperative agents:
+\begin{equation}
+  \ICD = \frac{\bar{u}(A)}{\bar{u}(C)}, \quad
+  \bar{u}(k) = \frac{1}{3}\sum_{j \in \{A,C,N\}} u(k,j),
+  \label{eq:icd}
+\end{equation}
+where $u(k,j)$ is the normalised payoff of attitude $k$ against attitude $j$.
+An \ICD of 1.0 implies equal capability; values below 1.0 indicate a cooperative
+advantage. We also define the \emph{noise sensitivity} $\Dnoise$:
+\begin{equation}
+  \Dnoise = \PC^{\text{clean}} - \PC^{\text{noise}},
+  \label{eq:dnoise}
+\end{equation}
+measuring the drop in cooperative equilibrium probability under action noise.

@@ -53,7 +53,7 @@ def rank_strategies(args: argparse.Namespace):
                                   noise=algos[0].noise,
                                   seed=1,
                                   game=common.get_game(algos[0].game))
-      results = tournament.play(processes=0)
+      results = tournament.play(processes=None)
       algo_results[strategy.name][n] = results.scores[-1][0]
   for k, v in algo_results.items():
     sorted_s = pd.Series(v).sort_values(ascending=False)

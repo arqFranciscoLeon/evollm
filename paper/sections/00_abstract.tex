@@ -1,0 +1,26 @@
+% ==============================================================================
+% ABSTRACT
+% ==============================================================================
+Do next-generation \LLM agents inherit the cooperative biases documented in
+their predecessors, or does scale and provider diversity reshape equilibrium
+behaviour in competitive multi-agent settings? Willis et al.\ \cite{Willis2025_llm_ipd}
+established a benchmark for this question using evolutionary game theory and
+the Iterated Prisoner's Dilemma (\IPD), finding consistent cooperative biases
+in ChatGPT-4o and Claude~3.5~Sonnet. We extend this benchmark to four frontier
+models released in 2025--2026---\textbf{Claude~Sonnet~4.6}, \textbf{Gemini~2.5~Flash},
+\textbf{Gemini~3.1~Pro}, and \textbf{GPT-5.4~Mini}---applying the identical
+protocol across three prompting styles (Default, Prose, Self-Refine) and four
+population compositions (balanced and biased, with and without noise).
+Cooperative bias persists across providers (\textbf{H1}): nine of twelve
+model--prompt combinations favour cooperative equilibria in balanced noiseless
+conditions. Cross-provider divergence is substantial (\textbf{H3}): Gemini~2.5~Flash
+reaches 70\% aggressive equilibria under biased conditions, while GPT-5.4~Mini
+reaches 68\% cooperative equilibria under Self-Refine. Support for aggressive
+capability parity is partial (\textbf{H2}): Self-Refine raises \ICD in all
+models and Claude~Sonnet~4.6 Refine achieves the highest \ICD in the dataset
+(0.913), but Default and Prose prompts show no systematic narrowing. Noise
+sensitivity is unchanged across the Anthropic lineage (\textbf{H4}): average
+$\Delta_{\text{noise}}$ is 12 percentage points for Claude~Sonnet~4.6 versus
+13~pp for Claude~3.5~Sonnet. Provider choice, not model generation, is the
+dominant driver of equilibrium outcomes; noise remains a universal challenge
+regardless of model size or vintage.

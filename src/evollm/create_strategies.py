@@ -79,7 +79,7 @@ def test_algorithm(algorithm: str):
         ast.Return, ast.UnaryOp, ast.BoolOp, ast.BinOp, ast.FunctionDef,
         ast.If, ast.IfExp, ast.And, ast.Or, ast.Not, ast.Eq, ast.Try, ast.Del, ast.Delete,
         ast.Compare, ast.USub, ast.In, ast.NotIn, ast.Is, ast.IsNot, ast.For, ast.Pass, ast.Break,
-        ast.List, ast.Dict, ast.Tuple, ast.Num, ast.Str, ast.Constant, ast.Set,
+        ast.List, ast.Dict, ast.Tuple, ast.Constant, ast.Set,
         ast.arg, ast.Name, ast.arguments, ast.keyword, ast.Expr, ast.Attribute,
         ast.Call, ast.Store, ast.Index, ast.Slice, ast.Subscript, ast.Load,
         ast.GeneratorExp, ast.comprehension, ast.ListComp, ast.Lambda,
@@ -228,7 +228,7 @@ def openai_message(client: openai.OpenAI, system: str, prompt: list[dict[str, st
 
   response = client.chat.completions.create(
       # model="gpt-3.5-turbo",
-      model="chatgpt-4o-latest",
+      model="gpt-4o",
       # model="o1-preview",
       messages=messages,
       temperature=temp,

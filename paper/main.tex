@@ -1,0 +1,52 @@
+% ==============================================================================
+% EvoLLM — Main Paper File
+% "Evolutionary Dynamics of Cooperation in Next-Generation LLM Agent Systems:
+%  A Cross-Provider Empirical Extension"
+% Target: AAMAS 2027 | ACM SIGCONF | 8 pages + references
+% ==============================================================================
+
+\documentclass[sigconf,nonacm]{acmart}
+
+% Preamble
+\input{preambles/preamble}
+
+% ==============================================================================
+% METADATA
+% ==============================================================================
+\title{Evolutionary Dynamics of Cooperation in\\
+       Next-Generation LLM Agent Systems:\\
+       A Cross-Provider Empirical Extension}
+
+\author{Francisco León}
+\affiliation{%
+  \institution{Universidad de Granada}
+  \country{Spain}}
+\email{[email@ugr.es]}
+
+% ==============================================================================
+% DOCUMENT
+% ==============================================================================
+\begin{document}
+
+\begin{abstract}
+\input{sections/00_abstract}
+\end{abstract}
+
+\keywords{Large Language Models, Iterated Prisoner's Dilemma, Multi-Agent Systems,
+          Evolutionary Game Theory, Moran Process, Cooperative AI}
+
+\maketitle
+
+% Sections
+\input{sections/01_introduction}
+\input{sections/02_related_work}
+\input{sections/03_method}
+\input{sections/04_results}
+\input{sections/05_discussion}
+\input{sections/06_conclusion}
+
+% Bibliography
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{../Bibliography_base}
+
+\end{document}
