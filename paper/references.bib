@@ -79,11 +79,12 @@
   year    = {1973}
 }
 
-@article{Rapoport1965_prisoners,
-  author  = {Rapoport, Anatol and Chammah, Albert M.},
-  title   = {Prisoner's Dilemma},
-  journal = {University of Michigan Press},
-  year    = {1965}
+@book{Rapoport1965_prisoners,
+  author    = {Rapoport, Anatol and Chammah, Albert M.},
+  title     = {Prisoner's Dilemma: A Study in Conflict and Cooperation},
+  publisher = {University of Michigan Press},
+  address   = {Ann Arbor},
+  year      = {1965}
 }
 
 % ===== LLM AGENTS IN GAMES =====
@@ -141,11 +142,13 @@
   year      = {2023}
 }
 
-@misc{Piatti2024_cooperate,
+% Corrected arXiv ID: was 2404.04030 (an astronomy paper); confirmed correct ID is 2404.16698
+@inproceedings{Piatti2024_cooperate,
   author       = {Piatti, Giorgio and Jin, Zhijing and Kleiman-Weiner, Max and Sch{\"o}lkopf, Bernhard and Sachan, Mrinmaya and Mihalcea, Rada},
   title        = {Cooperate or Collapse: Emergence of Sustainable Cooperation in a Society of {LLM} Agents},
+  booktitle    = {Advances in Neural Information Processing Systems (NeurIPS 2024)},
   year         = {2024},
-  eprint       = {2404.04030},
+  eprint       = {2404.16698},
   archivePrefix = {arXiv},
   primaryClass  = {cs.AI}
 }
@@ -265,4 +268,266 @@
   pages   = {197--201},
   year    = {1997}
 }
+
+% ===== MORAN PROCESS FINITE-POPULATION METHODS =====
+
+@article{Nowak2004_cooperation,
+  author  = {Nowak, Martin A. and Sasaki, Akira and Taylor, Christine and Fudenberg, Drew},
+  title   = {Emergence of cooperation and evolutionary stability in finite populations},
+  journal = {Nature},
+  volume  = {428},
+  number  = {6983},
+  pages   = {646--650},
+  year    = {2004},
+  doi     = {10.1038/nature02414}
+}
+
+@article{Traulsen2006_multilevel,
+  author  = {Traulsen, Arne and Nowak, Martin A.},
+  title   = {Evolution of cooperation by multilevel selection},
+  journal = {Proceedings of the National Academy of Sciences USA},
+  volume  = {103},
+  number  = {29},
+  pages   = {10952--10955},
+  year    = {2006},
+  doi     = {10.1073/pnas.0602530103}
+}
+
+@article{Traulsen2006_fixation,
+  author  = {Traulsen, Arne and Nowak, Martin A. and Pacheco, Jorge M.},
+  title   = {Stochastic dynamics of invasion and fixation},
+  journal = {Physical Review E},
+  volume  = {74},
+  pages   = {011909},
+  year    = {2006},
+  doi     = {10.1103/PhysRevE.74.011909}
+}
+
+@article{Szabo2007_evolutionary,
+  author  = {Szab\'{o}, Gy\"{o}rgy and F\'{a}th, G\'{a}bor},
+  title   = {Evolutionary games on graphs},
+  journal = {Physics Reports},
+  volume  = {446},
+  number  = {4--6},
+  pages   = {97--216},
+  year    = {2007},
+  doi     = {10.1016/j.physrep.2007.04.004}
+}
+
+@article{Nowak2006_five,
+  author  = {Nowak, Martin A.},
+  title   = {Five rules for the evolution of cooperation},
+  journal = {Science},
+  volume  = {314},
+  number  = {5805},
+  pages   = {1560--1563},
+  year    = {2006},
+  doi     = {10.1126/science.1133755}
+}
+
+% ===== MARL COOPERATION (AAMAS/NEURIPS) =====
+
+@inproceedings{Hughes2018_inequity,
+  author    = {Hughes, Edward and Leibo, Joel Z. and Phillips, Matthew G. and Tuyls, Karl and
+               Due{\~n}ez-Guzm{\'{a}}n, Edgar A. and {Garc\'{\i}a Casta{\~n}eda}, Antonio and
+               Dunning, Iain and Zhu, Tina and McKee, Kevin R. and Koster, Raphael and
+               Roff, Heather and Graepel, Thore},
+  title     = {Inequity aversion improves cooperation in intertemporal social dilemmas},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {31},
+  pages     = {3330--3340},
+  year      = {2018}
+}
+
+@inproceedings{Peysakhovich2018_consequentialist,
+  author    = {Peysakhovich, Alexander and Lerer, Adam},
+  title     = {Consequentialist conditional cooperation in social dilemmas with imperfect information},
+  booktitle = {International Conference on Learning Representations},
+  year      = {2018}
+}
+
+@misc{Lerer2017_maintaining,
+  author       = {Lerer, Adam and Peysakhovich, Alexander},
+  title        = {Maintaining cooperation in complex social dilemmas using deep reinforcement learning},
+  year         = {2017},
+  eprint       = {1707.01068},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI}
+}
+
+% ===== NEW 2024-2026 ENTRIES =====
+
+@misc{Payne2025_strategic,
+  author       = {Kenneth Payne and Baptiste Alloui-Cros},
+  title        = {Strategic Intelligence in Large Language Models: Evidence from Evolutionary Game Theory},
+  year         = {2025},
+  eprint       = {2507.02618},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI}
+}
+
+@misc{Willis2026_collective,
+  author       = {Richard Willis and Jianing Zhao and Yali Du and Joel Z. Leibo},
+  title        = {Evaluating Collective Behaviour of Hundreds of {LLM} Agents},
+  year         = {2026},
+  eprint       = {2602.16662},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.MA}
+}
+
+@misc{Vallinder2024_cultural,
+  author       = {Aron Vallinder and Edward Hughes},
+  title        = {Cultural Evolution of Cooperation among {LLM} Agents},
+  year         = {2024},
+  eprint       = {2412.10270},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.MA},
+  note         = {Extended Abstract at AAMAS 2025}
+}
+
+@misc{Fontana2024_nicer,
+  author       = {Nicol{\`{o}} Fontana and Francesco Pierri and Luca Maria Aiello},
+  title        = {Nicer Than Humans: How do Large Language Models Behave in the Prisoner's Dilemma?},
+  year         = {2024},
+  eprint       = {2406.13605},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CY}
+}
+
+@misc{Warnakulasuriya2025_evolution,
+  author       = {Kavindu Warnakulasuriya and Prabhash Dissanayake and Navindu {De Silva} and
+                  Stephen Cranefield and Bastin Tony Roy Savarimuthu and
+                  Surangika Ranathunga and Nisansa {de Silva}},
+  title        = {Evolution of Cooperation in {LLM}-Agent Societies: A Preliminary Study Using Different Punishment Strategies},
+  year         = {2025},
+  eprint       = {2504.19487},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.MA},
+  note         = {COINE Workshop at AAMAS 2025}
+}
+
+@misc{Tonini2025_superadditive,
+  author       = {Filippo Tonini and Lukas Galke},
+  title        = {Super-additive Cooperation in Language Model Agents},
+  year         = {2025},
+  eprint       = {2508.15510},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.MA}
+}
+
+@inproceedings{Sistla2025_opensource,
+  author       = {Swadesh Sistla and Max Kleiman-Weiner},
+  title        = {Evaluating {LLMs} in Open-Source Games},
+  booktitle    = {Advances in Neural Information Processing Systems (NeurIPS 2025)},
+  year         = {2025},
+  eprint       = {2512.00371},
+  archivePrefix = {arXiv}
+}
+
+@misc{Backmann2025_ethics,
+  author       = {Steffen Backmann and David Guzman Piedrahita and Emanuel Tewolde and
+                  Rada Mihalcea and Bernhard Sch{\"o}lkopf and Zhijing Jin},
+  title        = {When Ethics and Payoffs Diverge: {LLM} Agents in Morally Charged Social Dilemmas},
+  year         = {2025},
+  eprint       = {2505.19212},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL}
+}
+
+@misc{Tewolde2026_coopeval,
+  author       = {Emanuel Tewolde and Xiao Zhang and David Guzman Piedrahita and
+                  Vincent Conitzer and Zhijing Jin},
+  title        = {{CoopEval}: Benchmarking Cooperation-Sustaining Mechanisms and {LLM} Agents in Social Dilemmas},
+  year         = {2026},
+  eprint       = {2604.15267},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.GT}
+}
+
+@article{Lore2024_strategic,
+  author  = {Lor{\`{e}}, Nunzio and Heydari, Babak},
+  title   = {Strategic behavior of large language models and the role of game structure versus contextual framing},
+  journal = {Scientific Reports},
+  volume  = {14},
+  pages   = {18490},
+  year    = {2024},
+  doi     = {10.1038/s41598-024-69032-z}
+}
+
+@misc{CeraPalatsi2025_replicate,
+  author       = {Andrea {Cera Palatsi} and Samuel {Martin-Gutierrez} and
+                  Ana S. Cardenal and Max Pellert},
+  title        = {Large language models replicate and predict human cooperation across experiments in game theory},
+  year         = {2025},
+  eprint       = {2511.04500},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI}
+}
+
+@inproceedings{Sun2025_survey,
+  author    = {Haoran Sun and Yusen Wu and Peng Wang and Wei Chen and
+               Yukun Cheng and Xiaotie Deng and Xu Chu},
+  title     = {Game Theory Meets Large Language Models: A Systematic Survey with Taxonomy and New Frontiers},
+  booktitle = {Proceedings of IJCAI 2025},
+  year      = {2025},
+  eprint    = {2502.09053},
+  archivePrefix = {arXiv}
+}
+
+@article{Akata2025_repeated,
+  author  = {Akata, Elif and Schulz, Lion and Coda-Forno, Julian and Oh, Seong Joon and
+             Bethge, Matthias and Schulz, Eric},
+  title   = {Playing repeated games with large language models},
+  journal = {Nature Human Behaviour},
+  volume  = {9},
+  pages   = {1380--1390},
+  year    = {2025},
+  doi     = {10.1038/s41562-025-02172-y},
+  note    = {Published version of arXiv:2305.16867}
+}
+
+@misc{Piche2025_robust,
+  author       = {Pich{\'{e}}, Dereck and Muqeeth, Mohammed and Aghajohari, Milad and
+                  Duque, Juan and Noukhovitch, Michael and Courville, Aaron},
+  title        = {Learning Robust Social Strategies with Large Language Models},
+  year         = {2025},
+  eprint       = {2511.19405},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG}
+}
+
+@inproceedings{Zeng2025_dynamic,
+  author    = {Zeng, Weiqi and Wang, Bo and Zhao, Dongming and Qu, Zongfeng and
+               He, Ruifang and Hou, Yuexian and Hu, Qinghua},
+  title     = {Dynamic Personality in {LLM} Agents: A Framework for Evolutionary Modeling and Behavioral Analysis in the Prisoner's Dilemma},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2025},
+  year      = {2025}
+}
+
+@misc{GarciaSegura2025_opponent,
+  author       = {{Garcia Segura}, Marta Emili and Hailes, Stephen and Musolesi, Mirco},
+  title        = {Opponent Shaping in {LLM} Agents},
+  year         = {2025},
+  eprint       = {2510.08255},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG}
+}
+
+@misc{Yadav2026_capable,
+  author       = {Yadav, Advait and Black, Sid and Sourbut, Oliver},
+  title        = {More Capable, Less Cooperative? When {LLMs} Fail At Zero-Cost Collaboration},
+  year         = {2026},
+  eprint       = {2604.07821},
+  archivePrefix = {arXiv},
+  note         = {ICLR 2026 Workshop on Agents in the Wild}
+}
+
+@article{Altarelli2025_emergent,
+  author  = {Altarelli, R. and others},
+  title   = {Emergent social conventions and collective bias in {LLM} populations},
+  journal = {Science Advances},
+  volume  = {11},
+  number  = {20},
+  year    = {2025},
+  doi     = {10.1126/sciadv.adu9368}
 }
