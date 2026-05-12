@@ -4,7 +4,7 @@
 \section{Conclusion}
 \label{sec:conclusion}
 
-We extended the Willis et al.\ \cite{Willis2025_llm_ipd} \LLM evolutionary
+We extended the \citet{Willis2025_llm_ipd} \LLM evolutionary
 game-theory benchmark to four next-generation frontier models spanning three
 providers---48 Moran process conditions, 4,800 simulation runs, identical
 experimental protocol.
@@ -27,10 +27,10 @@ Prompt engineering designed to improve strategy quality may therefore
 inadvertently reduce the cooperative advantage, raising the equilibrium
 aggression rate in deployed multi-agent populations.
 Noise robustness, meanwhile, has not improved: Claude~4.6 shows
-$\Delta_{\text{noise}} \approx 12$~pp, essentially matching the 13~pp
-reported for Claude~3.5~Sonnet in the original benchmark, and biased noisy
-conditions push aggressive equilibria above 67\% in 10 of 12
-configurations across all models tested.
+$\Dnoise \approx 12$~pp, essentially matching the 13~pp
+reported for Claude~3.5~Sonnet in the original benchmark, while biased noisy
+conditions converge to aggressive equilibria in the 53--71\% range,
+with only 2 of 12 configurations exceeding the 67\% prior.
 
 These findings raise questions the current design cannot answer.
 Do the cross-provider differences reflect divergent RLHF reward signals,

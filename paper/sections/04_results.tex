@@ -64,7 +64,7 @@ the \ICD (Eq.~\ref{eq:icd}).
          a larger cooperative advantage.}
 \label{tab:payoffs}
 \small
-\begin{tabular}{@{}llccccccccc@{}}
+\begin{tabular}{@{}llccccccc@{}}
 \toprule
 \textbf{Model} & \textbf{Prompt} &
   \multicolumn{3}{c}{\textbf{Aggressive payoff vs.}} &
@@ -177,8 +177,9 @@ conditions. The Willis et al.\ reference values are shown for comparison.
 
 \paragraph{Balanced, noiseless condition (4:4:4 clean).}
 This condition provides the most direct comparison with the original benchmark.
-Nine of twelve model--prompt combinations show $\PC > \PA$, confirming
-a widespread cooperative bias. The strongest cooperative equilibria are achieved
+Nine of twelve model--prompt combinations favour cooperative equilibria as
+the plurality outcome ($\PC > \PA$ and $\PC > \PN$), confirming a widespread
+cooperative bias. The strongest cooperative equilibria are achieved
 by GPT-5.4~Mini~Refine (68\%), Claude~4.6~Prose (55\%), and
 Gemini~2.5~Flash~Prose (54\%).
 The three exceptions are all cases where the \emph{Neutral} attitude achieves the
@@ -201,13 +202,17 @@ ChatGPT-4o~Default (14\%A), suggesting improved cooperative bias in the
 OpenAI lineage for this condition.
 
 \paragraph{Balanced, noisy condition (4:4:4 noise).}
-Noise consistently shifts equilibria toward aggression in all but one
-combination. Eleven of twelve model--prompt pairs show
-$\PA^{\text{noise}} > \PA^{\text{clean}}$; the exception is Gemini~3.1~Pro~Default,
-whose cooperative equilibrium fraction actually rises under noise (see
-Section~\ref{sec:noise} and Table~\ref{tab:noise}). GPT-5.4~Mini is the most
-noise-resilient: its Default cooperative equilibrium drops from 48\% to 45\%
-($\Dnoise = 3$pp). Gemini~2.5~Flash~Prose shows the largest degradation:
+Noise consistently shifts equilibria toward aggression across all twelve
+model--prompt combinations; all twelve pairs show
+$\PA^{\text{noise}} > \PA^{\text{clean}}$.
+The notable anomaly is Gemini~3.1~Pro~Default: despite rising aggressive
+equilibria (15\% to 23\%), its cooperative equilibrium fraction
+\emph{also} rises under noise (35\% to 39\%, giving $\Dnoise = -4$pp;
+see Section~\ref{sec:noise} and Table~\ref{tab:noise})---the only
+combination in which cooperative equilibria become more likely under noise.
+GPT-5.4~Mini is the most noise-resilient overall: its Default cooperative
+equilibrium drops from 48\% to 45\% ($\Dnoise = 3$pp).
+Gemini~2.5~Flash~Prose shows the largest degradation:
 cooperative equilibria collapse from 54\% to 25\% ($\Dnoise = 29$pp).
 
 \paragraph{Biased, noiseless condition (8:2:2 clean).}
@@ -223,11 +228,13 @@ agents have no disadvantage.
 \paragraph{Biased, noisy condition (8:2:2 noise).}
 In the most adverse condition (aggressive majority with noise), all twelve
 model--prompt combinations converge to aggressive equilibria at rates of
-53--71\%, exceeding the 67\% prior in 10 of 12 cases. Once a system is
-seeded with an aggressive majority and action noise is present, convergence
-to aggressive equilibria becomes near-certain across all models evaluated.
-The two exceptions---Claude~4.6~Default (53\%) and GPT-5.4~Mini~Default
-(54\%)---remain at or below the prior.
+53--71\%. Contrary to a naive reading of the aggressive-majority prior (67\%),
+only 2 of 12 combinations exceed this threshold---Gemini~2.5~Flash~Prose and
+Gemini~3.1~Pro~Refine, both at 71\%. The remaining 10 of 12 fall at or
+below the prior, indicating that the Moran process does not amplify aggressive
+dominance beyond the initial seeding for most model--prompt combinations, even
+in this worst-case scenario. The most resistant are Claude~4.6~Default (53\%)
+and GPT-5.4~Mini~Default (54\%), which finish substantially below the prior.
 
 \subsection{Noise Sensitivity ($\Dnoise$)}
 \label{sec:noise}
