@@ -5,61 +5,84 @@
 \label{sec:related}
 
 \paragraph{LLMs in game-theoretic settings.}
-Recent work has systematically tested whether \LLM{}s can function as rational
-strategic agents. Aher et al.\ \cite{Aher2023_using} used \LLM{}s to replicate
-human subject behaviour in behavioural economics experiments. Brookins and
-DeBacker \cite{Brookins2023_playing} and Guo \cite{Guo2023_gpt} investigated
-whether \LLM{}s approximate Nash-rational play, finding mixed evidence across
-game types. Akata et al.\ \cite{Akata2023_playing}
-studied repeated normal-form games, while Fan et al.\
-\cite{Fan2024_rational} demonstrated systematic failures when \LLM{}s are
-prompted to output individual game actions. These limitations motivate our
-strategy-generation approach, which operates at a higher level of abstraction
-and separates policy specification from action execution.
+The intersection of \LLM{}s and game theory has developed rapidly into a
+coherent subfield \citep{Sun2025_survey}.
+\citet{Aher2023_using} used \LLM{}s to replicate human subject behaviour in
+behavioural economics experiments. \citet{Brookins2023_playing} and
+\citet{Guo2023_gpt} investigated whether \LLM{}s approximate Nash-rational play,
+finding mixed evidence across game types. \citet{Akata2025_repeated}
+studied repeated normal-form games, while \citet{Fan2024_rational} demonstrated
+systematic failures when \LLM{}s are prompted to output individual game actions.
+These limitations motivate our strategy-generation approach, which operates at a
+higher level of abstraction and separates policy specification from action
+execution.
 
 \paragraph{LLMs in social dilemmas.}
-Yocum et al.\ \cite{Yocum2023_mitigating}
-and Piatti et al.\ \cite{Piatti2024_cooperate}
-studied \LLM agent behaviour in Markov social dilemmas. Park et al.\
-\cite{Park2023_generative} introduced generative agents for simulating social
-behaviour. De Zarz{\`a} et al.\ \cite{DeZarza2023_emergent}
-explored emergent cooperation in \LLM-extended coevolutionary theory.
-Leibo et al.\ \cite{Leibo2017_multiagent} grounded such studies in
-multi-agent reinforcement learning. Our contribution to this strand is the
-analysis of \emph{evolutionary population dynamics}---how strategy types
-rise or collapse across generations---rather than individual agent decisions
-at a single time step.
+\citet{Yocum2023_mitigating} and \citet{Piatti2024_cooperate}
+studied \LLM agent behaviour in Markov social dilemmas. \citet{Park2023_generative}
+introduced generative agents for simulating social behaviour.
+\citet{DeZarza2023_emergent} explored emergent cooperation in
+\LLM-extended coevolutionary theory. \citet{Leibo2017_multiagent} grounded such
+studies in multi-agent reinforcement learning. Our contribution to this strand is
+the analysis of \emph{evolutionary population dynamics}---how strategy types rise
+or collapse across generations---rather than individual agent decisions at a
+single time step.
 
-\paragraph{The Willis et al.\ benchmark.}
-Willis et al.\ \cite{Willis2025_llm_ipd} introduced the framework we extend.
-They prompt \LLM{}s to generate natural-language \IPD strategies (converted to
-Python), then simulate Moran evolutionary processes over populations of
-attitude-agents (Aggressive, Cooperative, Neutral). Key findings include a
-cooperative bias in both ChatGPT-4o and Claude~3.5~Sonnet, with Claude
-exhibiting greater difficulty generating effective aggressive strategies and
-notable fragility under action noise. The Refine prompt
-\cite{Madaan2023_self_refine} narrowed this gap---demonstrating that
-self-refinement can inadvertently enable aggressive strategies, a result that
-complicates alignment-by-design assumptions.
+\paragraph{The Willis et al.\ (2025) benchmark.}
+\citet{Willis2025_llm_ipd} introduced the framework we extend. They prompt
+\LLM{}s to generate natural-language \IPD strategies (converted to Python), then
+simulate Moran evolutionary processes over populations of attitude-agents
+(Aggressive, Cooperative, Neutral). Key findings include a cooperative bias in
+both ChatGPT-4o and Claude~3.5~Sonnet, with Claude exhibiting greater difficulty
+generating effective aggressive strategies and notable fragility under action
+noise. Applying the Self-Refine framework \citep{Madaan2023_self_refine} to strategy
+generation narrowed this gap \citep{Willis2025_llm_ipd}, demonstrating that
+iterative self-critique can inadvertently enable aggressive strategies, a result
+that complicates alignment-by-design assumptions.
+
+\paragraph{Concurrent and subsequent work.}
+Three papers have since tested related questions with different frameworks.
+\citet{Payne2025_strategic} run evolutionary \IPD tournaments across GPT, Gemini,
+and Claude frontier models using variable termination probabilities and 32,000
+prose rationales, without a Moran process or attitude-agent populations; they
+find the same provider fingerprint we document (Gemini aggressive, OpenAI
+cooperative), providing independent corroboration for our cross-provider
+divergence finding (H3, Section~\ref{sec:discussion}) via a mechanistically
+distinct design. \citet{Vallinder2024_cultural} apply cross-provider evolutionary
+selection to the Donor Game under indirect reciprocity with older models
+(Claude~3.5~Sonnet, Gemini~1.5~Flash, GPT-4o) and find the ranking
+Claude $>$ Gemini $>$ GPT; our GPT-5.4~Mini emerges as the most cooperative of
+the four models we test, inverting that OpenAI position and suggesting that model
+generation, not just provider, shapes cooperative disposition.
+\citet{Willis2026_collective} scale the Willis et al.\ framework to hundreds of
+agents under cultural evolutionary dynamics and find that newer \LLM{}s
+\emph{worsen} societal outcomes in their setting---an apparent tension with our
+result that cooperative bias persists under Moran selection at $n{=}12$. Whether
+the selection mechanism (pairwise Moran versus cultural evolution) or population
+scale reconciles the divergence is an open question we flag for future work.
 
 \paragraph{Cross-generational and cross-provider comparisons.}
-Prior capability comparisons across \LLM providers have focused on general
-reasoning benchmarks such as MMLU or HumanEval, where cooperative dispositions
-are absent by design. No published work applies this cross-provider lens to
-evolutionary social dilemmas, where provider-level training choices and RLHF
-objectives may differentially shape aggressive or cooperative tendencies. Equally
-absent is any within-lineage longitudinal analysis: whether successive model
-generations from the same provider preserve, amplify, or reverse the cooperation
-patterns established by their predecessors. Our study targets both gaps.
+Prior capability comparisons across \LLM providers focused on general reasoning
+benchmarks---MMLU \citep{Hendrycks2021_mmlu}, HumanEval \citep{Chen2021_humaneval},
+and similar---where cooperative dispositions are absent by design. The work above establishes that provider-level differences emerge in
+evolutionary social dilemmas, but each study either uses older model generations
+or a single dilemma type. Within-lineage longitudinal analysis---whether
+successive generations from the same provider preserve or reverse established
+cooperation patterns---remains absent from the literature. Our study targets that
+gap by pairing current frontier models against their immediate predecessors under
+the same Moran \IPD framework.
 
 \paragraph{Evolutionary game theory foundations.}
-Our simulations rest on the Moran process \cite{Moran1958_random}, a classical
-model of evolutionary selection in finite populations, and on the \IPD framework
-\cite{Axelrod1984_evolution,Axelrod1981_evolution}. Nowak
-\cite{Nowak2006_evolutionary} provides the backbone for convergence analysis in
-finite evolutionary games. The noise mechanism follows Wu and Axelrod \cite{WuAxelrod1995_noise}
-and Wahl and Nowak \cite{WahlNowak1999_noise}.
+Our simulations rest on the Moran process \citep{Moran1958_random}, the classical
+model of evolutionary selection in finite populations; \citet{Nowak2004_cooperation}
+established its connection to cooperation in \IPD games in finite populations, and
+\citet{Traulsen2006_fixation} derived fixation probabilities under this process.
+The \IPD framework follows \citet{Axelrod1984_evolution,Axelrod1981_evolution};
+\citet{Nowak2006_evolutionary} provides the backbone for convergence analysis in
+finite evolutionary games. The noise mechanism follows
+\citet{WuAxelrod1995_noise} and \citet{WahlNowak1999_noise}.
 These threads---\LLM strategic behaviour, multi-agent social dilemmas, and
 evolutionary population dynamics---jointly define the space this paper occupies:
-the first cross-provider benchmark for next-generation \LLM{}s evaluated under
-Darwinian selection over \IPD strategy populations.
+a cross-provider benchmark for next-generation \LLM{}s, including within-lineage
+longitudinal comparisons, evaluated under Darwinian selection over \IPD strategy
+populations.
