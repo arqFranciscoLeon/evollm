@@ -1,8 +1,11 @@
 import argparse
 import axelrod as axl
+import csv
 import pprint
 import matplotlib.pyplot as plt
+from datetime import datetime
 from multiprocessing import Pool
+from pathlib import Path
 import numpy as np
 
 from evollm import common
@@ -89,17 +92,27 @@ if __name__ == "__main__":
     fig.savefig("results/example_moran.png", dpi=500, bbox_inches='tight')
   else:
     def run_moran_process(seed):
-      mp = axl.MoranProcess(
-          players,
-          seed=seed,
-          turns=algos[0].rounds,
-          noise=algos[0].noise,
-          game=common.get_game(algos[0].game))
+      try:
+        mp = axl.MoranProcess(
+            players,
+            seed=seed,
+            turns=algos[0].rounds,
+            noise=algos[0].noise,
+            game=common.get_game(algos[0].game))
 
-      populations = mp.play()
-      # pprint.pprint(populations)
-      print(mp.winning_strategy_name, len(mp))
-      return mp.winning_strategy_name
+        populations = mp.play()
+        # pprint.pprint(populations)
+        winner = mp.winning_strategy_name
+        print(winner, len(mp))
+        return winner
+      except Exception as exc:
+        import logging
+        logging.getLogger(__name__).warning(
+            "Moran iteration with seed=%s failed: %s: %s — skipping.",
+            seed, type(exc).__name__, exc,
+        )
+        print(f"[WARN] seed={seed} failed ({type(exc).__name__}: {exc}) — skipped")
+        return None
 
     seeds = np.random.randint(0, np.iinfo(np.int32).max, size=parsed_args.iterations)
 
@@ -111,11 +124,79 @@ if __name__ == "__main__":
       for i in range(parsed_args.iterations):
         results.append(run_moran_process(seeds[i]))
 
+    failed = results.count(None)
+    if failed:
+        print(f"[WARN] {failed} iteration(s) failed and were skipped out of {len(results)} total.")
+    results = [r for r in results if r is not None]
+
     winner_counts = {}
     for winner in results:
         winner_counts[winner] = winner_counts.get(winner, 0) + 1
 
     print(winner_counts)
+
+    # ── Normalizar claves a actitud base ─────────────────────────────────────
+    # mp.winning_strategy_name devuelve el __repr__ del jugador, que para
+    # StrategySampler es "LLM: Aggressive (ours)", "LLM: Cooperative (ours)",
+    # o "LLM: Neutral (ours)". Mapeamos a las claves simples que usa el resto
+    # del código.
+    attitudes = ["Aggressive", "Cooperative", "Neutral"]
+    normalized_counts: dict[str, int] = {att: 0 for att in attitudes}
+    for name, count in winner_counts.items():
+        for att in attitudes:
+            if att in name:
+                normalized_counts[att] += count
+                break
+
+    # ── Guardar resultados en disco ───────────────────────────────────────────
+    algo_name = Path(parsed_args.algo).stem
+    results_dir = Path("results")
+    results_dir.mkdir(exist_ok=True)
+
+    total = sum(normalized_counts.values())
+
+    # 1. Último resultado para este módulo (sobrescribe la ejecución anterior)
+    latest_path = results_dir / f"{algo_name}_moran.csv"
+    with open(latest_path, "w", newline="", encoding="utf8") as f:
+        writer = csv.DictWriter(f, fieldnames=["Actitud", "Victorias", "Porcentaje"])
+        writer.writeheader()
+        for att in attitudes:
+            count = normalized_counts[att]
+            writer.writerow({
+                "Actitud": att,
+                "Victorias": count,
+                "Porcentaje": round(100 * count / total, 2) if total else 0,
+            })
+
+    # 2. Historial acumulado (una fila por ejecución, nunca se borra)
+    history_path = results_dir / "moran_history.csv"
+    history_exists = history_path.exists()
+    fieldnames_h = [
+        "fecha", "algo", "iteraciones",
+        "pop_agresivos", "pop_cooperativos", "pop_neutrales",
+        "Aggressive", "Cooperative", "Neutral",
+        "pct_Aggressive", "pct_Cooperative", "pct_Neutral",
+    ]
+    with open(history_path, "a", newline="", encoding="utf8") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames_h)
+        if not history_exists:
+            writer.writeheader()
+        writer.writerow({
+            "fecha": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "algo": algo_name,
+            "iteraciones": parsed_args.iterations,
+            "pop_agresivos": parsed_args.initial_pop[0],
+            "pop_cooperativos": parsed_args.initial_pop[1],
+            "pop_neutrales": parsed_args.initial_pop[2],
+            "Aggressive": normalized_counts["Aggressive"],
+            "Cooperative": normalized_counts["Cooperative"],
+            "Neutral": normalized_counts["Neutral"],
+            "pct_Aggressive": round(100 * normalized_counts["Aggressive"] / total, 2) if total else 0,
+            "pct_Cooperative": round(100 * normalized_counts["Cooperative"] / total, 2) if total else 0,
+            "pct_Neutral": round(100 * normalized_counts["Neutral"] / total, 2) if total else 0,
+        })
+
+    print(f"Resultados guardados en {latest_path} y {history_path}")
 
   # for row in mp.score_history:
   #   print([round(element, 1) for element in row])

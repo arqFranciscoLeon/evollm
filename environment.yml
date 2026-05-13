@@ -1,4 +1,4 @@
-name: evollm
+name: evollm311
 channels:
   - conda-forge
 dependencies:
@@ -16,3 +16,5 @@ dependencies:
     - matplotlib
     - pandas
     - numpy
+    - python-dotenv>=1.0
+    - google-genai>=1.0

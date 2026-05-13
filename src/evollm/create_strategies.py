@@ -3,26 +3,32 @@ import ast
 import logging
 import os
 import textwrap
-import time
 from io import TextIOWrapper
 
-import anthropic
 import axelrod as axl
-import openai
 
-from evollm import algorithms, common, prompts
+from evollm import algorithms, common, llm_clients, prompts
 from evollm.common import Attitude
+from evollm.llm_clients import LLMClient
 
-# Configure logging
-logging.basicConfig(
-    filename="create_strategies.log", filemode="w", level=logging.INFO)
+# Configure logging — INFO+ to file, WARNING+ also to console
+_log_formatter = logging.Formatter("%(asctime)s [%(levelname)s] %(message)s")
+_file_handler = logging.FileHandler("create_strategies.log", mode="w", encoding="utf8")
+_file_handler.setFormatter(_log_formatter)
+_console_handler = logging.StreamHandler()
+_console_handler.setFormatter(_log_formatter)
+_console_handler.setLevel(logging.WARNING)
+logging.basicConfig(level=logging.INFO, handlers=[_file_handler, _console_handler])
 logger = logging.getLogger(__name__)
 
 logging.getLogger("openai._base_client").setLevel(logging.WARN)
 logging.getLogger("httpx").setLevel(logging.WARN)
 
 
-def generate_strategies(client: openai.OpenAI | anthropic.Anthropic, attitude: Attitude, temp: float, game: axl.Game, rounds: int, noise: float, refine: bool=False, prose: bool=False) -> tuple[str, str]:
+def generate_strategies(client: LLMClient, attitude: Attitude, temp: float,
+                        game: axl.Game, rounds: int, noise: float,
+                        refine: bool = False,
+                        prose: bool = False) -> tuple[str, str]:
 
   messages = []
 
@@ -33,37 +39,41 @@ def generate_strategies(client: openai.OpenAI | anthropic.Anthropic, attitude: A
 
     messages += [{"role": "user", "content": prompt}]
     logger.info("Prompt:\n:%s", prompt)
+    print(f"    [1/5] Generando descripción inicial ({attitude})...")
     response = get_response(client, system, messages, temp)
     logger.info("Response:\n:%s", response)
 
     initial_strategy = response
 
-    messages += [{ "role": "assistant", "content": response}]
+    messages += [{"role": "assistant", "content": response}]
 
     prompt = prompts.create_second_prose_prompt(actions, game_information)
   else:
     initial_strategy = ""
-    system, prompt = prompts.create_default_prompt(attitude, game, rounds, noise)
+    system, prompt = prompts.create_default_prompt(attitude, game_information)
 
   messages += [{"role": "user", "content": prompt}]
   logger.info("Prompt:\n:%s", prompt)
+  print(f"    [2/5] Generando estrategia ({attitude})...")
   response = get_response(client, system, messages, temp)
   logger.info("Response:\n:%s", response)
 
   if refine:
-    messages += [{ "role": "assistant", "content": response}]
+    messages += [{"role": "assistant", "content": response}]
     prompt = prompts.create_first_refine_prompt()
 
-    messages += [{ "role": "user", "content": prompt}]
+    messages += [{"role": "user", "content": prompt}]
     logger.info("Prompt:\n:%s", prompt)
+    print(f"    [3/5] Refinando — crítica ({attitude})...")
     response = get_response(client, system, messages, temp / 2)
     logger.info("Response:\n:%s", response)
 
-    messages += [{ "role": "assistant", "content": response}]
+    messages += [{"role": "assistant", "content": response}]
     prompt = prompts.create_second_refine_prompt()
 
-    messages += [{ "role": "user", "content": prompt}]
+    messages += [{"role": "user", "content": prompt}]
     logger.info("Prompt:\n:%s", prompt)
+    print(f"    [4/5] Refinando — reescritura ({attitude})...")
     response = get_response(client, system, messages, 0)
     logger.info("Response:\n:%s", response)
 
@@ -77,7 +87,7 @@ def test_algorithm(algorithm: str):
     # yapf: disable
     allowed_nodes = (
         ast.Return, ast.UnaryOp, ast.BoolOp, ast.BinOp, ast.FunctionDef,
-        ast.If, ast.IfExp, ast.And, ast.Or, ast.Not, ast.Eq, ast.Try, ast.Del, ast.Delete,
+        ast.If, ast.IfExp, ast.And, ast.Or, ast.Not, ast.Eq, ast.Try, ast.ExceptHandler, ast.Raise, ast.Del, ast.Delete,
         ast.Compare, ast.USub, ast.In, ast.NotIn, ast.Is, ast.IsNot, ast.For, ast.Pass, ast.Break,
         ast.List, ast.Dict, ast.Tuple, ast.Num, ast.Str, ast.Constant, ast.Set,
         ast.arg, ast.Name, ast.arguments, ast.keyword, ast.Expr, ast.Attribute,
@@ -88,7 +98,6 @@ def test_algorithm(algorithm: str):
         ast.Assign, ast.AugAssign, ast.AnnAssign, ast.Pow, ast.Mod,
     )
     # yapf: enable
-
 
     if not isinstance(node, allowed_nodes):
       raise ValueError(
@@ -105,7 +114,8 @@ def test_algorithm(algorithm: str):
     tree = ast.parse(algorithm)
     # Check if the tree has exactly one child
     if len(tree.body) != 1 or not isinstance(tree.body[0], ast.FunctionDef):
-        raise ValueError("Algorithm contains more than just a single function definition")
+      raise ValueError(
+          "Algorithm contains more than just a single function definition")
 
     for node in ast.iter_child_nodes(tree.body[0]):
       is_safe_ast(node)
@@ -142,7 +152,20 @@ def fix_common_mistakes(s):
   s = s.replace("_random.rand()", "_random.random()")
   s = s.replace("_random.integers", "_random.randint")
   s = s.replace("match_length", "match_attributes['length']")
-  s = s.replace("self.total_scores(self.history, opponent.history)\n", "self.score, opponent.score\n")
+  s = s.replace(
+      "self.total_scores(self.history, opponent.history)\n",
+      "self.score, opponent.score\n",
+  )
+  return s
+
+
+def sanitize_unicode_operators(s: str) -> str:
+  s = s.replace("\u2192", "->")   # →
+  s = s.replace("\u2265", ">=")   # ≥
+  s = s.replace("\u2264", "<=")   # ≤
+  s = s.replace("\u2260", "!=")   # ≠
+  s = s.replace("\u00d7", "*")    # ×
+  s = s.replace("\u00f7", "/")    # ÷
   return s
 
 
@@ -150,52 +173,60 @@ def add_indent(text: str) -> str:
   return "\n".join("  " + line for line in text.splitlines())
 
 
-def generate_algorithm(client: openai.OpenAI | anthropic.Anthropic,
-                       strategy: str, game: axl.Game, rounds: int,
-                       noise: float, refine: bool=False) -> str:
+def generate_algorithm(client: LLMClient, strategy: str, game: axl.Game,
+                       rounds: int, noise: float, refine: bool = False) -> str:
 
-  system = "You are an AI assistant with expertise in game theory and programming. Your task is to implement the strategy description provided by the user as an algorithm."
+  system = (
+      "You are an AI assistant with expertise in game theory and programming. "
+      "Your task is to implement the strategy description provided by the user as an algorithm."
+  )
   prompt = prompts.create_algorithm_prompt(strategy, game, rounds, noise)
 
   messages = [{"role": "user", "content": prompt}]
   logger.info("Prompt:\n:%s", prompt)
+  print(f"    [5/5] Generando algoritmo Python...")
   response = get_response(client, system, messages, 0)
   logger.info("Response:\n:%s", response)
 
   if refine:
-    messages += [{ "role": "assistant", "content": response}]
-    prompt = "Please assess whether this implementation is correct and faithful to the strategy description. Detail any improvements or corrections."
+    messages += [{"role": "assistant", "content": response}]
+    prompt = (
+        "Please assess whether this implementation is correct and faithful to "
+        "the strategy description. Detail any improvements or corrections."
+    )
 
-    messages += [{ "role": "user", "content": prompt}]
+    messages += [{"role": "user", "content": prompt}]
     logger.info("Prompt:\n:%s", prompt)
     response = get_response(client, system, messages, 0)
     logger.info("Response:\n:%s", response)
 
-    messages += [{ "role": "assistant", "content": response}]
-    prompt = "Now, rewrite the algorithm taking into account the feedback. Only include python code in your response."
+    messages += [{"role": "assistant", "content": response}]
+    prompt = (
+        "Now, rewrite the algorithm taking into account the feedback. "
+        "Only include python code in your response."
+    )
 
-    messages += [{ "role": "user", "content": prompt}]
+    messages += [{"role": "user", "content": prompt}]
     logger.info("Prompt:\n:%s", prompt)
     response = get_response(client, system, messages, 0)
     logger.info("Response:\n:%s", response)
 
   algorithm = strip_code_markers(response)
   algorithm = fix_common_mistakes(algorithm)
+  algorithm = sanitize_unicode_operators(algorithm)
   test_algorithm(algorithm)
   algorithm = add_indent(algorithm)
   return algorithm
 
 
 def format_comment(text, width=78):
-  # Wrap the text to the specified width
   wrapped = textwrap.wrap(text, width=width)
-
-  # Add "# " prefix to each line and join them
   return "\n".join("# " + line for line in wrapped)
 
 
-def write_class(initial_description: str, description: str, attitude: Attitude, n: int, game: axl.Game,
-                rounds: int, noise: float, algorithm: str) -> str:
+def write_class(initial_description: str, description: str, attitude: Attitude,
+                n: int, game: axl.Game, rounds: int, noise: float,
+                algorithm: str) -> str:
   return f"""{format_comment(initial_description)}
 
 {format_comment(description)}
@@ -211,61 +242,35 @@ class {attitude}_{n}(LLM_Strategy):
 {algorithm}"""
 
 
-def generate_class(text_file: TextIOWrapper, strategy_client: openai.OpenAI | anthropic.Anthropic, algorithm_client: openai.OpenAI | anthropic.Anthropic, attitude: Attitude, n: int, temp: float, game: axl.Game, rounds: int, noise: float, refine: bool=False, prose: bool=False):
-  initial_strategy, strategy = generate_strategies(strategy_client, attitude, temp, game, rounds, noise, refine=refine, prose=prose)
-
-  algorithm = generate_algorithm(algorithm_client, strategy, game, rounds, noise, refine=False)
-
-  text_file.write("\n\n" + write_class(initial_strategy, strategy, attitude, n, game, rounds, noise, algorithm))
-
-
-def openai_message(client: openai.OpenAI, system: str, prompt: list[dict[str, str]],
-                   temp: float) -> str:
-  messages = [{
-      "role": "system",
-      "content": system
-  }] + prompt
-
-  response = client.chat.completions.create(
-      # model="gpt-3.5-turbo",
-      model="chatgpt-4o-latest",
-      # model="o1-preview",
-      messages=messages,
-      temperature=temp,
-  )
-
-  return response.choices[0].message.content
-
-
-def anthropic_message(client: anthropic.Anthropic, system: str, prompt: list[dict[str, str]],
-                      temp: float) -> str:
-  # retry up to five times if the server is overloaded
-  for _ in range(5):
+def generate_class(text_file: TextIOWrapper, strategy_client: LLMClient,
+                   algorithm_client: LLMClient, attitude: Attitude, n: int,
+                   temp: float, game: axl.Game, rounds: int, noise: float,
+                   refine: bool = False, prose: bool = False,
+                   max_retries: int = 3):
+  last_error: Exception | None = None
+  for attempt in range(1, max_retries + 1):
     try:
-      response = client.messages.create(
-          # model="claude-3-opus-20240229",
-          model="claude-3-5-sonnet-20240620",
-          # model="claude-3-haiku-20240307",
-          max_tokens=1000,
-          temperature=temp,
-          system=system,
-          messages=prompt)
-      break
-    except anthropic.InternalServerError:
-      time.sleep(5)
-      continue
+      initial_strategy, strategy = generate_strategies(
+          strategy_client, attitude, temp, game, rounds, noise,
+          refine=refine, prose=prose)
+      algorithm = generate_algorithm(algorithm_client, strategy, game, rounds,
+                                     noise, refine=False)
+      text_file.write(
+          "\n\n" + write_class(initial_strategy, strategy, attitude, n, game,
+                               rounds, noise, algorithm))
+      return
+    except ValueError as e:
+      last_error = e
+      print(f"  Intento {attempt}/{max_retries} fallido para {attitude}_{n}: {e!s:.120}")
+      logger.warning("Attempt %d/%d failed for %s_%d: %s", attempt, max_retries, attitude, n, e)
+  raise ValueError(
+      f"No se pudo generar {attitude}_{n} tras {max_retries} intentos"
+  ) from last_error
 
-  return response.content[0].text
 
-
-def get_response(client: openai.OpenAI | anthropic.Anthropic, system: str,
+def get_response(client: LLMClient, system: str,
                  messages: list[dict[str, str]], temp: float) -> str:
-  if isinstance(client, openai.OpenAI):
-    return openai_message(client, system, messages, temp)
-  elif isinstance(client, anthropic.Anthropic):
-    return anthropic_message(client, system, messages, temp)
-  assert False, "Unknown client"
-  return ""
+  return llm_clients.get_response(client, system, messages, temp)
 
 
 def parse_arguments() -> argparse.Namespace:
@@ -276,8 +281,17 @@ def parse_arguments() -> argparse.Namespace:
       "--strategy_llm",
       type=str,
       required=True,
-      choices=["openai", "anthropic"],
-      help="Which LLM API to use for strategy generation")
+      choices=["openai", "anthropic", "google"],
+      help="Which LLM provider to use for strategy generation")
+  parser.add_argument(
+      "--model",
+      type=str,
+      default=None,
+      help=(
+          "Specific model override (e.g. gpt-4o, o4-mini, claude-sonnet-4-5, "
+          "claude-opus-4-0, gemini-2.0-flash). "
+          "If omitted, the provider default is used."
+      ))
   parser.add_argument(
       "--n",
       type=int,
@@ -306,7 +320,7 @@ def parse_arguments() -> argparse.Namespace:
       "--algo",
       type=str,
       required=True,
-      help="Name of the python module to call the LLM algorithms")
+      help="Name of the python module to save the LLM strategies")
   parser.add_argument(
       "--refine",
       action="store_true",
@@ -320,15 +334,21 @@ def parse_arguments() -> argparse.Namespace:
 
 
 def create_strategies(args: argparse.Namespace):
-  strategy_client = openai.OpenAI(api_key=os.environ["OPENAI_API_KEY"]) if args.strategy_llm == "openai" else anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
-  algorithm_client = openai.OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+  llm_clients.load_api_keys()
+
+  model_key = llm_clients.resolve_model(args.strategy_llm, args.model)
+  strategy_client = llm_clients.make_client(model_key)
+  # Use the same model for algorithm generation (code synthesis)
+  algorithm_client = strategy_client
 
   if args.resume:
     algos = algorithms.load_algorithms(args.algo)
     done_classes = set([(c.attitude, c.n) for c in algos])
   else:
     if os.path.exists(f"{args.algo}.py"):
-      assert False, f"{args.algo}.py exists and will be overwritten, delete or rename the file"
+      assert False, (
+          f"{args.algo}.py exists and will be overwritten, "
+          "delete or rename the file")
 
     done_classes = set([])
 
@@ -337,15 +357,21 @@ def create_strategies(args: argparse.Namespace):
 
 from evollm.common import Attitude, auto_update_score, LLM_Strategy""")
 
-  strategies_to_create: list[tuple[Attitude, int]] = [(a, n) for n in range(1, 1 + args.n) for a in Attitude if (a, n) not in done_classes]
+  strategies_to_create: list[tuple[Attitude, int]] = [
+      (a, n)
+      for n in range(1, 1 + args.n)
+      for a in Attitude
+      if (a, n) not in done_classes
+  ]
   game = common.get_game(args.game)
 
   with open(f"{args.algo}.py", "a", encoding="utf8") as f:
     for a, n in strategies_to_create:
-      generate_class(f, strategy_client, algorithm_client, a, n, args.temp, game, args.rounds, args.noise, args.refine, args.prose)
+      print(f"Generando estrategia {a} {n}/{args.n}...")
+      generate_class(f, strategy_client, algorithm_client, a, n, args.temp,
+                     game, args.rounds, args.noise, args.refine, args.prose)
 
 
 if __name__ == "__main__":
   parsed_args = parse_arguments()
-
   create_strategies(parsed_args)
