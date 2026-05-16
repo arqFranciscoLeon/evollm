@@ -1,0 +1,34 @@
+# CHECKSUMS — integrity manifest for the n=500 replication package
+# Generated: 2026-05-16 14:46:30 UTC
+# Verify on download:  python -c "see REPRODUCE.md Tier 0"
+#
+# SHA-256                                                          file
+# ----------------------------------------------------------------------------------------------
+52ca086f6d3b389a142ed208b2d9353cc3dfd7ebf313805e7739516cc6cc4305  results/modal_waves_final_20260515_154815.json
+fd68d44e94e7e83fb77068a4a0dd0654673ccbc1ff23a9d9b39c481084f38201  strategies/anthropic_sonnet46_default_75.py
+9034fc1f66c62202eff997072e6521894d441a684a156065591c7e7f027e2e77  strategies/anthropic_sonnet46_default_75_noise.py
+f26878cb3a573159642da73e4976c8e7178ee87d19d300831dfc6eb4f91e42c9  strategies/anthropic_sonnet46_prose_75.py
+68dce2bbcb63fac09b30a19d4e722e7c8db56a8dd73a68746009f7b10f81ad42  strategies/anthropic_sonnet46_prose_75_noise.py
+b07a184bc0fa653735723281a6abda61dcd4d225041bf03d8480158302f4f3dc  strategies/anthropic_sonnet46_refine_75.py
+37d14e3b1e5250a55e473fb4db5fc19a547d6ff44e7a9e78b74f7aabe9388fe2  strategies/anthropic_sonnet46_refine_75_noise.py
+8d5169e86995c57a2d474a63cb2ac3a8ab6fecf6660b22f644c37cc59f3780f3  strategies/gemini_25_flash_default_75.py
+117184df7efc2722ab7dd4ad97d2489178a24a63dda51a366bf2cfe54d94dfd7  strategies/gemini_25_flash_default_75_noise.py
+e5d6314cbe31565762547857e2d6469df887f42aa0e12d86214f7dbda6eba38f  strategies/gemini_25_flash_prose_75.py
+66930fb150ed5a8bfec65d11134227ab8ed1c60f3f4f8d0910173178667e2241  strategies/gemini_25_flash_prose_75_noise.py
+bafc38930384f7bcd15f8d83f43c26860bacaa9b4b6931e88b8b220afcad2515  strategies/gemini_25_flash_refine_75.py
+7014953bc7c3f67079ec8a82015d3b1dd414fc033345ede640a99695abcea983  strategies/gemini_25_flash_refine_75_noise.py
+b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a  strategies/gemini_31_pro_default_75.py
+4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5  strategies/gemini_31_pro_default_75_noise.py
+6611f78b1a4644a38b1a214cd98c931044eb0f520979b43c7b3ba9bc5dba02dc  strategies/gemini_31_pro_prose_75.py
+c22dfe946a95cd926c90127d17d4bb42d8ff13e13cb256bada59164c69588142  strategies/gemini_31_pro_prose_75_noise.py
+c1eb780c9d1c50f1bedd6f3c81e32bfde326743741d1200de5adfbaafa45db24  strategies/gemini_31_pro_refine_75.py
+4f1d31d8c1c4a675fc71f827f9a94c46d8633093236fd670544adb0220b1f1bb  strategies/gemini_31_pro_refine_75_noise.py
+0f8c71c53495da26559b11af9344afb1413566b40fc5b4bc155c1a56e80db5bd  strategies/openai_gpt54mini_default_75.py
+dea4a8ab3c948ab5beddded0758572ddd3b3063e7ad8f5e05e691c73887b35b4  strategies/openai_gpt54mini_default_75_noise.py
+2ec03e35d2f93d2eb37f343dc4eaad2927634a5d6d2fffd406e4e79b43ec8eba  strategies/openai_gpt54mini_prose_75.py
+c034f2ffea36cb5be17d2d17347b6bd119a358c98dff58e1718a98d8a12cfdca  strategies/openai_gpt54mini_prose_75_noise.py
+c37a6fc22ef1fe5d5eb40c7673311c9c6cd07a83737c68ca4b4627d1de5a32ac  strategies/openai_gpt54mini_refine_75.py
+e94af4a08bb30b8464e747b760a846114aa75b2d9fdea02d9062661bd0531239  strategies/openai_gpt54mini_refine_75_noise.py
+#
+# Aggregate SHA-256 over 24 strategy libraries:
+# fdd1a95c6575851d005236f27185c565f555b72265fcba7f522b150133b77aa2

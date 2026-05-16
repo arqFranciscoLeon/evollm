@@ -1,10 +1,13 @@
 import importlib
 import inspect
+import logging
 import os
 
 import axelrod as axl
 
 from evollm import common
+
+logger = logging.getLogger(__name__)
 
 
 def load_module(module_path: str):
@@ -73,7 +76,24 @@ def create_classes(algos: list[type[common.LLM_Strategy]], suffix: str = "") -> 
       if not self.history:
         random_class = self._random.choice(self.__class__.strategies)
         self.selected_strategy = random_class.strategy.__get__(self, StrategySampler)
-      return self.selected_strategy(opponent)
+      try:
+        action = self.selected_strategy(opponent)
+      except Exception as exc:
+        logger.warning(
+            "Strategy %s raised %s: %s — defaulting to D.",
+            getattr(self.selected_strategy, "__qualname__", repr(self.selected_strategy)),
+            type(exc).__name__,
+            exc,
+        )
+        return axl.Action.D
+      if action not in (axl.Action.C, axl.Action.D):
+        logger.warning(
+            "Strategy %s returned invalid action %r — defaulting to D.",
+            getattr(self.selected_strategy, "__qualname__", repr(self.selected_strategy)),
+            action,
+        )
+        return axl.Action.D
+      return action
 
   class Aggressive(StrategySampler):
     name = "Aggressive"
