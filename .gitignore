@@ -4,4 +4,31 @@ results/*full.txt
 create_strategies.log
 *png
 *svg
+
+# === SECRETS / CREDENTIALS — NEVER COMMIT ===
 .env
+*.env
+!.env.example
+*api_key*
+*secret*
+*credential*
+*_token
+.modal.toml
+
+# === Claude Code scaffold (not part of the simulation code) ===
+.claude/
+
+# === Build / cache junk ===
+__pycache__/
+*.pyc
+*.pyo
+migrate_to_qgis.log
+
+# === Scratch / temp ===
+propuesta_temp.txt
+*_temp.txt
+
+# === Small calibration/test Moran runs (n<=10) — not scientific results ===
+results/*_n5_moran.csv
+results/*_n10_moran.csv
+results/modal_waves_checkpoint.json

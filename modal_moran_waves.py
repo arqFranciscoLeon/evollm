@@ -1,0 +1,284 @@
+"""
+Modal deployment para simulaciones Moran EvoLLM — VERSION WAVES
+================================================================
+Envia tareas en olas de ~100 (como la calibracion que funciono),
+esperando que cada ola termine antes de lanzar la siguiente.
+
+Guarda checkpoint despues de cada ola, asi si algo falla
+podemos retomar desde donde quedamos.
+
+USO:
+    modal run modal_moran_waves.py                  # n=500, batch=2, wave=100
+    modal run modal_moran_waves.py --total-iterations 200
+    modal run modal_moran_waves.py --wave-size 80
+    modal run modal_moran_waves.py --resume         # retomar desde el checkpoint
+"""
+
+import modal
+from pathlib import Path
+import csv
+import json
+import os
+from datetime import datetime
+from collections import defaultdict
+
+# ── Configuracion ────────────────────────────────────────────────────────────
+
+TOTAL_ITERATIONS = 500     # Objetivo del paper
+BATCH_SIZE = 2             # iter por tarea (~5-10 min cada una)
+WAVE_SIZE = 100            # tareas por ola (Modal aguanta ~100 sin preemption masivo)
+CPUS_PER_JOB = 1
+TIMEOUT_SECONDS = 1800     # 30 min por batch
+
+ALGOS_CLEAN = [
+    "anthropic_sonnet46_default_75",
+    "anthropic_sonnet46_prose_75",
+    "anthropic_sonnet46_refine_75",
+    "gemini_25_flash_default_75",
+    "gemini_25_flash_prose_75",
+    "gemini_25_flash_refine_75",
+    "gemini_31_pro_default_75",
+    "gemini_31_pro_prose_75",
+    "gemini_31_pro_refine_75",
+    "openai_gpt54mini_default_75",
+    "openai_gpt54mini_prose_75",
+    "openai_gpt54mini_refine_75",
+]
+ALGOS_NOISE = [a + "_noise" for a in ALGOS_CLEAN]
+
+POP_BALANCED = [4, 4, 4]
+POP_BIASED   = [8, 2, 2]
+
+CHECKPOINT_FILE = "results/modal_waves_checkpoint.json"
+
+image = (
+    modal.Image.debian_slim(python_version="3.11")
+    .pip_install("axelrod==4.14.0", "numpy", "matplotlib")
+    .add_local_dir("src",        remote_path="/root/evollm/src")
+    .add_local_dir("strategies", remote_path="/root/evollm/strategies")
+)
+
+app = modal.App("evollm-moran-waves", image=image)
+
+
+@app.function(cpu=CPUS_PER_JOB, timeout=TIMEOUT_SECONDS, retries=2)
+def run_batch(algo_name: str, initial_pop: list, batch_size: int, task_id: str) -> dict:
+    """Corre un batch pequeno de UNA condicion."""
+    import sys, os, subprocess, ast as _ast
+
+    workdir = "/root/evollm"
+    script = f"{workdir}/src/evollm/moran_process.py"
+    cmd = [
+        sys.executable, script,
+        "--algo", f"{workdir}/strategies/{algo_name}",
+        "--initial_pop", str(initial_pop[0]), str(initial_pop[1]), str(initial_pop[2]),
+        "--iterations", str(batch_size),
+        "--processes", "1",
+    ]
+    env = os.environ.copy()
+    env["PYTHONPATH"] = f"{workdir}/src"
+
+    proc = subprocess.run(cmd, capture_output=True, text=True, cwd=workdir, env=env)
+
+    if proc.returncode != 0:
+        raise RuntimeError(
+            f"moran failed for {algo_name} task={task_id}: {proc.stderr[-500:]}"
+        )
+
+    attitudes = ["Aggressive", "Cooperative", "Neutral"]
+    counts = {"Aggressive": 0, "Cooperative": 0, "Neutral": 0}
+    for line in reversed(proc.stdout.splitlines()):
+        line = line.strip()
+        if line.startswith("{") and any(att in line for att in attitudes):
+            try:
+                raw = _ast.literal_eval(line)
+                tmp = {"Aggressive": 0, "Cooperative": 0, "Neutral": 0}
+                for name, count in raw.items():
+                    for att in attitudes:
+                        if att in name:
+                            tmp[att] += count
+                            break
+                if sum(tmp.values()) > 0:
+                    counts = tmp
+                    break
+            except Exception:
+                continue
+
+    return {
+        "task_id": task_id,
+        "algo": algo_name,
+        "pop": tuple(initial_pop),
+        "batch_size": batch_size,
+        "Aggressive": counts["Aggressive"],
+        "Cooperative": counts["Cooperative"],
+        "Neutral": counts["Neutral"],
+    }
+
+
+@app.local_entrypoint()
+def main(
+    total_iterations: int = TOTAL_ITERATIONS,
+    batch_size: int = BATCH_SIZE,
+    wave_size: int = WAVE_SIZE,
+    resume: bool = False,
+):
+    """Wave-based runner con checkpoints."""
+    all_algos = ALGOS_CLEAN + ALGOS_NOISE
+    n_batches_per_cond = total_iterations // batch_size
+    assert n_batches_per_cond * batch_size == total_iterations
+
+    # Construir TODA la lista de tareas
+    all_tasks = []
+    for algo in all_algos:
+        for pop_name, pop in [("4_4_4", POP_BALANCED), ("8_2_2", POP_BIASED)]:
+            for b in range(n_batches_per_cond):
+                task_id = f"{algo}|{pop_name}|b{b:03d}"
+                all_tasks.append((algo, pop, batch_size, task_id))
+
+    total_tasks = len(all_tasks)
+
+    # Cargar checkpoint si resume
+    checkpoint = {"completed_task_ids": [], "aggregated": {}}
+    if resume and os.path.exists(CHECKPOINT_FILE):
+        with open(CHECKPOINT_FILE) as f:
+            checkpoint = json.load(f)
+        print(f"[RESUME] {len(checkpoint['completed_task_ids'])} tareas ya completadas")
+
+    completed_set = set(checkpoint["completed_task_ids"])
+    pending_tasks = [t for t in all_tasks if t[3] not in completed_set]
+
+    # Reconstruir agregado (string keys -> dict)
+    agg = defaultdict(lambda: {"Aggressive": 0, "Cooperative": 0, "Neutral": 0, "n_iter": 0})
+    for key, v in checkpoint["aggregated"].items():
+        agg[key] = v
+
+    _banner(total_iterations, batch_size, wave_size,
+            n_batches_per_cond, total_tasks, len(pending_tasks))
+
+    # Procesar en olas
+    n_waves = (len(pending_tasks) + wave_size - 1) // wave_size
+    wave_num = 0
+    for i in range(0, len(pending_tasks), wave_size):
+        wave_num += 1
+        wave = pending_tasks[i:i + wave_size]
+        wave_start = datetime.utcnow()
+        print(f"\n--- Ola {wave_num}/{n_waves}: {len(wave)} tareas ---")
+
+        try:
+            results = list(run_batch.starmap(wave))
+        except Exception as e:
+            print(f"[ERROR] Ola fallo: {e}")
+            print("[CHECKPOINT] Guardando progreso parcial...")
+            _save_checkpoint(checkpoint, agg)
+            raise
+
+        wave_dur = (datetime.utcnow() - wave_start).total_seconds() / 60
+        n_ok = sum(1 for r in results if isinstance(r, dict))
+
+        # Agregar resultados
+        for r in results:
+            if not isinstance(r, dict):
+                continue
+            key = f"{r['algo']}__{r['pop'][0]}_{r['pop'][1]}_{r['pop'][2]}"
+            agg[key]["Aggressive"]  += r["Aggressive"]
+            agg[key]["Cooperative"] += r["Cooperative"]
+            agg[key]["Neutral"]     += r["Neutral"]
+            agg[key]["n_iter"]      += r["batch_size"]
+            checkpoint["completed_task_ids"].append(r["task_id"])
+
+        # Checkpoint despues de cada ola
+        checkpoint["aggregated"] = dict(agg)
+        _save_checkpoint(checkpoint, agg)
+
+        print(f"  OK: {n_ok}/{len(wave)} en {wave_dur:.1f} min "
+              f"| Total: {len(checkpoint['completed_task_ids'])}/{total_tasks}")
+
+    print("\n[DONE] Todas las olas completadas.")
+    _save_final(agg, total_iterations)
+
+
+def _banner(total_iter, batch_size, wave_size, n_batches_cond, total_tasks, pending):
+    print(f"\n{'='*65}")
+    print(f"  EvoLLM Moran — Modal Cloud Run (WAVES)")
+    print(f"{'='*65}")
+    print(f"  Iteraciones objetivo : {total_iter} por condicion")
+    print(f"  Batch size           : {batch_size} iter")
+    print(f"  Wave size            : {wave_size} tareas")
+    print(f"  Batches por cond.    : {n_batches_cond}")
+    print(f"  Tareas totales       : {total_tasks}")
+    print(f"  Tareas pendientes    : {pending}")
+    n_waves = (pending + wave_size - 1) // wave_size
+    print(f"  Olas a procesar      : {n_waves}")
+    print(f"  Estimacion           : ~10 min por ola -> ~{n_waves * 10 / 60:.1f}h total")
+    print(f"  Costo estimado       : ~${total_tasks * 5 * 0.0003:.2f} USD")
+    print(f"{'='*65}\n")
+
+
+def _save_checkpoint(checkpoint, agg):
+    Path("results").mkdir(exist_ok=True)
+    checkpoint["aggregated"] = {k: dict(v) for k, v in agg.items()}
+    with open(CHECKPOINT_FILE, "w") as f:
+        json.dump(checkpoint, f, indent=2, default=str)
+
+
+def _save_final(agg, total_iter):
+    Path("results").mkdir(exist_ok=True)
+
+    final = []
+    timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
+    for key, counts in agg.items():
+        algo, pop_str = key.split("__")
+        pa, pc, pn = map(int, pop_str.split("_"))
+        n_iter = counts["n_iter"]
+        total = counts["Aggressive"] + counts["Cooperative"] + counts["Neutral"]
+        if total != n_iter:
+            print(f"[WARN] {key}: total wins {total} != n_iter {n_iter}")
+        pct = {k: round(100 * counts[k] / total, 2) if total else 0.0
+               for k in ["Aggressive", "Cooperative", "Neutral"]}
+        final.append({
+            "fecha": timestamp,
+            "algo": algo,
+            "iteraciones": n_iter,
+            "pop_agresivos": pa,
+            "pop_cooperativos": pc,
+            "pop_neutrales": pn,
+            "Aggressive":  counts["Aggressive"],
+            "Cooperative": counts["Cooperative"],
+            "Neutral":     counts["Neutral"],
+            "pct_Aggressive":  pct["Aggressive"],
+            "pct_Cooperative": pct["Cooperative"],
+            "pct_Neutral":     pct["Neutral"],
+        })
+
+    # Append a moran_history.csv
+    history_path = Path("results/moran_history.csv")
+    fieldnames = [
+        "fecha", "algo", "iteraciones",
+        "pop_agresivos", "pop_cooperativos", "pop_neutrales",
+        "Aggressive", "Cooperative", "Neutral",
+        "pct_Aggressive", "pct_Cooperative", "pct_Neutral",
+    ]
+    history_exists = history_path.exists()
+    with open(history_path, "a", newline="", encoding="utf8") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        if not history_exists:
+            writer.writeheader()
+        for r in final:
+            writer.writerow({k: r[k] for k in fieldnames})
+
+    ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+    json_path = Path(f"results/modal_waves_final_{ts}.json")
+    with open(json_path, "w", encoding="utf8") as f:
+        json.dump(final, f, indent=2)
+
+    print(f"\n{'Condicion':<45} {'Pop':>7}  {'A%':>5} {'C%':>5} {'N%':>5}")
+    print("-" * 73)
+    for r in sorted(final, key=lambda x: (x["pop_agresivos"], x["algo"])):
+        pop = f"{r['pop_agresivos']}:{r['pop_cooperativos']}:{r['pop_neutrales']}"
+        print(
+            f"  {r['algo']:<43} {pop:>7}  "
+            f"{r['pct_Aggressive']:>5.1f} {r['pct_Cooperative']:>5.1f} {r['pct_Neutral']:>5.1f}"
+        )
+    print(f"\nGuardado en:")
+    print(f"   {history_path}  (+{len(final)} filas)")
+    print(f"   {json_path}")

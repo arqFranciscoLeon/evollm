@@ -127,7 +127,7 @@ def run_moran_condition(algo_name: str, initial_pop: list, iterations: int) -> d
         if line.startswith("{") and any(att in line for att in attitudes):
             try:
                 raw = _ast.literal_eval(line)
-                # Normalizar: "LLM: Aggressive (ours)" → "Aggressive"
+                # Normalizar: "LLM: Aggressive (ours)" ->"Aggressive"
                 for name, count in raw.items():
                     for att in attitudes:
                         if att in name:
@@ -147,7 +147,7 @@ def run_moran_condition(algo_name: str, initial_pop: list, iterations: int) -> d
     pct = {k: round(100 * v / total, 2) if total else 0.0 for k, v in normalized.items()}
 
     print(
-        f"[{algo_name}] ✓ pop={initial_pop} "
+        f"[{algo_name}] OK pop={initial_pop} "
         f"A:{pct['Aggressive']}% C:{pct['Cooperative']}% N:{pct['Neutral']}%"
     )
 
@@ -207,7 +207,7 @@ def _banner(conditions, iterations, n_tasks):
     print(f"  Iteraciones      : {iterations}")
     print(f"  Tareas en paralelo: {n_tasks}")
     print(f"  CPUs por tarea   : {CPUS_PER_JOB}")
-    print(f"  Tiempo estimado  : ~{est_min:.0f}h por condición (paralelo → ~misma duración)")
+    print(f"  Tiempo estimado  : ~{est_min:.0f}h por condición (paralelo ->~misma duración)")
     print(f"  Costo estimado   : ~${n_tasks * est_min * 0.0003:.2f} USD")
     print(f"{'='*65}\n")
 
@@ -262,6 +262,6 @@ def _save_results(results: list, iterations: int):
             f"{r['pct_Aggressive']:>5.1f} {r['pct_Cooperative']:>5.1f} {r['pct_Neutral']:>5.1f}"
         )
 
-    print(f"\n✅ Guardado en:")
+    print(f"\nGuardado en:")
     print(f"   {history_path}  (+{len(results)} filas)")
     print(f"   {json_path}")

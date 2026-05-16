@@ -366,6 +366,94 @@ def _suggested_filename(model_key: str, prompt_type: str, noise: bool) -> str:
 
 
 # ---------------------------------------------------------------------------
+# Vista Paper — réplica de tablas y figuras del artículo (datos n=500)
+# ---------------------------------------------------------------------------
+
+# Colores idénticos a los del paper (make_figures.py)
+PAPER_C_AGG = "#d62728"   # rojo
+PAPER_C_COO = "#1f77b4"   # azul
+PAPER_C_NEU = "#7f7f7f"   # gris
+
+# Orden de las 12 combinaciones modelo–prompt (igual que la Tabla 5)
+PAPER_ALGOS = [
+    ("anthropic_sonnet46_default_75", "Claude 4.6",       "Default"),
+    ("anthropic_sonnet46_prose_75",   "Claude 4.6",       "Prose"),
+    ("anthropic_sonnet46_refine_75",  "Claude 4.6",       "Refine"),
+    ("gemini_25_flash_default_75",    "Gemini 2.5 Flash", "Default"),
+    ("gemini_25_flash_prose_75",      "Gemini 2.5 Flash", "Prose"),
+    ("gemini_25_flash_refine_75",     "Gemini 2.5 Flash", "Refine"),
+    ("gemini_31_pro_default_75",      "Gemini 3.1 Pro",   "Default"),
+    ("gemini_31_pro_prose_75",        "Gemini 3.1 Pro",   "Prose"),
+    ("gemini_31_pro_refine_75",       "Gemini 3.1 Pro",   "Refine"),
+    ("openai_gpt54mini_default_75",   "GPT-5.4 Mini",     "Default"),
+    ("openai_gpt54mini_prose_75",     "GPT-5.4 Mini",     "Prose"),
+    ("openai_gpt54mini_refine_75",    "GPT-5.4 Mini",     "Refine"),
+]
+
+# Valores de referencia Willis et al. (Tabla 6 del paper original) — A/C/N
+# por las 4 condiciones: 4:4:4 clean | 4:4:4 noise | 8:2:2 clean | 8:2:2 noise
+PAPER_WILLIS_REF = {
+    ("ChatGPT-4o", "Default"): ["14/53/33", "16/42/42", "66/19/17", "59/20/21"],
+    ("ChatGPT-4o", "Prose"):   ["13/38/49", "23/41/36", "35/27/38", "60/18/22"],
+    ("ChatGPT-4o", "Refine"):  ["19/48/33", "28/38/34", "49/30/21", "63/19/18"],
+    ("Claude 3.5 Sonnet", "Default"): ["4/49/47",  "15/37/48", "36/24/40", "41/20/39"],
+    ("Claude 3.5 Sonnet", "Prose"):   ["14/42/44", "17/33/50", "41/30/29", "61/26/13"],
+    ("Claude 3.5 Sonnet", "Refine"):  ["16/51/33", "37/34/29", "50/22/28", "60/18/22"],
+}
+# Δnoise promedio de referencia (Tabla 8 del paper original)
+PAPER_WILLIS_DNOISE = {
+    "Claude 3.5 Sonnet": [12, 9, 17, 13],   # Default, Prose, Refine, Avg
+    "ChatGPT-4o":        [11, -3, 10, 6],
+}
+
+
+@st.cache_data(show_spinner=False)
+def load_n500_results() -> dict:
+    """Carga el JSON autoritativo n=500 (modal_waves_final_*.json).
+
+    Devuelve dict indexado por (algo, 'AAACCCNNN') -> registro.
+    """
+    import json
+    files = sorted(RESULTS_DIR.glob("modal_waves_final_*.json"))
+    if not files:
+        return {}
+    try:
+        with open(files[-1], encoding="utf8") as fh:
+            rows = json.load(fh)
+    except Exception:
+        return {}
+    out = {}
+    for r in rows:
+        pop = f"{r['pop_agresivos']}{r['pop_cooperativos']}{r['pop_neutrales']}"
+        out[(r["algo"], pop)] = r
+    out["__file__"] = files[-1].name
+    return out
+
+
+def _fmt_acn(rec: dict) -> str:
+    """'A/C/N' redondeado a enteros desde un registro n=500."""
+    if not rec:
+        return "—"
+    return (f"{round(rec['pct_Aggressive'])}/"
+            f"{round(rec['pct_Cooperative'])}/"
+            f"{round(rec['pct_Neutral'])}")
+
+
+def _z_test_prop(x1: int, x2: int, n1: int = 500, n2: int = 500):
+    """z-test de dos proporciones (pooled)."""
+    import math
+    p1, p2 = x1 / n1, x2 / n2
+    pp = (x1 + x2) / (n1 + n2)
+    if pp in (0.0, 1.0):
+        return 0.0, 1.0
+    se = math.sqrt(pp * (1 - pp) * (1 / n1 + 1 / n2))
+    z = (p1 - p2) / se
+    # p-valor dos colas vía aprox. normal (sin scipy para no añadir dependencia)
+    p = math.erfc(abs(z) / math.sqrt(2))
+    return z, p
+
+
+# ---------------------------------------------------------------------------
 # Encabezado principal
 # ---------------------------------------------------------------------------
 st.title("🧬 EvoLLM — Simulador del Dilema del Prisionero")
@@ -374,11 +462,12 @@ st.caption(
     "en juegos de dilema social (Proceso de Moran)."
 )
 
-tab_gen, tab_moran, tab_torneo, tab_dashboard, tab_export = st.tabs([
+tab_gen, tab_moran, tab_torneo, tab_dashboard, tab_paper, tab_export = st.tabs([
     "🤖  Generar Estrategias",
     "🔁  Simulación Moran",
     "⚔️  Torneo",
     "📊  Dashboard Comparativo",
+    "📄  Vista Paper",
     "⬇️  Exportar",
 ])
 
@@ -1209,7 +1298,199 @@ with tab_dashboard:
 
 
 # ===========================================================================
-# PESTAÑA 5: EXPORTAR RESULTADOS
+# PESTAÑA 5: VISTA PAPER — réplica de tablas y figuras del artículo
+# ===========================================================================
+with tab_paper:
+    st.header("📄 Vista Paper — Resultados como en el artículo")
+    st.markdown(
+        "Réplica transparente de las **tablas y figuras del paper** a partir de "
+        "los resultados autoritativos **n=500** "
+        "(`modal_waves_final_*.json`). Cada número aquí es el mismo que aparece "
+        "en el manuscrito."
+    )
+
+    n500 = load_n500_results()
+
+    if not n500:
+        st.warning(
+            "No se encontró el archivo `results/modal_waves_final_*.json` "
+            "(resultados n=500). Ejecuta el run wave-based "
+            "(`modal run modal_moran_waves.py`) o copia el JSON a `results/`."
+        )
+    else:
+        st.caption(f"Fuente: `{n500.get('__file__', '?')}` · n=500 iteraciones por condición")
+
+        POPS = [("444", "4:4:4 clean", False), ("444", "4:4:4 noise", True),
+                ("822", "8:2:2 clean", False), ("822", "8:2:2 noise", True)]
+
+        def _rec(algo, pop, noise):
+            return n500.get((algo + ("_noise" if noise else ""), pop), {})
+
+        # ---- TABLA 5 — Equilibrios Moran -----------------------------------
+        st.subheader("Tabla 5 — Proporciones de equilibrio Moran (%A / %C / %N)")
+        st.caption(
+            "Proporción de 500 corridas que convergen a cada actitud. "
+            "Filas inferiores: valores de referencia de Willis et al. (paper original)."
+        )
+        t5_rows = []
+        for algo, model, prompt in PAPER_ALGOS:
+            t5_rows.append({
+                "Modelo": model, "Prompt": prompt,
+                "4:4:4 clean": _fmt_acn(_rec(algo, "444", False)),
+                "4:4:4 noise": _fmt_acn(_rec(algo, "444", True)),
+                "8:2:2 clean": _fmt_acn(_rec(algo, "822", False)),
+                "8:2:2 noise": _fmt_acn(_rec(algo, "822", True)),
+            })
+        for (model, prompt), vals in PAPER_WILLIS_REF.items():
+            t5_rows.append({
+                "Modelo": f"{model} †", "Prompt": prompt,
+                "4:4:4 clean": vals[0], "4:4:4 noise": vals[1],
+                "8:2:2 clean": vals[2], "8:2:2 noise": vals[3],
+            })
+        t5_df = pd.DataFrame(t5_rows)
+        st.dataframe(t5_df, use_container_width=True, hide_index=True,
+                     height=560)
+        st.caption("† Willis et al. \\cite{Willis2025_llm_ipd}, Tabla 6 (referencia).")
+        st.download_button(
+            "⬇️ Descargar Tabla 5 (CSV)",
+            t5_df.to_csv(index=False).encode("utf8"),
+            "tabla5_moran_equilibria_n500.csv", "text/csv",
+            key="dl_t5",
+        )
+
+        # ---- FIGURA 2 — Distribución de equilibrios (4 paneles) ------------
+        st.markdown("---")
+        st.subheader("Figura 2 — Distribución de equilibrios (48 condiciones)")
+        st.caption(
+            "Barras apiladas: proporción de 500 corridas → Agresivo (rojo), "
+            "Cooperativo (azul), Neutral (gris). Línea discontinua: prior teórico."
+        )
+        from plotly.subplots import make_subplots
+
+        short_labels = [f"{m.split()[0][:3]}.{p[:3]}"
+                        for _, m, p in PAPER_ALGOS]
+        fig2 = make_subplots(rows=2, cols=2,
+                             subplot_titles=[pl[1] for pl in POPS],
+                             vertical_spacing=0.16, horizontal_spacing=0.08)
+        for idx, (popk, label, noise) in enumerate(POPS):
+            r, c = idx // 2 + 1, idx % 2 + 1
+            A, C, N = [], [], []
+            for algo, _, _ in PAPER_ALGOS:
+                rec = _rec(algo, popk, noise)
+                A.append(round(rec.get("pct_Aggressive", 0)))
+                C.append(round(rec.get("pct_Cooperative", 0)))
+                N.append(round(rec.get("pct_Neutral", 0)))
+            show_leg = (idx == 0)
+            fig2.add_trace(go.Bar(x=short_labels, y=A, name="Agresivo",
+                                  marker_color=PAPER_C_AGG, legendgroup="A",
+                                  showlegend=show_leg), row=r, col=c)
+            fig2.add_trace(go.Bar(x=short_labels, y=C, name="Cooperativo",
+                                  marker_color=PAPER_C_COO, legendgroup="C",
+                                  showlegend=show_leg), row=r, col=c)
+            fig2.add_trace(go.Bar(x=short_labels, y=N, name="Neutral",
+                                  marker_color=PAPER_C_NEU, legendgroup="N",
+                                  showlegend=show_leg), row=r, col=c)
+            prior = 33 if popk == "444" else 67
+            fig2.add_hline(y=prior, line_dash="dash", line_color="black",
+                           opacity=0.5, row=r, col=c)
+        fig2.update_layout(barmode="stack", height=620,
+                           legend=dict(orientation="h", y=1.08, x=0.5,
+                                       xanchor="center"),
+                           margin=dict(l=40, r=20, t=70, b=80))
+        fig2.update_xaxes(tickangle=-60, tickfont_size=8)
+        fig2.update_yaxes(range=[0, 100], title_text="Freq. equilibrio (%)",
+                          title_font_size=10)
+        st.plotly_chart(fig2, use_container_width=True, key="paper_fig2")
+
+        # ---- TABLA 6 — z-tests cross-provider -----------------------------
+        st.markdown("---")
+        st.subheader("Tabla 6 — z-tests pareados de $p_A$ (4:4:4 clean, Default)")
+        st.caption(
+            "Dos proporciones, corrección Holm-Bonferroni (6 comparaciones). "
+            "*** = significativo tras corrección."
+        )
+        zt_models = {
+            "Claude 4.6":   _rec("anthropic_sonnet46_default_75", "444", False),
+            "G2.5 Flash":   _rec("gemini_25_flash_default_75",    "444", False),
+            "G3.1 Pro":     _rec("gemini_31_pro_default_75",      "444", False),
+            "GPT-5.4 Mini": _rec("openai_gpt54mini_default_75",   "444", False),
+        }
+        zt_names = list(zt_models)
+        zt_x = {k: int(v.get("Aggressive", 0)) for k, v in zt_models.items()}
+        zt_pairs = []
+        for i in range(len(zt_names)):
+            for j in range(i + 1, len(zt_names)):
+                a, b = zt_names[i], zt_names[j]
+                z, p = _z_test_prop(zt_x[a], zt_x[b])
+                zt_pairs.append([a, b, zt_x[a], zt_x[b], z, p])
+        zt_pairs.sort(key=lambda r: r[5])
+        k_tests = len(zt_pairs)
+        t6_rows = []
+        for rank, (a, b, xa, xb, z, p) in enumerate(zt_pairs):
+            thr = 0.05 / (k_tests - rank)
+            t6_rows.append({
+                "Modelo A": f"{a} ({round(100*xa/500)}%)",
+                "Modelo B": f"{b} ({round(100*xb/500)}%)",
+                "z": f"{z:+.2f}",
+                "p": f"{p:.2e}",
+                "HB α": f"{thr:.4f}",
+                "Sig.": "***" if p < thr else "ns",
+            })
+        t6_df = pd.DataFrame(t6_rows)
+        st.dataframe(t6_df, use_container_width=True, hide_index=True)
+        st.download_button(
+            "⬇️ Descargar Tabla 6 (CSV)",
+            t6_df.to_csv(index=False).encode("utf8"),
+            "tabla6_ztests_n500.csv", "text/csv", key="dl_t6",
+        )
+
+        # ---- TABLA 8 — Sensibilidad al ruido Δnoise -----------------------
+        st.markdown("---")
+        st.subheader("Tabla 8 — Sensibilidad al ruido $\\Delta_{noise}$ (4:4:4)")
+        st.caption(
+            "Δnoise = %C(clean) − %C(noise). Positivo = degradación del "
+            "equilibrio cooperativo bajo ruido. Filas † = referencia Willis et al."
+        )
+        import numpy as _np
+        t8_rows = []
+        for model in ["Claude 4.6", "Gemini 2.5 Flash",
+                      "Gemini 3.1 Pro", "GPT-5.4 Mini"]:
+            ds = []
+            for algo, m, prompt in PAPER_ALGOS:
+                if m != model:
+                    continue
+                cl = _rec(algo, "444", False).get("pct_Cooperative", 0)
+                no = _rec(algo, "444", True).get("pct_Cooperative", 0)
+                ds.append(cl - no)
+            t8_rows.append({
+                "Modelo": model,
+                "Default": round(ds[0]), "Prose": round(ds[1]),
+                "Refine": round(ds[2]), "Avg.": round(float(_np.mean(ds))),
+            })
+        for model, vals in PAPER_WILLIS_DNOISE.items():
+            t8_rows.append({
+                "Modelo": f"{model} †",
+                "Default": vals[0], "Prose": vals[1],
+                "Refine": vals[2], "Avg.": vals[3],
+            })
+        t8_df = pd.DataFrame(t8_rows)
+        st.dataframe(t8_df, use_container_width=True, hide_index=True)
+        st.download_button(
+            "⬇️ Descargar Tabla 8 (CSV)",
+            t8_df.to_csv(index=False).encode("utf8"),
+            "tabla8_noise_sensitivity_n500.csv", "text/csv", key="dl_t8",
+        )
+
+        st.markdown("---")
+        st.info(
+            "💡 Estos paneles se regeneran automáticamente del JSON n=500. "
+            "Para reproducir los números exactos del paper: "
+            "`cd paper && python analysis_h3_h4_entropy.py`."
+        )
+
+
+# ===========================================================================
+# PESTAÑA 6: EXPORTAR RESULTADOS
 # ===========================================================================
 with tab_export:
     st.header("Exportar Resultados")
