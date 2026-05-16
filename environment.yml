@@ -10,11 +10,18 @@ dependencies:
 
   - pip
   - pip:
-    - axelrod
+    # Pinned for deterministic reproduction of the paper's n=500 results.
+    # axelrod 4.14.0 is the exact version used for every tournament/Moran
+    # run reported in the manuscript (Method, Section 3). reproduce_tables.py
+    # itself needs only the Python stdlib + the committed JSON.
+    - axelrod==4.14.0
+    - numpy==2.4.4
+    - pandas==3.0.3
+    - scipy==1.17.1
+    # Viewer / plotting (only needed for the Streamlit GUI, not for
+    # reproduce_tables.py):
     - streamlit>=1.35
     - plotly>=5.20
-    - matplotlib
-    - pandas
-    - numpy
+    - matplotlib>=3.8
     - python-dotenv>=1.0
     - google-genai>=1.0
