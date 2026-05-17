@@ -281,8 +281,11 @@ def parse_arguments() -> argparse.Namespace:
       "--strategy_llm",
       type=str,
       required=True,
-      choices=["openai", "anthropic", "google"],
-      help="Which LLM provider to use for strategy generation")
+      choices=["openai", "anthropic", "google", "openrouter"],
+      help=(
+          "Which LLM provider to use for strategy generation "
+          "('openrouter' = Chinese frontier models via the "
+          "OpenAI-compatible gateway)"))
   parser.add_argument(
       "--model",
       type=str,

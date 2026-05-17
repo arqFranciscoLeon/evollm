@@ -25,6 +25,13 @@ logger = logging.getLogger(__name__)
 PROVIDER_OPENAI = "openai"
 PROVIDER_ANTHROPIC = "anthropic"
 PROVIDER_GOOGLE = "google"
+# Chinese frontier labs (Phase 2) reached through an OpenAI-compatible
+# gateway (OpenRouter by default; Vercel AI Gateway via OPENROUTER_BASE_URL).
+# No Chinese cloud account is required — see PHASE2_PREREG.md §5.
+PROVIDER_OPENROUTER = "openrouter"
+
+# OpenRouter / Vercel AI Gateway defaults (overridable via env).
+_OPENROUTER_DEFAULT_BASE_URL = "https://openrouter.ai/api/v1"
 
 # Maps registry key -> (provider, api_model_id)
 # Verified against live APIs on 2026-04-08.
@@ -37,6 +44,12 @@ MODEL_REGISTRY: dict[str, tuple[str, str]] = {
     "claude-sonnet-4-6":        (PROVIDER_ANTHROPIC, "claude-sonnet-4-6"),
     "gemini-3.1-pro-preview":   (PROVIDER_GOOGLE,    "gemini-3.1-pro-preview"),
     "gemini-2.5-flash":         (PROVIDER_GOOGLE,    "gemini-2.5-flash"),
+    # ── Modelos chinos (Fase 2 — PHASE2_PREREG.md §4) ────────────────────────
+    # IDs en formato slug de OpenRouter (proveedor/modelo).
+    "deepseek-v4": (PROVIDER_OPENROUTER, "deepseek/deepseek-v4"),
+    "qwen-3.6":    (PROVIDER_OPENROUTER, "qwen/qwen-3.6"),
+    "kimi-k2.6":   (PROVIDER_OPENROUTER, "moonshotai/kimi-k2.6"),
+    "glm-5.1":     (PROVIDER_OPENROUTER, "z-ai/glm-5.1"),
 }
 
 # Default model key per provider
@@ -44,6 +57,7 @@ PROVIDER_DEFAULTS: dict[str, str] = {
     PROVIDER_OPENAI:    "gpt-5.4-mini",
     PROVIDER_ANTHROPIC: "claude-sonnet-4-6",
     PROVIDER_GOOGLE:    "gemini-3.1-pro-preview",
+    PROVIDER_OPENROUTER: "deepseek-v4",
 }
 
 # Phase 2 pre-registration (PHASE2_PREREG.md §2, Option A): a SINGLE fixed
@@ -62,6 +76,11 @@ MODEL_DISPLAY_NAMES: dict[str, str] = {
     "claude-sonnet-4-6":      "Claude Sonnet 4.6 (abril 2026)",
     "gemini-2.5-flash":       "Gemini 2.5 Flash",
     "gemini-3.1-pro-preview": "Gemini 3.1 Pro Preview (abril 2026)",
+    # Chinos (Fase 2)
+    "deepseek-v4": "DeepSeek V4 (Fase 2)",
+    "qwen-3.6":    "Qwen 3.6 — Alibaba (Fase 2)",
+    "kimi-k2.6":   "Kimi K2.6 — Moonshot (Fase 2)",
+    "glm-5.1":     "GLM-5.1 — Zhipu/Z.ai (Fase 2)",
 }
 
 # o-series models that do not accept a temperature parameter
@@ -163,6 +182,15 @@ def make_client(model_key: str) -> LLMClient:
     api_key = os.environ.get("ANTHROPIC_API_KEY", "")
     native = anthropic.Anthropic(api_key=api_key)
 
+  elif provider == PROVIDER_OPENROUTER:
+    # OpenAI-compatible gateway (OpenRouter by default; point
+    # OPENROUTER_BASE_URL at Vercel AI Gateway to switch). Reuses the
+    # OpenAI SDK and the same chat.completions retry path.
+    api_key = os.environ.get("OPENROUTER_API_KEY", "")
+    base_url = os.environ.get(
+        "OPENROUTER_BASE_URL", _OPENROUTER_DEFAULT_BASE_URL)
+    native = openai.OpenAI(api_key=api_key, base_url=base_url)
+
   elif provider == PROVIDER_GOOGLE:
     try:
       from google import genai as google_genai  # type: ignore[import-untyped]
@@ -183,7 +211,7 @@ def make_client(model_key: str) -> LLMClient:
 def get_response(llm: LLMClient, system: str, messages: list[dict[str, str]],
                  temp: float) -> str:
   """Dispatch to the appropriate provider and return the response text."""
-  if llm.provider == PROVIDER_OPENAI:
+  if llm.provider in (PROVIDER_OPENAI, PROVIDER_OPENROUTER):
     return _openai_message(llm.client, llm.model_id, system, messages, temp)
   if llm.provider == PROVIDER_ANTHROPIC:
     return _anthropic_message(llm.client, llm.model_id, system, messages, temp)
