@@ -42,12 +42,14 @@ PAPER_ALGOS = [
 WILLIS_DNOISE = {"Claude 3.5 Sonnet": 13, "ChatGPT-4o": 6}
 
 # ---------------------------------------------------------------------------
-# Phase 2 (PHASE2_PREREG.md) — H5 / H6 + ecosystem grouping
+# Phase 2 (PHASE2_PREREG.md + Amendment 2026-05-17 B) — H5 / H6
 # ---------------------------------------------------------------------------
-# Phase 2 is self-contained: ALL 8 models are read from the Phase 2 results
-# file, generated under the single FIXED converter (GPT-5.4 Mini). Phase 1
-# Western numbers are NOT reused here — that would reintroduce the
-# per-provider-conversion confound Phase 2 exists to remove.
+# Phase 2a is a SELF-CONTAINED CHINESE-ONLY study: only the 4 Chinese
+# models, all converted by the single FIXED converter (GPT-5.4 Mini), are
+# read from the Phase 2 results file. No Western numbers enter this paper,
+# so every comparison here is Chinese-vs-Chinese under one identical
+# converter — internally confound-free. The Western re-run and any
+# cross-ecosystem comparison are future work, not Phase 2a.
 PHASE2_RESULTS_GLOB = "results/phase2_moran_final_*.json"
 
 # Chinese models (PHASE2_PREREG.md §4). Code change #3 MUST generate with
@@ -66,16 +68,11 @@ CHINESE_ALGOS = [
     ("glm_51_prose_75",           "GLM-5.1",         "Prose"),
     ("glm_51_refine_75",          "GLM-5.1",         "Refine"),
 ]
-# Western models re-run under the fixed converter reuse the Phase 1
-# algo/model/prompt names (PAPER_ALGOS) but their DATA comes from the
-# Phase 2 file.
-ECOSYSTEM = {
-    "Claude 4.6": "Western", "Gemini 2.5 Flash": "Western",
-    "Gemini 3.1 Pro": "Western", "GPT-5.4 Mini": "Western",
-    "DeepSeek V4 Pro": "Chinese", "Qwen3-Max": "Chinese",
-    "Kimi K2.6": "Chinese", "GLM-5.1": "Chinese",
-}
-# Phase 1 Western cooperative-plurality rate referenced by H5.
+# The 4 Chinese labs (distinct model names in CHINESE_ALGOS).
+CHINESE_LABS = ["DeepSeek V4 Pro", "Qwen3-Max", "Kimi K2.6", "GLM-5.1"]
+# Phase 1 Western cooperative-plurality rate — used by H5 only as a
+# PUBLISHED external baseline (different, per-provider converter), i.e. a
+# literature contrast, NOT a controlled comparison (see amendment).
 PHASE1_PLURALITY = (9, 12)
 
 
@@ -140,18 +137,18 @@ def _var(xs):
 
 def phase2_section(d2, src2):
     print("\n" + "=" * 72)
-    print("PHASE 2 (PHASE2_PREREG.md) — H5 / H6, fixed-converter pipeline")
+    print("PHASE 2a (Chinese-only, fixed-converter) — H5 / H6")
     print("=" * 72)
 
     if d2 is None:
         print("  PENDING — no Phase 2 results found "
               f"({PHASE2_RESULTS_GLOB}).")
-        print("  This is expected until code changes #3–#5 have run:")
-        print("   #3 generate 75 strat/model for 8 models (fixed converter),")
+        print("  Expected until the Chinese-only pipeline has run:")
+        print("   #3 generate 75 strat/model for the 4 CHINESE models")
+        print("      (fixed converter GPT-5.4 Mini),")
         print("   #4 tournaments+Moran n=500, #5 DeepSeek-V4 10% robustness.")
-        print("  Code change #6 (this analysis) is wired and will activate")
-        print("  automatically once the Phase 2 results file is present.")
-        print("  Expected Chinese `--algo` base names for code change #3:")
+        print("  This analysis activates automatically once the results")
+        print("  file is present.  Expected Chinese `--algo` base names:")
         for algo, model, prompt in CHINESE_ALGOS:
             print(f"    {algo:<26} ({model}, {prompt})")
         return
@@ -160,8 +157,6 @@ def phase2_section(d2, src2):
 
     def r2(algo, pop, noise=False):
         return d2.get((algo + ("_noise" if noise else ""), pop), {})
-
-    all_algos = [(a, m, p) for a, m, p in PAPER_ALGOS] + CHINESE_ALGOS
 
     # ---- H5 — cooperative-bias generality (Chinese, 4:4:4 clean) ----
     print("-" * 72)
@@ -183,7 +178,7 @@ def phase2_section(d2, src2):
         coop_pluralities += int(is_coop)
         flag = "C-plurality" if is_coop else (
             "A-plurality" if a >= c and a >= n else "N-plurality")
-        print(f"  {model:<13}{prompt:<8} "
+        print(f"  {model:<16}{prompt:<8} "
               f"{round(a):>2}/{round(c):>2}/{round(n):>2}   {flag}")
     if missing:
         print(f"  ({len(missing)} condition(s) absent: "
@@ -192,119 +187,90 @@ def phase2_section(d2, src2):
         w_k, w_t = PHASE1_PLURALITY
         z, p = z_test(coop_pluralities, w_k, n1=counted, n2=w_t)
         print(f"\n  Chinese: {coop_pluralities}/{counted} cooperative-"
-              f"plurality   vs   Phase-1 Western {w_k}/{w_t}")
-        print(f"  Two-proportion z = {z:+.2f}, p = {p:.3f} "
-              f"(small-n, descriptive)")
+              f"plurality   vs   published Phase-1 Western {w_k}/{w_t}")
+        print(f"  Two-proportion z = {z:+.2f}, p = {p:.3f}  (DESCRIPTIVE:")
+        print("  literature contrast vs a baseline made with a different,")
+        print("  per-provider converter — NOT a controlled comparison.)")
         if counted < w_t:
             print("  Verdict: PARTIAL DATA — interim only, not the "
                   "pre-registered call.")
         elif p >= 0.05:
-            print("  Verdict: consistent with H5 — Chinese rate not "
-                  "significantly different from Western (H1 generalises).")
+            print("  Verdict: consistent with H5 — Chinese cooperative-"
+                  "plurality rate is")
+            print("  not distinguishable from the published Western "
+                  "baseline (H1 appears")
+            print("  to generalise; converter difference is a stated "
+                  "limitation).")
         else:
             print("  Verdict: H5 NOT supported — Chinese cooperative-"
-                  "plurality rate differs significantly from Western.")
+                  "plurality rate differs")
+            print("  from the published Western baseline (converter "
+                  "difference caveated).")
 
-    # ---- H6 — ecosystem structure on P_A (4:4:4 clean, Default) ----
+    # ---- H6 (reformulated, amendment 2026-05-17 B) ----
+    # Within-Chinese lab-level divergence: are the 4 Chinese frontier
+    # models statistically distinguishable on P_A? (i.e. not monolithic)
     print("\n" + "-" * 72)
-    print("H6 — divergence is lab-level, not 'Western vs Chinese'")
-    print("     (P_A at 4:4:4 clean, Default; same z-test + Holm-Bonf.)")
+    print("H6 (reformulated) — Chinese-model behaviour is NOT monolithic:")
+    print("     the 4 labs diverge at the lab level")
+    print("     (P_A at 4:4:4 clean, Default; pairwise z + Holm-Bonferroni)")
     print("-" * 72)
-    pa = {}      # model -> aggressive-equilibrium count (out of N)
-    for algo, model, prompt in all_algos:
+    pa = {}      # lab -> aggressive-equilibrium count (out of N)
+    for algo, model, prompt in CHINESE_ALGOS:
         if prompt != "Default":
             continue
         rec = r2(algo, "444")
         if rec:
             pa[model] = int(rec.get("Aggressive", 0))
-    have = [m for m in ECOSYSTEM if m in pa]
-    if len(have) < len(ECOSYSTEM):
-        absent = [m for m in ECOSYSTEM if m not in pa]
+    absent = [m for m in CHINESE_LABS if m not in pa]
+    if absent:
         print(f"  PARTIAL DATA — missing Default 4:4:4 for: "
               f"{', '.join(absent)}")
-        print("  H6 verdict deferred until all 8 models are present.")
+        print("  H6 verdict deferred until all 4 Chinese labs present.")
         return
 
-    order = [m for m in ECOSYSTEM]
-    print(f"  {'Model':<18}{'P_A%':>7}{'Ecosystem':>12}")
+    order = list(CHINESE_LABS)
+    print(f"  {'Lab':<18}{'P_A%':>7}")
     for m in order:
-        print(f"  {m:<18}{round(100*pa[m]/N):>6}%{ECOSYSTEM[m]:>12}")
+        print(f"  {m:<18}{round(100*pa[m]/N):>6}%")
 
-    # full 8-model pairwise z-tests + Holm-Bonferroni
+    # all 6 pairwise z-tests among the 4 Chinese labs + Holm-Bonferroni
     pairs = []
     for i in range(len(order)):
         for j in range(i + 1, len(order)):
             a, b = order[i], order[j]
             z, p = z_test(pa[a], pa[b])
-            pairs.append((a, b, z, p, ECOSYSTEM[a] == ECOSYSTEM[b]))
+            pairs.append((a, b, z, p))
     pairs.sort(key=lambda t: t[3])
     k = len(pairs)
-    n_sig_within = n_sig_between = 0
-    print(f"\n  {'Comparison':<34}{'z':>8}{'p':>11}{'HB-thr':>9} grp sig")
-    for rank, (a, b, z, p, same_eco) in enumerate(pairs):
+    n_sig = 0
+    print(f"\n  {'Comparison':<34}{'z':>8}{'p':>12}{'HB-thr':>9}  sig")
+    for rank, (a, b, z, p) in enumerate(pairs):
         thr = 0.05 / (k - rank)
         sig = p < thr
-        grp = "in" if same_eco else "x "
-        if sig and same_eco:
-            n_sig_within += 1
-        if sig and not same_eco:
-            n_sig_between += 1
+        n_sig += int(sig)
         print(f"  {a} vs {b}".ljust(34)
-              + f"{z:>+8.2f}{p:>11.2e}{thr:>9.4f}  {grp} "
+              + f"{z:>+8.2f}{p:>12.2e}{thr:>9.4f}  "
               + ("***" if sig else "ns"))
 
-    # ecosystem-grouped pooled comparison
-    west = [m for m in order if ECOSYSTEM[m] == "Western"]
-    chin = [m for m in order if ECOSYSTEM[m] == "Chinese"]
-    xw, xc = sum(pa[m] for m in west), sum(pa[m] for m in chin)
-    zg, pg = z_test(xw, xc, n1=N * len(west), n2=N * len(chin))
-    print(f"\n  Ecosystem-grouped (pooled): "
-          f"Western P_A={100*xw/(N*len(west)):.1f}%  "
-          f"Chinese P_A={100*xc/(N*len(chin)):.1f}%")
-    print(f"  Pooled z = {zg:+.2f}, p = {pg:.3f} "
-          f"({'significant' if pg < 0.05 else 'NOT significant'})")
+    pa_pct = [100 * pa[m] / N for m in order]
+    spread = max(pa_pct) - min(pa_pct)
+    print(f"\n  P_A spread across labs: {min(pa_pct):.1f}–{max(pa_pct):.1f}%"
+          f"  (range {spread:.1f}pp, SD {math.sqrt(_var(pa_pct)):.1f}pp)")
 
-    # within- vs between-ecosystem variance on P_A (one-way decomposition)
-    pa_pct = {m: 100 * pa[m] / N for m in order}
-    w_vals = [pa_pct[m] for m in west]
-    c_vals = [pa_pct[m] for m in chin]
-    grand = _mean([pa_pct[m] for m in order])
-    ss_between = (len(w_vals) * (_mean(w_vals) - grand) ** 2
-                  + len(c_vals) * (_mean(c_vals) - grand) ** 2)
-    ss_within = (sum((v - _mean(w_vals)) ** 2 for v in w_vals)
-                 + sum((v - _mean(c_vals)) ** 2 for v in c_vals))
-    df_b, df_w = 1, len(order) - 2
-    ms_b, ms_w = ss_between / df_b, ss_within / df_w
-    f_stat = ms_b / ms_w if ms_w > 0 else float("inf")
-    within_sd = math.sqrt(_var(w_vals + c_vals))
-    eco_gap = abs(_mean(w_vals) - _mean(c_vals))
-    print(f"\n  Within-ecosystem variance decomposition (P_A%):")
-    print(f"    MS_between(ecosystem) = {ms_b:6.2f}   "
-          f"MS_within(lab) = {ms_w:6.2f}   F = {f_stat:.2f}")
-    print(f"    |mean_W - mean_C| = {eco_gap:.1f}pp   "
-          f"pooled within-ecosystem SD = {within_sd:.1f}pp")
-    print("    (F is descriptive — no scipy; inference via the z-tests "
-          "above.)")
-
-    lab_dominates = (n_sig_within >= n_sig_between) or (f_stat < 1.0)
-    eco_weak = pg >= 0.05 or eco_gap <= within_sd
     print("\n  Verdict:")
-    if lab_dominates and eco_weak:
-        print("    H6 SUPPORTED — significant divergence occurs WITHIN "
-              "ecosystems")
-        print("    as much as between them; the coarse Western/Chinese "
-              "split is")
-        print("    not the driver (lab-level alignment choices are).")
-    elif not eco_weak and not lab_dominates:
-        print("    H6 NOT SUPPORTED — divergence tracks the ecosystem "
-              "split:")
-        print("    pooled Western vs Chinese differ significantly and "
-              "exceed")
-        print("    within-ecosystem spread.")
+    if n_sig >= 1:
+        print(f"    H6 SUPPORTED — {n_sig}/{k} lab pair(s) differ after "
+              "Holm-Bonferroni.")
+        print("    Chinese frontier models are NOT monolithic; behaviour")
+        print("    diverges at the lab level under one fixed converter.")
     else:
-        print("    H6 MIXED — evidence is partial; reported honestly, "
-              "no post-hoc")
-        print("    edit to H6 (see PHASE2_PREREG.md §7 guardrails).")
+        print("    H6 NOT SUPPORTED — no lab pair survives "
+              "Holm-Bonferroni;")
+        print("    the 4 Chinese labs are statistically indistinguishable")
+        print("    on P_A at n=500 (cannot reject monolithic behaviour).")
+    print("    (Reported per the §3/§7 honesty discipline; H6 fixed "
+          "ante-hoc.)")
 
 
 def main():

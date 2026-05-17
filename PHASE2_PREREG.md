@@ -34,6 +34,42 @@ This document is both (a) the scientific pre-registration for Phase 2 and
   population tournament/Moran. Do not start 2b until 2a is written up.
 - **Output:** a standalone Phase 2 paper (target AAMAS 2028 or JAAMAS).
 
+### Amendment 2026-05-17 (B) — Phase 2a narrowed to a Chinese-only study
+
+Made **before any Phase 2 results exist** (only a failed Python-3.14
+smoke test had occurred; no equilibria observed). Original §1–§3 text is
+preserved unchanged for transparency; this amendment governs.
+
+- **New 2a scope:** a *self-contained Chinese-only* study — 4 Chinese
+  frontier models, all strategies converted by the single fixed
+  converter (GPT-5.4 Mini). The Western re-run **and** the cross-ecosystem
+  comparison are **removed from 2a** and moved to future work (folded
+  with the already-deferred 2b combined study).
+- **Why this is cleaner, not weaker:** with no Western numbers in the
+  paper, every comparison is Chinese-vs-Chinese under one identical
+  converter, so the Phase-1 confound (reviewers' MUST-3) **cannot arise
+  here**. It also removes the Western re-generation cost and the
+  Anthropic/Google key dependency.
+- **H5 (kept) — reframed honestly.** Still tests cooperative-plurality
+  generality, but the comparison to Phase 1's 9/12 is now explicitly a
+  **comparison to a published baseline produced under a different
+  (per-provider) converter** — a literature contrast, NOT a controlled
+  experiment. The converter difference is a stated limitation; the test
+  is reported as descriptive (small-n).
+- **H6 (reformulated, ante-hoc) — within-Chinese lab-level divergence.**
+  Replaces the cross-ecosystem "Western vs Chinese" formulation (untestable
+  in a Chinese-only paper). New H6: *the 4 Chinese frontier models diverge
+  significantly at the lab level — Chinese-model behaviour is not
+  monolithic.* Tested with the same pairwise two-sample z-tests +
+  Holm-Bonferroni on $P_A$ across the 4 Chinese models (4:4:4 clean,
+  Default); "significant divergence" = ≥1 pair surviving Holm-Bonferroni.
+  All under the fixed converter, so internally confound-free.
+- **Unchanged & now more central:** fixed converter = GPT-5.4 Mini;
+  pre-registered robustness check = re-convert a random 10% with
+  DeepSeek-V4-Pro and show equilibria are converter-invariant.
+- Honesty discipline (§3 last bullet, §7) still binds: no further
+  post-results hypothesis edits.
+
 ## 2. The confound fix — **Option A (confirmed)**
 
 The independent variable is each model's **strategy-generation**
