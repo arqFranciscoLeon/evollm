@@ -46,6 +46,12 @@ PROVIDER_DEFAULTS: dict[str, str] = {
     PROVIDER_GOOGLE:    "gemini-3.1-pro-preview",
 }
 
+# Phase 2 pre-registration (PHASE2_PREREG.md §2, Option A): a SINGLE fixed
+# model performs the natural-language → Python conversion for ALL strategy
+# generators, so provider identity is not confounded with coding ability.
+# Strategy *generation* stays per-model; only *conversion* is held constant.
+FIXED_CONVERTER_MODEL: str = "gpt-5.4-mini"
+
 # Human-readable display names for the GUI
 MODEL_DISPLAY_NAMES: dict[str, str] = {
     # Originales

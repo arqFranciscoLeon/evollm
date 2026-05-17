@@ -293,6 +293,16 @@ def parse_arguments() -> argparse.Namespace:
           "If omitted, the provider default is used."
       ))
   parser.add_argument(
+      "--converter_model",
+      type=str,
+      default=llm_clients.FIXED_CONVERTER_MODEL,
+      help=(
+          "Registry key of the FIXED model used to convert every model's "
+          "natural-language strategy into Python (decoupled from generation). "
+          f"Pre-registered default: '{llm_clients.FIXED_CONVERTER_MODEL}'. "
+          "Override only for the pre-registered robustness re-conversion check."
+      ))
+  parser.add_argument(
       "--n",
       type=int,
       required=True,
@@ -338,8 +348,22 @@ def create_strategies(args: argparse.Namespace):
 
   model_key = llm_clients.resolve_model(args.strategy_llm, args.model)
   strategy_client = llm_clients.make_client(model_key)
-  # Use the same model for algorithm generation (code synthesis)
-  algorithm_client = strategy_client
+
+  # Conversion (NL → Python) is held constant across all generators so that
+  # provider identity is not confounded with coding ability — see
+  # PHASE2_PREREG.md §2 (Option A). Reuse the strategy client only when the
+  # generator already *is* the fixed converter.
+  if args.converter_model == model_key:
+    algorithm_client = strategy_client
+  else:
+    algorithm_client = llm_clients.make_client(args.converter_model)
+
+  print(
+      f"  Generación: {model_key}  |  Conversión (fija): "
+      f"{args.converter_model}")
+  logger.info(
+      "Strategy generation model: %s | Fixed conversion model: %s",
+      model_key, args.converter_model)
 
   if args.resume:
     algos = algorithms.load_algorithms(args.algo)
