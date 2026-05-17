@@ -32,3 +32,5 @@ propuesta_temp.txt
 results/*_n5_moran.csv
 results/*_n10_moran.csv
 results/modal_waves_checkpoint.json
+
+logs/
