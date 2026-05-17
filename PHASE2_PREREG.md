@@ -85,6 +85,26 @@ the Phase 2 paper come from the fixed-converter pipeline.
 | Moonshot | Kimi K2.6 | Strong agentic |
 | Zhipu / Z.ai | GLM-5.1 | MIT-licensed, top SWE-bench |
 
+### Amendment 2026-05-17 (made BEFORE any Phase 2 runs)
+
+The original table above is preserved unchanged for transparency. On
+wiring the OpenRouter gateway, two of the four pre-registered model
+identifiers were not served under those exact names. Substitutions were
+fixed **before generating a single strategy** (no results seen), choosing
+each lab's current **flagship tier** for a clean flagship-vs-flagship
+cross-lab comparison:
+
+| Lab | Pre-registered | Served slug used | Nature of change |
+|-----|----------------|------------------|------------------|
+| DeepSeek | DeepSeek V4 | `deepseek/deepseek-v4-pro` | Exact-identifier resolution: the V4 Pro tier *is* DeepSeek V4 (the "benchmark leader" intended). Also the 2nd robustness converter. |
+| Alibaba | Qwen 3.6 | `qwen/qwen3-max` | True substitution: no "Qwen 3.6" exists; `qwen3-max` is Alibaba's current Qwen3 flagship — the closest faithful match. |
+| Moonshot | Kimi K2.6 | `moonshotai/kimi-k2.6` | None (exact). |
+| Zhipu / Z.ai | GLM-5.1 | `z-ai/glm-5.1` | None (exact). |
+
+Gateway: OpenRouter (OpenAI-compatible). Hypotheses **H5/H6 are
+unchanged**; this amendment concerns model availability only, recorded
+ante-hoc per the §7 honesty discipline.
+
 Western set (re-run under fixed converter): Claude Sonnet 4.6,
 Gemini 2.5 Flash, Gemini 3.1 Pro, GPT-5.4 Mini (as Phase 1).
 

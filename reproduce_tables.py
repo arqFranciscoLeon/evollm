@@ -53,18 +53,18 @@ PHASE2_RESULTS_GLOB = "results/phase2_moran_final_*.json"
 # Chinese models (PHASE2_PREREG.md §4). Code change #3 MUST generate with
 # these exact `--algo` base names so this loader finds them.
 CHINESE_ALGOS = [
-    ("deepseek_v4_default_75", "DeepSeek V4", "Default"),
-    ("deepseek_v4_prose_75",   "DeepSeek V4", "Prose"),
-    ("deepseek_v4_refine_75",  "DeepSeek V4", "Refine"),
-    ("qwen_36_default_75",     "Qwen 3.6",    "Default"),
-    ("qwen_36_prose_75",       "Qwen 3.6",    "Prose"),
-    ("qwen_36_refine_75",      "Qwen 3.6",    "Refine"),
-    ("kimi_k26_default_75",    "Kimi K2.6",   "Default"),
-    ("kimi_k26_prose_75",      "Kimi K2.6",   "Prose"),
-    ("kimi_k26_refine_75",     "Kimi K2.6",   "Refine"),
-    ("glm_51_default_75",      "GLM-5.1",     "Default"),
-    ("glm_51_prose_75",        "GLM-5.1",     "Prose"),
-    ("glm_51_refine_75",       "GLM-5.1",     "Refine"),
+    ("deepseek_v4pro_default_75", "DeepSeek V4 Pro", "Default"),
+    ("deepseek_v4pro_prose_75",   "DeepSeek V4 Pro", "Prose"),
+    ("deepseek_v4pro_refine_75",  "DeepSeek V4 Pro", "Refine"),
+    ("qwen3max_default_75",       "Qwen3-Max",       "Default"),
+    ("qwen3max_prose_75",         "Qwen3-Max",       "Prose"),
+    ("qwen3max_refine_75",        "Qwen3-Max",       "Refine"),
+    ("kimi_k26_default_75",       "Kimi K2.6",       "Default"),
+    ("kimi_k26_prose_75",         "Kimi K2.6",       "Prose"),
+    ("kimi_k26_refine_75",        "Kimi K2.6",       "Refine"),
+    ("glm_51_default_75",         "GLM-5.1",         "Default"),
+    ("glm_51_prose_75",           "GLM-5.1",         "Prose"),
+    ("glm_51_refine_75",          "GLM-5.1",         "Refine"),
 ]
 # Western models re-run under the fixed converter reuse the Phase 1
 # algo/model/prompt names (PAPER_ALGOS) but their DATA comes from the
@@ -72,7 +72,7 @@ CHINESE_ALGOS = [
 ECOSYSTEM = {
     "Claude 4.6": "Western", "Gemini 2.5 Flash": "Western",
     "Gemini 3.1 Pro": "Western", "GPT-5.4 Mini": "Western",
-    "DeepSeek V4": "Chinese", "Qwen 3.6": "Chinese",
+    "DeepSeek V4 Pro": "Chinese", "Qwen3-Max": "Chinese",
     "Kimi K2.6": "Chinese", "GLM-5.1": "Chinese",
 }
 # Phase 1 Western cooperative-plurality rate referenced by H5.
