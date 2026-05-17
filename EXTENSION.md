@@ -49,7 +49,7 @@ Three prompt styles (Default, Prose, Self-Refine) × four population regimes
 ### 1. Environment
 ```shell
 conda env create -f environment.yml
-conda activate evollm
+conda activate evollm311
 export PYTHONPATH="$(pwd)/src"
 ```
 
