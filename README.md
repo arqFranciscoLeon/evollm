@@ -3,6 +3,17 @@ This repository accompanies the paper "Will Systems of LLM Agents Lead to Cooper
 - [AAMAS 2025 extended abstract](https://ifaamas.csc.liv.ac.uk/Proceedings/aamas2025/pdfs/p2786.pdf)
 - [Full paper on arXiv](https://arxiv.org/pdf/2501.16173)
 
+---
+
+> **Cross-provider n=500 extension (2026).**
+> [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20248615.svg)](https://doi.org/10.5281/zenodo.20248615)
+> This fork extends the benchmark to four 2025–2026 frontier models at
+> n=500 Moran iterations. See **[`EXTENSION.md`](./EXTENSION.md)** for the
+> scientific overview and **[`REPRODUCE.md`](./REPRODUCE.md)** to verify the
+> results in ~1 minute (`python reproduce_tables.py`).
+
+---
+
 This project is being extended to multi-player games: public goods game, collective risk dilemma and a common pool resource / fisheries game, in my other repo [emergent_llm](github.com/willis-richard/emergent_llm).
 
 ## Installation
