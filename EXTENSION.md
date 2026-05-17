@@ -1,5 +1,7 @@
 # Extension: Cross-Provider Benchmark with 2025–2026 Frontier Models (n=500)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20248615.svg)](https://doi.org/10.5281/zenodo.20248615)
+
 This is the **code and replication package** for the paper:
 
 > *Evolutionary Dynamics of Cooperation in Next-Generation LLM Agent Systems:
