@@ -259,7 +259,7 @@ def generate_class(text_file: TextIOWrapper, strategy_client: LLMClient,
           "\n\n" + write_class(initial_strategy, strategy, attitude, n, game,
                                rounds, noise, algorithm))
       return
-    except ValueError as e:
+    except (ValueError, RuntimeError) as e:
       last_error = e
       print(f"  Intento {attempt}/{max_retries} fallido para {attitude}_{n}: {e!s:.120}")
       logger.warning("Attempt %d/%d failed for %s_%d: %s", attempt, max_retries, attitude, n, e)

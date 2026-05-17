@@ -267,7 +267,21 @@ def _openai_message(client: openai.OpenAI, model_id: str, system: str,
   for attempt in range(_OPENAI_MAX_RETRIES):
     try:
       response = client.chat.completions.create(**kwargs)
-      return response.choices[0].message.content
+      content = response.choices[0].message.content
+      # Reasoning models reached via the gateway intermittently return
+      # content=None (answer left only in a reasoning field, or an empty
+      # completion). Treat as a transient, retryable failure rather than
+      # letting None propagate and crash the whole library build.
+      if content and content.strip():
+        return content
+      last_exc = RuntimeError(
+          f"empty/None content from '{model_id}' "
+          f"(finish_reason={response.choices[0].finish_reason})")
+      logger.warning(
+          "[OpenAI] Respuesta vacía de '%s' en intento %d/%d. Reintentando...",
+          model_id, attempt + 1, _OPENAI_MAX_RETRIES)
+      time.sleep(min(2 ** attempt, 8))
+      continue
     except openai.RateLimitError as exc:
       wait = min(_OPENAI_BACKOFF_BASE * (2 ** attempt), _OPENAI_BACKOFF_MAX)
       logger.warning(
