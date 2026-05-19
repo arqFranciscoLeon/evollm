@@ -44,7 +44,7 @@ LOGDIR = REPO / "logs" / "phase2_gen"
 MODELS = [
     ("deepseek-v4-pro", "deepseek_v4pro"),
     ("qwen3-max",        "qwen3max"),
-    ("kimi-k2.6",        "kimi_k26"),
+    ("kimi-k2.5",        "kimi_k25"),
     ("glm-5.1",          "glm_51"),
 ]
 # (prompt name, extra create_strategies flags)

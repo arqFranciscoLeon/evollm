@@ -49,6 +49,7 @@ MODEL_REGISTRY: dict[str, tuple[str, str]] = {
     "deepseek-v4-pro": (PROVIDER_OPENROUTER, "deepseek/deepseek-v4-pro"),
     "qwen3-max":       (PROVIDER_OPENROUTER, "qwen/qwen3-max"),
     "kimi-k2.6":       (PROVIDER_OPENROUTER, "moonshotai/kimi-k2.6"),
+    "kimi-k2.5":       (PROVIDER_OPENROUTER, "moonshotai/kimi-k2.5"),
     "glm-5.1":         (PROVIDER_OPENROUTER, "z-ai/glm-5.1"),
 }
 
