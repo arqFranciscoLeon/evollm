@@ -70,6 +70,43 @@ preserved unchanged for transparency; this amendment governs.
 - Honesty discipline (§3 last bullet, §7) still binds: no further
   post-results hypothesis edits.
 
+### Amendment 2026-05-20 (C) — Kimi model substitution; 4-lab design restored
+
+Made **before any Phase 2 equilibrium results exist** (only the strategy
+libraries have been generated; tournaments + Moran process not yet run).
+Documents two facts established by measure-first probes during generation.
+
+- **Kimi model substitution: K2.6 → K2.5.** The pre-registered Moonshot
+  flagship `moonshotai/kimi-k2.6` is **operationally infeasible at n=500
+  scale**: measured **$0.140/strategy** and **288 s/strategy** (extrapolating
+  to ~$114 and ~36 h sequential for the 6-library set). A measure-first
+  probe of `moonshotai/kimi-k2.5` (the immediately prior Moonshot frontier
+  release) showed **$0.0040/strategy** and **80 s/strategy** — viable.
+  Substituted ante-hoc. Both are Moonshot frontier-class models; the
+  lab-identity ("Moonshot Kimi") is preserved, only the specific release
+  changed. Note: per-token price does NOT predict per-strategy cost
+  (k2.5 is only −45% per-token vs k2.6 but ~35× cheaper per strategy
+  because k2.6 emits far more tokens — likely heavy internal reasoning
+  or verbose outputs); the per-strategy figures above are the
+  operationally relevant ones.
+- **4-lab design restored.** Amendment B (2026-05-17) flagged a possible
+  fallback to a 2-lab study if budget did not stretch. With the Kimi
+  substitution and Qwen3-Max's surprise low cost ($1.22 for the full
+  6-library Qwen lab), the **lab COUNT in 2a is back to 4** — matching the
+  original pre-registered design count. The final 2a lab set is:
+  DeepSeek V4 Pro, GLM-5.1, Qwen3-Max, Kimi-K2.5.
+- **H6 stays as reformulated in Amendment B** ("within-Chinese lab-level
+  divergence"), now applied to 4 labs (6 pairwise comparisons under
+  Holm-Bonferroni) instead of the 2-lab fallback (1 pairwise). Phase 2a
+  remains Chinese-only; the cross-ecosystem question stays in deferred
+  future work.
+- **reproduce_tables.py:** `CHINESE_LABS` and `CHINESE_ALGOS` updated
+  k2.6 → k2.5 in lockstep with this amendment.
+- **Generation cost (final, measured):** DeepSeek $7.75 + GLM $20.61 +
+  Qwen $1.22 + Kimi-K2.5 $8.38 ≈ **$37.96 OpenRouter generation** (plus
+  ~$2 of probes/verification = **$39.90 total** consumed). All 24
+  libraries (4 labs × 3 prompts × {clean, noise}) committed.
+
 ## 2. The confound fix — **Option A (confirmed)**
 
 The independent variable is each model's **strategy-generation**

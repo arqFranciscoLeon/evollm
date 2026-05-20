@@ -61,15 +61,15 @@ CHINESE_ALGOS = [
     ("qwen3max_default_75",       "Qwen3-Max",       "Default"),
     ("qwen3max_prose_75",         "Qwen3-Max",       "Prose"),
     ("qwen3max_refine_75",        "Qwen3-Max",       "Refine"),
-    ("kimi_k26_default_75",       "Kimi K2.6",       "Default"),
-    ("kimi_k26_prose_75",         "Kimi K2.6",       "Prose"),
-    ("kimi_k26_refine_75",        "Kimi K2.6",       "Refine"),
+    ("kimi_k25_default_75",       "Kimi K2.5",       "Default"),
+    ("kimi_k25_prose_75",         "Kimi K2.5",       "Prose"),
+    ("kimi_k25_refine_75",        "Kimi K2.5",       "Refine"),
     ("glm_51_default_75",         "GLM-5.1",         "Default"),
     ("glm_51_prose_75",           "GLM-5.1",         "Prose"),
     ("glm_51_refine_75",          "GLM-5.1",         "Refine"),
 ]
 # The 4 Chinese labs (distinct model names in CHINESE_ALGOS).
-CHINESE_LABS = ["DeepSeek V4 Pro", "Qwen3-Max", "Kimi K2.6", "GLM-5.1"]
+CHINESE_LABS = ["DeepSeek V4 Pro", "Qwen3-Max", "Kimi K2.5", "GLM-5.1"]
 # Phase 1 Western cooperative-plurality rate — used by H5 only as a
 # PUBLISHED external baseline (different, per-provider converter), i.e. a
 # literature contrast, NOT a controlled comparison (see amendment).
