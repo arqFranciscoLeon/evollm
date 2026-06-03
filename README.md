@@ -5,6 +5,15 @@ This repository accompanies the paper "Will Systems of LLM Agents Lead to Cooper
 
 This project is being extended to multi-player games: public goods game, collective risk dilemma and a common pool resource / fisheries game, in my other repo [emergent_llm](github.com/willis-richard/emergent_llm).
 
+## Cross-Provider Extension (2025–2026)
+
+This fork extends the benchmark to four next-generation models — Claude Sonnet 4.6, Gemini 2.5 Flash, Gemini 3.1 Pro, and GPT-5.4 Mini — under the identical protocol.
+
+- **Preprint:** [arXiv:2605.29874](https://arxiv.org/abs/2605.29874) — *Evolutionary Dynamics of Cooperation in Next-Generation LLM Agent Systems: A Cross-Provider Empirical Extension* (León, 2026)
+- **Replication package (n=500 Moran):** [10.5281/zenodo.20248615](https://doi.org/10.5281/zenodo.20248615)
+- **Extension notes:** see [`EXTENSION.md`](./EXTENSION.md)
+- **Branch:** `extension/2025-2026-models`
+
 ## Installation
 
 Install the dependencies using conda

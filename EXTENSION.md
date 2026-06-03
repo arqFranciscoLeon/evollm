@@ -4,7 +4,9 @@ This branch (`extension/2025-2026-models`) extends the original Willis et al. (2
 benchmark to four next-generation LLM models spanning three providers.
 
 **Original paper:** Willis, Du, Leibo & Luck (2025) — [arXiv:2501.16173](https://arxiv.org/abs/2501.16173)  
-**Extension by:** Francisco León — Universidad de Granada (2026)
+**Extension paper:** León (2026) — [arXiv:2605.29874](https://arxiv.org/abs/2605.29874)  
+**Replication archive:** [10.5281/zenodo.20248615](https://doi.org/10.5281/zenodo.20248615)  
+**Author affiliation:** Institución Universitaria Colegio Mayor del Cauca
 
 ---
 
