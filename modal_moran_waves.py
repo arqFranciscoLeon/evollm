@@ -26,9 +26,15 @@ from collections import defaultdict
 
 TOTAL_ITERATIONS = 500     # Objetivo del paper
 BATCH_SIZE = 2             # iter por tarea (~5-10 min cada una)
-WAVE_SIZE = 100            # tareas por ola (Modal aguanta ~100 sin preemption masivo)
+WAVE_SIZE = 200            # tareas por ola (Modal aguanta más; aprovecha más paralelismo).
+                            # Phase 2a piloto (n=2, 2026-06-03): Modal dio 48 contenedores
+                            # simultáneos sin colas; ampliamos a 200 para que las olas
+                            # del real (n=500, 12k tareas) no sean el cuello de botella.
 CPUS_PER_JOB = 1
-TIMEOUT_SECONDS = 1800     # 30 min por batch
+TIMEOUT_SECONDS = 3600     # 60 min por batch. Phase 2a piloto detectó ~2 tareas con
+                            # iter Moran ~30 min cada una (estrategias chinas de
+                            # razonadores son código más complejo); subir a 60 min
+                            # elimina retries innecesarios (cada retry = full extra cost).
 
 ALGOS_CLEAN = [
     # Phase 2a — 4 Chinese labs × 3 prompts (n=500 Moran).
