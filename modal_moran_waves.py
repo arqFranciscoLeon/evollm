@@ -25,7 +25,15 @@ from collections import defaultdict
 # ── Configuracion ────────────────────────────────────────────────────────────
 
 TOTAL_ITERATIONS = 500     # Objetivo del paper
-BATCH_SIZE = 2             # iter por tarea (~5-10 min cada una)
+BATCH_SIZE = 1             # 1 iter por tarea. Diagnóstico local (2026-06-05)
+                            # mostró que glm_51_default tarda ~9 min/iter (3 bucles
+                            # O(n²) por turno — propiedad de la estrategia, NO un bug;
+                            # las otras 11 librerías corren <4 min). Con batch=2 esa
+                            # iteración lenta se duplicaba y reventaba el timeout en
+                            # Modal. Con batch=1 cada tarea es una sola iteración →
+                            # incluso la cola estocástica larga de glm_default cabe
+                            # holgada bajo TIMEOUT_SECONDS. Costo total idéntico
+                            # (mismos CPU-segundos, doble de tareas más pequeñas).
 WAVE_SIZE = 200            # tareas por ola (Modal aguanta más; aprovecha más paralelismo).
                             # Phase 2a piloto (n=2, 2026-06-03): Modal dio 48 contenedores
                             # simultáneos sin colas; ampliamos a 200 para que las olas

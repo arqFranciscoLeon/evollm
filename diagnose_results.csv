@@ -1,0 +1,13 @@
+libreria,seconds,minutes,timeout,verdict
+deepseek_v4pro_default_75,132.8,2.21,False,Rapida (<5 min)
+deepseek_v4pro_prose_75,39.0,0.65,False,Rapida (<5 min)
+deepseek_v4pro_refine_75,133.8,2.23,False,Rapida (<5 min)
+glm_51_default_75,546.9,9.12,False,Mediana (5-10 min)
+glm_51_prose_75,78.7,1.31,False,Rapida (<5 min)
+glm_51_refine_75,225.6,3.76,False,Rapida (<5 min)
+qwen3max_default_75,136.9,2.28,False,Rapida (<5 min)
+qwen3max_prose_75,77.2,1.29,False,Rapida (<5 min)
+qwen3max_refine_75,214.5,3.57,False,Rapida (<5 min)
+kimi_k25_default_75,69.3,1.16,False,Rapida (<5 min)
+kimi_k25_prose_75,167.0,2.78,False,Rapida (<5 min)
+kimi_k25_refine_75,107.6,1.79,False,Rapida (<5 min)
