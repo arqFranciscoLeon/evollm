@@ -4,9 +4,23 @@ import csv
 import pprint
 import matplotlib.pyplot as plt
 from datetime import datetime
+import multiprocessing as _mp
 from multiprocessing import Pool
 from pathlib import Path
 import numpy as np
+
+# Python 3.14 changed the default multiprocessing start method on Linux from
+# "fork" to "forkserver"/"spawn". Under spawn the Pool workers re-import this
+# module and cannot reach run_moran_process (defined inside the __main__
+# block) -> they block forever at 0% CPU (observed: 20 h deadlock, load 0.08).
+# Phase 1 ran on Python 3.11 where "fork" was the default. Force fork back so
+# --processes > 1 works: forked workers inherit run_moran_process + players via
+# copy-on-write memory, no pickling/import needed. Per-iteration determinism is
+# unchanged (each MoranProcess gets its explicit seed).
+try:
+    _mp.set_start_method("fork")
+except (RuntimeError, ValueError):
+    pass
 
 from evollm import common
 from evollm import algorithms
