@@ -22,17 +22,24 @@ USO:
 """
 
 import argparse
-import ast
 import csv
 import json
 import os
+import re
 import shutil
+import signal
 import subprocess
 import sys
 import tempfile
 import time
 from datetime import datetime
 from pathlib import Path
+
+# Backstop: kill a subprocess that runs longer than this (legit refine
+# subprocesses legitimately run ~8 h for 63 iterations; pathological noise
+# subprocesses are bounded by moran_process.py's per-iteration SIGALRM cap,
+# but this is the belt-and-suspenders ceiling). Partial iterations are kept.
+SUBPROC_TIMEOUT = 43200  # 12 h
 
 ALGOS_CLEAN = [
     "deepseek_v4pro_default_75",
@@ -77,30 +84,26 @@ def split_iterations(total, n):
     return [base + (1 if i < rem else 0) for i in range(n)]
 
 
-def parse_counts(stdout):
-    """Extrae el dict de conteos de ganadores del stdout y lo normaliza a
-    Aggressive/Cooperative/Neutral. moran_process.py imprime winner_counts."""
-    for line in reversed(stdout.splitlines()):
-        line = line.strip()
-        if line.startswith("{") and any(att in line for att in ATTITUDES):
-            try:
-                raw = ast.literal_eval(line)
-            except Exception:
-                continue
-            tmp = {a: 0 for a in ATTITUDES}
-            for name, count in raw.items():
-                for att in ATTITUDES:
-                    if att in name:
-                        tmp[att] += count
-                        break
-            if sum(tmp.values()) > 0:
-                return tmp
-    return None
+_WINNER_RE = re.compile(r"^LLM:\s+(Aggressive|Cooperative|Neutral)\s+\(ours\)\s+\d+\s*$")
+
+
+def parse_winner_lines(text):
+    """Cuenta las líneas de ganador POR ITERACIÓN que imprime moran_process.py
+    (`print(winner, len(mp))` -> 'LLM: Cooperative (ours) 38'). Robusto: cuenta
+    las iteraciones efectivamente completadas aunque el subproceso se haya
+    matado antes de imprimir el dict final."""
+    counts = {a: 0 for a in ATTITUDES}
+    for line in text.splitlines():
+        m = _WINNER_RE.match(line.strip())
+        if m:
+            counts[m.group(1)] += 1
+    return counts
 
 
 def run_condition(workdir, script, algo, pop, total_iters, workers):
     """Lanza `workers` subprocesos --processes 1 en paralelo, cada uno con su
-    propio CWD temporal; suma sus conteos. Devuelve (counts, n_real, ok)."""
+    propio CWD temporal y su stdout volcado a un ARCHIVO (evita el pipe-buffer
+    deadlock). Suma los ganadores por iteración. Devuelve (counts, n_real, ok)."""
     chunks = [c for c in split_iterations(total_iters, workers) if c > 0]
     procs, tmpdirs = [], []
 
@@ -108,12 +111,14 @@ def run_condition(workdir, script, algo, pop, total_iters, workers):
         td = tempfile.mkdtemp(prefix=f"moran_{algo}_")
         (Path(td) / "results").mkdir(parents=True, exist_ok=True)
         tmpdirs.append(td)
+        outpath = Path(td) / "out.log"
 
         env = os.environ.copy()
         env["PYTHONPATH"] = str(workdir / "src")
         env["MPLBACKEND"] = "Agg"
         env["OMP_NUM_THREADS"] = "1"
         env["OPENBLAS_NUM_THREADS"] = "1"
+        env["PYTHONUNBUFFERED"] = "1"  # flush per-iteration lines so partials survive a kill
 
         cmd = [
             sys.executable, str(script),
@@ -122,25 +127,32 @@ def run_condition(workdir, script, algo, pop, total_iters, workers):
             "--iterations", str(ch),
             "--processes", "1",
         ]
-        p = subprocess.Popen(cmd, cwd=td, env=env,
-                             stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                             text=True)
-        procs.append((p, ch))
+        fout = open(outpath, "w")
+        # start_new_session: own process group, so we can killpg the whole tree.
+        p = subprocess.Popen(cmd, cwd=td, env=env, stdout=fout,
+                             stderr=subprocess.STDOUT, text=True,
+                             start_new_session=True)
+        procs.append((p, fout, outpath))
 
     counts = {a: 0 for a in ATTITUDES}
     n_real = 0
-    ok = True
-    for p, ch in procs:
-        out, err = p.communicate()
-        if p.returncode != 0:
-            ok = False
-            print(f"    [subproc rc={p.returncode}] {err.strip()[-300:]}", flush=True)
-            continue
-        c = parse_counts(out)
-        if c is None:
-            ok = False
-            print(f"    [parse-fail] tail: {out.strip().splitlines()[-3:]}", flush=True)
-            continue
+    for p, fout, outpath in procs:
+        try:
+            p.wait(timeout=SUBPROC_TIMEOUT)
+        except subprocess.TimeoutExpired:
+            try:
+                os.killpg(os.getpgid(p.pid), signal.SIGKILL)
+            except ProcessLookupError:
+                pass
+            p.wait()
+            print(f"    [subproc-timeout {SUBPROC_TIMEOUT}s] {algo}|{pop} "
+                  f"killed; partial kept", flush=True)
+        fout.close()
+        try:
+            text = outpath.read_text(errors="ignore")
+        except OSError:
+            text = ""
+        c = parse_winner_lines(text)
         for a in ATTITUDES:
             counts[a] += c[a]
         n_real += sum(c.values())
@@ -148,7 +160,7 @@ def run_condition(workdir, script, algo, pop, total_iters, workers):
     for td in tmpdirs:
         shutil.rmtree(td, ignore_errors=True)
 
-    return counts, n_real, ok
+    return counts, n_real, (n_real > 0)
 
 
 def append_history(workdir, algo, pop, counts, n_real):
