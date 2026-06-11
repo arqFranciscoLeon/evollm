@@ -65,8 +65,8 @@ Moran equilibria (% Aggressive / % Cooperative / % Neutral), balanced population
 ## Reproducing the Experiments
 
 ```bash
-# Install dependencies
-pip install -e .
+# Install dependencies (no setup.py — the project runs in place via PYTHONPATH)
+pip install axelrod
 
 # Run Moran process (example)
 PYTHONPATH=src python src/evollm/moran_process.py \

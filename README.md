@@ -19,7 +19,7 @@ This fork extends the benchmark to four next-generation models — Claude Sonnet
 Install the dependencies using conda
 
 ```shell
-conda create -f environment.yml
+conda env create -f environment.yml
 ```
 
 Activate the environment and add the repo to the PYTHONPATH
@@ -27,6 +27,25 @@ Activate the environment and add the repo to the PYTHONPATH
 ```shell
 conda activate evollm
 export PYTHONPATH="$(pwd)/src"
+```
+
+Alternatively, without conda (any Python ≥ 3.11):
+
+```shell
+pip install axelrod            # plus: anthropic / openai, only for strategy generation
+export PYTHONPATH="$(pwd)/src"
+```
+
+There is no `setup.py`/`pyproject.toml`; the project is run in place via `PYTHONPATH=src`.
+
+## Tests
+
+A smoke suite checks that every strategy library loads its expected classes
+and survives short matches (run by CI on every push):
+
+```shell
+pip install pytest
+PYTHONPATH=src pytest tests/test_smoke.py
 ```
 
 ## Prompts
