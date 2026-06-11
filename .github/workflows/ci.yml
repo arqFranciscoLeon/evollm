@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main, 'extension/**', 'phase2/**']
+  pull_request:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # 3.11 = environment.yml (strategies were generated there);
+        # 3.14 = the machine the Phase 2 experiments run on.
+        python-version: ['3.11', '3.14']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: pip install axelrod pytest
+      - name: Run smoke tests
+        env:
+          PYTHONPATH: src
+        run: pytest tests/test_smoke.py -q
