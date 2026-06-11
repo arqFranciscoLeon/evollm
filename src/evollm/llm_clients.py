@@ -25,6 +25,13 @@ logger = logging.getLogger(__name__)
 PROVIDER_OPENAI = "openai"
 PROVIDER_ANTHROPIC = "anthropic"
 PROVIDER_GOOGLE = "google"
+# Chinese frontier labs (Phase 2) reached through an OpenAI-compatible
+# gateway (OpenRouter by default; Vercel AI Gateway via OPENROUTER_BASE_URL).
+# No Chinese cloud account is required — see PHASE2_PREREG.md §5.
+PROVIDER_OPENROUTER = "openrouter"
+
+# OpenRouter / Vercel AI Gateway defaults (overridable via env).
+_OPENROUTER_DEFAULT_BASE_URL = "https://openrouter.ai/api/v1"
 
 # Maps registry key -> (provider, api_model_id)
 # Verified against live APIs on 2026-04-08.
@@ -37,6 +44,13 @@ MODEL_REGISTRY: dict[str, tuple[str, str]] = {
     "claude-sonnet-4-6":        (PROVIDER_ANTHROPIC, "claude-sonnet-4-6"),
     "gemini-3.1-pro-preview":   (PROVIDER_GOOGLE,    "gemini-3.1-pro-preview"),
     "gemini-2.5-flash":         (PROVIDER_GOOGLE,    "gemini-2.5-flash"),
+    # ── Modelos chinos (Fase 2 — PHASE2_PREREG.md §4 + enmienda 2026-05-17) ──
+    # Slugs servidos por OpenRouter; tier insignia de cada laboratorio.
+    "deepseek-v4-pro": (PROVIDER_OPENROUTER, "deepseek/deepseek-v4-pro"),
+    "qwen3-max":       (PROVIDER_OPENROUTER, "qwen/qwen3-max"),
+    "kimi-k2.6":       (PROVIDER_OPENROUTER, "moonshotai/kimi-k2.6"),
+    "kimi-k2.5":       (PROVIDER_OPENROUTER, "moonshotai/kimi-k2.5"),
+    "glm-5.1":         (PROVIDER_OPENROUTER, "z-ai/glm-5.1"),
 }
 
 # Default model key per provider
@@ -44,7 +58,14 @@ PROVIDER_DEFAULTS: dict[str, str] = {
     PROVIDER_OPENAI:    "gpt-5.4-mini",
     PROVIDER_ANTHROPIC: "claude-sonnet-4-6",
     PROVIDER_GOOGLE:    "gemini-3.1-pro-preview",
+    PROVIDER_OPENROUTER: "deepseek-v4-pro",
 }
+
+# Phase 2 pre-registration (PHASE2_PREREG.md §2, Option A): a SINGLE fixed
+# model performs the natural-language → Python conversion for ALL strategy
+# generators, so provider identity is not confounded with coding ability.
+# Strategy *generation* stays per-model; only *conversion* is held constant.
+FIXED_CONVERTER_MODEL: str = "gpt-5.4-mini"
 
 # Human-readable display names for the GUI
 MODEL_DISPLAY_NAMES: dict[str, str] = {
@@ -56,6 +77,11 @@ MODEL_DISPLAY_NAMES: dict[str, str] = {
     "claude-sonnet-4-6":      "Claude Sonnet 4.6 (abril 2026)",
     "gemini-2.5-flash":       "Gemini 2.5 Flash",
     "gemini-3.1-pro-preview": "Gemini 3.1 Pro Preview (abril 2026)",
+    # Chinos (Fase 2 — enmienda 2026-05-17: tier insignia por laboratorio)
+    "deepseek-v4-pro": "DeepSeek V4 Pro — DeepSeek (Fase 2)",
+    "qwen3-max":       "Qwen3-Max — Alibaba (Fase 2)",
+    "kimi-k2.6":       "Kimi K2.6 — Moonshot (Fase 2)",
+    "glm-5.1":         "GLM-5.1 — Zhipu/Z.ai (Fase 2)",
 }
 
 # o-series models that do not accept a temperature parameter
@@ -157,6 +183,15 @@ def make_client(model_key: str) -> LLMClient:
     api_key = os.environ.get("ANTHROPIC_API_KEY", "")
     native = anthropic.Anthropic(api_key=api_key)
 
+  elif provider == PROVIDER_OPENROUTER:
+    # OpenAI-compatible gateway (OpenRouter by default; point
+    # OPENROUTER_BASE_URL at Vercel AI Gateway to switch). Reuses the
+    # OpenAI SDK and the same chat.completions retry path.
+    api_key = os.environ.get("OPENROUTER_API_KEY", "")
+    base_url = os.environ.get(
+        "OPENROUTER_BASE_URL", _OPENROUTER_DEFAULT_BASE_URL)
+    native = openai.OpenAI(api_key=api_key, base_url=base_url)
+
   elif provider == PROVIDER_GOOGLE:
     try:
       from google import genai as google_genai  # type: ignore[import-untyped]
@@ -177,7 +212,7 @@ def make_client(model_key: str) -> LLMClient:
 def get_response(llm: LLMClient, system: str, messages: list[dict[str, str]],
                  temp: float) -> str:
   """Dispatch to the appropriate provider and return the response text."""
-  if llm.provider == PROVIDER_OPENAI:
+  if llm.provider in (PROVIDER_OPENAI, PROVIDER_OPENROUTER):
     return _openai_message(llm.client, llm.model_id, system, messages, temp)
   if llm.provider == PROVIDER_ANTHROPIC:
     return _anthropic_message(llm.client, llm.model_id, system, messages, temp)
@@ -233,7 +268,21 @@ def _openai_message(client: openai.OpenAI, model_id: str, system: str,
   for attempt in range(_OPENAI_MAX_RETRIES):
     try:
       response = client.chat.completions.create(**kwargs)
-      return response.choices[0].message.content
+      content = response.choices[0].message.content
+      # Reasoning models reached via the gateway intermittently return
+      # content=None (answer left only in a reasoning field, or an empty
+      # completion). Treat as a transient, retryable failure rather than
+      # letting None propagate and crash the whole library build.
+      if content and content.strip():
+        return content
+      last_exc = RuntimeError(
+          f"empty/None content from '{model_id}' "
+          f"(finish_reason={response.choices[0].finish_reason})")
+      logger.warning(
+          "[OpenAI] Respuesta vacía de '%s' en intento %d/%d. Reintentando...",
+          model_id, attempt + 1, _OPENAI_MAX_RETRIES)
+      time.sleep(min(2 ** attempt, 8))
+      continue
     except openai.RateLimitError as exc:
       wait = min(_OPENAI_BACKOFF_BASE * (2 ** attempt), _OPENAI_BACKOFF_MAX)
       logger.warning(

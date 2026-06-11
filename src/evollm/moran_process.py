@@ -4,12 +4,57 @@ import csv
 import pprint
 import matplotlib.pyplot as plt
 from datetime import datetime
+import multiprocessing as _mp
 from multiprocessing import Pool
 from pathlib import Path
 import numpy as np
 
+# Python 3.14 changed the default multiprocessing start method on Linux from
+# "fork" to "forkserver"/"spawn". Under spawn the Pool workers re-import this
+# module and cannot reach run_moran_process (defined inside the __main__
+# block) -> they block forever at 0% CPU (observed: 20 h deadlock, load 0.08).
+# Phase 1 ran on Python 3.11 where "fork" was the default. Force fork back so
+# --processes > 1 works: forked workers inherit run_moran_process + players via
+# copy-on-write memory, no pickling/import needed. Per-iteration determinism is
+# unchanged (each MoranProcess gets its explicit seed).
+try:
+    _mp.set_start_method("fork")
+except (RuntimeError, ValueError):
+    pass
+
 from evollm import common
 from evollm import algorithms
+
+# Per-iteration wall-clock cap. With move noise, some Moran iterations enter
+# near-neutral drift and take hours to fixate (observed: one iteration stuck
+# 18 h on deepseek_default_noise on the Hetzner run). Phase 1 capped these
+# implicitly via Modal's 30-min task timeout + skip; this restores that
+# behaviour at the iteration level using SIGALRM. Valid because --processes 1
+# runs the serial loop in the main thread (SIGALRM only fires there).
+import os
+import signal
+# 20 min default; legit refine iters avg ~8 min, pathological noise iters = hours.
+# Overridable via env for testing (e.g. MORAN_ITER_TIMEOUT=200).
+ITER_TIMEOUT_SECONDS = int(os.environ.get("MORAN_ITER_TIMEOUT", "1200"))
+
+# Under move noise, LLM-generated strategies frequently throw on the perturbed
+# history; algorithms.py catches each exception and defaults to Defect (the
+# intended, Phase-1-identical fallback) but logs one WARNING per move. Over a
+# noise tournament that is millions of lines, which (a) make each iteration
+# I/O-bound and crawl into the per-iteration cap, and (b) filled the stdout
+# pipe buffer -> the original 0%-CPU 18 h hang. The default-to-D BEHAVIOUR is
+# unchanged; we only mute the per-move warning so noise iterations run as fast
+# as clean ones.
+import logging as _logging
+_logging.getLogger("evollm.algorithms").setLevel(_logging.ERROR)
+
+
+class _IterationTimeout(Exception):
+    pass
+
+
+def _iter_alarm_handler(signum, frame):
+    raise _IterationTimeout()
 
 
 def parse_arguments() -> argparse.Namespace:
@@ -91,8 +136,13 @@ if __name__ == "__main__":
     fig = ax.get_figure()
     fig.savefig("results/example_moran.png", dpi=500, bbox_inches='tight')
   else:
+    _has_alarm = hasattr(signal, "SIGALRM")
+
     def run_moran_process(seed):
       try:
+        if _has_alarm:
+          signal.signal(signal.SIGALRM, _iter_alarm_handler)
+          signal.alarm(ITER_TIMEOUT_SECONDS)
         mp = axl.MoranProcess(
             players,
             seed=seed,
@@ -105,6 +155,10 @@ if __name__ == "__main__":
         winner = mp.winning_strategy_name
         print(winner, len(mp))
         return winner
+      except _IterationTimeout:
+        print(f"[WARN] seed={seed} exceeded {ITER_TIMEOUT_SECONDS}s (near-neutral "
+              f"drift under noise) — skipped")
+        return None
       except Exception as exc:
         import logging
         logging.getLogger(__name__).warning(
@@ -113,6 +167,9 @@ if __name__ == "__main__":
         )
         print(f"[WARN] seed={seed} failed ({type(exc).__name__}: {exc}) — skipped")
         return None
+      finally:
+        if _has_alarm:
+          signal.alarm(0)
 
     seeds = np.random.randint(0, np.iinfo(np.int32).max, size=parsed_args.iterations)
 

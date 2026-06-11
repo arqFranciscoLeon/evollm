@@ -89,9 +89,9 @@ def test_algorithm(algorithm: str):
         ast.Return, ast.UnaryOp, ast.BoolOp, ast.BinOp, ast.FunctionDef,
         ast.If, ast.IfExp, ast.And, ast.Or, ast.Not, ast.Eq, ast.Try, ast.ExceptHandler, ast.Raise, ast.Del, ast.Delete,
         ast.Compare, ast.USub, ast.In, ast.NotIn, ast.Is, ast.IsNot, ast.For, ast.Pass, ast.Break,
-        ast.List, ast.Dict, ast.Tuple, ast.Num, ast.Str, ast.Constant, ast.Set,
+        ast.List, ast.Dict, ast.Tuple, ast.Constant, ast.Set,
         ast.arg, ast.Name, ast.arguments, ast.keyword, ast.Expr, ast.Attribute,
-        ast.Call, ast.Store, ast.Index, ast.Slice, ast.Subscript, ast.Load,
+        ast.Call, ast.Store, ast.Slice, ast.Subscript, ast.Load,
         ast.GeneratorExp, ast.comprehension, ast.ListComp, ast.Lambda,
         ast.Gt, ast.Lt, ast.GtE, ast.LtE, ast.Eq, ast.NotEq,
         ast.Add, ast.Sub, ast.Mult, ast.Div, ast.FloorDiv,
@@ -259,7 +259,7 @@ def generate_class(text_file: TextIOWrapper, strategy_client: LLMClient,
           "\n\n" + write_class(initial_strategy, strategy, attitude, n, game,
                                rounds, noise, algorithm))
       return
-    except ValueError as e:
+    except (ValueError, RuntimeError) as e:
       last_error = e
       print(f"  Intento {attempt}/{max_retries} fallido para {attitude}_{n}: {e!s:.120}")
       logger.warning("Attempt %d/%d failed for %s_%d: %s", attempt, max_retries, attitude, n, e)
@@ -281,8 +281,11 @@ def parse_arguments() -> argparse.Namespace:
       "--strategy_llm",
       type=str,
       required=True,
-      choices=["openai", "anthropic", "google"],
-      help="Which LLM provider to use for strategy generation")
+      choices=["openai", "anthropic", "google", "openrouter"],
+      help=(
+          "Which LLM provider to use for strategy generation "
+          "('openrouter' = Chinese frontier models via the "
+          "OpenAI-compatible gateway)"))
   parser.add_argument(
       "--model",
       type=str,
@@ -291,6 +294,16 @@ def parse_arguments() -> argparse.Namespace:
           "Specific model override (e.g. gpt-4o, o4-mini, claude-sonnet-4-5, "
           "claude-opus-4-0, gemini-2.0-flash). "
           "If omitted, the provider default is used."
+      ))
+  parser.add_argument(
+      "--converter_model",
+      type=str,
+      default=llm_clients.FIXED_CONVERTER_MODEL,
+      help=(
+          "Registry key of the FIXED model used to convert every model's "
+          "natural-language strategy into Python (decoupled from generation). "
+          f"Pre-registered default: '{llm_clients.FIXED_CONVERTER_MODEL}'. "
+          "Override only for the pre-registered robustness re-conversion check."
       ))
   parser.add_argument(
       "--n",
@@ -338,8 +351,22 @@ def create_strategies(args: argparse.Namespace):
 
   model_key = llm_clients.resolve_model(args.strategy_llm, args.model)
   strategy_client = llm_clients.make_client(model_key)
-  # Use the same model for algorithm generation (code synthesis)
-  algorithm_client = strategy_client
+
+  # Conversion (NL → Python) is held constant across all generators so that
+  # provider identity is not confounded with coding ability — see
+  # PHASE2_PREREG.md §2 (Option A). Reuse the strategy client only when the
+  # generator already *is* the fixed converter.
+  if args.converter_model == model_key:
+    algorithm_client = strategy_client
+  else:
+    algorithm_client = llm_clients.make_client(args.converter_model)
+
+  print(
+      f"  Generación: {model_key}  |  Conversión (fija): "
+      f"{args.converter_model}")
+  logger.info(
+      "Strategy generation model: %s | Fixed conversion model: %s",
+      model_key, args.converter_model)
 
   if args.resume:
     algos = algorithms.load_algorithms(args.algo)

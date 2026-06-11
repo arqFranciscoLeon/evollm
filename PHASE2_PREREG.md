@@ -34,6 +34,79 @@ This document is both (a) the scientific pre-registration for Phase 2 and
   population tournament/Moran. Do not start 2b until 2a is written up.
 - **Output:** a standalone Phase 2 paper (target AAMAS 2028 or JAAMAS).
 
+### Amendment 2026-05-17 (B) — Phase 2a narrowed to a Chinese-only study
+
+Made **before any Phase 2 results exist** (only a failed Python-3.14
+smoke test had occurred; no equilibria observed). Original §1–§3 text is
+preserved unchanged for transparency; this amendment governs.
+
+- **New 2a scope:** a *self-contained Chinese-only* study — 4 Chinese
+  frontier models, all strategies converted by the single fixed
+  converter (GPT-5.4 Mini). The Western re-run **and** the cross-ecosystem
+  comparison are **removed from 2a** and moved to future work (folded
+  with the already-deferred 2b combined study).
+- **Why this is cleaner, not weaker:** with no Western numbers in the
+  paper, every comparison is Chinese-vs-Chinese under one identical
+  converter, so the Phase-1 confound (reviewers' MUST-3) **cannot arise
+  here**. It also removes the Western re-generation cost and the
+  Anthropic/Google key dependency.
+- **H5 (kept) — reframed honestly.** Still tests cooperative-plurality
+  generality, but the comparison to Phase 1's 9/12 is now explicitly a
+  **comparison to a published baseline produced under a different
+  (per-provider) converter** — a literature contrast, NOT a controlled
+  experiment. The converter difference is a stated limitation; the test
+  is reported as descriptive (small-n).
+- **H6 (reformulated, ante-hoc) — within-Chinese lab-level divergence.**
+  Replaces the cross-ecosystem "Western vs Chinese" formulation (untestable
+  in a Chinese-only paper). New H6: *the 4 Chinese frontier models diverge
+  significantly at the lab level — Chinese-model behaviour is not
+  monolithic.* Tested with the same pairwise two-sample z-tests +
+  Holm-Bonferroni on $P_A$ across the 4 Chinese models (4:4:4 clean,
+  Default); "significant divergence" = ≥1 pair surviving Holm-Bonferroni.
+  All under the fixed converter, so internally confound-free.
+- **Unchanged & now more central:** fixed converter = GPT-5.4 Mini;
+  pre-registered robustness check = re-convert a random 10% with
+  DeepSeek-V4-Pro and show equilibria are converter-invariant.
+- Honesty discipline (§3 last bullet, §7) still binds: no further
+  post-results hypothesis edits.
+
+### Amendment 2026-05-20 (C) — Kimi model substitution; 4-lab design restored
+
+Made **before any Phase 2 equilibrium results exist** (only the strategy
+libraries have been generated; tournaments + Moran process not yet run).
+Documents two facts established by measure-first probes during generation.
+
+- **Kimi model substitution: K2.6 → K2.5.** The pre-registered Moonshot
+  flagship `moonshotai/kimi-k2.6` is **operationally infeasible at n=500
+  scale**: measured **$0.140/strategy** and **288 s/strategy** (extrapolating
+  to ~$114 and ~36 h sequential for the 6-library set). A measure-first
+  probe of `moonshotai/kimi-k2.5` (the immediately prior Moonshot frontier
+  release) showed **$0.0040/strategy** and **80 s/strategy** — viable.
+  Substituted ante-hoc. Both are Moonshot frontier-class models; the
+  lab-identity ("Moonshot Kimi") is preserved, only the specific release
+  changed. Note: per-token price does NOT predict per-strategy cost
+  (k2.5 is only −45% per-token vs k2.6 but ~35× cheaper per strategy
+  because k2.6 emits far more tokens — likely heavy internal reasoning
+  or verbose outputs); the per-strategy figures above are the
+  operationally relevant ones.
+- **4-lab design restored.** Amendment B (2026-05-17) flagged a possible
+  fallback to a 2-lab study if budget did not stretch. With the Kimi
+  substitution and Qwen3-Max's surprise low cost ($1.22 for the full
+  6-library Qwen lab), the **lab COUNT in 2a is back to 4** — matching the
+  original pre-registered design count. The final 2a lab set is:
+  DeepSeek V4 Pro, GLM-5.1, Qwen3-Max, Kimi-K2.5.
+- **H6 stays as reformulated in Amendment B** ("within-Chinese lab-level
+  divergence"), now applied to 4 labs (6 pairwise comparisons under
+  Holm-Bonferroni) instead of the 2-lab fallback (1 pairwise). Phase 2a
+  remains Chinese-only; the cross-ecosystem question stays in deferred
+  future work.
+- **reproduce_tables.py:** `CHINESE_LABS` and `CHINESE_ALGOS` updated
+  k2.6 → k2.5 in lockstep with this amendment.
+- **Generation cost (final, measured):** DeepSeek $7.75 + GLM $20.61 +
+  Qwen $1.22 + Kimi-K2.5 $8.38 ≈ **$37.96 OpenRouter generation** (plus
+  ~$2 of probes/verification = **$39.90 total** consumed). All 24
+  libraries (4 labs × 3 prompts × {clean, noise}) committed.
+
 ## 2. The confound fix — **Option A (confirmed)**
 
 The independent variable is each model's **strategy-generation**
@@ -84,6 +157,26 @@ the Phase 2 paper come from the fixed-converter pipeline.
 | Alibaba | Qwen 3.6 | Multilingual, wide size range |
 | Moonshot | Kimi K2.6 | Strong agentic |
 | Zhipu / Z.ai | GLM-5.1 | MIT-licensed, top SWE-bench |
+
+### Amendment 2026-05-17 (made BEFORE any Phase 2 runs)
+
+The original table above is preserved unchanged for transparency. On
+wiring the OpenRouter gateway, two of the four pre-registered model
+identifiers were not served under those exact names. Substitutions were
+fixed **before generating a single strategy** (no results seen), choosing
+each lab's current **flagship tier** for a clean flagship-vs-flagship
+cross-lab comparison:
+
+| Lab | Pre-registered | Served slug used | Nature of change |
+|-----|----------------|------------------|------------------|
+| DeepSeek | DeepSeek V4 | `deepseek/deepseek-v4-pro` | Exact-identifier resolution: the V4 Pro tier *is* DeepSeek V4 (the "benchmark leader" intended). Also the 2nd robustness converter. |
+| Alibaba | Qwen 3.6 | `qwen/qwen3-max` | True substitution: no "Qwen 3.6" exists; `qwen3-max` is Alibaba's current Qwen3 flagship — the closest faithful match. |
+| Moonshot | Kimi K2.6 | `moonshotai/kimi-k2.6` | None (exact). |
+| Zhipu / Z.ai | GLM-5.1 | `z-ai/glm-5.1` | None (exact). |
+
+Gateway: OpenRouter (OpenAI-compatible). Hypotheses **H5/H6 are
+unchanged**; this amendment concerns model availability only, recorded
+ante-hoc per the §7 honesty discipline.
 
 Western set (re-run under fixed converter): Claude Sonnet 4.6,
 Gemini 2.5 Flash, Gemini 3.1 Pro, GPT-5.4 Mini (as Phase 1).
