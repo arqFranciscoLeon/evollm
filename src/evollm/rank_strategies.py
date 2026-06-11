@@ -1,4 +1,5 @@
 import argparse
+import re
 from collections import defaultdict
 
 import axelrod as axl
@@ -61,12 +62,30 @@ def rank_strategies(args: argparse.Namespace):
     for n in range(max_n):
       ranks[k].append(f"{k}_{sorted_s.index[n]}")
 
-  with open(f"{args.algo}.py", "a", encoding="utf8") as f:
+  write_ranks(f"{args.algo}.py", ranks)
+
+
+def write_ranks(path: str, ranks: dict[str, list[str]]):
+  """Write the ranks lists into the strategy module, idempotently.
+
+  Any existing *_ranks definitions are removed first, so re-running the
+  ranking replaces them instead of appending duplicates.
+  """
+  with open(path, encoding="utf8") as f:
+    source = f.read()
+
+  source = re.sub(
+      r"\n*^(?:Aggressive|Cooperative|Neutral)_ranks\s*=\s*\[[^\]]*\]\n?",
+      "", source, flags=re.M).rstrip("\n") + "\n"
+
+  with open(path, "w", encoding="utf8") as f:
+    f.write(source)
     for k in ranks:
       f.write(f"\n\n{k}_ranks = [\n")
       for r in ranks[k]:
         f.write(f"'{r}',\n")
       f.write("]")
+    f.write("\n")
 
 
 if __name__ == "__main__":

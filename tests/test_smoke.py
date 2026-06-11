@@ -129,6 +129,27 @@ def test_create_classes_samplers_play():
   assert len(match.result) == 5
 
 
+def test_write_ranks_idempotent(tmp_path):
+  """Re-ranking must replace the ranks lists, not append duplicates."""
+  from evollm.rank_strategies import write_ranks
+  src_path = os.path.join(REPO_ROOT, "strategies", "openai_default.py")
+  copy = tmp_path / "lib.py"
+  copy.write_text(open(src_path, encoding="utf-8").read(), encoding="utf-8")
+
+  module = algorithms.load_module(str(copy))
+  original = {k: getattr(module, f"{k}_ranks")
+              for k in ("Aggressive", "Cooperative", "Neutral")}
+  write_ranks(str(copy), original)
+  write_ranks(str(copy), original)
+
+  text = copy.read_text(encoding="utf-8")
+  for ranks_name in RANKS_NAMES:
+    assert len(re.findall(rf"^{ranks_name}\s*=", text, re.M)) == 1
+  assert len(algorithms.load_algorithms(str(copy))) == 75
+  reloaded = algorithms.load_module(str(copy))
+  assert reloaded.Aggressive_ranks == original["Aggressive"]
+
+
 def test_load_algorithms_percentile_filter():
   """keep_top/keep_bottom select the expected slice of the ranked lists."""
   path = os.path.join(REPO_ROOT, "strategies", "openai_default.py")
