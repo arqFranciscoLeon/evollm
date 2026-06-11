@@ -215,13 +215,15 @@ def phase2_section(d2, src2):
     print("     the 4 labs diverge at the lab level")
     print("     (P_A at 4:4:4 clean, Default; pairwise z + Holm-Bonferroni)")
     print("-" * 72)
-    pa = {}      # lab -> aggressive-equilibrium count (out of N)
+    pa = {}      # lab -> aggressive-equilibrium count (out of n_lab)
+    n_lab = {}   # lab -> n_real (may be < N if pathological iters skipped)
     for algo, model, prompt in CHINESE_ALGOS:
         if prompt != "Default":
             continue
         rec = r2(algo, "444")
         if rec:
             pa[model] = int(rec.get("Aggressive", 0))
+            n_lab[model] = int(rec.get("iteraciones", N)) or N
     absent = [m for m in CHINESE_LABS if m not in pa]
     if absent:
         print(f"  PARTIAL DATA — missing Default 4:4:4 for: "
@@ -232,14 +234,14 @@ def phase2_section(d2, src2):
     order = list(CHINESE_LABS)
     print(f"  {'Lab':<18}{'P_A%':>7}")
     for m in order:
-        print(f"  {m:<18}{round(100*pa[m]/N):>6}%")
+        print(f"  {m:<18}{round(100*pa[m]/n_lab[m]):>6}%")
 
     # all 6 pairwise z-tests among the 4 Chinese labs + Holm-Bonferroni
     pairs = []
     for i in range(len(order)):
         for j in range(i + 1, len(order)):
             a, b = order[i], order[j]
-            z, p = z_test(pa[a], pa[b])
+            z, p = z_test(pa[a], pa[b], n1=n_lab[a], n2=n_lab[b])
             pairs.append((a, b, z, p))
     pairs.sort(key=lambda t: t[3])
     k = len(pairs)
@@ -253,7 +255,7 @@ def phase2_section(d2, src2):
               + f"{z:>+8.2f}{p:>12.2e}{thr:>9.4f}  "
               + ("***" if sig else "ns"))
 
-    pa_pct = [100 * pa[m] / N for m in order]
+    pa_pct = [100 * pa[m] / n_lab[m] for m in order]
     spread = max(pa_pct) - min(pa_pct)
     print(f"\n  P_A spread across labs: {min(pa_pct):.1f}–{max(pa_pct):.1f}%"
           f"  (range {spread:.1f}pp, SD {math.sqrt(_var(pa_pct)):.1f}pp)")
