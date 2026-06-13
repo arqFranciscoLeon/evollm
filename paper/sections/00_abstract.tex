@@ -11,16 +11,17 @@ models released in 2025--2026---\textbf{Claude~Sonnet~4.6}, \textbf{Gemini~2.5~F
 \textbf{Gemini~3.1~Pro}, and \textbf{GPT-5.4~Mini}---applying the identical
 protocol across three prompting styles (Default, Prose, Self-Refine) and four
 population compositions (balanced and biased, with and without noise).
-Cooperative bias persists across providers (\textbf{H1}): nine of twelve
+Cooperative bias persists across providers (\textbf{H1}): ten of twelve
 model--prompt combinations favour cooperative equilibria in balanced noiseless
 conditions. Cross-provider divergence is substantial (\textbf{H3}): Gemini~2.5~Flash
-reaches 70\% aggressive equilibria under biased conditions, while GPT-5.4~Mini
-reaches 68\% cooperative equilibria under Self-Refine. Support for aggressive
+reaches up to 77\% aggressive equilibria under biased conditions, while GPT-5.4~Mini
+reaches 70\% cooperative equilibria under Self-Refine. Support for aggressive
 capability parity is partial (\textbf{H2}): Self-Refine raises \ICD in all
-models and Claude~Sonnet~4.6 Refine achieves the highest \ICD in the dataset
-(0.913), but Default and Prose prompts show no systematic narrowing. Noise
-sensitivity is unchanged across the Anthropic lineage (\textbf{H4}): average
-$\Delta_{\text{noise}}$ is 12 percentage points for Claude~Sonnet~4.6 versus
-13~pp for Claude~3.5~Sonnet. Provider choice, not model generation, is the
-dominant driver of equilibrium outcomes; noise remains a universal challenge
-regardless of model size or vintage.
+models and Gemini~3.1~Pro Refine achieves the highest \ICD in the dataset
+(0.925), but Default and Prose prompts show no systematic narrowing. Noise
+robustness improves directionally but not robustly across the Anthropic lineage
+(\textbf{H4}): average $\Delta_{\text{noise}}$ falls from 13~pp for
+Claude~3.5~Sonnet to 6~pp for Claude~Sonnet~4.6, a gap that is suggestive but
+not statistically robust given the predecessor's smaller sample. Provider choice,
+not model generation, is the dominant driver of equilibrium outcomes; noise
+remains a universal challenge regardless of model size or vintage.

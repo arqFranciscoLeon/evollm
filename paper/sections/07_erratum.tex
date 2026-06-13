@@ -1,0 +1,33 @@
+\section*{Note on Version 2 (Erratum)}
+
+This version corrects two issues in the version~1 preprint, neither of which
+affects the paper's central conclusions; both, in fact, slightly strengthen
+them. The correction was pre-registered before any data were regenerated, and
+the regenerated artifacts are available in the public replication repository.
+
+\paragraph{(1) Incomplete strategy libraries.}
+The Gemini~3.1~Pro Prose and Self-Refine strategy libraries used in v1 were
+inadvertently truncated during generation, containing 21 and 7 strategies
+respectively rather than the intended 75 (the corresponding noise-aware
+libraries were likewise affected). All four libraries were regenerated in
+full under an identical protocol---same model (\texttt{gemini-3.1-pro-preview}),
+temperature, prompts, and per-provider code conversion---and re-run through the
+head-to-head tournaments and the Moran process. The Default libraries were
+complete in v1 and are unchanged.
+
+\paragraph{(2) Sample size unified to $n = 500$.}
+The v1 equilibrium tables reported $n = 100$ Moran runs per condition, whereas
+the released replication package and \texttt{reproduce\_tables.py} already used
+$n = 500$. For v2 the entire equilibrium analysis (Table~\ref{tab:moran}, the
+noise-sensitivity table, and all derived claims) is reported at $n = 500$, so
+that the manuscript and the replication package coincide exactly.
+
+\paragraph{Effect on results.}
+Under the corrected, completed, $n = 500$ data, cooperative-plurality outcomes
+in the balanced noiseless condition rise from 9/12 to 10/12---the corrected
+Gemini~3.1~Pro~Prose cell moves from a Neutral to a cooperative plurality. The
+highest \ICD in the dataset is now Gemini~3.1~Pro~Refine (0.925), and Claude~4.6
+emerges as the most noise-robust new model, its average noise sensitivity now
+lower than its predecessor's (6 vs.\ 13~pp, directionally consistent with H4
+though still not statistically robust). All hypothesis-level verdicts
+(H1--H4) are unchanged.

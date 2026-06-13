@@ -6,6 +6,9 @@
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{amsmath}
+% acmart (via newtxmath) already defines \Bbbk; let amssymb redefine it
+% without clashing. See v1 build notes.
+\let\Bbbk\relax
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{xcolor}

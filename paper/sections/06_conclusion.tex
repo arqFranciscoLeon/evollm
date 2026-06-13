@@ -10,19 +10,19 @@ providers---48 Moran process conditions, 4,800 simulation runs, identical
 experimental protocol.
 
 The headline result is that cooperative bias survives the transition to a new
-model generation: nine of twelve model--prompt combinations favour cooperative
+model generation: ten of twelve model--prompt combinations favour cooperative
 equilibria in balanced noiseless conditions, and within the Anthropic lineage
-Claude~4.6 is virtually indistinguishable from its predecessor.
+Claude~4.6 closely tracks its predecessor in the balanced condition.
 What differentiates outcomes is not which generation a model belongs to but
-which provider trained it. Gemini~2.5~Flash reaches up to 70\% aggressive
-equilibria; GPT-5.4~Mini reaches up to 68\% cooperative under Self-Refine.
+which provider trained it. Gemini~2.5~Flash reaches up to 77\% aggressive
+equilibria; GPT-5.4~Mini reaches up to 70\% cooperative under Self-Refine.
 That cross-provider gap is larger than any intra-lineage shift we observe,
 pointing to alignment objectives---not raw capability---as the dominant
 determinant of equilibrium behaviour.
 
 The Self-Refine prompt sharpens this picture in a troubling direction.
 It narrows the aggressive--cooperative payoff gap (\ICD rises toward 1.0)
-consistently across all four models, including Claude~4.6 Refine at \ICD = 0.913.
+consistently across all four models, including Gemini~3.1~Pro Refine at \ICD = 0.925, the dataset maximum.
 Prompt engineering designed to improve strategy quality may therefore
 inadvertently reduce the cooperative advantage, raising the equilibrium
 aggression rate in deployed multi-agent populations.

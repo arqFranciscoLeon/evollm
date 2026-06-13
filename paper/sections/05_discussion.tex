@@ -9,7 +9,7 @@
 \paragraph{H1 — Cooperative bias persists (\textcolor{green!60!black}{Confirmed}).}
 The cooperative bias documented by Willis et al.\ is consistent across model generations
 and providers. In the balanced noiseless condition---the most direct comparison
-to the original benchmark---9 of 12 model--prompt combinations favour
+to the original benchmark---10 of 12 model--prompt combinations favour
 cooperative equilibria as the plurality outcome ($\PC > \PA$ and $\PC > \PN$),
 and aggressive equilibrium rates remain well below the 33\% prior for the
 majority of configurations. The successor models (Claude~4.6, GPT-5.4~Mini)
@@ -29,16 +29,18 @@ game-theoretic scenarios).
 \paragraph{H2 — Aggressive capability parity (\textcolor{orange}{Partially Supported}).}
 Evidence for H2 is mixed and prompt-dependent. The Self-Refine prompt increases
 \ICD in all four models, replicating the finding from the original paper that
-iterative self-critique improves aggressive strategy quality. Claude~4.6~Refine
-achieves the highest \ICD in the dataset (0.913), approaching payoff parity
-between aggressive and cooperative agents---a larger narrowing than observed
-with Claude~3.5~Sonnet~Refine. This suggests that more capable models can
+iterative self-critique improves aggressive strategy quality. Gemini~3.1~Pro~Refine
+achieves the highest \ICD in the dataset (0.925), approaching payoff parity
+between aggressive and cooperative agents; within the Anthropic lineage,
+Claude~4.6~Refine (0.913) shows a larger narrowing than
+Claude~3.5~Sonnet~Refine. This suggests that more capable models can
 use self-refinement more effectively to generate strategic diversity.
 
 However, under Default and Prose prompts, most models show \ICD values in the
 range 0.45--0.82, not systematically higher than the original models. Moreover,
-the models with the highest \ICD under Refine (Claude~4.6 at 0.913) are also
-those where the biased condition shows the highest aggressive equilibria (54\%A),
+the models with the highest \ICD under Refine (Gemini~3.1~Pro at 0.925 and
+Claude~4.6 at 0.913) are also those where the biased condition shows high
+aggressive equilibria (62\% and 59\%A respectively),
 suggesting that capability parity may genuinely increase the viability of
 aggressive strategies. This finding reinforces the safety implication identified
 by Willis et al.: prompt engineering techniques that improve aggressive
@@ -56,10 +58,10 @@ Claude~4.6~Default (16\%A) yields $z = 7.71$ ($p < 0.0001$), and versus
 GPT-5.4~Mini~Refine (24\%A) yields $z = 6.52$ ($p < 0.0001$).
 Gemini~2.5~Flash is systematically the
 most aggressive: its Prose and Refine prompts produce aggressive equilibrium
-rates of 22--25\% in balanced conditions and 54--70\% in biased conditions.
+rates of 21--24\% in balanced conditions and 56--77\% in biased conditions.
 GPT-5.4~Mini is the most cooperative: its Default and Refine prompts produce
-aggressive equilibria of just 1\% in balanced conditions, and it achieves
-the highest cooperative equilibrium rate in the dataset (68\% under Refine).
+aggressive equilibria of just 2--4\% in balanced conditions, and it achieves
+the highest cooperative equilibrium rate in the dataset (70\% under Refine).
 Claude~4.6 and Gemini~3.1~Pro occupy an intermediate position.
 
 These cross-provider differences likely reflect distinct choices in training
@@ -68,19 +70,22 @@ two Google models (Flash and Pro) differ substantially from each other---Flash
 being more aggressive, Pro being more cooperative---suggests that model scale
 and architecture matter independently of provider-level alignment decisions.
 
-\paragraph{H4 — Noise robustness improves (\textcolor{red!70!black}{Not Confirmed}).}
-The noise sensitivity of Claude~4.6 ($\Dnoise = 12$pp average) is essentially
-unchanged from Claude~3.5~Sonnet ($\Dnoise = 13$pp). Despite architectural and
-alignment improvements documented in the model release notes, Claude~4.6 does
-not show improved robustness to execution noise.
-Among the new models, Gemini~3.1~Pro is the most noise-robust (avg.\ 5pp),
-while Gemini~2.5~Flash is the most noise-sensitive (avg.\ 20pp). GPT-5.4~Mini
-shows high sensitivity under the Refine prompt ($\Dnoise = 28$pp) but strong
-robustness under Default (3pp).
+\paragraph{H4 — Noise robustness improves (\textcolor{red!70!black}{Suggestive, Not Robustly Confirmed}).}
+The noise sensitivity of Claude~4.6 ($\Dnoise = 6$pp average) is lower than
+Claude~3.5~Sonnet's ($\Dnoise = 13$pp), a 7pp difference in the direction of
+improved robustness. However, a cross-study two-proportion test that propagates
+the predecessor's smaller sample ($n = 100$) yields $z = 0.87$, $p = 0.385$:
+the gap is directionally suggestive but not statistically robust, so we do not
+claim confirmation.
+Among the new models, Claude~4.6 is the most noise-robust (avg.\ 6pp),
+followed by Gemini~3.1~Pro (8pp), while Gemini~2.5~Flash and GPT-5.4~Mini
+are the most noise-sensitive (15pp each). GPT-5.4~Mini shows particularly
+high sensitivity under the Refine prompt ($\Dnoise = 28$pp).
 
-The failure of H4 for the Claude lineage is notable precisely because Willis et al.\
-identified Claude's noise sensitivity as a key vulnerability---and it persists
-in the successor model, at least under the Default and Prose prompts. One possible
+The inconclusive cross-study test for the Claude lineage is notable precisely because Willis et al.\
+identified Claude's noise sensitivity as a key vulnerability---and although the
+point estimate improves, substantial sensitivity persists under the Default and
+Prose prompts ($\Dnoise = 9$ and $12$pp). One possible
 explanation is that noise sensitivity is not a generalisation problem (which
 better training would address) but rather a structural consequence of the
 type of strategies generated: if cooperative strategies rely on clean mutual
