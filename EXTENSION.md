@@ -49,16 +49,21 @@ LaTeX source for the extension paper (AAMAS 2027 format).
 
 ## Key Results Summary
 
-Moran equilibria (% Aggressive / % Cooperative / % Neutral), balanced population (4:4:4), no noise:
+Moran equilibria (% Aggressive / % Cooperative / % Neutral), balanced population (4:4:4), no noise, **n=500** (v2):
 
 | Model | Default | Prose | Refine |
 |-------|---------|-------|--------|
-| Claude 4.6     | 2/50/48  | 7/55/38  | 21/40/39 |
-| Gemini 2.5 Flash | 1/51/48 | 22/54/24 | 25/41/34 |
-| Gemini 3.1 Pro | 15/35/50 | 13/36/51 | 15/51/34 |
-| GPT-5.4 Mini   | 1/48/51  | 16/44/40 | 1/68/31  |
+| Claude 4.6     | 2/49/49  | 5/48/47  | 23/39/38 |
+| Gemini 2.5 Flash | 2/49/48 | 24/47/30 | 21/47/32 |
+| Gemini 3.1 Pro | 14/42/45 | 19/43/38 | 27/40/33 |
+| GPT-5.4 Mini   | 2/53/45  | 12/45/43 | 4/70/26  |
 
 *Willis et al. reference: ChatGPT-4o Default 14/53/33 · Claude 3.5 Sonnet Default 4/49/47*
+
+> **v2 erratum (2026):** the Gemini 3.1 Pro Prose/Refine libraries were truncated
+> (21/7 of 75) in v1; regenerated in full and re-run at n=500. The values above are
+> the corrected n=500 figures. Cooperative-plurality count 9/12 → 10/12; all
+> hypothesis-level conclusions unchanged. See arXiv:2605.29874v2.
 
 ---
 

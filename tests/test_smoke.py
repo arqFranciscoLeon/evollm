@@ -25,17 +25,11 @@ from evollm import algorithms, common  # noqa: E402
 
 LIBRARIES = sorted(glob.glob(os.path.join(REPO_ROOT, "strategies", "*.py")))
 
-# Libraries committed with fewer classes than the 75 the protocol specifies
-# (Gemini 3.1 Pro prose/refine generation was committed incomplete; the same
-# truncated files are in the public replication package). Marked strict-xfail
-# so the suite stays green while the discrepancy remains visible; pending PI
-# decision (regenerate vs erratum). Remove entries once the files hold 75.
-KNOWN_INCOMPLETE = {
-    "gemini_31_pro_prose_75.py": 21,
-    "gemini_31_pro_prose_75_noise.py": 21,
-    "gemini_31_pro_refine_75.py": 7,
-    "gemini_31_pro_refine_75_noise.py": 7,
-}
+# Libraries committed with fewer classes than the 75 the protocol specifies.
+# The Gemini 3.1 Pro prose/refine libraries were truncated (21/7) in v1; the
+# erratum (arXiv:2605.29874v2) regenerated all four in full, so this set is now
+# empty. Kept as the mechanism in case a future library is found short.
+KNOWN_INCOMPLETE = {}
 
 RANKS_NAMES = ("Aggressive_ranks", "Cooperative_ranks", "Neutral_ranks")
 
