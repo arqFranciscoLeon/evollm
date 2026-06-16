@@ -138,9 +138,21 @@ def main(
     batch_size: int = BATCH_SIZE,
     wave_size: int = WAVE_SIZE,
     resume: bool = False,
+    only: str = "",
 ):
-    """Wave-based runner con checkpoints."""
+    """Wave-based runner con checkpoints.
+
+    --only "algo1,algo2"  restringe la corrida a una lista EXACTA de
+    condiciones (p.ej. la regeneración de 2 estrategias frágiles: solo
+    deepseek_v4pro_refine_75 y glm_51_refine_75 clean). Vacío = grid completo.
+    """
     all_algos = ALGOS_CLEAN + ALGOS_NOISE
+    if only:
+        wanted = {a.strip() for a in only.split(",") if a.strip()}
+        unknown = wanted - set(all_algos)
+        assert not unknown, f"--only desconoce: {unknown}"
+        all_algos = [a for a in all_algos if a in wanted]
+        print(f"[--only] restringido a {len(all_algos)} condiciones: {all_algos}")
     n_batches_per_cond = total_iterations // batch_size
     assert n_batches_per_cond * batch_size == total_iterations
 
