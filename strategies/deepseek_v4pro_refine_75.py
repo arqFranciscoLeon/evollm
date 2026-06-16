@@ -1822,41 +1822,6 @@ class Aggressive_22(LLM_Strategy):
 
 
 
-# Your strategy contains no logical mistakes. Here is a rephrased version that
-# keeps the same logic while making the conditions even clearer:  Start by
-# cooperating in round 1. For every round after that, look at the payoff you
-# received in the immediately preceding round. If that payoff was 3 (mutual
-# cooperation) or 5 (successful defection), then do exactly what you did in that
-# preceding round. If that payoff was 0 (you cooperated but were exploited) or 1
-# (mutual defection), then switch to the opposite action from what you played in
-# that preceding round.
-
-class Cooperative_22(LLM_Strategy):
-  n = 22
-  attitude = Attitude.COOPERATIVE
-  game = 'classic'
-  rounds = 1000
-  noise = 0
-
-  @auto_update_score
-  def strategy(self, opponent: axl.player.Player) -> axl.Action:
-      if self.first_round():
-          return axl.Action.C
-  
-      last_payoff = self.score - sum(self.total_scores(self.history[:-1], opponent.history[:-1]))[0] if False else None
-      # Compute the payoff from the immediately preceding round.
-      my_last_score, _ = self.total_scores(self.history[-1:], opponent.history[-1:])
-      last_payoff = my_last_score
-  
-      last_move = self.history[-1]
-  
-      if last_payoff in (3, 5):
-          return last_move
-      else:
-          return last_move.flip
-
-
-
 # In every round, without exception, play C.
 
 class Neutral_22(LLM_Strategy):
@@ -2078,6 +2043,26 @@ class Cooperative_25(LLM_Strategy):
 class Neutral_25(LLM_Strategy):
   n = 25
   attitude = Attitude.NEUTRAL
+  game = 'classic'
+  rounds = 1000
+  noise = 0
+
+  @auto_update_score
+  def strategy(self, opponent: axl.player.Player) -> axl.Action:
+      if self.first_round():
+          return axl.Action.C
+      return opponent.history[-1]
+
+
+
+# Start by playing Cooperate in the first round. In every later round, simply
+# repeat whatever your opponent did in the round immediately before: if they
+# Cooperated last round, you Cooperate now; if they Defected last round, you
+# Defect now. Apply this rule consistently for all remaining rounds.
+
+class Cooperative_22(LLM_Strategy):
+  n = 22
+  attitude = Attitude.COOPERATIVE
   game = 'classic'
   rounds = 1000
   noise = 0

@@ -1892,38 +1892,6 @@ class Aggressive_12(LLM_Strategy):
 
 
 
-# 1. If it is the final round, play Defect. 2. If it is the first round, play
-# Cooperate. 3. If the opponent has defected in two or more of the last ten
-# rounds (or all rounds played so far if fewer than ten), play Defect. 4. If the
-# opponent played Defect in the previous round, play Defect. 5. Otherwise, play
-# Cooperate.
-
-class Cooperative_12(LLM_Strategy):
-  n = 12
-  attitude = Attitude.COOPERATIVE
-  game = 'classic'
-  rounds = 1000
-  noise = 0
-
-  @auto_update_score
-  def strategy(self, opponent: axl.player.Player) -> axl.Action:
-      if self.first_round():
-          return axl.Action.C
-  
-      if len(self.history) >= 999:
-          return axl.Action.D
-  
-      recent_opponent_history = opponent.history[-10:]
-      if recent_opponent_history.defections >= 2:
-          return axl.Action.D
-  
-      if opponent.history[-1] == axl.Action.D:
-          return axl.Action.D
-  
-      return axl.Action.C
-
-
-
 # 1. If it is the first round, cooperate. 2. If it is the final round, defect.
 # 3. If the outcome of the previous round is unknown, cooperate. 4. If both you
 # and the opponent defected in the previous round, and the opponent cooperated
@@ -3478,6 +3446,32 @@ class Neutral_25(LLM_Strategy):
           return axl.Action.C
   
       if opponent.history[-1] == axl.Action.D:
+          return axl.Action.D
+  
+      return axl.Action.C
+
+
+
+# 1. If it is the first round, cooperate. 2. If it is the last round (round
+# 1000), defect. 3. If the opponent defected in both of the previous two rounds,
+# defect. 4. Otherwise, cooperate.
+
+class Cooperative_12(LLM_Strategy):
+  n = 12
+  attitude = Attitude.COOPERATIVE
+  game = 'classic'
+  rounds = 1000
+  noise = 0
+
+  @auto_update_score
+  def strategy(self, opponent: axl.player.Player) -> axl.Action:
+      if self.first_round():
+          return axl.Action.C
+  
+      if len(self.history) >= 999:
+          return axl.Action.D
+  
+      if len(opponent.history) >= 2 and opponent.history[-1] == axl.Action.D and opponent.history[-2] == axl.Action.D:
           return axl.Action.D
   
       return axl.Action.C
