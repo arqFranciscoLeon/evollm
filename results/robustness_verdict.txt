@@ -1,0 +1,26 @@
+GPT    : results/phase2_moran_final_20260616_151953_regenv2.json
+ROBUST : results\robust_moran_final_20260617_045913.json
+
+Lab / prompt                     GPT A/C/N    DeepSeek A/C/N    dC    dA  maxd  plur
+------------------------------------------------------------------------------------------------
+DeepSeek V4 Pro default       9/  47/  44     13/  41/  46  -5.6  +3.6   5.6   N  FLIP C->N
+DeepSeek V4 Pro prose        13/  41/  46     13/  42/  46  +1.0  -0.6   1.0   N
+DeepSeek V4 Pro refine       16/  39/  45     16/  42/  43  +2.6  +0.0   2.6   N
+Qwen3-Max default             1/  46/  53      1/  50/  50  +3.4  -0.2   3.4   C  FLIP N->C
+Qwen3-Max prose              14/  44/  42     15/  45/  40  +0.6  +1.8   2.4   C
+Qwen3-Max refine             12/  44/  44     12/  48/  40  +4.0  +0.4   4.4   C  FLIP N->C
+Kimi K2.5 default             2/  49/  49      2/  52/  47  +3.2  -0.4   3.2   C  FLIP N->C
+Kimi K2.5 prose              18/  42/  40     17/  44/  39  +2.0  -1.0   2.0   C
+Kimi K2.5 refine             13/  48/  38     12/  51/  37  +2.6  -1.2   2.6   C
+GLM-5.1 default               8/  49/  43     10/  47/  43  -2.2  +1.8   2.2   C
+GLM-5.1 prose                21/  37/  42     21/  41/  38  +3.4  +0.4   3.8   C  FLIP N->C
+GLM-5.1 refine               23/  46/  32     22/  45/  32  -0.4  -0.2   0.6   C
+------------------------------------------------------------------------------------------------
+
+SE(one est., n=500) = 2.24pp   SE(difference) = 3.16pp
+max |Delta| across 36 cells = 5.6pp   mean max-|Delta| per cell = 2.8pp
+cells with max-|Delta| <= 2.24pp : 4/12
+cells with max-|Delta| <= 3.16pp : 7/12
+plurality flips: 5/12
+
+VERDICT: CHECK: deviations exceed expectation

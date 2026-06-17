@@ -1,0 +1,187 @@
+{
+  "seed": 20260616,
+  "fraction": 0.1,
+  "converter": "deepseek-v4-pro",
+  "libs": [
+    {
+      "lib": "deepseek_v4pro_default_75",
+      "k": 8,
+      "converted": [
+        "Aggressive_17",
+        "Aggressive_2",
+        "Aggressive_5",
+        "Aggressive_8",
+        "Cooperative_1",
+        "Cooperative_12",
+        "Cooperative_14",
+        "Cooperative_8"
+      ],
+      "resampled": 0
+    },
+    {
+      "lib": "deepseek_v4pro_prose_75",
+      "k": 8,
+      "converted": [
+        "Aggressive_1",
+        "Aggressive_4",
+        "Cooperative_18",
+        "Cooperative_20",
+        "Cooperative_22",
+        "Neutral_11",
+        "Neutral_6",
+        "Neutral_8"
+      ],
+      "resampled": 0
+    },
+    {
+      "lib": "deepseek_v4pro_refine_75",
+      "k": 8,
+      "converted": [
+        "Aggressive_13",
+        "Aggressive_15",
+        "Aggressive_4",
+        "Cooperative_25",
+        "Cooperative_5",
+        "Neutral_16",
+        "Neutral_20",
+        "Neutral_9"
+      ],
+      "resampled": 0
+    },
+    {
+      "lib": "qwen3max_default_75",
+      "k": 8,
+      "converted": [
+        "Aggressive_1",
+        "Aggressive_2",
+        "Cooperative_15",
+        "Cooperative_16",
+        "Neutral_11",
+        "Neutral_16",
+        "Neutral_23",
+        "Neutral_5"
+      ],
+      "resampled": 0
+    },
+    {
+      "lib": "qwen3max_prose_75",
+      "k": 8,
+      "converted": [
+        "Aggressive_22",
+        "Aggressive_25",
+        "Aggressive_5",
+        "Aggressive_9",
+        "Cooperative_16",
+        "Neutral_13",
+        "Neutral_22",
+        "Neutral_7"
+      ],
+      "resampled": 0
+    },
+    {
+      "lib": "qwen3max_refine_75",
+      "k": 8,
+      "converted": [
+        "Aggressive_20",
+        "Aggressive_3",
+        "Aggressive_9",
+        "Cooperative_16",
+        "Cooperative_2",
+        "Cooperative_24",
+        "Cooperative_7",
+        "Neutral_12"
+      ],
+      "resampled": 0
+    },
+    {
+      "lib": "kimi_k25_default_75",
+      "k": 8,
+      "converted": [
+        "Aggressive_13",
+        "Cooperative_18",
+        "Cooperative_22",
+        "Cooperative_24",
+        "Cooperative_25",
+        "Cooperative_5",
+        "Neutral_15",
+        "Neutral_16"
+      ],
+      "resampled": 0
+    },
+    {
+      "lib": "kimi_k25_prose_75",
+      "k": 8,
+      "converted": [
+        "Aggressive_12",
+        "Aggressive_25",
+        "Aggressive_4",
+        "Aggressive_5",
+        "Cooperative_15",
+        "Cooperative_19",
+        "Cooperative_9",
+        "Neutral_16"
+      ],
+      "resampled": 0
+    },
+    {
+      "lib": "kimi_k25_refine_75",
+      "k": 8,
+      "converted": [
+        "Aggressive_20",
+        "Aggressive_7",
+        "Aggressive_8",
+        "Cooperative_20",
+        "Neutral_1",
+        "Neutral_14",
+        "Neutral_22",
+        "Neutral_8"
+      ],
+      "resampled": 0
+    },
+    {
+      "lib": "glm_51_default_75",
+      "k": 8,
+      "converted": [
+        "Aggressive_18",
+        "Aggressive_2",
+        "Aggressive_8",
+        "Cooperative_11",
+        "Cooperative_14",
+        "Cooperative_18",
+        "Cooperative_9",
+        "Neutral_7"
+      ],
+      "resampled": 0
+    },
+    {
+      "lib": "glm_51_prose_75",
+      "k": 8,
+      "converted": [
+        "Aggressive_11",
+        "Aggressive_17",
+        "Aggressive_5",
+        "Cooperative_25",
+        "Neutral_1",
+        "Neutral_14",
+        "Neutral_6",
+        "Neutral_8"
+      ],
+      "resampled": 0
+    },
+    {
+      "lib": "glm_51_refine_75",
+      "k": 8,
+      "converted": [
+        "Aggressive_11",
+        "Aggressive_18",
+        "Aggressive_8",
+        "Cooperative_1",
+        "Cooperative_16",
+        "Cooperative_17",
+        "Neutral_4",
+        "Neutral_6"
+      ],
+      "resampled": 0
+    }
+  ]
+}
