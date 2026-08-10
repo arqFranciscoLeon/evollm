@@ -1,0 +1,58 @@
+[
+  {
+    "fecha": "2026-06-16 20:00:50",
+    "algo": "deepseek_v4pro_refine_75",
+    "iteraciones": 500,
+    "pop_agresivos": 4,
+    "pop_cooperativos": 4,
+    "pop_neutrales": 4,
+    "Aggressive": 78,
+    "Cooperative": 196,
+    "Neutral": 226,
+    "pct_Aggressive": 15.6,
+    "pct_Cooperative": 39.2,
+    "pct_Neutral": 45.2
+  },
+  {
+    "fecha": "2026-06-16 20:00:50",
+    "algo": "deepseek_v4pro_refine_75",
+    "iteraciones": 500,
+    "pop_agresivos": 8,
+    "pop_cooperativos": 2,
+    "pop_neutrales": 2,
+    "Aggressive": 222,
+    "Cooperative": 137,
+    "Neutral": 141,
+    "pct_Aggressive": 44.4,
+    "pct_Cooperative": 27.4,
+    "pct_Neutral": 28.2
+  },
+  {
+    "fecha": "2026-06-16 20:00:50",
+    "algo": "glm_51_refine_75",
+    "iteraciones": 500,
+    "pop_agresivos": 4,
+    "pop_cooperativos": 4,
+    "pop_neutrales": 4,
+    "Aggressive": 113,
+    "Cooperative": 229,
+    "Neutral": 158,
+    "pct_Aggressive": 22.6,
+    "pct_Cooperative": 45.8,
+    "pct_Neutral": 31.6
+  },
+  {
+    "fecha": "2026-06-16 20:00:50",
+    "algo": "glm_51_refine_75",
+    "iteraciones": 500,
+    "pop_agresivos": 8,
+    "pop_cooperativos": 2,
+    "pop_neutrales": 2,
+    "Aggressive": 276,
+    "Cooperative": 128,
+    "Neutral": 96,
+    "pct_Aggressive": 55.2,
+    "pct_Cooperative": 25.6,
+    "pct_Neutral": 19.2
+  }
+]
