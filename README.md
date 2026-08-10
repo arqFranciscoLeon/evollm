@@ -6,11 +6,33 @@ This repository accompanies the paper "Will Systems of LLM Agents Lead to Cooper
 ---
 
 > **Cross-provider n=500 extension (2026).**
-> [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20248615.svg)](https://doi.org/10.5281/zenodo.20248615)
+> [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20248614.svg)](https://doi.org/10.5281/zenodo.20248614)
 > This fork extends the benchmark to four 2025–2026 frontier models at
 > n=500 Moran iterations. See **[`EXTENSION.md`](./EXTENSION.md)** for the
 > scientific overview and **[`REPRODUCE.md`](./REPRODUCE.md)** to verify the
 > results in ~1 minute (`python reproduce_tables.py`).
+> Paper: [arXiv:2605.29874](https://arxiv.org/abs/2605.29874).
+
+> **Phase 2 — Chinese frontier models under a fixed converter (2026).**
+> A second study asks whether the cooperative bias holds in a different
+> alignment lineage, and whether the four Chinese labs behave as one bloc.
+> It removes a confound in the phase above: instead of letting each model
+> convert its own natural-language strategies into code, one fixed converter
+> (GPT-5.4 Mini) does it for every lab, so cross-lab comparisons measure
+> generation alone.
+>
+> This release adds the 24 Chinese strategy libraries (DeepSeek V4 Pro,
+> Qwen3-Max, Kimi K2.5, GLM-5.1), the 12 head-to-head matrices, the n=500
+> equilibria for all 48 conditions, and the pre-registered converter
+> robustness check (the `*_robust.py` libraries and their re-run). The
+> pre-registration, including every ante-hoc amendment and the exact served
+> model identifiers, is in **[`PHASE2_PREREG.md`](./PHASE2_PREREG.md)**;
+> `python reproduce_tables.py` recomputes H5 and H6 alongside the Phase 1
+> tables.
+>
+> Phase 3 is pre-registered but not yet run:
+> **[`PHASE3_PREREG.md`](./PHASE3_PREREG.md)**, together with the adversarial
+> review it was put through before any data was collected.
 
 ---
 
