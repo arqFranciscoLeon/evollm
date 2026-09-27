@@ -1,0 +1,11 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if len(self.history) >= 997:
+        return axl.Action.D
+
+    if len(opponent.history) >= 2 and opponent.history[-1] == axl.Action.D:
+        return axl.Action.D
+
+    if len(opponent.history) >= 2 and opponent.history[-2] == axl.Action.D:
+        return axl.Action.D
+
+    return axl.Action.C

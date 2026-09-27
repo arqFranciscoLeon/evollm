@@ -1,0 +1,17 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if self.first_round():
+        return axl.Action.D
+
+    last_self = self.history[-1]
+    last_opp = opponent.history[-1]
+
+    if last_opp == axl.Action.C:
+        return axl.Action.D
+
+    if last_self == axl.Action.C and last_opp == axl.Action.D:
+        return axl.Action.D
+
+    if last_self == axl.Action.D and last_opp == axl.Action.D:
+        return axl.Action.C
+
+    return axl.Action.D

@@ -1,0 +1,28 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if self.first_round():
+        return axl.Action.D
+
+    rounds_played = len(self.history)
+    rounds_remaining = 1000 - rounds_played
+
+    if rounds_remaining <= 10:
+        return axl.Action.D
+
+    last_self = self.history[-1]
+    last_opp = opponent.history[-1]
+
+    if last_self == axl.Action.D and last_opp == axl.Action.C:
+        return axl.Action.D
+
+    if last_self == axl.Action.D and last_opp == axl.Action.D:
+        return axl.Action.C
+
+    if last_self == axl.Action.C and last_opp == axl.Action.D:
+        return axl.Action.D
+
+    if last_self == axl.Action.C and last_opp == axl.Action.C:
+        if len(self.history) >= 10 and self.history[-10:].count(axl.Action.C) == 10 and opponent.history[-10:].count(axl.Action.C) == 10:
+            return axl.Action.D
+        return axl.Action.C
+
+    return axl.Action.D

@@ -1,0 +1,15 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if self.first_round():
+        self._unconditionally_cooperative = False
+        return axl.Action.D
+
+    if self._unconditionally_cooperative:
+        return axl.Action.C
+
+    if len(opponent.history) >= 100:
+        last_100 = opponent.history[-100:]
+        if last_100.count(axl.Action.C) == 100 and self.history[-100:].count(axl.Action.D) == 100:
+            self._unconditionally_cooperative = True
+            return axl.Action.C
+
+    return axl.Action.D

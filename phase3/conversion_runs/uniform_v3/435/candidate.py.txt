@@ -1,0 +1,13 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if self.first_round():
+        return axl.Action.C
+
+    last_my_move = self.history[-1]
+    last_my_score = self.total_scores(self.history[-1:], opponent.history[-1:])[0]
+
+    if last_my_score in (3, 5):
+        return last_my_move
+    elif last_my_score in (0, 1):
+        return axl.Action.C if last_my_move == axl.Action.D else axl.Action.D
+
+    return axl.Action.C

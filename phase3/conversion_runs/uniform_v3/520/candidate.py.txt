@@ -1,0 +1,14 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if self.first_round():
+        return axl.Action.C
+
+    opponent_defections = opponent.history.defections
+    rounds_played = len(self.history)
+
+    if opponent_defections * 100 >= 70 * rounds_played:
+        return axl.Action.D
+
+    if opponent.history[-1] == axl.Action.D:
+        return axl.Action.D
+
+    return axl.Action.C

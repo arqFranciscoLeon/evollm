@@ -1,0 +1,22 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if self.first_round():
+        return axl.Action.C
+
+    last_my_score = self.score - sum(self.total_scores(self.history[:-1], opponent.history[:-1])[0:1]) if False else None
+    # Compute previous round payoff directly from the last completed round
+    my_last_move = self.history[-1]
+    opp_last_move = opponent.history[-1]
+
+    if my_last_move == axl.Action.C and opp_last_move == axl.Action.C:
+        last_my_score = 3
+    elif my_last_move == axl.Action.C and opp_last_move == axl.Action.D:
+        last_my_score = 0
+    elif my_last_move == axl.Action.D and opp_last_move == axl.Action.C:
+        last_my_score = 5
+    else:
+        last_my_score = 1
+
+    if last_my_score in (3, 5):
+        return my_last_move
+    else:
+        return axl.Action.D if my_last_move == axl.Action.C else axl.Action.C

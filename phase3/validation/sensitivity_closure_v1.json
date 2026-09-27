@@ -1,0 +1,41 @@
+{
+  "date": "2026-09-21",
+  "status": "local_preparation_verified_not_public_registration",
+  "tests": 41,
+  "failures": 0,
+  "semantic_checks": 58604,
+  "classic_matches_1000_rounds": 44,
+  "scenario_masks_verified": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "api_calls": 0,
+  "confirmatory_matches": 0,
+  "files_sha256": {
+    "phase3/SENSITIVITIES_v1_DRAFT.md": "b64b2cfa2dbd9b3019ecb50eec0385b894ae24febbde350bbe5587111648021f",
+    "phase3/sensitivity_analysis_v1.py": "4392ed8755e1bd2054ec7d4c88acaadc8a15f49cf2c27b6ac05f1b7756b8d833",
+    "phase3/interpretation_sensitivity_v1.py": "320aac37f272a5366c152962948607076a94d1d025c496b2552f548e75db484e",
+    "phase3/prepare_sensitivities_v1.py": "de74ee6a15cf2257e1f8c2ce0232c4c3043d2b53bf613257a8d14d57ad943de4",
+    "phase3/inputs/sensitivity_plan_v1.json": "361d3ade33783e972c8f0fcfe99d285e230e02a696ce0f44a1d9a5fb3154afc7",
+    "phase3/validation/interpretation_sensitivity_v1.json": "3b0ada8694c9d3231113b0629dd3982612cd6b4e53f27e806c817561e0257b59",
+    "phase3/validation/sensitivity_tests_v1.xml": "ec94beacdbdc71f1e2628bbc00dc590e3bb071bba603a287569521de69eb0e97",
+    "phase3/tests/test_sensitivity_analysis_v1.py": "b3a7ad6cdb567c6fefdbb9b110f188a03b99cb5bca28b81c6ce24dd99687dd91",
+    "phase3/tests/test_interpretation_sensitivity_v1.py": "2a58f0378e9a5593af16fc2614a0a540b07537eb5b838004d764baa6109f4bbc"
+  },
+  "limitation": "Directed validation only; descriptive sensitivity contrasts have no additional p-values. Full scenario schedules are pending.",
+  "next": "Fix repetitions, seeds and resources, consolidate and freeze protocol, obtain public timestamp before confirmatory execution."
+}

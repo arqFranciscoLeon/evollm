@@ -1,0 +1,10 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    round_number = len(self.history) + 1
+
+    if round_number == 1:
+        return axl.Action.C
+
+    if round_number >= 996:
+        return axl.Action.D
+
+    return opponent.history[-1]

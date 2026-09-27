@@ -1,0 +1,12 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if self.first_round():
+        return axl.Action.C
+
+    last_payoff = self.total_scores(self.history[-1:], opponent.history[-1:])[0]
+
+    if last_payoff in (3, 5):
+        return self.history[-1]
+    if last_payoff in (0, 1):
+        return axl.Action.D if self.history[-1] == axl.Action.C else axl.Action.C
+
+    return self.history[-1]

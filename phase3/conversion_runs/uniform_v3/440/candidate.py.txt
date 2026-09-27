@@ -1,0 +1,18 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if self.first_round():
+        self._always_defect = False
+        return axl.Action.D
+
+    if len(self.history) == 1:
+        return axl.Action.D
+
+    if len(self.history) == 2:
+        if opponent.history[0] == axl.Action.C and opponent.history[1] == axl.Action.C:
+            self._always_defect = True
+            return axl.Action.D
+        return axl.Action.C
+
+    if getattr(self, "_always_defect", False):
+        return axl.Action.D
+
+    return opponent.history[-1]

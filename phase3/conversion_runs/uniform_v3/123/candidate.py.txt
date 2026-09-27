@@ -1,0 +1,26 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if self.first_round():
+        self._coop_after_start = False
+        self._opp_coop_2_and_3 = None
+        return axl.Action.D
+
+    round_number = len(self.history) + 1
+
+    if round_number == 2 or round_number == 3:
+        return axl.Action.C
+
+    if round_number == 4:
+        self._opp_coop_2_and_3 = (
+            len(opponent.history) >= 3
+            and opponent.history[1] == axl.Action.C
+            and opponent.history[2] == axl.Action.C
+        )
+        self._coop_after_start = not self._opp_coop_2_and_3
+
+    if round_number == 1000:
+        return axl.Action.D
+
+    if self._coop_after_start:
+        return opponent.history[-1]
+
+    return axl.Action.D

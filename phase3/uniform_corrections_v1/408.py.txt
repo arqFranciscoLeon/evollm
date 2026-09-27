@@ -1,0 +1,19 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if self.first_round():
+        self.cooperation_started = False
+        self.permanent_defection = False
+        return axl.Action.D
+
+    if self.permanent_defection:
+        return axl.Action.D
+
+    if self.cooperation_started:
+        if opponent.history[-1] == axl.Action.D:
+            self.permanent_defection = True
+            return axl.Action.D
+        return axl.Action.C
+
+    if len(self.history) >= 5 and self.history[-5:].count(axl.Action.D) == 5 and opponent.history[-5:].count(axl.Action.C) == 5:
+        self.cooperation_started = True
+        return axl.Action.C
+    return axl.Action.D

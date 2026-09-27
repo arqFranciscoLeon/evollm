@@ -1,0 +1,22 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if self.first_round():
+        self._bait_round = None
+        return axl.Action.D
+
+    # The round following the one-round C bait must be D.
+    if self._bait_round is not None:
+        self._bait_round = None
+        return axl.Action.D
+
+    # If opponent defected in the previous round, check for three consecutive Ds.
+    if opponent.history and opponent.history[-1] == axl.Action.D:
+        if len(opponent.history) >= 3 and opponent.history[-3:] == [axl.Action.D, axl.Action.D, axl.Action.D]:
+            self._bait_round = True
+            return axl.Action.C
+        return axl.Action.D
+
+    # If opponent cooperated in the previous round, exploit by defecting.
+    if opponent.history and opponent.history[-1] == axl.Action.C:
+        return axl.Action.D
+
+    return axl.Action.D

@@ -1,0 +1,18 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if self.first_round():
+        return axl.Action.D
+
+    if opponent.history[-1] == axl.Action.C:
+        return axl.Action.D
+
+    if opponent.history[-1] == axl.Action.D and self.history[-1] == axl.Action.C:
+        return axl.Action.D
+
+    if len(self.history) >= 10:
+        if all(
+            self.history[-i] == axl.Action.D and opponent.history[-i] == axl.Action.D
+            for i in range(1, 11)
+        ):
+            return axl.Action.C
+
+    return axl.Action.D

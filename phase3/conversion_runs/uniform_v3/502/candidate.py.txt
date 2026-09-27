@@ -1,0 +1,27 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if self.first_round():
+        self._always_defect = False
+        return axl.Action.D
+
+    if self._always_defect:
+        return axl.Action.D
+
+    round_number = len(self.history) + 1
+
+    if round_number == 1000:
+        return axl.Action.D
+
+    my_last = self.history[-1]
+    opp_last = opponent.history[-1]
+
+    if my_last == axl.Action.D and opp_last == axl.Action.C:
+        return axl.Action.D
+    if my_last == axl.Action.D and opp_last == axl.Action.D:
+        return axl.Action.C
+    if my_last == axl.Action.C and opp_last == axl.Action.C:
+        return axl.Action.D
+    if my_last == axl.Action.C and opp_last == axl.Action.D:
+        self._always_defect = True
+        return axl.Action.D
+
+    return axl.Action.D

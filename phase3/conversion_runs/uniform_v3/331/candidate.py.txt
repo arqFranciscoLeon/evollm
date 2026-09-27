@@ -1,0 +1,21 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if self.first_round():
+        return axl.Action.C
+
+    # 1. If opponent defected in the immediately preceding round, defect.
+    if opponent.history[-1] == axl.Action.D:
+        return axl.Action.D
+
+    # 2. If opponent has defected more than 15% of all rounds so far, defect.
+    rounds_played = len(self.history)
+    if rounds_played > 0 and opponent.history.defections / rounds_played > 0.15:
+        return axl.Action.D
+
+    # 3. If opponent defected twice in a row at any point in the last 10 rounds, defect.
+    if rounds_played >= 10:
+        last_10 = opponent.history[-10:]
+        for i in range(9):
+            if last_10[i] == axl.Action.D and last_10[i + 1] == axl.Action.D:
+                return axl.Action.D
+
+    return axl.Action.C

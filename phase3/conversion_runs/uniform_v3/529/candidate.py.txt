@@ -1,0 +1,22 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if self.first_round():
+        self._sustain_cooperation = False
+        return axl.Action.D
+
+    if len(self.history) >= 2:
+        if (
+            self.history[-2] == axl.Action.D
+            and opponent.history[-2] == axl.Action.C
+            and self.history[-1] == axl.Action.D
+            and opponent.history[-1] == axl.Action.C
+        ):
+            self._sustain_cooperation = True
+
+    if self._sustain_cooperation:
+        self._sustain_cooperation = False
+        return axl.Action.C
+
+    if opponent.history[-1] == axl.Action.D:
+        return axl.Action.D
+
+    return axl.Action.D

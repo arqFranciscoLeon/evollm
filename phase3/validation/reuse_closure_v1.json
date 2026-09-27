@@ -1,0 +1,45 @@
+{
+  "status": "local_schedule_and_synthetic_execution_verified",
+  "unique_matches": 166172,
+  "logical_matches": 2622048,
+  "scenario_pairs": [
+    163878,
+    163878,
+    163878,
+    163878,
+    163878,
+    163878,
+    163878,
+    163878,
+    163878,
+    163878,
+    163878,
+    163878,
+    163878,
+    163878,
+    163878,
+    163878
+  ],
+  "batches": 665,
+  "software_tests": {
+    "reuse_tests_v1.xml": 10,
+    "reuse_dispatch_tests_v1.xml": 4
+  },
+  "files_sha256": {
+    "phase3/reuse_batches_v1.py": "b62aec3c41121ae99662c4ea679746c1375f6969593f096510126de665fb8681",
+    "phase3/reuse_worker_v1.py": "7ae62096b9bda04e0710d51eb96c3aee93b719dd21488f4f5d20d9f623fa1cd3",
+    "phase3/reuse_dispatch_v1.py": "cbe1427bd56c786140491144c47473c53c02639955b9d1cd5642c59624f7a683",
+    "phase3/prepare_reuse_plan_v1.py": "ac18f33aedeb50a77324724ca59eb960248fa116568894699947e9e1cf2b23cb",
+    "phase3/verify_reuse_plan_v1.py": "bb8d01ba8cc6308defeda2d3a8bbf4a55c791d5335817011c226005e6c1a0e4e",
+    "phase3/tests/test_reuse_batches_v1.py": "d625101414dbd455fe66bf48ac226d0a200548af0a6070cd08e952b4e6a9e3ab",
+    "phase3/tests/test_reuse_dispatch_v1.py": "b7d4427683b4e85350358d764a53f7a13f9669c9f275a4b31352855d4ec1873e",
+    "phase3/validation/reuse_tests_v1.xml": "0f776f1df89d80106cd379d46e399525c34231d7b7dd403d562d637719f349b9",
+    "phase3/validation/reuse_dispatch_tests_v1.xml": "9ed71be46141953e851f820f4f627c8760345f0b91fca3e47659010e5b37599f",
+    "phase3/reuse_plan_v1/context.json": "3811e2f65857b46003a48ddedbc0f625c1a9e573207987787f7a5f78b01d1bfd",
+    "phase3/reuse_plan_v1/manifest.json": "2dbcfc56965bd025ca2f4eb9ca2351099f5fd34101fbbd7af82fee9a43bb3ba6"
+  },
+  "scope": "No real tournament games executed; process equivalence tested on synthetic strategies. Modal batch integration pending.",
+  "api_calls": 0,
+  "modal_jobs": 0,
+  "confirmatory_matches": 0
+}

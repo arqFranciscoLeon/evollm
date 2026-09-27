@@ -1,0 +1,13 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if self.first_round():
+        self._permanent_defect = False
+        return axl.Action.D
+
+    if self._permanent_defect:
+        return axl.Action.D
+
+    if axl.Action.D in opponent.history:
+        self._permanent_defect = True
+        return axl.Action.D
+
+    return axl.Action.C

@@ -1,0 +1,19 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if self.first_round():
+        self._opponent_defect_forever = False
+        return axl.Action.C
+
+    if self._opponent_defect_forever:
+        return axl.Action.D
+
+    if len(opponent.history) >= 997:
+        return axl.Action.D
+
+    if opponent.history.defections * 100 >= 60 * len(opponent.history):
+        self._opponent_defect_forever = True
+        return axl.Action.D
+
+    if opponent.history and opponent.history[-1] == axl.Action.D:
+        return axl.Action.D
+
+    return axl.Action.C

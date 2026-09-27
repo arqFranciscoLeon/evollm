@@ -1,0 +1,40 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if self.first_round():
+        return axl.Action.D
+
+    round_number = len(self.history) + 1
+
+    # Round 2: if opponent defected on round 1, defect forever.
+    if round_number == 2:
+        if opponent.history[0] == axl.Action.D:
+            self._always_defect = True
+            return axl.Action.D
+        return axl.Action.D
+
+    # Permanent defect state.
+    if getattr(self, "_always_defect", False):
+        return axl.Action.D
+
+    # Round 3: if opponent cooperated on round 1, defect on round 2 already;
+    # if opponent cooperated on round 2, defect forever; if opponent defected on round 2, cooperate.
+    if round_number == 3:
+        if opponent.history[1] == axl.Action.C:
+            self._always_defect = True
+            return axl.Action.D
+        return axl.Action.C
+
+    # Round 4: if opponent defected on round 3, defect forever; otherwise cooperate.
+    if round_number == 4:
+        if opponent.history[2] == axl.Action.D:
+            self._always_defect = True
+            return axl.Action.D
+        self._always_cooperate_until_end = True
+        return axl.Action.C
+
+    # If opponent cooperated on round 3, cooperate until round 999, then defect on 1000.
+    if getattr(self, "_always_cooperate_until_end", False):
+        if round_number == 1000:
+            return axl.Action.D
+        return axl.Action.C
+
+    return axl.Action.C

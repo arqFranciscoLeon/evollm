@@ -1,0 +1,13 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if self.first_round():
+        self._punish_forever = False
+        return axl.Action.D
+
+    if self._punish_forever:
+        return axl.Action.D
+
+    if self.history[-1] == axl.Action.C and opponent.history[-1] == axl.Action.D:
+        self._punish_forever = True
+        return axl.Action.D
+
+    return opponent.history[-1]

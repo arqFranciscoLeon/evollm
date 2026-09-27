@@ -1,0 +1,12 @@
+{
+  "scope": "selected_diagnostic",
+  "matches": 11,
+  "preexisting": 0,
+  "first_new": 2,
+  "resume_new": 9,
+  "repeat_new": 0,
+  "complete": true,
+  "windows_linux_exact": true,
+  "receipt_sha256": "cf7da6d948c16a1293e6de24fa8132ebbc6110361d86802148e1ec33dbd94da7",
+  "batch_sha256": "c93c68716d0ac7518ae9b508843893d38af4eae5a683e7fde84768f6ada575eb"
+}

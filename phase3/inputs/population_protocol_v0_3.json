@@ -1,0 +1,150 @@
+{
+  "status": "working_protocol_not_public_registration",
+  "manifest_path": "phase3\\validation\\uniform_derived_candidates_v1.json",
+  "manifest_sha256": "d5725c7a63125a0cbdee1ddc24e4d2731dc60f6ad0734d3c670d5b23f9181062",
+  "protocol_sha256": "b910af9818568e73ad15d711772cca6dbd382bf7df1601f32d02b2cab15128a4",
+  "cells": [
+    {
+      "model": "anthropic_sonnet46",
+      "attitude": "Aggressive",
+      "n": 25
+    },
+    {
+      "model": "anthropic_sonnet46",
+      "attitude": "Cooperative",
+      "n": 25
+    },
+    {
+      "model": "anthropic_sonnet46",
+      "attitude": "Neutral",
+      "n": 25
+    },
+    {
+      "model": "deepseek_v4pro",
+      "attitude": "Aggressive",
+      "n": 24
+    },
+    {
+      "model": "deepseek_v4pro",
+      "attitude": "Cooperative",
+      "n": 25
+    },
+    {
+      "model": "deepseek_v4pro",
+      "attitude": "Neutral",
+      "n": 25
+    },
+    {
+      "model": "gemini_25_flash",
+      "attitude": "Aggressive",
+      "n": 23
+    },
+    {
+      "model": "gemini_25_flash",
+      "attitude": "Cooperative",
+      "n": 25
+    },
+    {
+      "model": "gemini_25_flash",
+      "attitude": "Neutral",
+      "n": 25
+    },
+    {
+      "model": "gemini_31_pro",
+      "attitude": "Aggressive",
+      "n": 9
+    },
+    {
+      "model": "gemini_31_pro",
+      "attitude": "Cooperative",
+      "n": 25
+    },
+    {
+      "model": "gemini_31_pro",
+      "attitude": "Neutral",
+      "n": 25
+    },
+    {
+      "model": "glm_51",
+      "attitude": "Aggressive",
+      "n": 25
+    },
+    {
+      "model": "glm_51",
+      "attitude": "Cooperative",
+      "n": 25
+    },
+    {
+      "model": "glm_51",
+      "attitude": "Neutral",
+      "n": 25
+    },
+    {
+      "model": "kimi_k25",
+      "attitude": "Aggressive",
+      "n": 24
+    },
+    {
+      "model": "kimi_k25",
+      "attitude": "Cooperative",
+      "n": 25
+    },
+    {
+      "model": "kimi_k25",
+      "attitude": "Neutral",
+      "n": 25
+    },
+    {
+      "model": "openai_gpt54mini",
+      "attitude": "Aggressive",
+      "n": 17
+    },
+    {
+      "model": "openai_gpt54mini",
+      "attitude": "Cooperative",
+      "n": 25
+    },
+    {
+      "model": "openai_gpt54mini",
+      "attitude": "Neutral",
+      "n": 25
+    },
+    {
+      "model": "qwen3max",
+      "attitude": "Aggressive",
+      "n": 25
+    },
+    {
+      "model": "qwen3max",
+      "attitude": "Cooperative",
+      "n": 25
+    },
+    {
+      "model": "qwen3max",
+      "attitude": "Neutral",
+      "n": 25
+    }
+  ],
+  "attitude_totals": {
+    "Aggressive": 172,
+    "Cooperative": 200,
+    "Neutral": 200
+  },
+  "participants": 572,
+  "exclusions": 28,
+  "nonself_unordered_pairs": 163306,
+  "within_model_pairs": 20277,
+  "between_model_pairs": 143029,
+  "self_pairs": 572,
+  "pairs_with_self": 163878,
+  "attitude_pair_counts": {
+    "Aggressive/Aggressive": 14706,
+    "Aggressive/Cooperative": 34400,
+    "Aggressive/Neutral": 34400,
+    "Cooperative/Cooperative": 19900,
+    "Cooperative/Neutral": 40000,
+    "Neutral/Neutral": 19900
+  },
+  "illustrative_matches_at_20_repetitions": 3277560,
+  "repetitions_frozen": false
+}

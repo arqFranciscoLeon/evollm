@@ -1,0 +1,35 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if self.first_round():
+        self._tested_mutual_cooperation = False
+        self._permanent_defect = False
+        self._cooperate_test_round = False
+        return axl.Action.D
+
+    if self._permanent_defect:
+        return axl.Action.D
+
+    last_opp = opponent.history[-1]
+    last_self = self.history[-1]
+
+    if self._cooperate_test_round:
+        self._cooperate_test_round = False
+        if last_opp == axl.Action.C:
+            self._permanent_defect = True
+            return axl.Action.D
+        return axl.Action.D
+
+    if last_self == axl.Action.C and last_opp == axl.Action.D:
+        self._permanent_defect = True
+        return axl.Action.D
+
+    if (
+        not self._tested_mutual_cooperation
+        and len(self.history) >= 10
+        and self.history[-10:].count(axl.Action.D) == 10
+        and opponent.history[-10:].count(axl.Action.C) == 10
+    ):
+        self._tested_mutual_cooperation = True
+        self._cooperate_test_round = True
+        return axl.Action.C
+
+    return axl.Action.D

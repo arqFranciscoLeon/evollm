@@ -1,0 +1,2 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    return axl.Action.D
