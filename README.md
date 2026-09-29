@@ -30,9 +30,18 @@ This repository accompanies the paper "Will Systems of LLM Agents Lead to Cooper
 > `python reproduce_tables.py` recomputes H5 and H6 alongside the Phase 1
 > tables.
 >
-> Phase 3 is pre-registered but not yet run:
-> **[`PHASE3_PREREG.md`](./PHASE3_PREREG.md)**, together with the adversarial
-> review it was put through before any data was collected.
+> Paper 2 is available as a preprint: [arXiv:2608.10262](https://arxiv.org/abs/2608.10262).
+
+> **Phase 3 — registered mixed-model tournament (2026).**
+> 572 strategy identities written by all eight models play one another once for
+> 1,000 rounds (166,172 computed encounters, no errors). The protocol was frozen in
+> commit [`18cb417`](https://github.com/arqFranciscoLeon/evollm/commit/18cb41744f3f1e66fe711aad09697980476c2498)
+> and registered on [OSF](https://osf.io/2nzdh) before execution. This release adds
+> the 665 confirmatory receipts, the registered analysis and a set of post hoc
+> analyses that are explicitly not preregistered. Start with
+> **[`phase3/REPLICATION.md`](./phase3/REPLICATION.md)**. The earlier draft
+> pre-registration **[`PHASE3_PREREG.md`](./PHASE3_PREREG.md)** is kept for the
+> record; the registered protocol is `phase3/PHASE3_PROTOCOL_v1.md`.
 
 ---
 

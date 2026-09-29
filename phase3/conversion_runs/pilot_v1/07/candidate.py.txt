@@ -1,0 +1,17 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    current_round = len(self.history) + 1
+
+    # 1. Endgame Defection
+    if 991 <= current_round <= 1000:
+        return axl.Action.D
+
+    # 2. Retaliation
+    if len(opponent.history) >= 1 and opponent.history[-1] == axl.Action.D:
+        return axl.Action.D
+
+    # 3. Exploitation
+    if len(opponent.history) >= 3 and opponent.history[-3:] == [axl.Action.C, axl.Action.C, axl.Action.C]:
+        return axl.Action.D
+
+    # 4. Baseline Cooperation
+    return axl.Action.C

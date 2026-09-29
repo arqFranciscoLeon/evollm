@@ -27,8 +27,12 @@ LABELS = {
 
 
 def plurality(r):
-    return max(("A", r["pct_Aggressive"]), ("C", r["pct_Cooperative"]),
-               ("N", r["pct_Neutral"]), key=lambda t: t[1])[0]
+    # Use integer counts: rounded percentages can hide a difference, and
+    # Python's max() used to assign an exact C/N tie to C by list order.
+    counts = {"A": r["Aggressive"], "C": r["Cooperative"], "N": r["Neutral"]}
+    top = max(counts.values())
+    winners = [attitude for attitude, count in counts.items() if count == top]
+    return winners[0] if len(winners) == 1 else "Tie"
 
 
 def main():

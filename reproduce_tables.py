@@ -76,21 +76,15 @@ CHINESE_LABS = ["DeepSeek V4 Pro", "Qwen3-Max", "Kimi K2.5", "GLM-5.1"]
 PHASE1_PLURALITY = (9, 12)
 
 
-def load_n500():
-    files = sorted(HERE.glob("results/modal_waves_final_*.json"))
-    if not files:
-        raise SystemExit(
-            "No results/modal_waves_final_*.json found. "
-            "Run `python -m modal run modal_moran_waves.py` or restore the "
-            "committed authoritative results file."
-        )
-    with open(files[-1], encoding="utf8") as fh:
-        rows = json.load(fh)
-    d = {}
-    for r in rows:
-        pop = f"{r['pop_agresivos']}{r['pop_cooperativos']}{r['pop_neutrales']}"
-        d[(r["algo"], pop)] = r
-    return d, files[-1].name
+def load_n500(path=None):
+    # A later filename can belong to a different study. Never silently select it
+    # and report absent Western conditions as zero-probability outcomes.
+    from phase3.existing_evidence import load_checked
+    path = pathlib.Path(path) if path else HERE / "phase3/evidence/modal_waves_final_20260613_122828_erratumv2.json"
+    models = sorted({algo.rsplit("_", 2)[0] for algo, _, _ in PAPER_ALGOS})
+    checked = load_checked(path, models)
+    d = {(algo, "".join(map(str, pop))): row for (algo, pop), row in checked.items()}
+    return d, path.name
 
 
 def z_test(x1, x2, n1=N, n2=N):
@@ -377,8 +371,10 @@ def main():
     d2, src2 = load_phase2()
     phase2_section(d2, src2)
 
-    print("\nAll Phase 1 figures above appear in the manuscript. "
-          "Verification OK.")
+    print("\nPhase 1 source coverage and count checks passed. "
+          "Manuscript agreement requires a separate comparison. "
+          "Phase 2's 9/12 comparison retains its historical v1 baseline; "
+          "Phase 1 v2 reports 10/12.")
 
 
 if __name__ == "__main__":
