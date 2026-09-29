@@ -1,0 +1,7 @@
+{
+  "status": "post hoc export of the registered scenario-0 matrices",
+  "matrix_sha256_registered_definition": "b38cc9f6678a28a505e3666626d116b8867206e0902efd7f556e9256cbe72eef",
+  "h7_reproduced": 0.005348991712007744,
+  "identities": 572,
+  "npz_file": "primary_matrix_v1.npz"
+}

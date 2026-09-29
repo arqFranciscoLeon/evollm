@@ -1,0 +1,1339 @@
+{
+  "status": "complete",
+  "registration": {
+    "url": "https://osf.io/2nzdh/overview",
+    "frozen_git_commit": "18cb41744f3f1e66fe711aad09697980476c2498",
+    "public_visibility_verified_at_utc": "2026-09-28T00:53:08Z"
+  },
+  "provenance": {
+    "context_sha256": "3811e2f65857b46003a48ddedbc0f625c1a9e573207987787f7a5f78b01d1bfd",
+    "batch_manifest_sha256": "2dbcfc56965bd025ca2f4eb9ca2351099f5fd34101fbbd7af82fee9a43bb3ba6",
+    "field_manifest_sha256": "d5725c7a63125a0cbdee1ddc24e4d2731dc60f6ad0734d3c670d5b23f9181062",
+    "sensitivity_plan_sha256": "361d3ade33783e972c8f0fcfe99d285e230e02a696ce0f44a1d9a5fb3154afc7",
+    "h7_analyzer_sha256": "36f0d0e049306f7f5fb13bf8172fb01e9c79b2da2265dc0f28c60e039f6f37d2",
+    "sensitivity_code_sha256": "4392ed8755e1bd2054ec7d4c88acaadc8a15f49cf2c27b6ac05f1b7756b8d833",
+    "receipts_verified": 665,
+    "receipt_inventory_sha256": "d7097876abade5cd4365829a5ce1ae11f65dcbee2829ad0c3079a494d4cbd375"
+  },
+  "execution": {
+    "computational_matches": 166172,
+    "logical_scenario_results": 2622048,
+    "errors": 0,
+    "strategies": 572,
+    "scenario_count": 16,
+    "matches_per_scenario_including_self": 163878
+  },
+  "primary_h7_scenario_0": {
+    "difference": 0.005348991712007744,
+    "difference_pp": 0.5348991712007745,
+    "stratum_differences": [
+      0.018968175836330356,
+      0.004847440033694646,
+      0.006906662973450254,
+      0.0009320880952379679,
+      4.345714285707014e-05,
+      0.00039612619047617315
+    ],
+    "p_one_sided": 9.999000099990002e-05,
+    "permutations": 10000,
+    "seed": 20260913,
+    "null_interval95": [
+      -0.0010730252640635339,
+      0.0011752777571630041
+    ],
+    "interpretation": "Permutation reference interval, NOT a confidence interval for the effect. Strategy-level labels shuffled within attitude; self-pairs excluded."
+  },
+  "scenario_sensitivity_all_16": [
+    {
+      "mask": 0,
+      "difference": 0.005348991712007744,
+      "difference_pp": 0.5348991712007745,
+      "matrix_sha256": "b38cc9f6678a28a505e3666626d116b8867206e0902efd7f556e9256cbe72eef",
+      "source_manifest_sha256": "d5725c7a63125a0cbdee1ddc24e4d2731dc60f6ad0734d3c670d5b23f9181062"
+    },
+    {
+      "mask": 1,
+      "difference": 0.005348297853949225,
+      "difference_pp": 0.5348297853949224,
+      "matrix_sha256": "979af424036e3e78d33f652188935d38d069c5b078fe969ac8197100ef775345",
+      "source_manifest_sha256": "d5725c7a63125a0cbdee1ddc24e4d2731dc60f6ad0734d3c670d5b23f9181062"
+    },
+    {
+      "mask": 2,
+      "difference": 0.005348381724051211,
+      "difference_pp": 0.5348381724051211,
+      "matrix_sha256": "2c5a11c6b5d33854c326b5651dd9aa815a7f5961ac8306e35f6e3dcf05b265b5",
+      "source_manifest_sha256": "d5725c7a63125a0cbdee1ddc24e4d2731dc60f6ad0734d3c670d5b23f9181062"
+    },
+    {
+      "mask": 3,
+      "difference": 0.0053476878659926876,
+      "difference_pp": 0.5347687865992687,
+      "matrix_sha256": "29ee598a129fcca1efb5648809819d03b564dc315a50253d93d03e1c8869c73d",
+      "source_manifest_sha256": "d5725c7a63125a0cbdee1ddc24e4d2731dc60f6ad0734d3c670d5b23f9181062"
+    },
+    {
+      "mask": 4,
+      "difference": 0.005344046275499809,
+      "difference_pp": 0.5344046275499809,
+      "matrix_sha256": "5598ed9cc2b4d7c2c1e2553560957d7718369841caa745f4073b67b444c12a8b",
+      "source_manifest_sha256": "d5725c7a63125a0cbdee1ddc24e4d2731dc60f6ad0734d3c670d5b23f9181062"
+    },
+    {
+      "mask": 5,
+      "difference": 0.005343352417441288,
+      "difference_pp": 0.5343352417441288,
+      "matrix_sha256": "b35ac3a98127ec1485a663ebf7623340ceb8bcf3c63fb8f6d6a5f757bbbc15e6",
+      "source_manifest_sha256": "d5725c7a63125a0cbdee1ddc24e4d2731dc60f6ad0734d3c670d5b23f9181062"
+    },
+    {
+      "mask": 6,
+      "difference": 0.005343436287543274,
+      "difference_pp": 0.5343436287543274,
+      "matrix_sha256": "396b5e12ef4328faa1546b5e1d93a7aa6e301cfefe21d082d407162973d3b78f",
+      "source_manifest_sha256": "d5725c7a63125a0cbdee1ddc24e4d2731dc60f6ad0734d3c670d5b23f9181062"
+    },
+    {
+      "mask": 7,
+      "difference": 0.005342742429484751,
+      "difference_pp": 0.534274242948475,
+      "matrix_sha256": "e78ef23b2b606fa218a2c200bc7027523b5d13aaafe53ca7d3176bde22d80a8a",
+      "source_manifest_sha256": "d5725c7a63125a0cbdee1ddc24e4d2731dc60f6ad0734d3c670d5b23f9181062"
+    },
+    {
+      "mask": 8,
+      "difference": 0.005349083775499809,
+      "difference_pp": 0.5349083775499809,
+      "matrix_sha256": "6e5f0c39baf30bf0489cf6099b5a6d58e40bdedacbbf6a4fd535dc8e16591005",
+      "source_manifest_sha256": "d5725c7a63125a0cbdee1ddc24e4d2731dc60f6ad0734d3c670d5b23f9181062"
+    },
+    {
+      "mask": 9,
+      "difference": 0.005348389917441289,
+      "difference_pp": 0.5348389917441289,
+      "matrix_sha256": "aff535052405340cc36823d264e9587f62fec44df2d745ecefb4a4425cf76a6d",
+      "source_manifest_sha256": "d5725c7a63125a0cbdee1ddc24e4d2731dc60f6ad0734d3c670d5b23f9181062"
+    },
+    {
+      "mask": 10,
+      "difference": 0.005348473787543276,
+      "difference_pp": 0.5348473787543275,
+      "matrix_sha256": "1bbdbb795ec0c0c7731410cc08b2ea7386333ba3afe15b4e58014ced085c7733",
+      "source_manifest_sha256": "d5725c7a63125a0cbdee1ddc24e4d2731dc60f6ad0734d3c670d5b23f9181062"
+    },
+    {
+      "mask": 11,
+      "difference": 0.005347779929484753,
+      "difference_pp": 0.5347779929484753,
+      "matrix_sha256": "ba3e2e6e5adcaf5c7d6d89f5497d19e72f29b7a4b6b22bdbc2a5ff3f1bf3b6a0",
+      "source_manifest_sha256": "d5725c7a63125a0cbdee1ddc24e4d2731dc60f6ad0734d3c670d5b23f9181062"
+    },
+    {
+      "mask": 12,
+      "difference": 0.005344138338991872,
+      "difference_pp": 0.5344138338991872,
+      "matrix_sha256": "c0fdeb55a59d1380cf9aacff6eed6215fb021b30897956aff11877b089fddd26",
+      "source_manifest_sha256": "d5725c7a63125a0cbdee1ddc24e4d2731dc60f6ad0734d3c670d5b23f9181062"
+    },
+    {
+      "mask": 13,
+      "difference": 0.005343444480933352,
+      "difference_pp": 0.5343444480933353,
+      "matrix_sha256": "70aadc19114bdea2432477996c1638095c7fb45c61fe3934482fc4921d3479ee",
+      "source_manifest_sha256": "d5725c7a63125a0cbdee1ddc24e4d2731dc60f6ad0734d3c670d5b23f9181062"
+    },
+    {
+      "mask": 14,
+      "difference": 0.005343528351035337,
+      "difference_pp": 0.5343528351035337,
+      "matrix_sha256": "3c14e48dbd08e7c852466d987c55b46ac8c43468caaa7844ae31bc6415283e29",
+      "source_manifest_sha256": "d5725c7a63125a0cbdee1ddc24e4d2731dc60f6ad0734d3c670d5b23f9181062"
+    },
+    {
+      "mask": 15,
+      "difference": 0.005342834492976817,
+      "difference_pp": 0.5342834492976817,
+      "matrix_sha256": "1e589b23a5b37c88904d183dff68007fd23ab29139c17edc2a4ddf76c59f02a3",
+      "source_manifest_sha256": "d5725c7a63125a0cbdee1ddc24e4d2731dc60f6ad0734d3c670d5b23f9181062"
+    }
+  ],
+  "scenario_range": {
+    "minimum_difference": 0.005342742429484751,
+    "maximum_difference": 0.005349083775499809,
+    "difference_from_primary": [
+      0.0,
+      -6.938580585195975e-07,
+      -6.09987956533796e-07,
+      -1.3038460150568629e-06,
+      -4.945436507935823e-06,
+      -5.639294566456288e-06,
+      -5.555424464470486e-06,
+      -6.249282522993553e-06,
+      9.20634920641844e-08,
+      -6.017945664554131e-07,
+      -5.179244644687442e-07,
+      -1.2117825229918111e-06,
+      -4.853373015872506e-06,
+      -5.547231074392103e-06,
+      -5.463360972407169e-06,
+      -6.157219030927634e-06
+    ],
+    "interpretation": "Descriptive range across prespecified interpretation masks; not a confidence interval and no additional p-values."
+  },
+  "duplicate_ast_sensitivity_scenario_0": {
+    "difference": 0.010197855454860657,
+    "stratum_differences": [
+      0.021425614978471653,
+      0.013913699780421429,
+      0.020074637055126052,
+      0.0007768081626629286,
+      -0.0001504134019679887,
+      0.00514678615444987
+    ],
+    "groups_per_cell": [
+      14,
+      7,
+      9,
+      11,
+      16,
+      16,
+      8,
+      5,
+      4,
+      9,
+      6,
+      7,
+      23,
+      10,
+      8,
+      13,
+      7,
+      7,
+      2,
+      5,
+      9,
+      1,
+      5,
+      3
+    ],
+    "interpretation": "Descriptive AST-weighted contrast; identity diagonal excluded. No p-value or confidence interval."
+  },
+  "missing_28_identity_bounds_scenario_0": {
+    "lower": -0.08850333928571434,
+    "upper": 0.08563515277777771,
+    "missing_identities": 28,
+    "interpretation": "Algebraic envelope, not a confidence interval or imputed strategies; joint behavioural attainability is not assumed."
+  },
+  "descriptive_primary_scenario_0": {
+    "model_attitude": [
+      {
+        "model": "anthropic_sonnet46",
+        "attitude": "Aggressive",
+        "strategies": 25,
+        "mean_mutual_cooperation_vs_all_other_identities": 0.00967523642732049,
+        "mean_focal_payoff_vs_all_other_identities": 1.7188180735551666
+      },
+      {
+        "model": "anthropic_sonnet46",
+        "attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation_vs_all_other_identities": 0.7041567075306481,
+        "mean_focal_payoff_vs_all_other_identities": 2.5583449387040282
+      },
+      {
+        "model": "anthropic_sonnet46",
+        "attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation_vs_all_other_identities": 0.7083997197898425,
+        "mean_focal_payoff_vs_all_other_identities": 2.5608881260945706
+      },
+      {
+        "model": "deepseek_v4pro",
+        "attitude": "Aggressive",
+        "strategies": 24,
+        "mean_mutual_cooperation_vs_all_other_identities": 0.02831122300058377,
+        "mean_focal_payoff_vs_all_other_identities": 1.5693740513718621
+      },
+      {
+        "model": "deepseek_v4pro",
+        "attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation_vs_all_other_identities": 0.7209399649737303,
+        "mean_focal_payoff_vs_all_other_identities": 2.5204061646234677
+      },
+      {
+        "model": "deepseek_v4pro",
+        "attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation_vs_all_other_identities": 0.7215221716287217,
+        "mean_focal_payoff_vs_all_other_identities": 2.5037874605954467
+      },
+      {
+        "model": "gemini_25_flash",
+        "attitude": "Aggressive",
+        "strategies": 23,
+        "mean_mutual_cooperation_vs_all_other_identities": 0.02056057260336557,
+        "mean_focal_payoff_vs_all_other_identities": 1.3061413233838421
+      },
+      {
+        "model": "gemini_25_flash",
+        "attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation_vs_all_other_identities": 0.7094903677758321,
+        "mean_focal_payoff_vs_all_other_identities": 2.565873905429072
+      },
+      {
+        "model": "gemini_25_flash",
+        "attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation_vs_all_other_identities": 0.7094903677758321,
+        "mean_focal_payoff_vs_all_other_identities": 2.565873905429072
+      },
+      {
+        "model": "gemini_31_pro",
+        "attitude": "Aggressive",
+        "strategies": 9,
+        "mean_mutual_cooperation_vs_all_other_identities": 0.31965518583381974,
+        "mean_focal_payoff_vs_all_other_identities": 2.075369721735747
+      },
+      {
+        "model": "gemini_31_pro",
+        "attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation_vs_all_other_identities": 0.7089737302977234,
+        "mean_focal_payoff_vs_all_other_identities": 2.56707880910683
+      },
+      {
+        "model": "gemini_31_pro",
+        "attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation_vs_all_other_identities": 0.7089943957968476,
+        "mean_focal_payoff_vs_all_other_identities": 2.56703061295972
+      },
+      {
+        "model": "glm_51",
+        "attitude": "Aggressive",
+        "strategies": 25,
+        "mean_mutual_cooperation_vs_all_other_identities": 0.11697246935201402,
+        "mean_focal_payoff_vs_all_other_identities": 1.6835513835376532
+      },
+      {
+        "model": "glm_51",
+        "attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation_vs_all_other_identities": 0.709989772329247,
+        "mean_focal_payoff_vs_all_other_identities": 2.5621379334500873
+      },
+      {
+        "model": "glm_51",
+        "attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation_vs_all_other_identities": 0.7105354816112084,
+        "mean_focal_payoff_vs_all_other_identities": 2.5548232574430823
+      },
+      {
+        "model": "kimi_k25",
+        "attitude": "Aggressive",
+        "strategies": 24,
+        "mean_mutual_cooperation_vs_all_other_identities": 0.011360113835376532,
+        "mean_focal_payoff_vs_all_other_identities": 1.7282345300642146
+      },
+      {
+        "model": "kimi_k25",
+        "attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation_vs_all_other_identities": 0.7093457092819615,
+        "mean_focal_payoff_vs_all_other_identities": 2.566211278458844
+      },
+      {
+        "model": "kimi_k25",
+        "attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation_vs_all_other_identities": 0.7093609106830123,
+        "mean_focal_payoff_vs_all_other_identities": 2.566081401050788
+      },
+      {
+        "model": "openai_gpt54mini",
+        "attitude": "Aggressive",
+        "strategies": 17,
+        "mean_mutual_cooperation_vs_all_other_identities": 0.0008651488616462347,
+        "mean_focal_payoff_vs_all_other_identities": 1.2251800762336456
+      },
+      {
+        "model": "openai_gpt54mini",
+        "attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation_vs_all_other_identities": 0.7094903677758321,
+        "mean_focal_payoff_vs_all_other_identities": 2.565873905429072
+      },
+      {
+        "model": "openai_gpt54mini",
+        "attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation_vs_all_other_identities": 0.6533194395796849,
+        "mean_focal_payoff_vs_all_other_identities": 2.490950963222417
+      },
+      {
+        "model": "qwen3max",
+        "attitude": "Aggressive",
+        "strategies": 25,
+        "mean_mutual_cooperation_vs_all_other_identities": 0.0,
+        "mean_focal_payoff_vs_all_other_identities": 1.1712924693520137
+      },
+      {
+        "model": "qwen3max",
+        "attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation_vs_all_other_identities": 0.7094903677758321,
+        "mean_focal_payoff_vs_all_other_identities": 2.565873905429072
+      },
+      {
+        "model": "qwen3max",
+        "attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation_vs_all_other_identities": 0.7094903677758321,
+        "mean_focal_payoff_vs_all_other_identities": 2.565873905429072
+      }
+    ],
+    "autopairs": [
+      {
+        "model": "anthropic_sonnet46",
+        "attitude": "Aggressive",
+        "strategies": 25,
+        "mean_self_play_cooperation": 0.0,
+        "mean_self_play_payoff": 1.0
+      },
+      {
+        "model": "anthropic_sonnet46",
+        "attitude": "Cooperative",
+        "strategies": 25,
+        "mean_self_play_cooperation": 0.9917999999999999,
+        "mean_self_play_payoff": 2.9836
+      },
+      {
+        "model": "anthropic_sonnet46",
+        "attitude": "Neutral",
+        "strategies": 25,
+        "mean_self_play_cooperation": 0.99972,
+        "mean_self_play_payoff": 2.9994400000000003
+      },
+      {
+        "model": "deepseek_v4pro",
+        "attitude": "Aggressive",
+        "strategies": 24,
+        "mean_self_play_cooperation": 0.14575000000000002,
+        "mean_self_play_payoff": 1.2915
+      },
+      {
+        "model": "deepseek_v4pro",
+        "attitude": "Cooperative",
+        "strategies": 25,
+        "mean_self_play_cooperation": 0.99992,
+        "mean_self_play_payoff": 2.9998400000000003
+      },
+      {
+        "model": "deepseek_v4pro",
+        "attitude": "Neutral",
+        "strategies": 25,
+        "mean_self_play_cooperation": 0.99992,
+        "mean_self_play_payoff": 2.9998400000000003
+      },
+      {
+        "model": "gemini_25_flash",
+        "attitude": "Aggressive",
+        "strategies": 23,
+        "mean_self_play_cooperation": 0.06526086956521739,
+        "mean_self_play_payoff": 1.1305217391304347
+      },
+      {
+        "model": "gemini_25_flash",
+        "attitude": "Cooperative",
+        "strategies": 25,
+        "mean_self_play_cooperation": 1.0,
+        "mean_self_play_payoff": 3.0
+      },
+      {
+        "model": "gemini_25_flash",
+        "attitude": "Neutral",
+        "strategies": 25,
+        "mean_self_play_cooperation": 1.0,
+        "mean_self_play_payoff": 3.0
+      },
+      {
+        "model": "gemini_31_pro",
+        "attitude": "Aggressive",
+        "strategies": 9,
+        "mean_self_play_cooperation": 0.5996666666666666,
+        "mean_self_play_payoff": 2.1993333333333336
+      },
+      {
+        "model": "gemini_31_pro",
+        "attitude": "Cooperative",
+        "strategies": 25,
+        "mean_self_play_cooperation": 0.9989999999999999,
+        "mean_self_play_payoff": 2.998
+      },
+      {
+        "model": "gemini_31_pro",
+        "attitude": "Neutral",
+        "strategies": 25,
+        "mean_self_play_cooperation": 0.9990399999999999,
+        "mean_self_play_payoff": 2.9980800000000003
+      },
+      {
+        "model": "glm_51",
+        "attitude": "Aggressive",
+        "strategies": 25,
+        "mean_self_play_cooperation": 0.37872,
+        "mean_self_play_payoff": 1.75744
+      },
+      {
+        "model": "glm_51",
+        "attitude": "Cooperative",
+        "strategies": 25,
+        "mean_self_play_cooperation": 0.99972,
+        "mean_self_play_payoff": 2.9994400000000003
+      },
+      {
+        "model": "glm_51",
+        "attitude": "Neutral",
+        "strategies": 25,
+        "mean_self_play_cooperation": 0.9998,
+        "mean_self_play_payoff": 2.9996000000000005
+      },
+      {
+        "model": "kimi_k25",
+        "attitude": "Aggressive",
+        "strategies": 24,
+        "mean_self_play_cooperation": 0.041625,
+        "mean_self_play_payoff": 1.08325
+      },
+      {
+        "model": "kimi_k25",
+        "attitude": "Cooperative",
+        "strategies": 25,
+        "mean_self_play_cooperation": 0.99972,
+        "mean_self_play_payoff": 2.9994400000000003
+      },
+      {
+        "model": "kimi_k25",
+        "attitude": "Neutral",
+        "strategies": 25,
+        "mean_self_play_cooperation": 0.99976,
+        "mean_self_play_payoff": 2.99952
+      },
+      {
+        "model": "openai_gpt54mini",
+        "attitude": "Aggressive",
+        "strategies": 17,
+        "mean_self_play_cooperation": 0.0,
+        "mean_self_play_payoff": 1.0
+      },
+      {
+        "model": "openai_gpt54mini",
+        "attitude": "Cooperative",
+        "strategies": 25,
+        "mean_self_play_cooperation": 1.0,
+        "mean_self_play_payoff": 3.0
+      },
+      {
+        "model": "openai_gpt54mini",
+        "attitude": "Neutral",
+        "strategies": 25,
+        "mean_self_play_cooperation": 0.92,
+        "mean_self_play_payoff": 2.84
+      },
+      {
+        "model": "qwen3max",
+        "attitude": "Aggressive",
+        "strategies": 25,
+        "mean_self_play_cooperation": 0.0,
+        "mean_self_play_payoff": 1.0
+      },
+      {
+        "model": "qwen3max",
+        "attitude": "Cooperative",
+        "strategies": 25,
+        "mean_self_play_cooperation": 1.0,
+        "mean_self_play_payoff": 3.0
+      },
+      {
+        "model": "qwen3max",
+        "attitude": "Neutral",
+        "strategies": 25,
+        "mean_self_play_cooperation": 1.0,
+        "mean_self_play_payoff": 3.0
+      }
+    ],
+    "counterfactual_mixes": [
+      {
+        "mix": "balanced",
+        "model": "anthropic_sonnet46",
+        "focal_attitude": "Aggressive",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.009274530917874396,
+        "mean_focal_payoff": 1.7000467705716589
+      },
+      {
+        "mix": "balanced",
+        "model": "anthropic_sonnet46",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.6836925249597424,
+        "mean_focal_payoff": 2.527735499971583
+      },
+      {
+        "mix": "balanced",
+        "model": "anthropic_sonnet46",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.6877855402576489,
+        "mean_focal_payoff": 2.529725369693095
+      },
+      {
+        "mix": "balanced",
+        "model": "deepseek_v4pro",
+        "focal_attitude": "Aggressive",
+        "strategies": 24,
+        "mean_mutual_cooperation": 0.027838628474688987,
+        "mean_focal_payoff": 1.5556132778359935
+      },
+      {
+        "mix": "balanced",
+        "model": "deepseek_v4pro",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.700903407513972,
+        "mean_focal_payoff": 2.4871102844226574
+      },
+      {
+        "mix": "balanced",
+        "model": "deepseek_v4pro",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.7016230082954438,
+        "mean_focal_payoff": 2.4698010757672635
+      },
+      {
+        "mix": "balanced",
+        "model": "gemini_25_flash",
+        "focal_attitude": "Aggressive",
+        "strategies": 23,
+        "mean_mutual_cooperation": 0.02014888577268852,
+        "mean_focal_payoff": 1.3042711676763374
+      },
+      {
+        "mix": "balanced",
+        "model": "gemini_25_flash",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.688836034621578,
+        "mean_focal_payoff": 2.535018370038837
+      },
+      {
+        "mix": "balanced",
+        "model": "gemini_25_flash",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.688836034621578,
+        "mean_focal_payoff": 2.535018370038837
+      },
+      {
+        "mix": "balanced",
+        "model": "gemini_31_pro",
+        "focal_attitude": "Aggressive",
+        "strategies": 9,
+        "mean_mutual_cooperation": 0.30908647779119697,
+        "mean_focal_payoff": 2.048648679391241
+      },
+      {
+        "mix": "balanced",
+        "model": "gemini_31_pro",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.6883422725442834,
+        "mean_focal_payoff": 2.536168909491333
+      },
+      {
+        "mix": "balanced",
+        "model": "gemini_31_pro",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.6883619563607085,
+        "mean_focal_payoff": 2.5361229545798993
+      },
+      {
+        "mix": "balanced",
+        "model": "glm_51",
+        "focal_attitude": "Aggressive",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.11313349662546177,
+        "mean_focal_payoff": 1.6641091374490862
+      },
+      {
+        "mix": "balanced",
+        "model": "glm_51",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.6894006156602255,
+        "mean_focal_payoff": 2.5311901373401535
+      },
+      {
+        "mix": "balanced",
+        "model": "glm_51",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.6900104399355876,
+        "mean_focal_payoff": 2.523505803220612
+      },
+      {
+        "mix": "balanced",
+        "model": "kimi_k25",
+        "focal_attitude": "Aggressive",
+        "strategies": 24,
+        "mean_mutual_cooperation": 0.01099250465479066,
+        "mean_focal_payoff": 1.708758630906922
+      },
+      {
+        "mix": "balanced",
+        "model": "kimi_k25",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.6886974312399358,
+        "mean_focal_payoff": 2.535340871085536
+      },
+      {
+        "mix": "balanced",
+        "model": "kimi_k25",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.6887120044283414,
+        "mean_focal_payoff": 2.535216628457422
+      },
+      {
+        "mix": "balanced",
+        "model": "openai_gpt54mini",
+        "focal_attitude": "Aggressive",
+        "strategies": 17,
+        "mean_mutual_cooperation": 0.0008296383915885194,
+        "mean_focal_payoff": 1.2266217802761203
+      },
+      {
+        "mix": "balanced",
+        "model": "openai_gpt54mini",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.688836034621578,
+        "mean_focal_payoff": 2.535018370038837
+      },
+      {
+        "mix": "balanced",
+        "model": "openai_gpt54mini",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.6341655281803543,
+        "mean_focal_payoff": 2.4612928567964385
+      },
+      {
+        "mix": "balanced",
+        "model": "qwen3max",
+        "focal_attitude": "Aggressive",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.0,
+        "mean_focal_payoff": 1.1749385950080518
+      },
+      {
+        "mix": "balanced",
+        "model": "qwen3max",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.688836034621578,
+        "mean_focal_payoff": 2.535018370038837
+      },
+      {
+        "mix": "balanced",
+        "model": "qwen3max",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.688836034621578,
+        "mean_focal_payoff": 2.535018370038837
+      },
+      {
+        "mix": "aggressive_dominant",
+        "model": "anthropic_sonnet46",
+        "focal_attitude": "Aggressive",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.011422861835748793,
+        "mean_focal_payoff": 1.4771790411433177
+      },
+      {
+        "mix": "aggressive_dominant",
+        "model": "anthropic_sonnet46",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.38061904991948475,
+        "mean_focal_payoff": 2.0736550999431653
+      },
+      {
+        "mix": "aggressive_dominant",
+        "model": "anthropic_sonnet46",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.3815164971819646,
+        "mean_focal_payoff": 2.0674946727195223
+      },
+      {
+        "mix": "aggressive_dominant",
+        "model": "deepseek_v4pro",
+        "focal_attitude": "Aggressive",
+        "strategies": 24,
+        "mean_mutual_cooperation": 0.025907465282711317,
+        "mean_focal_payoff": 1.386894680671987
+      },
+      {
+        "mix": "aggressive_dominant",
+        "model": "deepseek_v4pro",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.40739040669461024,
+        "mean_focal_payoff": 1.9828393771786492
+      },
+      {
+        "mix": "aggressive_dominant",
+        "model": "deepseek_v4pro",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.40882980825755416,
+        "mean_focal_payoff": 1.94863655986786
+      },
+      {
+        "mix": "aggressive_dominant",
+        "model": "gemini_25_flash",
+        "focal_attitude": "Aggressive",
+        "strategies": 23,
+        "mean_mutual_cooperation": 0.016847119371464003,
+        "mean_focal_payoff": 1.289443857091805
+      },
+      {
+        "mix": "aggressive_dominant",
+        "model": "gemini_25_flash",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.3833970692431562,
+        "mean_focal_payoff": 2.078006740077673
+      },
+      {
+        "mix": "aggressive_dominant",
+        "model": "gemini_25_flash",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.3833970692431562,
+        "mean_focal_payoff": 2.078006740077673
+      },
+      {
+        "mix": "aggressive_dominant",
+        "model": "gemini_31_pro",
+        "focal_attitude": "Aggressive",
+        "strategies": 9,
+        "mean_mutual_cooperation": 0.17070101113794955,
+        "mean_focal_payoff": 1.6973762476713712
+      },
+      {
+        "mix": "aggressive_dominant",
+        "model": "gemini_31_pro",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.3831370450885669,
+        "mean_focal_payoff": 2.0786528189826656
+      },
+      {
+        "mix": "aggressive_dominant",
+        "model": "gemini_31_pro",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.38314741272141717,
+        "mean_focal_payoff": 2.0786270091597987
+      },
+      {
+        "mix": "aggressive_dominant",
+        "model": "glm_51",
+        "focal_attitude": "Aggressive",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.08304759325092355,
+        "mean_focal_payoff": 1.4676162748981716
+      },
+      {
+        "mix": "aggressive_dominant",
+        "model": "glm_51",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.38473045632045094,
+        "mean_focal_payoff": 2.0699445496803066
+      },
+      {
+        "mix": "aggressive_dominant",
+        "model": "glm_51",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.3858917965378422,
+        "mean_focal_payoff": 2.054866989774557
+      },
+      {
+        "mix": "aggressive_dominant",
+        "model": "kimi_k25",
+        "focal_attitude": "Aggressive",
+        "strategies": 24,
+        "mean_mutual_cooperation": 0.01425344680958132,
+        "mean_focal_payoff": 1.475671220147177
+      },
+      {
+        "mix": "aggressive_dominant",
+        "model": "kimi_k25",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.38332408747987123,
+        "mean_focal_payoff": 2.078187817171071
+      },
+      {
+        "mix": "aggressive_dominant",
+        "model": "kimi_k25",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.38333212552334944,
+        "mean_focal_payoff": 2.0781127902481766
+      },
+      {
+        "mix": "aggressive_dominant",
+        "model": "openai_gpt54mini",
+        "focal_attitude": "Aggressive",
+        "strategies": 17,
+        "mean_mutual_cooperation": 0.0010719238420005682,
+        "mean_focal_payoff": 1.2554547370228288
+      },
+      {
+        "mix": "aggressive_dominant",
+        "model": "openai_gpt54mini",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.3833970692431562,
+        "mean_focal_payoff": 2.078006740077673
+      },
+      {
+        "mix": "aggressive_dominant",
+        "model": "openai_gpt54mini",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.35339032302737516,
+        "mean_focal_payoff": 2.0267852594262097
+      },
+      {
+        "mix": "aggressive_dominant",
+        "model": "qwen3max",
+        "focal_attitude": "Aggressive",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.0,
+        "mean_focal_payoff": 1.2310971900161034
+      },
+      {
+        "mix": "aggressive_dominant",
+        "model": "qwen3max",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.3833970692431562,
+        "mean_focal_payoff": 2.078006740077673
+      },
+      {
+        "mix": "aggressive_dominant",
+        "model": "qwen3max",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.3833970692431562,
+        "mean_focal_payoff": 2.078006740077673
+      },
+      {
+        "mix": "cooperative_dominant",
+        "model": "anthropic_sonnet46",
+        "focal_attitude": "Aggressive",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.008398265458937198,
+        "mean_focal_payoff": 1.8162067852858295
+      },
+      {
+        "mix": "cooperative_dominant",
+        "model": "anthropic_sonnet46",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.8376712624798712,
+        "mean_focal_payoff": 2.7576607499857912
+      },
+      {
+        "mix": "cooperative_dominant",
+        "model": "anthropic_sonnet46",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.8431757701288247,
+        "mean_focal_payoff": 2.7635733848465476
+      },
+      {
+        "mix": "cooperative_dominant",
+        "model": "deepseek_v4pro",
+        "focal_attitude": "Aggressive",
+        "strategies": 24,
+        "mean_mutual_cooperation": 0.028556814237344495,
+        "mean_focal_payoff": 1.6413220555846635
+      },
+      {
+        "mix": "cooperative_dominant",
+        "model": "deepseek_v4pro",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.8498097120903193,
+        "mean_focal_payoff": 2.742143333877996
+      },
+      {
+        "mix": "cooperative_dominant",
+        "model": "deepseek_v4pro",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.8501697041477221,
+        "mean_focal_payoff": 2.7334730378836323
+      },
+      {
+        "mix": "cooperative_dominant",
+        "model": "gemini_25_flash",
+        "focal_attitude": "Aggressive",
+        "strategies": 23,
+        "mean_mutual_cooperation": 0.021897486364605135,
+        "mean_focal_payoff": 1.3069818881859951
+      },
+      {
+        "mix": "cooperative_dominant",
+        "model": "gemini_25_flash",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.8438030173107893,
+        "mean_focal_payoff": 2.7661141850194184
+      },
+      {
+        "mix": "cooperative_dominant",
+        "model": "gemini_25_flash",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.8438030173107893,
+        "mean_focal_payoff": 2.7661141850194184
+      },
+      {
+        "mix": "cooperative_dominant",
+        "model": "gemini_31_pro",
+        "focal_attitude": "Aggressive",
+        "strategies": 9,
+        "mean_mutual_cooperation": 0.3790557388955984,
+        "mean_focal_payoff": 2.227233784140065
+      },
+      {
+        "mix": "cooperative_dominant",
+        "model": "gemini_31_pro",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.8432211362721417,
+        "mean_focal_payoff": 2.7674619547456665
+      },
+      {
+        "mix": "cooperative_dominant",
+        "model": "gemini_31_pro",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.8432443781803542,
+        "mean_focal_payoff": 2.767408077289949
+      },
+      {
+        "mix": "cooperative_dominant",
+        "model": "glm_51",
+        "focal_attitude": "Aggressive",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.12834374831273088,
+        "mean_focal_payoff": 1.7644915687245426
+      },
+      {
+        "mix": "cooperative_dominant",
+        "model": "glm_51",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.8439909828301126,
+        "mean_focal_payoff": 2.764408693670076
+      },
+      {
+        "mix": "cooperative_dominant",
+        "model": "glm_51",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.8443232199677939,
+        "mean_focal_payoff": 2.760496001610306
+      },
+      {
+        "mix": "cooperative_dominant",
+        "model": "kimi_k25",
+        "focal_attitude": "Aggressive",
+        "strategies": 24,
+        "mean_mutual_cooperation": 0.009311460660728662,
+        "mean_focal_payoff": 1.8299185862867942
+      },
+      {
+        "mix": "cooperative_dominant",
+        "model": "kimi_k25",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.8436393906199678,
+        "mean_focal_payoff": 2.7664922605427678
+      },
+      {
+        "mix": "cooperative_dominant",
+        "model": "kimi_k25",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.8436565022141707,
+        "mean_focal_payoff": 2.7663500142287107
+      },
+      {
+        "mix": "cooperative_dominant",
+        "model": "openai_gpt54mini",
+        "focal_attitude": "Aggressive",
+        "strategies": 17,
+        "mean_mutual_cooperation": 0.0007086427252060245,
+        "mean_focal_payoff": 1.2058872136674719
+      },
+      {
+        "mix": "cooperative_dominant",
+        "model": "openai_gpt54mini",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.8438030173107893,
+        "mean_focal_payoff": 2.7661141850194184
+      },
+      {
+        "mix": "cooperative_dominant",
+        "model": "openai_gpt54mini",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.7767167640901773,
+        "mean_focal_payoff": 2.6811629283982192
+      },
+      {
+        "mix": "cooperative_dominant",
+        "model": "qwen3max",
+        "focal_attitude": "Aggressive",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.0,
+        "mean_focal_payoff": 1.1393892975040258
+      },
+      {
+        "mix": "cooperative_dominant",
+        "model": "qwen3max",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.8438030173107893,
+        "mean_focal_payoff": 2.7661141850194184
+      },
+      {
+        "mix": "cooperative_dominant",
+        "model": "qwen3max",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.8438030173107893,
+        "mean_focal_payoff": 2.7661141850194184
+      },
+      {
+        "mix": "neutral_dominant",
+        "model": "anthropic_sonnet46",
+        "focal_attitude": "Aggressive",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.008002465458937198,
+        "mean_focal_payoff": 1.8067544852858297
+      },
+      {
+        "mix": "neutral_dominant",
+        "model": "anthropic_sonnet46",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.8327872624798711,
+        "mean_focal_payoff": 2.751890649985792
+      },
+      {
+        "mix": "neutral_dominant",
+        "model": "anthropic_sonnet46",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.8386643534621578,
+        "mean_focal_payoff": 2.758108051513214
+      },
+      {
+        "mix": "neutral_dominant",
+        "model": "deepseek_v4pro",
+        "focal_attitude": "Aggressive",
+        "strategies": 24,
+        "mean_mutual_cooperation": 0.029051605904011155,
+        "mean_focal_payoff": 1.6386230972513303
+      },
+      {
+        "mix": "neutral_dominant",
+        "model": "deepseek_v4pro",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.845510103756986,
+        "mean_focal_payoff": 2.736348142211329
+      },
+      {
+        "mix": "neutral_dominant",
+        "model": "deepseek_v4pro",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.8458695124810552,
+        "mean_focal_payoff": 2.727293629550299
+      },
+      {
+        "mix": "neutral_dominant",
+        "model": "gemini_25_flash",
+        "focal_attitude": "Aggressive",
+        "strategies": 23,
+        "mean_mutual_cooperation": 0.02170205158199643,
+        "mean_focal_payoff": 1.3163877577512122
+      },
+      {
+        "mix": "neutral_dominant",
+        "model": "gemini_25_flash",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.839308017310789,
+        "mean_focal_payoff": 2.7609341850194187
+      },
+      {
+        "mix": "neutral_dominant",
+        "model": "gemini_25_flash",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.839308017310789,
+        "mean_focal_payoff": 2.7609341850194187
+      },
+      {
+        "mix": "neutral_dominant",
+        "model": "gemini_31_pro",
+        "focal_attitude": "Aggressive",
+        "strategies": 9,
+        "mean_mutual_cooperation": 0.37750268334004283,
+        "mean_focal_payoff": 2.2213360063622876
+      },
+      {
+        "mix": "neutral_dominant",
+        "model": "gemini_31_pro",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.8386686362721416,
+        "mean_focal_payoff": 2.7623919547456666
+      },
+      {
+        "mix": "neutral_dominant",
+        "model": "gemini_31_pro",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.8386940781803541,
+        "mean_focal_payoff": 2.7623337772899497
+      },
+      {
+        "mix": "neutral_dominant",
+        "model": "glm_51",
+        "focal_attitude": "Aggressive",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.12800914831273086,
+        "mean_focal_payoff": 1.760219568724543
+      },
+      {
+        "mix": "neutral_dominant",
+        "model": "glm_51",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.8394804078301127,
+        "mean_focal_payoff": 2.7592171686700766
+      },
+      {
+        "mix": "neutral_dominant",
+        "model": "glm_51",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.8398163033011271,
+        "mean_focal_payoff": 2.7551544182769727
+      },
+      {
+        "mix": "neutral_dominant",
+        "model": "kimi_k25",
+        "focal_attitude": "Aggressive",
+        "strategies": 24,
+        "mean_mutual_cooperation": 0.009412606494061997,
+        "mean_focal_payoff": 1.8206860862867946
+      },
+      {
+        "mix": "neutral_dominant",
+        "model": "kimi_k25",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.8391288156199677,
+        "mean_focal_payoff": 2.7613425355427683
+      },
+      {
+        "mix": "neutral_dominant",
+        "model": "kimi_k25",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.839147385547504,
+        "mean_focal_payoff": 2.761187080895377
+      },
+      {
+        "mix": "neutral_dominant",
+        "model": "openai_gpt54mini",
+        "focal_attitude": "Aggressive",
+        "strategies": 17,
+        "mean_mutual_cooperation": 0.0007083486075589655,
+        "mean_focal_payoff": 1.2185233901380603
+      },
+      {
+        "mix": "neutral_dominant",
+        "model": "openai_gpt54mini",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.839308017310789,
+        "mean_focal_payoff": 2.7609341850194187
+      },
+      {
+        "mix": "neutral_dominant",
+        "model": "openai_gpt54mini",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.7723894974235103,
+        "mean_focal_payoff": 2.675930382564886
+      },
+      {
+        "mix": "neutral_dominant",
+        "model": "qwen3max",
+        "focal_attitude": "Aggressive",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.0,
+        "mean_focal_payoff": 1.154329297504026
+      },
+      {
+        "mix": "neutral_dominant",
+        "model": "qwen3max",
+        "focal_attitude": "Cooperative",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.839308017310789,
+        "mean_focal_payoff": 2.7609341850194187
+      },
+      {
+        "mix": "neutral_dominant",
+        "model": "qwen3max",
+        "focal_attitude": "Neutral",
+        "strategies": 25,
+        "mean_mutual_cooperation": 0.839308017310789,
+        "mean_focal_payoff": 2.7609341850194187
+      }
+    ]
+  }
+}

@@ -1,0 +1,397 @@
+{
+  "all_pass": true,
+  "api_calls": 0,
+  "corrections": [
+    {
+      "corrected_sha256": "db383b377da1e8c0e10daa1389932b73449b5e4139f411275e32aff11544fb86",
+      "diff": "--- phase3\\conversion_runs\\expanded_v2\\053\\candidate.py.txt\n+++ phase3\\corrections_v1\\sonnet_neutral_11.py.txt\n@@ -6,11 +6,11 @@\n     if self._opponent_always_defect:\n         return axl.Action.D\n \n-    if opponent.history[-1] == axl.Action.D:\n-        return axl.Action.D\n-\n     if len(opponent.history) > 0 and opponent.history.defections / len(opponent.history) > 0.55:\n         self._opponent_always_defect = True\n         return axl.Action.D\n \n-    return axl.Action.C+    if opponent.history[-1] == axl.Action.D:\n+        return axl.Action.D\n+\n+    return axl.Action.C\n",
+      "id": "anthropic_sonnet46/default/Neutral_11",
+      "original_sha256": "21dcca67e5e0f5d6a467110754f049b7f73dbe4159358c14cd858cff8d5d7b2f",
+      "pass": true,
+      "reason": "Move last-defection branch below permanent >55% trigger, following explicit prose priority.",
+      "runtime": [
+        {
+          "opponent": "Cooperator",
+          "pass": true,
+          "seed": 1168315498,
+          "turns": 1000
+        },
+        {
+          "opponent": "Defector",
+          "pass": true,
+          "seed": 395394956,
+          "turns": 1000
+        },
+        {
+          "opponent": "Random",
+          "pass": true,
+          "seed": 1872953748,
+          "turns": 1000
+        },
+        {
+          "opponent": "TitForTat",
+          "pass": true,
+          "seed": 2104805325,
+          "turns": 1000
+        },
+        {
+          "opponent": "Grudger",
+          "pass": true,
+          "seed": 1540375559,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerDDC",
+          "pass": true,
+          "seed": 100999738,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerCCD",
+          "pass": true,
+          "seed": 415936695,
+          "turns": 1000
+        },
+        {
+          "opponent": "GoByMajority",
+          "pass": true,
+          "seed": 780974930,
+          "turns": 1000
+        },
+        {
+          "opponent": "SuspiciousTitForTat",
+          "pass": true,
+          "seed": 562166116,
+          "turns": 1000
+        },
+        {
+          "opponent": "Prober",
+          "pass": true,
+          "seed": 1166573415,
+          "turns": 1000
+        },
+        {
+          "opponent": "WinStayLoseShift",
+          "pass": true,
+          "seed": 507635573,
+          "turns": 1000
+        }
+      ],
+      "semantic": [
+        {
+          "actions_sha256": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d",
+          "checks": 1,
+          "failures": [],
+          "scenario": 0
+        },
+        {
+          "actions_sha256": "a56362a10c816abf206d72cb914e2d5ca454eb9c7e744f88b1a1422c379e9942",
+          "checks": 2,
+          "failures": [],
+          "scenario": 1
+        },
+        {
+          "actions_sha256": "90ec58127ec472ffb7e3f90c3ee320f8bb1dc6bc64a48143e6d91f7d9a6de236",
+          "checks": 2,
+          "failures": [],
+          "scenario": 2
+        },
+        {
+          "actions_sha256": "5987fc0a7bea05c80ed91d80a6223c94e340a578388c383a03e8866bfe1471e9",
+          "checks": 3,
+          "failures": [],
+          "scenario": 3
+        },
+        {
+          "actions_sha256": "5987fc0a7bea05c80ed91d80a6223c94e340a578388c383a03e8866bfe1471e9",
+          "checks": 3,
+          "failures": [],
+          "scenario": 4
+        },
+        {
+          "actions_sha256": "12c10d18426c2733e3fdaf0ee8e0354443ed61956d312c650b9cfb04b79f5e33",
+          "checks": 4,
+          "failures": [],
+          "scenario": 5
+        },
+        {
+          "actions_sha256": "d59436ad445dfca39de510ac92b526ea6aac6d57da17234d8e18f7978295bb96",
+          "checks": 6,
+          "failures": [],
+          "scenario": 6
+        },
+        {
+          "actions_sha256": "325aecc3edd019074719ee9935949c2fb2f221d59cb34779bbc3b4d065ba9ee6",
+          "checks": 8,
+          "failures": [],
+          "scenario": 7
+        },
+        {
+          "actions_sha256": "90b4853e06e722c63b4270463cf558684d7a1e77605d3ad36489d6146e42ab87",
+          "checks": 4,
+          "failures": [],
+          "scenario": 8
+        },
+        {
+          "actions_sha256": "17b80bc751e1f35c75d6ada07267a5fd9981b7b3655cffcaf94a636e93eb27ba",
+          "checks": 5,
+          "failures": [],
+          "scenario": 9
+        },
+        {
+          "actions_sha256": "ea844d76d333957356cfe3aecc4be33cd28297c162327c358a1de3d3c828f46e",
+          "checks": 6,
+          "failures": [],
+          "scenario": 10
+        },
+        {
+          "actions_sha256": "f9070908fb605bd8c02520611b2dd9016aa1ba5a8b3f97d9e9361bddfec9440b",
+          "checks": 21,
+          "failures": [],
+          "scenario": 11
+        },
+        {
+          "actions_sha256": "c5450eb02b7a501cbe99c244d404070f4e5e17846ba26f4afbfdc5cea768fbb4",
+          "checks": 21,
+          "failures": [],
+          "scenario": 12
+        },
+        {
+          "actions_sha256": "fbb4fe36bc4854733d2c1b4257f40c5d216ad318ddbd4cae465e1e8383860cee",
+          "checks": 10,
+          "failures": [],
+          "scenario": 13
+        },
+        {
+          "actions_sha256": "37c4004a2b752335f29b5d42811b5da358914d0f549b567be2b775f928985a81",
+          "checks": 11,
+          "failures": [],
+          "scenario": 14
+        },
+        {
+          "actions_sha256": "703bf812e665f36bd2670b9aa054d906a2fc8782e157f00aa9c589dda1f4cb3e",
+          "checks": 1000,
+          "failures": [],
+          "scenario": 15
+        },
+        {
+          "actions_sha256": "703bf812e665f36bd2670b9aa054d906a2fc8782e157f00aa9c589dda1f4cb3e",
+          "checks": 1000,
+          "failures": [],
+          "scenario": 16
+        },
+        {
+          "actions_sha256": "a6ded36543c7c4533387aedba96a8e42c6447e13385e5e9d12a8f99bd904b54e",
+          "checks": 1000,
+          "failures": [],
+          "scenario": 17
+        },
+        {
+          "actions_sha256": "ee947d61917eeaed33b6bea092b080bb21d73a90920e98037ac60973a45a5c7d",
+          "checks": 1000,
+          "failures": [],
+          "scenario": 18
+        }
+      ]
+    },
+    {
+      "corrected_sha256": "92b2fe2c5744676e7c6e611c359340158a8d13cb15758fe79aded3c8b364df4b",
+      "diff": "--- phase3\\conversion_runs\\expanded_v2\\156\\candidate.py.txt\n+++ phase3\\corrections_v1\\pro_aggressive_6.py.txt\n@@ -1,8 +1,8 @@\n def strategy(self, opponent: axl.player.Player) -> axl.Action:\n-    if len(self.history) >= 995:\n+    if len(self.history) + 1 >= 995:\n         return axl.Action.D\n     if opponent.history.defections >= 2:\n         return axl.Action.D\n     if opponent.history and opponent.history[-1] == axl.Action.D:\n         return axl.Action.D\n-    return axl.Action.C+    return axl.Action.C\n",
+      "id": "gemini_31_pro/default/Aggressive_6",
+      "original_sha256": "8c334dee464c4ed2d565e30e5741af383b44f8f00d0e975e34aa5fd51718281d",
+      "pass": true,
+      "reason": "Use current round len(history)+1 for explicit round 995 inclusive.",
+      "runtime": [
+        {
+          "opponent": "Cooperator",
+          "pass": true,
+          "seed": 653699946,
+          "turns": 1000
+        },
+        {
+          "opponent": "Defector",
+          "pass": true,
+          "seed": 1891048805,
+          "turns": 1000
+        },
+        {
+          "opponent": "Random",
+          "pass": true,
+          "seed": 1529952098,
+          "turns": 1000
+        },
+        {
+          "opponent": "TitForTat",
+          "pass": true,
+          "seed": 1843160499,
+          "turns": 1000
+        },
+        {
+          "opponent": "Grudger",
+          "pass": true,
+          "seed": 2024112147,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerDDC",
+          "pass": true,
+          "seed": 874803754,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerCCD",
+          "pass": true,
+          "seed": 1238867982,
+          "turns": 1000
+        },
+        {
+          "opponent": "GoByMajority",
+          "pass": true,
+          "seed": 1827994862,
+          "turns": 1000
+        },
+        {
+          "opponent": "SuspiciousTitForTat",
+          "pass": true,
+          "seed": 1659422007,
+          "turns": 1000
+        },
+        {
+          "opponent": "Prober",
+          "pass": true,
+          "seed": 977806383,
+          "turns": 1000
+        },
+        {
+          "opponent": "WinStayLoseShift",
+          "pass": true,
+          "seed": 1599896242,
+          "turns": 1000
+        }
+      ],
+      "semantic": [
+        {
+          "actions_sha256": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d",
+          "checks": 1,
+          "failures": [],
+          "scenario": 0
+        },
+        {
+          "actions_sha256": "a56362a10c816abf206d72cb914e2d5ca454eb9c7e744f88b1a1422c379e9942",
+          "checks": 2,
+          "failures": [],
+          "scenario": 1
+        },
+        {
+          "actions_sha256": "90ec58127ec472ffb7e3f90c3ee320f8bb1dc6bc64a48143e6d91f7d9a6de236",
+          "checks": 2,
+          "failures": [],
+          "scenario": 2
+        },
+        {
+          "actions_sha256": "c7c036d7a68e10523565ee1cda9d4e16a554fabb68a754fa3bfae17a8c218d55",
+          "checks": 3,
+          "failures": [],
+          "scenario": 3
+        },
+        {
+          "actions_sha256": "5987fc0a7bea05c80ed91d80a6223c94e340a578388c383a03e8866bfe1471e9",
+          "checks": 3,
+          "failures": [],
+          "scenario": 4
+        },
+        {
+          "actions_sha256": "12c10d18426c2733e3fdaf0ee8e0354443ed61956d312c650b9cfb04b79f5e33",
+          "checks": 4,
+          "failures": [],
+          "scenario": 5
+        },
+        {
+          "actions_sha256": "d59436ad445dfca39de510ac92b526ea6aac6d57da17234d8e18f7978295bb96",
+          "checks": 6,
+          "failures": [],
+          "scenario": 6
+        },
+        {
+          "actions_sha256": "325aecc3edd019074719ee9935949c2fb2f221d59cb34779bbc3b4d065ba9ee6",
+          "checks": 8,
+          "failures": [],
+          "scenario": 7
+        },
+        {
+          "actions_sha256": "90b4853e06e722c63b4270463cf558684d7a1e77605d3ad36489d6146e42ab87",
+          "checks": 4,
+          "failures": [],
+          "scenario": 8
+        },
+        {
+          "actions_sha256": "17b80bc751e1f35c75d6ada07267a5fd9981b7b3655cffcaf94a636e93eb27ba",
+          "checks": 5,
+          "failures": [],
+          "scenario": 9
+        },
+        {
+          "actions_sha256": "ea844d76d333957356cfe3aecc4be33cd28297c162327c358a1de3d3c828f46e",
+          "checks": 6,
+          "failures": [],
+          "scenario": 10
+        },
+        {
+          "actions_sha256": "ea9213d9dbacfdc116666f6959b2c1f6a1585fef9d788b2d6b7208160e14dcf3",
+          "checks": 21,
+          "failures": [],
+          "scenario": 11
+        },
+        {
+          "actions_sha256": "1b1efcb48067308175b2e998636ed847425f96660a4c6aace3af3f3add74f491",
+          "checks": 21,
+          "failures": [],
+          "scenario": 12
+        },
+        {
+          "actions_sha256": "fbb4fe36bc4854733d2c1b4257f40c5d216ad318ddbd4cae465e1e8383860cee",
+          "checks": 10,
+          "failures": [],
+          "scenario": 13
+        },
+        {
+          "actions_sha256": "37c4004a2b752335f29b5d42811b5da358914d0f549b567be2b775f928985a81",
+          "checks": 11,
+          "failures": [],
+          "scenario": 14
+        },
+        {
+          "actions_sha256": "654c874b4c49b1c342fa444c34e37263d3a4b7b23201410551168aeef74468da",
+          "checks": 1000,
+          "failures": [],
+          "scenario": 15
+        },
+        {
+          "actions_sha256": "654c874b4c49b1c342fa444c34e37263d3a4b7b23201410551168aeef74468da",
+          "checks": 1000,
+          "failures": [],
+          "scenario": 16
+        },
+        {
+          "actions_sha256": "6623d1384a2ff8db37df1f44871996e8ef5eb0235ef397b4ec1df94c2d6a29a2",
+          "checks": 1000,
+          "failures": [],
+          "scenario": 17
+        },
+        {
+          "actions_sha256": "654c874b4c49b1c342fa444c34e37263d3a4b7b23201410551168aeef74468da",
+          "checks": 1000,
+          "failures": [],
+          "scenario": 18
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-09-14T12:07:20.423532+00:00",
+  "original_validation_sha256": "4f70248ac1d47c84365c0a51d873c016233bf6d5329148cd9729b9a1b860eca0",
+  "plan_sha256": "70336a5958a379a4dc0eb5e341ecfaa4bbc75603f7d967784a2d2411143b1f22",
+  "policy_sha256": "be9207c5292296c8a56e133c0d19cb4d60f91c09b7b06c14ee306846e947507e",
+  "scope": "Repeat affected semantic and runtime checks only; not exhaustive equivalence or tournament results.",
+  "semantics_sha256": "2392e5cdb0247d9bf64ed82d0827eb502a7d497f0a9bc094d56460cf69ad1233",
+  "validator_sha256": "6b25922bc8082c3955232f1b48c7c761a0e3cdc687eef02afeeaa5d35b125185"
+}

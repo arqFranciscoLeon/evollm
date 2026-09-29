@@ -1,0 +1,1441 @@
+{
+  "schema": 1,
+  "status": "expected_cases_not_yet_run_against_converted_code",
+  "history_encoding": "RLE ordered [action, positive count]; [] is empty.",
+  "scope": "Targeted semantic boundary checks, not exhaustive equivalence or observed match results.",
+  "cases": [
+    {
+      "strategy_id": "anthropic_sonnet46/default/Aggressive_11",
+      "case": "opening",
+      "round": 1,
+      "own_rle": [],
+      "opponent_rle": [],
+      "expected_action": "D",
+      "source_prose_sha256": "dca083675acccb58cdffa914d809ca2cb836ad69efd4c3b84422e68c50a24c76"
+    },
+    {
+      "strategy_id": "anthropic_sonnet46/default/Aggressive_11",
+      "case": "after_C",
+      "round": 2,
+      "own_rle": [
+        [
+          "D",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "dca083675acccb58cdffa914d809ca2cb836ad69efd4c3b84422e68c50a24c76"
+    },
+    {
+      "strategy_id": "anthropic_sonnet46/default/Aggressive_11",
+      "case": "after_D",
+      "round": 2,
+      "own_rle": [
+        [
+          "D",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          1
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "dca083675acccb58cdffa914d809ca2cb836ad69efd4c3b84422e68c50a24c76"
+    },
+    {
+      "strategy_id": "anthropic_sonnet46/default/Aggressive_11",
+      "case": "last_round",
+      "round": 1000,
+      "own_rle": [
+        [
+          "D",
+          999
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          999
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "dca083675acccb58cdffa914d809ca2cb836ad69efd4c3b84422e68c50a24c76"
+    },
+    {
+      "strategy_id": "anthropic_sonnet46/default/Cooperative_2",
+      "case": "opening",
+      "round": 1,
+      "own_rle": [],
+      "opponent_rle": [],
+      "expected_action": "C",
+      "source_prose_sha256": "ce89ffb38351062a8bcca7a62865b702bbe2b1b1f6b09112bfb6b755ab7455e1"
+    },
+    {
+      "strategy_id": "anthropic_sonnet46/default/Cooperative_2",
+      "case": "after_C",
+      "round": 2,
+      "own_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "ce89ffb38351062a8bcca7a62865b702bbe2b1b1f6b09112bfb6b755ab7455e1"
+    },
+    {
+      "strategy_id": "anthropic_sonnet46/default/Cooperative_2",
+      "case": "after_D",
+      "round": 2,
+      "own_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          1
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "ce89ffb38351062a8bcca7a62865b702bbe2b1b1f6b09112bfb6b755ab7455e1"
+    },
+    {
+      "strategy_id": "anthropic_sonnet46/default/Cooperative_2",
+      "case": "forgiveness",
+      "round": 3,
+      "own_rle": [
+        [
+          "C",
+          1
+        ],
+        [
+          "D",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          1
+        ],
+        [
+          "C",
+          1
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "ce89ffb38351062a8bcca7a62865b702bbe2b1b1f6b09112bfb6b755ab7455e1"
+    },
+    {
+      "strategy_id": "anthropic_sonnet46/default/Cooperative_2",
+      "case": "round990",
+      "round": 990,
+      "own_rle": [
+        [
+          "C",
+          989
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          989
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "ce89ffb38351062a8bcca7a62865b702bbe2b1b1f6b09112bfb6b755ab7455e1"
+    },
+    {
+      "strategy_id": "anthropic_sonnet46/default/Cooperative_2",
+      "case": "round991",
+      "round": 991,
+      "own_rle": [
+        [
+          "C",
+          990
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          990
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "ce89ffb38351062a8bcca7a62865b702bbe2b1b1f6b09112bfb6b755ab7455e1"
+    },
+    {
+      "strategy_id": "anthropic_sonnet46/default/Cooperative_2",
+      "case": "round1000",
+      "round": 1000,
+      "own_rle": [
+        [
+          "C",
+          999
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          999
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "ce89ffb38351062a8bcca7a62865b702bbe2b1b1f6b09112bfb6b755ab7455e1"
+    },
+    {
+      "strategy_id": "anthropic_sonnet46/default/Neutral_6",
+      "case": "opening",
+      "round": 1,
+      "own_rle": [],
+      "opponent_rle": [],
+      "expected_action": "C",
+      "source_prose_sha256": "b3d429b384736ebe14aa85628c21edd2442377a98e0701f441e3a2ef6299ffdc"
+    },
+    {
+      "strategy_id": "anthropic_sonnet46/default/Neutral_6",
+      "case": "after_C",
+      "round": 2,
+      "own_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "b3d429b384736ebe14aa85628c21edd2442377a98e0701f441e3a2ef6299ffdc"
+    },
+    {
+      "strategy_id": "anthropic_sonnet46/default/Neutral_6",
+      "case": "after_D",
+      "round": 2,
+      "own_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          1
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "b3d429b384736ebe14aa85628c21edd2442377a98e0701f441e3a2ef6299ffdc"
+    },
+    {
+      "strategy_id": "anthropic_sonnet46/default/Neutral_6",
+      "case": "forgiveness",
+      "round": 3,
+      "own_rle": [
+        [
+          "C",
+          1
+        ],
+        [
+          "D",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          1
+        ],
+        [
+          "C",
+          1
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "b3d429b384736ebe14aa85628c21edd2442377a98e0701f441e3a2ef6299ffdc"
+    },
+    {
+      "strategy_id": "anthropic_sonnet46/default/Neutral_6",
+      "case": "round999",
+      "round": 999,
+      "own_rle": [
+        [
+          "C",
+          998
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          998
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "b3d429b384736ebe14aa85628c21edd2442377a98e0701f441e3a2ef6299ffdc"
+    },
+    {
+      "strategy_id": "anthropic_sonnet46/default/Neutral_6",
+      "case": "round1000",
+      "round": 1000,
+      "own_rle": [
+        [
+          "C",
+          999
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          999
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "b3d429b384736ebe14aa85628c21edd2442377a98e0701f441e3a2ef6299ffdc"
+    },
+    {
+      "strategy_id": "gemini_25_flash/default/Aggressive_2",
+      "case": "opening",
+      "round": 1,
+      "own_rle": [],
+      "opponent_rle": [],
+      "expected_action": "D",
+      "source_prose_sha256": "e38a61053d8910514b5303ee75e069e2331f39cd62803919af1cd76535c11bd4"
+    },
+    {
+      "strategy_id": "gemini_25_flash/default/Aggressive_2",
+      "case": "after_C",
+      "round": 2,
+      "own_rle": [
+        [
+          "D",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "e38a61053d8910514b5303ee75e069e2331f39cd62803919af1cd76535c11bd4"
+    },
+    {
+      "strategy_id": "gemini_25_flash/default/Aggressive_2",
+      "case": "after_D",
+      "round": 2,
+      "own_rle": [
+        [
+          "D",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          1
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "e38a61053d8910514b5303ee75e069e2331f39cd62803919af1cd76535c11bd4"
+    },
+    {
+      "strategy_id": "gemini_25_flash/default/Aggressive_2",
+      "case": "no_forgiveness",
+      "round": 3,
+      "own_rle": [
+        [
+          "D",
+          2
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          1
+        ],
+        [
+          "C",
+          1
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "e38a61053d8910514b5303ee75e069e2331f39cd62803919af1cd76535c11bd4"
+    },
+    {
+      "strategy_id": "gemini_25_flash/default/Aggressive_2",
+      "case": "last_round_C",
+      "round": 1000,
+      "own_rle": [
+        [
+          "D",
+          1
+        ],
+        [
+          "C",
+          998
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          999
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "e38a61053d8910514b5303ee75e069e2331f39cd62803919af1cd76535c11bd4"
+    },
+    {
+      "strategy_id": "gemini_25_flash/default/Cooperative_5",
+      "case": "opening",
+      "round": 1,
+      "own_rle": [],
+      "opponent_rle": [],
+      "expected_action": "C",
+      "source_prose_sha256": "f2a3f10ca8d1951a7be17eca9407cfc6e79b0006b9a1d5a2e9bf0f70d50fa186"
+    },
+    {
+      "strategy_id": "gemini_25_flash/default/Cooperative_5",
+      "case": "after_C",
+      "round": 2,
+      "own_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "f2a3f10ca8d1951a7be17eca9407cfc6e79b0006b9a1d5a2e9bf0f70d50fa186"
+    },
+    {
+      "strategy_id": "gemini_25_flash/default/Cooperative_5",
+      "case": "after_D",
+      "round": 2,
+      "own_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          1
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "f2a3f10ca8d1951a7be17eca9407cfc6e79b0006b9a1d5a2e9bf0f70d50fa186"
+    },
+    {
+      "strategy_id": "gemini_25_flash/default/Cooperative_5",
+      "case": "forgiveness",
+      "round": 3,
+      "own_rle": [
+        [
+          "C",
+          1
+        ],
+        [
+          "D",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          1
+        ],
+        [
+          "C",
+          1
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "f2a3f10ca8d1951a7be17eca9407cfc6e79b0006b9a1d5a2e9bf0f70d50fa186"
+    },
+    {
+      "strategy_id": "gemini_25_flash/default/Cooperative_5",
+      "case": "last_round_C",
+      "round": 1000,
+      "own_rle": [
+        [
+          "C",
+          999
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          999
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "f2a3f10ca8d1951a7be17eca9407cfc6e79b0006b9a1d5a2e9bf0f70d50fa186"
+    },
+    {
+      "strategy_id": "gemini_25_flash/default/Cooperative_5",
+      "case": "last_round_D",
+      "round": 1000,
+      "own_rle": [
+        [
+          "C",
+          999
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          998
+        ],
+        [
+          "D",
+          1
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "f2a3f10ca8d1951a7be17eca9407cfc6e79b0006b9a1d5a2e9bf0f70d50fa186"
+    },
+    {
+      "strategy_id": "gemini_25_flash/default/Neutral_1",
+      "case": "opening",
+      "round": 1,
+      "own_rle": [],
+      "opponent_rle": [],
+      "expected_action": "C",
+      "source_prose_sha256": "36eae84c41cb2d58866e30fd65848b61d59739664704ec8ec0eb426658c9ec84"
+    },
+    {
+      "strategy_id": "gemini_25_flash/default/Neutral_1",
+      "case": "after_C",
+      "round": 2,
+      "own_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "36eae84c41cb2d58866e30fd65848b61d59739664704ec8ec0eb426658c9ec84"
+    },
+    {
+      "strategy_id": "gemini_25_flash/default/Neutral_1",
+      "case": "after_D",
+      "round": 2,
+      "own_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          1
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "36eae84c41cb2d58866e30fd65848b61d59739664704ec8ec0eb426658c9ec84"
+    },
+    {
+      "strategy_id": "gemini_25_flash/default/Neutral_1",
+      "case": "forgiveness",
+      "round": 3,
+      "own_rle": [
+        [
+          "C",
+          1
+        ],
+        [
+          "D",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          1
+        ],
+        [
+          "C",
+          1
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "36eae84c41cb2d58866e30fd65848b61d59739664704ec8ec0eb426658c9ec84"
+    },
+    {
+      "strategy_id": "gemini_25_flash/default/Neutral_1",
+      "case": "last_round_C",
+      "round": 1000,
+      "own_rle": [
+        [
+          "C",
+          999
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          999
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "36eae84c41cb2d58866e30fd65848b61d59739664704ec8ec0eb426658c9ec84"
+    },
+    {
+      "strategy_id": "gemini_25_flash/default/Neutral_1",
+      "case": "last_round_D",
+      "round": 1000,
+      "own_rle": [
+        [
+          "C",
+          999
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          998
+        ],
+        [
+          "D",
+          1
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "36eae84c41cb2d58866e30fd65848b61d59739664704ec8ec0eb426658c9ec84"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Aggressive_10",
+      "case": "opening",
+      "round": 1,
+      "own_rle": [],
+      "opponent_rle": [],
+      "expected_action": "C",
+      "source_prose_sha256": "7ceb218a3e72ce2f25820e5fca6a821692bced8b57c7f5b39d7660099a863672"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Aggressive_10",
+      "case": "one_C",
+      "round": 2,
+      "own_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "7ceb218a3e72ce2f25820e5fca6a821692bced8b57c7f5b39d7660099a863672"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Aggressive_10",
+      "case": "two_C",
+      "round": 3,
+      "own_rle": [
+        [
+          "C",
+          2
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          2
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "7ceb218a3e72ce2f25820e5fca6a821692bced8b57c7f5b39d7660099a863672"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Aggressive_10",
+      "case": "three_C",
+      "round": 4,
+      "own_rle": [
+        [
+          "C",
+          3
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          3
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "7ceb218a3e72ce2f25820e5fca6a821692bced8b57c7f5b39d7660099a863672"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Aggressive_10",
+      "case": "after_D",
+      "round": 2,
+      "own_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          1
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "7ceb218a3e72ce2f25820e5fca6a821692bced8b57c7f5b39d7660099a863672"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Aggressive_10",
+      "case": "reset_streak",
+      "round": 4,
+      "own_rle": [
+        [
+          "C",
+          3
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          1
+        ],
+        [
+          "C",
+          2
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "7ceb218a3e72ce2f25820e5fca6a821692bced8b57c7f5b39d7660099a863672"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Aggressive_10",
+      "case": "round990",
+      "round": 990,
+      "own_rle": [
+        [
+          "C",
+          989
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          987
+        ],
+        [
+          "C",
+          2
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "7ceb218a3e72ce2f25820e5fca6a821692bced8b57c7f5b39d7660099a863672"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Aggressive_10",
+      "case": "round991",
+      "round": 991,
+      "own_rle": [
+        [
+          "C",
+          990
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          988
+        ],
+        [
+          "C",
+          2
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "7ceb218a3e72ce2f25820e5fca6a821692bced8b57c7f5b39d7660099a863672"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Cooperative_3",
+      "case": "opening",
+      "round": 1,
+      "own_rle": [],
+      "opponent_rle": [],
+      "expected_action": "C",
+      "source_prose_sha256": "61131a65a96360ca0eb800b1eb1fd16d8b126e130f07ad03ad5a7332b4356749"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Cooperative_3",
+      "case": "after_C",
+      "round": 2,
+      "own_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "61131a65a96360ca0eb800b1eb1fd16d8b126e130f07ad03ad5a7332b4356749"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Cooperative_3",
+      "case": "after_D",
+      "round": 2,
+      "own_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          1
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "61131a65a96360ca0eb800b1eb1fd16d8b126e130f07ad03ad5a7332b4356749"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Cooperative_3",
+      "case": "forgiveness",
+      "round": 3,
+      "own_rle": [
+        [
+          "C",
+          1
+        ],
+        [
+          "D",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          1
+        ],
+        [
+          "C",
+          1
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "61131a65a96360ca0eb800b1eb1fd16d8b126e130f07ad03ad5a7332b4356749"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Cooperative_3",
+      "case": "round999",
+      "round": 999,
+      "own_rle": [
+        [
+          "C",
+          998
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          998
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "61131a65a96360ca0eb800b1eb1fd16d8b126e130f07ad03ad5a7332b4356749"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Cooperative_3",
+      "case": "round1000",
+      "round": 1000,
+      "own_rle": [
+        [
+          "C",
+          999
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          999
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "61131a65a96360ca0eb800b1eb1fd16d8b126e130f07ad03ad5a7332b4356749"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Neutral_9",
+      "case": "opening",
+      "round": 1,
+      "own_rle": [],
+      "opponent_rle": [],
+      "expected_action": "C",
+      "source_prose_sha256": "4f7ed40cd8977ffea6277c9d924f46433b1a7ab322f5e69a5356aaa9b281cb18"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Neutral_9",
+      "case": "after_C",
+      "round": 2,
+      "own_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "4f7ed40cd8977ffea6277c9d924f46433b1a7ab322f5e69a5356aaa9b281cb18"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Neutral_9",
+      "case": "after_D",
+      "round": 2,
+      "own_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          1
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "4f7ed40cd8977ffea6277c9d924f46433b1a7ab322f5e69a5356aaa9b281cb18"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Neutral_9",
+      "case": "forgiveness",
+      "round": 3,
+      "own_rle": [
+        [
+          "C",
+          1
+        ],
+        [
+          "D",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          1
+        ],
+        [
+          "C",
+          1
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "4f7ed40cd8977ffea6277c9d924f46433b1a7ab322f5e69a5356aaa9b281cb18"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Neutral_9",
+      "case": "round999",
+      "round": 999,
+      "own_rle": [
+        [
+          "C",
+          998
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          998
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "4f7ed40cd8977ffea6277c9d924f46433b1a7ab322f5e69a5356aaa9b281cb18"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Neutral_9",
+      "case": "round1000",
+      "round": 1000,
+      "own_rle": [
+        [
+          "C",
+          999
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          999
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "4f7ed40cd8977ffea6277c9d924f46433b1a7ab322f5e69a5356aaa9b281cb18"
+    },
+    {
+      "strategy_id": "openai_gpt54mini/default/Aggressive_9",
+      "case": "opening",
+      "round": 1,
+      "own_rle": [],
+      "opponent_rle": [],
+      "expected_action": "D",
+      "source_prose_sha256": "f537a460aac10c51332da3b130df327506102d98a3fd96166689bba9e0201e04"
+    },
+    {
+      "strategy_id": "openai_gpt54mini/default/Aggressive_9",
+      "case": "after_C",
+      "round": 2,
+      "own_rle": [
+        [
+          "D",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "f537a460aac10c51332da3b130df327506102d98a3fd96166689bba9e0201e04"
+    },
+    {
+      "strategy_id": "openai_gpt54mini/default/Aggressive_9",
+      "case": "after_D",
+      "round": 2,
+      "own_rle": [
+        [
+          "D",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          1
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "f537a460aac10c51332da3b130df327506102d98a3fd96166689bba9e0201e04"
+    },
+    {
+      "strategy_id": "openai_gpt54mini/default/Aggressive_9",
+      "case": "last_round",
+      "round": 1000,
+      "own_rle": [
+        [
+          "D",
+          999
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          999
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "f537a460aac10c51332da3b130df327506102d98a3fd96166689bba9e0201e04"
+    },
+    {
+      "strategy_id": "openai_gpt54mini/default/Cooperative_20",
+      "case": "opening",
+      "round": 1,
+      "own_rle": [],
+      "opponent_rle": [],
+      "expected_action": "C",
+      "source_prose_sha256": "371d3ffbed1d318c7a9a79fe17bab0637048c4b8d1a3944c8da0e91c663522dc"
+    },
+    {
+      "strategy_id": "openai_gpt54mini/default/Cooperative_20",
+      "case": "after_C",
+      "round": 2,
+      "own_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "371d3ffbed1d318c7a9a79fe17bab0637048c4b8d1a3944c8da0e91c663522dc"
+    },
+    {
+      "strategy_id": "openai_gpt54mini/default/Cooperative_20",
+      "case": "after_D",
+      "round": 2,
+      "own_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          1
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "371d3ffbed1d318c7a9a79fe17bab0637048c4b8d1a3944c8da0e91c663522dc"
+    },
+    {
+      "strategy_id": "openai_gpt54mini/default/Cooperative_20",
+      "case": "forgiveness",
+      "round": 3,
+      "own_rle": [
+        [
+          "C",
+          1
+        ],
+        [
+          "D",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          1
+        ],
+        [
+          "C",
+          1
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "371d3ffbed1d318c7a9a79fe17bab0637048c4b8d1a3944c8da0e91c663522dc"
+    },
+    {
+      "strategy_id": "openai_gpt54mini/default/Cooperative_20",
+      "case": "last_round_C",
+      "round": 1000,
+      "own_rle": [
+        [
+          "C",
+          999
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          999
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "371d3ffbed1d318c7a9a79fe17bab0637048c4b8d1a3944c8da0e91c663522dc"
+    },
+    {
+      "strategy_id": "openai_gpt54mini/default/Cooperative_20",
+      "case": "last_round_D",
+      "round": 1000,
+      "own_rle": [
+        [
+          "C",
+          999
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          998
+        ],
+        [
+          "D",
+          1
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "371d3ffbed1d318c7a9a79fe17bab0637048c4b8d1a3944c8da0e91c663522dc"
+    },
+    {
+      "strategy_id": "openai_gpt54mini/default/Neutral_14",
+      "case": "opening",
+      "round": 1,
+      "own_rle": [],
+      "opponent_rle": [],
+      "expected_action": "C",
+      "source_prose_sha256": "97a82aef1a10066e867288233b5ac0e434972b2777344a90dae5aef53cd2fb87"
+    },
+    {
+      "strategy_id": "openai_gpt54mini/default/Neutral_14",
+      "case": "after_C",
+      "round": 2,
+      "own_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "97a82aef1a10066e867288233b5ac0e434972b2777344a90dae5aef53cd2fb87"
+    },
+    {
+      "strategy_id": "openai_gpt54mini/default/Neutral_14",
+      "case": "after_D",
+      "round": 2,
+      "own_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          1
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "97a82aef1a10066e867288233b5ac0e434972b2777344a90dae5aef53cd2fb87"
+    },
+    {
+      "strategy_id": "openai_gpt54mini/default/Neutral_14",
+      "case": "forgiveness",
+      "round": 3,
+      "own_rle": [
+        [
+          "C",
+          1
+        ],
+        [
+          "D",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          1
+        ],
+        [
+          "C",
+          1
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "97a82aef1a10066e867288233b5ac0e434972b2777344a90dae5aef53cd2fb87"
+    },
+    {
+      "strategy_id": "openai_gpt54mini/default/Neutral_14",
+      "case": "last_round_C",
+      "round": 1000,
+      "own_rle": [
+        [
+          "C",
+          999
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          999
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "97a82aef1a10066e867288233b5ac0e434972b2777344a90dae5aef53cd2fb87"
+    },
+    {
+      "strategy_id": "openai_gpt54mini/default/Neutral_14",
+      "case": "last_round_D",
+      "round": 1000,
+      "own_rle": [
+        [
+          "C",
+          999
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          998
+        ],
+        [
+          "D",
+          1
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "97a82aef1a10066e867288233b5ac0e434972b2777344a90dae5aef53cd2fb87"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Aggressive_9",
+      "case": "opening",
+      "round": 1,
+      "own_rle": [],
+      "opponent_rle": [],
+      "expected_action": "C",
+      "source_prose_sha256": "af45564dfe9b029d4172543c28aafff44d5f89dfd39a345a1a643b602ed3eb8f"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Aggressive_9",
+      "case": "three_C",
+      "round": 4,
+      "own_rle": [
+        [
+          "C",
+          3
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          3
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "af45564dfe9b029d4172543c28aafff44d5f89dfd39a345a1a643b602ed3eb8f"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Aggressive_9",
+      "case": "four_C",
+      "round": 5,
+      "own_rle": [
+        [
+          "C",
+          4
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "C",
+          4
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "af45564dfe9b029d4172543c28aafff44d5f89dfd39a345a1a643b602ed3eb8f"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Aggressive_9",
+      "case": "sucker",
+      "round": 2,
+      "own_rle": [
+        [
+          "C",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          1
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "af45564dfe9b029d4172543c28aafff44d5f89dfd39a345a1a643b602ed3eb8f"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Aggressive_9",
+      "case": "DD_is_not_sucker",
+      "round": 2,
+      "own_rle": [
+        [
+          "D",
+          1
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          1
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "af45564dfe9b029d4172543c28aafff44d5f89dfd39a345a1a643b602ed3eb8f"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Aggressive_9",
+      "case": "round999",
+      "round": 999,
+      "own_rle": [
+        [
+          "D",
+          998
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          998
+        ]
+      ],
+      "expected_action": "C",
+      "source_prose_sha256": "af45564dfe9b029d4172543c28aafff44d5f89dfd39a345a1a643b602ed3eb8f"
+    },
+    {
+      "strategy_id": "gemini_31_pro/default/Aggressive_9",
+      "case": "round1000",
+      "round": 1000,
+      "own_rle": [
+        [
+          "D",
+          999
+        ]
+      ],
+      "opponent_rle": [
+        [
+          "D",
+          999
+        ]
+      ],
+      "expected_action": "D",
+      "source_prose_sha256": "af45564dfe9b029d4172543c28aafff44d5f89dfd39a345a1a643b602ed3eb8f"
+    }
+  ]
+}

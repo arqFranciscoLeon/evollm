@@ -1,0 +1,1081 @@
+{
+  "date": "2026-09-13",
+  "scope_roots": [
+    "D:\\evollm",
+    "D:\\clo-author"
+  ],
+  "excluded_directory_names": [
+    ".git",
+    ".phase3-venv",
+    ".pytest_cache",
+    ".pytest_tmp",
+    ".venv",
+    "__pycache__",
+    "inputs",
+    "node_modules"
+  ],
+  "scope_limit": "Local project files only. External backups, cloud accounts and personal chat archives were not searched.",
+  "recovery_report_sha256": "19b3650d981812fa85c6a0687ba4df9932e65f6ad859e40bf5679ee101fc0194",
+  "historical_sources": [
+    {
+      "ref": "0faabb18c608934a5379648b64307dc84b88aeed",
+      "path": "src/evollm/create_strategies.py",
+      "sha256": "ed3a98880d921b1964e084b2c2ba28d7cadfa9a0c988b9689cdc42000128a053",
+      "relevant_lines": [
+        {
+          "line": 18,
+          "text": "filename=\"create_strategies.log\", filemode=\"w\", level=logging.INFO)"
+        },
+        {
+          "line": 191,
+          "text": "wrapped = textwrap.wrap(text, width=width)"
+        }
+      ]
+    },
+    {
+      "ref": "1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc",
+      "path": "src/evollm/create_strategies.py",
+      "sha256": "c22f6d7a983ea5ede67d4bbfc2ab872b7a0fb1c5a59c89ca7b6a8127456ae3a2",
+      "relevant_lines": [
+        {
+          "line": 16,
+          "text": "_file_handler = logging.FileHandler(\"create_strategies.log\", mode=\"w\", encoding=\"utf8\")"
+        },
+        {
+          "line": 223,
+          "text": "wrapped = textwrap.wrap(text, width=width)"
+        }
+      ]
+    },
+    {
+      "ref": "1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc",
+      "path": "src/evollm/llm_clients.py",
+      "sha256": "426df9cbf36c20949333899fa7f06659206cd344b51df4ddd099ff48ada0c076",
+      "relevant_lines": [
+        {
+          "line": 316,
+          "text": "max_output_tokens=4096,"
+        },
+        {
+          "line": 328,
+          "text": "return response.text"
+        }
+      ]
+    }
+  ],
+  "format_roundtrip_checks": [
+    {
+      "ref": "0faabb18",
+      "id": "gemini_25_flash/default/Aggressive_6",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "0faabb18",
+      "id": "gemini_25_flash/default/Aggressive_24",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "0faabb18",
+      "id": "gemini_31_pro/default/Aggressive_1",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "0faabb18",
+      "id": "gemini_31_pro/default/Aggressive_3",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "0faabb18",
+      "id": "gemini_31_pro/default/Aggressive_5",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "0faabb18",
+      "id": "gemini_31_pro/default/Aggressive_7",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "0faabb18",
+      "id": "gemini_31_pro/default/Aggressive_8",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "0faabb18",
+      "id": "gemini_31_pro/default/Aggressive_9",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "0faabb18",
+      "id": "gemini_31_pro/default/Aggressive_11",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "0faabb18",
+      "id": "gemini_31_pro/default/Aggressive_13",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "0faabb18",
+      "id": "gemini_31_pro/default/Aggressive_15",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "0faabb18",
+      "id": "gemini_31_pro/default/Aggressive_16",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "0faabb18",
+      "id": "gemini_31_pro/default/Aggressive_17",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "0faabb18",
+      "id": "gemini_31_pro/default/Aggressive_18",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "0faabb18",
+      "id": "gemini_31_pro/default/Aggressive_19",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "0faabb18",
+      "id": "gemini_31_pro/default/Aggressive_21",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "0faabb18",
+      "id": "gemini_31_pro/default/Aggressive_22",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "0faabb18",
+      "id": "gemini_31_pro/default/Aggressive_23",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "1f28a2c",
+      "id": "gemini_25_flash/default/Aggressive_6",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "1f28a2c",
+      "id": "gemini_25_flash/default/Aggressive_24",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "1f28a2c",
+      "id": "gemini_31_pro/default/Aggressive_1",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "1f28a2c",
+      "id": "gemini_31_pro/default/Aggressive_3",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "1f28a2c",
+      "id": "gemini_31_pro/default/Aggressive_5",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "1f28a2c",
+      "id": "gemini_31_pro/default/Aggressive_7",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "1f28a2c",
+      "id": "gemini_31_pro/default/Aggressive_8",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "1f28a2c",
+      "id": "gemini_31_pro/default/Aggressive_9",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "1f28a2c",
+      "id": "gemini_31_pro/default/Aggressive_11",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "1f28a2c",
+      "id": "gemini_31_pro/default/Aggressive_13",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "1f28a2c",
+      "id": "gemini_31_pro/default/Aggressive_15",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "1f28a2c",
+      "id": "gemini_31_pro/default/Aggressive_16",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "1f28a2c",
+      "id": "gemini_31_pro/default/Aggressive_17",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "1f28a2c",
+      "id": "gemini_31_pro/default/Aggressive_18",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "1f28a2c",
+      "id": "gemini_31_pro/default/Aggressive_19",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "1f28a2c",
+      "id": "gemini_31_pro/default/Aggressive_21",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "1f28a2c",
+      "id": "gemini_31_pro/default/Aggressive_22",
+      "nonwhitespace_preserved": true
+    },
+    {
+      "ref": "1f28a2c",
+      "id": "gemini_31_pro/default/Aggressive_23",
+      "nonwhitespace_preserved": true
+    }
+  ],
+  "logs_examined": [
+    {
+      "path": "D:\\evollm\\create_strategies.log",
+      "bytes": 498406,
+      "sha256": "35fd005e24a12bf992e97f3f20f980fb0438bdb3632b59f5a60f3bee5934238e",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\migrate_to_qgis.log",
+      "bytes": 92211,
+      "sha256": "97ef128ee0ec3113d755554afd1ca02140373906803de5967df8b0ba2759ead4",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\erratum\\h2h_erratum.log",
+      "bytes": 949698,
+      "sha256": "f025361a770058677ff8c7a2677eef95df1a014f75b1b686d8726966fbed98ed",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\erratum\\modal_erratum_run.log",
+      "bytes": 20207,
+      "sha256": "d9eb90fce6c768e1ec1a186c29316b2123c275efe8c961e4f96db8adf69dca38",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\erratum\\genjobs\\prose\\create_strategies.log",
+      "bytes": 72671,
+      "sha256": "8ced11bd81cd4cf3ae82b2b744723f74781ab73614d405cd86358f27bcb5f13d",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\erratum\\genjobs\\prose\\runner.log",
+      "bytes": 102844,
+      "sha256": "09f2d7539ca1d609ca0de8a4c5d3eb2b2184708f87e806963702acf0acdefc26",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\erratum\\genjobs\\prose_noise\\create_strategies.log",
+      "bytes": 46393,
+      "sha256": "6d28e25cc25da61d1cd7c810cc3300b0aac1133437ad99487184585ae24f9c5b",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\erratum\\genjobs\\prose_noise\\runner.log",
+      "bytes": 106832,
+      "sha256": "1977ab320127ed277ed9ebf5e45bd95ca7b46359eacda46a2986f84e3f9cb486",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\erratum\\genjobs\\refine\\create_strategies.log",
+      "bytes": 22379,
+      "sha256": "98d8c986f8aad49336fdfb9f0a8c8e591ee2eba8cc67ee1b45271d4b10ffe16f",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\erratum\\genjobs\\refine\\runner.log",
+      "bytes": 123461,
+      "sha256": "3ff625b95bb37645afcb4629633bd642339f830b17ae76dd5e930b0843786bca",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\erratum\\genjobs\\refine_noise\\create_strategies.log",
+      "bytes": 8394,
+      "sha256": "c03ac1e9f7f038e5b664fa4ab74ce7582b9b8c149781ddbbbab8369bbd351365",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\erratum\\genjobs\\refine_noise\\runner.log",
+      "bytes": 117039,
+      "sha256": "6371003137a321279d982d43fbc37fdbf976b3749c1b0700cccdf2ee0f8cbe2f",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\create_strategies.log",
+      "bytes": 496263,
+      "sha256": "d3ce992dd5bce85c30f51997d705cb9d2d801ccdfaff1ea7e418d415bef97245",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\h2h_phase2.log",
+      "bytes": 2306805,
+      "sha256": "7fbe9a6515bc7db7cd3554581040b54c917ed8cec6f65aa2e48dd204bdf721d4",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\logs\\phase2_gen\\deepseek_v4pro_refine_75.log",
+      "bytes": 307,
+      "sha256": "eed5dd53fa4a22a7885d040e1120abbefca50d9185f3e0ad1621cfd5a4d7e6eb",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\logs\\phase2_gen\\glm_51_refine_75.log",
+      "bytes": 299,
+      "sha256": "d8f580eaee4f16be6671041308bf08995396ff2ca5c3eb265cbc767f51239573",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\logs\\phase2_gen\\wd_deepseek_v4pro_refine_75\\create_strategies.log",
+      "bytes": 4590,
+      "sha256": "1854a50fa2c626b236c6bd9c0825939d3c0957d3da8f45bc093054dc111c4c32",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\logs\\phase2_gen\\wd_glm_51_refine_75\\create_strategies.log",
+      "bytes": 5588,
+      "sha256": "7d4e851c39e5e5250db30c89741c5be77e91bd5efc15f1f2a1d7b6e256a999c7",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\modal_dryrun.log",
+      "bytes": 35871,
+      "sha256": "75f8fc25c26dae296958777915ccfc409376d13d964b14b9a85ed34caca710e3",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\modal_dryrun2.log",
+      "bytes": 23120,
+      "sha256": "df94a6ad7d2d984e72d84c0ec44f62d3ad1503b9cd3f0dbed0167c54e406af5a",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\modal_dryrun3.log",
+      "bytes": 7442,
+      "sha256": "333466f64860935f92276743fbc656d62e1344dbd2b551d6e01b5ab1048bdf67",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\deepseek_v4pro_default_75.log",
+      "bytes": 8607,
+      "sha256": "59b162337f8b5a5314fab613561e25d437fd51ebaa60d4cb0d66bd49c3a15924",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\deepseek_v4pro_default_75_noise.log",
+      "bytes": 9765,
+      "sha256": "52195712b4b824e54662e838f385ec84e2956ce780b259287680885ff19ccae7",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\deepseek_v4pro_prose_75.log",
+      "bytes": 13990,
+      "sha256": "25578f52eda6f3500e177cd048c8fde8954535dd84d90d4af0f56e507a02a246",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\deepseek_v4pro_prose_75_noise.log",
+      "bytes": 14112,
+      "sha256": "1a446bfb76d0684bf77630867920660eb524cdb45eacfdf209cde71040286003",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\deepseek_v4pro_refine_75.log",
+      "bytes": 17137,
+      "sha256": "7e031a62c609ee1d4dcd29b844d544787db48122dbb92f4d7ffcf6c9f596ff9b",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\deepseek_v4pro_refine_75_noise.log",
+      "bytes": 17015,
+      "sha256": "ec4da19c38ce621862ab517a18dea91dd4a82ef0e704840ce2a7badd1cda79a8",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\glm_51_default_75.log",
+      "bytes": 7421,
+      "sha256": "6e5b17dc4b9a8fb1ca883201ec1e2681b3ff4d4b0d5aa2415226422c4f293d2e",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\glm_51_default_75_noise.log",
+      "bytes": 2393,
+      "sha256": "792731b34f30b7ac5c51750b715158ad65aa7215b914ac930071113d6f031d64",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\glm_51_prose_75.log",
+      "bytes": 10207,
+      "sha256": "41fde7684bb307d7c5eb1b2d47f850f7caf03d98337744e4a396dad18becdac7",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\glm_51_prose_75_noise.log",
+      "bytes": 1545,
+      "sha256": "d613020440c4e2f6ad6d56ed5a1b645372ee9d8e1cbf76c9bd2944f8b09dd2b6",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\glm_51_refine_75.log",
+      "bytes": 9084,
+      "sha256": "a5fdb7cc060115e79aa366591b66b5e101a2403de8501b3f25c2426811e903a9",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\glm_51_refine_75_noise.log",
+      "bytes": 10571,
+      "sha256": "0a4f1b67cb66e58e8e9487d1286a48f5a005502345c6d3eda6b438d051d1a997",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\kimi_k25_default_75.log",
+      "bytes": 9759,
+      "sha256": "66c1b8a15f9110c6dcb8009fff82532c39eda8f213216011ec8c26d4d863a67a",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\kimi_k25_default_75_noise.log",
+      "bytes": 9759,
+      "sha256": "66c1b8a15f9110c6dcb8009fff82532c39eda8f213216011ec8c26d4d863a67a",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\kimi_k25_prose_75.log",
+      "bytes": 5820,
+      "sha256": "eeeb9b0af502170671bf8d1665f67d291731b52d5cb3c312c1fbc48b042f169d",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\kimi_k25_prose_75_noise.log",
+      "bytes": 8052,
+      "sha256": "f3fa0364d85f86ad9c6780e30cef4397c71bc33226d610f3063c939d4bc792b2",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\kimi_k25_refine_75.log",
+      "bytes": 8469,
+      "sha256": "e98ba80cdfaab8fc5e55dac913df20112bc937ca18c0a11a90dfb49fbe25f9b5",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\kimi_k25_refine_75_noise.log",
+      "bytes": 10463,
+      "sha256": "5a3f58c7ca08b45811bbce04252c419d1034811449a170b8d007ed353b20e7dd",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\qwen3max_default_75.log",
+      "bytes": 13242,
+      "sha256": "432f589c836978cbe385d1b0e1177d85daa0cae2490ea31705c31d484b316310",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\qwen3max_default_75_noise.log",
+      "bytes": 14708,
+      "sha256": "b746073d11cb91c51d70843ea95bef0a3c790ad671f14c8041f81578c631297a",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\qwen3max_prose_75.log",
+      "bytes": 19932,
+      "sha256": "8d32e1c2dc7000c50d5f6da307955c18607f487c58b74278161e319236c74c05",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\qwen3max_prose_75_noise.log",
+      "bytes": 19838,
+      "sha256": "ef57841280468634242121c6558d9aae1060c1915c94152b99dd9325db112c1e",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\qwen3max_refine_75.log",
+      "bytes": 25252,
+      "sha256": "c1795b208248ffd2f729de47359f19c6e3e86e4a37a91e250983f36b72a82905",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\qwen3max_refine_75_noise.log",
+      "bytes": 25251,
+      "sha256": "61109683dcd9c1abbcd5ef72dd6ee36bdb3d0beffdf06852b8a1f569eddb5752",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\wd_deepseek_v4pro_default_75\\create_strategies.log",
+      "bytes": 249232,
+      "sha256": "d81824762b91f13086d3321bec6a3e51a62ce793c7aa097eff7aedd1c1830da5",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\wd_deepseek_v4pro_default_75_noise\\create_strategies.log",
+      "bytes": 336536,
+      "sha256": "2a8c53b30b2b24b0af9ad82f2c356ac5d3e7046ba733bb406c762b64a34e1f6f",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\wd_deepseek_v4pro_prose_75\\create_strategies.log",
+      "bytes": 599057,
+      "sha256": "73e3a1d931d13492a28776e52752a3e6f14244255a43a7d141f0c01e26b10d31",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\wd_deepseek_v4pro_prose_75_noise\\create_strategies.log",
+      "bytes": 727341,
+      "sha256": "990694f08bfa556d75979a6da823fc1a5dcd49834ea7ee2b79ea62c6f6351b26",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\wd_deepseek_v4pro_refine_75\\create_strategies.log",
+      "bytes": 393873,
+      "sha256": "6a3a26ffe241609825458911f5f8d9ade11e9df34b3e9802a748d3bbd2ff375e",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\wd_deepseek_v4pro_refine_75_noise\\create_strategies.log",
+      "bytes": 451828,
+      "sha256": "9fce4fe3689eabae93f8d4de37671990ba99381a5c5d764debf18bf594786eef",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\wd_glm_51_default_75\\create_strategies.log",
+      "bytes": 218639,
+      "sha256": "c5cc5b041c10cbe34c5d58ca6ab21be8df7febefbf8a9233d070e4bf70378800",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\wd_glm_51_default_75_noise\\create_strategies.log",
+      "bytes": 77265,
+      "sha256": "e872a59a189befdd6e0e6d41f1340559e2062e6b986785f278ca10c2e607e0ea",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\wd_glm_51_prose_75\\create_strategies.log",
+      "bytes": 471608,
+      "sha256": "925824c103b8b85625e06fcff3ab1dc2c083436c7e7f0a3e4711551c7282463c",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\wd_glm_51_prose_75_noise\\create_strategies.log",
+      "bytes": 82840,
+      "sha256": "28e42ec670172a8338fa5452a26013fb56e4fd7655a03549bcd2aa07149de37c",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\wd_glm_51_refine_75\\create_strategies.log",
+      "bytes": 231277,
+      "sha256": "899dbe7c6c8caf26677de5afe73a834e6f7d4cfdc010ecf80cbc29aca55d1993",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\wd_glm_51_refine_75_noise\\create_strategies.log",
+      "bytes": 312464,
+      "sha256": "783213c64443704664136cbc41165d2426e41dd81e736efb0355cbfc7d7ba81f",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\wd_kimi_k25_default_75\\create_strategies.log",
+      "bytes": 278695,
+      "sha256": "a8b7d22bce5fc6f560329bb2e4f780bb06594f56ee79667c99ce186910cdddb7",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\wd_kimi_k25_default_75_noise\\create_strategies.log",
+      "bytes": 323379,
+      "sha256": "20499787f38256db792f5aa06352e64309c6c99721610087115d0d136a959081",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\wd_kimi_k25_prose_75\\create_strategies.log",
+      "bytes": 273088,
+      "sha256": "0132a4d1cec4bf58d95485aa97dea719d0f2ab402c0af9431833b215678371fc",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\wd_kimi_k25_prose_75_noise\\create_strategies.log",
+      "bytes": 476520,
+      "sha256": "4dd2a9bef90237a8af605ff924e1a058bc1b3b48cf67942828cf8496380b81bf",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\wd_kimi_k25_refine_75\\create_strategies.log",
+      "bytes": 203255,
+      "sha256": "d4250d44a810b63a708a0a8fcb1ebe43d125f76598a0c401be213a1c61acc7ab",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\wd_kimi_k25_refine_75_noise\\create_strategies.log",
+      "bytes": 287346,
+      "sha256": "27f06f6f23b44bf9f2b9704482000fa9c604454cf8f39e0cdb60564e28338ab5",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\wd_qwen3max_default_75\\create_strategies.log",
+      "bytes": 270760,
+      "sha256": "456c7890a140d43967306a4365b0889879df23851a291c3ff1bb836bb345c18c",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\wd_qwen3max_default_75_noise\\create_strategies.log",
+      "bytes": 354071,
+      "sha256": "995ecb03618f62f63b11e26f9ff33682d6e96920715303063bec3c0e79447fb8",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\wd_qwen3max_prose_75\\create_strategies.log",
+      "bytes": 621659,
+      "sha256": "62abe64b90eefb39c61da37a0b14ef3238dc3db74fd60af8b86995adeb0197d1",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\wd_qwen3max_prose_75_noise\\create_strategies.log",
+      "bytes": 832371,
+      "sha256": "620360640246ec966ffd746449a5eefe65d67ca890d2ec15c90231cd2fb84663",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\wd_qwen3max_refine_75\\create_strategies.log",
+      "bytes": 454211,
+      "sha256": "5449e0c42e3a0a1156c8908acf90a8d21ac0d7e81d0a1c300a067ad5b91b5acf",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\logs\\phase2_gen\\wd_qwen3max_refine_75_noise\\create_strategies.log",
+      "bytes": 583341,
+      "sha256": "117a1c62cf72646ce3f90d07ca92c1609aefefbd547e37c265e28eb4d5bf15d2",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\evollm\\paper\\main.log",
+      "bytes": 81196,
+      "sha256": "f4cbb3d3320ad1445baff21817c315a3a4bf133ecc10361761cbaf416f458bdf",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\clo-author\\paper\\main.log",
+      "bytes": 79659,
+      "sha256": "af39f017284715a003fa3faaadf59de5055a739a0b0942750505fa0c4d7b3335",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\clo-author\\paper\\main_es.log",
+      "bytes": 79515,
+      "sha256": "168a2a5d5e4e2d313112f722730da07707fcb2703bcf306b88247c06f5204029",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\clo-author\\paper\\arxiv\\main.log",
+      "bytes": 79855,
+      "sha256": "e3ce4f8fd3bad3ba5ecd2600ec328a053312441980384d1fcd70c049db2d6b86",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\clo-author\\paper2\\main.log",
+      "bytes": 76835,
+      "sha256": "e4c5bcc9b625b87efd326b5626fe3def0bb413462e66666099311c9c3ddf16f7",
+      "matches": [],
+      "finish_reason_mentions": 0
+    },
+    {
+      "path": "D:\\clo-author\\paper2\\main_es.log",
+      "bytes": 77666,
+      "sha256": "e185e6efefb07ad8ddf3349dbceb86a9830d2fb9e89f9c196354639547074fc2",
+      "matches": [],
+      "finish_reason_mentions": 0
+    }
+  ],
+  "scan_errors": [],
+  "cases": [
+    {
+      "id": "gemini_25_flash/default/Aggressive_6",
+      "snapshot_path": "phase3/inputs/archived/gemini_25_flash_default_75.py",
+      "source_commit": "3a63515ffa249b16524958324102f79cfbad8e90",
+      "source_path": "strategies/gemini_25_flash_default_75.py",
+      "snapshot_sha256": "832a4f6bf99e75b70199a456fa07860412c02c5bfd52a4eb6876506cf1ca0807",
+      "normalized_prose_sha256": "11b14c88063259bcd99514fc3e6e6046908c06e7d57be2c4f546773764f81bc5",
+      "manifest_prose_sha256": "44ecb93450ad5c3ba9b6c58a1e5676243c7b50852dbb2941d816e81dd8789852",
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "tail": " played Cooperate in all previous rounds):** * **If it is rounds 2 through 10, play Defect.** * **If it is round 11 or later, play",
+      "archival_versions_examined": 12,
+      "longer_archival_candidates": 0,
+      "log_candidate_paths": [],
+      "cause": "unknown_without_response_metadata",
+      "runtime_source_commit": "not_established_by_library_commit"
+    },
+    {
+      "id": "gemini_25_flash/default/Aggressive_24",
+      "snapshot_path": "phase3/inputs/archived/gemini_25_flash_default_75.py",
+      "source_commit": "3a63515ffa249b16524958324102f79cfbad8e90",
+      "source_path": "strategies/gemini_25_flash_default_75.py",
+      "snapshot_sha256": "832a4f6bf99e75b70199a456fa07860412c02c5bfd52a4eb6876506cf1ca0807",
+      "normalized_prose_sha256": "f0d2d56883d89e5529ef04aeb4d85595e6006dbc81b4b3bbec8ee2ddfbf03251",
+      "manifest_prose_sha256": "453cfca2702a0b39265c7bda53cd52ccfce90e3a67b28b006972ae0d11ad7159",
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "tail": "ing in D,D): Play Cooperate (C) for this single round, then immediately revert to playing Defect (D) in the next round, regardless",
+      "archival_versions_examined": 12,
+      "longer_archival_candidates": 0,
+      "log_candidate_paths": [],
+      "cause": "unknown_without_response_metadata",
+      "runtime_source_commit": "not_established_by_library_commit"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_1",
+      "snapshot_path": "phase3/inputs/archived/gemini_31_pro_default_75.py",
+      "source_commit": "3a63515ffa249b16524958324102f79cfbad8e90",
+      "source_path": "strategies/gemini_31_pro_default_75.py",
+      "snapshot_sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca",
+      "normalized_prose_sha256": "743faac9a497b68e5aaf6472c6bf880aa74dbe8dcb67e8afff67f1ad2841b3d8",
+      "manifest_prose_sha256": "c0ffc90c6cb6591a87c742b519fe3bd41c6113148cdd683e28c7d9385847494c",
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "tail": "f they are a passive player who will allow unconditional exploitation). 3. **Restoring Cooperation:** If both you and the opponent",
+      "archival_versions_examined": 12,
+      "longer_archival_candidates": 0,
+      "log_candidate_paths": [],
+      "cause": "unknown_without_response_metadata",
+      "runtime_source_commit": "not_established_by_library_commit"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_3",
+      "snapshot_path": "phase3/inputs/archived/gemini_31_pro_default_75.py",
+      "source_commit": "3a63515ffa249b16524958324102f79cfbad8e90",
+      "source_path": "strategies/gemini_31_pro_default_75.py",
+      "snapshot_sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca",
+      "normalized_prose_sha256": "a1b9b28bfb96867dbfafda641c1dc6512806ce25575b8575e1ec01d68d3c4764",
+      "manifest_prose_sha256": "5274983326ef2dabb4969e499d9d2a89fec046a79805a64ede008b614d7f0328",
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "tail": "layed Defect in the previous round, play **Defect**. (This ensures you are not repeatedly taken advantage of). 4. **Aggressive Pro",
+      "archival_versions_examined": 12,
+      "longer_archival_candidates": 0,
+      "log_candidate_paths": [],
+      "cause": "unknown_without_response_metadata",
+      "runtime_source_commit": "not_established_by_library_commit"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_5",
+      "snapshot_path": "phase3/inputs/archived/gemini_31_pro_default_75.py",
+      "source_commit": "3a63515ffa249b16524958324102f79cfbad8e90",
+      "source_path": "strategies/gemini_31_pro_default_75.py",
+      "snapshot_sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca",
+      "normalized_prose_sha256": "94340baf34f066b3ceac2732b721182d0bd64b918999187f08f25cf9f343d5b7",
+      "manifest_prose_sha256": "42af8dfe74388df0a193bcb7316c0b2cec1fcd433dbafcb65528fb9dc84390d7",
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "tail": "nt payoff. 3. **Round 2 to 999:** - Play **Defect** if you and your opponent chose *different* actions in the previous round. This",
+      "archival_versions_examined": 12,
+      "longer_archival_candidates": 0,
+      "log_candidate_paths": [],
+      "cause": "unknown_without_response_metadata",
+      "runtime_source_commit": "not_established_by_library_commit"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_7",
+      "snapshot_path": "phase3/inputs/archived/gemini_31_pro_default_75.py",
+      "source_commit": "3a63515ffa249b16524958324102f79cfbad8e90",
+      "source_path": "strategies/gemini_31_pro_default_75.py",
+      "snapshot_sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca",
+      "normalized_prose_sha256": "a2acf39a7baefd6a0f594374df25c13c43f6716a12d756acbaaf83985ed91828",
+      "manifest_prose_sha256": "d8b3b3a6b4b85d653211be8a6c32a8db08c5ef4df09ef7ef3b063bce68d48ddb",
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "tail": "p if they are capable of forgiveness. 4. **The Long Game (Rounds 4 through 999):** - **Exploit:** If the opponent played Cooperate",
+      "archival_versions_examined": 12,
+      "longer_archival_candidates": 0,
+      "log_candidate_paths": [],
+      "cause": "unknown_without_response_metadata",
+      "runtime_source_commit": "not_established_by_library_commit"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_8",
+      "snapshot_path": "phase3/inputs/archived/gemini_31_pro_default_75.py",
+      "source_commit": "3a63515ffa249b16524958324102f79cfbad8e90",
+      "source_path": "strategies/gemini_31_pro_default_75.py",
+      "snapshot_sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca",
+      "normalized_prose_sha256": "b8d6bcaa9751265a87ddc9972c5ec76a9f81592e0935f2aad51eeda89a16027b",
+      "manifest_prose_sha256": "13f998e1f142129e0d81ea1946af00c4c74c4cb133858b384c274b2f9ffc2277",
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "tail": "cooperator).* 3. **If it is Round 2 or Round 3:** Play C. *(This serves as an apology to absorb any retaliation from a Tit-for-Tat",
+      "archival_versions_examined": 12,
+      "longer_archival_candidates": 0,
+      "log_candidate_paths": [],
+      "cause": "unknown_without_response_metadata",
+      "runtime_source_commit": "not_established_by_library_commit"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_9",
+      "snapshot_path": "phase3/inputs/archived/gemini_31_pro_default_75.py",
+      "source_commit": "3a63515ffa249b16524958324102f79cfbad8e90",
+      "source_path": "strategies/gemini_31_pro_default_75.py",
+      "snapshot_sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca",
+      "normalized_prose_sha256": "794af07ec2cdb232f64484ae3afb332944911c5bea1784a9125c80d93f118b78",
+      "manifest_prose_sha256": "af45564dfe9b029d4172543c28aafff44d5f89dfd39a345a1a643b602ed3eb8f",
+      "manual_review": "Ending inspected: clipped explanation after rules",
+      "tail": "eir boundaries. 4. **The Baseline:** Under all other conditions, cooperate. **How it works:** By defaulting to cooperation (Rule 4",
+      "archival_versions_examined": 12,
+      "longer_archival_candidates": 0,
+      "log_candidate_paths": [],
+      "cause": "unknown_without_response_metadata",
+      "runtime_source_commit": "not_established_by_library_commit"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_11",
+      "snapshot_path": "phase3/inputs/archived/gemini_31_pro_default_75.py",
+      "source_commit": "3a63515ffa249b16524958324102f79cfbad8e90",
+      "source_path": "strategies/gemini_31_pro_default_75.py",
+      "snapshot_sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca",
+      "normalized_prose_sha256": "3cb449a6248659f8da9f06b09c7a8d556a08d70bba56e36f55c2334e3f9d8164",
+      "manifest_prose_sha256": "0689d198f27dca50295204ded8ea231fd96a126f4bda74750f96769f5ba47a06",
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "tail": "** If both you and your opponent played Defect in the previous two consecutive rounds, play Cooperate. (This signals a willingness",
+      "archival_versions_examined": 12,
+      "longer_archival_candidates": 0,
+      "log_candidate_paths": [],
+      "cause": "unknown_without_response_metadata",
+      "runtime_source_commit": "not_established_by_library_commit"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_13",
+      "snapshot_path": "phase3/inputs/archived/gemini_31_pro_default_75.py",
+      "source_commit": "3a63515ffa249b16524958324102f79cfbad8e90",
+      "source_path": "strategies/gemini_31_pro_default_75.py",
+      "snapshot_sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca",
+      "normalized_prose_sha256": "1d4369ef3dbb20ba201eae7144018dda2200dd025a76eaf526e2ca7812afe679",
+      "manifest_prose_sha256": "7e17ed09e978f006fde86e3aa336700f1cc552f278054ffc8d4ae8643eeb5082",
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "tail": "991 and 1000 inclusive, play Defect. 2. **The Test:** If it is round 1, play Defect. 3. **The Apology:** If it is round 2 or round",
+      "archival_versions_examined": 12,
+      "longer_archival_candidates": 0,
+      "log_candidate_paths": [],
+      "cause": "unknown_without_response_metadata",
+      "runtime_source_commit": "not_established_by_library_commit"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_15",
+      "snapshot_path": "phase3/inputs/archived/gemini_31_pro_default_75.py",
+      "source_commit": "3a63515ffa249b16524958324102f79cfbad8e90",
+      "source_path": "strategies/gemini_31_pro_default_75.py",
+      "snapshot_sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca",
+      "normalized_prose_sha256": "3f91b369108008540f8f8a2313a8ec916b82e76163e5fad0e4b0834fc52e33a6",
+      "manifest_prose_sha256": "d3193bef47d6446d1f27bbb11669fa6bd0d2462bb8dd1007f9e96c10c0eb3bbb",
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "tail": "eing repeatedly exploited for 0 points. 3. **Periodic Exploitation:** If the current round number is a multiple of 10 (e.g., round",
+      "archival_versions_examined": 12,
+      "longer_archival_candidates": 0,
+      "log_candidate_paths": [],
+      "cause": "unknown_without_response_metadata",
+      "runtime_source_commit": "not_established_by_library_commit"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_16",
+      "snapshot_path": "phase3/inputs/archived/gemini_31_pro_default_75.py",
+      "source_commit": "3a63515ffa249b16524958324102f79cfbad8e90",
+      "source_path": "strategies/gemini_31_pro_default_75.py",
+      "snapshot_sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca",
+      "normalized_prose_sha256": "ab13190e860b778749560ba23d26299de1980a53a0bd31e9eebdc43558a6b9b8",
+      "manifest_prose_sha256": "f2f2e889e95c2be6128f831882b73dc4bb443c0be60215037768c2596924fb3c",
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "tail": "oth* rounds 2 and 3:** Play Defect. (This fully exploits an unconditionally forgiving opponent). 5. **If it is round 4 through 999",
+      "archival_versions_examined": 12,
+      "longer_archival_candidates": 0,
+      "log_candidate_paths": [],
+      "cause": "unknown_without_response_metadata",
+      "runtime_source_commit": "not_established_by_library_commit"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_17",
+      "snapshot_path": "phase3/inputs/archived/gemini_31_pro_default_75.py",
+      "source_commit": "3a63515ffa249b16524958324102f79cfbad8e90",
+      "source_path": "strategies/gemini_31_pro_default_75.py",
+      "snapshot_sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca",
+      "normalized_prose_sha256": "ab9080b5fc884cabcfbed4a4c62f51f3b7f238b3e47f52afb206dcda5dc4ee8a",
+      "manifest_prose_sha256": "5e7679a5cb485776ceb259e67e466f5c731e6f9daabf717f07c92b04118ff558",
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "tail": "ng their forgiveness for the maximum 5-point payoff. 4. **If it is round 1, or any round that is a multiple of 10 (e.g., 10, 20, 3",
+      "archival_versions_examined": 12,
+      "longer_archival_candidates": 0,
+      "log_candidate_paths": [],
+      "cause": "unknown_without_response_metadata",
+      "runtime_source_commit": "not_established_by_library_commit"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_18",
+      "snapshot_path": "phase3/inputs/archived/gemini_31_pro_default_75.py",
+      "source_commit": "3a63515ffa249b16524958324102f79cfbad8e90",
+      "source_path": "strategies/gemini_31_pro_default_75.py",
+      "snapshot_sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca",
+      "normalized_prose_sha256": "ee4d456f576cd38a9318590bb69a2bd22a6d8a276e36ea3f989b1fc469c63808",
+      "manifest_prose_sha256": "ed5f87c4f29b8bf16de05dc22520f43100838cbf3b87e0aa2236ab129c7dd2f9",
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "tail": "efect. (This is an aggressive retaliation, punishing a single defection with two consecutive defections to forcefully deter future",
+      "archival_versions_examined": 12,
+      "longer_archival_candidates": 0,
+      "log_candidate_paths": [],
+      "cause": "unknown_without_response_metadata",
+      "runtime_source_commit": "not_established_by_library_commit"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_19",
+      "snapshot_path": "phase3/inputs/archived/gemini_31_pro_default_75.py",
+      "source_commit": "3a63515ffa249b16524958324102f79cfbad8e90",
+      "source_path": "strategies/gemini_31_pro_default_75.py",
+      "snapshot_sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca",
+      "normalized_prose_sha256": "48d431edf2d059719768a42e42197030fd3666cacea6d5df354efde250a33660",
+      "manifest_prose_sha256": "db2a2034b7a13be3d972ab6a099325358e3b0cfa6eeab4b1f761bed72b92d345",
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "tail": "vious two consecutive rounds**, play Defect to protect yourself from an opponent that refuses to cooperate. 4. **If you played Def",
+      "archival_versions_examined": 12,
+      "longer_archival_candidates": 0,
+      "log_candidate_paths": [],
+      "cause": "unknown_without_response_metadata",
+      "runtime_source_commit": "not_established_by_library_commit"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_21",
+      "snapshot_path": "phase3/inputs/archived/gemini_31_pro_default_75.py",
+      "source_commit": "3a63515ffa249b16524958324102f79cfbad8e90",
+      "source_path": "strategies/gemini_31_pro_default_75.py",
+      "snapshot_sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca",
+      "normalized_prose_sha256": "696b859efc2d72ed19cefb38c6e443c9097dc137d4cf83c2ae6dac29fb5f2fb1",
+      "manifest_prose_sha256": "f2b3d3af4b2f150b886ae4c244f59252fc05cf6379a869e1b42993a7c51be15d",
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "tail": "the opponent cooperated, allowing you to relentlessly exploit an unconditionally forgiving or random opponent. 4. **Cooperate** in",
+      "archival_versions_examined": 12,
+      "longer_archival_candidates": 0,
+      "log_candidate_paths": [],
+      "cause": "unknown_without_response_metadata",
+      "runtime_source_commit": "not_established_by_library_commit"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_22",
+      "snapshot_path": "phase3/inputs/archived/gemini_31_pro_default_75.py",
+      "source_commit": "3a63515ffa249b16524958324102f79cfbad8e90",
+      "source_path": "strategies/gemini_31_pro_default_75.py",
+      "snapshot_sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca",
+      "normalized_prose_sha256": "469d8ceddcacd3e9cf7fe9705e2b641f610442608d2392e1030a52fed7425f20",
+      "manifest_prose_sha256": "81a937095c8292d4a41f6bb2bb2265b116fddc8f989f1595ea9b82d154bb3c8a",
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "tail": "nent played Cooperate, play Defect. (Continue exploiting an opponent who does not retaliate). - **Condition B:** If you played Def",
+      "archival_versions_examined": 12,
+      "longer_archival_candidates": 0,
+      "log_candidate_paths": [],
+      "cause": "unknown_without_response_metadata",
+      "runtime_source_commit": "not_established_by_library_commit"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_23",
+      "snapshot_path": "phase3/inputs/archived/gemini_31_pro_default_75.py",
+      "source_commit": "3a63515ffa249b16524958324102f79cfbad8e90",
+      "source_path": "strategies/gemini_31_pro_default_75.py",
+      "snapshot_sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca",
+      "normalized_prose_sha256": "2ac2f4ed49911185452ca840135f6f10bf49b202ce6417c42b58fcaeed937d99",
+      "manifest_prose_sha256": "4935c75afe1c4e94a022a51d8bc7bc4372ebb37c8605e8a1c67b238549027f48",
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "tail": ").* 3. **If your opponent played Defect in the previous round while you played Cooperate:** Play Defect. *(Protects you from being",
+      "archival_versions_examined": 12,
+      "longer_archival_candidates": 0,
+      "log_candidate_paths": [],
+      "cause": "unknown_without_response_metadata",
+      "runtime_source_commit": "not_established_by_library_commit"
+    }
+  ],
+  "summary": {
+    "cases": 18,
+    "by_model": {
+      "gemini_25_flash": 2,
+      "gemini_31_pro": 16
+    },
+    "by_model_attitude": {
+      "gemini_25_flash/Aggressive": 2,
+      "gemini_31_pro/Aggressive": 16
+    },
+    "log_files_examined": 75,
+    "logs_with_candidates": 0,
+    "format_checks_passed": 36,
+    "format_checks_total": 36
+  }
+}

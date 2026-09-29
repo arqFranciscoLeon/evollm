@@ -1,0 +1,20 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if self.first_round():
+        self._defect_forever = False
+        return axl.Action.D
+    if len(self.history) >= 999:
+        return axl.Action.D
+    if getattr(self, '_defect_forever', False):
+        return axl.Action.D
+    last_self = self.history[-1]
+    last_opp = opponent.history[-1]
+    if last_opp == axl.Action.C and last_self == axl.Action.D:
+        return axl.Action.D
+    if last_self == axl.Action.D and last_opp == axl.Action.D:
+        return axl.Action.C
+    if last_self == axl.Action.C and last_opp == axl.Action.C:
+        return axl.Action.D
+    if last_self == axl.Action.C and last_opp == axl.Action.D:
+        self._defect_forever = True
+        return axl.Action.D
+    return axl.Action.D

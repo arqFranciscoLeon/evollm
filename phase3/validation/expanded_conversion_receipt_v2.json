@@ -1,0 +1,22 @@
+{
+  "automatic_retries": 0,
+  "cached_input_tokens": 0,
+  "cost_is_invoice": false,
+  "estimated_cost_usd": 0.251247,
+  "finished_at_utc": "2026-09-14T05:39:37.276405+00:00",
+  "input_tokens": 241684,
+  "ledger": {
+    "attempts": 274,
+    "blocked": false,
+    "completed": 274,
+    "reserved_nano_usd": 0,
+    "settled_nano_usd": 251247000
+  },
+  "models": {
+    "gpt-5.4-mini-2026-03-17": 274
+  },
+  "output_tokens": 15552,
+  "plan_sha256": "70336a5958a379a4dc0eb5e341ecfaa4bbc75603f7d967784a2d2411143b1f22",
+  "started_at_utc": "2026-09-14T05:34:11.121003+00:00",
+  "status": "conversion_complete_fidelity_separate"
+}

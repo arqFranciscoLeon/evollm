@@ -1,0 +1,921 @@
+{
+  "candidate_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+  "cohort": "western",
+  "id": "anthropic_sonnet46/default/Neutral_13",
+  "paired_raw_western_control": {
+    "all_same": true,
+    "candidate_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+    "same_controlled_scenarios": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "run_identity": {
+    "adapter": "3e9bdfdc4f918759dc9d7642a20c90ec8b92e8b3b60de1832d2548ea74e3963b",
+    "audit": "5a8bc3780199bc792174f44e87453295122d04721b10a428012efac14a3d86c7",
+    "old_report": "4f70248ac1d47c84365c0a51d873c016233bf6d5329148cd9729b9a1b860eca0",
+    "plan": "122202af19a17ac474ec19c2e8c77d35c1cc50b95e503ccbf24d5bd8971eaad2",
+    "references": {
+      "chinese_semantics.py": "7300bc3eb4ca3b8c5195c08b31f351000484e29a279a3f277cfcd5c5dcb16d7f",
+      "expanded_semantics.py": "2392e5cdb0247d9bf64ed82d0827eb502a7d497f0a9bc094d56460cf69ad1233",
+      "validate_chinese_resolution.py": "3739e17968f8dc4f1c53637b1d906f7fef6ee83f35fcbae3e9aef4dd416be9b2",
+      "validate_expanded.py": "07939f826878a1a386721d155eb0a54ad8d4c1c27eabe6b5ee617362243ac972"
+    },
+    "review": "d33a8f21ee9130c0c72556986ade657e66d4027b5e9e3c2ad4d8a736b251c9c3",
+    "validator": "36b42dfbe5a474729789ddc7890d9dad21464fe35491e4ef1fa60b456d04a262"
+  },
+  "runtime": [
+    {
+      "opponent": "Cooperator",
+      "pass": true,
+      "seed": 16960032,
+      "turns": 1000
+    },
+    {
+      "opponent": "Defector",
+      "pass": true,
+      "seed": 1912553988,
+      "turns": 1000
+    },
+    {
+      "opponent": "Random",
+      "pass": true,
+      "seed": 332385294,
+      "turns": 1000
+    },
+    {
+      "opponent": "TitForTat",
+      "pass": true,
+      "seed": 1724607972,
+      "turns": 1000
+    },
+    {
+      "opponent": "Grudger",
+      "pass": true,
+      "seed": 793456517,
+      "turns": 1000
+    },
+    {
+      "opponent": "CyclerDDC",
+      "pass": true,
+      "seed": 383853306,
+      "turns": 1000
+    },
+    {
+      "opponent": "CyclerCCD",
+      "pass": true,
+      "seed": 1211166777,
+      "turns": 1000
+    },
+    {
+      "opponent": "GoByMajority",
+      "pass": true,
+      "seed": 1894063688,
+      "turns": 1000
+    },
+    {
+      "opponent": "SuspiciousTitForTat",
+      "pass": true,
+      "seed": 633927966,
+      "turns": 1000
+    },
+    {
+      "opponent": "Prober",
+      "pass": true,
+      "seed": 1512849675,
+      "turns": 1000
+    },
+    {
+      "opponent": "WinStayLoseShift",
+      "pass": true,
+      "seed": 562933142,
+      "turns": 1000
+    }
+  ],
+  "semantic": [
+    {
+      "actions_sha256": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d",
+      "checks": 1,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 0
+    },
+    {
+      "actions_sha256": "a56362a10c816abf206d72cb914e2d5ca454eb9c7e744f88b1a1422c379e9942",
+      "checks": 2,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 1
+    },
+    {
+      "actions_sha256": "90ec58127ec472ffb7e3f90c3ee320f8bb1dc6bc64a48143e6d91f7d9a6de236",
+      "checks": 2,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 2
+    },
+    {
+      "actions_sha256": "c7c036d7a68e10523565ee1cda9d4e16a554fabb68a754fa3bfae17a8c218d55",
+      "checks": 3,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 3
+    },
+    {
+      "actions_sha256": "5987fc0a7bea05c80ed91d80a6223c94e340a578388c383a03e8866bfe1471e9",
+      "checks": 3,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 4
+    },
+    {
+      "actions_sha256": "12c10d18426c2733e3fdaf0ee8e0354443ed61956d312c650b9cfb04b79f5e33",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 5
+    },
+    {
+      "actions_sha256": "c20f3b40ee0cc8588688fa9197ba9c6cd537be93b343b8359b528cd53ccc8680",
+      "checks": 6,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 6
+    },
+    {
+      "actions_sha256": "a4a8ef847b3a504caefc43af0fff9518cd7fea64aa87ad65c663dfbc57c87127",
+      "checks": 8,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 7
+    },
+    {
+      "actions_sha256": "90b4853e06e722c63b4270463cf558684d7a1e77605d3ad36489d6146e42ab87",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 8
+    },
+    {
+      "actions_sha256": "17b80bc751e1f35c75d6ada07267a5fd9981b7b3655cffcaf94a636e93eb27ba",
+      "checks": 5,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 9
+    },
+    {
+      "actions_sha256": "ea844d76d333957356cfe3aecc4be33cd28297c162327c358a1de3d3c828f46e",
+      "checks": 6,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 10
+    },
+    {
+      "actions_sha256": "f9070908fb605bd8c02520611b2dd9016aa1ba5a8b3f97d9e9361bddfec9440b",
+      "checks": 21,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 11
+    },
+    {
+      "actions_sha256": "c5450eb02b7a501cbe99c244d404070f4e5e17846ba26f4afbfdc5cea768fbb4",
+      "checks": 21,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 12
+    },
+    {
+      "actions_sha256": "a27b2cb58ec2f8b2a3aba528b54c6d3570e60c731c92fc985c28b0fb65451896",
+      "checks": 10,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 13
+    },
+    {
+      "actions_sha256": "3ef200c580f44e1c982fd8c5282abe57d3badb104dfb72932088cefae9ef25b7",
+      "checks": 11,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 14
+    },
+    {
+      "actions_sha256": "703bf812e665f36bd2670b9aa054d906a2fc8782e157f00aa9c589dda1f4cb3e",
+      "checks": 1000,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 15
+    },
+    {
+      "actions_sha256": "703bf812e665f36bd2670b9aa054d906a2fc8782e157f00aa9c589dda1f4cb3e",
+      "checks": 1000,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 16
+    },
+    {
+      "actions_sha256": "cf94bc228aca24397cca52189d001f810e849c188acb7291300b581b8626e670",
+      "checks": 1000,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 17
+    },
+    {
+      "actions_sha256": "ee947d61917eeaed33b6bea092b080bb21d73a90920e98037ac60973a45a5c7d",
+      "checks": 1000,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 18
+    },
+    {
+      "actions_sha256": "90b4853e06e722c63b4270463cf558684d7a1e77605d3ad36489d6146e42ab87",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 19
+    },
+    {
+      "actions_sha256": "66240df0baa6728d68903c2eefdbb5dc55a44c1002affea9fec76b3ffef2e9c9",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 20
+    },
+    {
+      "actions_sha256": "90b4853e06e722c63b4270463cf558684d7a1e77605d3ad36489d6146e42ab87",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 21
+    },
+    {
+      "actions_sha256": "66240df0baa6728d68903c2eefdbb5dc55a44c1002affea9fec76b3ffef2e9c9",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 22
+    },
+    {
+      "actions_sha256": "012fc6e65ca90e9bdf5c9c56a3b53c06cd842c6a2dd8d474dfdce3b1db1215a6",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 23
+    },
+    {
+      "actions_sha256": "c754176ca665995cd864299650c7e2900c772b43c4ef3268240295b2b87e3d58",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 24
+    },
+    {
+      "actions_sha256": "012fc6e65ca90e9bdf5c9c56a3b53c06cd842c6a2dd8d474dfdce3b1db1215a6",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 25
+    },
+    {
+      "actions_sha256": "c754176ca665995cd864299650c7e2900c772b43c4ef3268240295b2b87e3d58",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 26
+    },
+    {
+      "actions_sha256": "90b4853e06e722c63b4270463cf558684d7a1e77605d3ad36489d6146e42ab87",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 27
+    },
+    {
+      "actions_sha256": "66240df0baa6728d68903c2eefdbb5dc55a44c1002affea9fec76b3ffef2e9c9",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 28
+    },
+    {
+      "actions_sha256": "90b4853e06e722c63b4270463cf558684d7a1e77605d3ad36489d6146e42ab87",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 29
+    },
+    {
+      "actions_sha256": "66240df0baa6728d68903c2eefdbb5dc55a44c1002affea9fec76b3ffef2e9c9",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 30
+    },
+    {
+      "actions_sha256": "012fc6e65ca90e9bdf5c9c56a3b53c06cd842c6a2dd8d474dfdce3b1db1215a6",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 31
+    },
+    {
+      "actions_sha256": "c754176ca665995cd864299650c7e2900c772b43c4ef3268240295b2b87e3d58",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 32
+    },
+    {
+      "actions_sha256": "012fc6e65ca90e9bdf5c9c56a3b53c06cd842c6a2dd8d474dfdce3b1db1215a6",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 33
+    },
+    {
+      "actions_sha256": "c754176ca665995cd864299650c7e2900c772b43c4ef3268240295b2b87e3d58",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 34
+    },
+    {
+      "actions_sha256": "41ba5fbf5b1b5fc297542dde7c9835fef84fc62dd392fe35c96ef6c474db7747",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 35
+    },
+    {
+      "actions_sha256": "93144fb1cc457df44d7a0d39210258340460ecbb1ae07a1bce18827a26fcc5a4",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 36
+    },
+    {
+      "actions_sha256": "41ba5fbf5b1b5fc297542dde7c9835fef84fc62dd392fe35c96ef6c474db7747",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 37
+    },
+    {
+      "actions_sha256": "93144fb1cc457df44d7a0d39210258340460ecbb1ae07a1bce18827a26fcc5a4",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 38
+    },
+    {
+      "actions_sha256": "68ae3f0900339185d9f4ff688354e48f129959637c3c8004c6ecd5e69038c1e1",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 39
+    },
+    {
+      "actions_sha256": "12c10d18426c2733e3fdaf0ee8e0354443ed61956d312c650b9cfb04b79f5e33",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 40
+    },
+    {
+      "actions_sha256": "68ae3f0900339185d9f4ff688354e48f129959637c3c8004c6ecd5e69038c1e1",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 41
+    },
+    {
+      "actions_sha256": "12c10d18426c2733e3fdaf0ee8e0354443ed61956d312c650b9cfb04b79f5e33",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 42
+    },
+    {
+      "actions_sha256": "41ba5fbf5b1b5fc297542dde7c9835fef84fc62dd392fe35c96ef6c474db7747",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 43
+    },
+    {
+      "actions_sha256": "93144fb1cc457df44d7a0d39210258340460ecbb1ae07a1bce18827a26fcc5a4",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 44
+    },
+    {
+      "actions_sha256": "41ba5fbf5b1b5fc297542dde7c9835fef84fc62dd392fe35c96ef6c474db7747",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 45
+    },
+    {
+      "actions_sha256": "93144fb1cc457df44d7a0d39210258340460ecbb1ae07a1bce18827a26fcc5a4",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 46
+    },
+    {
+      "actions_sha256": "68ae3f0900339185d9f4ff688354e48f129959637c3c8004c6ecd5e69038c1e1",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 47
+    },
+    {
+      "actions_sha256": "12c10d18426c2733e3fdaf0ee8e0354443ed61956d312c650b9cfb04b79f5e33",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 48
+    },
+    {
+      "actions_sha256": "68ae3f0900339185d9f4ff688354e48f129959637c3c8004c6ecd5e69038c1e1",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 49
+    },
+    {
+      "actions_sha256": "12c10d18426c2733e3fdaf0ee8e0354443ed61956d312c650b9cfb04b79f5e33",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 50
+    },
+    {
+      "actions_sha256": "90b4853e06e722c63b4270463cf558684d7a1e77605d3ad36489d6146e42ab87",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 51
+    },
+    {
+      "actions_sha256": "66240df0baa6728d68903c2eefdbb5dc55a44c1002affea9fec76b3ffef2e9c9",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 52
+    },
+    {
+      "actions_sha256": "90b4853e06e722c63b4270463cf558684d7a1e77605d3ad36489d6146e42ab87",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 53
+    },
+    {
+      "actions_sha256": "66240df0baa6728d68903c2eefdbb5dc55a44c1002affea9fec76b3ffef2e9c9",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 54
+    },
+    {
+      "actions_sha256": "012fc6e65ca90e9bdf5c9c56a3b53c06cd842c6a2dd8d474dfdce3b1db1215a6",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 55
+    },
+    {
+      "actions_sha256": "c754176ca665995cd864299650c7e2900c772b43c4ef3268240295b2b87e3d58",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 56
+    },
+    {
+      "actions_sha256": "012fc6e65ca90e9bdf5c9c56a3b53c06cd842c6a2dd8d474dfdce3b1db1215a6",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 57
+    },
+    {
+      "actions_sha256": "c754176ca665995cd864299650c7e2900c772b43c4ef3268240295b2b87e3d58",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 58
+    },
+    {
+      "actions_sha256": "90b4853e06e722c63b4270463cf558684d7a1e77605d3ad36489d6146e42ab87",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 59
+    },
+    {
+      "actions_sha256": "66240df0baa6728d68903c2eefdbb5dc55a44c1002affea9fec76b3ffef2e9c9",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 60
+    },
+    {
+      "actions_sha256": "90b4853e06e722c63b4270463cf558684d7a1e77605d3ad36489d6146e42ab87",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 61
+    },
+    {
+      "actions_sha256": "66240df0baa6728d68903c2eefdbb5dc55a44c1002affea9fec76b3ffef2e9c9",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 62
+    },
+    {
+      "actions_sha256": "012fc6e65ca90e9bdf5c9c56a3b53c06cd842c6a2dd8d474dfdce3b1db1215a6",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 63
+    },
+    {
+      "actions_sha256": "c754176ca665995cd864299650c7e2900c772b43c4ef3268240295b2b87e3d58",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 64
+    },
+    {
+      "actions_sha256": "012fc6e65ca90e9bdf5c9c56a3b53c06cd842c6a2dd8d474dfdce3b1db1215a6",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 65
+    },
+    {
+      "actions_sha256": "c754176ca665995cd864299650c7e2900c772b43c4ef3268240295b2b87e3d58",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 66
+    },
+    {
+      "actions_sha256": "41ba5fbf5b1b5fc297542dde7c9835fef84fc62dd392fe35c96ef6c474db7747",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 67
+    },
+    {
+      "actions_sha256": "93144fb1cc457df44d7a0d39210258340460ecbb1ae07a1bce18827a26fcc5a4",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 68
+    },
+    {
+      "actions_sha256": "41ba5fbf5b1b5fc297542dde7c9835fef84fc62dd392fe35c96ef6c474db7747",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 69
+    },
+    {
+      "actions_sha256": "93144fb1cc457df44d7a0d39210258340460ecbb1ae07a1bce18827a26fcc5a4",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 70
+    },
+    {
+      "actions_sha256": "68ae3f0900339185d9f4ff688354e48f129959637c3c8004c6ecd5e69038c1e1",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 71
+    },
+    {
+      "actions_sha256": "12c10d18426c2733e3fdaf0ee8e0354443ed61956d312c650b9cfb04b79f5e33",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 72
+    },
+    {
+      "actions_sha256": "68ae3f0900339185d9f4ff688354e48f129959637c3c8004c6ecd5e69038c1e1",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 73
+    },
+    {
+      "actions_sha256": "12c10d18426c2733e3fdaf0ee8e0354443ed61956d312c650b9cfb04b79f5e33",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 74
+    },
+    {
+      "actions_sha256": "41ba5fbf5b1b5fc297542dde7c9835fef84fc62dd392fe35c96ef6c474db7747",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 75
+    },
+    {
+      "actions_sha256": "93144fb1cc457df44d7a0d39210258340460ecbb1ae07a1bce18827a26fcc5a4",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 76
+    },
+    {
+      "actions_sha256": "41ba5fbf5b1b5fc297542dde7c9835fef84fc62dd392fe35c96ef6c474db7747",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 77
+    },
+    {
+      "actions_sha256": "93144fb1cc457df44d7a0d39210258340460ecbb1ae07a1bce18827a26fcc5a4",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 78
+    },
+    {
+      "actions_sha256": "68ae3f0900339185d9f4ff688354e48f129959637c3c8004c6ecd5e69038c1e1",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 79
+    },
+    {
+      "actions_sha256": "12c10d18426c2733e3fdaf0ee8e0354443ed61956d312c650b9cfb04b79f5e33",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 80
+    },
+    {
+      "actions_sha256": "68ae3f0900339185d9f4ff688354e48f129959637c3c8004c6ecd5e69038c1e1",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 81
+    },
+    {
+      "actions_sha256": "12c10d18426c2733e3fdaf0ee8e0354443ed61956d312c650b9cfb04b79f5e33",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 82
+    },
+    {
+      "actions_sha256": "d5057913ec55223a5ca31e1e6ecbe20701e43fabbd9a3b7b063416eb48c71922",
+      "checks": 111,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 83
+    },
+    {
+      "actions_sha256": "f4b74e2817711b15a7e9757ab6ea22aee51a8cc4ca01fac3814df9d1fa6a8538",
+      "checks": 111,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 84
+    },
+    {
+      "actions_sha256": "c34f8f97828b2d54999bb36ef088328b0d6444967598c922c741fe7392072ce0",
+      "checks": 11,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 85
+    },
+    {
+      "actions_sha256": "da88a8ad84a8e6e632f38b76d74c72ec8e81e290de003f19b71d0b6e78434c4c",
+      "checks": 11,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 86
+    },
+    {
+      "actions_sha256": "a6ded36543c7c4533387aedba96a8e42c6447e13385e5e9d12a8f99bd904b54e",
+      "checks": 1000,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 87
+    },
+    {
+      "actions_sha256": "a6ded36543c7c4533387aedba96a8e42c6447e13385e5e9d12a8f99bd904b54e",
+      "checks": 1000,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 88
+    },
+    {
+      "actions_sha256": "72174878f66c38d703d4b6b7c696f89613bd390575d504f68ddffea373c3fb4a",
+      "checks": 1000,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 89
+    },
+    {
+      "actions_sha256": "90ec58127ec472ffb7e3f90c3ee320f8bb1dc6bc64a48143e6d91f7d9a6de236",
+      "checks": 2,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 90
+    },
+    {
+      "actions_sha256": "66dfd0071d636ea2ae067345ef9f1c816baa45f411800f36a6c29eee4ce7aa8f",
+      "checks": 3,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 91
+    },
+    {
+      "actions_sha256": "66dfd0071d636ea2ae067345ef9f1c816baa45f411800f36a6c29eee4ce7aa8f",
+      "checks": 3,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 92
+    },
+    {
+      "actions_sha256": "41ba5fbf5b1b5fc297542dde7c9835fef84fc62dd392fe35c96ef6c474db7747",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 93
+    },
+    {
+      "actions_sha256": "add4757fb77db09a4a3b60876a9f96e8ddce23013e1dc3416f988e4e6b3b8918",
+      "checks": 10,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 94
+    },
+    {
+      "actions_sha256": "60685b3fce10ddfa4cf8f5eb920f0a7045ae42c8fa00153ea6dc9c79581396c6",
+      "checks": 11,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 95
+    },
+    {
+      "actions_sha256": "da88a8ad84a8e6e632f38b76d74c72ec8e81e290de003f19b71d0b6e78434c4c",
+      "checks": 11,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 96
+    },
+    {
+      "actions_sha256": "703bf812e665f36bd2670b9aa054d906a2fc8782e157f00aa9c589dda1f4cb3e",
+      "checks": 1000,
+      "failures": [],
+      "mode": "candidate_on_policy",
+      "scenario": 0
+    },
+    {
+      "actions_sha256": "a6ded36543c7c4533387aedba96a8e42c6447e13385e5e9d12a8f99bd904b54e",
+      "checks": 1000,
+      "failures": [],
+      "mode": "candidate_on_policy",
+      "scenario": 1
+    },
+    {
+      "actions_sha256": "72174878f66c38d703d4b6b7c696f89613bd390575d504f68ddffea373c3fb4a",
+      "checks": 1000,
+      "failures": [],
+      "mode": "candidate_on_policy",
+      "scenario": 2
+    },
+    {
+      "actions_sha256": "18f84a34f8c29d233eb27df8c8cce3091a7886e39d42caf370d92038d5de7425",
+      "checks": 1000,
+      "failures": [],
+      "mode": "candidate_on_policy",
+      "scenario": 3
+    },
+    {
+      "actions_sha256": "e20e89a28842d8ffb6668521cb31e91a9053d4b28a4c6bf57efe39161a7eb6cb",
+      "checks": 1000,
+      "failures": [],
+      "mode": "candidate_on_policy",
+      "scenario": 4
+    },
+    {
+      "actions_sha256": "b58f8f44039eaa24e6d078fd262c119f253d2457d05a479d9c72e3ca0230fc66",
+      "checks": 1000,
+      "failures": [],
+      "mode": "candidate_on_policy",
+      "scenario": 5
+    },
+    {
+      "actions_sha256": "d251617a327867fb2b442e15be683ed48af30a83362d9a7210f0f20fc4dd9b3a",
+      "checks": 1000,
+      "failures": [],
+      "mode": "candidate_on_policy",
+      "scenario": 6
+    }
+  ],
+  "status": "passed_targeted_checks"
+}

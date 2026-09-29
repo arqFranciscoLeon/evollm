@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "status": "local_methodological_decision_before_expanded_conversion",
+  "reviewer": "Codex assistant; explicit interpretation, not independent adjudication or public registration",
+  "decisions": [
+    {
+      "id": "gemini_31_pro/default/Aggressive_12",
+      "previous_status": "needs_window_adjudication",
+      "effective_status": "eligible_with_declared_interpretation",
+      "interpretation": "Either of two prior rounds means any D among available last two observations.",
+      "witness": {
+        "round": 2,
+        "own": "C",
+        "opponent": "D",
+        "expected_action": "D"
+      },
+      "alternative_not_selected": "Requiring two completed rounds would give C at the same history.",
+      "sensitivity": "Always report the prespecified full-window alternative separately, regardless of direction or significance; do not relabel this interpretation as recovered original intent."
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_14",
+      "previous_status": "needs_window_adjudication",
+      "effective_status": "eligible_with_declared_interpretation",
+      "interpretation": "Either of two prior rounds means any D among available last two observations.",
+      "witness": {
+        "round": 2,
+        "own": "C",
+        "opponent": "D",
+        "expected_action": "D"
+      },
+      "alternative_not_selected": "Requiring two completed rounds would give C at the same history.",
+      "sensitivity": "Always report the prespecified full-window alternative separately, regardless of direction or significance; do not relabel this interpretation as recovered original intent."
+    }
+  ],
+  "api_calls": 0
+}

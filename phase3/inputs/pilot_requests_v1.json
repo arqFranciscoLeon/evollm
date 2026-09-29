@@ -1,0 +1,338 @@
+{
+  "accepted_returned_models": [
+    "gpt-5.4-mini",
+    "gpt-5.4-mini-2026-03-17"
+  ],
+  "automatic_retries": 0,
+  "budget_micro_usd": 4000000,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "historical_differences": [
+    "Explicit reasoning_effort=none and output cap; historical client left these implicit.",
+    "Explicit interpretation addendum; original prompt is retained as its prefix.",
+    "No text repair, no automatic retries, complete response retention.",
+    "Model alias retained; identical historical served weights are not established."
+  ],
+  "max_requests": 12,
+  "model": "gpt-5.4-mini",
+  "price_basis": {
+    "input_context_ceiling": 400000,
+    "input_usd_per_million": 0.75,
+    "limit_scope": "Local reservation at listed standard prices, not an account billing cap. No discounts assumed.",
+    "output_usd_per_million": 4.5,
+    "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+    "verified_date": "2026-09-13"
+  },
+  "requests": [
+    {
+      "payload": {
+        "max_completion_tokens": 4096,
+        "messages": [
+          {
+            "content": "You are an AI assistant with expertise in game theory and programming. Your task is to implement the strategy description provided by the user as an algorithm.",
+            "role": "system"
+          },
+          {
+            "content": "Implement the following strategy description as an algorithm using python 3.11 and the Axelrod library.\n\n## Aggressive Tit-for-Tat Strategy  **Round 1:** Defect.  **Rounds 2 through 990:** If your opponent cooperated on the previous round, defect. If your opponent defected on the previous round, defect.  That is: always defect throughout this phase regardless of what the opponent does.  **Rounds 991 through 1000:** Defect unconditionally.  ---  **Rationale summary:** The temptation payoff of 5 from unilateral defection exceeds the mutual cooperation payoff of 3, and the mutual defection payoff of 1 still exceeds the sucker payoff of 0. An unconditional defection strategy exploits any cooperative opponent for the maximum possible gain in every round, and against an opponent who also defects, it matches their outcome without suffering the sucker payoff. There is no future-reward mechanism strong enough to justify the risk of cooperation given the asymmetry between the sucker payoff (0) and the temptation payoff (5), and since defection is the dominant action in the stage game, applying it consistently across all 1000 rounds maximises expected payoff regardless of the opponent's strategy.\n\nThe game lasts for 1000 rounds and has the following payoffs:\n\n- If you play C and your opponent plays C, you both score 3.\n- If you play C and your opponent plays D, you score 0 and they score 5.\n- If you play D and your opponent plays C, you score 5 and they score 0.\n- If you play D and your opponent plays D, you both score 1.\n\nYour response should only include the python code for the strategy function, which has the following signature:\n\ndef strategy(self, opponent: axl.player.Player) -> axl.Action:\n\nYou use assume the following imports:\n\nimport axelrod as axl\n\nNo other libraries are to be used and no additional member functions are to be defined, but you may create nested subfunctions. Some attributes that you may wish to use are:\n- 'self.history' or 'opponent.history' return an axl.History instance of the moves played so far.\n- 'history.cooperations' and 'history.defections' return a count of the total number of cooperate or defect actions played, respectively.\n- the history object can be cast to a list or indexed, for example, to count the number of defections played in the last N moves, use 'self.history[-N:].count(axl.Action.D)'.\n- 'self.score' or 'opponent.score' returns the total score achieved so far in the match by that player.\n- to compute the score for the last N interactions, use 'self.total_scores(self.history[-N:], opponent.history[-N:])', which returns a tuple of (your score, opponent score).\n- 'self._random' is an axl.RandomGenerator instance which you should ought to use when randomness is required: for example, self._random.random_choice(p) returns axl.Action.C with probability p, else axl.Action.D.\n- use 'self.first_round()' to test if it is the first time the strategy has been called, for example to initialise custom attributes and/or return the initial action.\n- do not use 'hasattr' or 'del', prefer to set custom member variables to None\n\nBegin your response by repeating the strategy function signature. Only include python code in your response.\n\nPhase 3 pilot interpretation contract (an explicit addition to the historical prompt):\nThe current round is len(self.history) + 1; histories contain completed rounds only.\nA condition requiring k previous rounds applies only when at least k rounds exist.\nFollow explicit initial/final rules and stated priority. Do not add endgame defection,\nforgiveness, randomization, or missing rules. Do not improve the strategy.\nIf the description does not specify an unambiguous action, return exactly\nUNCONVERTIBLE: followed by the missing condition, instead of inventing code.\n",
+            "role": "user"
+          }
+        ],
+        "model": "gpt-5.4-mini",
+        "n": 1,
+        "reasoning_effort": "none",
+        "service_tier": "default",
+        "store": false,
+        "stream": false,
+        "temperature": 0
+      },
+      "payload_sha256": "bef76654acbb61d19a8fe90e70e8124fa5df09abcd5fb916034e4a5c69abfac2",
+      "prose_sha256": "dca083675acccb58cdffa914d809ca2cb836ad69efd4c3b84422e68c50a24c76",
+      "strategy_id": "anthropic_sonnet46/default/Aggressive_11"
+    },
+    {
+      "payload": {
+        "max_completion_tokens": 4096,
+        "messages": [
+          {
+            "content": "You are an AI assistant with expertise in game theory and programming. Your task is to implement the strategy description provided by the user as an algorithm.",
+            "role": "system"
+          },
+          {
+            "content": "Implement the following strategy description as an algorithm using python 3.11 and the Axelrod library.\n\n## Strategy: Tit-for-Tat with Late-Game Defection  **Opening move:** Cooperate on round 1.  **Rounds 2 through 990:** Mirror your opponent's previous move exactly. If they cooperated last round, cooperate. If they defected last round, defect.  **Rounds 991 through 1000:** Defect unconditionally, regardless of the opponent's recent behaviour.\n\nThe game lasts for 1000 rounds and has the following payoffs:\n\n- If you play C and your opponent plays C, you both score 3.\n- If you play C and your opponent plays D, you score 0 and they score 5.\n- If you play D and your opponent plays C, you score 5 and they score 0.\n- If you play D and your opponent plays D, you both score 1.\n\nYour response should only include the python code for the strategy function, which has the following signature:\n\ndef strategy(self, opponent: axl.player.Player) -> axl.Action:\n\nYou use assume the following imports:\n\nimport axelrod as axl\n\nNo other libraries are to be used and no additional member functions are to be defined, but you may create nested subfunctions. Some attributes that you may wish to use are:\n- 'self.history' or 'opponent.history' return an axl.History instance of the moves played so far.\n- 'history.cooperations' and 'history.defections' return a count of the total number of cooperate or defect actions played, respectively.\n- the history object can be cast to a list or indexed, for example, to count the number of defections played in the last N moves, use 'self.history[-N:].count(axl.Action.D)'.\n- 'self.score' or 'opponent.score' returns the total score achieved so far in the match by that player.\n- to compute the score for the last N interactions, use 'self.total_scores(self.history[-N:], opponent.history[-N:])', which returns a tuple of (your score, opponent score).\n- 'self._random' is an axl.RandomGenerator instance which you should ought to use when randomness is required: for example, self._random.random_choice(p) returns axl.Action.C with probability p, else axl.Action.D.\n- use 'self.first_round()' to test if it is the first time the strategy has been called, for example to initialise custom attributes and/or return the initial action.\n- do not use 'hasattr' or 'del', prefer to set custom member variables to None\n\nBegin your response by repeating the strategy function signature. Only include python code in your response.\n\nPhase 3 pilot interpretation contract (an explicit addition to the historical prompt):\nThe current round is len(self.history) + 1; histories contain completed rounds only.\nA condition requiring k previous rounds applies only when at least k rounds exist.\nFollow explicit initial/final rules and stated priority. Do not add endgame defection,\nforgiveness, randomization, or missing rules. Do not improve the strategy.\nIf the description does not specify an unambiguous action, return exactly\nUNCONVERTIBLE: followed by the missing condition, instead of inventing code.\n",
+            "role": "user"
+          }
+        ],
+        "model": "gpt-5.4-mini",
+        "n": 1,
+        "reasoning_effort": "none",
+        "service_tier": "default",
+        "store": false,
+        "stream": false,
+        "temperature": 0
+      },
+      "payload_sha256": "cb41897b95f3e038c97b024a2081478c9bd504281bbafb5121d8b6f7ed1d6765",
+      "prose_sha256": "ce89ffb38351062a8bcca7a62865b702bbe2b1b1f6b09112bfb6b755ab7455e1",
+      "strategy_id": "anthropic_sonnet46/default/Cooperative_2"
+    },
+    {
+      "payload": {
+        "max_completion_tokens": 4096,
+        "messages": [
+          {
+            "content": "You are an AI assistant with expertise in game theory and programming. Your task is to implement the strategy description provided by the user as an algorithm.",
+            "role": "system"
+          },
+          {
+            "content": "Implement the following strategy description as an algorithm using python 3.11 and the Axelrod library.\n\n## Strategy  **Round 1:** Play C.  **Rounds 2 to 999:** Play whatever your opponent played in the previous round.  **Round 1000:** Play D.\n\nThe game lasts for 1000 rounds and has the following payoffs:\n\n- If you play C and your opponent plays C, you both score 3.\n- If you play C and your opponent plays D, you score 0 and they score 5.\n- If you play D and your opponent plays C, you score 5 and they score 0.\n- If you play D and your opponent plays D, you both score 1.\n\nYour response should only include the python code for the strategy function, which has the following signature:\n\ndef strategy(self, opponent: axl.player.Player) -> axl.Action:\n\nYou use assume the following imports:\n\nimport axelrod as axl\n\nNo other libraries are to be used and no additional member functions are to be defined, but you may create nested subfunctions. Some attributes that you may wish to use are:\n- 'self.history' or 'opponent.history' return an axl.History instance of the moves played so far.\n- 'history.cooperations' and 'history.defections' return a count of the total number of cooperate or defect actions played, respectively.\n- the history object can be cast to a list or indexed, for example, to count the number of defections played in the last N moves, use 'self.history[-N:].count(axl.Action.D)'.\n- 'self.score' or 'opponent.score' returns the total score achieved so far in the match by that player.\n- to compute the score for the last N interactions, use 'self.total_scores(self.history[-N:], opponent.history[-N:])', which returns a tuple of (your score, opponent score).\n- 'self._random' is an axl.RandomGenerator instance which you should ought to use when randomness is required: for example, self._random.random_choice(p) returns axl.Action.C with probability p, else axl.Action.D.\n- use 'self.first_round()' to test if it is the first time the strategy has been called, for example to initialise custom attributes and/or return the initial action.\n- do not use 'hasattr' or 'del', prefer to set custom member variables to None\n\nBegin your response by repeating the strategy function signature. Only include python code in your response.\n\nPhase 3 pilot interpretation contract (an explicit addition to the historical prompt):\nThe current round is len(self.history) + 1; histories contain completed rounds only.\nA condition requiring k previous rounds applies only when at least k rounds exist.\nFollow explicit initial/final rules and stated priority. Do not add endgame defection,\nforgiveness, randomization, or missing rules. Do not improve the strategy.\nIf the description does not specify an unambiguous action, return exactly\nUNCONVERTIBLE: followed by the missing condition, instead of inventing code.\n",
+            "role": "user"
+          }
+        ],
+        "model": "gpt-5.4-mini",
+        "n": 1,
+        "reasoning_effort": "none",
+        "service_tier": "default",
+        "store": false,
+        "stream": false,
+        "temperature": 0
+      },
+      "payload_sha256": "2853c281ed8fb9ad9f72f300a27536ce92beb1e6962963cde1c4111e47cb6bf5",
+      "prose_sha256": "b3d429b384736ebe14aa85628c21edd2442377a98e0701f441e3a2ef6299ffdc",
+      "strategy_id": "anthropic_sonnet46/default/Neutral_6"
+    },
+    {
+      "payload": {
+        "max_completion_tokens": 4096,
+        "messages": [
+          {
+            "content": "You are an AI assistant with expertise in game theory and programming. Your task is to implement the strategy description provided by the user as an algorithm.",
+            "role": "system"
+          },
+          {
+            "content": "Implement the following strategy description as an algorithm using python 3.11 and the Axelrod library.\n\nTo maximise your overall payoff with an aggressive approach, use the following strategy:  1.  **Start by Defecting.** Play D in the first round. 2. **Continue Defecting if your opponent has ever Defected.** If your opponent plays D in any round, you will play D in all subsequent rounds for the remainder of the game. 3.  **Cooperate only if your opponent has consistently Cooperated.** If your opponent has played C in every round so far, and you are not in a state of permanent defection from rule #2, then play C.\n\nThe game lasts for 1000 rounds and has the following payoffs:\n\n- If you play C and your opponent plays C, you both score 3.\n- If you play C and your opponent plays D, you score 0 and they score 5.\n- If you play D and your opponent plays C, you score 5 and they score 0.\n- If you play D and your opponent plays D, you both score 1.\n\nYour response should only include the python code for the strategy function, which has the following signature:\n\ndef strategy(self, opponent: axl.player.Player) -> axl.Action:\n\nYou use assume the following imports:\n\nimport axelrod as axl\n\nNo other libraries are to be used and no additional member functions are to be defined, but you may create nested subfunctions. Some attributes that you may wish to use are:\n- 'self.history' or 'opponent.history' return an axl.History instance of the moves played so far.\n- 'history.cooperations' and 'history.defections' return a count of the total number of cooperate or defect actions played, respectively.\n- the history object can be cast to a list or indexed, for example, to count the number of defections played in the last N moves, use 'self.history[-N:].count(axl.Action.D)'.\n- 'self.score' or 'opponent.score' returns the total score achieved so far in the match by that player.\n- to compute the score for the last N interactions, use 'self.total_scores(self.history[-N:], opponent.history[-N:])', which returns a tuple of (your score, opponent score).\n- 'self._random' is an axl.RandomGenerator instance which you should ought to use when randomness is required: for example, self._random.random_choice(p) returns axl.Action.C with probability p, else axl.Action.D.\n- use 'self.first_round()' to test if it is the first time the strategy has been called, for example to initialise custom attributes and/or return the initial action.\n- do not use 'hasattr' or 'del', prefer to set custom member variables to None\n\nBegin your response by repeating the strategy function signature. Only include python code in your response.\n\nPhase 3 pilot interpretation contract (an explicit addition to the historical prompt):\nThe current round is len(self.history) + 1; histories contain completed rounds only.\nA condition requiring k previous rounds applies only when at least k rounds exist.\nFollow explicit initial/final rules and stated priority. Do not add endgame defection,\nforgiveness, randomization, or missing rules. Do not improve the strategy.\nIf the description does not specify an unambiguous action, return exactly\nUNCONVERTIBLE: followed by the missing condition, instead of inventing code.\n",
+            "role": "user"
+          }
+        ],
+        "model": "gpt-5.4-mini",
+        "n": 1,
+        "reasoning_effort": "none",
+        "service_tier": "default",
+        "store": false,
+        "stream": false,
+        "temperature": 0
+      },
+      "payload_sha256": "62e4c510d61f47f248c125223beb91c42c9f3894f55390bb9550108f39f32f77",
+      "prose_sha256": "e38a61053d8910514b5303ee75e069e2331f39cd62803919af1cd76535c11bd4",
+      "strategy_id": "gemini_25_flash/default/Aggressive_2"
+    },
+    {
+      "payload": {
+        "max_completion_tokens": 4096,
+        "messages": [
+          {
+            "content": "You are an AI assistant with expertise in game theory and programming. Your task is to implement the strategy description provided by the user as an algorithm.",
+            "role": "system"
+          },
+          {
+            "content": "Implement the following strategy description as an algorithm using python 3.11 and the Axelrod library.\n\nYour strategy will be as follows:  1.  **Initial Move:** In the very first round of the game, play Cooperate (C). 2.  **Subsequent Moves:** From the second round onwards, observe what your opponent played in the immediately preceding round.     *   If your opponent played Cooperate (C) in the previous round, you play Cooperate (C) in the current round.     *   If your opponent played Defect (D) in the previous round, you play Defect (D) in the current round.\n\nThe game lasts for 1000 rounds and has the following payoffs:\n\n- If you play C and your opponent plays C, you both score 3.\n- If you play C and your opponent plays D, you score 0 and they score 5.\n- If you play D and your opponent plays C, you score 5 and they score 0.\n- If you play D and your opponent plays D, you both score 1.\n\nYour response should only include the python code for the strategy function, which has the following signature:\n\ndef strategy(self, opponent: axl.player.Player) -> axl.Action:\n\nYou use assume the following imports:\n\nimport axelrod as axl\n\nNo other libraries are to be used and no additional member functions are to be defined, but you may create nested subfunctions. Some attributes that you may wish to use are:\n- 'self.history' or 'opponent.history' return an axl.History instance of the moves played so far.\n- 'history.cooperations' and 'history.defections' return a count of the total number of cooperate or defect actions played, respectively.\n- the history object can be cast to a list or indexed, for example, to count the number of defections played in the last N moves, use 'self.history[-N:].count(axl.Action.D)'.\n- 'self.score' or 'opponent.score' returns the total score achieved so far in the match by that player.\n- to compute the score for the last N interactions, use 'self.total_scores(self.history[-N:], opponent.history[-N:])', which returns a tuple of (your score, opponent score).\n- 'self._random' is an axl.RandomGenerator instance which you should ought to use when randomness is required: for example, self._random.random_choice(p) returns axl.Action.C with probability p, else axl.Action.D.\n- use 'self.first_round()' to test if it is the first time the strategy has been called, for example to initialise custom attributes and/or return the initial action.\n- do not use 'hasattr' or 'del', prefer to set custom member variables to None\n\nBegin your response by repeating the strategy function signature. Only include python code in your response.\n\nPhase 3 pilot interpretation contract (an explicit addition to the historical prompt):\nThe current round is len(self.history) + 1; histories contain completed rounds only.\nA condition requiring k previous rounds applies only when at least k rounds exist.\nFollow explicit initial/final rules and stated priority. Do not add endgame defection,\nforgiveness, randomization, or missing rules. Do not improve the strategy.\nIf the description does not specify an unambiguous action, return exactly\nUNCONVERTIBLE: followed by the missing condition, instead of inventing code.\n",
+            "role": "user"
+          }
+        ],
+        "model": "gpt-5.4-mini",
+        "n": 1,
+        "reasoning_effort": "none",
+        "service_tier": "default",
+        "store": false,
+        "stream": false,
+        "temperature": 0
+      },
+      "payload_sha256": "9f600551fc9c8d09533734f48a3c77827845cf7dc457ae6f402a75c146131b45",
+      "prose_sha256": "f2a3f10ca8d1951a7be17eca9407cfc6e79b0006b9a1d5a2e9bf0f70d50fa186",
+      "strategy_id": "gemini_25_flash/default/Cooperative_5"
+    },
+    {
+      "payload": {
+        "max_completion_tokens": 4096,
+        "messages": [
+          {
+            "content": "You are an AI assistant with expertise in game theory and programming. Your task is to implement the strategy description provided by the user as an algorithm.",
+            "role": "system"
+          },
+          {
+            "content": "Implement the following strategy description as an algorithm using python 3.11 and the Axelrod library.\n\n**Strategy**  1.  In the first round, you will play Cooperate. 2.  In every subsequent round, you will observe your opponent's move from the previous round and act accordingly:     *   If your opponent played Cooperate in the previous round, you will play Cooperate.     *   If your opponent played Defect in the previous round, you will play Defect.\n\nThe game lasts for 1000 rounds and has the following payoffs:\n\n- If you play C and your opponent plays C, you both score 3.\n- If you play C and your opponent plays D, you score 0 and they score 5.\n- If you play D and your opponent plays C, you score 5 and they score 0.\n- If you play D and your opponent plays D, you both score 1.\n\nYour response should only include the python code for the strategy function, which has the following signature:\n\ndef strategy(self, opponent: axl.player.Player) -> axl.Action:\n\nYou use assume the following imports:\n\nimport axelrod as axl\n\nNo other libraries are to be used and no additional member functions are to be defined, but you may create nested subfunctions. Some attributes that you may wish to use are:\n- 'self.history' or 'opponent.history' return an axl.History instance of the moves played so far.\n- 'history.cooperations' and 'history.defections' return a count of the total number of cooperate or defect actions played, respectively.\n- the history object can be cast to a list or indexed, for example, to count the number of defections played in the last N moves, use 'self.history[-N:].count(axl.Action.D)'.\n- 'self.score' or 'opponent.score' returns the total score achieved so far in the match by that player.\n- to compute the score for the last N interactions, use 'self.total_scores(self.history[-N:], opponent.history[-N:])', which returns a tuple of (your score, opponent score).\n- 'self._random' is an axl.RandomGenerator instance which you should ought to use when randomness is required: for example, self._random.random_choice(p) returns axl.Action.C with probability p, else axl.Action.D.\n- use 'self.first_round()' to test if it is the first time the strategy has been called, for example to initialise custom attributes and/or return the initial action.\n- do not use 'hasattr' or 'del', prefer to set custom member variables to None\n\nBegin your response by repeating the strategy function signature. Only include python code in your response.\n\nPhase 3 pilot interpretation contract (an explicit addition to the historical prompt):\nThe current round is len(self.history) + 1; histories contain completed rounds only.\nA condition requiring k previous rounds applies only when at least k rounds exist.\nFollow explicit initial/final rules and stated priority. Do not add endgame defection,\nforgiveness, randomization, or missing rules. Do not improve the strategy.\nIf the description does not specify an unambiguous action, return exactly\nUNCONVERTIBLE: followed by the missing condition, instead of inventing code.\n",
+            "role": "user"
+          }
+        ],
+        "model": "gpt-5.4-mini",
+        "n": 1,
+        "reasoning_effort": "none",
+        "service_tier": "default",
+        "store": false,
+        "stream": false,
+        "temperature": 0
+      },
+      "payload_sha256": "39b79fdbd4ac2e02c9e3038fea209ca12ec8d4325d43b50d141fbdcdb7cf0ed0",
+      "prose_sha256": "36eae84c41cb2d58866e30fd65848b61d59739664704ec8ec0eb426658c9ec84",
+      "strategy_id": "gemini_25_flash/default/Neutral_1"
+    },
+    {
+      "payload": {
+        "max_completion_tokens": 4096,
+        "messages": [
+          {
+            "content": "You are an AI assistant with expertise in game theory and programming. Your task is to implement the strategy description provided by the user as an algorithm.",
+            "role": "system"
+          },
+          {
+            "content": "Implement the following strategy description as an algorithm using python 3.11 and the Axelrod library.\n\nApply the following conditions in order of priority from first to last to determine your move each round:  1. **Endgame Defection:** If the current round is between 991 and 1000 (the final ten rounds), play Defect. 2. **Retaliation:** If your opponent played Defect in the immediately preceding round, play Defect. 3. **Exploitation:** If your opponent has played Cooperate for the previous three consecutive rounds, play Defect to aggressively secure the 5-point payoff. 4. **Baseline Cooperation:** Under all other circumstances, including the very first round, play Cooperate to encourage a mutually beneficial pattern.\n\nThe game lasts for 1000 rounds and has the following payoffs:\n\n- If you play C and your opponent plays C, you both score 3.\n- If you play C and your opponent plays D, you score 0 and they score 5.\n- If you play D and your opponent plays C, you score 5 and they score 0.\n- If you play D and your opponent plays D, you both score 1.\n\nYour response should only include the python code for the strategy function, which has the following signature:\n\ndef strategy(self, opponent: axl.player.Player) -> axl.Action:\n\nYou use assume the following imports:\n\nimport axelrod as axl\n\nNo other libraries are to be used and no additional member functions are to be defined, but you may create nested subfunctions. Some attributes that you may wish to use are:\n- 'self.history' or 'opponent.history' return an axl.History instance of the moves played so far.\n- 'history.cooperations' and 'history.defections' return a count of the total number of cooperate or defect actions played, respectively.\n- the history object can be cast to a list or indexed, for example, to count the number of defections played in the last N moves, use 'self.history[-N:].count(axl.Action.D)'.\n- 'self.score' or 'opponent.score' returns the total score achieved so far in the match by that player.\n- to compute the score for the last N interactions, use 'self.total_scores(self.history[-N:], opponent.history[-N:])', which returns a tuple of (your score, opponent score).\n- 'self._random' is an axl.RandomGenerator instance which you should ought to use when randomness is required: for example, self._random.random_choice(p) returns axl.Action.C with probability p, else axl.Action.D.\n- use 'self.first_round()' to test if it is the first time the strategy has been called, for example to initialise custom attributes and/or return the initial action.\n- do not use 'hasattr' or 'del', prefer to set custom member variables to None\n\nBegin your response by repeating the strategy function signature. Only include python code in your response.\n\nPhase 3 pilot interpretation contract (an explicit addition to the historical prompt):\nThe current round is len(self.history) + 1; histories contain completed rounds only.\nA condition requiring k previous rounds applies only when at least k rounds exist.\nFollow explicit initial/final rules and stated priority. Do not add endgame defection,\nforgiveness, randomization, or missing rules. Do not improve the strategy.\nIf the description does not specify an unambiguous action, return exactly\nUNCONVERTIBLE: followed by the missing condition, instead of inventing code.\n",
+            "role": "user"
+          }
+        ],
+        "model": "gpt-5.4-mini",
+        "n": 1,
+        "reasoning_effort": "none",
+        "service_tier": "default",
+        "store": false,
+        "stream": false,
+        "temperature": 0
+      },
+      "payload_sha256": "4dee5446c95085d75aa5cd4c7036a74e9a8fc2d35692469d66e2624c09b4bf72",
+      "prose_sha256": "7ceb218a3e72ce2f25820e5fca6a821692bced8b57c7f5b39d7660099a863672",
+      "strategy_id": "gemini_31_pro/default/Aggressive_10"
+    },
+    {
+      "payload": {
+        "max_completion_tokens": 4096,
+        "messages": [
+          {
+            "content": "You are an AI assistant with expertise in game theory and programming. Your task is to implement the strategy description provided by the user as an algorithm.",
+            "role": "system"
+          },
+          {
+            "content": "Implement the following strategy description as an algorithm using python 3.11 and the Axelrod library.\n\nTo maximize your overall payoff using a cooperative approach, follow these rules in order:  1. **Round 1:** Choose to cooperate. 2. **Rounds 2 through 999:** Copy the exact action your opponent took in the immediately preceding round. Choose to cooperate if they just cooperated, and choose to defect if they just defected.  3. **Round 1000 (Final Round):** Choose to defect, regardless of your opponent's previous actions.\n\nThe game lasts for 1000 rounds and has the following payoffs:\n\n- If you play C and your opponent plays C, you both score 3.\n- If you play C and your opponent plays D, you score 0 and they score 5.\n- If you play D and your opponent plays C, you score 5 and they score 0.\n- If you play D and your opponent plays D, you both score 1.\n\nYour response should only include the python code for the strategy function, which has the following signature:\n\ndef strategy(self, opponent: axl.player.Player) -> axl.Action:\n\nYou use assume the following imports:\n\nimport axelrod as axl\n\nNo other libraries are to be used and no additional member functions are to be defined, but you may create nested subfunctions. Some attributes that you may wish to use are:\n- 'self.history' or 'opponent.history' return an axl.History instance of the moves played so far.\n- 'history.cooperations' and 'history.defections' return a count of the total number of cooperate or defect actions played, respectively.\n- the history object can be cast to a list or indexed, for example, to count the number of defections played in the last N moves, use 'self.history[-N:].count(axl.Action.D)'.\n- 'self.score' or 'opponent.score' returns the total score achieved so far in the match by that player.\n- to compute the score for the last N interactions, use 'self.total_scores(self.history[-N:], opponent.history[-N:])', which returns a tuple of (your score, opponent score).\n- 'self._random' is an axl.RandomGenerator instance which you should ought to use when randomness is required: for example, self._random.random_choice(p) returns axl.Action.C with probability p, else axl.Action.D.\n- use 'self.first_round()' to test if it is the first time the strategy has been called, for example to initialise custom attributes and/or return the initial action.\n- do not use 'hasattr' or 'del', prefer to set custom member variables to None\n\nBegin your response by repeating the strategy function signature. Only include python code in your response.\n\nPhase 3 pilot interpretation contract (an explicit addition to the historical prompt):\nThe current round is len(self.history) + 1; histories contain completed rounds only.\nA condition requiring k previous rounds applies only when at least k rounds exist.\nFollow explicit initial/final rules and stated priority. Do not add endgame defection,\nforgiveness, randomization, or missing rules. Do not improve the strategy.\nIf the description does not specify an unambiguous action, return exactly\nUNCONVERTIBLE: followed by the missing condition, instead of inventing code.\n",
+            "role": "user"
+          }
+        ],
+        "model": "gpt-5.4-mini",
+        "n": 1,
+        "reasoning_effort": "none",
+        "service_tier": "default",
+        "store": false,
+        "stream": false,
+        "temperature": 0
+      },
+      "payload_sha256": "eaa57fda7dbcd861142a346654996170264f029325832dfdcf8cbed0be4ba23b",
+      "prose_sha256": "61131a65a96360ca0eb800b1eb1fd16d8b126e130f07ad03ad5a7332b4356749",
+      "strategy_id": "gemini_31_pro/default/Cooperative_3"
+    },
+    {
+      "payload": {
+        "max_completion_tokens": 4096,
+        "messages": [
+          {
+            "content": "You are an AI assistant with expertise in game theory and programming. Your task is to implement the strategy description provided by the user as an algorithm.",
+            "role": "system"
+          },
+          {
+            "content": "Implement the following strategy description as an algorithm using python 3.11 and the Axelrod library.\n\n1. In the first round, cooperate. 2. From the second round through the 999th round, copy your opponent's exact move from the immediately preceding round: cooperate if they cooperated, and defect if they defected. 3. In the 1000th and final round, defect regardless of your opponent's previous actions.\n\nThe game lasts for 1000 rounds and has the following payoffs:\n\n- If you play C and your opponent plays C, you both score 3.\n- If you play C and your opponent plays D, you score 0 and they score 5.\n- If you play D and your opponent plays C, you score 5 and they score 0.\n- If you play D and your opponent plays D, you both score 1.\n\nYour response should only include the python code for the strategy function, which has the following signature:\n\ndef strategy(self, opponent: axl.player.Player) -> axl.Action:\n\nYou use assume the following imports:\n\nimport axelrod as axl\n\nNo other libraries are to be used and no additional member functions are to be defined, but you may create nested subfunctions. Some attributes that you may wish to use are:\n- 'self.history' or 'opponent.history' return an axl.History instance of the moves played so far.\n- 'history.cooperations' and 'history.defections' return a count of the total number of cooperate or defect actions played, respectively.\n- the history object can be cast to a list or indexed, for example, to count the number of defections played in the last N moves, use 'self.history[-N:].count(axl.Action.D)'.\n- 'self.score' or 'opponent.score' returns the total score achieved so far in the match by that player.\n- to compute the score for the last N interactions, use 'self.total_scores(self.history[-N:], opponent.history[-N:])', which returns a tuple of (your score, opponent score).\n- 'self._random' is an axl.RandomGenerator instance which you should ought to use when randomness is required: for example, self._random.random_choice(p) returns axl.Action.C with probability p, else axl.Action.D.\n- use 'self.first_round()' to test if it is the first time the strategy has been called, for example to initialise custom attributes and/or return the initial action.\n- do not use 'hasattr' or 'del', prefer to set custom member variables to None\n\nBegin your response by repeating the strategy function signature. Only include python code in your response.\n\nPhase 3 pilot interpretation contract (an explicit addition to the historical prompt):\nThe current round is len(self.history) + 1; histories contain completed rounds only.\nA condition requiring k previous rounds applies only when at least k rounds exist.\nFollow explicit initial/final rules and stated priority. Do not add endgame defection,\nforgiveness, randomization, or missing rules. Do not improve the strategy.\nIf the description does not specify an unambiguous action, return exactly\nUNCONVERTIBLE: followed by the missing condition, instead of inventing code.\n",
+            "role": "user"
+          }
+        ],
+        "model": "gpt-5.4-mini",
+        "n": 1,
+        "reasoning_effort": "none",
+        "service_tier": "default",
+        "store": false,
+        "stream": false,
+        "temperature": 0
+      },
+      "payload_sha256": "d59c4531323c777b7bf9f3ec9412df63c01aabb99494c3c4e64d6095b14a33f0",
+      "prose_sha256": "4f7ed40cd8977ffea6277c9d924f46433b1a7ab322f5e69a5356aaa9b281cb18",
+      "strategy_id": "gemini_31_pro/default/Neutral_9"
+    },
+    {
+      "payload": {
+        "max_completion_tokens": 4096,
+        "messages": [
+          {
+            "content": "You are an AI assistant with expertise in game theory and programming. Your task is to implement the strategy description provided by the user as an algorithm.",
+            "role": "system"
+          },
+          {
+            "content": "Implement the following strategy description as an algorithm using python 3.11 and the Axelrod library.\n\n1. Start by defecting.   2. If the opponent defects in any round, defect in every later round.   3. If the opponent cooperates and has never defected before, defect anyway to take the higher payoff.   4. Repeat this for all 1000 rounds.  This is a fully aggressive strategy: always defect, since defection gives you 5 against cooperation and still gives 1 against defection, which is better than cooperating in either case.\n\nThe game lasts for 1000 rounds and has the following payoffs:\n\n- If you play C and your opponent plays C, you both score 3.\n- If you play C and your opponent plays D, you score 0 and they score 5.\n- If you play D and your opponent plays C, you score 5 and they score 0.\n- If you play D and your opponent plays D, you both score 1.\n\nYour response should only include the python code for the strategy function, which has the following signature:\n\ndef strategy(self, opponent: axl.player.Player) -> axl.Action:\n\nYou use assume the following imports:\n\nimport axelrod as axl\n\nNo other libraries are to be used and no additional member functions are to be defined, but you may create nested subfunctions. Some attributes that you may wish to use are:\n- 'self.history' or 'opponent.history' return an axl.History instance of the moves played so far.\n- 'history.cooperations' and 'history.defections' return a count of the total number of cooperate or defect actions played, respectively.\n- the history object can be cast to a list or indexed, for example, to count the number of defections played in the last N moves, use 'self.history[-N:].count(axl.Action.D)'.\n- 'self.score' or 'opponent.score' returns the total score achieved so far in the match by that player.\n- to compute the score for the last N interactions, use 'self.total_scores(self.history[-N:], opponent.history[-N:])', which returns a tuple of (your score, opponent score).\n- 'self._random' is an axl.RandomGenerator instance which you should ought to use when randomness is required: for example, self._random.random_choice(p) returns axl.Action.C with probability p, else axl.Action.D.\n- use 'self.first_round()' to test if it is the first time the strategy has been called, for example to initialise custom attributes and/or return the initial action.\n- do not use 'hasattr' or 'del', prefer to set custom member variables to None\n\nBegin your response by repeating the strategy function signature. Only include python code in your response.\n\nPhase 3 pilot interpretation contract (an explicit addition to the historical prompt):\nThe current round is len(self.history) + 1; histories contain completed rounds only.\nA condition requiring k previous rounds applies only when at least k rounds exist.\nFollow explicit initial/final rules and stated priority. Do not add endgame defection,\nforgiveness, randomization, or missing rules. Do not improve the strategy.\nIf the description does not specify an unambiguous action, return exactly\nUNCONVERTIBLE: followed by the missing condition, instead of inventing code.\n",
+            "role": "user"
+          }
+        ],
+        "model": "gpt-5.4-mini",
+        "n": 1,
+        "reasoning_effort": "none",
+        "service_tier": "default",
+        "store": false,
+        "stream": false,
+        "temperature": 0
+      },
+      "payload_sha256": "5ccc6ab8b3aec965a9c75ab196951cfc44d953fe454b8ca1de9c7c5e5e52240e",
+      "prose_sha256": "f537a460aac10c51332da3b130df327506102d98a3fd96166689bba9e0201e04",
+      "strategy_id": "openai_gpt54mini/default/Aggressive_9"
+    },
+    {
+      "payload": {
+        "max_completion_tokens": 4096,
+        "messages": [
+          {
+            "content": "You are an AI assistant with expertise in game theory and programming. Your task is to implement the strategy description provided by the user as an algorithm.",
+            "role": "system"
+          },
+          {
+            "content": "Implement the following strategy description as an algorithm using python 3.11 and the Axelrod library.\n\nUse a simple conditional cooperation strategy:  1. Start by cooperating in the first round. 2. If your opponent cooperated in the previous round, cooperate again. 3. If your opponent defected in the previous round, defect in the next round. 4. After a defection, return to cooperation as soon as your opponent cooperates again.  This is a straightforward “cooperate unless they defect, then mirror their last move” approach, which encourages mutual cooperation and limits exploitation over the 1000 rounds.\n\nThe game lasts for 1000 rounds and has the following payoffs:\n\n- If you play C and your opponent plays C, you both score 3.\n- If you play C and your opponent plays D, you score 0 and they score 5.\n- If you play D and your opponent plays C, you score 5 and they score 0.\n- If you play D and your opponent plays D, you both score 1.\n\nYour response should only include the python code for the strategy function, which has the following signature:\n\ndef strategy(self, opponent: axl.player.Player) -> axl.Action:\n\nYou use assume the following imports:\n\nimport axelrod as axl\n\nNo other libraries are to be used and no additional member functions are to be defined, but you may create nested subfunctions. Some attributes that you may wish to use are:\n- 'self.history' or 'opponent.history' return an axl.History instance of the moves played so far.\n- 'history.cooperations' and 'history.defections' return a count of the total number of cooperate or defect actions played, respectively.\n- the history object can be cast to a list or indexed, for example, to count the number of defections played in the last N moves, use 'self.history[-N:].count(axl.Action.D)'.\n- 'self.score' or 'opponent.score' returns the total score achieved so far in the match by that player.\n- to compute the score for the last N interactions, use 'self.total_scores(self.history[-N:], opponent.history[-N:])', which returns a tuple of (your score, opponent score).\n- 'self._random' is an axl.RandomGenerator instance which you should ought to use when randomness is required: for example, self._random.random_choice(p) returns axl.Action.C with probability p, else axl.Action.D.\n- use 'self.first_round()' to test if it is the first time the strategy has been called, for example to initialise custom attributes and/or return the initial action.\n- do not use 'hasattr' or 'del', prefer to set custom member variables to None\n\nBegin your response by repeating the strategy function signature. Only include python code in your response.\n\nPhase 3 pilot interpretation contract (an explicit addition to the historical prompt):\nThe current round is len(self.history) + 1; histories contain completed rounds only.\nA condition requiring k previous rounds applies only when at least k rounds exist.\nFollow explicit initial/final rules and stated priority. Do not add endgame defection,\nforgiveness, randomization, or missing rules. Do not improve the strategy.\nIf the description does not specify an unambiguous action, return exactly\nUNCONVERTIBLE: followed by the missing condition, instead of inventing code.\n",
+            "role": "user"
+          }
+        ],
+        "model": "gpt-5.4-mini",
+        "n": 1,
+        "reasoning_effort": "none",
+        "service_tier": "default",
+        "store": false,
+        "stream": false,
+        "temperature": 0
+      },
+      "payload_sha256": "c34fe1ed65eaf7d9bad128fe5604afdb0e9e304c1e560284f3bd9e4e2f35d69a",
+      "prose_sha256": "371d3ffbed1d318c7a9a79fe17bab0637048c4b8d1a3944c8da0e91c663522dc",
+      "strategy_id": "openai_gpt54mini/default/Cooperative_20"
+    },
+    {
+      "payload": {
+        "max_completion_tokens": 4096,
+        "messages": [
+          {
+            "content": "You are an AI assistant with expertise in game theory and programming. Your task is to implement the strategy description provided by the user as an algorithm.",
+            "role": "system"
+          },
+          {
+            "content": "Implement the following strategy description as an algorithm using python 3.11 and the Axelrod library.\n\nUse a simple conditional strategy:  1. **Start by cooperating.** 2. **If the opponent cooperates in the previous round, cooperate again.** 3. **If the opponent defects in the previous round, defect in the next round.** 4. **Keep following that rule for all 1000 rounds.**  This is a neutral, straightforward approach: it rewards mutual cooperation, but immediately answers defection with defection.\n\nThe game lasts for 1000 rounds and has the following payoffs:\n\n- If you play C and your opponent plays C, you both score 3.\n- If you play C and your opponent plays D, you score 0 and they score 5.\n- If you play D and your opponent plays C, you score 5 and they score 0.\n- If you play D and your opponent plays D, you both score 1.\n\nYour response should only include the python code for the strategy function, which has the following signature:\n\ndef strategy(self, opponent: axl.player.Player) -> axl.Action:\n\nYou use assume the following imports:\n\nimport axelrod as axl\n\nNo other libraries are to be used and no additional member functions are to be defined, but you may create nested subfunctions. Some attributes that you may wish to use are:\n- 'self.history' or 'opponent.history' return an axl.History instance of the moves played so far.\n- 'history.cooperations' and 'history.defections' return a count of the total number of cooperate or defect actions played, respectively.\n- the history object can be cast to a list or indexed, for example, to count the number of defections played in the last N moves, use 'self.history[-N:].count(axl.Action.D)'.\n- 'self.score' or 'opponent.score' returns the total score achieved so far in the match by that player.\n- to compute the score for the last N interactions, use 'self.total_scores(self.history[-N:], opponent.history[-N:])', which returns a tuple of (your score, opponent score).\n- 'self._random' is an axl.RandomGenerator instance which you should ought to use when randomness is required: for example, self._random.random_choice(p) returns axl.Action.C with probability p, else axl.Action.D.\n- use 'self.first_round()' to test if it is the first time the strategy has been called, for example to initialise custom attributes and/or return the initial action.\n- do not use 'hasattr' or 'del', prefer to set custom member variables to None\n\nBegin your response by repeating the strategy function signature. Only include python code in your response.\n\nPhase 3 pilot interpretation contract (an explicit addition to the historical prompt):\nThe current round is len(self.history) + 1; histories contain completed rounds only.\nA condition requiring k previous rounds applies only when at least k rounds exist.\nFollow explicit initial/final rules and stated priority. Do not add endgame defection,\nforgiveness, randomization, or missing rules. Do not improve the strategy.\nIf the description does not specify an unambiguous action, return exactly\nUNCONVERTIBLE: followed by the missing condition, instead of inventing code.\n",
+            "role": "user"
+          }
+        ],
+        "model": "gpt-5.4-mini",
+        "n": 1,
+        "reasoning_effort": "none",
+        "service_tier": "default",
+        "store": false,
+        "stream": false,
+        "temperature": 0
+      },
+      "payload_sha256": "1d02f49943dde66c0258dbc8aa331e015224bd0ffc3eba01eaa995dd98586b37",
+      "prose_sha256": "97a82aef1a10066e867288233b5ac0e434972b2777344a90dae5aef53cd2fb87",
+      "strategy_id": "openai_gpt54mini/default/Neutral_14"
+    }
+  ],
+  "reserve_per_attempt_micro_usd": 318432,
+  "schema": 1,
+  "sources": {
+    "phase3\\inputs\\pilot_selection.json": "fa56632a1b2080d69d5e7bb0bedf4826850e75c21e792acddfeb0e450d175f98",
+    "phase3\\inputs\\semantic_review_v1.json": "d1ba3968a8fe5c6d8d1e7eb7febed52832e411f84894f3355c4d86375d19b1d6",
+    "phase3\\inputs\\semantic_test_vectors_v1.json": "52353b7d012264f842feb56225d6f179f480f1a7b32823dfd3896acdfae373db",
+    "phase3\\pilot_converter.py": "1d271bbe885f56fe164c15e6dfa238da2d378b4fe04203f0b5ee5cd9d2c83e9d",
+    "src\\evollm\\prompts.py": "06751b58d67937a419492ffdd2dbf1c20762c7f2c70dcd364937cddd6e4aa2f8"
+  },
+  "status": "prepared_not_called",
+  "timeout_seconds": 60
+}

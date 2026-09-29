@@ -1,0 +1,16 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if self.first_round():
+        self._cooperate_forever = False
+        self._permanent_defect = False
+        return axl.Action.D
+    if self._permanent_defect:
+        return axl.Action.D
+    if self._cooperate_forever:
+        if opponent.history[-1] == axl.Action.D:
+            self._permanent_defect = True
+            return axl.Action.D
+        return axl.Action.C
+    if len(opponent.history) >= 5 and self.history[-5:] == [axl.Action.D] * 5 and opponent.history[-5:] == [axl.Action.C] * 5:
+        self._cooperate_forever = True
+        return axl.Action.C
+    return axl.Action.D

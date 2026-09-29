@@ -1,0 +1,1067 @@
+{
+  "scope": "Committed historical Default/noise libraries and available corresponding working copies; no generative reconstruction. Does not establish absence in external chat archives.",
+  "records": [
+    {
+      "id": "gemini_25_flash/default/Aggressive_6",
+      "line": 422,
+      "text": "This strategy is called the \"Calculated Aggressor.\" It focuses on early exploitation and swift, permanent retaliation to maximise your overall payoff over the 1000 rounds. 1. **For the very first round, play Defect.** 2. **For any round after the first, observe your opponent's past actions:** * **If your opponent has *ever* played Defect in *any* previous round, play Defect for this round and all subsequent rounds.** * **Otherwise (if your opponent has *only* played Cooperate in all previous rounds):** * **If it is rounds 2 through 10, play Defect.** * **If it is round 11 or later, play",
+      "candidate_extensions": [],
+      "versions_examined": 12,
+      "sources": [
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_25_flash_default_75.py",
+          "sha256": "832a4f6bf99e75b70199a456fa07860412c02c5bfd52a4eb6876506cf1ca0807"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_25_flash_default_75.py",
+          "sha256": "832a4f6bf99e75b70199a456fa07860412c02c5bfd52a4eb6876506cf1ca0807"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_25_flash_default_75.py",
+          "sha256": "8d5169e86995c57a2d474a63cb2ac3a8ab6fecf6660b22f644c37cc59f3780f3"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_25_flash_default_75.py",
+          "sha256": "8d5169e86995c57a2d474a63cb2ac3a8ab6fecf6660b22f644c37cc59f3780f3"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_25_flash_default_75.py",
+          "sha256": "8d5169e86995c57a2d474a63cb2ac3a8ab6fecf6660b22f644c37cc59f3780f3"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_25_flash_default_75.py",
+          "sha256": "8d5169e86995c57a2d474a63cb2ac3a8ab6fecf6660b22f644c37cc59f3780f3"
+        },
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_25_flash_default_75_noise.py",
+          "sha256": "30e62257ea8871a7910df93666e184658036eeeb110ff49d85a64182c08b77d0"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_25_flash_default_75_noise.py",
+          "sha256": "30e62257ea8871a7910df93666e184658036eeeb110ff49d85a64182c08b77d0"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_25_flash_default_75_noise.py",
+          "sha256": "117184df7efc2722ab7dd4ad97d2489178a24a63dda51a366bf2cfe54d94dfd7"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_25_flash_default_75_noise.py",
+          "sha256": "117184df7efc2722ab7dd4ad97d2489178a24a63dda51a366bf2cfe54d94dfd7"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_25_flash_default_75_noise.py",
+          "sha256": "117184df7efc2722ab7dd4ad97d2489178a24a63dda51a366bf2cfe54d94dfd7"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_25_flash_default_75_noise.py",
+          "sha256": "117184df7efc2722ab7dd4ad97d2489178a24a63dda51a366bf2cfe54d94dfd7"
+        }
+      ],
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "status": "not_recovered_in_examined_strategy_archives"
+    },
+    {
+      "id": "gemini_25_flash/default/Aggressive_24",
+      "line": 1885,
+      "text": "This strategy adopts an aggressive, exploitative approach, aiming to secure high payoffs by defaulting to defection while temporarily cooperating only when stuck in a low-scoring stalemate, to reset and re-attempt exploitation. 1. **Start by playing Defect (D).** 2. **In subsequent rounds, if your opponent played Cooperate (C) in the previous round:** Continue to play Defect (D) to maximize your score from their cooperation. 3. **If your opponent played Defect (D) in the previous round:** * If you also played Defect (D) in the previous round (resulting in D,D): Play Cooperate (C) for this single round, then immediately revert to playing Defect (D) in the next round, regardless",
+      "candidate_extensions": [],
+      "versions_examined": 12,
+      "sources": [
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_25_flash_default_75.py",
+          "sha256": "832a4f6bf99e75b70199a456fa07860412c02c5bfd52a4eb6876506cf1ca0807"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_25_flash_default_75.py",
+          "sha256": "832a4f6bf99e75b70199a456fa07860412c02c5bfd52a4eb6876506cf1ca0807"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_25_flash_default_75.py",
+          "sha256": "8d5169e86995c57a2d474a63cb2ac3a8ab6fecf6660b22f644c37cc59f3780f3"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_25_flash_default_75.py",
+          "sha256": "8d5169e86995c57a2d474a63cb2ac3a8ab6fecf6660b22f644c37cc59f3780f3"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_25_flash_default_75.py",
+          "sha256": "8d5169e86995c57a2d474a63cb2ac3a8ab6fecf6660b22f644c37cc59f3780f3"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_25_flash_default_75.py",
+          "sha256": "8d5169e86995c57a2d474a63cb2ac3a8ab6fecf6660b22f644c37cc59f3780f3"
+        },
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_25_flash_default_75_noise.py",
+          "sha256": "30e62257ea8871a7910df93666e184658036eeeb110ff49d85a64182c08b77d0"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_25_flash_default_75_noise.py",
+          "sha256": "30e62257ea8871a7910df93666e184658036eeeb110ff49d85a64182c08b77d0"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_25_flash_default_75_noise.py",
+          "sha256": "117184df7efc2722ab7dd4ad97d2489178a24a63dda51a366bf2cfe54d94dfd7"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_25_flash_default_75_noise.py",
+          "sha256": "117184df7efc2722ab7dd4ad97d2489178a24a63dda51a366bf2cfe54d94dfd7"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_25_flash_default_75_noise.py",
+          "sha256": "117184df7efc2722ab7dd4ad97d2489178a24a63dda51a366bf2cfe54d94dfd7"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_25_flash_default_75_noise.py",
+          "sha256": "117184df7efc2722ab7dd4ad97d2489178a24a63dda51a366bf2cfe54d94dfd7"
+        }
+      ],
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "status": "not_recovered_in_examined_strategy_archives"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_1",
+      "line": 19,
+      "text": "To maximize your overall payoff using an aggressive approach, you should employ a strategy that ruthlessly exploits forgiving opponents, strictly punishes defection, but maintains mutually beneficial cooperation when faced with retaliation. Here is the strategy, ordered by priority from highest to lowest. Apply the first condition that fits the current round: 1. **Endgame Exploitation:** If it is exactly round 1000, play **Defect**. (Since there are no future rounds, retaliation is impossible, allowing you to safely secure the highest possible points). 2. **First Round Probe:** If it is round 1, play **Defect**. (This tests the opponent immediately to see if they are a passive player who will allow unconditional exploitation). 3. **Restoring Cooperation:** If both you and the opponent",
+      "candidate_extensions": [],
+      "versions_examined": 12,
+      "sources": [
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        }
+      ],
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "status": "not_recovered_in_examined_strategy_archives"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_3",
+      "line": 197,
+      "text": "Here is a simple, aggressive strategy designed to maximize your payoff by exploiting forgiving opponents while protecting yourself from being exploited: **Strategy Rules (in order of priority):** 1. **Endgame Exploitation:** If the game is in the final 10 rounds (rounds 991 through 1000), play **Defect**. 2. **Cycle Breaking:** If both you and your opponent played Defect in the previous two consecutive rounds, play **Cooperate**. (This attempts to break mutually destructive retaliatory cycles and reset to a higher payoff). 3. **Self-Defense:** If the opponent played Defect in the previous round, play **Defect**. (This ensures you are not repeatedly taken advantage of). 4. **Aggressive Pro",
+      "candidate_extensions": [],
+      "versions_examined": 12,
+      "sources": [
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        }
+      ],
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "status": "not_recovered_in_examined_strategy_archives"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_5",
+      "line": 357,
+      "text": "Here is a straightforward, aggressive strategy designed to maximize your overall payoff by exploiting weak opponents while maintaining highly profitable mutual cooperation with forgiving ones. This strategy is based on the \"Win-Stay, Lose-Shift\" logic. **Conditions for play:** 1. **Round 1000:** Always play Defect. Since it is the final round, there are no future consequences, guaranteeing you either 5 or 1 point. 2. **Round 1:** Play Defect. This aggressively tests the opponent immediately to see if they can be exploited for a 5-point payoff. 3. **Round 2 to 999:** - Play **Defect** if you and your opponent chose *different* actions in the previous round. This",
+      "candidate_extensions": [],
+      "versions_examined": 12,
+      "sources": [
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        }
+      ],
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "status": "not_recovered_in_examined_strategy_archives"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_7",
+      "line": 521,
+      "text": "Here is a simple, aggressive strategy designed to test the opponent, relentlessly exploit forgiving players, and pacify retaliatory players to ensure maximum long-term payoff. Apply these rules in strict order of priority (from top to bottom): 1. **The Endgame:** On the final round (round 1000), play Defect. 2. **The Initial Test:** On round 1, play Defect. 3. **The Pacification:** On rounds 2 and 3, play Cooperate to observe their response to your initial defection and to reset the relationship if they are capable of forgiveness. 4. **The Long Game (Rounds 4 through 999):** - **Exploit:** If the opponent played Cooperate",
+      "candidate_extensions": [],
+      "versions_examined": 12,
+      "sources": [
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        }
+      ],
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "status": "not_recovered_in_examined_strategy_archives"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_8",
+      "line": 614,
+      "text": "To adopt an aggressive approach that maximizes your overall payoff, you should use a strategy that actively tests the opponent for weakness to exploit them, but gracefully apologizes and cooperates if the opponent proves capable of retaliation. Here is the straightforward condition-based strategy, executed in the following strict order of priority every round: 1. **If it is Round 1000:** Play D. *(Maximizes payoff on the final move since no future retaliation is possible).* 2. **If it is Round 1:** Play D. *(The initial probe to test if the opponent is a passive cooperator).* 3. **If it is Round 2 or Round 3:** Play C. *(This serves as an apology to absorb any retaliation from a Tit-for-Tat",
+      "candidate_extensions": [],
+      "versions_examined": 12,
+      "sources": [
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        }
+      ],
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "status": "not_recovered_in_examined_strategy_archives"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_9",
+      "line": 703,
+      "text": "Here is a simple, aggressive strategy designed to maximize your payoff by continuously testing your opponent for weakness while cooperating enough to maintain highly profitable mutual cooperation if they prove retaliatory. Apply these rules in strict order, from first to last: 1. **The Endgame:** On the final round (round 1000), always defect. 2. **The Sucker's Retaliation:** If you cooperated in the previous round and your opponent defected, defect to punish them. 3. **The Aggressive Probe:** If your opponent has cooperated for the last four consecutive rounds, defect to safely exploit their forgiveness or test their boundaries. 4. **The Baseline:** Under all other conditions, cooperate. **How it works:** By defaulting to cooperation (Rule 4",
+      "candidate_extensions": [],
+      "versions_examined": 12,
+      "sources": [
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        }
+      ],
+      "manual_review": "Ending inspected: clipped explanation after rules",
+      "status": "not_recovered_in_examined_strategy_archives"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_11",
+      "line": 872,
+      "text": "To adopt an aggressive strategy that maximizes your overall payoff, the goal is to ruthlessly exploit forgiving or perfectly cooperative opponents while maintaining the ability to establish mutually beneficial cooperation (3 points) with retaliatory opponents, and finally betraying them at the very end. Apply the following rules in order from top to bottom, choosing the first condition that applies to the current round: 1. **The Endgame:** If it is round 998, 999, or 1000, play Defect. 2. **The Initial Test:** If it is round 1, play Defect. 3. **The Cycle Breaker:** If both you and your opponent played Defect in the previous two consecutive rounds, play Cooperate. (This signals a willingness",
+      "candidate_extensions": [],
+      "versions_examined": 12,
+      "sources": [
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        }
+      ],
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "status": "not_recovered_in_examined_strategy_archives"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_13",
+      "line": 1041,
+      "text": "To aggressively maximize your overall payoff, you should employ an exploitative \"Tester\" strategy. This approach tests the opponent's boundaries immediately to exploit forgiving players, while reverting to mutual cooperation if the opponent proves willing to retaliate, thereby avoiding the low-scoring trap of endless mutual defection. Finally, it betrays the opponent at the end of the game when retaliation is no longer a threat. Adopt the strategy by evaluating the following conditions in this exact order for each round: 1. **The Endgame Condition:** If the current round is between 991 and 1000 inclusive, play Defect. 2. **The Test:** If it is round 1, play Defect. 3. **The Apology:** If it is round 2 or round",
+      "candidate_extensions": [],
+      "versions_examined": 12,
+      "sources": [
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        }
+      ],
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "status": "not_recovered_in_examined_strategy_archives"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_15",
+      "line": 1221,
+      "text": "Here is a simple, aggressive strategy designed to maximize your overall payoff by maintaining mutual cooperation most of the time while systematically sneaking in defections to exploit the opponent. Evaluate the following conditions in order on every round. Take the action for the first condition that applies: 1. **Final Round (Round 1000):** Play Defect. Because the game is ending, there is no risk of future retaliation, guaranteeing you either 5 points or 1 point without consequence. 2. **Retaliation:** If the opponent played Defect in the immediate previous round, play Defect. This immediately protects you from being repeatedly exploited for 0 points. 3. **Periodic Exploitation:** If the current round number is a multiple of 10 (e.g., round",
+      "candidate_extensions": [],
+      "versions_examined": 12,
+      "sources": [
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        }
+      ],
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "status": "not_recovered_in_examined_strategy_archives"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_16",
+      "line": 1307,
+      "text": "Here is a straightforward, aggressive strategy designed to probe for weakness, fully exploit passive opponents, and cooperate with retaliatory ones to maximize your long-term score. Follow these conditions in exact order, applying the first one that matches the current round: 1. **If it is round 1000:** Play Defect. 2. **If it is round 1:** Play Defect. 3. **If it is round 2 or round 3:** Play Cooperate. 4. **If it is round 4 through 999, and your opponent played Cooperate on *both* rounds 2 and 3:** Play Defect. (This fully exploits an unconditionally forgiving opponent). 5. **If it is round 4 through 999",
+      "candidate_extensions": [],
+      "versions_examined": 12,
+      "sources": [
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        }
+      ],
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "status": "not_recovered_in_examined_strategy_archives"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_17",
+      "line": 1402,
+      "text": "Here is a simple, aggressive strategy to maximize your overall payoff. Apply the following conditions in exactly this order of priority for each round: 1. **If it is the final round (round 1000):** Play Defect to secure the highest possible exit payoff without fear of retaliation. 2. **If your opponent played Defect in both of the previous two rounds:** Play Defect to protect yourself from continuous exploitation. 3. **If you played Defect in the previous round and your opponent played Cooperate:** Play Defect to aggressively continue exploiting their forgiveness for the maximum 5-point payoff. 4. **If it is round 1, or any round that is a multiple of 10 (e.g., 10, 20, 3",
+      "candidate_extensions": [],
+      "versions_examined": 12,
+      "sources": [
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        }
+      ],
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "status": "not_recovered_in_examined_strategy_archives"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_18",
+      "line": 1499,
+      "text": "To aggressively maximize your overall payoff, you should establish a baseline of mutual cooperation early to secure consistent scores of 3, ruthlessly punish any attempts to exploit you, and preemptively defect near the end of the game when retaliation is no longer a threat. Apply the following rules in order from top to bottom for each round, taking the action dictated by the first condition that applies: 1. **If the current round is 998, 999, or 1000:** Play Defect. (This secures the 5-point temptation payoff or at least prevents the 0-point sucker payoff in the final rounds, front-running any endgame defection from your opponent). 2. **If the current round is round 1:** Play Cooperate. (This signals a willingness to engage in the mutually beneficial 3-point outcome). 3. **If your opponent played Defect in either of their previous two rounds:** Play Defect. (This is an aggressive retaliation, punishing a single defection with two consecutive defections to forcefully deter future",
+      "candidate_extensions": [],
+      "versions_examined": 12,
+      "sources": [
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        }
+      ],
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "status": "not_recovered_in_examined_strategy_archives"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_19",
+      "line": 1581,
+      "text": "To maximize your overall payoff with an aggressive approach, you should systematically test the opponent to see if they can be exploited, while retaining a mechanism to settle into mutually beneficial cooperation if they prove capable of retaliation. Play according to the following ordered conditions, evaluating them from top to bottom and applying the first one that fits the current round: 1. **If it is round 1000**, play Defect to secure the final round advantage without fear of future retaliation. 2. **If it is round 1**, play Defect to aggressively test whether the opponent is blindly cooperative. 3. **If the opponent played Defect in the previous two consecutive rounds**, play Defect to protect yourself from an opponent that refuses to cooperate. 4. **If you played Def",
+      "candidate_extensions": [],
+      "versions_examined": 12,
+      "sources": [
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        }
+      ],
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "status": "not_recovered_in_examined_strategy_archives"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_21",
+      "line": 1758,
+      "text": "To maximize your overall payoff with an aggressive approach, you should attempt to exploit weak opponents while strictly punishing defections, and take advantage of the known finite endpoint of the game. Use the following rules in strictly descending order of priority: 1. **Defect** unconditionally on the final three rounds (rounds 998, 999, and 1000) to safely secure the temptation payoff when the opponent can no longer retaliate. 2. **Defect** if the opponent defected against you in the previous round to punish them and protect yourself from being exploited. 3. **Defect** if you defected in the previous round and the opponent cooperated, allowing you to relentlessly exploit an unconditionally forgiving or random opponent. 4. **Cooperate** in",
+      "candidate_extensions": [],
+      "versions_examined": 12,
+      "sources": [
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        }
+      ],
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "status": "not_recovered_in_examined_strategy_archives"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_22",
+      "line": 1850,
+      "text": "Here is a simple, aggressive strategy designed to maximize your payoff by exploiting forgiving opponents while protecting yourself from continuous retaliation. Follow these conditions in the exact order presented: 1. **Round 1000:** Always play Defect to secure the maximum possible payoff on the final turn where retaliation is impossible. 2. **Round 1:** Play Defect to immediately test the opponent's boundaries and attempt to secure the 5-point payoff. 3. **Round 2 through 999:** Apply the following rules based on the immediate preceding round: - **Condition A:** If you played Defect and the opponent played Cooperate, play Defect. (Continue exploiting an opponent who does not retaliate). - **Condition B:** If you played Def",
+      "candidate_extensions": [],
+      "versions_examined": 12,
+      "sources": [
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        }
+      ],
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "status": "not_recovered_in_examined_strategy_archives"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_23",
+      "line": 1947,
+      "text": "Here is a simple, aggressive strategy designed to maximize your overall payoff by establishing cooperation, probing for weakness, ruthlessly exploiting passive opponents, and minimizing endless cycles of mutual defection. Follow these conditions in exact order, applying the first one that matches the current state of the game: 1. **If it is round 1000:** Play Defect. *(Ensures maximum final-round payoff with no risk of future retaliation).* 2. **If both you and your opponent played Defect in the previous round:** Play Cooperate. *(Breaks cycles of mutual punishment to attempt a return to the highly profitable mutual cooperation).* 3. **If your opponent played Defect in the previous round while you played Cooperate:** Play Defect. *(Protects you from being",
+      "candidate_extensions": [],
+      "versions_examined": 12,
+      "sources": [
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75.py",
+          "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75.py",
+          "sha256": "b018ccba99235d443d5f3c071399c50d7c2500edae0c1994a1f704e7ea99444a"
+        },
+        {
+          "source": "git:1f28a2ca0db97a1fa2c73ffecf7a7f45018646cc:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "git:0faabb18c608934a5379648b64307dc84b88aeed:strategies/gemini_31_pro_default_75_noise.py",
+          "sha256": "6a1c83fab0a79180f99b6b31fe305020356d8e1d78224ee51cb1b7662035af44"
+        },
+        {
+          "source": "D:\\evollm\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\erratum\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\stupefied-mclaren\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        },
+        {
+          "source": "D:\\evollm\\.claude\\worktrees\\upbeat-shockley-9692af\\strategies\\gemini_31_pro_default_75_noise.py",
+          "sha256": "4b918446b32852d5364e6e4d8302122f212037f331d64744a9bb447967a423a5"
+        }
+      ],
+      "manual_review": "Ending inspected: incomplete sentence or strategic rule",
+      "status": "not_recovered_in_examined_strategy_archives"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "status": "osf_registration_publicly_approved",
+  "frozen_at_utc": "2026-09-27T14:48:16Z",
+  "branch": "codex/phase3-preparation",
+  "frozen_git_commit": "18cb41744f3f1e66fe711aad09697980476c2498",
+  "pushed_to_remote": false,
+  "submitted_registration_url": "https://osf.io/2nzdh/overview",
+  "submitted_registration_date": "2026-09-27",
+  "osf_archive_status": "public_registration_verified_2026-09-28T00:53:08Z",
+  "registration_doi": null,
+  "public_registration_url": "https://osf.io/2nzdh/overview",
+  "registration_gate_satisfied": true,
+  "confirmatory_run_allowed": false,
+  "scientific_files_in_commit": 1297,
+  "scientific_bytes_in_commit": 100433684,
+  "freeze_inventory_path": "phase3/registration_v1/freeze_inventory_v2.json",
+  "freeze_inventory_sha256": "27ee8121f14ccb7d5cd7fb5838c224ad8e7207010fdc92335f52e4a2acfcebf4",
+  "osf_packet_path": "phase3/registration_v1/OSF_PHASE3_REGISTRATION_v1.zip",
+  "osf_packet_sha256": "45bf073906143902a41a4734631e7d55962f09ad868fe6d40aceba09777c0ce5",
+  "plan_context_sha256": "3811e2f65857b46003a48ddedbc0f625c1a9e573207987787f7a5f78b01d1bfd",
+  "plan_manifest_file_sha256": "2dbcfc56965bd025ca2f4eb9ca2351099f5fd34101fbbd7af82fee9a43bb3ba6",
+  "audit": "All 1297 inventoried files match the committed Git blobs byte-for-byte. 562 ignored conversion-run paths included only candidate.py.txt, not API receipts. Unrelated worktree edits remained unstaged."
+}

@@ -1,0 +1,10 @@
+{
+  "public_registration_url": "https://osf.io/2nzdh/overview",
+  "public_visibility_verified_at_utc": "2026-09-28T00:53:08Z",
+  "visibility_evidence": "OSF registration overview refreshed in the user's in-app browser; status changed from Pending approval to Public registration. User's Chrome screenshot independently showed Registro público after email approval.",
+  "registration_doi": null,
+  "frozen_git_commit": "18cb41744f3f1e66fe711aad09697980476c2498",
+  "context_sha256": "3811e2f65857b46003a48ddedbc0f625c1a9e573207987787f7a5f78b01d1bfd",
+  "plan_manifest_sha256": "2dbcfc56965bd025ca2f4eb9ca2351099f5fd34101fbbd7af82fee9a43bb3ba6",
+  "scope": "OSF public-registration gate only; no Modal upload, billing verification or confirmatory execution authorization"
+}

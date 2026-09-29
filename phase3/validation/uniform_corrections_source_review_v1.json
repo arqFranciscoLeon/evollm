@@ -1,0 +1,66 @@
+{
+  "created_at": "2026-09-15T03:59:11.321461+00:00",
+  "registry_sha256": "26619770ce078a05fa9612b6c75419f59af551868e4bfccc1cec44f451034f26",
+  "sources": [
+    {
+      "derived_sha256": "3a23f548e15a17d06ada2b67d8f20e5ee5930336fadfea4e59df2cd3ae73275a",
+      "id": "deepseek_v4pro/default/Neutral_8",
+      "notes": "Inspected final function and prose rule; local correction only, same common adapter required. Original source and raw failure retained.",
+      "reviewer": "Codex, manual full-source inspection, 2026-09-14"
+    },
+    {
+      "derived_sha256": "ef3c53757bee425cb43fafa7d8278929eeb3be306f054ba8616f652750ff3e01",
+      "id": "gemini_31_pro/default/Aggressive_6",
+      "notes": "Inspected final function and prose rule; local correction only, same common adapter required. Original source and raw failure retained.",
+      "reviewer": "Codex, manual full-source inspection, 2026-09-14"
+    },
+    {
+      "derived_sha256": "ae619ab9400775a39c981e0854c42a2b0f5ff74930853704c5d1b6493b8631f8",
+      "id": "glm_51/default/Aggressive_3",
+      "notes": "Inspected final function and prose rule; local correction only, same common adapter required. Original source and raw failure retained.",
+      "reviewer": "Codex, manual full-source inspection, 2026-09-14"
+    },
+    {
+      "derived_sha256": "16f7a3b2f5cc03604e5a43ec7562d07601a64c22f9ddc2f718ea3f9b79f37e84",
+      "id": "deepseek_v4pro/default/Aggressive_15",
+      "notes": "Inspected final function and prose rule; local correction only, same common adapter required. Original source and raw failure retained.",
+      "reviewer": "Codex, manual full-source inspection, 2026-09-14"
+    },
+    {
+      "derived_sha256": "292fbe665423ffb1be36839c30ec235eeb257b2944253ab3bb06d9950cc8e4cb",
+      "id": "deepseek_v4pro/default/Neutral_9",
+      "notes": "Inspected final function and prose rule; local correction only, same common adapter required. Original source and raw failure retained.",
+      "reviewer": "Codex, manual full-source inspection, 2026-09-14"
+    },
+    {
+      "derived_sha256": "03a793d0966e144fa02bde0f79bb24edac9f190da3bb0dbdf80a6dc5ae9cd399",
+      "id": "deepseek_v4pro/default/Aggressive_7",
+      "notes": "Inspected final function and prose rule; local correction only, same common adapter required. Original source and raw failure retained.",
+      "reviewer": "Codex, manual full-source inspection, 2026-09-14"
+    },
+    {
+      "derived_sha256": "de8f7a6bae5c60a9de19b71e9b3a07c6abb3ff87944e7600ee25f0fbc467ae0e",
+      "id": "kimi_k25/default/Aggressive_17",
+      "notes": "Inspected final function and prose rule; local correction only, same common adapter required. Original source and raw failure retained.",
+      "reviewer": "Codex, manual full-source inspection, 2026-09-14"
+    },
+    {
+      "derived_sha256": "64edcad0a2228f0f6fed54b0cf2d282ebc014a72c83ea85fa538c9cddcf9deaf",
+      "id": "deepseek_v4pro/default/Neutral_7",
+      "notes": "Inspected final function and prose rule; local correction only, same common adapter required. Original source and raw failure retained.",
+      "reviewer": "Codex, manual full-source inspection, 2026-09-14"
+    },
+    {
+      "derived_sha256": "0dbe4b1cab88dcb01184115b347124c5d677a3bfb839775cfce1693cf91ffb62",
+      "id": "glm_51/default/Aggressive_12",
+      "notes": "Inspected final function and prose rule; local correction only, same common adapter required. Original source and raw failure retained.",
+      "reviewer": "Codex, manual full-source inspection, 2026-09-14"
+    },
+    {
+      "derived_sha256": "127e1416cb8a09aab5ab3559c5d17527bb072e485642a75b74c47f5bf463e37b",
+      "id": "anthropic_sonnet46/default/Neutral_3",
+      "notes": "Inspected final function and prose rule; local correction only, same common adapter required. Original source and raw failure retained.",
+      "reviewer": "Codex, manual full-source inspection, 2026-09-14"
+    }
+  ]
+}

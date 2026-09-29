@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "date": "2026-09-21",
+  "status": "prepared_pending_freeze_and_public_registration",
+  "participants": 572,
+  "repetitions": 1,
+  "turns": 1000,
+  "noise": 0,
+  "game": {
+    "T": 5,
+    "R": 3,
+    "P": 1,
+    "S": 0
+  },
+  "scenario_masks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "match_seed": 20260913,
+  "seed_rule": "runtime.seed_for(20260913, sorted_id_i, sorted_id_j, 0); same seed across scenarios",
+  "permutations": 10000,
+  "permutation_seed": 20260913,
+  "matches_per_scenario": 163878,
+  "total_matches": 2622048,
+  "workers": 1,
+  "database_rule": "Separate SQLite per scenario; fresh player instances each match; stop on errors; resume only identical configurations.",
+  "repetitions_reason": "All 576 selected sources use deterministic operations under the frozen adapter; zero noise and fixed horizon. Repeats would duplicate outcomes, not independent evidence. Eight paired trace checks across two seeds also agree.",
+  "disk_reserve_bytes": 5368709120,
+  "recommended_available_ram_bytes": 2147483648,
+  "resources": {
+    "estimated_seconds_per_scenario": [
+      24873.28982068963,
+      49364.1106353918
+    ],
+    "planning_seconds_all_scenarios": 2369477.3104988066,
+    "estimated_sqlite_bytes_all_scenarios": 1277678782.675862,
+    "inference_seconds_synthetic_projection": 65.49815000107628,
+    "caveat": "Timing extrapolations are not statistical bounds; memory peak not profiled. Threefold time reserve, serial execution. Recheck RAM and disk before launch."
+  },
+  "optimization_not_implemented": {
+    "description": "Reuse exact same pair/source/seed/config across scenarios while retaining 16 complete logical schedules. Requires separate implementation and validation before adoption.",
+    "theoretical_unique_matches": 166172
+  },
+  "dependencies": {
+    "phase3/validation/resources_calibration_v1.json": "05bd83afc53d5b3da07a816a5d91d5d69d3bbefcbe74ffb45cb4aac44a9ffd52",
+    "phase3/inputs/sensitivity_plan_v1.json": "361d3ade33783e972c8f0fcfe99d285e230e02a696ce0f44a1d9a5fb3154afc7",
+    "phase3/validation/sensitivity_closure_v1.json": "e5d5ff044f272ae1f16a3a10113961af5dbbee13af79cf1f052a8eb687f8b9e4",
+    "phase3/execute_uniform.py": "b2bb03c596d0706e11962b25180f3814788944f800d85f01ece1fb8bd281ff98",
+    "phase3/runtime.py": "1810ac06f74b4677cf83af92a72cf30e02960417bf7e4d5a2a37bd38c76188a7",
+    "phase3/uniform_semantics_v3b.py": "3e9bdfdc4f918759dc9d7642a20c90ec8b92e8b3b60de1832d2548ea74e3963b",
+    "phase3/analyze_phase3.py": "36f0d0e049306f7f5fb13bf8172fb01e9c79b2da2265dc0f28c60e039f6f37d2",
+    "phase3/interpretation_sensitivity_v1.py": "320aac37f272a5366c152962948607076a94d1d025c496b2552f548e75db484e"
+  },
+  "api_calls_required": 0
+}

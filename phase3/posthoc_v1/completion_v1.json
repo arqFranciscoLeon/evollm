@@ -1,0 +1,133 @@
+{
+  "status": "post hoc what-if; historical implementations of excluded descriptions; not preregistered",
+  "excluded_identities": [
+    "deepseek_v4pro/default/Aggressive_5",
+    "gemini_25_flash/default/Aggressive_24",
+    "gemini_25_flash/default/Aggressive_6",
+    "gemini_31_pro/default/Aggressive_1",
+    "gemini_31_pro/default/Aggressive_11",
+    "gemini_31_pro/default/Aggressive_13",
+    "gemini_31_pro/default/Aggressive_15",
+    "gemini_31_pro/default/Aggressive_16",
+    "gemini_31_pro/default/Aggressive_17",
+    "gemini_31_pro/default/Aggressive_18",
+    "gemini_31_pro/default/Aggressive_19",
+    "gemini_31_pro/default/Aggressive_20",
+    "gemini_31_pro/default/Aggressive_21",
+    "gemini_31_pro/default/Aggressive_22",
+    "gemini_31_pro/default/Aggressive_23",
+    "gemini_31_pro/default/Aggressive_3",
+    "gemini_31_pro/default/Aggressive_5",
+    "gemini_31_pro/default/Aggressive_7",
+    "gemini_31_pro/default/Aggressive_8",
+    "kimi_k25/default/Aggressive_12",
+    "openai_gpt54mini/default/Aggressive_12",
+    "openai_gpt54mini/default/Aggressive_16",
+    "openai_gpt54mini/default/Aggressive_17",
+    "openai_gpt54mini/default/Aggressive_20",
+    "openai_gpt54mini/default/Aggressive_22",
+    "openai_gpt54mini/default/Aggressive_23",
+    "openai_gpt54mini/default/Aggressive_5",
+    "openai_gpt54mini/default/Aggressive_6"
+  ],
+  "new_matches": 16422,
+  "errors": 0,
+  "error_examples": [],
+  "h7_completed_600": 0.004866320634920592,
+  "h7_completed_600_pp": 0.48663206349205923,
+  "h7_registered_572_pp": 0.5348991712007745,
+  "strata": [
+    "Aggressive/Aggressive",
+    "Aggressive/Cooperative",
+    "Aggressive/Neutral",
+    "Cooperative/Cooperative",
+    "Cooperative/Neutral",
+    "Neutral/Neutral"
+  ],
+  "per_model_mean_difference_pp": {
+    "anthropic_sonnet46": -1.9704044444444508,
+    "deepseek_v4pro": 0.7268403174602991,
+    "gemini_25_flash": -0.999725079365083,
+    "gemini_31_pro": 10.924179365079356,
+    "glm_51": 1.914663492063491,
+    "kimi_k25": -1.9452622222222216,
+    "openai_gpt54mini": -3.5004730158730095,
+    "qwen3max": -1.2567619047619085
+  },
+  "per_model_stratum_differences_pp": {
+    "anthropic_sonnet46": [
+      -2.975657142857143,
+      -5.155028571428572,
+      -4.886731428571428,
+      -0.12000000000002009,
+      0.18011428571426125,
+      1.1348761904761973
+    ],
+    "deepseek_v4pro": [
+      -0.2715561904761906,
+      1.0859657142857124,
+      1.6855542857142845,
+      0.12883619047617811,
+      0.6205485714285253,
+      1.1116933333332857
+    ],
+    "gemini_25_flash": [
+      -0.4851504761904763,
+      -3.7425942857142855,
+      -3.7334628571428574,
+      0.14057142857142324,
+      0.6542857142856962,
+      1.1680000000000024
+    ],
+    "gemini_31_pro": [
+      16.9622419047619,
+      23.137325714285712,
+      23.58117714285714,
+      0.10285714285708236,
+      0.6216114285714558,
+      1.1398628571428482
+    ],
+    "glm_51": [
+      2.3700933333333327,
+      3.350605714285711,
+      3.890971428571424,
+      0.10613142857140989,
+      0.626045714285739,
+      1.1441333333333303
+    ],
+    "kimi_k25": [
+      -3.189758095238094,
+      -5.169897142857143,
+      -5.181017142857143,
+      0.1061314285714543,
+      0.6234742857142428,
+      1.1394933333333523
+    ],
+    "openai_gpt54mini": [
+      -0.2410057142857143,
+      -4.774594285714286,
+      -4.4930514285714285,
+      0.14057142857142324,
+      -3.9455999999999714,
+      -7.68915809523808
+    ],
+    "qwen3max": [
+      0.0,
+      -4.751714285714286,
+      -4.751714285714286,
+      0.14057142857142324,
+      0.6542857142857073,
+      1.1679999999999913
+    ]
+  },
+  "completed_cell_mean_cooperation_vs_all_others": {
+    "anthropic_sonnet46/Aggressive": 0.0134522203672788,
+    "deepseek_v4pro/Aggressive": 0.02961742904841402,
+    "gemini_25_flash/Aggressive": 0.020211819699499162,
+    "gemini_31_pro/Aggressive": 0.3517114524207012,
+    "glm_51/Aggressive": 0.11505422370617698,
+    "kimi_k25/Aggressive": 0.01482804674457429,
+    "openai_gpt54mini/Aggressive": 0.0009712186978297161,
+    "qwen3max/Aggressive": 0.0
+  }
+}

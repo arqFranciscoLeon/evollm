@@ -1,0 +1,337 @@
+{
+  "status": "post hoc descriptive ecological dynamics; not preregistered",
+  "starts": {
+    "equal_identities": {
+      "checkpoints": {
+        "0": {
+          "by_attitude": {
+            "Aggressive": 0.30069930069930073,
+            "Cooperative": 0.3496503496503497,
+            "Neutral": 0.3496503496503497
+          },
+          "by_model": {
+            "anthropic_sonnet46": 0.13111888111888112,
+            "deepseek_v4pro": 0.12937062937062938,
+            "gemini_25_flash": 0.12762237762237763,
+            "gemini_31_pro": 0.10314685314685314,
+            "glm_51": 0.13111888111888112,
+            "kimi_k25": 0.12937062937062938,
+            "openai_gpt54mini": 0.11713286713286712,
+            "qwen3max": 0.13111888111888112
+          }
+        },
+        "10": {
+          "by_attitude": {
+            "Aggressive": 0.030090293769593532,
+            "Cooperative": 0.4876897993928121,
+            "Neutral": 0.4822199068375942
+          },
+          "by_model": {
+            "anthropic_sonnet46": 0.1248010611263732,
+            "deepseek_v4pro": 0.11831188877581192,
+            "gemini_25_flash": 0.12381115182891445,
+            "gemini_31_pro": 0.13314745018675395,
+            "glm_51": 0.13033566339503455,
+            "kimi_k25": 0.12767008565190244,
+            "openai_gpt54mini": 0.11880954133868928,
+            "qwen3max": 0.12311315769651979
+          }
+        },
+        "50": {
+          "by_attitude": {
+            "Aggressive": 0.011204398627136725,
+            "Cooperative": 0.49415245902604366,
+            "Neutral": 0.4946431423468204
+          },
+          "by_model": {
+            "anthropic_sonnet46": 0.11508822455748112,
+            "deepseek_v4pro": 0.11684760475994216,
+            "gemini_25_flash": 0.12633689643149631,
+            "gemini_31_pro": 0.13717375672893467,
+            "glm_51": 0.12980001258864352,
+            "kimi_k25": 0.12713319285707145,
+            "openai_gpt54mini": 0.12128355675779585,
+            "qwen3max": 0.12633675531863556
+          }
+        },
+        "100": {
+          "by_attitude": {
+            "Aggressive": 0.008889035430259568,
+            "Cooperative": 0.4915501863102723,
+            "Neutral": 0.49956077825946865
+          },
+          "by_model": {
+            "anthropic_sonnet46": 0.10742100602520985,
+            "deepseek_v4pro": 0.11697007760202119,
+            "gemini_25_flash": 0.12710098914580928,
+            "gemini_31_pro": 0.14093317189270918,
+            "glm_51": 0.12971787406063973,
+            "kimi_k25": 0.12873894254748336,
+            "openai_gpt54mini": 0.12201694958911531,
+            "qwen3max": 0.12710098913701226
+          }
+        },
+        "500": {
+          "by_attitude": {
+            "Aggressive": 0.0051231047015731866,
+            "Cooperative": 0.4794035926156158,
+            "Neutral": 0.5154733026828102
+          },
+          "by_model": {
+            "anthropic_sonnet46": 0.07703244446277192,
+            "deepseek_v4pro": 0.11632037333304472,
+            "gemini_25_flash": 0.12488771270481507,
+            "gemini_31_pro": 0.1694574438977329,
+            "glm_51": 0.13342396177194943,
+            "kimi_k25": 0.13409814692824765,
+            "openai_gpt54mini": 0.11989220419662246,
+            "qwen3max": 0.12488771270481507
+          }
+        },
+        "1000": {
+          "by_attitude": {
+            "Aggressive": 0.004349789537228901,
+            "Cooperative": 0.47779870188105694,
+            "Neutral": 0.5178515085817149
+          },
+          "by_model": {
+            "anthropic_sonnet46": 0.06694012319966598,
+            "deepseek_v4pro": 0.11174037355081932,
+            "gemini_25_flash": 0.11614596194615467,
+            "gemini_31_pro": 0.2056920809230796,
+            "glm_51": 0.13581918026198883,
+            "kimi_k25": 0.1360161947038291,
+            "openai_gpt54mini": 0.1115001234683085,
+            "qwen3max": 0.11614596194615467
+          }
+        },
+        "5000": {
+          "by_attitude": {
+            "Aggressive": 0.010642242098544087,
+            "Cooperative": 0.49100152112059164,
+            "Neutral": 0.49835623678086427
+          },
+          "by_model": {
+            "anthropic_sonnet46": 0.05342932599095964,
+            "deepseek_v4pro": 0.06905624812297807,
+            "gemini_25_flash": 0.0404812202114463,
+            "gemini_31_pro": 0.47065213536704525,
+            "glm_51": 0.14279683815708458,
+            "kimi_k25": 0.14424104053605144,
+            "openai_gpt54mini": 0.03886197140298844,
+            "qwen3max": 0.0404812202114463
+          }
+        }
+      },
+      "final_mean_payoff": 2.998600766341067,
+      "final_top_identities": [
+        {
+          "id": "kimi_k25/default/Neutral_8",
+          "share": 0.01039412455604591
+        },
+        {
+          "id": "gemini_31_pro/default/Aggressive_4",
+          "share": 0.01039412455604591
+        },
+        {
+          "id": "anthropic_sonnet46/default/Neutral_12",
+          "share": 0.009372239294987057
+        },
+        {
+          "id": "glm_51/default/Neutral_23",
+          "share": 0.009372239294987057
+        },
+        {
+          "id": "kimi_k25/default/Cooperative_11",
+          "share": 0.009372239294987057
+        },
+        {
+          "id": "kimi_k25/default/Cooperative_13",
+          "share": 0.009372239294987057
+        },
+        {
+          "id": "glm_51/default/Neutral_24",
+          "share": 0.009372239294987057
+        },
+        {
+          "id": "glm_51/default/Neutral_4",
+          "share": 0.009372239294987057
+        },
+        {
+          "id": "glm_51/default/Cooperative_19",
+          "share": 0.009372239294987057
+        },
+        {
+          "id": "glm_51/default/Cooperative_4",
+          "share": 0.009372239294987057
+        }
+      ]
+    },
+    "equal_attitudes_models_cells": {
+      "checkpoints": {
+        "0": {
+          "by_attitude": {
+            "Aggressive": 0.33333333333333337,
+            "Cooperative": 0.33333333333333337,
+            "Neutral": 0.33333333333333337
+          },
+          "by_model": {
+            "anthropic_sonnet46": 0.125,
+            "deepseek_v4pro": 0.125,
+            "gemini_25_flash": 0.12500000000000003,
+            "gemini_31_pro": 0.125,
+            "glm_51": 0.125,
+            "kimi_k25": 0.125,
+            "openai_gpt54mini": 0.125,
+            "qwen3max": 0.125
+          }
+        },
+        "10": {
+          "by_attitude": {
+            "Aggressive": 0.04517609863336815,
+            "Cooperative": 0.4801925230758159,
+            "Neutral": 0.4746313782908166
+          },
+          "by_model": {
+            "anthropic_sonnet46": 0.12270736363130973,
+            "deepseek_v4pro": 0.11591990724068423,
+            "gemini_25_flash": 0.12199829664203063,
+            "gemini_31_pro": 0.14739031137914724,
+            "glm_51": 0.1278419196676051,
+            "kimi_k25": 0.12570547997208145,
+            "openai_gpt54mini": 0.1171506742160959,
+            "qwen3max": 0.12128604725104639
+          }
+        },
+        "50": {
+          "by_attitude": {
+            "Aggressive": 0.023410605616836434,
+            "Cooperative": 0.48808971822778974,
+            "Neutral": 0.48849967615537476
+          },
+          "by_model": {
+            "anthropic_sonnet46": 0.11387370646475915,
+            "deepseek_v4pro": 0.11498648883847173,
+            "gemini_25_flash": 0.12483429926423943,
+            "gemini_31_pro": 0.14878830432223464,
+            "glm_51": 0.12723284702385088,
+            "kimi_k25": 0.12560910178075768,
+            "openai_gpt54mini": 0.11984106768788945,
+            "qwen3max": 0.12483418461779774
+          }
+        },
+        "100": {
+          "by_attitude": {
+            "Aggressive": 0.020427891598752013,
+            "Cooperative": 0.4858000802591226,
+            "Neutral": 0.4937720281421256
+          },
+          "by_model": {
+            "anthropic_sonnet46": 0.10651091392177507,
+            "deepseek_v4pro": 0.11535249939010393,
+            "gemini_25_flash": 0.12563954200432192,
+            "gemini_31_pro": 0.15176027536672224,
+            "glm_51": 0.1272473171415342,
+            "kimi_k25": 0.12723594984535339,
+            "openai_gpt54mini": 0.12061396033138556,
+            "qwen3max": 0.1256395419988042
+          }
+        },
+        "500": {
+          "by_attitude": {
+            "Aggressive": 0.014825489798080578,
+            "Cooperative": 0.4744746099244902,
+            "Neutral": 0.5106999002774286
+          },
+          "by_model": {
+            "anthropic_sonnet46": 0.07696657512313533,
+            "deepseek_v4pro": 0.11520273226268049,
+            "gemini_25_flash": 0.12368688331651223,
+            "gemini_31_pro": 0.17716864848793173,
+            "glm_51": 0.1318585789326704,
+            "kimi_k25": 0.13269029057670528,
+            "openai_gpt54mini": 0.11873940798385174,
+            "qwen3max": 0.12368688331651223
+          }
+        },
+        "1000": {
+          "by_attitude": {
+            "Aggressive": 0.012642701939803009,
+            "Cooperative": 0.4735099009751224,
+            "Neutral": 0.5138473970850738
+          },
+          "by_model": {
+            "anthropic_sonnet46": 0.06701290914113961,
+            "deepseek_v4pro": 0.1108662318581838,
+            "gemini_25_flash": 0.11532067089593118,
+            "gemini_31_pro": 0.21145561911026453,
+            "glm_51": 0.13452086896939922,
+            "kimi_k25": 0.13479518506905572,
+            "openai_gpt54mini": 0.11070784406009393,
+            "qwen3max": 0.11532067089593118
+          }
+        },
+        "5000": {
+          "by_attitude": {
+            "Aggressive": 0.02891096167214162,
+            "Cooperative": 0.48171296555200793,
+            "Neutral": 0.4893760727758494
+          },
+          "by_model": {
+            "anthropic_sonnet46": 0.052715957458738694,
+            "deepseek_v4pro": 0.06803481638485788,
+            "gemini_25_flash": 0.0403965483117902,
+            "gemini_31_pro": 0.47813929926473103,
+            "glm_51": 0.14007148644018874,
+            "kimi_k25": 0.14146465744858355,
+            "openai_gpt54mini": 0.03878068637931859,
+            "qwen3max": 0.0403965483117902
+          }
+        }
+      },
+      "final_mean_payoff": 2.9985657275496855,
+      "final_top_identities": [
+        {
+          "id": "gemini_31_pro/default/Aggressive_4",
+          "share": 0.028060557327773013
+        },
+        {
+          "id": "kimi_k25/default/Neutral_8",
+          "share": 0.010101800637998225
+        },
+        {
+          "id": "anthropic_sonnet46/default/Neutral_12",
+          "share": 0.009152155798006429
+        },
+        {
+          "id": "glm_51/default/Neutral_23",
+          "share": 0.009152155798006429
+        },
+        {
+          "id": "kimi_k25/default/Cooperative_11",
+          "share": 0.009152155798006429
+        },
+        {
+          "id": "kimi_k25/default/Cooperative_13",
+          "share": 0.009152155798006429
+        },
+        {
+          "id": "glm_51/default/Neutral_24",
+          "share": 0.009152155798006429
+        },
+        {
+          "id": "glm_51/default/Neutral_4",
+          "share": 0.009152155798006429
+        },
+        {
+          "id": "glm_51/default/Cooperative_16",
+          "share": 0.009152155798006429
+        },
+        {
+          "id": "glm_51/default/Cooperative_19",
+          "share": 0.009152155798006429
+        }
+      ]
+    }
+  }
+}

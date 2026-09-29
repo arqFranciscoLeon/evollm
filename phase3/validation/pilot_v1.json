@@ -1,0 +1,1671 @@
+{
+  "all_pass": true,
+  "axelrod": "4.14.0",
+  "candidates": [
+    {
+      "candidate_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "finish_reason": "stop",
+      "manual_review": "Stateless branches inspected against prose before execution; no repair applied.",
+      "prose_sha256": "dca083675acccb58cdffa914d809ca2cb836ad69efd4c3b84422e68c50a24c76",
+      "request_started_at": "2026-09-13T23:31:26.291977+00:00",
+      "response_finished_at": "2026-09-13T23:31:28.740322+00:00",
+      "response_sha256": "3b33348862a02722153d7c000f8c1efe43f8fb565853f3aa8ca53c270738e19c",
+      "runtime_matches": [
+        {
+          "opponent": "Cooperator",
+          "pass": true,
+          "seed": 1017994597,
+          "turns": 1000
+        },
+        {
+          "opponent": "Defector",
+          "pass": true,
+          "seed": 2120808237,
+          "turns": 1000
+        },
+        {
+          "opponent": "Random",
+          "pass": true,
+          "seed": 1270720689,
+          "turns": 1000
+        },
+        {
+          "opponent": "TitForTat",
+          "pass": true,
+          "seed": 1665068959,
+          "turns": 1000
+        },
+        {
+          "opponent": "Grudger",
+          "pass": true,
+          "seed": 1145280124,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerDDC",
+          "pass": true,
+          "seed": 1722657930,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerCCD",
+          "pass": true,
+          "seed": 1294052501,
+          "turns": 1000
+        },
+        {
+          "opponent": "GoByMajority",
+          "pass": true,
+          "seed": 2076527862,
+          "turns": 1000
+        },
+        {
+          "opponent": "SuspiciousTitForTat",
+          "pass": true,
+          "seed": 1147872972,
+          "turns": 1000
+        },
+        {
+          "opponent": "Prober",
+          "pass": true,
+          "seed": 838767754,
+          "turns": 1000
+        },
+        {
+          "opponent": "WinStayLoseShift",
+          "pass": true,
+          "seed": 27045483,
+          "turns": 1000
+        }
+      ],
+      "semantic_cases": [
+        {
+          "actual": "D",
+          "case": "opening",
+          "expected": "D",
+          "pass": true,
+          "round": 1
+        },
+        {
+          "actual": "D",
+          "case": "after_C",
+          "expected": "D",
+          "pass": true,
+          "round": 2
+        },
+        {
+          "actual": "D",
+          "case": "after_D",
+          "expected": "D",
+          "pass": true,
+          "round": 2
+        },
+        {
+          "actual": "D",
+          "case": "last_round",
+          "expected": "D",
+          "pass": true,
+          "round": 1000
+        }
+      ],
+      "served_model": "gpt-5.4-mini-2026-03-17",
+      "strategy_id": "anthropic_sonnet46/default/Aggressive_11",
+      "usage": {
+        "completion_tokens": 25,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens": 863,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 888
+      }
+    },
+    {
+      "candidate_sha256": "4b605148e4191426632553861bf7ca9ce476346c7731a808f1220048451e866e",
+      "finish_reason": "stop",
+      "manual_review": "Stateless branches inspected against prose before execution; no repair applied.",
+      "prose_sha256": "ce89ffb38351062a8bcca7a62865b702bbe2b1b1f6b09112bfb6b755ab7455e1",
+      "request_started_at": "2026-09-13T23:31:28.744137+00:00",
+      "response_finished_at": "2026-09-13T23:31:30.103040+00:00",
+      "response_sha256": "6e4f14d3e4bd997f112ece0c71b899227e6222773e4f46e1b09e7ea242f75de4",
+      "runtime_matches": [
+        {
+          "opponent": "Cooperator",
+          "pass": true,
+          "seed": 1874097447,
+          "turns": 1000
+        },
+        {
+          "opponent": "Defector",
+          "pass": true,
+          "seed": 2121730171,
+          "turns": 1000
+        },
+        {
+          "opponent": "Random",
+          "pass": true,
+          "seed": 583958293,
+          "turns": 1000
+        },
+        {
+          "opponent": "TitForTat",
+          "pass": true,
+          "seed": 1754388943,
+          "turns": 1000
+        },
+        {
+          "opponent": "Grudger",
+          "pass": true,
+          "seed": 623136118,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerDDC",
+          "pass": true,
+          "seed": 2127680874,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerCCD",
+          "pass": true,
+          "seed": 2036614317,
+          "turns": 1000
+        },
+        {
+          "opponent": "GoByMajority",
+          "pass": true,
+          "seed": 282151375,
+          "turns": 1000
+        },
+        {
+          "opponent": "SuspiciousTitForTat",
+          "pass": true,
+          "seed": 1139523021,
+          "turns": 1000
+        },
+        {
+          "opponent": "Prober",
+          "pass": true,
+          "seed": 1881654857,
+          "turns": 1000
+        },
+        {
+          "opponent": "WinStayLoseShift",
+          "pass": true,
+          "seed": 1335414598,
+          "turns": 1000
+        }
+      ],
+      "semantic_cases": [
+        {
+          "actual": "C",
+          "case": "opening",
+          "expected": "C",
+          "pass": true,
+          "round": 1
+        },
+        {
+          "actual": "C",
+          "case": "after_C",
+          "expected": "C",
+          "pass": true,
+          "round": 2
+        },
+        {
+          "actual": "D",
+          "case": "after_D",
+          "expected": "D",
+          "pass": true,
+          "round": 2
+        },
+        {
+          "actual": "C",
+          "case": "forgiveness",
+          "expected": "C",
+          "pass": true,
+          "round": 3
+        },
+        {
+          "actual": "C",
+          "case": "round990",
+          "expected": "C",
+          "pass": true,
+          "round": 990
+        },
+        {
+          "actual": "D",
+          "case": "round991",
+          "expected": "D",
+          "pass": true,
+          "round": 991
+        },
+        {
+          "actual": "D",
+          "case": "round1000",
+          "expected": "D",
+          "pass": true,
+          "round": 1000
+        }
+      ],
+      "served_model": "gpt-5.4-mini-2026-03-17",
+      "strategy_id": "anthropic_sonnet46/default/Cooperative_2",
+      "usage": {
+        "completion_tokens": 70,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens": 718,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 788
+      }
+    },
+    {
+      "candidate_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e",
+      "finish_reason": "stop",
+      "manual_review": "Stateless branches inspected against prose before execution; no repair applied.",
+      "prose_sha256": "b3d429b384736ebe14aa85628c21edd2442377a98e0701f441e3a2ef6299ffdc",
+      "request_started_at": "2026-09-13T23:31:30.109203+00:00",
+      "response_finished_at": "2026-09-13T23:31:31.332341+00:00",
+      "response_sha256": "79d714fdbd5d8321b59c2038f01f665c6f5e35d43d75dcd1eaa5eebdff1784d4",
+      "runtime_matches": [
+        {
+          "opponent": "Cooperator",
+          "pass": true,
+          "seed": 1550897,
+          "turns": 1000
+        },
+        {
+          "opponent": "Defector",
+          "pass": true,
+          "seed": 447389087,
+          "turns": 1000
+        },
+        {
+          "opponent": "Random",
+          "pass": true,
+          "seed": 117202239,
+          "turns": 1000
+        },
+        {
+          "opponent": "TitForTat",
+          "pass": true,
+          "seed": 1334963292,
+          "turns": 1000
+        },
+        {
+          "opponent": "Grudger",
+          "pass": true,
+          "seed": 34171667,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerDDC",
+          "pass": true,
+          "seed": 1191537872,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerCCD",
+          "pass": true,
+          "seed": 1421370040,
+          "turns": 1000
+        },
+        {
+          "opponent": "GoByMajority",
+          "pass": true,
+          "seed": 812872261,
+          "turns": 1000
+        },
+        {
+          "opponent": "SuspiciousTitForTat",
+          "pass": true,
+          "seed": 710211578,
+          "turns": 1000
+        },
+        {
+          "opponent": "Prober",
+          "pass": true,
+          "seed": 780214964,
+          "turns": 1000
+        },
+        {
+          "opponent": "WinStayLoseShift",
+          "pass": true,
+          "seed": 1137202117,
+          "turns": 1000
+        }
+      ],
+      "semantic_cases": [
+        {
+          "actual": "C",
+          "case": "opening",
+          "expected": "C",
+          "pass": true,
+          "round": 1
+        },
+        {
+          "actual": "C",
+          "case": "after_C",
+          "expected": "C",
+          "pass": true,
+          "round": 2
+        },
+        {
+          "actual": "D",
+          "case": "after_D",
+          "expected": "D",
+          "pass": true,
+          "round": 2
+        },
+        {
+          "actual": "C",
+          "case": "forgiveness",
+          "expected": "C",
+          "pass": true,
+          "round": 3
+        },
+        {
+          "actual": "C",
+          "case": "round999",
+          "expected": "C",
+          "pass": true,
+          "round": 999
+        },
+        {
+          "actual": "D",
+          "case": "round1000",
+          "expected": "D",
+          "pass": true,
+          "round": 1000
+        }
+      ],
+      "served_model": "gpt-5.4-mini-2026-03-17",
+      "strategy_id": "anthropic_sonnet46/default/Neutral_6",
+      "usage": {
+        "completion_tokens": 56,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens": 675,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 731
+      }
+    },
+    {
+      "candidate_sha256": "66ebcebeaccb1bc3861bbefe2ba4a8f0a121e5f717d9506a531434403e0cce81",
+      "finish_reason": "stop",
+      "manual_review": "Stateless branches inspected against prose before execution; no repair applied.",
+      "prose_sha256": "e38a61053d8910514b5303ee75e069e2331f39cd62803919af1cd76535c11bd4",
+      "request_started_at": "2026-09-13T23:31:31.335942+00:00",
+      "response_finished_at": "2026-09-13T23:31:32.438656+00:00",
+      "response_sha256": "2e6e6331b1c6cf7e4e59d80bcc40f137457c043615234edf9cdc7a6aefacc179",
+      "runtime_matches": [
+        {
+          "opponent": "Cooperator",
+          "pass": true,
+          "seed": 1889545561,
+          "turns": 1000
+        },
+        {
+          "opponent": "Defector",
+          "pass": true,
+          "seed": 142400437,
+          "turns": 1000
+        },
+        {
+          "opponent": "Random",
+          "pass": true,
+          "seed": 2103804946,
+          "turns": 1000
+        },
+        {
+          "opponent": "TitForTat",
+          "pass": true,
+          "seed": 1610131667,
+          "turns": 1000
+        },
+        {
+          "opponent": "Grudger",
+          "pass": true,
+          "seed": 343982656,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerDDC",
+          "pass": true,
+          "seed": 1111663406,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerCCD",
+          "pass": true,
+          "seed": 1897562027,
+          "turns": 1000
+        },
+        {
+          "opponent": "GoByMajority",
+          "pass": true,
+          "seed": 1848591546,
+          "turns": 1000
+        },
+        {
+          "opponent": "SuspiciousTitForTat",
+          "pass": true,
+          "seed": 2113970444,
+          "turns": 1000
+        },
+        {
+          "opponent": "Prober",
+          "pass": true,
+          "seed": 520913385,
+          "turns": 1000
+        },
+        {
+          "opponent": "WinStayLoseShift",
+          "pass": true,
+          "seed": 942897426,
+          "turns": 1000
+        }
+      ],
+      "semantic_cases": [
+        {
+          "actual": "D",
+          "case": "opening",
+          "expected": "D",
+          "pass": true,
+          "round": 1
+        },
+        {
+          "actual": "C",
+          "case": "after_C",
+          "expected": "C",
+          "pass": true,
+          "round": 2
+        },
+        {
+          "actual": "D",
+          "case": "after_D",
+          "expected": "D",
+          "pass": true,
+          "round": 2
+        },
+        {
+          "actual": "D",
+          "case": "no_forgiveness",
+          "expected": "D",
+          "pass": true,
+          "round": 3
+        },
+        {
+          "actual": "C",
+          "case": "last_round_C",
+          "expected": "C",
+          "pass": true,
+          "round": 1000
+        }
+      ],
+      "served_model": "gpt-5.4-mini-2026-03-17",
+      "strategy_id": "gemini_25_flash/default/Aggressive_2",
+      "usage": {
+        "completion_tokens": 55,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens": 760,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 815
+      }
+    },
+    {
+      "candidate_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154",
+      "finish_reason": "stop",
+      "manual_review": "Stateless branches inspected against prose before execution; no repair applied.",
+      "prose_sha256": "f2a3f10ca8d1951a7be17eca9407cfc6e79b0006b9a1d5a2e9bf0f70d50fa186",
+      "request_started_at": "2026-09-13T23:31:32.445681+00:00",
+      "response_finished_at": "2026-09-13T23:31:33.836329+00:00",
+      "response_sha256": "9744ece6b2b55567bb0548b2c0272a493ad88ee162e2259a3bfe31b79f6e5b33",
+      "runtime_matches": [
+        {
+          "opponent": "Cooperator",
+          "pass": true,
+          "seed": 1203181173,
+          "turns": 1000
+        },
+        {
+          "opponent": "Defector",
+          "pass": true,
+          "seed": 1642292574,
+          "turns": 1000
+        },
+        {
+          "opponent": "Random",
+          "pass": true,
+          "seed": 931479371,
+          "turns": 1000
+        },
+        {
+          "opponent": "TitForTat",
+          "pass": true,
+          "seed": 1155568512,
+          "turns": 1000
+        },
+        {
+          "opponent": "Grudger",
+          "pass": true,
+          "seed": 1086885011,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerDDC",
+          "pass": true,
+          "seed": 2071616180,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerCCD",
+          "pass": true,
+          "seed": 1524707780,
+          "turns": 1000
+        },
+        {
+          "opponent": "GoByMajority",
+          "pass": true,
+          "seed": 3972019,
+          "turns": 1000
+        },
+        {
+          "opponent": "SuspiciousTitForTat",
+          "pass": true,
+          "seed": 1953439864,
+          "turns": 1000
+        },
+        {
+          "opponent": "Prober",
+          "pass": true,
+          "seed": 1411781,
+          "turns": 1000
+        },
+        {
+          "opponent": "WinStayLoseShift",
+          "pass": true,
+          "seed": 1266378540,
+          "turns": 1000
+        }
+      ],
+      "semantic_cases": [
+        {
+          "actual": "C",
+          "case": "opening",
+          "expected": "C",
+          "pass": true,
+          "round": 1
+        },
+        {
+          "actual": "C",
+          "case": "after_C",
+          "expected": "C",
+          "pass": true,
+          "round": 2
+        },
+        {
+          "actual": "D",
+          "case": "after_D",
+          "expected": "D",
+          "pass": true,
+          "round": 2
+        },
+        {
+          "actual": "C",
+          "case": "forgiveness",
+          "expected": "C",
+          "pass": true,
+          "round": 3
+        },
+        {
+          "actual": "C",
+          "case": "last_round_C",
+          "expected": "C",
+          "pass": true,
+          "round": 1000
+        },
+        {
+          "actual": "D",
+          "case": "last_round_D",
+          "expected": "D",
+          "pass": true,
+          "round": 1000
+        }
+      ],
+      "served_model": "gpt-5.4-mini-2026-03-17",
+      "strategy_id": "gemini_25_flash/default/Cooperative_5",
+      "usage": {
+        "completion_tokens": 58,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens": 751,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 809
+      }
+    },
+    {
+      "candidate_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159",
+      "finish_reason": "stop",
+      "manual_review": "Stateless branches inspected against prose before execution; no repair applied.",
+      "prose_sha256": "36eae84c41cb2d58866e30fd65848b61d59739664704ec8ec0eb426658c9ec84",
+      "request_started_at": "2026-09-13T23:31:33.841778+00:00",
+      "response_finished_at": "2026-09-13T23:31:34.614361+00:00",
+      "response_sha256": "168f4d4bcb8517ab26b0b176d6d9a01d8d610c62e9501500fc946b2d9c62040f",
+      "runtime_matches": [
+        {
+          "opponent": "Cooperator",
+          "pass": true,
+          "seed": 867921586,
+          "turns": 1000
+        },
+        {
+          "opponent": "Defector",
+          "pass": true,
+          "seed": 1219400353,
+          "turns": 1000
+        },
+        {
+          "opponent": "Random",
+          "pass": true,
+          "seed": 1075478896,
+          "turns": 1000
+        },
+        {
+          "opponent": "TitForTat",
+          "pass": true,
+          "seed": 136480342,
+          "turns": 1000
+        },
+        {
+          "opponent": "Grudger",
+          "pass": true,
+          "seed": 2142518842,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerDDC",
+          "pass": true,
+          "seed": 345064598,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerCCD",
+          "pass": true,
+          "seed": 1108217647,
+          "turns": 1000
+        },
+        {
+          "opponent": "GoByMajority",
+          "pass": true,
+          "seed": 1032404633,
+          "turns": 1000
+        },
+        {
+          "opponent": "SuspiciousTitForTat",
+          "pass": true,
+          "seed": 2035340184,
+          "turns": 1000
+        },
+        {
+          "opponent": "Prober",
+          "pass": true,
+          "seed": 1057673549,
+          "turns": 1000
+        },
+        {
+          "opponent": "WinStayLoseShift",
+          "pass": true,
+          "seed": 1132386080,
+          "turns": 1000
+        }
+      ],
+      "semantic_cases": [
+        {
+          "actual": "C",
+          "case": "opening",
+          "expected": "C",
+          "pass": true,
+          "round": 1
+        },
+        {
+          "actual": "C",
+          "case": "after_C",
+          "expected": "C",
+          "pass": true,
+          "round": 2
+        },
+        {
+          "actual": "D",
+          "case": "after_D",
+          "expected": "D",
+          "pass": true,
+          "round": 2
+        },
+        {
+          "actual": "C",
+          "case": "forgiveness",
+          "expected": "C",
+          "pass": true,
+          "round": 3
+        },
+        {
+          "actual": "C",
+          "case": "last_round_C",
+          "expected": "C",
+          "pass": true,
+          "round": 1000
+        },
+        {
+          "actual": "D",
+          "case": "last_round_D",
+          "expected": "D",
+          "pass": true,
+          "round": 1000
+        }
+      ],
+      "served_model": "gpt-5.4-mini-2026-03-17",
+      "strategy_id": "gemini_25_flash/default/Neutral_1",
+      "usage": {
+        "completion_tokens": 39,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens": 718,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 757
+      }
+    },
+    {
+      "candidate_sha256": "bd18152db91cd55b95c525d507f13c1e1e224ff17764d6ea8b0fd99c9162a1db",
+      "finish_reason": "stop",
+      "manual_review": "Stateless branches inspected against prose before execution; no repair applied.",
+      "prose_sha256": "7ceb218a3e72ce2f25820e5fca6a821692bced8b57c7f5b39d7660099a863672",
+      "request_started_at": "2026-09-13T23:31:34.618364+00:00",
+      "response_finished_at": "2026-09-13T23:31:35.702157+00:00",
+      "response_sha256": "e67dc89e2c19f0c863413570c9d41a8a886c2d37ffaee798daafec89fa73a4ba",
+      "runtime_matches": [
+        {
+          "opponent": "Cooperator",
+          "pass": true,
+          "seed": 1860566649,
+          "turns": 1000
+        },
+        {
+          "opponent": "Defector",
+          "pass": true,
+          "seed": 1191156206,
+          "turns": 1000
+        },
+        {
+          "opponent": "Random",
+          "pass": true,
+          "seed": 2092767480,
+          "turns": 1000
+        },
+        {
+          "opponent": "TitForTat",
+          "pass": true,
+          "seed": 1758795062,
+          "turns": 1000
+        },
+        {
+          "opponent": "Grudger",
+          "pass": true,
+          "seed": 46454522,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerDDC",
+          "pass": true,
+          "seed": 1517626847,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerCCD",
+          "pass": true,
+          "seed": 701862179,
+          "turns": 1000
+        },
+        {
+          "opponent": "GoByMajority",
+          "pass": true,
+          "seed": 2131156457,
+          "turns": 1000
+        },
+        {
+          "opponent": "SuspiciousTitForTat",
+          "pass": true,
+          "seed": 2072642921,
+          "turns": 1000
+        },
+        {
+          "opponent": "Prober",
+          "pass": true,
+          "seed": 462567029,
+          "turns": 1000
+        },
+        {
+          "opponent": "WinStayLoseShift",
+          "pass": true,
+          "seed": 935219741,
+          "turns": 1000
+        }
+      ],
+      "semantic_cases": [
+        {
+          "actual": "C",
+          "case": "opening",
+          "expected": "C",
+          "pass": true,
+          "round": 1
+        },
+        {
+          "actual": "C",
+          "case": "one_C",
+          "expected": "C",
+          "pass": true,
+          "round": 2
+        },
+        {
+          "actual": "C",
+          "case": "two_C",
+          "expected": "C",
+          "pass": true,
+          "round": 3
+        },
+        {
+          "actual": "D",
+          "case": "three_C",
+          "expected": "D",
+          "pass": true,
+          "round": 4
+        },
+        {
+          "actual": "D",
+          "case": "after_D",
+          "expected": "D",
+          "pass": true,
+          "round": 2
+        },
+        {
+          "actual": "C",
+          "case": "reset_streak",
+          "expected": "C",
+          "pass": true,
+          "round": 4
+        },
+        {
+          "actual": "C",
+          "case": "round990",
+          "expected": "C",
+          "pass": true,
+          "round": 990
+        },
+        {
+          "actual": "D",
+          "case": "round991",
+          "expected": "D",
+          "pass": true,
+          "round": 991
+        }
+      ],
+      "served_model": "gpt-5.4-mini-2026-03-17",
+      "strategy_id": "gemini_31_pro/default/Aggressive_10",
+      "usage": {
+        "completion_tokens": 162,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens": 771,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 933
+      }
+    },
+    {
+      "candidate_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e",
+      "finish_reason": "stop",
+      "manual_review": "Stateless branches inspected against prose before execution; no repair applied.",
+      "prose_sha256": "61131a65a96360ca0eb800b1eb1fd16d8b126e130f07ad03ad5a7332b4356749",
+      "request_started_at": "2026-09-13T23:31:35.706485+00:00",
+      "response_finished_at": "2026-09-13T23:31:36.555151+00:00",
+      "response_sha256": "680db6ac2b8e2c12b2ccccae158a9a6b2d148ec3f2000a7457a851d9cbb62382",
+      "runtime_matches": [
+        {
+          "opponent": "Cooperator",
+          "pass": true,
+          "seed": 1527271093,
+          "turns": 1000
+        },
+        {
+          "opponent": "Defector",
+          "pass": true,
+          "seed": 707269198,
+          "turns": 1000
+        },
+        {
+          "opponent": "Random",
+          "pass": true,
+          "seed": 1483152221,
+          "turns": 1000
+        },
+        {
+          "opponent": "TitForTat",
+          "pass": true,
+          "seed": 802463444,
+          "turns": 1000
+        },
+        {
+          "opponent": "Grudger",
+          "pass": true,
+          "seed": 743190304,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerDDC",
+          "pass": true,
+          "seed": 292112214,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerCCD",
+          "pass": true,
+          "seed": 620212791,
+          "turns": 1000
+        },
+        {
+          "opponent": "GoByMajority",
+          "pass": true,
+          "seed": 347921357,
+          "turns": 1000
+        },
+        {
+          "opponent": "SuspiciousTitForTat",
+          "pass": true,
+          "seed": 153158983,
+          "turns": 1000
+        },
+        {
+          "opponent": "Prober",
+          "pass": true,
+          "seed": 1192883734,
+          "turns": 1000
+        },
+        {
+          "opponent": "WinStayLoseShift",
+          "pass": true,
+          "seed": 1872640674,
+          "turns": 1000
+        }
+      ],
+      "semantic_cases": [
+        {
+          "actual": "C",
+          "case": "opening",
+          "expected": "C",
+          "pass": true,
+          "round": 1
+        },
+        {
+          "actual": "C",
+          "case": "after_C",
+          "expected": "C",
+          "pass": true,
+          "round": 2
+        },
+        {
+          "actual": "D",
+          "case": "after_D",
+          "expected": "D",
+          "pass": true,
+          "round": 2
+        },
+        {
+          "actual": "C",
+          "case": "forgiveness",
+          "expected": "C",
+          "pass": true,
+          "round": 3
+        },
+        {
+          "actual": "C",
+          "case": "round999",
+          "expected": "C",
+          "pass": true,
+          "round": 999
+        },
+        {
+          "actual": "D",
+          "case": "round1000",
+          "expected": "D",
+          "pass": true,
+          "round": 1000
+        }
+      ],
+      "served_model": "gpt-5.4-mini-2026-03-17",
+      "strategy_id": "gemini_31_pro/default/Cooperative_3",
+      "usage": {
+        "completion_tokens": 56,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens": 733,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 789
+      }
+    },
+    {
+      "candidate_sha256": "b27f7ae107392fe78b86cabf64ac650514fd22e9c03828ba676ec5a3adeaa8f4",
+      "finish_reason": "stop",
+      "manual_review": "Stateless branches inspected against prose before execution; no repair applied.",
+      "prose_sha256": "4f7ed40cd8977ffea6277c9d924f46433b1a7ab322f5e69a5356aaa9b281cb18",
+      "request_started_at": "2026-09-13T23:31:36.562577+00:00",
+      "response_finished_at": "2026-09-13T23:31:37.386965+00:00",
+      "response_sha256": "e0d4eadba0e48cd521f165874d73933ce09f9e8b14f2959ed0e06645ea4d7b7a",
+      "runtime_matches": [
+        {
+          "opponent": "Cooperator",
+          "pass": true,
+          "seed": 1967020078,
+          "turns": 1000
+        },
+        {
+          "opponent": "Defector",
+          "pass": true,
+          "seed": 1713308822,
+          "turns": 1000
+        },
+        {
+          "opponent": "Random",
+          "pass": true,
+          "seed": 2002738118,
+          "turns": 1000
+        },
+        {
+          "opponent": "TitForTat",
+          "pass": true,
+          "seed": 56781955,
+          "turns": 1000
+        },
+        {
+          "opponent": "Grudger",
+          "pass": true,
+          "seed": 703358506,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerDDC",
+          "pass": true,
+          "seed": 920579881,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerCCD",
+          "pass": true,
+          "seed": 1758361857,
+          "turns": 1000
+        },
+        {
+          "opponent": "GoByMajority",
+          "pass": true,
+          "seed": 1506892746,
+          "turns": 1000
+        },
+        {
+          "opponent": "SuspiciousTitForTat",
+          "pass": true,
+          "seed": 305067141,
+          "turns": 1000
+        },
+        {
+          "opponent": "Prober",
+          "pass": true,
+          "seed": 1978808615,
+          "turns": 1000
+        },
+        {
+          "opponent": "WinStayLoseShift",
+          "pass": true,
+          "seed": 376634421,
+          "turns": 1000
+        }
+      ],
+      "semantic_cases": [
+        {
+          "actual": "C",
+          "case": "opening",
+          "expected": "C",
+          "pass": true,
+          "round": 1
+        },
+        {
+          "actual": "C",
+          "case": "after_C",
+          "expected": "C",
+          "pass": true,
+          "round": 2
+        },
+        {
+          "actual": "D",
+          "case": "after_D",
+          "expected": "D",
+          "pass": true,
+          "round": 2
+        },
+        {
+          "actual": "C",
+          "case": "forgiveness",
+          "expected": "C",
+          "pass": true,
+          "round": 3
+        },
+        {
+          "actual": "C",
+          "case": "round999",
+          "expected": "C",
+          "pass": true,
+          "round": 999
+        },
+        {
+          "actual": "D",
+          "case": "round1000",
+          "expected": "D",
+          "pass": true,
+          "round": 1000
+        }
+      ],
+      "served_model": "gpt-5.4-mini-2026-03-17",
+      "strategy_id": "gemini_31_pro/default/Neutral_9",
+      "usage": {
+        "completion_tokens": 55,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens": 705,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 760
+      }
+    },
+    {
+      "candidate_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "finish_reason": "stop",
+      "manual_review": "Stateless branches inspected against prose before execution; no repair applied.",
+      "prose_sha256": "f537a460aac10c51332da3b130df327506102d98a3fd96166689bba9e0201e04",
+      "request_started_at": "2026-09-13T23:31:37.392524+00:00",
+      "response_finished_at": "2026-09-13T23:31:38.232629+00:00",
+      "response_sha256": "cda738cbd96a385d41aa341cfc20c004b950e09a972ca0c7dffbb1245bee0aaf",
+      "runtime_matches": [
+        {
+          "opponent": "Cooperator",
+          "pass": true,
+          "seed": 1931478448,
+          "turns": 1000
+        },
+        {
+          "opponent": "Defector",
+          "pass": true,
+          "seed": 1683199058,
+          "turns": 1000
+        },
+        {
+          "opponent": "Random",
+          "pass": true,
+          "seed": 1609096452,
+          "turns": 1000
+        },
+        {
+          "opponent": "TitForTat",
+          "pass": true,
+          "seed": 453307178,
+          "turns": 1000
+        },
+        {
+          "opponent": "Grudger",
+          "pass": true,
+          "seed": 449622939,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerDDC",
+          "pass": true,
+          "seed": 283319663,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerCCD",
+          "pass": true,
+          "seed": 1469020854,
+          "turns": 1000
+        },
+        {
+          "opponent": "GoByMajority",
+          "pass": true,
+          "seed": 541685162,
+          "turns": 1000
+        },
+        {
+          "opponent": "SuspiciousTitForTat",
+          "pass": true,
+          "seed": 1667843741,
+          "turns": 1000
+        },
+        {
+          "opponent": "Prober",
+          "pass": true,
+          "seed": 1717446041,
+          "turns": 1000
+        },
+        {
+          "opponent": "WinStayLoseShift",
+          "pass": true,
+          "seed": 1407866972,
+          "turns": 1000
+        }
+      ],
+      "semantic_cases": [
+        {
+          "actual": "D",
+          "case": "opening",
+          "expected": "D",
+          "pass": true,
+          "round": 1
+        },
+        {
+          "actual": "D",
+          "case": "after_C",
+          "expected": "D",
+          "pass": true,
+          "round": 2
+        },
+        {
+          "actual": "D",
+          "case": "after_D",
+          "expected": "D",
+          "pass": true,
+          "round": 2
+        },
+        {
+          "actual": "D",
+          "case": "last_round",
+          "expected": "D",
+          "pass": true,
+          "round": 1000
+        }
+      ],
+      "served_model": "gpt-5.4-mini-2026-03-17",
+      "strategy_id": "openai_gpt54mini/default/Aggressive_9",
+      "usage": {
+        "completion_tokens": 31,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens": 735,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 766
+      }
+    },
+    {
+      "candidate_sha256": "0e02b2eabdd42c9457198d4f0500933a996e52dc958e392f2459608d7788d9e6",
+      "finish_reason": "stop",
+      "manual_review": "Stateless branches inspected against prose before execution; no repair applied.",
+      "prose_sha256": "371d3ffbed1d318c7a9a79fe17bab0637048c4b8d1a3944c8da0e91c663522dc",
+      "request_started_at": "2026-09-13T23:31:38.237702+00:00",
+      "response_finished_at": "2026-09-13T23:31:39.995637+00:00",
+      "response_sha256": "335240220946ac63e92a7d6ca75f16d7989260864e7342072d870d95c70c88f8",
+      "runtime_matches": [
+        {
+          "opponent": "Cooperator",
+          "pass": true,
+          "seed": 746340084,
+          "turns": 1000
+        },
+        {
+          "opponent": "Defector",
+          "pass": true,
+          "seed": 903539631,
+          "turns": 1000
+        },
+        {
+          "opponent": "Random",
+          "pass": true,
+          "seed": 388681946,
+          "turns": 1000
+        },
+        {
+          "opponent": "TitForTat",
+          "pass": true,
+          "seed": 128768388,
+          "turns": 1000
+        },
+        {
+          "opponent": "Grudger",
+          "pass": true,
+          "seed": 330972855,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerDDC",
+          "pass": true,
+          "seed": 1310823309,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerCCD",
+          "pass": true,
+          "seed": 1482608553,
+          "turns": 1000
+        },
+        {
+          "opponent": "GoByMajority",
+          "pass": true,
+          "seed": 904345597,
+          "turns": 1000
+        },
+        {
+          "opponent": "SuspiciousTitForTat",
+          "pass": true,
+          "seed": 1393470561,
+          "turns": 1000
+        },
+        {
+          "opponent": "Prober",
+          "pass": true,
+          "seed": 1871623582,
+          "turns": 1000
+        },
+        {
+          "opponent": "WinStayLoseShift",
+          "pass": true,
+          "seed": 257414805,
+          "turns": 1000
+        }
+      ],
+      "semantic_cases": [
+        {
+          "actual": "C",
+          "case": "opening",
+          "expected": "C",
+          "pass": true,
+          "round": 1
+        },
+        {
+          "actual": "C",
+          "case": "after_C",
+          "expected": "C",
+          "pass": true,
+          "round": 2
+        },
+        {
+          "actual": "D",
+          "case": "after_D",
+          "expected": "D",
+          "pass": true,
+          "round": 2
+        },
+        {
+          "actual": "C",
+          "case": "forgiveness",
+          "expected": "C",
+          "pass": true,
+          "round": 3
+        },
+        {
+          "actual": "C",
+          "case": "last_round_C",
+          "expected": "C",
+          "pass": true,
+          "round": 1000
+        },
+        {
+          "actual": "D",
+          "case": "last_round_D",
+          "expected": "D",
+          "pass": true,
+          "round": 1000
+        }
+      ],
+      "served_model": "gpt-5.4-mini-2026-03-17",
+      "strategy_id": "openai_gpt54mini/default/Cooperative_20",
+      "usage": {
+        "completion_tokens": 58,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens": 743,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 801
+      }
+    },
+    {
+      "candidate_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154",
+      "finish_reason": "stop",
+      "manual_review": "Stateless branches inspected against prose before execution; no repair applied.",
+      "prose_sha256": "97a82aef1a10066e867288233b5ac0e434972b2777344a90dae5aef53cd2fb87",
+      "request_started_at": "2026-09-13T23:31:39.998261+00:00",
+      "response_finished_at": "2026-09-13T23:31:41.922208+00:00",
+      "response_sha256": "aeec87f9bd24bd93eb2fbf004748e5164122bac454462c42bf3f60d0ab19e606",
+      "runtime_matches": [
+        {
+          "opponent": "Cooperator",
+          "pass": true,
+          "seed": 919521245,
+          "turns": 1000
+        },
+        {
+          "opponent": "Defector",
+          "pass": true,
+          "seed": 1545619569,
+          "turns": 1000
+        },
+        {
+          "opponent": "Random",
+          "pass": true,
+          "seed": 100710592,
+          "turns": 1000
+        },
+        {
+          "opponent": "TitForTat",
+          "pass": true,
+          "seed": 2095193793,
+          "turns": 1000
+        },
+        {
+          "opponent": "Grudger",
+          "pass": true,
+          "seed": 1676640213,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerDDC",
+          "pass": true,
+          "seed": 1477717049,
+          "turns": 1000
+        },
+        {
+          "opponent": "CyclerCCD",
+          "pass": true,
+          "seed": 1142487277,
+          "turns": 1000
+        },
+        {
+          "opponent": "GoByMajority",
+          "pass": true,
+          "seed": 236779143,
+          "turns": 1000
+        },
+        {
+          "opponent": "SuspiciousTitForTat",
+          "pass": true,
+          "seed": 1557071609,
+          "turns": 1000
+        },
+        {
+          "opponent": "Prober",
+          "pass": true,
+          "seed": 355784370,
+          "turns": 1000
+        },
+        {
+          "opponent": "WinStayLoseShift",
+          "pass": true,
+          "seed": 1224871678,
+          "turns": 1000
+        }
+      ],
+      "semantic_cases": [
+        {
+          "actual": "C",
+          "case": "opening",
+          "expected": "C",
+          "pass": true,
+          "round": 1
+        },
+        {
+          "actual": "C",
+          "case": "after_C",
+          "expected": "C",
+          "pass": true,
+          "round": 2
+        },
+        {
+          "actual": "D",
+          "case": "after_D",
+          "expected": "D",
+          "pass": true,
+          "round": 2
+        },
+        {
+          "actual": "C",
+          "case": "forgiveness",
+          "expected": "C",
+          "pass": true,
+          "round": 3
+        },
+        {
+          "actual": "C",
+          "case": "last_round_C",
+          "expected": "C",
+          "pass": true,
+          "round": 1000
+        },
+        {
+          "actual": "D",
+          "case": "last_round_D",
+          "expected": "D",
+          "pass": true,
+          "round": 1000
+        }
+      ],
+      "served_model": "gpt-5.4-mini-2026-03-17",
+      "strategy_id": "openai_gpt54mini/default/Neutral_14",
+      "usage": {
+        "completion_tokens": 58,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens": 728,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 786
+      }
+    }
+  ],
+  "limitations": [
+    "One assistant semantic review; not independent human adjudication.",
+    "70 targeted cases and 11 opponents per candidate do not prove exhaustive equivalence.",
+    "Fresh local Axelrod adapter provides first_round and action guard; stateless candidate functions are unchanged.",
+    "Cost calculated from reported tokens and documented rates; not an invoice or account statement.",
+    "The other descriptions and the mixed tournament remain unvalidated."
+  ],
+  "plan_sha256": "26d5d39a5810c838dcaaf90e078913a78251b86070bf5049b2d69a1b7c2ae233",
+  "purpose": "Pilot conversion fidelity/runtime diagnostics, not the confirmatory tournament",
+  "python": "3.12.14",
+  "summary": {
+    "cached_input_tokens": 0,
+    "candidates": 12,
+    "estimated_token_cost_usd": 0.0099285,
+    "input_tokens": 8900,
+    "output_tokens": 723,
+    "runtime_matches": 132,
+    "runtime_passed": 132,
+    "semantic_checks": 70,
+    "semantic_passed": 70
+  },
+  "validator_sha256": "a729966cd8a445a81fb24b71f4d51f0397e6ff8d1404e523c2268029c62abec9",
+  "vector_sha256": "52353b7d012264f842feb56225d6f179f480f1a7b32823dfd3896acdfae373db"
+}

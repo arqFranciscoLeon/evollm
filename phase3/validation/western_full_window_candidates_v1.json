@@ -1,0 +1,2207 @@
+{
+  "candidates": [
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Aggressive_1",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\001\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\001\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Aggressive_10",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\002\\candidate.py.txt",
+      "original_sha256": "f1c44ab935952d02f051fb9de8f8d7972b7dbfd2426b50b7688413d1c2d1073b",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\002\\candidate.py.txt",
+      "selected_sha256": "f1c44ab935952d02f051fb9de8f8d7972b7dbfd2426b50b7688413d1c2d1073b"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Aggressive_11",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\003\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\003\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Aggressive_12",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\004\\candidate.py.txt",
+      "original_sha256": "29a952685ec34ebb98033acd9c12cedb4f11997446ad6360b2b278a213318585",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\004\\candidate.py.txt",
+      "selected_sha256": "29a952685ec34ebb98033acd9c12cedb4f11997446ad6360b2b278a213318585"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Aggressive_13",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\005\\candidate.py.txt",
+      "original_sha256": "bbab7822eaff88a2ac38faf29787ef067b05a8bd33e16cfd6be29181852e0cf7",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\005\\candidate.py.txt",
+      "selected_sha256": "bbab7822eaff88a2ac38faf29787ef067b05a8bd33e16cfd6be29181852e0cf7"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Aggressive_14",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\006\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\006\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Aggressive_15",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\007\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\007\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Aggressive_16",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\008\\candidate.py.txt",
+      "original_sha256": "0940e4aebf664714096120ad7ef56846dee4e71401287385abcd4e824030bd66",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\008\\candidate.py.txt",
+      "selected_sha256": "0940e4aebf664714096120ad7ef56846dee4e71401287385abcd4e824030bd66"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Aggressive_17",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\009\\candidate.py.txt",
+      "original_sha256": "6ad60d6a4573d2ec7bff8f6749da99f2f3524931f8985cb4502209d17e841622",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\009\\candidate.py.txt",
+      "selected_sha256": "6ad60d6a4573d2ec7bff8f6749da99f2f3524931f8985cb4502209d17e841622"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Aggressive_18",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\010\\candidate.py.txt",
+      "original_sha256": "f1c44ab935952d02f051fb9de8f8d7972b7dbfd2426b50b7688413d1c2d1073b",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\010\\candidate.py.txt",
+      "selected_sha256": "f1c44ab935952d02f051fb9de8f8d7972b7dbfd2426b50b7688413d1c2d1073b"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Aggressive_19",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\011\\candidate.py.txt",
+      "original_sha256": "2dd1b078c4c42f50dd6df58a2c4490547716c965e193d1925bd7a01069cdb8b9",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\011\\candidate.py.txt",
+      "selected_sha256": "2dd1b078c4c42f50dd6df58a2c4490547716c965e193d1925bd7a01069cdb8b9"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Aggressive_2",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\012\\candidate.py.txt",
+      "original_sha256": "6e6c9f64a01e8fa43c05ab215bb79eaa2eef0d977e06dec885bcb681a0f30e18",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\012\\candidate.py.txt",
+      "selected_sha256": "6e6c9f64a01e8fa43c05ab215bb79eaa2eef0d977e06dec885bcb681a0f30e18"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Aggressive_20",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\013\\candidate.py.txt",
+      "original_sha256": "14efc2f4f069b47eaa977b396141b360687bac91ac03ed53bf3f7c3825748880",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\013\\candidate.py.txt",
+      "selected_sha256": "14efc2f4f069b47eaa977b396141b360687bac91ac03ed53bf3f7c3825748880"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Aggressive_21",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\014\\candidate.py.txt",
+      "original_sha256": "472fc77ce3c03b2e0293203d952896e2aba003943daa04bf16c69ab043a9df9c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\014\\candidate.py.txt",
+      "selected_sha256": "472fc77ce3c03b2e0293203d952896e2aba003943daa04bf16c69ab043a9df9c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Aggressive_22",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\015\\candidate.py.txt",
+      "original_sha256": "09fbfef5b51a73bb8b3ca214fed7900525572882a60c51e61f74f0b928a10f4c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\015\\candidate.py.txt",
+      "selected_sha256": "09fbfef5b51a73bb8b3ca214fed7900525572882a60c51e61f74f0b928a10f4c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Aggressive_23",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\016\\candidate.py.txt",
+      "original_sha256": "32653356d1496990a85b1e8f2a20bce206a44b27ce6a8af60909a6e4e3e2d196",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\016\\candidate.py.txt",
+      "selected_sha256": "32653356d1496990a85b1e8f2a20bce206a44b27ce6a8af60909a6e4e3e2d196"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Aggressive_24",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\017\\candidate.py.txt",
+      "original_sha256": "fddf4525cbd5d7a2ba0275a45d95523b72ace8941a8abc78e4b070a4e42b62eb",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\017\\candidate.py.txt",
+      "selected_sha256": "fddf4525cbd5d7a2ba0275a45d95523b72ace8941a8abc78e4b070a4e42b62eb"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Aggressive_25",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\018\\candidate.py.txt",
+      "original_sha256": "88d757e0e19d50d2f60052dbec5a231aca5161ec1d414c42797605e3da3c9dde",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\018\\candidate.py.txt",
+      "selected_sha256": "88d757e0e19d50d2f60052dbec5a231aca5161ec1d414c42797605e3da3c9dde"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Aggressive_3",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\019\\candidate.py.txt",
+      "original_sha256": "8eb58dda5b94fe68553fdd1bb1109b537ce4256a202d73a1a42a15050a1fb879",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\019\\candidate.py.txt",
+      "selected_sha256": "8eb58dda5b94fe68553fdd1bb1109b537ce4256a202d73a1a42a15050a1fb879"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Aggressive_4",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\020\\candidate.py.txt",
+      "original_sha256": "86eea91fa4803f2f9e3c1ee718fb36d95fd3abfa97bba5e05bb04bdab6668ffd",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\020\\candidate.py.txt",
+      "selected_sha256": "86eea91fa4803f2f9e3c1ee718fb36d95fd3abfa97bba5e05bb04bdab6668ffd"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Aggressive_5",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\021\\candidate.py.txt",
+      "original_sha256": "09fbfef5b51a73bb8b3ca214fed7900525572882a60c51e61f74f0b928a10f4c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\021\\candidate.py.txt",
+      "selected_sha256": "09fbfef5b51a73bb8b3ca214fed7900525572882a60c51e61f74f0b928a10f4c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Aggressive_6",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\022\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\022\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Aggressive_7",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\023\\candidate.py.txt",
+      "original_sha256": "2e2af170f33218c3226c58e704f89fe438a9a869dbfbc1c6b46be071b1e5c649",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\023\\candidate.py.txt",
+      "selected_sha256": "2e2af170f33218c3226c58e704f89fe438a9a869dbfbc1c6b46be071b1e5c649"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Aggressive_8",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\024\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\024\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Aggressive_9",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\025\\candidate.py.txt",
+      "original_sha256": "f1c44ab935952d02f051fb9de8f8d7972b7dbfd2426b50b7688413d1c2d1073b",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\025\\candidate.py.txt",
+      "selected_sha256": "f1c44ab935952d02f051fb9de8f8d7972b7dbfd2426b50b7688413d1c2d1073b"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Cooperative_1",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\026\\candidate.py.txt",
+      "original_sha256": "7541b13a09b128aaa5d98e0718c5a5f40c5649d60be46f38423d7c9e493e8684",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\026\\candidate.py.txt",
+      "selected_sha256": "7541b13a09b128aaa5d98e0718c5a5f40c5649d60be46f38423d7c9e493e8684"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Cooperative_10",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\027\\candidate.py.txt",
+      "original_sha256": "e080fe23410d872c9c15f9ed4fcf3fcadcca90b71dfd02ca7f623dcdf68a6cc0",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\027\\candidate.py.txt",
+      "selected_sha256": "e080fe23410d872c9c15f9ed4fcf3fcadcca90b71dfd02ca7f623dcdf68a6cc0"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Cooperative_11",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\028\\candidate.py.txt",
+      "original_sha256": "50b977b430c7bb2d476064306c41c8665e50607c654d0a1115860c7e3e2eeb78",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\028\\candidate.py.txt",
+      "selected_sha256": "50b977b430c7bb2d476064306c41c8665e50607c654d0a1115860c7e3e2eeb78"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Cooperative_12",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\029\\candidate.py.txt",
+      "original_sha256": "e0e17ecc4dd6f9939e2c5945d8bcc40507721080f0749548bd234c30b1c928fd",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\029\\candidate.py.txt",
+      "selected_sha256": "e0e17ecc4dd6f9939e2c5945d8bcc40507721080f0749548bd234c30b1c928fd"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Cooperative_13",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\030\\candidate.py.txt",
+      "original_sha256": "499710fae25a9aeb96b080c9c543017d2a84fc94542eef70d08e311b39112b91",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\030\\candidate.py.txt",
+      "selected_sha256": "499710fae25a9aeb96b080c9c543017d2a84fc94542eef70d08e311b39112b91"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Cooperative_14",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\031\\candidate.py.txt",
+      "original_sha256": "60578767b3d81066a9b8ef9bcb51c56025c81d48e4cb68abb26da6770441b392",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\031\\candidate.py.txt",
+      "selected_sha256": "60578767b3d81066a9b8ef9bcb51c56025c81d48e4cb68abb26da6770441b392"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Cooperative_15",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\032\\candidate.py.txt",
+      "original_sha256": "e9d35dc48ccb64646441531238c2d14af045ac8e786b792dba1cd95a0ff88d2d",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\032\\candidate.py.txt",
+      "selected_sha256": "e9d35dc48ccb64646441531238c2d14af045ac8e786b792dba1cd95a0ff88d2d"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Cooperative_16",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\033\\candidate.py.txt",
+      "original_sha256": "7a6151c18444cdd9cea6fdecd2abc7c24d5078fe46ced481c4fc1752f6a10659",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\033\\candidate.py.txt",
+      "selected_sha256": "7a6151c18444cdd9cea6fdecd2abc7c24d5078fe46ced481c4fc1752f6a10659"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Cooperative_17",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\034\\candidate.py.txt",
+      "original_sha256": "50d402eb58acbb8b87adc7675d59a038d994bc3a2d1ecba4c77f7d30f77e0b89",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\034\\candidate.py.txt",
+      "selected_sha256": "50d402eb58acbb8b87adc7675d59a038d994bc3a2d1ecba4c77f7d30f77e0b89"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Cooperative_18",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\035\\candidate.py.txt",
+      "original_sha256": "7541b13a09b128aaa5d98e0718c5a5f40c5649d60be46f38423d7c9e493e8684",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\035\\candidate.py.txt",
+      "selected_sha256": "7541b13a09b128aaa5d98e0718c5a5f40c5649d60be46f38423d7c9e493e8684"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Cooperative_19",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\036\\candidate.py.txt",
+      "original_sha256": "c7891b47539cd6ff669f4a91a960eab99db89ec7842a0fe4252c5618eed50d01",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\036\\candidate.py.txt",
+      "selected_sha256": "c7891b47539cd6ff669f4a91a960eab99db89ec7842a0fe4252c5618eed50d01"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Cooperative_2",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\037\\candidate.py.txt",
+      "original_sha256": "e0e17ecc4dd6f9939e2c5945d8bcc40507721080f0749548bd234c30b1c928fd",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\037\\candidate.py.txt",
+      "selected_sha256": "e0e17ecc4dd6f9939e2c5945d8bcc40507721080f0749548bd234c30b1c928fd"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Cooperative_20",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\038\\candidate.py.txt",
+      "original_sha256": "60578767b3d81066a9b8ef9bcb51c56025c81d48e4cb68abb26da6770441b392",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\038\\candidate.py.txt",
+      "selected_sha256": "60578767b3d81066a9b8ef9bcb51c56025c81d48e4cb68abb26da6770441b392"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Cooperative_21",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\039\\candidate.py.txt",
+      "original_sha256": "f673a493fc3cc3088b217d82e3427f1d2fd1ee318984060a1292326e13d8fa09",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\039\\candidate.py.txt",
+      "selected_sha256": "f673a493fc3cc3088b217d82e3427f1d2fd1ee318984060a1292326e13d8fa09"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Cooperative_22",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\040\\candidate.py.txt",
+      "original_sha256": "499710fae25a9aeb96b080c9c543017d2a84fc94542eef70d08e311b39112b91",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\040\\candidate.py.txt",
+      "selected_sha256": "499710fae25a9aeb96b080c9c543017d2a84fc94542eef70d08e311b39112b91"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Cooperative_23",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\041\\candidate.py.txt",
+      "original_sha256": "e0e17ecc4dd6f9939e2c5945d8bcc40507721080f0749548bd234c30b1c928fd",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\041\\candidate.py.txt",
+      "selected_sha256": "e0e17ecc4dd6f9939e2c5945d8bcc40507721080f0749548bd234c30b1c928fd"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Cooperative_24",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\042\\candidate.py.txt",
+      "original_sha256": "499710fae25a9aeb96b080c9c543017d2a84fc94542eef70d08e311b39112b91",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\042\\candidate.py.txt",
+      "selected_sha256": "499710fae25a9aeb96b080c9c543017d2a84fc94542eef70d08e311b39112b91"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Cooperative_25",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\043\\candidate.py.txt",
+      "original_sha256": "499710fae25a9aeb96b080c9c543017d2a84fc94542eef70d08e311b39112b91",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\043\\candidate.py.txt",
+      "selected_sha256": "499710fae25a9aeb96b080c9c543017d2a84fc94542eef70d08e311b39112b91"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Cooperative_3",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\044\\candidate.py.txt",
+      "original_sha256": "aa37ccc0bfc3113df512776d37ee63261c3e2d8192c21fee4286d159aef608f6",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\044\\candidate.py.txt",
+      "selected_sha256": "aa37ccc0bfc3113df512776d37ee63261c3e2d8192c21fee4286d159aef608f6"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Cooperative_4",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\045\\candidate.py.txt",
+      "original_sha256": "f76e8cfb2c1f876c29b9b176a05f1f99e6f371008f174a8a6e9ed10b0aa7015a",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\045\\candidate.py.txt",
+      "selected_sha256": "f76e8cfb2c1f876c29b9b176a05f1f99e6f371008f174a8a6e9ed10b0aa7015a"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Cooperative_5",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\046\\candidate.py.txt",
+      "original_sha256": "7541b13a09b128aaa5d98e0718c5a5f40c5649d60be46f38423d7c9e493e8684",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\046\\candidate.py.txt",
+      "selected_sha256": "7541b13a09b128aaa5d98e0718c5a5f40c5649d60be46f38423d7c9e493e8684"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Cooperative_6",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\047\\candidate.py.txt",
+      "original_sha256": "f673a493fc3cc3088b217d82e3427f1d2fd1ee318984060a1292326e13d8fa09",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\047\\candidate.py.txt",
+      "selected_sha256": "f673a493fc3cc3088b217d82e3427f1d2fd1ee318984060a1292326e13d8fa09"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Cooperative_7",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\048\\candidate.py.txt",
+      "original_sha256": "60578767b3d81066a9b8ef9bcb51c56025c81d48e4cb68abb26da6770441b392",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\048\\candidate.py.txt",
+      "selected_sha256": "60578767b3d81066a9b8ef9bcb51c56025c81d48e4cb68abb26da6770441b392"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Cooperative_8",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\049\\candidate.py.txt",
+      "original_sha256": "6a249466f47dbfe3d5ec1a33afd09b153b0ba255a71410239e765d44819e8ae8",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\049\\candidate.py.txt",
+      "selected_sha256": "6a249466f47dbfe3d5ec1a33afd09b153b0ba255a71410239e765d44819e8ae8"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Cooperative_9",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\050\\candidate.py.txt",
+      "original_sha256": "7541b13a09b128aaa5d98e0718c5a5f40c5649d60be46f38423d7c9e493e8684",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\050\\candidate.py.txt",
+      "selected_sha256": "7541b13a09b128aaa5d98e0718c5a5f40c5649d60be46f38423d7c9e493e8684"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Neutral_1",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\051\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\051\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Neutral_10",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\052\\candidate.py.txt",
+      "original_sha256": "dd0e4025a48014fbe4e64a69d00b169c8a296f3c8078aaeab79f39e90e9d9858",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\052\\candidate.py.txt",
+      "selected_sha256": "dd0e4025a48014fbe4e64a69d00b169c8a296f3c8078aaeab79f39e90e9d9858"
+    },
+    {
+      "derivation": "local_prose_grounded_correction_v1",
+      "id": "anthropic_sonnet46/default/Neutral_11",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\053\\candidate.py.txt",
+      "original_sha256": "21dcca67e5e0f5d6a467110754f049b7f73dbe4159358c14cd858cff8d5d7b2f",
+      "reason": "Move last-defection branch below permanent >55% trigger, following explicit prose priority.",
+      "selected_path": "phase3\\corrections_v1\\sonnet_neutral_11.py.txt",
+      "selected_sha256": "db383b377da1e8c0e10daa1389932b73449b5e4139f411275e32aff11544fb86"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Neutral_12",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\054\\candidate.py.txt",
+      "original_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\054\\candidate.py.txt",
+      "selected_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Neutral_13",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\055\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\055\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Neutral_14",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\056\\candidate.py.txt",
+      "original_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\056\\candidate.py.txt",
+      "selected_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Neutral_15",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\057\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\057\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Neutral_16",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\058\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\058\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Neutral_17",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\059\\candidate.py.txt",
+      "original_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\059\\candidate.py.txt",
+      "selected_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Neutral_18",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\060\\candidate.py.txt",
+      "original_sha256": "6b7263f66615fb987e6626942a7ac02e825ae30c4cca468e77a9db7706b22f58",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\060\\candidate.py.txt",
+      "selected_sha256": "6b7263f66615fb987e6626942a7ac02e825ae30c4cca468e77a9db7706b22f58"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Neutral_19",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\061\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\061\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Neutral_2",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\062\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\062\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Neutral_20",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\063\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\063\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Neutral_21",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\064\\candidate.py.txt",
+      "original_sha256": "d3c41ced4cbfce638afb848bca96a1adccb599a89edf02bc0ad8cb401d88dbfb",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\064\\candidate.py.txt",
+      "selected_sha256": "d3c41ced4cbfce638afb848bca96a1adccb599a89edf02bc0ad8cb401d88dbfb"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Neutral_22",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\065\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\065\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Neutral_23",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\066\\candidate.py.txt",
+      "original_sha256": "7c10ff786e446d02852d1699c9f393ea108b3b4c5e4cf284b533178f0ce04585",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\066\\candidate.py.txt",
+      "selected_sha256": "7c10ff786e446d02852d1699c9f393ea108b3b4c5e4cf284b533178f0ce04585"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Neutral_24",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\067\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\067\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Neutral_25",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\068\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\068\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Neutral_3",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\069\\candidate.py.txt",
+      "original_sha256": "9858bb23ead4b79b02d41fa4b75478a20f782087f9703dacdc59c4c0c9c526c1",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\069\\candidate.py.txt",
+      "selected_sha256": "9858bb23ead4b79b02d41fa4b75478a20f782087f9703dacdc59c4c0c9c526c1"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Neutral_4",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\070\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\070\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Neutral_5",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\071\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\071\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Neutral_6",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\072\\candidate.py.txt",
+      "original_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\072\\candidate.py.txt",
+      "selected_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Neutral_7",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\073\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\073\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Neutral_8",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\074\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\074\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "anthropic_sonnet46/default/Neutral_9",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\075\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\075\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Aggressive_1",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\076\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\076\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Aggressive_10",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\077\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\077\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Aggressive_11",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\078\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\078\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Aggressive_12",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\079\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\079\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Aggressive_13",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\080\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\080\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Aggressive_14",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\081\\candidate.py.txt",
+      "original_sha256": "1126874e5588c92a1d5d79a3fa612697e254710addcb822b9c236bfe3e7b18b4",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\081\\candidate.py.txt",
+      "selected_sha256": "1126874e5588c92a1d5d79a3fa612697e254710addcb822b9c236bfe3e7b18b4"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Aggressive_15",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\082\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\082\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Aggressive_16",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\083\\candidate.py.txt",
+      "original_sha256": "36cffa8feb273bb13fb2506c4d7ab98aa289246f8924a33f98fe186fc0ee0d8f",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\083\\candidate.py.txt",
+      "selected_sha256": "36cffa8feb273bb13fb2506c4d7ab98aa289246f8924a33f98fe186fc0ee0d8f"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Aggressive_17",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\084\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\084\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Aggressive_18",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\085\\candidate.py.txt",
+      "original_sha256": "930936cfc99a953e8d58df1fe115f238fc9ad1ce3c6a8a7e106f6398b2c810d4",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\085\\candidate.py.txt",
+      "selected_sha256": "930936cfc99a953e8d58df1fe115f238fc9ad1ce3c6a8a7e106f6398b2c810d4"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Aggressive_19",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\086\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\086\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Aggressive_2",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\087\\candidate.py.txt",
+      "original_sha256": "bfbe2e4d3b59f8bf24eafc69bd39db7b5b209b917b30acf7a0b7f110682888c8",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\087\\candidate.py.txt",
+      "selected_sha256": "bfbe2e4d3b59f8bf24eafc69bd39db7b5b209b917b30acf7a0b7f110682888c8"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Aggressive_20",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\088\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\088\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Aggressive_21",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\089\\candidate.py.txt",
+      "original_sha256": "930936cfc99a953e8d58df1fe115f238fc9ad1ce3c6a8a7e106f6398b2c810d4",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\089\\candidate.py.txt",
+      "selected_sha256": "930936cfc99a953e8d58df1fe115f238fc9ad1ce3c6a8a7e106f6398b2c810d4"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Aggressive_22",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\090\\candidate.py.txt",
+      "original_sha256": "35115fa4631d27969a5cff3b761e01bd0954d38f2448d2aeca61d94c00c1b5a0",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\090\\candidate.py.txt",
+      "selected_sha256": "35115fa4631d27969a5cff3b761e01bd0954d38f2448d2aeca61d94c00c1b5a0"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Aggressive_23",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\091\\candidate.py.txt",
+      "original_sha256": "1342b09234a8134357560121031424c724eacaf100532300d94bf258c4c46750",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\091\\candidate.py.txt",
+      "selected_sha256": "1342b09234a8134357560121031424c724eacaf100532300d94bf258c4c46750"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Aggressive_25",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\092\\candidate.py.txt",
+      "original_sha256": "d2bd77d80a4b83b63c1f4258f4cb918e9df099ccde409d23da7c1c4d35f3d52a",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\092\\candidate.py.txt",
+      "selected_sha256": "d2bd77d80a4b83b63c1f4258f4cb918e9df099ccde409d23da7c1c4d35f3d52a"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Aggressive_3",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\093\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\093\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Aggressive_4",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\094\\candidate.py.txt",
+      "original_sha256": "930936cfc99a953e8d58df1fe115f238fc9ad1ce3c6a8a7e106f6398b2c810d4",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\094\\candidate.py.txt",
+      "selected_sha256": "930936cfc99a953e8d58df1fe115f238fc9ad1ce3c6a8a7e106f6398b2c810d4"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Aggressive_5",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\095\\candidate.py.txt",
+      "original_sha256": "930936cfc99a953e8d58df1fe115f238fc9ad1ce3c6a8a7e106f6398b2c810d4",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\095\\candidate.py.txt",
+      "selected_sha256": "930936cfc99a953e8d58df1fe115f238fc9ad1ce3c6a8a7e106f6398b2c810d4"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Aggressive_7",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\096\\candidate.py.txt",
+      "original_sha256": "930936cfc99a953e8d58df1fe115f238fc9ad1ce3c6a8a7e106f6398b2c810d4",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\096\\candidate.py.txt",
+      "selected_sha256": "930936cfc99a953e8d58df1fe115f238fc9ad1ce3c6a8a7e106f6398b2c810d4"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Aggressive_8",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\097\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\097\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Aggressive_9",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\098\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\098\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Cooperative_1",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\099\\candidate.py.txt",
+      "original_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\099\\candidate.py.txt",
+      "selected_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Cooperative_10",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\100\\candidate.py.txt",
+      "original_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\100\\candidate.py.txt",
+      "selected_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Cooperative_11",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\101\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\101\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Cooperative_12",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\102\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\102\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Cooperative_13",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\103\\candidate.py.txt",
+      "original_sha256": "8826fbd875b48b7ce2f132b0415714c797e6c148a71d02249ae9a97ce7e339b0",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\103\\candidate.py.txt",
+      "selected_sha256": "8826fbd875b48b7ce2f132b0415714c797e6c148a71d02249ae9a97ce7e339b0"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Cooperative_14",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\104\\candidate.py.txt",
+      "original_sha256": "696a0f268b9c84a67a58505d1bd5223a993efeedee2907b00728a524b29def6c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\104\\candidate.py.txt",
+      "selected_sha256": "696a0f268b9c84a67a58505d1bd5223a993efeedee2907b00728a524b29def6c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Cooperative_15",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\105\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\105\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Cooperative_16",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\106\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\106\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Cooperative_17",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\107\\candidate.py.txt",
+      "original_sha256": "696a0f268b9c84a67a58505d1bd5223a993efeedee2907b00728a524b29def6c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\107\\candidate.py.txt",
+      "selected_sha256": "696a0f268b9c84a67a58505d1bd5223a993efeedee2907b00728a524b29def6c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Cooperative_18",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\108\\candidate.py.txt",
+      "original_sha256": "696a0f268b9c84a67a58505d1bd5223a993efeedee2907b00728a524b29def6c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\108\\candidate.py.txt",
+      "selected_sha256": "696a0f268b9c84a67a58505d1bd5223a993efeedee2907b00728a524b29def6c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Cooperative_19",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\109\\candidate.py.txt",
+      "original_sha256": "696a0f268b9c84a67a58505d1bd5223a993efeedee2907b00728a524b29def6c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\109\\candidate.py.txt",
+      "selected_sha256": "696a0f268b9c84a67a58505d1bd5223a993efeedee2907b00728a524b29def6c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Cooperative_2",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\110\\candidate.py.txt",
+      "original_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\110\\candidate.py.txt",
+      "selected_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Cooperative_20",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\111\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\111\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Cooperative_21",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\112\\candidate.py.txt",
+      "original_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\112\\candidate.py.txt",
+      "selected_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Cooperative_22",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\113\\candidate.py.txt",
+      "original_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\113\\candidate.py.txt",
+      "selected_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Cooperative_23",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\114\\candidate.py.txt",
+      "original_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\114\\candidate.py.txt",
+      "selected_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Cooperative_24",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\115\\candidate.py.txt",
+      "original_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\115\\candidate.py.txt",
+      "selected_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Cooperative_25",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\116\\candidate.py.txt",
+      "original_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\116\\candidate.py.txt",
+      "selected_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Cooperative_3",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\117\\candidate.py.txt",
+      "original_sha256": "696a0f268b9c84a67a58505d1bd5223a993efeedee2907b00728a524b29def6c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\117\\candidate.py.txt",
+      "selected_sha256": "696a0f268b9c84a67a58505d1bd5223a993efeedee2907b00728a524b29def6c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Cooperative_4",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\118\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\118\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Cooperative_5",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\119\\candidate.py.txt",
+      "original_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\119\\candidate.py.txt",
+      "selected_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Cooperative_6",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\120\\candidate.py.txt",
+      "original_sha256": "696a0f268b9c84a67a58505d1bd5223a993efeedee2907b00728a524b29def6c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\120\\candidate.py.txt",
+      "selected_sha256": "696a0f268b9c84a67a58505d1bd5223a993efeedee2907b00728a524b29def6c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Cooperative_7",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\121\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\121\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Cooperative_8",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\122\\candidate.py.txt",
+      "original_sha256": "696a0f268b9c84a67a58505d1bd5223a993efeedee2907b00728a524b29def6c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\122\\candidate.py.txt",
+      "selected_sha256": "696a0f268b9c84a67a58505d1bd5223a993efeedee2907b00728a524b29def6c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Cooperative_9",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\123\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\123\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Neutral_1",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\124\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\124\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Neutral_10",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\125\\candidate.py.txt",
+      "original_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\125\\candidate.py.txt",
+      "selected_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Neutral_11",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\126\\candidate.py.txt",
+      "original_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\126\\candidate.py.txt",
+      "selected_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Neutral_12",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\127\\candidate.py.txt",
+      "original_sha256": "696a0f268b9c84a67a58505d1bd5223a993efeedee2907b00728a524b29def6c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\127\\candidate.py.txt",
+      "selected_sha256": "696a0f268b9c84a67a58505d1bd5223a993efeedee2907b00728a524b29def6c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Neutral_13",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\128\\candidate.py.txt",
+      "original_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\128\\candidate.py.txt",
+      "selected_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Neutral_14",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\129\\candidate.py.txt",
+      "original_sha256": "696a0f268b9c84a67a58505d1bd5223a993efeedee2907b00728a524b29def6c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\129\\candidate.py.txt",
+      "selected_sha256": "696a0f268b9c84a67a58505d1bd5223a993efeedee2907b00728a524b29def6c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Neutral_15",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\130\\candidate.py.txt",
+      "original_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\130\\candidate.py.txt",
+      "selected_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Neutral_16",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\131\\candidate.py.txt",
+      "original_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\131\\candidate.py.txt",
+      "selected_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Neutral_17",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\132\\candidate.py.txt",
+      "original_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\132\\candidate.py.txt",
+      "selected_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Neutral_18",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\133\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\133\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Neutral_19",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\134\\candidate.py.txt",
+      "original_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\134\\candidate.py.txt",
+      "selected_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Neutral_2",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\135\\candidate.py.txt",
+      "original_sha256": "696a0f268b9c84a67a58505d1bd5223a993efeedee2907b00728a524b29def6c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\135\\candidate.py.txt",
+      "selected_sha256": "696a0f268b9c84a67a58505d1bd5223a993efeedee2907b00728a524b29def6c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Neutral_20",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\136\\candidate.py.txt",
+      "original_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\136\\candidate.py.txt",
+      "selected_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Neutral_21",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\137\\candidate.py.txt",
+      "original_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\137\\candidate.py.txt",
+      "selected_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Neutral_22",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\138\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\138\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Neutral_23",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\139\\candidate.py.txt",
+      "original_sha256": "8826fbd875b48b7ce2f132b0415714c797e6c148a71d02249ae9a97ce7e339b0",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\139\\candidate.py.txt",
+      "selected_sha256": "8826fbd875b48b7ce2f132b0415714c797e6c148a71d02249ae9a97ce7e339b0"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Neutral_24",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\140\\candidate.py.txt",
+      "original_sha256": "8826fbd875b48b7ce2f132b0415714c797e6c148a71d02249ae9a97ce7e339b0",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\140\\candidate.py.txt",
+      "selected_sha256": "8826fbd875b48b7ce2f132b0415714c797e6c148a71d02249ae9a97ce7e339b0"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Neutral_25",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\141\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\141\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Neutral_3",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\142\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\142\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Neutral_4",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\143\\candidate.py.txt",
+      "original_sha256": "8826fbd875b48b7ce2f132b0415714c797e6c148a71d02249ae9a97ce7e339b0",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\143\\candidate.py.txt",
+      "selected_sha256": "8826fbd875b48b7ce2f132b0415714c797e6c148a71d02249ae9a97ce7e339b0"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Neutral_5",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\144\\candidate.py.txt",
+      "original_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\144\\candidate.py.txt",
+      "selected_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Neutral_6",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\145\\candidate.py.txt",
+      "original_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\145\\candidate.py.txt",
+      "selected_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Neutral_7",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\146\\candidate.py.txt",
+      "original_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\146\\candidate.py.txt",
+      "selected_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Neutral_8",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\147\\candidate.py.txt",
+      "original_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\147\\candidate.py.txt",
+      "selected_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_25_flash/default/Neutral_9",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\148\\candidate.py.txt",
+      "original_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\148\\candidate.py.txt",
+      "selected_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Aggressive_10",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\149\\candidate.py.txt",
+      "original_sha256": "84d0662a90cf61641d3bdb9f83f54492b700a76853c7dc31006bbfe76108cf37",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\149\\candidate.py.txt",
+      "selected_sha256": "84d0662a90cf61641d3bdb9f83f54492b700a76853c7dc31006bbfe76108cf37"
+    },
+    {
+      "derivation": "local_full_window_sensitivity_v1",
+      "id": "gemini_31_pro/default/Aggressive_12",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\150\\candidate.py.txt",
+      "original_sha256": "1db49e4e8e6ead30a3f464c0c880b1f947badb26bb081ebd2ab6fdf22719131d",
+      "primary_selected_path": "phase3\\conversion_runs\\expanded_v2\\150\\candidate.py.txt",
+      "primary_selected_sha256": "1db49e4e8e6ead30a3f464c0c880b1f947badb26bb081ebd2ab6fdf22719131d",
+      "selected_path": "phase3\\window_sensitivity_v1\\pro_aggressive_12.py.txt",
+      "selected_sha256": "5d284696e915aea8c5732d4f51d285c6e85703ebd10a617e633924a41e0a6477"
+    },
+    {
+      "derivation": "local_full_window_sensitivity_v1",
+      "id": "gemini_31_pro/default/Aggressive_14",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\151\\candidate.py.txt",
+      "original_sha256": "e67fe8f608095a566bba1c66005e47e79e787fe30cf1a41875402903fbc39117",
+      "primary_selected_path": "phase3\\conversion_runs\\expanded_v2\\151\\candidate.py.txt",
+      "primary_selected_sha256": "e67fe8f608095a566bba1c66005e47e79e787fe30cf1a41875402903fbc39117",
+      "selected_path": "phase3\\window_sensitivity_v1\\pro_aggressive_14.py.txt",
+      "selected_sha256": "476aa51145fb1d51da0fb55d5186b91f5b132e66929cbf1c71e5b04f0e5d29c8"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Aggressive_2",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\152\\candidate.py.txt",
+      "original_sha256": "d4f0ddd2ade2da1ced472a6d8267c296c0ab96fc94274fd1c6d6243550ea5fd3",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\152\\candidate.py.txt",
+      "selected_sha256": "d4f0ddd2ade2da1ced472a6d8267c296c0ab96fc94274fd1c6d6243550ea5fd3"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Aggressive_24",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\153\\candidate.py.txt",
+      "original_sha256": "cfe7a318c9a954c61399f211c688fdf5956406d673f1e68568c941f0e946e59e",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\153\\candidate.py.txt",
+      "selected_sha256": "cfe7a318c9a954c61399f211c688fdf5956406d673f1e68568c941f0e946e59e"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Aggressive_25",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\154\\candidate.py.txt",
+      "original_sha256": "e1e63b34e96c6f6eea081809decd52e47b1fb4e9d8fa6a0a31aab3c7b60f11fa",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\154\\candidate.py.txt",
+      "selected_sha256": "e1e63b34e96c6f6eea081809decd52e47b1fb4e9d8fa6a0a31aab3c7b60f11fa"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Aggressive_4",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\155\\candidate.py.txt",
+      "original_sha256": "db8afa9c45f55951436f37cfcfe48736438e2021e9884ab4bd8408324b436317",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\155\\candidate.py.txt",
+      "selected_sha256": "db8afa9c45f55951436f37cfcfe48736438e2021e9884ab4bd8408324b436317"
+    },
+    {
+      "derivation": "local_prose_grounded_correction_v1",
+      "id": "gemini_31_pro/default/Aggressive_6",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\156\\candidate.py.txt",
+      "original_sha256": "8c334dee464c4ed2d565e30e5741af383b44f8f00d0e975e34aa5fd51718281d",
+      "reason": "Use current round len(history)+1 for explicit round 995 inclusive.",
+      "selected_path": "phase3\\corrections_v1\\pro_aggressive_6.py.txt",
+      "selected_sha256": "92b2fe2c5744676e7c6e611c359340158a8d13cb15758fe79aded3c8b364df4b"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Aggressive_9",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\157\\candidate.py.txt",
+      "original_sha256": "713dd7d2316679cd91d55be8d41c1282b38a4106072bee7dd77520a979968138",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\157\\candidate.py.txt",
+      "selected_sha256": "713dd7d2316679cd91d55be8d41c1282b38a4106072bee7dd77520a979968138"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Cooperative_1",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\158\\candidate.py.txt",
+      "original_sha256": "52fb73869b52914cef2827c8083d8e24a0a9a5349af2f6dcd9005a4f9cd6fca7",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\158\\candidate.py.txt",
+      "selected_sha256": "52fb73869b52914cef2827c8083d8e24a0a9a5349af2f6dcd9005a4f9cd6fca7"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Cooperative_10",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\159\\candidate.py.txt",
+      "original_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\159\\candidate.py.txt",
+      "selected_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Cooperative_11",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\160\\candidate.py.txt",
+      "original_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\160\\candidate.py.txt",
+      "selected_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Cooperative_12",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\161\\candidate.py.txt",
+      "original_sha256": "1b971d2f2cb1ae0da113e1bedfe687f3b3451451ffa00e99642bab4d8879355a",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\161\\candidate.py.txt",
+      "selected_sha256": "1b971d2f2cb1ae0da113e1bedfe687f3b3451451ffa00e99642bab4d8879355a"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Cooperative_13",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\162\\candidate.py.txt",
+      "original_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\162\\candidate.py.txt",
+      "selected_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Cooperative_14",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\163\\candidate.py.txt",
+      "original_sha256": "baf51d6ff719969fe9f73f5cf74868c72deec46da5d2a8b62f97cd08605de36f",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\163\\candidate.py.txt",
+      "selected_sha256": "baf51d6ff719969fe9f73f5cf74868c72deec46da5d2a8b62f97cd08605de36f"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Cooperative_15",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\164\\candidate.py.txt",
+      "original_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\164\\candidate.py.txt",
+      "selected_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Cooperative_16",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\165\\candidate.py.txt",
+      "original_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\165\\candidate.py.txt",
+      "selected_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Cooperative_17",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\166\\candidate.py.txt",
+      "original_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\166\\candidate.py.txt",
+      "selected_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Cooperative_18",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\167\\candidate.py.txt",
+      "original_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\167\\candidate.py.txt",
+      "selected_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Cooperative_19",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\168\\candidate.py.txt",
+      "original_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\168\\candidate.py.txt",
+      "selected_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Cooperative_2",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\169\\candidate.py.txt",
+      "original_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\169\\candidate.py.txt",
+      "selected_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Cooperative_20",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\170\\candidate.py.txt",
+      "original_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\170\\candidate.py.txt",
+      "selected_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Cooperative_21",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\171\\candidate.py.txt",
+      "original_sha256": "565f373918e4ade508ea3f9e66b487b765e0c737fdda8da8df457c7269a5eb03",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\171\\candidate.py.txt",
+      "selected_sha256": "565f373918e4ade508ea3f9e66b487b765e0c737fdda8da8df457c7269a5eb03"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Cooperative_22",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\172\\candidate.py.txt",
+      "original_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\172\\candidate.py.txt",
+      "selected_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Cooperative_23",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\173\\candidate.py.txt",
+      "original_sha256": "d4ba82e85345830305589d6ad538acd1f394172566d54bee640b0e4fdfe84342",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\173\\candidate.py.txt",
+      "selected_sha256": "d4ba82e85345830305589d6ad538acd1f394172566d54bee640b0e4fdfe84342"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Cooperative_24",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\174\\candidate.py.txt",
+      "original_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\174\\candidate.py.txt",
+      "selected_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Cooperative_25",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\175\\candidate.py.txt",
+      "original_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\175\\candidate.py.txt",
+      "selected_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Cooperative_3",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\176\\candidate.py.txt",
+      "original_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\176\\candidate.py.txt",
+      "selected_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Cooperative_4",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\177\\candidate.py.txt",
+      "original_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\177\\candidate.py.txt",
+      "selected_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Cooperative_5",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\178\\candidate.py.txt",
+      "original_sha256": "52fb73869b52914cef2827c8083d8e24a0a9a5349af2f6dcd9005a4f9cd6fca7",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\178\\candidate.py.txt",
+      "selected_sha256": "52fb73869b52914cef2827c8083d8e24a0a9a5349af2f6dcd9005a4f9cd6fca7"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Cooperative_6",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\179\\candidate.py.txt",
+      "original_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\179\\candidate.py.txt",
+      "selected_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Cooperative_7",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\180\\candidate.py.txt",
+      "original_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\180\\candidate.py.txt",
+      "selected_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Cooperative_8",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\181\\candidate.py.txt",
+      "original_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\181\\candidate.py.txt",
+      "selected_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Cooperative_9",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\182\\candidate.py.txt",
+      "original_sha256": "16d3291c532163e85282cf7b01a4531009762ac690c1e3378bbf245ec3d2555f",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\182\\candidate.py.txt",
+      "selected_sha256": "16d3291c532163e85282cf7b01a4531009762ac690c1e3378bbf245ec3d2555f"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Neutral_1",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\183\\candidate.py.txt",
+      "original_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\183\\candidate.py.txt",
+      "selected_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Neutral_10",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\184\\candidate.py.txt",
+      "original_sha256": "619da1d2d158efa662ac3002ff2da52931d83d605f4b64417f2ded96b5afc523",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\184\\candidate.py.txt",
+      "selected_sha256": "619da1d2d158efa662ac3002ff2da52931d83d605f4b64417f2ded96b5afc523"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Neutral_11",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\185\\candidate.py.txt",
+      "original_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\185\\candidate.py.txt",
+      "selected_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Neutral_12",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\186\\candidate.py.txt",
+      "original_sha256": "16d3291c532163e85282cf7b01a4531009762ac690c1e3378bbf245ec3d2555f",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\186\\candidate.py.txt",
+      "selected_sha256": "16d3291c532163e85282cf7b01a4531009762ac690c1e3378bbf245ec3d2555f"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Neutral_13",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\187\\candidate.py.txt",
+      "original_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\187\\candidate.py.txt",
+      "selected_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Neutral_14",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\188\\candidate.py.txt",
+      "original_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\188\\candidate.py.txt",
+      "selected_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Neutral_15",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\189\\candidate.py.txt",
+      "original_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\189\\candidate.py.txt",
+      "selected_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Neutral_16",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\190\\candidate.py.txt",
+      "original_sha256": "16d3291c532163e85282cf7b01a4531009762ac690c1e3378bbf245ec3d2555f",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\190\\candidate.py.txt",
+      "selected_sha256": "16d3291c532163e85282cf7b01a4531009762ac690c1e3378bbf245ec3d2555f"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Neutral_17",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\191\\candidate.py.txt",
+      "original_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\191\\candidate.py.txt",
+      "selected_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Neutral_18",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\192\\candidate.py.txt",
+      "original_sha256": "68cfc79ca6dcd796814d276b43ef720d434151004e469a0cfb3326850f2f137b",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\192\\candidate.py.txt",
+      "selected_sha256": "68cfc79ca6dcd796814d276b43ef720d434151004e469a0cfb3326850f2f137b"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Neutral_19",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\193\\candidate.py.txt",
+      "original_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\193\\candidate.py.txt",
+      "selected_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Neutral_2",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\194\\candidate.py.txt",
+      "original_sha256": "52fb73869b52914cef2827c8083d8e24a0a9a5349af2f6dcd9005a4f9cd6fca7",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\194\\candidate.py.txt",
+      "selected_sha256": "52fb73869b52914cef2827c8083d8e24a0a9a5349af2f6dcd9005a4f9cd6fca7"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Neutral_20",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\195\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\195\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Neutral_21",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\196\\candidate.py.txt",
+      "original_sha256": "619da1d2d158efa662ac3002ff2da52931d83d605f4b64417f2ded96b5afc523",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\196\\candidate.py.txt",
+      "selected_sha256": "619da1d2d158efa662ac3002ff2da52931d83d605f4b64417f2ded96b5afc523"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Neutral_22",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\197\\candidate.py.txt",
+      "original_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\197\\candidate.py.txt",
+      "selected_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Neutral_23",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\198\\candidate.py.txt",
+      "original_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\198\\candidate.py.txt",
+      "selected_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Neutral_24",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\199\\candidate.py.txt",
+      "original_sha256": "16d3291c532163e85282cf7b01a4531009762ac690c1e3378bbf245ec3d2555f",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\199\\candidate.py.txt",
+      "selected_sha256": "16d3291c532163e85282cf7b01a4531009762ac690c1e3378bbf245ec3d2555f"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Neutral_25",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\200\\candidate.py.txt",
+      "original_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\200\\candidate.py.txt",
+      "selected_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Neutral_3",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\201\\candidate.py.txt",
+      "original_sha256": "619da1d2d158efa662ac3002ff2da52931d83d605f4b64417f2ded96b5afc523",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\201\\candidate.py.txt",
+      "selected_sha256": "619da1d2d158efa662ac3002ff2da52931d83d605f4b64417f2ded96b5afc523"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Neutral_4",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\202\\candidate.py.txt",
+      "original_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\202\\candidate.py.txt",
+      "selected_sha256": "0942a53187ecd7cf6e863f85bc3e014ae764ac7150e43a9198dfd1fe2a8bac7a"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Neutral_5",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\203\\candidate.py.txt",
+      "original_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\203\\candidate.py.txt",
+      "selected_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Neutral_6",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\204\\candidate.py.txt",
+      "original_sha256": "d702646afa9f556a9cee059324f1ab30f2e85c59bb43e3e53afe148b79be72c5",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\204\\candidate.py.txt",
+      "selected_sha256": "d702646afa9f556a9cee059324f1ab30f2e85c59bb43e3e53afe148b79be72c5"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Neutral_7",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\205\\candidate.py.txt",
+      "original_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\205\\candidate.py.txt",
+      "selected_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Neutral_8",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\206\\candidate.py.txt",
+      "original_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\206\\candidate.py.txt",
+      "selected_sha256": "30aad79d016d0e516d27d9575d1d3fc3cd6f8180e5e0e06db5bc01b2ecd2a78e"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "gemini_31_pro/default/Neutral_9",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\207\\candidate.py.txt",
+      "original_sha256": "565f373918e4ade508ea3f9e66b487b765e0c737fdda8da8df457c7269a5eb03",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\207\\candidate.py.txt",
+      "selected_sha256": "565f373918e4ade508ea3f9e66b487b765e0c737fdda8da8df457c7269a5eb03"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Aggressive_1",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\208\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\208\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Aggressive_10",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\209\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\209\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Aggressive_11",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\210\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\210\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Aggressive_13",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\211\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\211\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Aggressive_14",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\212\\candidate.py.txt",
+      "original_sha256": "b2634097383f9dfc46a4873dd2967c19e52adfb79d54bb4b1b95ee82a9716805",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\212\\candidate.py.txt",
+      "selected_sha256": "b2634097383f9dfc46a4873dd2967c19e52adfb79d54bb4b1b95ee82a9716805"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Aggressive_15",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\213\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\213\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Aggressive_18",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\214\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\214\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Aggressive_19",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\215\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\215\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Aggressive_2",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\216\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\216\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Aggressive_21",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\217\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\217\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Aggressive_24",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\218\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\218\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Aggressive_25",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\219\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\219\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Aggressive_3",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\220\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\220\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Aggressive_4",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\221\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\221\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Aggressive_7",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\222\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\222\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Aggressive_8",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\223\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\223\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Aggressive_9",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\224\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\224\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Cooperative_1",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\225\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\225\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Cooperative_10",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\226\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\226\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Cooperative_11",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\227\\candidate.py.txt",
+      "original_sha256": "308d201233ada47349e2bb683199fc5511f7257f0966a012b5f449844033dbdf",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\227\\candidate.py.txt",
+      "selected_sha256": "308d201233ada47349e2bb683199fc5511f7257f0966a012b5f449844033dbdf"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Cooperative_12",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\228\\candidate.py.txt",
+      "original_sha256": "6c86e8c3f747414570ad016b98fd1808e2b65d65fb45ce000bade915e14dcbb1",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\228\\candidate.py.txt",
+      "selected_sha256": "6c86e8c3f747414570ad016b98fd1808e2b65d65fb45ce000bade915e14dcbb1"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Cooperative_13",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\229\\candidate.py.txt",
+      "original_sha256": "6c86e8c3f747414570ad016b98fd1808e2b65d65fb45ce000bade915e14dcbb1",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\229\\candidate.py.txt",
+      "selected_sha256": "6c86e8c3f747414570ad016b98fd1808e2b65d65fb45ce000bade915e14dcbb1"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Cooperative_14",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\230\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\230\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Cooperative_15",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\231\\candidate.py.txt",
+      "original_sha256": "6c86e8c3f747414570ad016b98fd1808e2b65d65fb45ce000bade915e14dcbb1",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\231\\candidate.py.txt",
+      "selected_sha256": "6c86e8c3f747414570ad016b98fd1808e2b65d65fb45ce000bade915e14dcbb1"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Cooperative_16",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\232\\candidate.py.txt",
+      "original_sha256": "6c86e8c3f747414570ad016b98fd1808e2b65d65fb45ce000bade915e14dcbb1",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\232\\candidate.py.txt",
+      "selected_sha256": "6c86e8c3f747414570ad016b98fd1808e2b65d65fb45ce000bade915e14dcbb1"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Cooperative_17",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\233\\candidate.py.txt",
+      "original_sha256": "6c86e8c3f747414570ad016b98fd1808e2b65d65fb45ce000bade915e14dcbb1",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\233\\candidate.py.txt",
+      "selected_sha256": "6c86e8c3f747414570ad016b98fd1808e2b65d65fb45ce000bade915e14dcbb1"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Cooperative_18",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\234\\candidate.py.txt",
+      "original_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\234\\candidate.py.txt",
+      "selected_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Cooperative_19",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\235\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\235\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Cooperative_2",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\236\\candidate.py.txt",
+      "original_sha256": "8826fbd875b48b7ce2f132b0415714c797e6c148a71d02249ae9a97ce7e339b0",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\236\\candidate.py.txt",
+      "selected_sha256": "8826fbd875b48b7ce2f132b0415714c797e6c148a71d02249ae9a97ce7e339b0"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Cooperative_20",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\237\\candidate.py.txt",
+      "original_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\237\\candidate.py.txt",
+      "selected_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Cooperative_21",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\238\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\238\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Cooperative_22",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\239\\candidate.py.txt",
+      "original_sha256": "6c86e8c3f747414570ad016b98fd1808e2b65d65fb45ce000bade915e14dcbb1",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\239\\candidate.py.txt",
+      "selected_sha256": "6c86e8c3f747414570ad016b98fd1808e2b65d65fb45ce000bade915e14dcbb1"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Cooperative_23",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\240\\candidate.py.txt",
+      "original_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\240\\candidate.py.txt",
+      "selected_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Cooperative_24",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\241\\candidate.py.txt",
+      "original_sha256": "696a0f268b9c84a67a58505d1bd5223a993efeedee2907b00728a524b29def6c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\241\\candidate.py.txt",
+      "selected_sha256": "696a0f268b9c84a67a58505d1bd5223a993efeedee2907b00728a524b29def6c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Cooperative_25",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\242\\candidate.py.txt",
+      "original_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\242\\candidate.py.txt",
+      "selected_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Cooperative_3",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\243\\candidate.py.txt",
+      "original_sha256": "8826fbd875b48b7ce2f132b0415714c797e6c148a71d02249ae9a97ce7e339b0",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\243\\candidate.py.txt",
+      "selected_sha256": "8826fbd875b48b7ce2f132b0415714c797e6c148a71d02249ae9a97ce7e339b0"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Cooperative_4",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\244\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\244\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Cooperative_5",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\245\\candidate.py.txt",
+      "original_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\245\\candidate.py.txt",
+      "selected_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Cooperative_6",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\246\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\246\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Cooperative_7",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\247\\candidate.py.txt",
+      "original_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\247\\candidate.py.txt",
+      "selected_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Cooperative_8",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\248\\candidate.py.txt",
+      "original_sha256": "8826fbd875b48b7ce2f132b0415714c797e6c148a71d02249ae9a97ce7e339b0",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\248\\candidate.py.txt",
+      "selected_sha256": "8826fbd875b48b7ce2f132b0415714c797e6c148a71d02249ae9a97ce7e339b0"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Cooperative_9",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\249\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\249\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Neutral_1",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\250\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\250\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Neutral_10",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\251\\candidate.py.txt",
+      "original_sha256": "ba86e5aa9a9226c97fd534524e8dc88682b7ae4cb21269dae9ce48db30fa82db",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\251\\candidate.py.txt",
+      "selected_sha256": "ba86e5aa9a9226c97fd534524e8dc88682b7ae4cb21269dae9ce48db30fa82db"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Neutral_11",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\252\\candidate.py.txt",
+      "original_sha256": "6c86e8c3f747414570ad016b98fd1808e2b65d65fb45ce000bade915e14dcbb1",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\252\\candidate.py.txt",
+      "selected_sha256": "6c86e8c3f747414570ad016b98fd1808e2b65d65fb45ce000bade915e14dcbb1"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Neutral_12",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\253\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\253\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Neutral_13",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\254\\candidate.py.txt",
+      "original_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\254\\candidate.py.txt",
+      "selected_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Neutral_14",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\255\\candidate.py.txt",
+      "original_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\255\\candidate.py.txt",
+      "selected_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Neutral_15",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\256\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\256\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Neutral_16",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\257\\candidate.py.txt",
+      "original_sha256": "ba86e5aa9a9226c97fd534524e8dc88682b7ae4cb21269dae9ce48db30fa82db",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\257\\candidate.py.txt",
+      "selected_sha256": "ba86e5aa9a9226c97fd534524e8dc88682b7ae4cb21269dae9ce48db30fa82db"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Neutral_17",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\258\\candidate.py.txt",
+      "original_sha256": "1276bdb7451fe85d809d5a3fc62e6af96f666cd90a82e692cbb256f2c05ecc8c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\258\\candidate.py.txt",
+      "selected_sha256": "1276bdb7451fe85d809d5a3fc62e6af96f666cd90a82e692cbb256f2c05ecc8c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Neutral_18",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\259\\candidate.py.txt",
+      "original_sha256": "0e02b2eabdd42c9457198d4f0500933a996e52dc958e392f2459608d7788d9e6",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\259\\candidate.py.txt",
+      "selected_sha256": "0e02b2eabdd42c9457198d4f0500933a996e52dc958e392f2459608d7788d9e6"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Neutral_19",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\260\\candidate.py.txt",
+      "original_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\260\\candidate.py.txt",
+      "selected_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Neutral_2",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\261\\candidate.py.txt",
+      "original_sha256": "6950c338eefc83b1643c5c0c7a0b55b6c4d34e827a32fe08a4e8b345523a16ae",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\261\\candidate.py.txt",
+      "selected_sha256": "6950c338eefc83b1643c5c0c7a0b55b6c4d34e827a32fe08a4e8b345523a16ae"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Neutral_20",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\262\\candidate.py.txt",
+      "original_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\262\\candidate.py.txt",
+      "selected_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Neutral_21",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\263\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\263\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Neutral_22",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\264\\candidate.py.txt",
+      "original_sha256": "308d201233ada47349e2bb683199fc5511f7257f0966a012b5f449844033dbdf",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\264\\candidate.py.txt",
+      "selected_sha256": "308d201233ada47349e2bb683199fc5511f7257f0966a012b5f449844033dbdf"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Neutral_23",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\265\\candidate.py.txt",
+      "original_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\265\\candidate.py.txt",
+      "selected_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Neutral_24",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\266\\candidate.py.txt",
+      "original_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\266\\candidate.py.txt",
+      "selected_sha256": "5ee569d1df3710e89fc5cee66ada31b4f8efb2e5353d07d42e50cef67092177c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Neutral_25",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\267\\candidate.py.txt",
+      "original_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\267\\candidate.py.txt",
+      "selected_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Neutral_3",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\268\\candidate.py.txt",
+      "original_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\268\\candidate.py.txt",
+      "selected_sha256": "e15115db52c9167cbad2659796631ea25f032e43cbaa3c61a4ac03b0bcbd47ba"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Neutral_4",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\269\\candidate.py.txt",
+      "original_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\269\\candidate.py.txt",
+      "selected_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Neutral_5",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\270\\candidate.py.txt",
+      "original_sha256": "8fe1baff272174c5e62a33e66cf6f0cdc0dbd2070b505c3e24e71e2f39b048e2",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\270\\candidate.py.txt",
+      "selected_sha256": "8fe1baff272174c5e62a33e66cf6f0cdc0dbd2070b505c3e24e71e2f39b048e2"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Neutral_6",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\271\\candidate.py.txt",
+      "original_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\271\\candidate.py.txt",
+      "selected_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Neutral_7",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\272\\candidate.py.txt",
+      "original_sha256": "696a0f268b9c84a67a58505d1bd5223a993efeedee2907b00728a524b29def6c",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\272\\candidate.py.txt",
+      "selected_sha256": "696a0f268b9c84a67a58505d1bd5223a993efeedee2907b00728a524b29def6c"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Neutral_8",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\273\\candidate.py.txt",
+      "original_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\273\\candidate.py.txt",
+      "selected_sha256": "27b400e84a34439b50b7d280229c96aaae8a3d38747b7b98de42f7226a7ea154"
+    },
+    {
+      "derivation": "original_API_response",
+      "id": "openai_gpt54mini/default/Neutral_9",
+      "original_path": "phase3\\conversion_runs\\expanded_v2\\274\\candidate.py.txt",
+      "original_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159",
+      "selected_path": "phase3\\conversion_runs\\expanded_v2\\274\\candidate.py.txt",
+      "selected_sha256": "ffdca5a68fc21b2959d1e127f058884eae441b28af7d3c81e80777d241568159"
+    }
+  ],
+  "changed_candidates": 2,
+  "primary_manifest_sha256": "59a1ed46a9a606157d61aebb480f91673bedb19a5e14f00cf4ceea40021b92f2",
+  "sensitivity_report_sha256": "9aac01fc4169508cf8b4c150f56c9ac99684314d7b2414e6fc2d30b4311e32e3",
+  "status": "alternative_only_not_replacement_for_primary_not_final_tournament_admission",
+  "unchanged_candidates": 272
+}

@@ -1,0 +1,10 @@
+{
+  "scope": "frozen scientific package; no execution authorization",
+  "destination": "Modal workspace unimayor-evollm, only after public OSF gate",
+  "freeze_inventory_sha256": "27ee8121f14ccb7d5cd7fb5838c224ad8e7207010fdc92335f52e4a2acfcebf4",
+  "plan_context_sha256": "3811e2f65857b46003a48ddedbc0f625c1a9e573207987787f7a5f78b01d1bfd",
+  "plan_manifest_sha256": "2dbcfc56965bd025ca2f4eb9ca2351099f5fd34101fbbd7af82fee9a43bb3ba6",
+  "files": 1297,
+  "bytes": 100433684,
+  "excludes": "credentials, API receipts, public-registration gate, live results"
+}

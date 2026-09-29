@@ -1,0 +1,23 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if self.first_round():
+        self._started_cooperating = False
+        self._permanent_defect = False
+        self._opponent_coop_streak = 0
+        return axl.Action.D
+    if len(self.history) >= 990:
+        return axl.Action.D
+    if self._permanent_defect:
+        return axl.Action.D
+    if self._started_cooperating:
+        if opponent.history[-1] == axl.Action.D:
+            self._permanent_defect = True
+            return axl.Action.D
+        return axl.Action.C
+    if opponent.history[-1] == axl.Action.C:
+        self._opponent_coop_streak += 1
+    else:
+        self._opponent_coop_streak = 0
+    if self._opponent_coop_streak >= 3:
+        self._started_cooperating = True
+        return axl.Action.C
+    return axl.Action.D

@@ -1,0 +1,83 @@
+{
+  "purpose": "Archival full-horizon diagnostics; no fixed-converter or mixed-tournament results",
+  "seed": 20260913,
+  "turns": 1000,
+  "noise": 0,
+  "workers": 2,
+  "runtime_policy": "strict: no invalid-action substitution; historical History.count compatibility retained",
+  "python": "3.12.14",
+  "cpu_count": 8,
+  "packages": {
+    "axelrod": "4.14.0",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1"
+  },
+  "libraries": [
+    {
+      "library": "anthropic_sonnet46_default_75.py",
+      "sha256": "e6b90f162a3f9396e2e56201d935027ae0bd54a8abfe465981d21555a406e43f",
+      "matches": 825,
+      "failures": [],
+      "failed_strategies": 0,
+      "elapsed_seconds": 27.436999999999898
+    },
+    {
+      "library": "gemini_25_flash_default_75.py",
+      "sha256": "832a4f6bf99e75b70199a456fa07860412c02c5bfd52a4eb6876506cf1ca0807",
+      "matches": 825,
+      "failures": [],
+      "failed_strategies": 0,
+      "elapsed_seconds": 27.29699999999957
+    },
+    {
+      "library": "gemini_31_pro_default_75.py",
+      "sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca",
+      "matches": 825,
+      "failures": [],
+      "failed_strategies": 0,
+      "elapsed_seconds": 28.125
+    },
+    {
+      "library": "openai_gpt54mini_default_75.py",
+      "sha256": "ba287b0f677405113f4bbdfc8129c2dfe380f00ed25b70146b8f4a1bbf88adbe",
+      "matches": 825,
+      "failures": [],
+      "failed_strategies": 0,
+      "elapsed_seconds": 27.42199999999957
+    },
+    {
+      "library": "deepseek_v4pro_default_75.py",
+      "sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "matches": 825,
+      "failures": [],
+      "failed_strategies": 0,
+      "elapsed_seconds": 28.70299999999952
+    },
+    {
+      "library": "qwen3max_default_75.py",
+      "sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "matches": 825,
+      "failures": [],
+      "failed_strategies": 0,
+      "elapsed_seconds": 27.640000000000327
+    },
+    {
+      "library": "kimi_k25_default_75.py",
+      "sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "matches": 825,
+      "failures": [],
+      "failed_strategies": 0,
+      "elapsed_seconds": 28.375
+    },
+    {
+      "library": "glm_51_default_75.py",
+      "sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "matches": 825,
+      "failures": [],
+      "failed_strategies": 0,
+      "elapsed_seconds": 29.688000000000102
+    }
+  ],
+  "all_pass": true
+}

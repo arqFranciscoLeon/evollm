@@ -1,0 +1,288 @@
+{
+  "scope": "Shortest recorded first discrepancy among seven candidate-on-policy scripts; not globally minimal.",
+  "validation_sha256": "10221129e9b83f4315d3857a157e869f4e7d25307abd3c9f209ab88fadbfd68e",
+  "witnesses": [
+    {
+      "candidate_sha256": "e65b38e8b6d747f99746d4acf6ec9392056a19e1f5390c553afac0570b7041ee",
+      "id": "deepseek_v4pro/default/Neutral_8",
+      "reachable_witness": {
+        "actions_sha256": "a6ded36543c7c4533387aedba96a8e42c6447e13385e5e9d12a8f99bd904b54e",
+        "checks": 1000,
+        "failures": [
+          {
+            "actual": "D",
+            "expected": "C",
+            "opponent": "DD",
+            "own": "CD",
+            "reachable_candidate_history": true,
+            "round": 3
+          }
+        ],
+        "mode": "candidate_on_policy",
+        "scenario": 1
+      },
+      "requires_additional_reachability_check": false,
+      "runtime_errors": [],
+      "status": "fidelity_discrepancy"
+    },
+    {
+      "candidate_sha256": "8c334dee464c4ed2d565e30e5741af383b44f8f00d0e975e34aa5fd51718281d",
+      "id": "gemini_31_pro/default/Aggressive_6",
+      "reachable_witness": {
+        "actions_sha256": "2784044192292abbc821812a5fa26f543716e136dcd687b805c8bcd18ddb82a9",
+        "checks": 1000,
+        "failures": [
+          {
+            "actual": "C",
+            "expected": "D",
+            "opponent": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+            "own": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+            "reachable_candidate_history": true,
+            "round": 995
+          }
+        ],
+        "mode": "candidate_on_policy",
+        "scenario": 0
+      },
+      "requires_additional_reachability_check": false,
+      "runtime_errors": [],
+      "status": "fidelity_discrepancy"
+    },
+    {
+      "candidate_sha256": "5b07c677f26ca25b579b905a51338150f4bd3cca37184e3fba861a30c4ff73a9",
+      "id": "glm_51/default/Aggressive_3",
+      "reachable_witness": {
+        "actions_sha256": "bdd45674164ac34eba51dc69e6712c994ae969a119fcdb74f0c58003abb2c5b9",
+        "checks": 1000,
+        "failures": [
+          {
+            "actual": "C",
+            "expected": "D",
+            "opponent": "DDDD",
+            "own": "DDDC",
+            "reachable_candidate_history": true,
+            "round": 5
+          }
+        ],
+        "mode": "candidate_on_policy",
+        "scenario": 1
+      },
+      "requires_additional_reachability_check": false,
+      "runtime_errors": [],
+      "status": "fidelity_discrepancy"
+    },
+    {
+      "candidate_sha256": "4ef692e067c45e3871175e7fb80359c320fefeeb61ea0f42d3dcdc1921087f17",
+      "id": "deepseek_v4pro/default/Aggressive_15",
+      "reachable_witness": {
+        "actions_sha256": "3984f6be0b3c89d32e003556e1319e790eb5264c390c0eaa21eb3688e2df3a46",
+        "checks": 1000,
+        "failures": [
+          {
+            "actual": "C",
+            "expected": "D",
+            "opponent": "C",
+            "own": "D",
+            "reachable_candidate_history": true,
+            "round": 2
+          }
+        ],
+        "mode": "candidate_on_policy",
+        "scenario": 0
+      },
+      "requires_additional_reachability_check": false,
+      "runtime_errors": [],
+      "status": "fidelity_discrepancy"
+    },
+    {
+      "candidate_sha256": "e9154214f8eb053038bee5470c16ac81ccac9081af787423280217be702bd4fc",
+      "id": "deepseek_v4pro/default/Neutral_9",
+      "reachable_witness": {
+        "actions_sha256": "a6ded36543c7c4533387aedba96a8e42c6447e13385e5e9d12a8f99bd904b54e",
+        "checks": 1000,
+        "failures": [
+          {
+            "actual": "D",
+            "expected": "C",
+            "opponent": "DD",
+            "own": "CD",
+            "reachable_candidate_history": true,
+            "round": 3
+          }
+        ],
+        "mode": "candidate_on_policy",
+        "scenario": 1
+      },
+      "requires_additional_reachability_check": false,
+      "runtime_errors": [],
+      "status": "fidelity_discrepancy"
+    },
+    {
+      "candidate_sha256": "9e6f1fa71ba037963bc0c12cb08f56bca9e1e47e11ef5cf41d3d5b44de289764",
+      "id": "deepseek_v4pro/default/Aggressive_7",
+      "reachable_witness": {
+        "actions_sha256": "c76cd26ee5fe20a8f0bbf376a1cf15fb1f87f203d7e64ca5b650b253af3edafc",
+        "checks": 1000,
+        "failures": [
+          {
+            "actual": "D",
+            "expected": "C",
+            "opponent": "D",
+            "own": "D",
+            "reachable_candidate_history": true,
+            "round": 2
+          }
+        ],
+        "mode": "candidate_on_policy",
+        "scenario": 1
+      },
+      "requires_additional_reachability_check": false,
+      "runtime_errors": [],
+      "status": "fidelity_discrepancy"
+    },
+    {
+      "candidate_sha256": "c6e694ba7297e82ed5cb0fcdfefd530e70d6b60ec57e1d6bf9d845018bb7ab59",
+      "id": "kimi_k25/default/Aggressive_17",
+      "reachable_witness": {
+        "actions_sha256": "73b36089109f64f961fe5fbe47a1bf65bec845fb935660bb2c300954e2dd70bb",
+        "checks": 1000,
+        "failures": [
+          {
+            "actual": "C",
+            "expected": "D",
+            "opponent": "CCCCCDC",
+            "own": "DDDDDCD",
+            "reachable_candidate_history": true,
+            "round": 8
+          }
+        ],
+        "mode": "candidate_on_policy",
+        "scenario": 4
+      },
+      "requires_additional_reachability_check": false,
+      "runtime_errors": [],
+      "status": "fidelity_discrepancy"
+    },
+    {
+      "candidate_sha256": "6a27d5ebe9464659c4863f7ffd1104086ae16debc30de76725dcc4d3956e22fa",
+      "id": "deepseek_v4pro/default/Neutral_7",
+      "reachable_witness": null,
+      "requires_additional_reachability_check": false,
+      "runtime_errors": [
+        {
+          "error": "TypeError(\"'int' object is not subscriptable\")",
+          "opponent": "Cooperator",
+          "pass": false,
+          "seed": 862908221
+        },
+        {
+          "error": "TypeError(\"'int' object is not subscriptable\")",
+          "opponent": "Defector",
+          "pass": false,
+          "seed": 1973463109
+        },
+        {
+          "error": "TypeError(\"'int' object is not subscriptable\")",
+          "opponent": "Random",
+          "pass": false,
+          "seed": 1721456973
+        },
+        {
+          "error": "TypeError(\"'int' object is not subscriptable\")",
+          "opponent": "TitForTat",
+          "pass": false,
+          "seed": 1164149597
+        },
+        {
+          "error": "TypeError(\"'int' object is not subscriptable\")",
+          "opponent": "Grudger",
+          "pass": false,
+          "seed": 179281983
+        },
+        {
+          "error": "TypeError(\"'int' object is not subscriptable\")",
+          "opponent": "CyclerDDC",
+          "pass": false,
+          "seed": 141025377
+        },
+        {
+          "error": "TypeError(\"'int' object is not subscriptable\")",
+          "opponent": "CyclerCCD",
+          "pass": false,
+          "seed": 1391065895
+        },
+        {
+          "error": "TypeError(\"'int' object is not subscriptable\")",
+          "opponent": "GoByMajority",
+          "pass": false,
+          "seed": 1462850299
+        },
+        {
+          "error": "TypeError(\"'int' object is not subscriptable\")",
+          "opponent": "SuspiciousTitForTat",
+          "pass": false,
+          "seed": 1091805995
+        },
+        {
+          "error": "TypeError(\"'int' object is not subscriptable\")",
+          "opponent": "Prober",
+          "pass": false,
+          "seed": 1443819530
+        },
+        {
+          "error": "TypeError(\"'int' object is not subscriptable\")",
+          "opponent": "WinStayLoseShift",
+          "pass": false,
+          "seed": 635132437
+        }
+      ],
+      "status": "runtime_error"
+    },
+    {
+      "candidate_sha256": "266108f511cd0667e64ccdad1e2607e12899bef7a27314b2d8c64ae8a479615d",
+      "id": "glm_51/default/Aggressive_12",
+      "reachable_witness": {
+        "actions_sha256": "c0652d50b5b7b499db18d8d7e8e00047d7b5587f6685e569588454d13f50370f",
+        "checks": 1000,
+        "failures": [
+          {
+            "actual": "D",
+            "expected": "C",
+            "opponent": "D",
+            "own": "D",
+            "reachable_candidate_history": true,
+            "round": 2
+          }
+        ],
+        "mode": "candidate_on_policy",
+        "scenario": 1
+      },
+      "requires_additional_reachability_check": false,
+      "runtime_errors": [],
+      "status": "fidelity_discrepancy"
+    },
+    {
+      "candidate_sha256": "4642ec030ff8f1a8211f3a9879a51388718e15fa8979161946372a9093051050",
+      "id": "anthropic_sonnet46/default/Neutral_3",
+      "reachable_witness": {
+        "actions_sha256": "a750e249a257fc62ac0b128471431b8fefb1ce0f68d7a104e3219d4bb02ab3f3",
+        "checks": 1000,
+        "failures": [
+          {
+            "actual": "C",
+            "expected": "D",
+            "opponent": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+            "own": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+            "reachable_candidate_history": true,
+            "round": 998
+          }
+        ],
+        "mode": "candidate_on_policy",
+        "scenario": 0
+      },
+      "requires_additional_reachability_check": false,
+      "runtime_errors": [],
+      "status": "fidelity_discrepancy"
+    }
+  ]
+}

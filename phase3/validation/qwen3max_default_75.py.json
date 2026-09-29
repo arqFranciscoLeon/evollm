@@ -1,0 +1,8 @@
+{
+  "library": "qwen3max_default_75.py",
+  "sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+  "matches": 825,
+  "failures": [],
+  "failed_strategies": 0,
+  "elapsed_seconds": 27.640000000000327
+}

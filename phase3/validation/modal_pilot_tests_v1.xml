@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="3" time="14.000" timestamp="2026-09-27T08:31:09.128994-05:00" hostname="DESKTOP-APKT5M3"><testcase classname="phase3.tests.test_modal_pilot_v1" name="test_upload_is_research_allowlist" time="0.154"><failure message="assert False&#10; +  where False = all(&lt;generator object test_upload_is_research_allowlist.&lt;locals&gt;.&lt;genexpr&gt; at 0x0000026797A1F1D0&gt;)">def test_upload_is_research_allowlist():
+        paths=selected_files()
+        manifest=json.loads((ROOT/'phase3/validation/uniform_derived_candidates_v1.json').read_bytes())
+        assert {x['source_path'] for x in manifest['candidates']} &lt;= set(paths)
+        assert all((ROOT/p).is_file() for p in paths)
+&gt;       assert all(p.startswith('phase3/') for p in paths)
+E       assert False
+E        +  where False = all(&lt;generator object test_upload_is_research_allowlist.&lt;locals&gt;.&lt;genexpr&gt; at 0x0000026797A1F1D0&gt;)
+
+phase3\tests\test_modal_pilot_v1.py:13: AssertionError</failure></testcase><testcase classname="phase3.tests.test_modal_pilot_v1" name="test_schedule_is_bounded_and_covers_four_alternatives" time="0.446" /><testcase classname="phase3.tests.test_modal_pilot_v1" name="test_equivalence_rejects_any_changed_trace_or_missing_match" time="0.001" /></testsuite></testsuites>

@@ -1,0 +1,55 @@
+{
+    "title": "EvoLLM v3.0 — Phase 3 registered mixed-model tournament: receipts, analyses and post hoc audit",
+    "upload_type": "software",
+    "access_right": "open",
+    "version": "v3.0-phase3",
+    "language": "eng",
+    "license": {
+        "id": "MIT"
+    },
+    "creators": [
+        {
+            "name": "León Zúñiga Bolívar, Francisco",
+            "orcid": "0009-0006-3416-4523",
+            "affiliation": "Institución Universitaria Colegio Mayor del Cauca"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Willis, Richard",
+            "type": "Other"
+        }
+    ],
+    "description": "<p>Replication package for Phase 3 of the EvoLLM project: a tournament between 572 strategy identities written by eight large language models (iterated prisoner's dilemma, 1,000 rounds, no noise), registered on OSF (https://osf.io/2nzdh) before execution. It contains the frozen protocol commit 18cb41744f3f1e66fe711aad09697980476c2498, the 665 confirmatory batch receipts (166,172 computed encounters, 2,622,048 scenario-level records, no errors), the registered H7 analysis and its outputs, the eligibility and conversion-fidelity record, and post hoc analyses that are explicitly not preregistered (behavioural characterisation against a probe panel, re-examination of the 1,800 historical Phase 1/2 programs, decomposition of H7). See phase3/REPLICATION.md.</p><p>The repository is a fork of willis-richard/evollm (Willis et al., arXiv:2501.16173). Earlier versions of this record contain the Phase 1 (arXiv:2605.29874) and Phase 2 (arXiv:2608.10262) replication packages.</p>",
+    "keywords": [
+        "large language models",
+        "iterated prisoner's dilemma",
+        "multiagent systems",
+        "evolutionary game theory",
+        "generated strategies",
+        "preregistration",
+        "replication package"
+    ],
+    "related_identifiers": [
+        {
+            "scheme": "url",
+            "identifier": "https://osf.io/2nzdh",
+            "relation": "isSupplementTo"
+        },
+        {
+            "scheme": "arxiv",
+            "identifier": "arXiv:2605.29874",
+            "relation": "isSupplementTo"
+        },
+        {
+            "scheme": "arxiv",
+            "identifier": "arXiv:2608.10262",
+            "relation": "isSupplementTo"
+        },
+        {
+            "scheme": "url",
+            "identifier": "https://github.com/willis-richard/evollm",
+            "relation": "isDerivedFrom"
+        }
+    ]
+}

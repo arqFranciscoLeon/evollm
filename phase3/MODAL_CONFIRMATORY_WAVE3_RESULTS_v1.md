@@ -1,0 +1,9 @@
+# Ola confirmatoria de ocho contenedores: lotes 11–18
+
+El 28 de septiembre de 2026 se ejecutaron los lotes 11–18 en la app Modal <https://modal.com/apps/unimayor-evollm/main/ap-EUS7NgWfFbh3xRXyRrOoAg>, con cuatro contenedores en cada uno de dos volúmenes independientes (`evollm-phase3-confirmatory-v1` y `evollm-phase3-confirmatory-shard1-v1`). La app corrió de 02:33:44 a 02:41:34 COT (**7 min 50 s**) y quedó detenida con cero tareas.
+
+Los ocho lotes produjeron 250 partidas cada uno y cero errores. Los recibos están en `validation/modal_confirmatory_batch_0011_receipt.json` hasta `...0018...`; sus huellas canónicas son 11 `414afc66c3fabf15e9b19c438c684ec349d458e9546c4cfb29dc5b02d0f639be`, 12 `c764b006a9983f50ee8424a783a2cfff2b8f7609d6bf5194c42f138978584ba7`, 13 `86433d59bc0139384f42b476c180adc55574ed8d044a02600ec4dd129523c6ac`, 14 `74b4694bdf54db48583a224f4c1cce718463809ccffdeb8bae227720a04d057f`, 15 `700a1e5d4b61d9ba0d16ece467bd050cb578b13edbe9dd9fed4c87f2b8dfa0ce`, 16 `f0c544735f2481eede451951d124c579baf321423bc1ccdb3609c2f8efb0ada0`, 17 `28c9cf7daf01403c02b538f94c9a23471975f45aa6be8fc999034364711ba9d6` y 18 `071bacf090110cc3ce61e4c341ca42478cd3069f23608da03f1c8b86951a5f7a`.
+
+La verificación conjunta de los lotes 0–18 contra el manifiesto, contexto, pagos y partidas congelados pasó: **19/665 lotes, 4.750 encuentros distintos y 75.488 resultados lógicos**, cero errores. Quedan 646 lotes y 161.422 encuentros distintos; H7 espera la matriz completa.
+
+El costo atribuido a esta app fue **US$0,04510322**. El resumen del ciclo mensual mostró US$0,13 de uso redondeado, crédito de US$0,13 aplicado y **US$0 facturados**; el resumen atribuye US$0,12657908 a apps efímeras y cero a volúmenes. Esta prueba confirma que ocho contenedores pueden terminar con recibos íntegros usando dos volúmenes con cuatro escritores cada uno; no demuestra que una concurrencia mayor sea siempre más rápida o estable.

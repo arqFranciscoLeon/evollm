@@ -1,0 +1,2420 @@
+{
+  "adjudicated_primaries": 2,
+  "candidates": [
+    {
+      "class": "Aggressive_1",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Aggressive_1",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "5aa180629a82d0b976fda9298a6943077157455e85f4f39d4da5a73c3c357e93"
+    },
+    {
+      "class": "Cooperative_1",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Cooperative_1",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "28246d23b259582b3467432bef33fb8bae30f75de1e71a74923f589950e48e53"
+    },
+    {
+      "class": "Neutral_1",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Neutral_1",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "ee98ddc07cc26ecfa6e27822b6c48fed2d27900135bb848e8e70fb7263f037ed"
+    },
+    {
+      "class": "Aggressive_2",
+      "derivation": "implementation_correction",
+      "derived_path": "phase3\\chinese_resolution_v1\\deepseek_v4pro_Aggressive_2.py.txt",
+      "derived_sha256": "b40a33706a5bd97b29c95de5546a937ca04dd25825d27d8d34ef805a5f123a12",
+      "id": "deepseek_v4pro/default/Aggressive_2",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "912683a4ea4673a173898b8ffa992bd9046fc412d8f24e78e52b62779f41a2ad"
+    },
+    {
+      "class": "Cooperative_2",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Cooperative_2",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "853e65e3f112393622ab728eb11ef49a6abfc90a3b956ff0ac2e8d49b527df63"
+    },
+    {
+      "class": "Neutral_2",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Neutral_2",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "0aa81243cd9a20f55b2816dab0e1bc0d1a97f79bbf232409f9749e88885c64fc"
+    },
+    {
+      "class": "Aggressive_3",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Aggressive_3",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "1f0ec43e41af9bb3b069ba0d0b505899282820bc86c113c47638821fa36711ff"
+    },
+    {
+      "class": "Cooperative_3",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Cooperative_3",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "f220b7e495778701aaff248a2bceb10d60b1710789f1a6531de5a1491bd7b75f"
+    },
+    {
+      "class": "Neutral_3",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Neutral_3",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "5bfd2fb1ba50baf58ad70d4380f5fb7f10e249fce2a6299750766a0bc333aec3"
+    },
+    {
+      "class": "Aggressive_4",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Aggressive_4",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "9518240fda28233c48ff0a2fab9d7de87f16d334cfdfad430531615cc45f8879"
+    },
+    {
+      "class": "Cooperative_4",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Cooperative_4",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "bf363cb6514f636a3d6b38e28401726ad718cc975309d883c2ff4419e419819f"
+    },
+    {
+      "class": "Neutral_4",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Neutral_4",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "6f1a8fb29947e6e94389b93b876988d7e8e33e57f7d2683433ea637c18b69f49"
+    },
+    {
+      "class": "Cooperative_5",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Cooperative_5",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "43452ddd5d609ccda6d1f4263a2108b8e6dba68150bda2f01ed754e3868c576e"
+    },
+    {
+      "class": "Neutral_5",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Neutral_5",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "f5aa9d2be6875e0e3beb60830bcd371ab751519b21674c255558b6475bc980d3"
+    },
+    {
+      "class": "Aggressive_6",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Aggressive_6",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "86517bd484e6d5a6b998fb50ae8ff2250b7241e0d3128948333f9ad0a3357b92"
+    },
+    {
+      "class": "Cooperative_6",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Cooperative_6",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "2a95c8fb876092d000e8d0175430e8f1301f506154bed6b1ac7982718a5e7171"
+    },
+    {
+      "class": "Neutral_6",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Neutral_6",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "ca916fae5a1b806500dcca7dcfe72702cae2c41980062e8b924be96cf263c585"
+    },
+    {
+      "class": "Aggressive_7",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Aggressive_7",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "70e95909f98dee4bc30f33999d3dfa3f6ad3334bc58b2c29102ffd0e17b3f273"
+    },
+    {
+      "class": "Cooperative_7",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Cooperative_7",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "b759ed16b575a6e71cdf89592de79dcf19d8c2284b74c35aa5c24a7894f75554"
+    },
+    {
+      "class": "Neutral_7",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Neutral_7",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "59a968410c0545bc6c892a9e264be1f44b790b86a999342e5b5283083401920e"
+    },
+    {
+      "class": "Aggressive_8",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Aggressive_8",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "f280ac43575b7ae5aa28440d8e5e8e79a94fff5843f993abef801d3efb53ba14"
+    },
+    {
+      "class": "Cooperative_8",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Cooperative_8",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "85eed347ccb9638c7fa7b4c69d7674803b3ca21382d482a474c880fe00073718"
+    },
+    {
+      "class": "Neutral_8",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Neutral_8",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "a3198b5dd806ae74d82d12894936faebaf5ef6d341c3541a7d51483150ff3e33"
+    },
+    {
+      "class": "Aggressive_9",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Aggressive_9",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "dd94ad980ff0c833d5d170074fbfd7380e9d868bcadd2b34cfaf7c3b82063e47"
+    },
+    {
+      "class": "Cooperative_9",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Cooperative_9",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "8a59bc3a8c30afaf03295f859d71366d4916fea55c8e69782476d5310ed93b37"
+    },
+    {
+      "class": "Neutral_9",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Neutral_9",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "f88317ec9a57a1ff2647e189a139d614c0b71c5a4390c2afa9713ee6ea105d6d"
+    },
+    {
+      "class": "Aggressive_10",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Aggressive_10",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "fd4b4c74a5869c1e9ddc11799bf44209ff82b090b6e0e8b00825967f90583bce"
+    },
+    {
+      "class": "Cooperative_10",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Cooperative_10",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "ed8f0366bb7a5307f00df6b2daeadd8359aa15b937d42eae9682a7a9ae4ac90e"
+    },
+    {
+      "class": "Neutral_10",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Neutral_10",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "1026836ab1b26e390ece8a242aa10b316f8d9b5cdbabcd9499bacf7d14df800d"
+    },
+    {
+      "class": "Aggressive_11",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Aggressive_11",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "54e48f27525eef3fbaa8741d0a3713099d78e8a99090f0133d72912a26533fa7"
+    },
+    {
+      "class": "Cooperative_11",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Cooperative_11",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "e646937ce7f050982e4075d4a443c454af0bde058e2a56413bf3bc58dca48073"
+    },
+    {
+      "class": "Neutral_11",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Neutral_11",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "322324ef7f5748c3f89688bd08be066e385afab6e80fe12410e5f7d80b70e31b"
+    },
+    {
+      "class": "Aggressive_12",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Aggressive_12",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "4ebbcf70b5edd79d1538c827b98c2e9842f6479274ac5ea5908b6895292e9ca4"
+    },
+    {
+      "class": "Cooperative_12",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Cooperative_12",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "b1153d77a528ea1ea9723564ab686d3eac9aa8f6278931adf887874ea830f916"
+    },
+    {
+      "class": "Neutral_12",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Neutral_12",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "6aec336356a9c432a3f7e0f7c56cb4bead41038dac5bd5ddf8907921cf75f53c"
+    },
+    {
+      "class": "Aggressive_13",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Aggressive_13",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "233e1381293f6ff998806e328bc12adcbc4d66069772321630ce5104b0ee4e1a"
+    },
+    {
+      "class": "Cooperative_13",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Cooperative_13",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "f22a48788a8dccd9ebe48849c9ef82554f450897591cda63747d85ff7b83dfb5"
+    },
+    {
+      "class": "Neutral_13",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Neutral_13",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "9164eca96e73331dbf4e477a759508afe105c0917a69779c7560a01acceb893a"
+    },
+    {
+      "class": "Aggressive_14",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Aggressive_14",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "8969a71ed851fd864ee54ab103e027b23ac58069b32aa771a2be79815086dd22"
+    },
+    {
+      "class": "Cooperative_14",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Cooperative_14",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "30c92050f6647c2aa1783a7d32ff2ca8bc8ae23fb6727efe0fedfc9aa178cc80"
+    },
+    {
+      "class": "Neutral_14",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Neutral_14",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "c65049643a4931ee32ad3f631788627632401af34e5b5e5ca9ee305833887d31"
+    },
+    {
+      "class": "Aggressive_15",
+      "derivation": "implementation_correction",
+      "derived_path": "phase3\\chinese_resolution_v1\\deepseek_v4pro_Aggressive_15.py.txt",
+      "derived_sha256": "2ec61c17986cc4078014b1a38bd093cba866fe1e2b61588362b59b1e3e4ed27c",
+      "id": "deepseek_v4pro/default/Aggressive_15",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "07df10f845552090b127f1581258aed8f12159d8f2acb4b79b261827fea188ca"
+    },
+    {
+      "class": "Cooperative_15",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Cooperative_15",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "38f77f81737857ee475e2388d3c5337a71802389990061ff68e15d7de7e1789f"
+    },
+    {
+      "class": "Neutral_15",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Neutral_15",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "d73717bbd8d72eb34e4dbde98e956a3aac28ff38e5dbcb7dbad3a858e5a290d4"
+    },
+    {
+      "class": "Aggressive_16",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Aggressive_16",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "00ab891e4ef70058bd6400e7998df849845eb88b539b98b0a47bfe2e91887230"
+    },
+    {
+      "class": "Cooperative_16",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Cooperative_16",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "d2e398af17c5ffd55302965bffd2771e25fbf0210acf2c543af79fd5f9fd7df4"
+    },
+    {
+      "class": "Neutral_16",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Neutral_16",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "92c3986c3f2e268ce423ac5eadccb4223b8964255dd177e133fb0827828511a0"
+    },
+    {
+      "class": "Aggressive_17",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Aggressive_17",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "a635162b361846d40c44a2c8273bf327d8c2dc9cc3f5b1033bd653a55ce59ba4"
+    },
+    {
+      "class": "Cooperative_17",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Cooperative_17",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "d1e1ecfd419007a332afe82a7992e535b65b4cd751dbe1d01dbe03d64512e9a0"
+    },
+    {
+      "class": "Neutral_17",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Neutral_17",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "1e4a004bfb6191e2c55e54cdf7061fe713297318d314139af81f35bf43e2a161"
+    },
+    {
+      "class": "Aggressive_18",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Aggressive_18",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "eb6e0b0023bd20d399b9a8b97b83a6177c3f6595608d913cf1aca5a63321dff4"
+    },
+    {
+      "class": "Cooperative_18",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Cooperative_18",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "77a5a89c1c9977535b364c8c48f7f30cd5dfadbdeed7fda375aff0e7e84db193"
+    },
+    {
+      "class": "Neutral_18",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Neutral_18",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "566ab5e97b01694f63807f5ab5526a232ae1f8f8e3975ab6f6c763ae72712538"
+    },
+    {
+      "class": "Aggressive_19",
+      "derivation": "implementation_correction",
+      "derived_path": "phase3\\chinese_resolution_v1\\deepseek_v4pro_Aggressive_19.py.txt",
+      "derived_sha256": "595cf40039adc294d71ff811266e9b33ea05711d23f5e181ea9a9011b9b74821",
+      "id": "deepseek_v4pro/default/Aggressive_19",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "6ffe0b04040bee707a35b47fdc2beca4795bfc2ac4a58e1a2760ab070623e7d2"
+    },
+    {
+      "class": "Cooperative_19",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Cooperative_19",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "db43f2cdcb725cdd3ea0b549cb2e01a87dddc34d16160ac631ab02930123029d"
+    },
+    {
+      "class": "Neutral_19",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Neutral_19",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "0b09f2ac6d37a34662ef60284c3cf8dc92dcb34ff4699dfddc8051de25783b4e"
+    },
+    {
+      "class": "Aggressive_20",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Aggressive_20",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "a2dddd6e682ed1928e1cc00bda9691cf96f56bd40233ad7c62838830f262cf43"
+    },
+    {
+      "class": "Cooperative_20",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Cooperative_20",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "231337428a8043e2b76cbcd2ce05425a446730190a35cb78ac5954c4da572727"
+    },
+    {
+      "class": "Neutral_20",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Neutral_20",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "11d60f0eb4d945e30a33d3dadcdefab4d607f8c344c0ad2cc817d032599612a8"
+    },
+    {
+      "class": "Aggressive_21",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Aggressive_21",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "f045f07b27f1f72e23852ab8e902d35f0d544efaffbd8f5c89b98e2f47a7a01e"
+    },
+    {
+      "class": "Cooperative_21",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Cooperative_21",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "4f552660e2f4cb8a74bd5ff5c614505d83981f22a57f3fec94717724398abd99"
+    },
+    {
+      "class": "Neutral_21",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Neutral_21",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "d1c4af10e18a1a237e2a577f71dcfbe261c444c6d69d0137fb706ab23a130a7a"
+    },
+    {
+      "class": "Aggressive_22",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Aggressive_22",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "f4d6203654384d86a53b41193b001f740a85952890e21c71982730c9a8abc2a3"
+    },
+    {
+      "class": "Cooperative_22",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Cooperative_22",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "ec71c6299b8685039ede6e95af6da2fba489ea74debc3a339893fa445bc6d9c2"
+    },
+    {
+      "class": "Neutral_22",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Neutral_22",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "bb713f62b0da20e17e09826b7829c21afa8b47513ffb5f0dfdefc55e74f64e0f"
+    },
+    {
+      "class": "Aggressive_23",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Aggressive_23",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "e280c32f8bba38dc4a4f28aac92a57416b4e37ee8ef1931f21545dc7b3226d3a"
+    },
+    {
+      "class": "Cooperative_23",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Cooperative_23",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "5649fe560e111ade676080d930feb3da4a4bedc7d712d4d6736f9eabbd6d6052"
+    },
+    {
+      "class": "Neutral_23",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Neutral_23",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "b08a5075a8d3463c19bc6b6d440e4e01e4fb1dbdb9456064ec8c8bbb2353547b"
+    },
+    {
+      "class": "Aggressive_24",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Aggressive_24",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "a0725e462ea7175a427d71b3d256a56cb434cce89f88751a3841f7be7cdcff1c"
+    },
+    {
+      "class": "Cooperative_24",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Cooperative_24",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "b0b026e59aa59b66981ce3373bf2944eb3408262f1cff156ac20afa6d101de8c"
+    },
+    {
+      "class": "Neutral_24",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Neutral_24",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "7fa2e35c3e13eab2cbf4a96cb5080cfb6db66879c1687d821cd753b7e71cec5a"
+    },
+    {
+      "class": "Aggressive_25",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Aggressive_25",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "01a0b68a642836ccb1df5a7e5f7f7bff1b12bbd600d300df78910ee975f91614"
+    },
+    {
+      "class": "Cooperative_25",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Cooperative_25",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "654679c86ebc9cb263e5b4109d94384b2cd9f39a38347dde86c73c1563fd20a0"
+    },
+    {
+      "class": "Neutral_25",
+      "derivation": "archival_original",
+      "id": "deepseek_v4pro/default/Neutral_25",
+      "library_path": "phase3/inputs/archived/deepseek_v4pro_default_75.py",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "prose_sha256": "7304b2f815a82b20e2065489719094ad8aeee9d4083288ebe70f8ca6c1a25102"
+    },
+    {
+      "class": "Aggressive_1",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Aggressive_1",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "6b74e0dd3de25b248921bb4f06251815f2a4da6b76503cafa8d1746764c26fe2"
+    },
+    {
+      "class": "Cooperative_1",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Cooperative_1",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "85afc17a6311961c0ddd7f35a586b0862fef5240c2a3ed57640dbfc50e0e3d59"
+    },
+    {
+      "class": "Neutral_1",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Neutral_1",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "8908e1a5c70b49cbdf2dca9c86c61e116976b2cb07a010a9426771450371dbef"
+    },
+    {
+      "class": "Aggressive_2",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Aggressive_2",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "43bb4103d2b67ea4a9f2794fa45e60ec4363f09b9c5b24657b1a0dc5d140d6a3"
+    },
+    {
+      "class": "Cooperative_2",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Cooperative_2",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "158bee2bb76596ca0a516f2813442970f563b096d97f1738cd5529be5f90fb10"
+    },
+    {
+      "class": "Neutral_2",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Neutral_2",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "8908e1a5c70b49cbdf2dca9c86c61e116976b2cb07a010a9426771450371dbef"
+    },
+    {
+      "class": "Aggressive_3",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Aggressive_3",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "6b74e0dd3de25b248921bb4f06251815f2a4da6b76503cafa8d1746764c26fe2"
+    },
+    {
+      "class": "Cooperative_3",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Cooperative_3",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "85afc17a6311961c0ddd7f35a586b0862fef5240c2a3ed57640dbfc50e0e3d59"
+    },
+    {
+      "class": "Neutral_3",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Neutral_3",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "ddd771c91897eef60c123937e35c12ea8d238302775ad77247e2f7436b8371a9"
+    },
+    {
+      "class": "Aggressive_4",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Aggressive_4",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "4e5ff925ad304571e46b420dc1c8fe55c8e1000cd0cb7ed683157ed739e7cfb0"
+    },
+    {
+      "class": "Cooperative_4",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Cooperative_4",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "7a00f93ed860c5224ec31789dfe18a51ea01384611a0ed985a23ea7819c45775"
+    },
+    {
+      "class": "Neutral_4",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Neutral_4",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "8908e1a5c70b49cbdf2dca9c86c61e116976b2cb07a010a9426771450371dbef"
+    },
+    {
+      "class": "Aggressive_5",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Aggressive_5",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "43bb4103d2b67ea4a9f2794fa45e60ec4363f09b9c5b24657b1a0dc5d140d6a3"
+    },
+    {
+      "class": "Cooperative_5",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Cooperative_5",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "a4a0afcb2b9e577629f84ecf7c61ec17d1294efb955e30392ff8daa46960c2ec"
+    },
+    {
+      "class": "Neutral_5",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Neutral_5",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "35fc4fe567b93aa5d9116e5d2736de57eea87fb4a031fbbb2fbe3c1de9a0d772"
+    },
+    {
+      "class": "Aggressive_6",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Aggressive_6",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "6b74e0dd3de25b248921bb4f06251815f2a4da6b76503cafa8d1746764c26fe2"
+    },
+    {
+      "class": "Cooperative_6",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Cooperative_6",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "a75c4863e326b2a86d40cfbbbf190a560a7640eca9d715a8d1b9e85e78c056f6"
+    },
+    {
+      "class": "Neutral_6",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Neutral_6",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "8908e1a5c70b49cbdf2dca9c86c61e116976b2cb07a010a9426771450371dbef"
+    },
+    {
+      "class": "Aggressive_7",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Aggressive_7",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "4e5ff925ad304571e46b420dc1c8fe55c8e1000cd0cb7ed683157ed739e7cfb0"
+    },
+    {
+      "class": "Cooperative_7",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Cooperative_7",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "c606eeb4876d6adc82f9ac207fbb488b645a35b3ba9f4c82088426a54611d3e1"
+    },
+    {
+      "class": "Neutral_7",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Neutral_7",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "8908e1a5c70b49cbdf2dca9c86c61e116976b2cb07a010a9426771450371dbef"
+    },
+    {
+      "class": "Aggressive_8",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Aggressive_8",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "b197b1c938cc5a5d8c3f9bdc051a1324f7475ac93fd16c4d345097a262cdf23e"
+    },
+    {
+      "class": "Cooperative_8",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Cooperative_8",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "c606eeb4876d6adc82f9ac207fbb488b645a35b3ba9f4c82088426a54611d3e1"
+    },
+    {
+      "class": "Neutral_8",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Neutral_8",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "8908e1a5c70b49cbdf2dca9c86c61e116976b2cb07a010a9426771450371dbef"
+    },
+    {
+      "class": "Aggressive_9",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Aggressive_9",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "6b74e0dd3de25b248921bb4f06251815f2a4da6b76503cafa8d1746764c26fe2"
+    },
+    {
+      "class": "Cooperative_9",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Cooperative_9",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "85afc17a6311961c0ddd7f35a586b0862fef5240c2a3ed57640dbfc50e0e3d59"
+    },
+    {
+      "class": "Neutral_9",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Neutral_9",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "35fc4fe567b93aa5d9116e5d2736de57eea87fb4a031fbbb2fbe3c1de9a0d772"
+    },
+    {
+      "class": "Aggressive_10",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Aggressive_10",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "6b74e0dd3de25b248921bb4f06251815f2a4da6b76503cafa8d1746764c26fe2"
+    },
+    {
+      "class": "Cooperative_10",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Cooperative_10",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "a4a0afcb2b9e577629f84ecf7c61ec17d1294efb955e30392ff8daa46960c2ec"
+    },
+    {
+      "class": "Neutral_10",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Neutral_10",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "bd3b554458dd51e1f9973807c83110e5442e4daa382874944e0dec5977fd8ab5"
+    },
+    {
+      "class": "Aggressive_11",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Aggressive_11",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "4e5ff925ad304571e46b420dc1c8fe55c8e1000cd0cb7ed683157ed739e7cfb0"
+    },
+    {
+      "class": "Cooperative_11",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Cooperative_11",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "f8a0a49194fb64de1d80eed48bd830af6a3135139a6c7bc6f511de8c17f4e599"
+    },
+    {
+      "class": "Neutral_11",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Neutral_11",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "6eb3d0fd2175b42eecc49f29b898bc81f1b189490e965b70a5af4ca40296e518"
+    },
+    {
+      "class": "Aggressive_12",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Aggressive_12",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "aa5644e78efd1e0dea51475280e604f990616bb5160f8e318e19b7fdad181db2"
+    },
+    {
+      "class": "Cooperative_12",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Cooperative_12",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "a4a0afcb2b9e577629f84ecf7c61ec17d1294efb955e30392ff8daa46960c2ec"
+    },
+    {
+      "class": "Neutral_12",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Neutral_12",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "8908e1a5c70b49cbdf2dca9c86c61e116976b2cb07a010a9426771450371dbef"
+    },
+    {
+      "class": "Aggressive_13",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Aggressive_13",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "c201051f93c27acaf6ce5fe827e2837b4f89d2f60ee6aceaa32ec879a1c90219"
+    },
+    {
+      "class": "Cooperative_13",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Cooperative_13",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "85afc17a6311961c0ddd7f35a586b0862fef5240c2a3ed57640dbfc50e0e3d59"
+    },
+    {
+      "class": "Neutral_13",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Neutral_13",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "8908e1a5c70b49cbdf2dca9c86c61e116976b2cb07a010a9426771450371dbef"
+    },
+    {
+      "class": "Aggressive_14",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Aggressive_14",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "c201051f93c27acaf6ce5fe827e2837b4f89d2f60ee6aceaa32ec879a1c90219"
+    },
+    {
+      "class": "Cooperative_14",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Cooperative_14",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "a8c8363abcebbba20ce2fa19d60d65d7b0d5203b256d9dff297a108430897ba6"
+    },
+    {
+      "class": "Neutral_14",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Neutral_14",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "8908e1a5c70b49cbdf2dca9c86c61e116976b2cb07a010a9426771450371dbef"
+    },
+    {
+      "class": "Aggressive_15",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Aggressive_15",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "43bb4103d2b67ea4a9f2794fa45e60ec4363f09b9c5b24657b1a0dc5d140d6a3"
+    },
+    {
+      "class": "Cooperative_15",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Cooperative_15",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "445f1514b0ea6efb72216dd89d01d035edca87b2a19b1b70dd2965dd6c29e906"
+    },
+    {
+      "class": "Neutral_15",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Neutral_15",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "e1b7368a513a6648d76c0e941921c756e96ab8c62fe3f4ff4546162481b1fe25"
+    },
+    {
+      "class": "Aggressive_16",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Aggressive_16",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "c201051f93c27acaf6ce5fe827e2837b4f89d2f60ee6aceaa32ec879a1c90219"
+    },
+    {
+      "class": "Cooperative_16",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Cooperative_16",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "5a9e0d922bb633de8cbe1ae3596258f598e7c3273aec564abae42a2c75d1af7f"
+    },
+    {
+      "class": "Neutral_16",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Neutral_16",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "479239e90b016726c811ba9c697a3ebbd29f38162d18ed140082c535f08ab1d2"
+    },
+    {
+      "class": "Aggressive_17",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Aggressive_17",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "43bb4103d2b67ea4a9f2794fa45e60ec4363f09b9c5b24657b1a0dc5d140d6a3"
+    },
+    {
+      "class": "Cooperative_17",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Cooperative_17",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "1a79d2890b3cbf273519082f6afc3702ab53907aa5ffd3662ed3e63c2eb6f6e9"
+    },
+    {
+      "class": "Neutral_17",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Neutral_17",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "8908e1a5c70b49cbdf2dca9c86c61e116976b2cb07a010a9426771450371dbef"
+    },
+    {
+      "class": "Aggressive_18",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Aggressive_18",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "c201051f93c27acaf6ce5fe827e2837b4f89d2f60ee6aceaa32ec879a1c90219"
+    },
+    {
+      "class": "Cooperative_18",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Cooperative_18",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "b7b1a761f847074dd1af8acc2d4fca3f0673bcf0e7703300da983d0f9e66d2d4"
+    },
+    {
+      "class": "Neutral_18",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Neutral_18",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "aaf6f05c203fb98386c17260ba663e29a2684aee72aa6b120ab43bf675cecb8a"
+    },
+    {
+      "class": "Aggressive_19",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Aggressive_19",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "6b74e0dd3de25b248921bb4f06251815f2a4da6b76503cafa8d1746764c26fe2"
+    },
+    {
+      "class": "Cooperative_19",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Cooperative_19",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "c606eeb4876d6adc82f9ac207fbb488b645a35b3ba9f4c82088426a54611d3e1"
+    },
+    {
+      "class": "Neutral_19",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Neutral_19",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "ddd771c91897eef60c123937e35c12ea8d238302775ad77247e2f7436b8371a9"
+    },
+    {
+      "class": "Aggressive_20",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Aggressive_20",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "c201051f93c27acaf6ce5fe827e2837b4f89d2f60ee6aceaa32ec879a1c90219"
+    },
+    {
+      "class": "Cooperative_20",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Cooperative_20",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "6e82796702b43c09a84e613f13b05c27070c470a5271d10339de97eec3137074"
+    },
+    {
+      "class": "Neutral_20",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Neutral_20",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "496a710d62e608897aba6196bc727d63cc6bc607a7286b12a855ad8f7407c150"
+    },
+    {
+      "class": "Aggressive_21",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Aggressive_21",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "c201051f93c27acaf6ce5fe827e2837b4f89d2f60ee6aceaa32ec879a1c90219"
+    },
+    {
+      "class": "Cooperative_21",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Cooperative_21",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "a4a0afcb2b9e577629f84ecf7c61ec17d1294efb955e30392ff8daa46960c2ec"
+    },
+    {
+      "class": "Neutral_21",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Neutral_21",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "ddd771c91897eef60c123937e35c12ea8d238302775ad77247e2f7436b8371a9"
+    },
+    {
+      "class": "Aggressive_22",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Aggressive_22",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "4e5ff925ad304571e46b420dc1c8fe55c8e1000cd0cb7ed683157ed739e7cfb0"
+    },
+    {
+      "class": "Cooperative_22",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Cooperative_22",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "4278cb97b80d18b4760f5ced01019a41d68e892f21271b78f706cc76eafc9af2"
+    },
+    {
+      "class": "Neutral_22",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Neutral_22",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "6744068ffb15971eb523a376c57b2b20d2c517795c0b83303cbe6061c39c2e4f"
+    },
+    {
+      "class": "Aggressive_23",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Aggressive_23",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "c201051f93c27acaf6ce5fe827e2837b4f89d2f60ee6aceaa32ec879a1c90219"
+    },
+    {
+      "class": "Cooperative_23",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Cooperative_23",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "a8c8363abcebbba20ce2fa19d60d65d7b0d5203b256d9dff297a108430897ba6"
+    },
+    {
+      "class": "Neutral_23",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Neutral_23",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "8908e1a5c70b49cbdf2dca9c86c61e116976b2cb07a010a9426771450371dbef"
+    },
+    {
+      "class": "Aggressive_24",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Aggressive_24",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "43bb4103d2b67ea4a9f2794fa45e60ec4363f09b9c5b24657b1a0dc5d140d6a3"
+    },
+    {
+      "class": "Cooperative_24",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Cooperative_24",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "85afc17a6311961c0ddd7f35a586b0862fef5240c2a3ed57640dbfc50e0e3d59"
+    },
+    {
+      "class": "Neutral_24",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Neutral_24",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "ddd771c91897eef60c123937e35c12ea8d238302775ad77247e2f7436b8371a9"
+    },
+    {
+      "class": "Aggressive_25",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Aggressive_25",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "94dcc714af24b9ada1aee577623d99d8044894156c560c714afd4ff9637c7a6b"
+    },
+    {
+      "class": "Cooperative_25",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Cooperative_25",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "c606eeb4876d6adc82f9ac207fbb488b645a35b3ba9f4c82088426a54611d3e1"
+    },
+    {
+      "class": "Neutral_25",
+      "derivation": "archival_original",
+      "id": "qwen3max/default/Neutral_25",
+      "library_path": "phase3/inputs/archived/qwen3max_default_75.py",
+      "library_sha256": "ecc031397227dfc7bbb325eef34f947d529597a95f51ddd1b9db793e1d35676b",
+      "prose_sha256": "35fc4fe567b93aa5d9116e5d2736de57eea87fb4a031fbbb2fbe3c1de9a0d772"
+    },
+    {
+      "class": "Aggressive_1",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Aggressive_1",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "867fd2322eae66a2fd54255497d75e98918edb9807af36ca2dfa0ea1d7758ac9"
+    },
+    {
+      "class": "Cooperative_1",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Cooperative_1",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "e0041d93a0e38df5e94c4b293d9d41ef5baa689d92355f12e28a1794519437ba"
+    },
+    {
+      "class": "Neutral_1",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Neutral_1",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "34a1edbd499ebd891ced2730c61fdd7e5010c728b5a596614a451bf13436945d"
+    },
+    {
+      "class": "Aggressive_2",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Aggressive_2",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "16d0790c982c78f63427cbc80ddb40b835acc9b8d193d8ceb0ca202fba38ca67"
+    },
+    {
+      "class": "Cooperative_2",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Cooperative_2",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "b3bc2794fd82a733b4ca5f176f40be1e63858cbc8ea1249d186f657e967d3861"
+    },
+    {
+      "class": "Neutral_2",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Neutral_2",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "cee595adf023d0e3e9b1aa41eafc129106f02a750b1f25748fc1e56d72ee73af"
+    },
+    {
+      "class": "Aggressive_3",
+      "derivation": "implementation_correction",
+      "derived_path": "phase3\\chinese_resolution_v1\\kimi_k25_Aggressive_3.py.txt",
+      "derived_sha256": "820b38366cc7f4c3724eedaeb699e344870848af9c37cc38a83c590ae9649cfa",
+      "id": "kimi_k25/default/Aggressive_3",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "1f83cb6d8e5f35632de94bde6b334266c23d8313bc3209633ea6de2a81a1b132"
+    },
+    {
+      "class": "Cooperative_3",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Cooperative_3",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "286999adfff2b0268f8c41a51d341cfa58fb612eadd07fc95ed0c69a839826cd"
+    },
+    {
+      "class": "Neutral_3",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Neutral_3",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "2a1d8aba38376051d0b53d019182299050c56b1dba8cd616c2132870415852a5"
+    },
+    {
+      "class": "Aggressive_4",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Aggressive_4",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "649e1ad84e49fc110a6bd1e923b54143288bcfe38e3ae3e722a38b90571fb81f"
+    },
+    {
+      "class": "Cooperative_4",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Cooperative_4",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "0689da5179aded0830177a6579a0117a9644fee20b5eca60a347c79d7880abe4"
+    },
+    {
+      "class": "Neutral_4",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Neutral_4",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "ae3bbe024fd758fc16719dd3fa70b478f12610e8393ef0422b32c86649b4cb30"
+    },
+    {
+      "class": "Aggressive_5",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Aggressive_5",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "644f4e6e83934387293563f3e57edf45a7453b86ee9780b2bf9ef42f7103c72e"
+    },
+    {
+      "class": "Cooperative_5",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Cooperative_5",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "20f365814226edcce3cfb4aa600c7ab14d1b45363b0f14fdf043f04c999531c1"
+    },
+    {
+      "class": "Neutral_5",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Neutral_5",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "5a26eb96f05ad5456f17b04a3f2eedb726a42017b87faab8db5df4c1fe445396"
+    },
+    {
+      "class": "Aggressive_6",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Aggressive_6",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "3dbf91365d1ddc5c8d8ea6747358002ef0b2a11d1ee439ea02a8525a1d91f89f"
+    },
+    {
+      "class": "Cooperative_6",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Cooperative_6",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "4a326a3bb4c18556cff171aeaf45c65bd64b11f4bef611f74b82cafff02ce7f3"
+    },
+    {
+      "class": "Neutral_6",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Neutral_6",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "3aaec0f3eaca4f379d8263c4d8f5f4ae22028c681169b9615061e1404949a2af"
+    },
+    {
+      "class": "Aggressive_7",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Aggressive_7",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "d73c96ad6711f023dd383ea267aa8e87aef67a67c7814011a7bd72d55288f06a"
+    },
+    {
+      "class": "Cooperative_7",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Cooperative_7",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "043d9419d0f854718045c6b0ebc87709d21881ded5cb419ab462cbc72327887f"
+    },
+    {
+      "class": "Neutral_7",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Neutral_7",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "0604c5b1c2173f8bc4070c1aff064d46b576ca10c8987d9e0402248fd5ca6528"
+    },
+    {
+      "class": "Aggressive_8",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Aggressive_8",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "1dce68924cc823ddac0dea355aeae56ba0508eb76022aac38c5376ee456c4216"
+    },
+    {
+      "class": "Cooperative_8",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Cooperative_8",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "9e1b086bf39a9275df027a929e1fa62314fc88c2a51b8a78a3638e3891c4a352"
+    },
+    {
+      "class": "Neutral_8",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Neutral_8",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "c6fc79f678b08cdcbd33489109387a71a55c345fa8b50df66bf67238a3b1dd79"
+    },
+    {
+      "class": "Aggressive_9",
+      "derivation": "implementation_correction",
+      "derived_path": "phase3\\chinese_resolution_v1\\kimi_k25_Aggressive_9.py.txt",
+      "derived_sha256": "6eb48be3e90856bc9261a3457cd21da16d70de964256f7a003c57dad5b6eef8a",
+      "id": "kimi_k25/default/Aggressive_9",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "8a9a07014df48fa83f7846754d5cff61a7710725bb815785a8acccc20e9ed7c8"
+    },
+    {
+      "class": "Cooperative_9",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Cooperative_9",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "221c338a50240ffa2065e17e5c2e2dfa70f4067b350f6043ef227bc22c2d38f9"
+    },
+    {
+      "class": "Neutral_9",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Neutral_9",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "9ee4dd74556e63026cf7008c498c875de8cbc396605b051aab4f193b74b69043"
+    },
+    {
+      "class": "Aggressive_10",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Aggressive_10",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "ef87ac71b8ef9348ae19a7f44a0586b774127881164032bee645e8acbe99b0bd"
+    },
+    {
+      "class": "Cooperative_10",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Cooperative_10",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "0e6aec5caee8a2f98b34028ff93c55ddf4d629114da83b1eb6f621c8477d946b"
+    },
+    {
+      "class": "Neutral_10",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Neutral_10",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "414d6684e08fb496b42339b7d4c10493829fc1db6eea4e98f4ae458d03dd15f0"
+    },
+    {
+      "class": "Aggressive_11",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Aggressive_11",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "7a8f886904afc3e95edff1f948db799cd9653225db961ce559b441755ee3a5ad"
+    },
+    {
+      "class": "Cooperative_11",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Cooperative_11",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "3e7fc3635b35b4a28e71092493db95aa710fb5614e1ea3568071a902012fc31d"
+    },
+    {
+      "class": "Neutral_11",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Neutral_11",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "a6379aac7705e7c9f1a2fb5e559d9a3ed116eaacd1ce6c997402e59b59f231a6"
+    },
+    {
+      "class": "Cooperative_12",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Cooperative_12",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "bc1aba1295d25809fa3879e4720511a124772d1a58599ab07111814ed2acb65c"
+    },
+    {
+      "class": "Neutral_12",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Neutral_12",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "28c99850386d4ccb11e43d948392ec8e2fd7feb8d4da030f4ce86521f19bafe2"
+    },
+    {
+      "class": "Aggressive_13",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Aggressive_13",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "ebbc39e7648871c55eded50f432b3207d3a4805797f71737d105529767d6430d"
+    },
+    {
+      "class": "Cooperative_13",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Cooperative_13",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "8c24b6dd246a40d6d82fc3dd577aed69be2c43687ee4d7ee2735bb764c8a4cf0"
+    },
+    {
+      "class": "Neutral_13",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Neutral_13",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "1c9805cf2c6bd635916482abe29bf9efc4ab152d4055452f11d75fad3d483af1"
+    },
+    {
+      "class": "Aggressive_14",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Aggressive_14",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "2b4c652beeb8bbd25803e82776272b25d2d51b0b0588ec0957f196df502670b7"
+    },
+    {
+      "class": "Cooperative_14",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Cooperative_14",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "44a71788d5d9fc33f7e34b4551961ec64d08bb57a9e04cdf520485cd31ae66ee"
+    },
+    {
+      "class": "Neutral_14",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Neutral_14",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "9dd0fc0df992859480f0a301057a1cc6e557232b91596591f8556ce1e8433689"
+    },
+    {
+      "class": "Aggressive_15",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Aggressive_15",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "feb56ed7e30a4b246d2b21474f12e85b205c748e9989c2fb7b29e013e84fb9fe"
+    },
+    {
+      "class": "Cooperative_15",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Cooperative_15",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "1b70954acd3138a8cc0d5f6297b054e0bcc79dedd4441f6fae82e31c65393218"
+    },
+    {
+      "class": "Neutral_15",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Neutral_15",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "0cd557dbd61f2caa36307d991c5eea082b6ec1066e071260d18b0a59426e732b"
+    },
+    {
+      "class": "Aggressive_16",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Aggressive_16",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "8f9fad6d1b99b2fe7fdc9ec736ba9bf0ae128706b04b4703302658a871825979"
+    },
+    {
+      "class": "Cooperative_16",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Cooperative_16",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "5423611b7fde2ac933844b16733d9e0abac5f60392cbf4e2f81c56a280e717a1"
+    },
+    {
+      "class": "Neutral_16",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Neutral_16",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "c0f58d7166f257c39d1ee918799be476f1bd5c60895df73a8666b2931419954a"
+    },
+    {
+      "class": "Aggressive_17",
+      "derivation": "implementation_correction",
+      "derived_path": "phase3\\chinese_resolution_v1\\kimi_k25_Aggressive_17.py.txt",
+      "derived_sha256": "f04f1aee31382a8533ad678f20fc34bd01b127a2d9043bca33f3ecec0a684715",
+      "id": "kimi_k25/default/Aggressive_17",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "e10d2265e4c5e71fcbbac22cfab263eacc67be443804d57100a4cb36bf7e9395"
+    },
+    {
+      "class": "Cooperative_17",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Cooperative_17",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "c2ee7acbeef9e839c92cdae6a5aca1de56e8e2487bf8f92b16ad5ba3a869d7e2"
+    },
+    {
+      "class": "Neutral_17",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Neutral_17",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "08440bcc1df3e77e10fe3725b08a8beb5ee42ecdc652f0a032965ad2939c2155"
+    },
+    {
+      "class": "Aggressive_18",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Aggressive_18",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "4dd348758cf22d9ed908982134a1f559666f3a7150ec4613e056a41cc142b918"
+    },
+    {
+      "class": "Cooperative_18",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Cooperative_18",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "f04f0c3af388dccac6757551757d5dd6998744b4e7e690249fd5184153f91dcc"
+    },
+    {
+      "class": "Neutral_18",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Neutral_18",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "fcd9737fdc61d1fccc5b0a8fc5fb1e31f638cdcbdb74421c1f92cb52b8422d43"
+    },
+    {
+      "class": "Aggressive_19",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Aggressive_19",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "b89f4582d294160afeebcfb119f945150c5f97be4de235204a86bbea926246d9"
+    },
+    {
+      "class": "Cooperative_19",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Cooperative_19",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "7456abf24538b05e7d2bdf2c0170a647e491fcb0bd3742fc1f6e76061a32ef52"
+    },
+    {
+      "class": "Neutral_19",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Neutral_19",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "637ac84137223de32bcd08c7b974134aaf255d89c41b3516f8cf759af1826ee2"
+    },
+    {
+      "class": "Aggressive_20",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Aggressive_20",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "ef87ac71b8ef9348ae19a7f44a0586b774127881164032bee645e8acbe99b0bd"
+    },
+    {
+      "class": "Cooperative_20",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Cooperative_20",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "bc1aba1295d25809fa3879e4720511a124772d1a58599ab07111814ed2acb65c"
+    },
+    {
+      "class": "Neutral_20",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Neutral_20",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "45fa60686f76f6dcd61b8096ac9f4ffc37868ce7316a796ed78c63c2d486280e"
+    },
+    {
+      "class": "Aggressive_21",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Aggressive_21",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "6e8b5fe1bd5c614b5da172f2640792504abf7918fa31ab1c47f191c841b73ae0"
+    },
+    {
+      "class": "Cooperative_21",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Cooperative_21",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "786f5f7f596df204cc0515b99bfcc7390bdcf95ecf6ad3717f571aebb4f98a9e"
+    },
+    {
+      "class": "Neutral_21",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Neutral_21",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "5ba8b6315ce4400a826ef2babda66a54bec8970dc962c814519bdf25dd912ddb"
+    },
+    {
+      "class": "Aggressive_22",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Aggressive_22",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "7669c718a25000a58176bfc4b27fd482b4f598f9aa30871a907b932f67eda848"
+    },
+    {
+      "class": "Cooperative_22",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Cooperative_22",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "f53e7f481049ab215d28365bed1b224d8c826d9264f0cf0b5b7b99fd41f054e4"
+    },
+    {
+      "class": "Neutral_22",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Neutral_22",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "39feccb5ea46099328cbff03c6414fe7126cbe939c9d0daa1e65d950d829cbfa"
+    },
+    {
+      "class": "Aggressive_23",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Aggressive_23",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "1642e7b4d0d8f6c92c52483d2d19db232ce9115a572d3de4cae8a3e62f636ba0"
+    },
+    {
+      "class": "Cooperative_23",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Cooperative_23",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "c2ee7acbeef9e839c92cdae6a5aca1de56e8e2487bf8f92b16ad5ba3a869d7e2"
+    },
+    {
+      "class": "Neutral_23",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Neutral_23",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "9432a6ebb67f0a918864d4d0de09fb330462f158d86dd0c3c7c26c9994930887"
+    },
+    {
+      "class": "Aggressive_24",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Aggressive_24",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "f340f94c6c3fe5765ce535b26b666f71d690ee1ad377163f0c8fe0a76bbd771f"
+    },
+    {
+      "class": "Cooperative_24",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Cooperative_24",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "3d9997dc618f79a0da15f663eb3f147a2b38d8e9a774ef5a17c10d763ff88588"
+    },
+    {
+      "class": "Neutral_24",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Neutral_24",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "a339f02a4bc7366c706d2472841d2eab3ab6848558eff0ed0ecefdc2d78e6332"
+    },
+    {
+      "class": "Aggressive_25",
+      "derivation": "adjudicated_primary",
+      "derived_path": "phase3\\chinese_resolution_v1\\kimi_k25_Aggressive_25_primary.py.txt",
+      "derived_sha256": "ac5aec7536cde6b7e56031d527836acb2ce045036c6901fcbcb6ea184366cd86",
+      "id": "kimi_k25/default/Aggressive_25",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "a0c81202f0d6b322c88cec6b316e09567f25a7f34828baa4d520d51de65305ac"
+    },
+    {
+      "class": "Cooperative_25",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Cooperative_25",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "bac56307f519e1742814b63a12b770ca912f5c334fbd148ee69d452ac6b821e6"
+    },
+    {
+      "class": "Neutral_25",
+      "derivation": "archival_original",
+      "id": "kimi_k25/default/Neutral_25",
+      "library_path": "phase3/inputs/archived/kimi_k25_default_75.py",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "prose_sha256": "15aa4ec47431f7545509d006e3023301b61c265ee4a5dc9a204a7c6f930e7564"
+    },
+    {
+      "class": "Aggressive_1",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Aggressive_1",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "26dca3ce3b93f6136c29a3aac8abff1ecdf9940f6d35852613e64ae0f214b995"
+    },
+    {
+      "class": "Cooperative_1",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Cooperative_1",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "0070f9361ece607c7b943d65a94e3b138108bc14913c1b5ce2829d52e933d552"
+    },
+    {
+      "class": "Neutral_1",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Neutral_1",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "9905ae32223801d8c3842d976bb870e22926ed63b3234ef7b735084162223ae7"
+    },
+    {
+      "class": "Aggressive_2",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Aggressive_2",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "1d27ed4a01806e21bb1f0b81878c2d0d823802d2f83509469051d117c1a7c31b"
+    },
+    {
+      "class": "Cooperative_2",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Cooperative_2",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "55b21cd7371bac1540f9cef6287ef59ca11072cc0cd20f7aa7a085cf4b27defb"
+    },
+    {
+      "class": "Neutral_2",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Neutral_2",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "5fbb9eace9ba3a717d7ce011f360533f5c5e16f0582eca54e9eb3eccf8d4409c"
+    },
+    {
+      "class": "Aggressive_3",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Aggressive_3",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "b52508a21e3c124b199eff0e25042bb92bab6b1040506222575d7a186eebcdfa"
+    },
+    {
+      "class": "Cooperative_3",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Cooperative_3",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "a75faf1d81b9f3dba166f86a03fe6fe3fbb3f600e0f5081c962fb0d84c979ad5"
+    },
+    {
+      "class": "Neutral_3",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Neutral_3",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "a75faf1d81b9f3dba166f86a03fe6fe3fbb3f600e0f5081c962fb0d84c979ad5"
+    },
+    {
+      "class": "Aggressive_4",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Aggressive_4",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "2315b4dceb008cc6719b0c5bbbf5776ffa334f275460fe0aecab19588b627a84"
+    },
+    {
+      "class": "Cooperative_4",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Cooperative_4",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "fa9e9af52f0fd9f27e86a8d715e4fc3b3dee2f01cf363aa011476f8f6063ca25"
+    },
+    {
+      "class": "Neutral_4",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Neutral_4",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "bb1f4ae4d5fb9bd1b2528f6708fb1bbdb7bc86f06733a9f1d15ebe9102ab625d"
+    },
+    {
+      "class": "Aggressive_5",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Aggressive_5",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "be661481279d53ebdb067e67b9be3b640a80826a90de0eaaac75b0794e87ae90"
+    },
+    {
+      "class": "Cooperative_5",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Cooperative_5",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "126cb0906798fd1dd641a411616e4d13013232463ce95d340e17d5659b896ae0"
+    },
+    {
+      "class": "Neutral_5",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Neutral_5",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "a75faf1d81b9f3dba166f86a03fe6fe3fbb3f600e0f5081c962fb0d84c979ad5"
+    },
+    {
+      "class": "Aggressive_6",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Aggressive_6",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "7cc5e94630a4b7b83f02739b3d159fedbc501370b927aca2fe005b1dcb9db527"
+    },
+    {
+      "class": "Cooperative_6",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Cooperative_6",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "218a0038da8984bd8ae78a284d9d86fe120e974b36e25bfad24052f639b3258e"
+    },
+    {
+      "class": "Neutral_6",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Neutral_6",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "3a61c4211f1b8192775e0240b8d6006a41bd080f6414f175f18fc9907d332d4c"
+    },
+    {
+      "class": "Aggressive_7",
+      "derivation": "implementation_correction",
+      "derived_path": "phase3\\chinese_resolution_v1\\glm_51_Aggressive_7.py.txt",
+      "derived_sha256": "2aaa6db31415da7edc12e1ff79449c0623066eec51ba39d767ba2e189faa2fac",
+      "id": "glm_51/default/Aggressive_7",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "e1d89d01ce80d4aeed734622da63aeb7a5d89faaf931f6ef0e10ccd5a75e216f"
+    },
+    {
+      "class": "Cooperative_7",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Cooperative_7",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "79b9c77aef485dd34e6661f160ba22c4cfedbf4d47962e319f9cbfc97f0a2d6e"
+    },
+    {
+      "class": "Neutral_7",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Neutral_7",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "f02757037d0843de0be20ae2fa5830f61f37f2f7da42e436976756d93f089fe0"
+    },
+    {
+      "class": "Aggressive_8",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Aggressive_8",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "11cf8dc9fc1b0f7f91753618947a38f34e0d17f4b6e4531ba95147b5561fca1e"
+    },
+    {
+      "class": "Cooperative_8",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Cooperative_8",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "48d21487447a88a70439974f10d4f8b49b369c2af1cf4d0a23a0a7a8f74ed1dc"
+    },
+    {
+      "class": "Neutral_8",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Neutral_8",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "56a64820a9fd904bfe1c7647b95a7583c96995649e93d27b6747d9a517bbd2ee"
+    },
+    {
+      "class": "Aggressive_9",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Aggressive_9",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "41335d401cd201b108e46ebf8beeeb8bc25427067c67c83a36125a032b593d66"
+    },
+    {
+      "class": "Cooperative_9",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Cooperative_9",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "564664736c9ded9f915bfa5d94408f4798208b3efec3fb4f92d872e1ed395a7d"
+    },
+    {
+      "class": "Neutral_9",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Neutral_9",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "83fad0fda5f7acc6b12021dcd6517df46b8ec20b8f68386b464bf5a7608b4476"
+    },
+    {
+      "class": "Aggressive_10",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Aggressive_10",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "7837de8d925b7beb63af0ece941c23f2ea0d08227c4ebf802880432d8ea8d15e"
+    },
+    {
+      "class": "Cooperative_10",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Cooperative_10",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "18f040285dde844a2ddbbc3589dd0e9dd2badb699c94ae9e69437466b25e5a86"
+    },
+    {
+      "class": "Neutral_10",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Neutral_10",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "23f3199fd48380cdc18800e747003b6ab34ad6ac4c222de61c93e0f55af5a76f"
+    },
+    {
+      "class": "Aggressive_11",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Aggressive_11",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "e177d7039573bd6b1469eb1e0bcaeb73ef4cc2c3bcad087a87819e384aa0eb1f"
+    },
+    {
+      "class": "Cooperative_11",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Cooperative_11",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "a75faf1d81b9f3dba166f86a03fe6fe3fbb3f600e0f5081c962fb0d84c979ad5"
+    },
+    {
+      "class": "Neutral_11",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Neutral_11",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "48d21487447a88a70439974f10d4f8b49b369c2af1cf4d0a23a0a7a8f74ed1dc"
+    },
+    {
+      "class": "Aggressive_12",
+      "derivation": "implementation_correction",
+      "derived_path": "phase3\\chinese_resolution_v1\\glm_51_Aggressive_12.py.txt",
+      "derived_sha256": "beb06adc27a29f132deeddda5799179402793e6aa96544f34c99356ffc618724",
+      "id": "glm_51/default/Aggressive_12",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "7b814227c4bc17025fbeacf0db8f14a400ce73b0de52a50822e4fb2299af6cf9"
+    },
+    {
+      "class": "Cooperative_12",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Cooperative_12",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "4432cbb114e3c770e0020195eb222bd7d447e3986d10c290fb6428aeb6a20b3b"
+    },
+    {
+      "class": "Neutral_12",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Neutral_12",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "a75faf1d81b9f3dba166f86a03fe6fe3fbb3f600e0f5081c962fb0d84c979ad5"
+    },
+    {
+      "class": "Aggressive_13",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Aggressive_13",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "1160974e7e81c7b25ea6768acf7f671b9c095d8832f5dfcf9b35a7e89da2b215"
+    },
+    {
+      "class": "Cooperative_13",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Cooperative_13",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "06baf419b2a02980c0a3e929a12f35ae738f102f843908b7a6dafd075398f373"
+    },
+    {
+      "class": "Neutral_13",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Neutral_13",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "70b88e70ab86762da54cff1196df04316a935cb14968d17d694c47ebc29c665c"
+    },
+    {
+      "class": "Aggressive_14",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Aggressive_14",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "036a2156fe1edac2ff95c62881df306ce3a2a49b90139bfd7479d56cb53a81e0"
+    },
+    {
+      "class": "Cooperative_14",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Cooperative_14",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "fa9bcf89d4e444ab8a9e7ca6e39aea1d1453324ae9732e3e9c4afc40ec665a0f"
+    },
+    {
+      "class": "Neutral_14",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Neutral_14",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "586638ead25d54f03c545083e11fa1c04cb9c6efed38fd00b6887e2bd0d4dcbc"
+    },
+    {
+      "class": "Aggressive_15",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Aggressive_15",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "cff31fbfb004aab4dc94e23754aec989c20f05991cb30d5c386c70ea78095fc1"
+    },
+    {
+      "class": "Cooperative_15",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Cooperative_15",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "36edf34d716ae4f530e4b51ff349dcd6f767f1154088daeb496b6ead3e23cdf7"
+    },
+    {
+      "class": "Neutral_15",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Neutral_15",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "70b88e70ab86762da54cff1196df04316a935cb14968d17d694c47ebc29c665c"
+    },
+    {
+      "class": "Aggressive_16",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Aggressive_16",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "4ebbee134eb4d9ca838ca33f47afaa921a6d3bd362d1df45c7227a4534d4ed42"
+    },
+    {
+      "class": "Cooperative_16",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Cooperative_16",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "cf06827bb3f9ba7b65fea3a558362d598110fb4f83394658ce86cb87c36566f4"
+    },
+    {
+      "class": "Neutral_16",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Neutral_16",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "8bd91e95e6d47787572a179ce93180a487146feac552fb400520d557f396637a"
+    },
+    {
+      "class": "Aggressive_17",
+      "derivation": "implementation_correction",
+      "derived_path": "phase3\\chinese_resolution_v1\\glm_51_Aggressive_17.py.txt",
+      "derived_sha256": "46ca0348c51909a780feef84067289a3b3a24627035b8f8930347de6d770d7f6",
+      "id": "glm_51/default/Aggressive_17",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "cf027189cca8f4724f5908e997baa9065bfec6c0a1e75460a89ebe2951047b95"
+    },
+    {
+      "class": "Cooperative_17",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Cooperative_17",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "586638ead25d54f03c545083e11fa1c04cb9c6efed38fd00b6887e2bd0d4dcbc"
+    },
+    {
+      "class": "Neutral_17",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Neutral_17",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "a75faf1d81b9f3dba166f86a03fe6fe3fbb3f600e0f5081c962fb0d84c979ad5"
+    },
+    {
+      "class": "Aggressive_18",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Aggressive_18",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "7b745eb82ad482a81a5cf1b53e33e85375ca1c7f50436c0ca7ac07120f7891f5"
+    },
+    {
+      "class": "Cooperative_18",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Cooperative_18",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "61b1c230b9e59cd7f3696f55df3596a08092a009e6abf53a7927c5204c3c0a81"
+    },
+    {
+      "class": "Neutral_18",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Neutral_18",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "d497ac07fd245f28f2fca54a40f08b2eb5e834ff663f694de1d909023401034c"
+    },
+    {
+      "class": "Aggressive_19",
+      "derivation": "implementation_correction",
+      "derived_path": "phase3\\chinese_resolution_v1\\glm_51_Aggressive_19.py.txt",
+      "derived_sha256": "5eaf9367a1ae5e4f8fafc4d834e68c5e25941cae1104d46f7930062a736736ea",
+      "id": "glm_51/default/Aggressive_19",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "d9abe72fb59df28514f4e632c91c459dd8e67dea0beaf42fda7ca5ac79a19721"
+    },
+    {
+      "class": "Cooperative_19",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Cooperative_19",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "40aa64cc42a3433c3cf1f036ae2e823a2b373fbca4cc19bcf8144ef9af34e169"
+    },
+    {
+      "class": "Neutral_19",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Neutral_19",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "1c0bd40d2388ced1cfd62a33121210576ec241c75926ae0b4bf5248514919e69"
+    },
+    {
+      "class": "Aggressive_20",
+      "derivation": "adjudicated_primary",
+      "derived_path": "phase3\\chinese_resolution_v1\\glm_51_Aggressive_20_primary.py.txt",
+      "derived_sha256": "9ca99bc4cad6e8ab008081dd773e2c58432f43473fbbfb656a4bf478aa3721dc",
+      "id": "glm_51/default/Aggressive_20",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "bec026e48ebcccbeb1ec9ec0bcb19a3c60e933cc0964b69c4cdc6d0afaeda7a4"
+    },
+    {
+      "class": "Cooperative_20",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Cooperative_20",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "70580c89ed4dc25ff9fb9360db045b895b61adbdab79b919d517799fa3a0d7ff"
+    },
+    {
+      "class": "Neutral_20",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Neutral_20",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "aac54d80e571edb8d81d2abae8879ce4f6d22bcffe7ea803f3af4183fb6dc06f"
+    },
+    {
+      "class": "Aggressive_21",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Aggressive_21",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "a929f6bcdc3dc5b03b149d4ae70fb2fab40f1cc0e5f931849aef36b3c2c4ea90"
+    },
+    {
+      "class": "Cooperative_21",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Cooperative_21",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "586638ead25d54f03c545083e11fa1c04cb9c6efed38fd00b6887e2bd0d4dcbc"
+    },
+    {
+      "class": "Neutral_21",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Neutral_21",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "0c0da82e10d6ea4b6b318909abcc770fce6d869a3f669598c6f809ee7ba38304"
+    },
+    {
+      "class": "Aggressive_22",
+      "derivation": "implementation_correction",
+      "derived_path": "phase3\\chinese_resolution_v1\\glm_51_Aggressive_22.py.txt",
+      "derived_sha256": "dd049e2b1242b9578535c8e70772c72ee2239810c7fdf9e872042047474f9cad",
+      "id": "glm_51/default/Aggressive_22",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "8905fc32e9ae9c15750de90d3c08cf16c4c36931fa6cdc7855b4d4f278e032d9"
+    },
+    {
+      "class": "Cooperative_22",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Cooperative_22",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "91a0f5ad8a0ded1892bec222ee12336cccb42ca120c30446ff7f9d755c511a36"
+    },
+    {
+      "class": "Neutral_22",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Neutral_22",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "5fbb9eace9ba3a717d7ce011f360533f5c5e16f0582eca54e9eb3eccf8d4409c"
+    },
+    {
+      "class": "Aggressive_23",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Aggressive_23",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "520354decc45cb5eaaeccb2298e2369db0007740e1b32cd47f7b31cceb757ea8"
+    },
+    {
+      "class": "Cooperative_23",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Cooperative_23",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "5fbb9eace9ba3a717d7ce011f360533f5c5e16f0582eca54e9eb3eccf8d4409c"
+    },
+    {
+      "class": "Neutral_23",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Neutral_23",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "95d0cb31347986543f71de2a0965726eff64647465c1cbfed238744f98fdc860"
+    },
+    {
+      "class": "Aggressive_24",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Aggressive_24",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "bc31ce266e39d606be6949a961c5b180b8bb774edec40586315c3fb5348722ad"
+    },
+    {
+      "class": "Cooperative_24",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Cooperative_24",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "a75faf1d81b9f3dba166f86a03fe6fe3fbb3f600e0f5081c962fb0d84c979ad5"
+    },
+    {
+      "class": "Neutral_24",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Neutral_24",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "73a7cfcfab63382635cfed295fc236557287a2b809e7a08377aefe757004b6be"
+    },
+    {
+      "class": "Aggressive_25",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Aggressive_25",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "6fde855d169bc2e089fddda7ed23d768ddb187123a04779956989120d3107575"
+    },
+    {
+      "class": "Cooperative_25",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Cooperative_25",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "20621fef62ea89a24a002d1d764e3bde823be80f18e053187ebd949f7caf756d"
+    },
+    {
+      "class": "Neutral_25",
+      "derivation": "archival_original",
+      "id": "glm_51/default/Neutral_25",
+      "library_path": "phase3/inputs/archived/glm_51_default_75.py",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "prose_sha256": "c16a878bf699d34d13200057c654a9fa42214c4c9c124a20acb63f6191ae5dd4"
+    }
+  ],
+  "created_at": "2026-09-14T14:34:50.337760+00:00",
+  "implementation_corrections": 11,
+  "resolution_validation_sha256": "d55d5b2336eee325ee8c56eeb8c7a53c4765a684dbec313d58e55cb9ff317224",
+  "status": "archival_derived_control_not_uniform_conversion_main_field",
+  "unchanged_originals": 285
+}

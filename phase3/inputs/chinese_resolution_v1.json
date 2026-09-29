@@ -1,0 +1,182 @@
+{
+  "api_calls": 0,
+  "created_at": "2026-09-14T14:32:52.100722+00:00",
+  "derivations": [
+    {
+      "derived_path": "phase3\\chinese_resolution_v1\\deepseek_v4pro_Aggressive_2.py.txt",
+      "derived_sha256": "b40a33706a5bd97b29c95de5546a937ca04dd25825d27d8d34ef805a5f123a12",
+      "diff": "--- archived_method_normalized\n+++ deepseek_v4pro_Aggressive_2.py.txt\n@@ -1,4 +1,4 @@\n def strategy(self, opponent: axl.player.Player) -> axl.Action:\n     if self.first_round():\n         return axl.Action.D\n-    return opponent.history[-1] if opponent.history else axl.Action.D\n+    return axl.Action.D if opponent.history[-1] == axl.Action.C else axl.Action.C\n",
+      "id": "deepseek_v4pro/default/Aggressive_2",
+      "kind": "implementation_correction",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "original_method_sha256": "41ed3fd0e59f591792df1d82b075e16a5e01552d5ac3d53d8cd72d6e0523bf1e",
+      "original_normalized_source_sha256": "48635e4840e1e6d7684629310b49e08c1c8847e07d4bebd151fa29443cd09b3f",
+      "reason": "Follow explicit inverted response branches rather than generic copy label."
+    },
+    {
+      "derived_path": "phase3\\chinese_resolution_v1\\deepseek_v4pro_Aggressive_15.py.txt",
+      "derived_sha256": "2ec61c17986cc4078014b1a38bd093cba866fe1e2b61588362b59b1e3e4ed27c",
+      "diff": "--- archived_method_normalized\n+++ deepseek_v4pro_Aggressive_15.py.txt\n@@ -1,7 +1,7 @@\n def strategy(self, opponent: axl.player.Player) -> axl.Action:\n     if self.first_round():\n         return axl.Action.D\n-    last_my_score = self.score - self.total_scores(self.history[-1:], opponent.history[-1:])[0]\n+    last_my_score = self.total_scores(self.history[-1:], opponent.history[-1:])[0]\n     if last_my_score in (5, 3):\n         return self.history[-1]\n     else:\n",
+      "id": "deepseek_v4pro/default/Aggressive_15",
+      "kind": "implementation_correction",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "original_method_sha256": "c2191208b14ce75f8e3bbef597c01ffb6e855c6e6bc42be87dd02e102803f64a",
+      "original_normalized_source_sha256": "8f63beda5da7e006886cfe62c779b01b1ecdad2572ba0708b3ba9e192ad0efee",
+      "reason": "Use last-round payoff, not cumulative score minus last payoff."
+    },
+    {
+      "derived_path": "phase3\\chinese_resolution_v1\\deepseek_v4pro_Aggressive_19.py.txt",
+      "derived_sha256": "595cf40039adc294d71ff811266e9b33ea05711d23f5e181ea9a9011b9b74821",
+      "diff": "--- archived_method_normalized\n+++ deepseek_v4pro_Aggressive_19.py.txt\n@@ -1,6 +1,6 @@\n def strategy(self, opponent: axl.player.Player) -> axl.Action:\n     if len(self.history) < 2 or len(opponent.history) < 2:\n-        return axl.Action.C\n+        return axl.Action.D\n     if opponent.history[-1] == axl.Action.C and opponent.history[-2] == axl.Action.C:\n         return axl.Action.C\n     return axl.Action.D\n",
+      "id": "deepseek_v4pro/default/Aggressive_19",
+      "kind": "implementation_correction",
+      "library_sha256": "8ed602a1de798960555f54da41dfb2919279fa0d4362636418e389abd0fed2db",
+      "original_method_sha256": "6b4cb593c0185751e36b614f95bfbbff31f1a9cb63f9127b4a166c6fbe700305",
+      "original_normalized_source_sha256": "25b85a90a05458830bbe07cddd290ffe0679384ef067d255d9a890e8ba77eedb",
+      "reason": "Otherwise D covers fewer than two prior observations."
+    },
+    {
+      "derived_path": "phase3\\chinese_resolution_v1\\kimi_k25_Aggressive_3.py.txt",
+      "derived_sha256": "820b38366cc7f4c3724eedaeb699e344870848af9c37cc38a83c590ae9649cfa",
+      "diff": "--- archived_method_normalized\n+++ kimi_k25_Aggressive_3.py.txt\n@@ -1,12 +1,16 @@\n def strategy(self, opponent: axl.player.Player) -> axl.Action:\n     if self.first_round():\n         self._started_cooperating = False\n+        self._permanent_defect = False\n         self._opponent_coop_streak = 0\n         return axl.Action.D\n     if len(self.history) >= 990:\n         return axl.Action.D\n+    if self._permanent_defect:\n+        return axl.Action.D\n     if self._started_cooperating:\n         if opponent.history[-1] == axl.Action.D:\n+            self._permanent_defect = True\n             return axl.Action.D\n         return axl.Action.C\n     if opponent.history[-1] == axl.Action.C:\n",
+      "id": "kimi_k25/default/Aggressive_3",
+      "kind": "implementation_correction",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "original_method_sha256": "25ad651c912be0baee25555e2b95a5fe43b0ea7f74e47cb06a53cce4005faca1",
+      "original_normalized_source_sha256": "f2ca30750b234a7c1fb94b48f9349e4ed75a6464ae62f81f0a6db14fcb10ec0c",
+      "reason": "Latch permanent defection after cooperation phase is betrayed."
+    },
+    {
+      "derived_path": "phase3\\chinese_resolution_v1\\kimi_k25_Aggressive_9.py.txt",
+      "derived_sha256": "6eb48be3e90856bc9261a3457cd21da16d70de964256f7a003c57dad5b6eef8a",
+      "diff": "--- archived_method_normalized\n+++ kimi_k25_Aggressive_9.py.txt\n@@ -1,6 +1,8 @@\n def strategy(self, opponent: axl.player.Player) -> axl.Action:\n     if self.first_round():\n         self._defect_forever = False\n+        return axl.Action.D\n+    if len(self.history) >= 999:\n         return axl.Action.D\n     if getattr(self, '_defect_forever', False):\n         return axl.Action.D\n",
+      "id": "kimi_k25/default/Aggressive_9",
+      "kind": "implementation_correction",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "original_method_sha256": "dbac52a5bd3b62a18741342f1d1a3f0624f5f50973288bfd25bde1d521850451",
+      "original_normalized_source_sha256": "9dc93dc4cd95e4285b8124f8f84b5dcf141e25a75d789cbac8ec3b89395acb92",
+      "reason": "Restore explicit final-round defection."
+    },
+    {
+      "derived_path": "phase3\\chinese_resolution_v1\\kimi_k25_Aggressive_17.py.txt",
+      "derived_sha256": "f04f1aee31382a8533ad678f20fc34bd01b127a2d9043bca33f3ecec0a684715",
+      "diff": "--- archived_method_normalized\n+++ kimi_k25_Aggressive_17.py.txt\n@@ -1,19 +1,16 @@\n def strategy(self, opponent: axl.player.Player) -> axl.Action:\n     if self.first_round():\n         self._cooperate_forever = False\n+        self._permanent_defect = False\n         return axl.Action.D\n-    if getattr(self, '_cooperate_forever', False):\n+    if self._permanent_defect:\n+        return axl.Action.D\n+    if self._cooperate_forever:\n+        if opponent.history[-1] == axl.Action.D:\n+            self._permanent_defect = True\n+            return axl.Action.D\n         return axl.Action.C\n-    if len(self.history) >= 1 and self.history[-1] == axl.Action.C and (opponent.history[-1] == axl.Action.D):\n+    if len(opponent.history) >= 5 and self.history[-5:] == [axl.Action.D] * 5 and opponent.history[-5:] == [axl.Action.C] * 5:\n         self._cooperate_forever = True\n-        return axl.Action.D\n-    if len(opponent.history) >= 5:\n-        last_five_opp = opponent.history[-5:]\n-        last_five_self = self.history[-5:]\n-        if all((move == axl.Action.C for move in last_five_opp)) and all((move == axl.Action.D for move in last_five_self)):\n-            return axl.Action.C\n-    if opponent.history[-1] == axl.Action.D:\n-        return axl.Action.D\n-    if opponent.history[-1] == axl.Action.C and self.history[-1] == axl.Action.D:\n-        return axl.Action.D\n+        return axl.Action.C\n     return axl.Action.D\n",
+      "id": "kimi_k25/default/Aggressive_17",
+      "kind": "implementation_correction",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "original_method_sha256": "74f4af466612c1e400c2364ce7663eb0db2df1f0bc40e77ded145115e81d7d96",
+      "original_normalized_source_sha256": "af6868f30cb14fbc1e2ade5d12ca83619b98dd4b267227e7678b36794adc2aba",
+      "reason": "Persist cooperation after threshold and defect permanently after betrayal."
+    },
+    {
+      "derived_path": "phase3\\chinese_resolution_v1\\glm_51_Aggressive_7.py.txt",
+      "derived_sha256": "2aaa6db31415da7edc12e1ff79449c0623066eec51ba39d767ba2e189faa2fac",
+      "diff": "--- archived_method_normalized\n+++ glm_51_Aggressive_7.py.txt\n@@ -9,5 +9,4 @@\n     if len(opponent.history) >= 2 and opponent.history[0] == axl.Action.C and (opponent.history[1] == axl.Action.C):\n         self._locked_action = axl.Action.D\n         return self._locked_action\n-    self._locked_action = opponent.history[-1]\n-    return self._locked_action\n+    return opponent.history[-1]\n",
+      "id": "glm_51/default/Aggressive_7",
+      "kind": "implementation_correction",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "original_method_sha256": "b35a77bdb65035f64ac869128cd03c9416d37c15ce89a13e392fcf689eff861b",
+      "original_normalized_source_sha256": "103b9051650a0cfc86c73d62aa4ab47d1c3dd346c34696bd5294d8c91ce99bb6",
+      "reason": "Copy each new rival action rather than locking the first copied action."
+    },
+    {
+      "derived_path": "phase3\\chinese_resolution_v1\\glm_51_Aggressive_12.py.txt",
+      "derived_sha256": "beb06adc27a29f132deeddda5799179402793e6aa96544f34c99356ffc618724",
+      "diff": "--- archived_method_normalized\n+++ glm_51_Aggressive_12.py.txt\n@@ -1,7 +1,7 @@\n def strategy(self, opponent: axl.player.Player) -> axl.Action:\n     if self.first_round():\n         return axl.Action.D\n-    last_score = self.score - self.total_scores(self.history[-1:], opponent.history[-1:])[0]\n+    last_score = self.total_scores(self.history[-1:], opponent.history[-1:])[0]\n     if last_score == 5:\n         return axl.Action.D\n     if last_score == 3:\n",
+      "id": "glm_51/default/Aggressive_12",
+      "kind": "implementation_correction",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "original_method_sha256": "2ad07b70b9a1ceddcb2f582b058240cf008bee0333ac90363135888105fd3bc9",
+      "original_normalized_source_sha256": "b62fca91254808a57f88b2d9d610b6e8ed7597c743fd42509668ade143883272",
+      "reason": "Use last-round payoff rather than cumulative score minus last payoff."
+    },
+    {
+      "derived_path": "phase3\\chinese_resolution_v1\\glm_51_Aggressive_17.py.txt",
+      "derived_sha256": "46ca0348c51909a780feef84067289a3b3a24627035b8f8930347de6d770d7f6",
+      "diff": "--- archived_method_normalized\n+++ glm_51_Aggressive_17.py.txt\n@@ -1,7 +1,7 @@\n def strategy(self, opponent: axl.player.Player) -> axl.Action:\n     if self.first_round():\n         return axl.Action.D\n-    if len(self.history) >= 1000:\n+    if len(self.history) >= 999:\n         return axl.Action.D\n     last_score = self.total_scores(self.history[-1:], opponent.history[-1:])[0]\n     if last_score == 5:\n",
+      "id": "glm_51/default/Aggressive_17",
+      "kind": "implementation_correction",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "original_method_sha256": "0527deb346a47275481c2d896f1467379a47afcbf45ae287c8544fc52df47a48",
+      "original_normalized_source_sha256": "e33543efe54a6459291434261d049f3d10987c384ec14906bafb6f0de7941778",
+      "reason": "Final round is len(history)+1=1000."
+    },
+    {
+      "derived_path": "phase3\\chinese_resolution_v1\\glm_51_Aggressive_19.py.txt",
+      "derived_sha256": "5eaf9367a1ae5e4f8fafc4d834e68c5e25941cae1104d46f7930062a736736ea",
+      "diff": "--- archived_method_normalized\n+++ glm_51_Aggressive_19.py.txt\n@@ -1,19 +1,12 @@\n def strategy(self, opponent: axl.player.Player) -> axl.Action:\n-    if self.first_round():\n+    if len(self.history) < 2:\n         return axl.Action.D\n-    round_number = len(self.history) + 1\n-    if round_number == 2:\n-        if opponent.history[0] == axl.Action.D:\n-            return axl.Action.D\n+    if opponent.history[0] == axl.Action.D or opponent.history[1] == axl.Action.C:\n         return axl.Action.D\n-    if round_number == 3:\n-        if opponent.history[1] == axl.Action.C:\n-            return axl.Action.D\n+    if len(self.history) == 2:\n         return axl.Action.C\n-    if round_number == 4:\n-        if opponent.history[2] == axl.Action.D:\n-            return axl.Action.D\n-        return axl.Action.C\n-    if round_number <= 999:\n-        return axl.Action.C\n-    return axl.Action.D\n+    if opponent.history[2] == axl.Action.D:\n+        return axl.Action.D\n+    if len(self.history) >= 999:\n+        return axl.Action.D\n+    return axl.Action.C\n",
+      "id": "glm_51/default/Aggressive_19",
+      "kind": "implementation_correction",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "original_method_sha256": "0d4430b45f8241ad445a0a41fc0f6218926984ff2edeb8bf87466509077ff586",
+      "original_normalized_source_sha256": "778cafa1e839958936259f386993a35dc483a1d3460989d58d1170f0c39866bd",
+      "reason": "Preserve initial branches ordering D for the remainder of the game."
+    },
+    {
+      "derived_path": "phase3\\chinese_resolution_v1\\glm_51_Aggressive_22.py.txt",
+      "derived_sha256": "dd049e2b1242b9578535c8e70772c72ee2239810c7fdf9e872042047474f9cad",
+      "diff": "--- archived_method_normalized\n+++ glm_51_Aggressive_22.py.txt\n@@ -1,7 +1,7 @@\n def strategy(self, opponent: axl.player.Player) -> axl.Action:\n     if self.first_round():\n         return axl.Action.D\n-    if len(self.history) >= 1000:\n+    if len(self.history) >= 999:\n         return axl.Action.D\n     if opponent.defections == 0:\n         return axl.Action.D\n",
+      "id": "glm_51/default/Aggressive_22",
+      "kind": "implementation_correction",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "original_method_sha256": "75f30afd4229ed89a9247417fbd259842e01adffbb68aaef7ded819d81f8ad2b",
+      "original_normalized_source_sha256": "379f8b6ae8049956c46e0869078d91cdbe776c0073a390004fc5abd623963aa6",
+      "reason": "Final round is len(history)+1=1000."
+    },
+    {
+      "derived_path": "phase3\\chinese_resolution_v1\\kimi_k25_Aggressive_25_primary.py.txt",
+      "derived_sha256": "ac5aec7536cde6b7e56031d527836acb2ce045036c6901fcbcb6ea184366cd86",
+      "diff": "--- archived_method_normalized\n+++ kimi_k25_Aggressive_25_primary.py.txt\n@@ -2,10 +2,8 @@\n     if self.first_round():\n         self._defect_forever = False\n         return axl.Action.D\n+    if self.history[-1] == axl.Action.C and opponent.history[-1] == axl.Action.D:\n+        self._defect_forever = True\n     if self._defect_forever:\n         return axl.Action.D\n-    if len(opponent.history) >= 2:\n-        if opponent.history[-1] == axl.Action.D and self.history[-1] == axl.Action.C:\n-            self._defect_forever = True\n-            return axl.Action.D\n     return opponent.history[-1]\n",
+      "id": "kimi_k25/default/Aggressive_25",
+      "kind": "adjudicated_primary",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "original_method_sha256": "ebef896ff6de251d8f6bd8d8e386dda7e43b3dc5033037ae9862c12ba829255f",
+      "reason": "same completed-round pair; alternative one-round lag"
+    },
+    {
+      "derived_path": "phase3\\chinese_resolution_v1\\kimi_k25_Aggressive_25_alternative.py.txt",
+      "derived_sha256": "dd709bccde5736f770e13a35b3e4f85ace18f6cfdd58ed24508b01c0060e2cef",
+      "diff": "--- archived_method_normalized\n+++ kimi_k25_Aggressive_25_alternative.py.txt\n@@ -2,10 +2,8 @@\n     if self.first_round():\n         self._defect_forever = False\n         return axl.Action.D\n+    if len(self.history) >= 2 and self.history[-2] == axl.Action.C and opponent.history[-1] == axl.Action.D:\n+        self._defect_forever = True\n     if self._defect_forever:\n         return axl.Action.D\n-    if len(opponent.history) >= 2:\n-        if opponent.history[-1] == axl.Action.D and self.history[-1] == axl.Action.C:\n-            self._defect_forever = True\n-            return axl.Action.D\n     return opponent.history[-1]\n",
+      "id": "kimi_k25/default/Aggressive_25",
+      "kind": "adjudicated_alternative",
+      "library_sha256": "b70631828282b1d95030e7490516e4902a4b15c77966ece11c5bd5e99def0232",
+      "original_method_sha256": "ebef896ff6de251d8f6bd8d8e386dda7e43b3dc5033037ae9862c12ba829255f",
+      "reason": "same completed-round pair; alternative one-round lag"
+    },
+    {
+      "derived_path": "phase3\\chinese_resolution_v1\\glm_51_Aggressive_20_primary.py.txt",
+      "derived_sha256": "9ca99bc4cad6e8ab008081dd773e2c58432f43473fbbfb656a4bf478aa3721dc",
+      "diff": "--- archived_method_normalized\n+++ glm_51_Aggressive_20_primary.py.txt\n@@ -1,14 +1,5 @@\n def strategy(self, opponent: axl.player.Player) -> axl.Action:\n-    if self.first_round():\n-        self._mutual_coop_streak = 0\n-        return axl.Action.D\n-    if len(self.history) >= 10 and all((move == axl.Action.C for move in self.history[-10:])) and all((move == axl.Action.C for move in opponent.history[-10:])):\n-        self._mutual_coop_streak = 10\n-    elif self.history[-1] == axl.Action.C and opponent.history[-1] == axl.Action.C:\n-        self._mutual_coop_streak = getattr(self, '_mutual_coop_streak', 0) + 1\n-    else:\n-        self._mutual_coop_streak = 0\n-    if len(self.history) >= 10 and len(self.history) >= 1000 - 10:\n+    if self.first_round() or len(self.history) >= 990:\n         return axl.Action.D\n     if self.history[-1] == axl.Action.D and opponent.history[-1] == axl.Action.C:\n         return axl.Action.D\n@@ -16,9 +7,6 @@\n         return axl.Action.C\n     if self.history[-1] == axl.Action.C and opponent.history[-1] == axl.Action.D:\n         return axl.Action.D\n-    if self.history[-1] == axl.Action.C and opponent.history[-1] == axl.Action.C:\n-        if getattr(self, '_mutual_coop_streak', 0) >= 10:\n-            self._mutual_coop_streak = 0\n-            return axl.Action.D\n-        return axl.Action.C\n-    return axl.Action.D\n+    if len(self.history) >= 10 and self.history[-10:] == [axl.Action.C] * 10 and opponent.history[-10:] == [axl.Action.C] * 10:\n+        return axl.Action.D\n+    return axl.Action.C\n",
+      "id": "glm_51/default/Aggressive_20",
+      "kind": "adjudicated_primary",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "original_method_sha256": "10d4857306f4b05878d10cf537d9f7a9c0a26298722eff339a1b63f7e9403179",
+      "reason": "last ten completed CC; alternative nine completed CC"
+    },
+    {
+      "derived_path": "phase3\\chinese_resolution_v1\\glm_51_Aggressive_20_alternative.py.txt",
+      "derived_sha256": "3f2edd9abb25929638b69d17b06330797e3f722f085ac60fe6a204955d81b827",
+      "diff": "--- archived_method_normalized\n+++ glm_51_Aggressive_20_alternative.py.txt\n@@ -1,14 +1,5 @@\n def strategy(self, opponent: axl.player.Player) -> axl.Action:\n-    if self.first_round():\n-        self._mutual_coop_streak = 0\n-        return axl.Action.D\n-    if len(self.history) >= 10 and all((move == axl.Action.C for move in self.history[-10:])) and all((move == axl.Action.C for move in opponent.history[-10:])):\n-        self._mutual_coop_streak = 10\n-    elif self.history[-1] == axl.Action.C and opponent.history[-1] == axl.Action.C:\n-        self._mutual_coop_streak = getattr(self, '_mutual_coop_streak', 0) + 1\n-    else:\n-        self._mutual_coop_streak = 0\n-    if len(self.history) >= 10 and len(self.history) >= 1000 - 10:\n+    if self.first_round() or len(self.history) >= 990:\n         return axl.Action.D\n     if self.history[-1] == axl.Action.D and opponent.history[-1] == axl.Action.C:\n         return axl.Action.D\n@@ -16,9 +7,6 @@\n         return axl.Action.C\n     if self.history[-1] == axl.Action.C and opponent.history[-1] == axl.Action.D:\n         return axl.Action.D\n-    if self.history[-1] == axl.Action.C and opponent.history[-1] == axl.Action.C:\n-        if getattr(self, '_mutual_coop_streak', 0) >= 10:\n-            self._mutual_coop_streak = 0\n-            return axl.Action.D\n-        return axl.Action.C\n-    return axl.Action.D\n+    if len(self.history) >= 9 and self.history[-9:] == [axl.Action.C] * 9 and opponent.history[-9:] == [axl.Action.C] * 9:\n+        return axl.Action.D\n+    return axl.Action.C\n",
+      "id": "glm_51/default/Aggressive_20",
+      "kind": "adjudicated_alternative",
+      "library_sha256": "449844d13c30583b6c42a8dca2e6a4156a3fdcb371289a7854c4c74e0b471f4b",
+      "original_method_sha256": "10d4857306f4b05878d10cf537d9f7a9c0a26298722eff339a1b63f7e9403179",
+      "reason": "last ten completed CC; alternative nine completed CC"
+    }
+  ],
+  "eligible_count": 298,
+  "excluded": [
+    {
+      "id": "deepseek_v4pro/default/Aggressive_5",
+      "reason": "missing initial-history branch; no source reconstruction"
+    },
+    {
+      "id": "kimi_k25/default/Aggressive_12",
+      "reason": "missing initial-history branch; no source reconstruction"
+    }
+  ],
+  "policy_sha256": "978727587c0f609dcbbe2dbdd9de3ea8e061f080ebad5b0b80b4bea5c826ffd7",
+  "preparer_sha256": "48baf56c914139dec7dddf6bb5b9f4889f1864764052d252dac8d4f07a37c3c4",
+  "review_sha256": "8b14c608acbcec69515faf9e0ec7cf9286b3bffb277f49f87d1a9624872fff28",
+  "status": "prepared_for_local_validation"
+}

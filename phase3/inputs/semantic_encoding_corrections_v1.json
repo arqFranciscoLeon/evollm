@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "scope": "Corrections to review commentary only; original texts, hashes, eligibility and frozen pilot requests remain unchanged.",
+  "method": "Direct Unicode code-point inspection of archived prose, rather than relying on terminal glyph rendering.",
+  "corrections": [
+    {
+      "id": "anthropic_sonnet46/default/Aggressive_5",
+      "review_source": "semantic_review_remaining_v1.json",
+      "field": "rationale_es",
+      "corrected_note_es": "El intervalo 996–1000 contiene U+2013 (raya corta válida), no un carácter dañado. Las palabras final 5 rounds y los extremos concuerdan. No hay reparación de codificación que realizar."
+    },
+    {
+      "id": "anthropic_sonnet46/default/Aggressive_12",
+      "review_source": "semantic_review_remaining_v1.json",
+      "field": "rationale_es",
+      "corrected_note_es": "El intervalo 996–1000 contiene U+2013 (raya corta válida), no un carácter dañado. Las palabras final 5 rounds y los extremos concuerdan. No hay reparación de codificación que realizar."
+    },
+    {
+      "id": "anthropic_sonnet46/default/Aggressive_22",
+      "review_source": "semantic_review_remaining_v1.json",
+      "field": "rationale_es",
+      "corrected_note_es": "El intervalo 996–1000 contiene U+2013 (raya corta válida), no un carácter dañado. Las palabras final 5 rounds y los extremos concuerdan. No hay reparación de codificación que realizar."
+    },
+    {
+      "id": "openai_gpt54mini/default/Cooperative_20",
+      "review_source": "semantic_review_v1.json",
+      "field": "rationale_es",
+      "corrected_note_es": "La frase explicativa contiene comillas tipográficas válidas U+201C y U+201D, no caracteres de sustitución U+FFFD. La visualización de consola llevó a una observación editorial equivocada en la revisión anterior. Las reglas son C inicial y copia de la última acción del rival; la elegibilidad y validación del piloto no cambian."
+    }
+  ],
+  "interpretation": "Use these corrected editorial notes alongside their original review records; do not describe the source bytes as corrupted. No API call or text regeneration occurred."
+}

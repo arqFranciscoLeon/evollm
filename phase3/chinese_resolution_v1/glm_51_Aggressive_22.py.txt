@@ -1,0 +1,19 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if self.first_round():
+        return axl.Action.D
+    if len(self.history) >= 999:
+        return axl.Action.D
+    if opponent.defections == 0:
+        return axl.Action.D
+    first_defection_index = None
+    for i, move in enumerate(opponent.history):
+        if move == axl.Action.D:
+            first_defection_index = i
+            break
+    if first_defection_index is not None:
+        rounds_since_first_defection = len(opponent.history) - 1 - first_defection_index
+        if rounds_since_first_defection == 0:
+            return axl.Action.C
+        if rounds_since_first_defection == 1:
+            return axl.Action.C
+    return opponent.history[-1]

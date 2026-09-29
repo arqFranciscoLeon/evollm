@@ -1,0 +1,1637 @@
+{
+  "candidate_sha256": "4ef692e067c45e3871175e7fb80359c320fefeeb61ea0f42d3dcdc1921087f17",
+  "cohort": "chinese",
+  "id": "deepseek_v4pro/default/Aggressive_15",
+  "run_identity": {
+    "adapter": "3e9bdfdc4f918759dc9d7642a20c90ec8b92e8b3b60de1832d2548ea74e3963b",
+    "audit": "5a8bc3780199bc792174f44e87453295122d04721b10a428012efac14a3d86c7",
+    "old_report": "4f70248ac1d47c84365c0a51d873c016233bf6d5329148cd9729b9a1b860eca0",
+    "plan": "122202af19a17ac474ec19c2e8c77d35c1cc50b95e503ccbf24d5bd8971eaad2",
+    "references": {
+      "chinese_semantics.py": "7300bc3eb4ca3b8c5195c08b31f351000484e29a279a3f277cfcd5c5dcb16d7f",
+      "expanded_semantics.py": "2392e5cdb0247d9bf64ed82d0827eb502a7d497f0a9bc094d56460cf69ad1233",
+      "validate_chinese_resolution.py": "3739e17968f8dc4f1c53637b1d906f7fef6ee83f35fcbae3e9aef4dd416be9b2",
+      "validate_expanded.py": "07939f826878a1a386721d155eb0a54ad8d4c1c27eabe6b5ee617362243ac972"
+    },
+    "review": "d33a8f21ee9130c0c72556986ade657e66d4027b5e9e3c2ad4d8a736b251c9c3",
+    "validator": "36b42dfbe5a474729789ddc7890d9dad21464fe35491e4ef1fa60b456d04a262"
+  },
+  "runtime": [
+    {
+      "opponent": "Cooperator",
+      "pass": true,
+      "seed": 1976083485,
+      "turns": 1000
+    },
+    {
+      "opponent": "Defector",
+      "pass": true,
+      "seed": 40913702,
+      "turns": 1000
+    },
+    {
+      "opponent": "Random",
+      "pass": true,
+      "seed": 208767845,
+      "turns": 1000
+    },
+    {
+      "opponent": "TitForTat",
+      "pass": true,
+      "seed": 1317681039,
+      "turns": 1000
+    },
+    {
+      "opponent": "Grudger",
+      "pass": true,
+      "seed": 1319044558,
+      "turns": 1000
+    },
+    {
+      "opponent": "CyclerDDC",
+      "pass": true,
+      "seed": 816275327,
+      "turns": 1000
+    },
+    {
+      "opponent": "CyclerCCD",
+      "pass": true,
+      "seed": 491649530,
+      "turns": 1000
+    },
+    {
+      "opponent": "GoByMajority",
+      "pass": true,
+      "seed": 802115180,
+      "turns": 1000
+    },
+    {
+      "opponent": "SuspiciousTitForTat",
+      "pass": true,
+      "seed": 1812957916,
+      "turns": 1000
+    },
+    {
+      "opponent": "Prober",
+      "pass": true,
+      "seed": 2037013813,
+      "turns": 1000
+    },
+    {
+      "opponent": "WinStayLoseShift",
+      "pass": true,
+      "seed": 2121155152,
+      "turns": 1000
+    }
+  ],
+  "semantic": [
+    {
+      "actions_sha256": "3f39d5c348e5b79d06e842c114e6cc571583bbf44e4b0ebfda1a01ec05745d43",
+      "checks": 1,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 0
+    },
+    {
+      "actions_sha256": "92f089f2a70df5d960aac7c83dac8bc454c2cb1fa9a8e3061a8f6a84f338f2d1",
+      "checks": 2,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 1
+    },
+    {
+      "actions_sha256": "92f089f2a70df5d960aac7c83dac8bc454c2cb1fa9a8e3061a8f6a84f338f2d1",
+      "checks": 2,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 2
+    },
+    {
+      "actions_sha256": "1b3ba754469fdd7f99f4e53fbff03d20825695caaa13bff2ee0b357813279152",
+      "checks": 3,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "DC",
+          "own": "CD",
+          "reachable_candidate_history": false,
+          "round": 3
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 3
+    },
+    {
+      "actions_sha256": "13fe84e0b93e89ea7f57bdc4ccb803cad6910051e38557969ba2bbc79ecf23b6",
+      "checks": 3,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 4
+    },
+    {
+      "actions_sha256": "af7878acd875ac255ad1f124a1b9d5c78a453cd74cab0a53f751a0fe1dddecdf",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "DDD",
+          "own": "DDD",
+          "reachable_candidate_history": false,
+          "round": 4
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 5
+    },
+    {
+      "actions_sha256": "dd1784b595f6824cf9d691514669c8094bc2fe7759b09a050dc5a1a96873521c",
+      "checks": 6,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "DDD",
+          "own": "DDD",
+          "reachable_candidate_history": false,
+          "round": 4
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 6
+    },
+    {
+      "actions_sha256": "64a63d56187d409966c29dfaa5b87e4858535aaa0122ac1768365ac5890c3b34",
+      "checks": 8,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "DDC",
+          "own": "CCC",
+          "reachable_candidate_history": false,
+          "round": 4
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 7
+    },
+    {
+      "actions_sha256": "953151fca6c2ce67a9f23b15b95d9f7fabe45a20a80b7704f605bf58166799bc",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 8
+    },
+    {
+      "actions_sha256": "0f6b526c8c03d930a17ce0c371aa7c54d347af5ee72a54c93a055020ecbabe09",
+      "checks": 5,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 9
+    },
+    {
+      "actions_sha256": "608bdb2d4643e569dbd0f3ff14ebf526542b42a757fb6428664ae31431715456",
+      "checks": 6,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 10
+    },
+    {
+      "actions_sha256": "d55d20c0975888ca62ed902364264dfc9ad54b2b4e9bee11bd7cdcf1f5901e82",
+      "checks": 21,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 11
+    },
+    {
+      "actions_sha256": "d55d20c0975888ca62ed902364264dfc9ad54b2b4e9bee11bd7cdcf1f5901e82",
+      "checks": 21,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 12
+    },
+    {
+      "actions_sha256": "4078c240d7feebc5051407c4ec60bb0a142c1ef88bc6ab445449cae082a06258",
+      "checks": 10,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "DDDDDDDDC",
+          "own": "CCCCCCCCC",
+          "reachable_candidate_history": false,
+          "round": 10
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 13
+    },
+    {
+      "actions_sha256": "97c165d3832f549063e350e87a7210ed4710b714434f6deee476bca2e7ef5d58",
+      "checks": 11,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 14
+    },
+    {
+      "actions_sha256": "07128638069bd4ae9d63454af02a75fd6a79059bdb236d3e231507b74d17eb30",
+      "checks": 1000,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 15
+    },
+    {
+      "actions_sha256": "8f90d6b55be5fc0bb9d5404a7ce9338f4a496961720076c95e14366ec2ffc1d7",
+      "checks": 1000,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 16
+    },
+    {
+      "actions_sha256": "bdd45674164ac34eba51dc69e6712c994ae969a119fcdb74f0c58003abb2c5b9",
+      "checks": 1000,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "DC",
+          "own": "CC",
+          "reachable_candidate_history": false,
+          "round": 3
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 17
+    },
+    {
+      "actions_sha256": "7c4482e093f70b60b79e1169195f0c7274b7c5b6ac093d3d2264997384433caa",
+      "checks": 1000,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 18
+    },
+    {
+      "actions_sha256": "d1b9a51ebcd049e164744281d6082638b5c02455bd9bd4e6656ae29ef3da0388",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 19
+    },
+    {
+      "actions_sha256": "d1b9a51ebcd049e164744281d6082638b5c02455bd9bd4e6656ae29ef3da0388",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 20
+    },
+    {
+      "actions_sha256": "dae596ffba3b82c96ad6c94f249342cc1c52f47d10b7a2f295e4bde28db42124",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 21
+    },
+    {
+      "actions_sha256": "dae596ffba3b82c96ad6c94f249342cc1c52f47d10b7a2f295e4bde28db42124",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 22
+    },
+    {
+      "actions_sha256": "d1b9a51ebcd049e164744281d6082638b5c02455bd9bd4e6656ae29ef3da0388",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 23
+    },
+    {
+      "actions_sha256": "d1b9a51ebcd049e164744281d6082638b5c02455bd9bd4e6656ae29ef3da0388",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 24
+    },
+    {
+      "actions_sha256": "dae596ffba3b82c96ad6c94f249342cc1c52f47d10b7a2f295e4bde28db42124",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 25
+    },
+    {
+      "actions_sha256": "dae596ffba3b82c96ad6c94f249342cc1c52f47d10b7a2f295e4bde28db42124",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 26
+    },
+    {
+      "actions_sha256": "ce2e7d649cf1e9061167d3b4e227c88b94a79ac8e8e4df13d18cca582fa989ed",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 27
+    },
+    {
+      "actions_sha256": "ce2e7d649cf1e9061167d3b4e227c88b94a79ac8e8e4df13d18cca582fa989ed",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 28
+    },
+    {
+      "actions_sha256": "3989c4e0b53b03fa44fba6af89eeaa5f4347e8496e934ce81364e132cfca25ed",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 29
+    },
+    {
+      "actions_sha256": "3989c4e0b53b03fa44fba6af89eeaa5f4347e8496e934ce81364e132cfca25ed",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 30
+    },
+    {
+      "actions_sha256": "ce2e7d649cf1e9061167d3b4e227c88b94a79ac8e8e4df13d18cca582fa989ed",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 31
+    },
+    {
+      "actions_sha256": "ce2e7d649cf1e9061167d3b4e227c88b94a79ac8e8e4df13d18cca582fa989ed",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 32
+    },
+    {
+      "actions_sha256": "3989c4e0b53b03fa44fba6af89eeaa5f4347e8496e934ce81364e132cfca25ed",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 33
+    },
+    {
+      "actions_sha256": "3989c4e0b53b03fa44fba6af89eeaa5f4347e8496e934ce81364e132cfca25ed",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 34
+    },
+    {
+      "actions_sha256": "ce2e7d649cf1e9061167d3b4e227c88b94a79ac8e8e4df13d18cca582fa989ed",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "DC",
+          "own": "CC",
+          "reachable_candidate_history": false,
+          "round": 3
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 35
+    },
+    {
+      "actions_sha256": "ce2e7d649cf1e9061167d3b4e227c88b94a79ac8e8e4df13d18cca582fa989ed",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "DC",
+          "own": "CC",
+          "reachable_candidate_history": false,
+          "round": 3
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 36
+    },
+    {
+      "actions_sha256": "3989c4e0b53b03fa44fba6af89eeaa5f4347e8496e934ce81364e132cfca25ed",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "DC",
+          "own": "CC",
+          "reachable_candidate_history": false,
+          "round": 3
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 37
+    },
+    {
+      "actions_sha256": "3989c4e0b53b03fa44fba6af89eeaa5f4347e8496e934ce81364e132cfca25ed",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "DC",
+          "own": "CC",
+          "reachable_candidate_history": false,
+          "round": 3
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 38
+    },
+    {
+      "actions_sha256": "3989c4e0b53b03fa44fba6af89eeaa5f4347e8496e934ce81364e132cfca25ed",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "DDC",
+          "own": "CCC",
+          "reachable_candidate_history": false,
+          "round": 4
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 39
+    },
+    {
+      "actions_sha256": "3989c4e0b53b03fa44fba6af89eeaa5f4347e8496e934ce81364e132cfca25ed",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 40
+    },
+    {
+      "actions_sha256": "ce2e7d649cf1e9061167d3b4e227c88b94a79ac8e8e4df13d18cca582fa989ed",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "DDC",
+          "own": "CCD",
+          "reachable_candidate_history": false,
+          "round": 4
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 41
+    },
+    {
+      "actions_sha256": "ce2e7d649cf1e9061167d3b4e227c88b94a79ac8e8e4df13d18cca582fa989ed",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 42
+    },
+    {
+      "actions_sha256": "d1b9a51ebcd049e164744281d6082638b5c02455bd9bd4e6656ae29ef3da0388",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "DC",
+          "own": "CD",
+          "reachable_candidate_history": false,
+          "round": 3
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 43
+    },
+    {
+      "actions_sha256": "d1b9a51ebcd049e164744281d6082638b5c02455bd9bd4e6656ae29ef3da0388",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "DC",
+          "own": "CD",
+          "reachable_candidate_history": false,
+          "round": 3
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 44
+    },
+    {
+      "actions_sha256": "dae596ffba3b82c96ad6c94f249342cc1c52f47d10b7a2f295e4bde28db42124",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "DC",
+          "own": "CD",
+          "reachable_candidate_history": false,
+          "round": 3
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 45
+    },
+    {
+      "actions_sha256": "dae596ffba3b82c96ad6c94f249342cc1c52f47d10b7a2f295e4bde28db42124",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "DC",
+          "own": "CD",
+          "reachable_candidate_history": false,
+          "round": 3
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 46
+    },
+    {
+      "actions_sha256": "dae596ffba3b82c96ad6c94f249342cc1c52f47d10b7a2f295e4bde28db42124",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "DDC",
+          "own": "CDC",
+          "reachable_candidate_history": false,
+          "round": 4
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 47
+    },
+    {
+      "actions_sha256": "dae596ffba3b82c96ad6c94f249342cc1c52f47d10b7a2f295e4bde28db42124",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 48
+    },
+    {
+      "actions_sha256": "d1b9a51ebcd049e164744281d6082638b5c02455bd9bd4e6656ae29ef3da0388",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "DDC",
+          "own": "CDD",
+          "reachable_candidate_history": false,
+          "round": 4
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 49
+    },
+    {
+      "actions_sha256": "d1b9a51ebcd049e164744281d6082638b5c02455bd9bd4e6656ae29ef3da0388",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 50
+    },
+    {
+      "actions_sha256": "bff79ecf222021461728e53e930e546a10171518a781cdde3feb15092246fba6",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 51
+    },
+    {
+      "actions_sha256": "bff79ecf222021461728e53e930e546a10171518a781cdde3feb15092246fba6",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 52
+    },
+    {
+      "actions_sha256": "af7878acd875ac255ad1f124a1b9d5c78a453cd74cab0a53f751a0fe1dddecdf",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 53
+    },
+    {
+      "actions_sha256": "af7878acd875ac255ad1f124a1b9d5c78a453cd74cab0a53f751a0fe1dddecdf",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 54
+    },
+    {
+      "actions_sha256": "bff79ecf222021461728e53e930e546a10171518a781cdde3feb15092246fba6",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 55
+    },
+    {
+      "actions_sha256": "bff79ecf222021461728e53e930e546a10171518a781cdde3feb15092246fba6",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 56
+    },
+    {
+      "actions_sha256": "af7878acd875ac255ad1f124a1b9d5c78a453cd74cab0a53f751a0fe1dddecdf",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 57
+    },
+    {
+      "actions_sha256": "af7878acd875ac255ad1f124a1b9d5c78a453cd74cab0a53f751a0fe1dddecdf",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 58
+    },
+    {
+      "actions_sha256": "953151fca6c2ce67a9f23b15b95d9f7fabe45a20a80b7704f605bf58166799bc",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 59
+    },
+    {
+      "actions_sha256": "953151fca6c2ce67a9f23b15b95d9f7fabe45a20a80b7704f605bf58166799bc",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 60
+    },
+    {
+      "actions_sha256": "4078a708a40fdfdd4be765a23badd39ffed919b4a2a80cdac8e9845dd6b245f6",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 61
+    },
+    {
+      "actions_sha256": "4078a708a40fdfdd4be765a23badd39ffed919b4a2a80cdac8e9845dd6b245f6",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 62
+    },
+    {
+      "actions_sha256": "953151fca6c2ce67a9f23b15b95d9f7fabe45a20a80b7704f605bf58166799bc",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 63
+    },
+    {
+      "actions_sha256": "953151fca6c2ce67a9f23b15b95d9f7fabe45a20a80b7704f605bf58166799bc",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 64
+    },
+    {
+      "actions_sha256": "4078a708a40fdfdd4be765a23badd39ffed919b4a2a80cdac8e9845dd6b245f6",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 65
+    },
+    {
+      "actions_sha256": "4078a708a40fdfdd4be765a23badd39ffed919b4a2a80cdac8e9845dd6b245f6",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 66
+    },
+    {
+      "actions_sha256": "953151fca6c2ce67a9f23b15b95d9f7fabe45a20a80b7704f605bf58166799bc",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "DC",
+          "own": "DC",
+          "reachable_candidate_history": false,
+          "round": 3
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 67
+    },
+    {
+      "actions_sha256": "953151fca6c2ce67a9f23b15b95d9f7fabe45a20a80b7704f605bf58166799bc",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "DC",
+          "own": "DC",
+          "reachable_candidate_history": false,
+          "round": 3
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 68
+    },
+    {
+      "actions_sha256": "4078a708a40fdfdd4be765a23badd39ffed919b4a2a80cdac8e9845dd6b245f6",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "DC",
+          "own": "DC",
+          "reachable_candidate_history": false,
+          "round": 3
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 69
+    },
+    {
+      "actions_sha256": "4078a708a40fdfdd4be765a23badd39ffed919b4a2a80cdac8e9845dd6b245f6",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "DC",
+          "own": "DC",
+          "reachable_candidate_history": false,
+          "round": 3
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 70
+    },
+    {
+      "actions_sha256": "4078a708a40fdfdd4be765a23badd39ffed919b4a2a80cdac8e9845dd6b245f6",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "DDC",
+          "own": "DCC",
+          "reachable_candidate_history": false,
+          "round": 4
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 71
+    },
+    {
+      "actions_sha256": "4078a708a40fdfdd4be765a23badd39ffed919b4a2a80cdac8e9845dd6b245f6",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 72
+    },
+    {
+      "actions_sha256": "953151fca6c2ce67a9f23b15b95d9f7fabe45a20a80b7704f605bf58166799bc",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "DDC",
+          "own": "DCD",
+          "reachable_candidate_history": false,
+          "round": 4
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 73
+    },
+    {
+      "actions_sha256": "953151fca6c2ce67a9f23b15b95d9f7fabe45a20a80b7704f605bf58166799bc",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 74
+    },
+    {
+      "actions_sha256": "bff79ecf222021461728e53e930e546a10171518a781cdde3feb15092246fba6",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "DC",
+          "own": "DD",
+          "reachable_candidate_history": false,
+          "round": 3
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 75
+    },
+    {
+      "actions_sha256": "bff79ecf222021461728e53e930e546a10171518a781cdde3feb15092246fba6",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "DC",
+          "own": "DD",
+          "reachable_candidate_history": false,
+          "round": 3
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 76
+    },
+    {
+      "actions_sha256": "af7878acd875ac255ad1f124a1b9d5c78a453cd74cab0a53f751a0fe1dddecdf",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "DC",
+          "own": "DD",
+          "reachable_candidate_history": false,
+          "round": 3
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 77
+    },
+    {
+      "actions_sha256": "af7878acd875ac255ad1f124a1b9d5c78a453cd74cab0a53f751a0fe1dddecdf",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "DC",
+          "own": "DD",
+          "reachable_candidate_history": false,
+          "round": 3
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 78
+    },
+    {
+      "actions_sha256": "bff79ecf222021461728e53e930e546a10171518a781cdde3feb15092246fba6",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 79
+    },
+    {
+      "actions_sha256": "bff79ecf222021461728e53e930e546a10171518a781cdde3feb15092246fba6",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "DDD",
+          "own": "DDC",
+          "reachable_candidate_history": false,
+          "round": 4
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 80
+    },
+    {
+      "actions_sha256": "af7878acd875ac255ad1f124a1b9d5c78a453cd74cab0a53f751a0fe1dddecdf",
+      "checks": 4,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 81
+    },
+    {
+      "actions_sha256": "af7878acd875ac255ad1f124a1b9d5c78a453cd74cab0a53f751a0fe1dddecdf",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "DDD",
+          "own": "DDD",
+          "reachable_candidate_history": false,
+          "round": 4
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 82
+    },
+    {
+      "actions_sha256": "7b8282deaa33ebdd8d10855ce1d4ad12137c53e168de8fd3f02f0bafcfe5a124",
+      "checks": 111,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 83
+    },
+    {
+      "actions_sha256": "5084784587aaa808bfe90f4ef4f0b1d73394be0346a8108513ead23a160f63e8",
+      "checks": 111,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 84
+    },
+    {
+      "actions_sha256": "90f761b7ad8e4d97a20492a72b2cefdd3989c689507c724335921898a00f0215",
+      "checks": 11,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 85
+    },
+    {
+      "actions_sha256": "57f417bcd04fe3300209613a46062a9b3f11ee92719c0fb6140af41d6b15bde9",
+      "checks": 11,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 86
+    },
+    {
+      "actions_sha256": "c76cd26ee5fe20a8f0bbf376a1cf15fb1f87f203d7e64ca5b650b253af3edafc",
+      "checks": 1000,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 87
+    },
+    {
+      "actions_sha256": "b5526b1c0aa2c8b52a09842dbcb3bb7271c38b8afa12a94e372a57bfa59b62d2",
+      "checks": 1000,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "DDD",
+          "own": "DDD",
+          "reachable_candidate_history": false,
+          "round": 4
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 88
+    },
+    {
+      "actions_sha256": "b5526b1c0aa2c8b52a09842dbcb3bb7271c38b8afa12a94e372a57bfa59b62d2",
+      "checks": 1000,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "DC",
+          "own": "DD",
+          "reachable_candidate_history": false,
+          "round": 3
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 89
+    },
+    {
+      "actions_sha256": "92f089f2a70df5d960aac7c83dac8bc454c2cb1fa9a8e3061a8f6a84f338f2d1",
+      "checks": 2,
+      "failures": [],
+      "mode": "controlled",
+      "scenario": 90
+    },
+    {
+      "actions_sha256": "4c5f91d8424f9529acf7118d133a93d2a6cab19141c35c3064837e6dd57b99a3",
+      "checks": 3,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 91
+    },
+    {
+      "actions_sha256": "1b3ba754469fdd7f99f4e53fbff03d20825695caaa13bff2ee0b357813279152",
+      "checks": 3,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 92
+    },
+    {
+      "actions_sha256": "ce2e7d649cf1e9061167d3b4e227c88b94a79ac8e8e4df13d18cca582fa989ed",
+      "checks": 4,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "DC",
+          "own": "CC",
+          "reachable_candidate_history": false,
+          "round": 3
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 93
+    },
+    {
+      "actions_sha256": "3ea99e084d00efee679c06dbadbb6d4c2ce4673a4f31e5c0e9f6a459ec86b249",
+      "checks": 10,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 94
+    },
+    {
+      "actions_sha256": "97c165d3832f549063e350e87a7210ed4710b714434f6deee476bca2e7ef5d58",
+      "checks": 11,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "C",
+          "own": "C",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 95
+    },
+    {
+      "actions_sha256": "4dda42b79a6059eb6e9157144256ba9a9b396d38ae754e402f9750a19afb7abf",
+      "checks": 11,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": false,
+          "round": 2
+        }
+      ],
+      "mode": "controlled",
+      "scenario": 96
+    },
+    {
+      "actions_sha256": "3984f6be0b3c89d32e003556e1319e790eb5264c390c0eaa21eb3688e2df3a46",
+      "checks": 1000,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": true,
+          "round": 2
+        }
+      ],
+      "mode": "candidate_on_policy",
+      "scenario": 0
+    },
+    {
+      "actions_sha256": "4ec493eb3cd8971a356e0f70f6695863ca293da94f9345e1e5296b23315a1602",
+      "checks": 1000,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "DDDD",
+          "own": "DCDC",
+          "reachable_candidate_history": true,
+          "round": 5
+        }
+      ],
+      "mode": "candidate_on_policy",
+      "scenario": 1
+    },
+    {
+      "actions_sha256": "8f90d6b55be5fc0bb9d5404a7ce9338f4a496961720076c95e14366ec2ffc1d7",
+      "checks": 1000,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "DC",
+          "own": "DC",
+          "reachable_candidate_history": true,
+          "round": 3
+        }
+      ],
+      "mode": "candidate_on_policy",
+      "scenario": 2
+    },
+    {
+      "actions_sha256": "3984f6be0b3c89d32e003556e1319e790eb5264c390c0eaa21eb3688e2df3a46",
+      "checks": 1000,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": true,
+          "round": 2
+        }
+      ],
+      "mode": "candidate_on_policy",
+      "scenario": 3
+    },
+    {
+      "actions_sha256": "3984f6be0b3c89d32e003556e1319e790eb5264c390c0eaa21eb3688e2df3a46",
+      "checks": 1000,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": true,
+          "round": 2
+        }
+      ],
+      "mode": "candidate_on_policy",
+      "scenario": 4
+    },
+    {
+      "actions_sha256": "3984f6be0b3c89d32e003556e1319e790eb5264c390c0eaa21eb3688e2df3a46",
+      "checks": 1000,
+      "failures": [
+        {
+          "actual": "C",
+          "expected": "D",
+          "opponent": "C",
+          "own": "D",
+          "reachable_candidate_history": true,
+          "round": 2
+        }
+      ],
+      "mode": "candidate_on_policy",
+      "scenario": 5
+    },
+    {
+      "actions_sha256": "8f90d6b55be5fc0bb9d5404a7ce9338f4a496961720076c95e14366ec2ffc1d7",
+      "checks": 1000,
+      "failures": [
+        {
+          "actual": "D",
+          "expected": "C",
+          "opponent": "DC",
+          "own": "DC",
+          "reachable_candidate_history": true,
+          "round": 3
+        }
+      ],
+      "mode": "candidate_on_policy",
+      "scenario": 6
+    }
+  ],
+  "status": "fidelity_discrepancy"
+}

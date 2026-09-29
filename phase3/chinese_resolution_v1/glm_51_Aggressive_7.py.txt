@@ -1,0 +1,12 @@
+def strategy(self, opponent: axl.player.Player) -> axl.Action:
+    if self.first_round():
+        self._locked_action = None
+        return axl.Action.D
+    if len(self.history) == 1:
+        return axl.Action.C
+    if self._locked_action is not None:
+        return self._locked_action
+    if len(opponent.history) >= 2 and opponent.history[0] == axl.Action.C and (opponent.history[1] == axl.Action.C):
+        self._locked_action = axl.Action.D
+        return self._locked_action
+    return opponent.history[-1]

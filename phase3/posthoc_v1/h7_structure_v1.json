@@ -1,0 +1,252 @@
+{
+  "status": "post hoc, not preregistered; descriptive except where an exploratory p-value is labelled",
+  "registered_h7_reproduced": 0.005348991712007744,
+  "models": [
+    "anthropic_sonnet46",
+    "deepseek_v4pro",
+    "gemini_25_flash",
+    "gemini_31_pro",
+    "glm_51",
+    "kimi_k25",
+    "openai_gpt54mini",
+    "qwen3max"
+  ],
+  "model_labels": [
+    "Sonnet 4.6",
+    "DeepSeek V4 Pro",
+    "Gemini 2.5 Flash",
+    "Gemini 3.1 Pro",
+    "GLM-5.1",
+    "Kimi K2.5",
+    "GPT-5.4 Mini",
+    "Qwen3-Max"
+  ],
+  "strata": [
+    "Aggressive/Aggressive",
+    "Aggressive/Cooperative",
+    "Aggressive/Neutral",
+    "Cooperative/Cooperative",
+    "Cooperative/Neutral",
+    "Neutral/Neutral"
+  ],
+  "per_model_stratum_differences": [
+    [
+      -0.015509934575569359,
+      -0.04861004278812974,
+      -0.04684448806073154,
+      -0.001200000000000201,
+      0.0018011428571426125,
+      0.011348761904761973
+    ],
+    [
+      0.007368698231708146,
+      0.014836720452238855,
+      0.01994217625542971,
+      0.0012883619047617811,
+      0.006205485714285253,
+      0.011116933333332857
+    ],
+    [
+      -0.006445959577506892,
+      -0.03316512767425812,
+      -0.03294177363699103,
+      0.0014057142857142324,
+      0.0065428571428569615,
+      0.011680000000000024
+    ],
+    [
+      0.1557028697952611,
+      0.20732626293995868,
+      0.20910058274672197,
+      0.0010285714285708236,
+      0.006216114285714558,
+      0.011398628571428482
+    ],
+    [
+      0.030081878236511983,
+      0.03672600172532779,
+      0.04139408391994473,
+      0.001061314285714099,
+      0.00626045714285739,
+      0.011441333333333303
+    ],
+    [
+      -0.017950191942719115,
+      -0.048903520220841955,
+      -0.04901997425810904,
+      0.001061314285714543,
+      0.006234742857142428,
+      0.011394933333333634
+    ],
+    [
+      -0.0015019534770429911,
+      -0.04488328624203305,
+      -0.04182981525595745,
+      0.0014057142857142324,
+      -0.039455999999999714,
+      -0.0768915809523808
+    ],
+    [
+      0.0,
+      -0.04454748792270531,
+      -0.04454748792270531,
+      0.0014057142857142324,
+      0.0065428571428570725,
+      0.011679999999999913
+    ]
+  ],
+  "per_model_mean_difference": [
+    -0.01650242677708771,
+    0.010126395981959434,
+    -0.008820714910030803,
+    0.09846217162794259,
+    0.021160844773948213,
+    -0.01619711599091325,
+    -0.0338594869402833,
+    -0.011577734069473234
+  ],
+  "stratum_means_check": [
+    0.01896817583633036,
+    0.004847440033694644,
+    0.006906662973450254,
+    0.0009320880952379679,
+    4.345714285707014e-05,
+    0.00039612619047617315
+  ],
+  "models_with_negative_mean_difference": [
+    "anthropic_sonnet46",
+    "gemini_25_flash",
+    "kimi_k25",
+    "openai_gpt54mini",
+    "qwen3max"
+  ],
+  "aggressive_aggressive_share_of_h7": 0.5910202912245259,
+  "leave_one_model_out": {
+    "anthropic_sonnet46": 0.0063905749658231745,
+    "deepseek_v4pro": 0.004601347687732666,
+    "gemini_25_flash": 0.006039433625943641,
+    "gemini_31_pro": 0.0021471374022416683,
+    "glm_51": 0.006173310903837666,
+    "kimi_k25": 0.0068771847359711535,
+    "openai_gpt54mini": 0.0052384839091106075,
+    "qwen3max": 0.005324460465401404
+  },
+  "exploratory_test_without_gemini_31_pro": {
+    "difference": 0.0021471374022416683,
+    "difference_pp": 0.21471374022416684,
+    "stratum_differences": [
+      -0.0013608046938450406,
+      0.005543520021921809,
+      0.007444185275849467,
+      0.0009841333333333274,
+      -5.596190476191738e-05,
+      0.0003277523809523635
+    ],
+    "p_one_sided": 0.00029997000299970003,
+    "permutations": 10000,
+    "seed": 20260913,
+    "null_interval95": [
+      -0.0010011673804856851,
+      0.0010290553748836262
+    ],
+    "interpretation": "Permutation reference interval, NOT a confidence interval for the effect. Strategy-level labels shuffled within attitude; self-pairs excluded.",
+    "label": "Exploratory: same permutation procedure as H7 after removing Gemini 3.1 Pro (7 models)."
+  },
+  "propensity_benchmark": {
+    "description": "Symmetric rank-one fit C_ij ~ u_i u_j to off-diagonal mutual cooperation; no same-model term.",
+    "r_squared_off_diagonal": 0.9867149333372137,
+    "h7_of_rank_one_fit_clipped": 0.0034780536991074703,
+    "h7_of_residual": 0.0018709380129003118,
+    "strata_rank_one_fit": [
+      0.01958679583013518,
+      4.49866643074219e-05,
+      0.0009259197891286035,
+      -3.633105868901254e-05,
+      -3.570687670627348e-05,
+      0.00038265784646890344
+    ],
+    "strata_residual": [
+      -0.0006186199938048235,
+      0.004802453369387245,
+      0.005980743184321675,
+      0.0009684191539271423,
+      7.916401956339366e-05,
+      1.3468344007238779e-05
+    ],
+    "decomposition_check": 3.729655473350135e-17,
+    "h7_of_rank_one_fit_unclipped": 0.0034921461067654834,
+    "covariance_identity_prediction_unclipped": 0.0034921461067654006,
+    "covariance_identity_strata": [
+      0.019586795830135194,
+      4.498666430739021e-05,
+      0.0009258896860566772,
+      6.715247784014407e-06,
+      -1.1977805696821035e-05,
+      0.0004004670180059526
+    ],
+    "covariance_identity_max_abs_error": 2.2887507861169e-16,
+    "cell_mean_propensities": {
+      "anthropic_sonnet46": {
+        "Aggressive": 0.011792839876913683,
+        "Cooperative": 0.992588483053128,
+        "Neutral": 0.9988717292447907
+      },
+      "deepseek_v4pro": {
+        "Aggressive": 0.032577724659359715,
+        "Cooperative": 0.9996048677698538,
+        "Neutral": 0.9993002931749915
+      },
+      "gemini_25_flash": {
+        "Aggressive": 0.023991729370671254,
+        "Cooperative": 1.0001277015384884,
+        "Neutral": 1.0001277015384884
+      },
+      "gemini_31_pro": {
+        "Aggressive": 0.44824590485703614,
+        "Cooperative": 0.9994024194955243,
+        "Neutral": 0.9994314307772428
+      },
+      "glm_51": {
+        "Aggressive": 0.14402146971679586,
+        "Cooperative": 0.9999710560862546,
+        "Neutral": 0.9998911898336285
+      },
+      "kimi_k25": {
+        "Aggressive": 0.012723698952918914,
+        "Cooperative": 0.9999246225664581,
+        "Neutral": 0.99994560099559
+      },
+      "openai_gpt54mini": {
+        "Aggressive": 0.00104668546949552,
+        "Cooperative": 1.000127701538488,
+        "Neutral": 0.920829231534666
+      },
+      "qwen3max": {
+        "Aggressive": 0.0,
+        "Cooperative": 1.0001277015384877,
+        "Neutral": 1.0001277015384873
+      }
+    },
+    "exploratory_test_on_propensity_only_matrix": {
+      "difference": 0.0034780536991074703,
+      "difference_pp": 0.347805369910747,
+      "stratum_differences": [
+        0.01958679583013518,
+        4.49866643074219e-05,
+        0.0009259197891286035,
+        -3.633105868901254e-05,
+        -3.570687670627348e-05,
+        0.00038265784646890344
+      ],
+      "p_one_sided": 9.999000099990002e-05,
+      "permutations": 10000,
+      "seed": 20260913,
+      "null_interval95": [
+        -0.00030011729810199396,
+        0.00042245673876095696
+      ],
+      "interpretation": "Permutation reference interval, NOT a confidence interval for the effect. Strategy-level labels shuffled within attitude; self-pairs excluded.",
+      "label": "Registered permutation procedure applied to the rank-one fit, which contains no same-model term."
+    }
+  }
+}

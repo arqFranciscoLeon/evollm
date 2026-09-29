@@ -1,0 +1,12 @@
+{
+  "frozen_git_commit": "18cb41744f3f1e66fe711aad09697980476c2498",
+  "remote": "https://github.com/arqFranciscoLeon/evollm.git",
+  "ref": "refs/heads/phase3/preregistration-freeze",
+  "commit_url": "https://github.com/arqFranciscoLeon/evollm/commit/18cb41744f3f1e66fe711aad09697980476c2498",
+  "author_date_utc": "2026-09-27T14:47:09Z",
+  "osf_public_visibility_verified_at_utc": "2026-09-28T00:53:08Z",
+  "pushed_and_verified_at_local": "2026-09-28T22:51:28",
+  "verification": "git ls-remote returned the SHA for the branch; unauthenticated GitHub API returned the commit (message and author date match).",
+  "authorization": "Author authorized publication of the frozen commit in chat on 2026-09-28.",
+  "scope": "Only the frozen commit (parent 759b7b0 = myfork/main). Post-registration receipts, analyses and manuscripts remain uncommitted; Zenodo deposit pending."
+}

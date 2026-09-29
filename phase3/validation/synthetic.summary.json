@@ -1,0 +1,24 @@
+{
+  "config": {
+    "kind": "synthetic_only",
+    "players": [
+      "Cooperator",
+      "Defector",
+      "TitForTat",
+      "Random",
+      "Grudger",
+      "WinStayLoseShift"
+    ],
+    "turns": 1000,
+    "repetitions": 20,
+    "seed": 20260913,
+    "axelrod": "4.14.0",
+    "runtime_sha256": "1810ac06f74b4677cf83af92a72cf30e02960417bf7e4d5a2a37bd38c76188a7",
+    "executor_sha256": "6c61b931c2bd84eb28e4b96310e87220a59d7036b213d8a25dc61faa6cd5021f"
+  },
+  "new_matches": 420,
+  "total_matches": 420,
+  "elapsed_seconds": 3.686999999999898,
+  "seconds_per_new_match": 0.008778571428571186,
+  "warning": "Classical synthetic strategies only. This throughput does not predict generated-code cost; no Phase 3 outcome collected."
+}

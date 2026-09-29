@@ -1,0 +1,138 @@
+{
+  "status": "offline_selection_pending_semantic_review",
+  "selection": "One per Western model and attitude, minimum SHA256(pilot-20260913|id), excluding 18 known truncated cases. Absence of this flag does not certify semantic completeness.",
+  "cases": [
+    {
+      "id": "anthropic_sonnet46/default/Aggressive_11",
+      "snapshot_path": "phase3/inputs/archived/anthropic_sonnet46_default_75.py",
+      "snapshot_sha256": "e6b90f162a3f9396e2e56201d935027ae0bd54a8abfe465981d21555a406e43f",
+      "prose_sha256": "dca083675acccb58cdffa914d809ca2cb836ad69efd4c3b84422e68c50a24c76",
+      "other_audit_flags": [],
+      "semantic_review": "pending",
+      "conversion_status": "not_called"
+    },
+    {
+      "id": "anthropic_sonnet46/default/Cooperative_2",
+      "snapshot_path": "phase3/inputs/archived/anthropic_sonnet46_default_75.py",
+      "snapshot_sha256": "e6b90f162a3f9396e2e56201d935027ae0bd54a8abfe465981d21555a406e43f",
+      "prose_sha256": "ce89ffb38351062a8bcca7a62865b702bbe2b1b1f6b09112bfb6b755ab7455e1",
+      "other_audit_flags": [],
+      "semantic_review": "pending",
+      "conversion_status": "not_called"
+    },
+    {
+      "id": "anthropic_sonnet46/default/Neutral_6",
+      "snapshot_path": "phase3/inputs/archived/anthropic_sonnet46_default_75.py",
+      "snapshot_sha256": "e6b90f162a3f9396e2e56201d935027ae0bd54a8abfe465981d21555a406e43f",
+      "prose_sha256": "b3d429b384736ebe14aa85628c21edd2442377a98e0701f441e3a2ef6299ffdc",
+      "other_audit_flags": [
+        "short_prose_manual_review"
+      ],
+      "semantic_review": "pending",
+      "conversion_status": "not_called"
+    },
+    {
+      "id": "gemini_25_flash/default/Aggressive_2",
+      "snapshot_path": "phase3/inputs/archived/gemini_25_flash_default_75.py",
+      "snapshot_sha256": "832a4f6bf99e75b70199a456fa07860412c02c5bfd52a4eb6876506cf1ca0807",
+      "prose_sha256": "e38a61053d8910514b5303ee75e069e2331f39cd62803919af1cd76535c11bd4",
+      "other_audit_flags": [],
+      "semantic_review": "pending",
+      "conversion_status": "not_called"
+    },
+    {
+      "id": "gemini_25_flash/default/Cooperative_5",
+      "snapshot_path": "phase3/inputs/archived/gemini_25_flash_default_75.py",
+      "snapshot_sha256": "832a4f6bf99e75b70199a456fa07860412c02c5bfd52a4eb6876506cf1ca0807",
+      "prose_sha256": "f2a3f10ca8d1951a7be17eca9407cfc6e79b0006b9a1d5a2e9bf0f70d50fa186",
+      "other_audit_flags": [],
+      "semantic_review": "pending",
+      "conversion_status": "not_called"
+    },
+    {
+      "id": "gemini_25_flash/default/Neutral_1",
+      "snapshot_path": "phase3/inputs/archived/gemini_25_flash_default_75.py",
+      "snapshot_sha256": "832a4f6bf99e75b70199a456fa07860412c02c5bfd52a4eb6876506cf1ca0807",
+      "prose_sha256": "36eae84c41cb2d58866e30fd65848b61d59739664704ec8ec0eb426658c9ec84",
+      "other_audit_flags": [],
+      "semantic_review": "pending",
+      "conversion_status": "not_called"
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_10",
+      "snapshot_path": "phase3/inputs/archived/gemini_31_pro_default_75.py",
+      "snapshot_sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca",
+      "prose_sha256": "7ceb218a3e72ce2f25820e5fca6a821692bced8b57c7f5b39d7660099a863672",
+      "other_audit_flags": [],
+      "semantic_review": "pending",
+      "conversion_status": "not_called"
+    },
+    {
+      "id": "gemini_31_pro/default/Cooperative_3",
+      "snapshot_path": "phase3/inputs/archived/gemini_31_pro_default_75.py",
+      "snapshot_sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca",
+      "prose_sha256": "61131a65a96360ca0eb800b1eb1fd16d8b126e130f07ad03ad5a7332b4356749",
+      "other_audit_flags": [],
+      "semantic_review": "pending",
+      "conversion_status": "not_called"
+    },
+    {
+      "id": "gemini_31_pro/default/Neutral_9",
+      "snapshot_path": "phase3/inputs/archived/gemini_31_pro_default_75.py",
+      "snapshot_sha256": "d6994c3a718046f14d52e5021d8b880d7cb7a9cf63613b82ce39589d1e2714ca",
+      "prose_sha256": "4f7ed40cd8977ffea6277c9d924f46433b1a7ab322f5e69a5356aaa9b281cb18",
+      "other_audit_flags": [],
+      "semantic_review": "pending",
+      "conversion_status": "not_called"
+    },
+    {
+      "id": "openai_gpt54mini/default/Aggressive_9",
+      "snapshot_path": "phase3/inputs/archived/openai_gpt54mini_default_75.py",
+      "snapshot_sha256": "ba287b0f677405113f4bbdfc8129c2dfe380f00ed25b70146b8f4a1bbf88adbe",
+      "prose_sha256": "f537a460aac10c51332da3b130df327506102d98a3fd96166689bba9e0201e04",
+      "other_audit_flags": [],
+      "semantic_review": "pending",
+      "conversion_status": "not_called"
+    },
+    {
+      "id": "openai_gpt54mini/default/Cooperative_20",
+      "snapshot_path": "phase3/inputs/archived/openai_gpt54mini_default_75.py",
+      "snapshot_sha256": "ba287b0f677405113f4bbdfc8129c2dfe380f00ed25b70146b8f4a1bbf88adbe",
+      "prose_sha256": "371d3ffbed1d318c7a9a79fe17bab0637048c4b8d1a3944c8da0e91c663522dc",
+      "other_audit_flags": [],
+      "semantic_review": "pending",
+      "conversion_status": "not_called"
+    },
+    {
+      "id": "openai_gpt54mini/default/Neutral_14",
+      "snapshot_path": "phase3/inputs/archived/openai_gpt54mini_default_75.py",
+      "snapshot_sha256": "ba287b0f677405113f4bbdfc8129c2dfe380f00ed25b70146b8f4a1bbf88adbe",
+      "prose_sha256": "97a82aef1a10066e867288233b5ac0e434972b2777344a90dae5aef53cd2fb87",
+      "other_audit_flags": [],
+      "semantic_review": "pending",
+      "conversion_status": "not_called"
+    }
+  ],
+  "diagnostic_truncated_ids": [
+    "gemini_25_flash/default/Aggressive_24",
+    "gemini_25_flash/default/Aggressive_6",
+    "gemini_31_pro/default/Aggressive_1",
+    "gemini_31_pro/default/Aggressive_11",
+    "gemini_31_pro/default/Aggressive_13",
+    "gemini_31_pro/default/Aggressive_15",
+    "gemini_31_pro/default/Aggressive_16",
+    "gemini_31_pro/default/Aggressive_17",
+    "gemini_31_pro/default/Aggressive_18",
+    "gemini_31_pro/default/Aggressive_19",
+    "gemini_31_pro/default/Aggressive_21",
+    "gemini_31_pro/default/Aggressive_22",
+    "gemini_31_pro/default/Aggressive_23",
+    "gemini_31_pro/default/Aggressive_3",
+    "gemini_31_pro/default/Aggressive_5",
+    "gemini_31_pro/default/Aggressive_7",
+    "gemini_31_pro/default/Aggressive_8",
+    "gemini_31_pro/default/Aggressive_9"
+  ],
+  "diagnostic_policy": "Review all 18 without conversion first. Incomplete rules are not sent for faithful conversion.",
+  "api_calls": 0
+}

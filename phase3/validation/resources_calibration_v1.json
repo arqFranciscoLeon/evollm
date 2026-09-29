@@ -1,0 +1,3095 @@
+{
+  "status": "diagnostic_timing_not_confirmatory",
+  "participants": 572,
+  "sources_audited": 576,
+  "source_calls": [
+    "all",
+    "enumerate",
+    "getattr",
+    "last_100.count",
+    "len",
+    "opponent.history[-10:].count",
+    "opponent.history[-5:].count",
+    "range",
+    "self.first_round",
+    "self.history[-100:].count",
+    "self.history[-10:].count",
+    "self.history[-5:].count",
+    "self.total_scores",
+    "sum"
+  ],
+  "source_attributes": [
+    "axl.Action",
+    "axl.Action.C",
+    "axl.Action.D",
+    "axl.player",
+    "axl.player.Player",
+    "last_100.count",
+    "opponent.history",
+    "opponent.history.defections",
+    "opponent.history[-10:].count",
+    "opponent.history[-5:].count",
+    "opponent.score",
+    "self._always_cooperate_until_end",
+    "self._always_defect",
+    "self._bait_round",
+    "self._coop_after_start",
+    "self._coop_streak",
+    "self._cooperate_test_round",
+    "self._defect_until_cooperate",
+    "self._opp_coop_2_and_3",
+    "self._opponent_defect_forever",
+    "self._permanent_defect",
+    "self._punish_forever",
+    "self._started_cooperating",
+    "self._sustain_cooperation",
+    "self._tested_mutual_cooperation",
+    "self._unconditionally_cooperative",
+    "self.cooperation_started",
+    "self.first_round",
+    "self.history",
+    "self.history[-100:].count",
+    "self.history[-10:].count",
+    "self.history[-5:].count",
+    "self.permanent_defection",
+    "self.score",
+    "self.sensitivity_defect_forever",
+    "self.total_scores"
+  ],
+  "forbidden_nondeterministic_access": [],
+  "selection": "One hash-ordered representative per unordered model/attitude cell pair plus one self per cell; chosen without outcomes.",
+  "timings": [
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Aggressive_1",
+        "anthropic_sonnet46/default/Aggressive_12"
+      ],
+      "population_pairs": 300,
+      "kind": "distinct",
+      "seconds": 0.24173660000087693
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Aggressive_1",
+        "anthropic_sonnet46/default/Cooperative_20"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.24009830000068177
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Aggressive_1",
+        "anthropic_sonnet46/default/Neutral_11"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.23191070000029868
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Aggressive_1",
+        "deepseek_v4pro/default/Aggressive_16"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.2552494999981718
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Aggressive_1",
+        "deepseek_v4pro/default/Cooperative_18"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2100973000015074
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Aggressive_1",
+        "deepseek_v4pro/default/Neutral_20"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.22649019999880693
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Aggressive_1",
+        "gemini_25_flash/default/Aggressive_17"
+      ],
+      "population_pairs": 575,
+      "kind": "distinct",
+      "seconds": 0.2119386000013037
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Aggressive_1",
+        "gemini_25_flash/default/Cooperative_6"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.22841149999658228
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Aggressive_1",
+        "gemini_25_flash/default/Neutral_9"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.23007249999864143
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Aggressive_1",
+        "gemini_31_pro/default/Aggressive_25"
+      ],
+      "population_pairs": 225,
+      "kind": "distinct",
+      "seconds": 0.28720610000164015
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Aggressive_1",
+        "gemini_31_pro/default/Cooperative_24"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.32310530000177096
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Aggressive_1",
+        "gemini_31_pro/default/Neutral_18"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.25843819999863626
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Aggressive_1",
+        "glm_51/default/Aggressive_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2742596999996749
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Aggressive_1",
+        "glm_51/default/Cooperative_1"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.25962820000131615
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Aggressive_1",
+        "glm_51/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.23919870000099763
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Aggressive_1",
+        "kimi_k25/default/Aggressive_6"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.22789519999787444
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Aggressive_1",
+        "kimi_k25/default/Cooperative_18"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.24591979999968316
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Aggressive_1",
+        "kimi_k25/default/Neutral_6"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.24340490000031423
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Aggressive_1",
+        "openai_gpt54mini/default/Aggressive_2"
+      ],
+      "population_pairs": 425,
+      "kind": "distinct",
+      "seconds": 0.22403290000147535
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Aggressive_1",
+        "openai_gpt54mini/default/Cooperative_15"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2664733999990858
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Aggressive_1",
+        "openai_gpt54mini/default/Neutral_11"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2875877999977092
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Aggressive_1",
+        "qwen3max/default/Aggressive_13"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.26461229999767966
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Aggressive_1",
+        "qwen3max/default/Cooperative_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.24699640000108047
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Aggressive_1",
+        "qwen3max/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.23682879999978468
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Cooperative_17",
+        "anthropic_sonnet46/default/Cooperative_20"
+      ],
+      "population_pairs": 300,
+      "kind": "distinct",
+      "seconds": 0.24367549999806215
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Cooperative_20",
+        "anthropic_sonnet46/default/Neutral_11"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.26321090000055847
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Cooperative_20",
+        "deepseek_v4pro/default/Aggressive_16"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.28674859999955515
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Cooperative_20",
+        "deepseek_v4pro/default/Cooperative_18"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.23733790000187582
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Cooperative_20",
+        "deepseek_v4pro/default/Neutral_20"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.23773950000031618
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Cooperative_20",
+        "gemini_25_flash/default/Aggressive_17"
+      ],
+      "population_pairs": 575,
+      "kind": "distinct",
+      "seconds": 0.2356857000013406
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Cooperative_20",
+        "gemini_25_flash/default/Cooperative_6"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2478949000033026
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Cooperative_20",
+        "gemini_25_flash/default/Neutral_9"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.23799469999721623
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Cooperative_20",
+        "gemini_31_pro/default/Aggressive_25"
+      ],
+      "population_pairs": 225,
+      "kind": "distinct",
+      "seconds": 0.24974680000013905
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Cooperative_20",
+        "gemini_31_pro/default/Cooperative_24"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.23933510000279057
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Cooperative_20",
+        "gemini_31_pro/default/Neutral_18"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.23591610000221408
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Cooperative_20",
+        "glm_51/default/Aggressive_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.3305703000005451
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Cooperative_20",
+        "glm_51/default/Cooperative_1"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.25809140000274056
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Cooperative_20",
+        "glm_51/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.24942770000052406
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Cooperative_20",
+        "kimi_k25/default/Aggressive_6"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.251507799999672
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Cooperative_20",
+        "kimi_k25/default/Cooperative_18"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.27210009999907925
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Cooperative_20",
+        "kimi_k25/default/Neutral_6"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2565743000013754
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Cooperative_20",
+        "openai_gpt54mini/default/Aggressive_2"
+      ],
+      "population_pairs": 425,
+      "kind": "distinct",
+      "seconds": 0.26882800000021234
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Cooperative_20",
+        "openai_gpt54mini/default/Cooperative_15"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2730416000013065
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Cooperative_20",
+        "openai_gpt54mini/default/Neutral_11"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2647944999989704
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Cooperative_20",
+        "qwen3max/default/Aggressive_13"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.24059349999879487
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Cooperative_20",
+        "qwen3max/default/Cooperative_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2817486000021745
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Cooperative_20",
+        "qwen3max/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.3063508000013826
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Neutral_11",
+        "anthropic_sonnet46/default/Neutral_22"
+      ],
+      "population_pairs": 300,
+      "kind": "distinct",
+      "seconds": 0.26086470000154804
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Neutral_11",
+        "deepseek_v4pro/default/Aggressive_16"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.2828494999994291
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Neutral_11",
+        "deepseek_v4pro/default/Cooperative_18"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2545391000021482
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Neutral_11",
+        "deepseek_v4pro/default/Neutral_20"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.25807540000096196
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Neutral_11",
+        "gemini_25_flash/default/Aggressive_17"
+      ],
+      "population_pairs": 575,
+      "kind": "distinct",
+      "seconds": 0.24655469999925117
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Neutral_11",
+        "gemini_25_flash/default/Cooperative_6"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.25732009999774164
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Neutral_11",
+        "gemini_25_flash/default/Neutral_9"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.24287100000219652
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Neutral_11",
+        "gemini_31_pro/default/Aggressive_25"
+      ],
+      "population_pairs": 225,
+      "kind": "distinct",
+      "seconds": 0.26829889999862644
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Neutral_11",
+        "gemini_31_pro/default/Cooperative_24"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2580550000020594
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Neutral_11",
+        "gemini_31_pro/default/Neutral_18"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.25416430000041146
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Neutral_11",
+        "glm_51/default/Aggressive_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2420910000000731
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Neutral_11",
+        "glm_51/default/Cooperative_1"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.24144909999813535
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Neutral_11",
+        "glm_51/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.25642510000034235
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Neutral_11",
+        "kimi_k25/default/Aggressive_6"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.2398351999981969
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Neutral_11",
+        "kimi_k25/default/Cooperative_18"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.25802699999985634
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Neutral_11",
+        "kimi_k25/default/Neutral_6"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.24274289999812027
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Neutral_11",
+        "openai_gpt54mini/default/Aggressive_2"
+      ],
+      "population_pairs": 425,
+      "kind": "distinct",
+      "seconds": 0.2264759999998205
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Neutral_11",
+        "openai_gpt54mini/default/Cooperative_15"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.26010600000154227
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Neutral_11",
+        "openai_gpt54mini/default/Neutral_11"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2563944999965315
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Neutral_11",
+        "qwen3max/default/Aggressive_13"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.21962300000086543
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Neutral_11",
+        "qwen3max/default/Cooperative_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2459443999978248
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Neutral_11",
+        "qwen3max/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.23925259999668924
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Aggressive_13",
+        "deepseek_v4pro/default/Aggressive_16"
+      ],
+      "population_pairs": 276,
+      "kind": "distinct",
+      "seconds": 0.27978259999872535
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Aggressive_16",
+        "deepseek_v4pro/default/Cooperative_18"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.2731801000009
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Aggressive_16",
+        "deepseek_v4pro/default/Neutral_20"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.28416809999907855
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Aggressive_16",
+        "gemini_25_flash/default/Aggressive_17"
+      ],
+      "population_pairs": 552,
+      "kind": "distinct",
+      "seconds": 0.26833970000006957
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Aggressive_16",
+        "gemini_25_flash/default/Cooperative_6"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.2828674000011233
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Aggressive_16",
+        "gemini_25_flash/default/Neutral_9"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.2766745000008086
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Aggressive_16",
+        "gemini_31_pro/default/Aggressive_25"
+      ],
+      "population_pairs": 216,
+      "kind": "distinct",
+      "seconds": 0.413736999998946
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Aggressive_16",
+        "gemini_31_pro/default/Cooperative_24"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.3013645999999426
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Aggressive_16",
+        "gemini_31_pro/default/Neutral_18"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.29105519999939133
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Aggressive_16",
+        "glm_51/default/Aggressive_14"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.29520359999878565
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Aggressive_16",
+        "glm_51/default/Cooperative_1"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.35678229999757605
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Aggressive_16",
+        "glm_51/default/Neutral_4"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.30685019999873475
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Aggressive_16",
+        "kimi_k25/default/Aggressive_6"
+      ],
+      "population_pairs": 576,
+      "kind": "distinct",
+      "seconds": 0.3181823000013537
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Aggressive_16",
+        "kimi_k25/default/Cooperative_18"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.28615560000253026
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Aggressive_16",
+        "kimi_k25/default/Neutral_6"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.2855509999972128
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Aggressive_16",
+        "openai_gpt54mini/default/Aggressive_2"
+      ],
+      "population_pairs": 408,
+      "kind": "distinct",
+      "seconds": 0.2701119000012113
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Aggressive_16",
+        "openai_gpt54mini/default/Cooperative_15"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.28849799999807146
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Aggressive_16",
+        "openai_gpt54mini/default/Neutral_11"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.2992414000000281
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Aggressive_16",
+        "qwen3max/default/Aggressive_13"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.2729231000012078
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Aggressive_16",
+        "qwen3max/default/Cooperative_14"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.2878212999967218
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Aggressive_16",
+        "qwen3max/default/Neutral_4"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.27811510000174167
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Cooperative_18",
+        "deepseek_v4pro/default/Cooperative_22"
+      ],
+      "population_pairs": 300,
+      "kind": "distinct",
+      "seconds": 0.23714200000176788
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Cooperative_18",
+        "deepseek_v4pro/default/Neutral_20"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.23593240000263904
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Cooperative_18",
+        "gemini_25_flash/default/Aggressive_17"
+      ],
+      "population_pairs": 575,
+      "kind": "distinct",
+      "seconds": 0.22865900000033434
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Cooperative_18",
+        "gemini_25_flash/default/Cooperative_6"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.24595030000273255
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Cooperative_18",
+        "gemini_25_flash/default/Neutral_9"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.23101490000044578
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Cooperative_18",
+        "gemini_31_pro/default/Aggressive_25"
+      ],
+      "population_pairs": 225,
+      "kind": "distinct",
+      "seconds": 0.24607839999953285
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Cooperative_18",
+        "gemini_31_pro/default/Cooperative_24"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.27461789999870234
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Cooperative_18",
+        "gemini_31_pro/default/Neutral_18"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2509180000015476
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Cooperative_18",
+        "glm_51/default/Aggressive_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.3061146000000008
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Cooperative_18",
+        "glm_51/default/Cooperative_1"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.31281939999826136
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Cooperative_18",
+        "glm_51/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.3960181000002194
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Cooperative_18",
+        "kimi_k25/default/Aggressive_6"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.31070809999800986
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Cooperative_18",
+        "kimi_k25/default/Cooperative_18"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.3075375000007625
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Cooperative_18",
+        "kimi_k25/default/Neutral_6"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.28539570000066306
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Cooperative_18",
+        "openai_gpt54mini/default/Aggressive_2"
+      ],
+      "population_pairs": 425,
+      "kind": "distinct",
+      "seconds": 0.3139010999984748
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Cooperative_18",
+        "openai_gpt54mini/default/Cooperative_15"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.3316783000009309
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Cooperative_18",
+        "openai_gpt54mini/default/Neutral_11"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.3218565999995917
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Cooperative_18",
+        "qwen3max/default/Aggressive_13"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.32896980000077747
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Cooperative_18",
+        "qwen3max/default/Cooperative_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.37351809999745456
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Cooperative_18",
+        "qwen3max/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.36489670000082697
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Neutral_18",
+        "deepseek_v4pro/default/Neutral_20"
+      ],
+      "population_pairs": 300,
+      "kind": "distinct",
+      "seconds": 0.47509740000168676
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Neutral_20",
+        "gemini_25_flash/default/Aggressive_17"
+      ],
+      "population_pairs": 575,
+      "kind": "distinct",
+      "seconds": 0.34369839999999385
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Neutral_20",
+        "gemini_25_flash/default/Cooperative_6"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.346868299999187
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Neutral_20",
+        "gemini_25_flash/default/Neutral_9"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.34228839999923366
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Neutral_20",
+        "gemini_31_pro/default/Aggressive_25"
+      ],
+      "population_pairs": 225,
+      "kind": "distinct",
+      "seconds": 0.3578522999996494
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Neutral_20",
+        "gemini_31_pro/default/Cooperative_24"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.3223166999996465
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Neutral_20",
+        "gemini_31_pro/default/Neutral_18"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.3198384999996051
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Neutral_20",
+        "glm_51/default/Aggressive_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.33149369999955525
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Neutral_20",
+        "glm_51/default/Cooperative_1"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.3133170000000973
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Neutral_20",
+        "glm_51/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.3256288999982644
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Neutral_20",
+        "kimi_k25/default/Aggressive_6"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.2996142999982112
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Neutral_20",
+        "kimi_k25/default/Cooperative_18"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.28719959999943967
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Neutral_20",
+        "kimi_k25/default/Neutral_6"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2399117999993905
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Neutral_20",
+        "openai_gpt54mini/default/Aggressive_2"
+      ],
+      "population_pairs": 425,
+      "kind": "distinct",
+      "seconds": 0.2459512999994331
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Neutral_20",
+        "openai_gpt54mini/default/Cooperative_15"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.32037710000076913
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Neutral_20",
+        "openai_gpt54mini/default/Neutral_11"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2451270999990811
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Neutral_20",
+        "qwen3max/default/Aggressive_13"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.22306019999814453
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Neutral_20",
+        "qwen3max/default/Cooperative_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.22635109999828273
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Neutral_20",
+        "qwen3max/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.24184369999784394
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Aggressive_17",
+        "gemini_25_flash/default/Aggressive_8"
+      ],
+      "population_pairs": 253,
+      "kind": "distinct",
+      "seconds": 0.23397360000308254
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Aggressive_17",
+        "gemini_25_flash/default/Cooperative_6"
+      ],
+      "population_pairs": 575,
+      "kind": "distinct",
+      "seconds": 0.23906999999962864
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Aggressive_17",
+        "gemini_25_flash/default/Neutral_9"
+      ],
+      "population_pairs": 575,
+      "kind": "distinct",
+      "seconds": 0.24265449999802513
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Aggressive_17",
+        "gemini_31_pro/default/Aggressive_25"
+      ],
+      "population_pairs": 207,
+      "kind": "distinct",
+      "seconds": 0.23141129999930854
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Aggressive_17",
+        "gemini_31_pro/default/Cooperative_24"
+      ],
+      "population_pairs": 575,
+      "kind": "distinct",
+      "seconds": 0.23729690000254777
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Aggressive_17",
+        "gemini_31_pro/default/Neutral_18"
+      ],
+      "population_pairs": 575,
+      "kind": "distinct",
+      "seconds": 0.24355310000100872
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Aggressive_17",
+        "glm_51/default/Aggressive_14"
+      ],
+      "population_pairs": 575,
+      "kind": "distinct",
+      "seconds": 0.24946529999942868
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Aggressive_17",
+        "glm_51/default/Cooperative_1"
+      ],
+      "population_pairs": 575,
+      "kind": "distinct",
+      "seconds": 0.2566305999971519
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Aggressive_17",
+        "glm_51/default/Neutral_4"
+      ],
+      "population_pairs": 575,
+      "kind": "distinct",
+      "seconds": 0.2610351000002993
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Aggressive_17",
+        "kimi_k25/default/Aggressive_6"
+      ],
+      "population_pairs": 552,
+      "kind": "distinct",
+      "seconds": 0.25653629999942495
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Aggressive_17",
+        "kimi_k25/default/Cooperative_18"
+      ],
+      "population_pairs": 575,
+      "kind": "distinct",
+      "seconds": 0.2500017000020307
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Aggressive_17",
+        "kimi_k25/default/Neutral_6"
+      ],
+      "population_pairs": 575,
+      "kind": "distinct",
+      "seconds": 0.23777449999761302
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Aggressive_17",
+        "openai_gpt54mini/default/Aggressive_2"
+      ],
+      "population_pairs": 391,
+      "kind": "distinct",
+      "seconds": 0.23439919999873382
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Aggressive_17",
+        "openai_gpt54mini/default/Cooperative_15"
+      ],
+      "population_pairs": 575,
+      "kind": "distinct",
+      "seconds": 0.24137189999964903
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Aggressive_17",
+        "openai_gpt54mini/default/Neutral_11"
+      ],
+      "population_pairs": 575,
+      "kind": "distinct",
+      "seconds": 0.230019300001004
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Aggressive_17",
+        "qwen3max/default/Aggressive_13"
+      ],
+      "population_pairs": 575,
+      "kind": "distinct",
+      "seconds": 0.22228549999999814
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Aggressive_17",
+        "qwen3max/default/Cooperative_14"
+      ],
+      "population_pairs": 575,
+      "kind": "distinct",
+      "seconds": 0.22639770000023418
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Aggressive_17",
+        "qwen3max/default/Neutral_4"
+      ],
+      "population_pairs": 575,
+      "kind": "distinct",
+      "seconds": 0.23189120000097319
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Cooperative_18",
+        "gemini_25_flash/default/Cooperative_6"
+      ],
+      "population_pairs": 300,
+      "kind": "distinct",
+      "seconds": 0.23125330000038957
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Cooperative_6",
+        "gemini_25_flash/default/Neutral_9"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.23176070000045002
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Cooperative_6",
+        "gemini_31_pro/default/Aggressive_25"
+      ],
+      "population_pairs": 225,
+      "kind": "distinct",
+      "seconds": 0.23966660000223783
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Cooperative_6",
+        "gemini_31_pro/default/Cooperative_24"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.22960569999850122
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Cooperative_6",
+        "gemini_31_pro/default/Neutral_18"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2936587000003783
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Cooperative_6",
+        "glm_51/default/Aggressive_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.3232863000012003
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Cooperative_6",
+        "glm_51/default/Cooperative_1"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.31607140000051004
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Cooperative_6",
+        "glm_51/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.30764110000018263
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Cooperative_6",
+        "kimi_k25/default/Aggressive_6"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.28683409999939613
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Cooperative_6",
+        "kimi_k25/default/Cooperative_18"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2968572999998287
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Cooperative_6",
+        "kimi_k25/default/Neutral_6"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.282837800001289
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Cooperative_6",
+        "openai_gpt54mini/default/Aggressive_2"
+      ],
+      "population_pairs": 425,
+      "kind": "distinct",
+      "seconds": 0.2827632000007725
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Cooperative_6",
+        "openai_gpt54mini/default/Cooperative_15"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.3414948000026925
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Cooperative_6",
+        "openai_gpt54mini/default/Neutral_11"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.3232650000027206
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Cooperative_6",
+        "qwen3max/default/Aggressive_13"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2701238999979978
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Cooperative_6",
+        "qwen3max/default/Cooperative_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.27660979999927804
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Cooperative_6",
+        "qwen3max/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.28215350000027684
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Neutral_21",
+        "gemini_25_flash/default/Neutral_9"
+      ],
+      "population_pairs": 300,
+      "kind": "distinct",
+      "seconds": 0.2824801999995543
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Neutral_9",
+        "gemini_31_pro/default/Aggressive_25"
+      ],
+      "population_pairs": 225,
+      "kind": "distinct",
+      "seconds": 0.30540169999949285
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Neutral_9",
+        "gemini_31_pro/default/Cooperative_24"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2957023000017216
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Neutral_9",
+        "gemini_31_pro/default/Neutral_18"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.27576589999807766
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Neutral_9",
+        "glm_51/default/Aggressive_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.27678129999912926
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Neutral_9",
+        "glm_51/default/Cooperative_1"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2644615999997768
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Neutral_9",
+        "glm_51/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.26430769999933545
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Neutral_9",
+        "kimi_k25/default/Aggressive_6"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.2526419999994687
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Neutral_9",
+        "kimi_k25/default/Cooperative_18"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.23195669999768143
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Neutral_9",
+        "kimi_k25/default/Neutral_6"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.21335019999969518
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Neutral_9",
+        "openai_gpt54mini/default/Aggressive_2"
+      ],
+      "population_pairs": 425,
+      "kind": "distinct",
+      "seconds": 0.21931060000133584
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Neutral_9",
+        "openai_gpt54mini/default/Cooperative_15"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.21542799999951967
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Neutral_9",
+        "openai_gpt54mini/default/Neutral_11"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2219024999976682
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Neutral_9",
+        "qwen3max/default/Aggressive_13"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.21216300000014598
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Neutral_9",
+        "qwen3max/default/Cooperative_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.22892890000002808
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Neutral_9",
+        "qwen3max/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.22494500000175321
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Aggressive_12",
+        "gemini_31_pro/default/Aggressive_25"
+      ],
+      "population_pairs": 36,
+      "kind": "distinct",
+      "seconds": 0.24095390000002226
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Aggressive_25",
+        "gemini_31_pro/default/Cooperative_24"
+      ],
+      "population_pairs": 225,
+      "kind": "distinct",
+      "seconds": 0.24554239999997662
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Aggressive_25",
+        "gemini_31_pro/default/Neutral_18"
+      ],
+      "population_pairs": 225,
+      "kind": "distinct",
+      "seconds": 0.24753440000131377
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Aggressive_25",
+        "glm_51/default/Aggressive_14"
+      ],
+      "population_pairs": 225,
+      "kind": "distinct",
+      "seconds": 0.2578314999991562
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Aggressive_25",
+        "glm_51/default/Cooperative_1"
+      ],
+      "population_pairs": 225,
+      "kind": "distinct",
+      "seconds": 0.23383710000052815
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Aggressive_25",
+        "glm_51/default/Neutral_4"
+      ],
+      "population_pairs": 225,
+      "kind": "distinct",
+      "seconds": 0.23774490000141668
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Aggressive_25",
+        "kimi_k25/default/Aggressive_6"
+      ],
+      "population_pairs": 216,
+      "kind": "distinct",
+      "seconds": 0.2408395999991626
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Aggressive_25",
+        "kimi_k25/default/Cooperative_18"
+      ],
+      "population_pairs": 225,
+      "kind": "distinct",
+      "seconds": 0.23717979999855743
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Aggressive_25",
+        "kimi_k25/default/Neutral_6"
+      ],
+      "population_pairs": 225,
+      "kind": "distinct",
+      "seconds": 0.2499472000017704
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Aggressive_25",
+        "openai_gpt54mini/default/Aggressive_2"
+      ],
+      "population_pairs": 153,
+      "kind": "distinct",
+      "seconds": 0.22678610000002664
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Aggressive_25",
+        "openai_gpt54mini/default/Cooperative_15"
+      ],
+      "population_pairs": 225,
+      "kind": "distinct",
+      "seconds": 0.23942280000119354
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Aggressive_25",
+        "openai_gpt54mini/default/Neutral_11"
+      ],
+      "population_pairs": 225,
+      "kind": "distinct",
+      "seconds": 0.24884519999977783
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Aggressive_25",
+        "qwen3max/default/Aggressive_13"
+      ],
+      "population_pairs": 225,
+      "kind": "distinct",
+      "seconds": 0.22169669999857433
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Aggressive_25",
+        "qwen3max/default/Cooperative_14"
+      ],
+      "population_pairs": 225,
+      "kind": "distinct",
+      "seconds": 0.252343899999687
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Aggressive_25",
+        "qwen3max/default/Neutral_4"
+      ],
+      "population_pairs": 225,
+      "kind": "distinct",
+      "seconds": 0.24334259999886854
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Cooperative_21",
+        "gemini_31_pro/default/Cooperative_24"
+      ],
+      "population_pairs": 300,
+      "kind": "distinct",
+      "seconds": 0.24528840000130003
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Cooperative_24",
+        "gemini_31_pro/default/Neutral_18"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.24571070000092732
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Cooperative_24",
+        "glm_51/default/Aggressive_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.3245408000002499
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Cooperative_24",
+        "glm_51/default/Cooperative_1"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.24363530000118772
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Cooperative_24",
+        "glm_51/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2634001999977045
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Cooperative_24",
+        "kimi_k25/default/Aggressive_6"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.3090248000007705
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Cooperative_24",
+        "kimi_k25/default/Cooperative_18"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.29269770000246353
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Cooperative_24",
+        "kimi_k25/default/Neutral_6"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.3621184000003268
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Cooperative_24",
+        "openai_gpt54mini/default/Aggressive_2"
+      ],
+      "population_pairs": 425,
+      "kind": "distinct",
+      "seconds": 0.6062021000034292
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Cooperative_24",
+        "openai_gpt54mini/default/Cooperative_15"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.47477259999868693
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Cooperative_24",
+        "openai_gpt54mini/default/Neutral_11"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.41400419999990845
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Cooperative_24",
+        "qwen3max/default/Aggressive_13"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.5201015999991796
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Cooperative_24",
+        "qwen3max/default/Cooperative_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.4613145000002987
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Cooperative_24",
+        "qwen3max/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.5605138000028091
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Neutral_15",
+        "gemini_31_pro/default/Neutral_18"
+      ],
+      "population_pairs": 300,
+      "kind": "distinct",
+      "seconds": 0.5001901000032376
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Neutral_18",
+        "glm_51/default/Aggressive_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.6235779999988154
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Neutral_18",
+        "glm_51/default/Cooperative_1"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.7267232000012882
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Neutral_18",
+        "glm_51/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.3616511000000173
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Neutral_18",
+        "kimi_k25/default/Aggressive_6"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.5569453000025533
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Neutral_18",
+        "kimi_k25/default/Cooperative_18"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.43112699999983306
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Neutral_18",
+        "kimi_k25/default/Neutral_6"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.46315949999916484
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Neutral_18",
+        "openai_gpt54mini/default/Aggressive_2"
+      ],
+      "population_pairs": 425,
+      "kind": "distinct",
+      "seconds": 0.5149849000008544
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Neutral_18",
+        "openai_gpt54mini/default/Cooperative_15"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.418690799997421
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Neutral_18",
+        "openai_gpt54mini/default/Neutral_11"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.6027864999996382
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Neutral_18",
+        "qwen3max/default/Aggressive_13"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.6825611000022036
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Neutral_18",
+        "qwen3max/default/Cooperative_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.8899425999989035
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Neutral_18",
+        "qwen3max/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.6371212000012747
+    },
+    {
+      "pair": [
+        "glm_51/default/Aggressive_14",
+        "glm_51/default/Aggressive_19"
+      ],
+      "population_pairs": 300,
+      "kind": "distinct",
+      "seconds": 0.5305990999986534
+    },
+    {
+      "pair": [
+        "glm_51/default/Aggressive_14",
+        "glm_51/default/Cooperative_1"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.5608465000004799
+    },
+    {
+      "pair": [
+        "glm_51/default/Aggressive_14",
+        "glm_51/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.7158587999983865
+    },
+    {
+      "pair": [
+        "glm_51/default/Aggressive_14",
+        "kimi_k25/default/Aggressive_6"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.617227400001866
+    },
+    {
+      "pair": [
+        "glm_51/default/Aggressive_14",
+        "kimi_k25/default/Cooperative_18"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.5503477000020212
+    },
+    {
+      "pair": [
+        "glm_51/default/Aggressive_14",
+        "kimi_k25/default/Neutral_6"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.40635180000026594
+    },
+    {
+      "pair": [
+        "glm_51/default/Aggressive_14",
+        "openai_gpt54mini/default/Aggressive_2"
+      ],
+      "population_pairs": 425,
+      "kind": "distinct",
+      "seconds": 0.5586298000016541
+    },
+    {
+      "pair": [
+        "glm_51/default/Aggressive_14",
+        "openai_gpt54mini/default/Cooperative_15"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.5077320000018517
+    },
+    {
+      "pair": [
+        "glm_51/default/Aggressive_14",
+        "openai_gpt54mini/default/Neutral_11"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.6353378999992856
+    },
+    {
+      "pair": [
+        "glm_51/default/Aggressive_14",
+        "qwen3max/default/Aggressive_13"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.405905999999959
+    },
+    {
+      "pair": [
+        "glm_51/default/Aggressive_14",
+        "qwen3max/default/Cooperative_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.5697837999978219
+    },
+    {
+      "pair": [
+        "glm_51/default/Aggressive_14",
+        "qwen3max/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.48795590000008815
+    },
+    {
+      "pair": [
+        "glm_51/default/Cooperative_1",
+        "glm_51/default/Cooperative_7"
+      ],
+      "population_pairs": 300,
+      "kind": "distinct",
+      "seconds": 0.5231480000002193
+    },
+    {
+      "pair": [
+        "glm_51/default/Cooperative_1",
+        "glm_51/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.35025810000297497
+    },
+    {
+      "pair": [
+        "glm_51/default/Cooperative_1",
+        "kimi_k25/default/Aggressive_6"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.3226059999979043
+    },
+    {
+      "pair": [
+        "glm_51/default/Cooperative_1",
+        "kimi_k25/default/Cooperative_18"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.3455090999996173
+    },
+    {
+      "pair": [
+        "glm_51/default/Cooperative_1",
+        "kimi_k25/default/Neutral_6"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.331442299997434
+    },
+    {
+      "pair": [
+        "glm_51/default/Cooperative_1",
+        "openai_gpt54mini/default/Aggressive_2"
+      ],
+      "population_pairs": 425,
+      "kind": "distinct",
+      "seconds": 0.2945308999987901
+    },
+    {
+      "pair": [
+        "glm_51/default/Cooperative_1",
+        "openai_gpt54mini/default/Cooperative_15"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.29101900000023306
+    },
+    {
+      "pair": [
+        "glm_51/default/Cooperative_1",
+        "openai_gpt54mini/default/Neutral_11"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.24954600000273786
+    },
+    {
+      "pair": [
+        "glm_51/default/Cooperative_1",
+        "qwen3max/default/Aggressive_13"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.23593509999773232
+    },
+    {
+      "pair": [
+        "glm_51/default/Cooperative_1",
+        "qwen3max/default/Cooperative_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.23742679999850225
+    },
+    {
+      "pair": [
+        "glm_51/default/Cooperative_1",
+        "qwen3max/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.24843970000074478
+    },
+    {
+      "pair": [
+        "glm_51/default/Neutral_18",
+        "glm_51/default/Neutral_4"
+      ],
+      "population_pairs": 300,
+      "kind": "distinct",
+      "seconds": 0.2406364999988
+    },
+    {
+      "pair": [
+        "glm_51/default/Neutral_4",
+        "kimi_k25/default/Aggressive_6"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.2506022000015946
+    },
+    {
+      "pair": [
+        "glm_51/default/Neutral_4",
+        "kimi_k25/default/Cooperative_18"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.25787969999873894
+    },
+    {
+      "pair": [
+        "glm_51/default/Neutral_4",
+        "kimi_k25/default/Neutral_6"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.25570499999957974
+    },
+    {
+      "pair": [
+        "glm_51/default/Neutral_4",
+        "openai_gpt54mini/default/Aggressive_2"
+      ],
+      "population_pairs": 425,
+      "kind": "distinct",
+      "seconds": 0.2397951999992074
+    },
+    {
+      "pair": [
+        "glm_51/default/Neutral_4",
+        "openai_gpt54mini/default/Cooperative_15"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2450226000000839
+    },
+    {
+      "pair": [
+        "glm_51/default/Neutral_4",
+        "openai_gpt54mini/default/Neutral_11"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.24779190000117524
+    },
+    {
+      "pair": [
+        "glm_51/default/Neutral_4",
+        "qwen3max/default/Aggressive_13"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2550334000006842
+    },
+    {
+      "pair": [
+        "glm_51/default/Neutral_4",
+        "qwen3max/default/Cooperative_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.23671299999841722
+    },
+    {
+      "pair": [
+        "glm_51/default/Neutral_4",
+        "qwen3max/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.24517109999942477
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Aggressive_6",
+        "kimi_k25/default/Aggressive_7"
+      ],
+      "population_pairs": 276,
+      "kind": "distinct",
+      "seconds": 0.26408340000125463
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Aggressive_6",
+        "kimi_k25/default/Cooperative_18"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.2454674000000523
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Aggressive_6",
+        "kimi_k25/default/Neutral_6"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.2356736000001547
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Aggressive_6",
+        "openai_gpt54mini/default/Aggressive_2"
+      ],
+      "population_pairs": 408,
+      "kind": "distinct",
+      "seconds": 0.2274872999987565
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Aggressive_6",
+        "openai_gpt54mini/default/Cooperative_15"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.23712840000007418
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Aggressive_6",
+        "openai_gpt54mini/default/Neutral_11"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.26319470000089495
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Aggressive_6",
+        "qwen3max/default/Aggressive_13"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.25611189999835915
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Aggressive_6",
+        "qwen3max/default/Cooperative_14"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.26071630000296864
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Aggressive_6",
+        "qwen3max/default/Neutral_4"
+      ],
+      "population_pairs": 600,
+      "kind": "distinct",
+      "seconds": 0.2649098000001686
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Cooperative_15",
+        "kimi_k25/default/Cooperative_18"
+      ],
+      "population_pairs": 300,
+      "kind": "distinct",
+      "seconds": 0.24368150000009337
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Cooperative_18",
+        "kimi_k25/default/Neutral_6"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.26213129999814555
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Cooperative_18",
+        "openai_gpt54mini/default/Aggressive_2"
+      ],
+      "population_pairs": 425,
+      "kind": "distinct",
+      "seconds": 0.23899720000190428
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Cooperative_18",
+        "openai_gpt54mini/default/Cooperative_15"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.24255300000004354
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Cooperative_18",
+        "openai_gpt54mini/default/Neutral_11"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.26692759999787086
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Cooperative_18",
+        "qwen3max/default/Aggressive_13"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.4479481999987911
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Cooperative_18",
+        "qwen3max/default/Cooperative_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.28853389999858337
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Cooperative_18",
+        "qwen3max/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.28566869999849587
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Neutral_6",
+        "kimi_k25/default/Neutral_9"
+      ],
+      "population_pairs": 300,
+      "kind": "distinct",
+      "seconds": 0.26804009999978007
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Neutral_6",
+        "openai_gpt54mini/default/Aggressive_2"
+      ],
+      "population_pairs": 425,
+      "kind": "distinct",
+      "seconds": 0.2703567999997176
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Neutral_6",
+        "openai_gpt54mini/default/Cooperative_15"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2726413999989745
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Neutral_6",
+        "openai_gpt54mini/default/Neutral_11"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2746683999976085
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Neutral_6",
+        "qwen3max/default/Aggressive_13"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.34413470000072266
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Neutral_6",
+        "qwen3max/default/Cooperative_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.38961700000072597
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Neutral_6",
+        "qwen3max/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.29437419999885606
+    },
+    {
+      "pair": [
+        "openai_gpt54mini/default/Aggressive_2",
+        "openai_gpt54mini/default/Aggressive_9"
+      ],
+      "population_pairs": 136,
+      "kind": "distinct",
+      "seconds": 0.2958319000026677
+    },
+    {
+      "pair": [
+        "openai_gpt54mini/default/Aggressive_2",
+        "openai_gpt54mini/default/Cooperative_15"
+      ],
+      "population_pairs": 425,
+      "kind": "distinct",
+      "seconds": 0.3139180000034685
+    },
+    {
+      "pair": [
+        "openai_gpt54mini/default/Aggressive_2",
+        "openai_gpt54mini/default/Neutral_11"
+      ],
+      "population_pairs": 425,
+      "kind": "distinct",
+      "seconds": 0.35433280000142986
+    },
+    {
+      "pair": [
+        "openai_gpt54mini/default/Aggressive_2",
+        "qwen3max/default/Aggressive_13"
+      ],
+      "population_pairs": 425,
+      "kind": "distinct",
+      "seconds": 0.368502699999226
+    },
+    {
+      "pair": [
+        "openai_gpt54mini/default/Aggressive_2",
+        "qwen3max/default/Cooperative_14"
+      ],
+      "population_pairs": 425,
+      "kind": "distinct",
+      "seconds": 0.33362639999904786
+    },
+    {
+      "pair": [
+        "openai_gpt54mini/default/Aggressive_2",
+        "qwen3max/default/Neutral_4"
+      ],
+      "population_pairs": 425,
+      "kind": "distinct",
+      "seconds": 0.3254649000009522
+    },
+    {
+      "pair": [
+        "openai_gpt54mini/default/Cooperative_11",
+        "openai_gpt54mini/default/Cooperative_15"
+      ],
+      "population_pairs": 300,
+      "kind": "distinct",
+      "seconds": 0.30511259999912
+    },
+    {
+      "pair": [
+        "openai_gpt54mini/default/Cooperative_15",
+        "openai_gpt54mini/default/Neutral_11"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.31117239999730373
+    },
+    {
+      "pair": [
+        "openai_gpt54mini/default/Cooperative_15",
+        "qwen3max/default/Aggressive_13"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2580171999979939
+    },
+    {
+      "pair": [
+        "openai_gpt54mini/default/Cooperative_15",
+        "qwen3max/default/Cooperative_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.24999559999923804
+    },
+    {
+      "pair": [
+        "openai_gpt54mini/default/Cooperative_15",
+        "qwen3max/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2599000000009255
+    },
+    {
+      "pair": [
+        "openai_gpt54mini/default/Neutral_11",
+        "openai_gpt54mini/default/Neutral_16"
+      ],
+      "population_pairs": 300,
+      "kind": "distinct",
+      "seconds": 0.24982900000031805
+    },
+    {
+      "pair": [
+        "openai_gpt54mini/default/Neutral_11",
+        "qwen3max/default/Aggressive_13"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.23669150000205263
+    },
+    {
+      "pair": [
+        "openai_gpt54mini/default/Neutral_11",
+        "qwen3max/default/Cooperative_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.2464399999989837
+    },
+    {
+      "pair": [
+        "openai_gpt54mini/default/Neutral_11",
+        "qwen3max/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.23873079999975744
+    },
+    {
+      "pair": [
+        "qwen3max/default/Aggressive_13",
+        "qwen3max/default/Aggressive_25"
+      ],
+      "population_pairs": 300,
+      "kind": "distinct",
+      "seconds": 0.21077299999888055
+    },
+    {
+      "pair": [
+        "qwen3max/default/Aggressive_13",
+        "qwen3max/default/Cooperative_14"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.22483610000199405
+    },
+    {
+      "pair": [
+        "qwen3max/default/Aggressive_13",
+        "qwen3max/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.23823479999919073
+    },
+    {
+      "pair": [
+        "qwen3max/default/Cooperative_10",
+        "qwen3max/default/Cooperative_14"
+      ],
+      "population_pairs": 300,
+      "kind": "distinct",
+      "seconds": 0.24752359999911278
+    },
+    {
+      "pair": [
+        "qwen3max/default/Cooperative_14",
+        "qwen3max/default/Neutral_4"
+      ],
+      "population_pairs": 625,
+      "kind": "distinct",
+      "seconds": 0.23042480000003707
+    },
+    {
+      "pair": [
+        "qwen3max/default/Neutral_4",
+        "qwen3max/default/Neutral_9"
+      ],
+      "population_pairs": 300,
+      "kind": "distinct",
+      "seconds": 0.22335539999767207
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Aggressive_1",
+        "anthropic_sonnet46/default/Aggressive_1"
+      ],
+      "population_pairs": 25,
+      "kind": "self",
+      "seconds": 0.22203079999962938
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Cooperative_20",
+        "anthropic_sonnet46/default/Cooperative_20"
+      ],
+      "population_pairs": 25,
+      "kind": "self",
+      "seconds": 0.2348710000005667
+    },
+    {
+      "pair": [
+        "anthropic_sonnet46/default/Neutral_11",
+        "anthropic_sonnet46/default/Neutral_11"
+      ],
+      "population_pairs": 25,
+      "kind": "self",
+      "seconds": 0.24218119999932242
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Aggressive_16",
+        "deepseek_v4pro/default/Aggressive_16"
+      ],
+      "population_pairs": 24,
+      "kind": "self",
+      "seconds": 0.3330576000007568
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Cooperative_18",
+        "deepseek_v4pro/default/Cooperative_18"
+      ],
+      "population_pairs": 25,
+      "kind": "self",
+      "seconds": 0.25392980000106036
+    },
+    {
+      "pair": [
+        "deepseek_v4pro/default/Neutral_20",
+        "deepseek_v4pro/default/Neutral_20"
+      ],
+      "population_pairs": 25,
+      "kind": "self",
+      "seconds": 0.2468799999987823
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Aggressive_17",
+        "gemini_25_flash/default/Aggressive_17"
+      ],
+      "population_pairs": 23,
+      "kind": "self",
+      "seconds": 0.21905250000054366
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Cooperative_6",
+        "gemini_25_flash/default/Cooperative_6"
+      ],
+      "population_pairs": 25,
+      "kind": "self",
+      "seconds": 0.2401742000001832
+    },
+    {
+      "pair": [
+        "gemini_25_flash/default/Neutral_9",
+        "gemini_25_flash/default/Neutral_9"
+      ],
+      "population_pairs": 25,
+      "kind": "self",
+      "seconds": 0.23935530000017025
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Aggressive_25",
+        "gemini_31_pro/default/Aggressive_25"
+      ],
+      "population_pairs": 9,
+      "kind": "self",
+      "seconds": 0.26736199999868404
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Cooperative_24",
+        "gemini_31_pro/default/Cooperative_24"
+      ],
+      "population_pairs": 25,
+      "kind": "self",
+      "seconds": 0.2433326999998826
+    },
+    {
+      "pair": [
+        "gemini_31_pro/default/Neutral_18",
+        "gemini_31_pro/default/Neutral_18"
+      ],
+      "population_pairs": 25,
+      "kind": "self",
+      "seconds": 0.22745020000002114
+    },
+    {
+      "pair": [
+        "glm_51/default/Aggressive_14",
+        "glm_51/default/Aggressive_14"
+      ],
+      "population_pairs": 25,
+      "kind": "self",
+      "seconds": 0.2648053000011714
+    },
+    {
+      "pair": [
+        "glm_51/default/Cooperative_1",
+        "glm_51/default/Cooperative_1"
+      ],
+      "population_pairs": 25,
+      "kind": "self",
+      "seconds": 0.24448380000103498
+    },
+    {
+      "pair": [
+        "glm_51/default/Neutral_4",
+        "glm_51/default/Neutral_4"
+      ],
+      "population_pairs": 25,
+      "kind": "self",
+      "seconds": 0.23293570000168984
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Aggressive_6",
+        "kimi_k25/default/Aggressive_6"
+      ],
+      "population_pairs": 24,
+      "kind": "self",
+      "seconds": 0.22763430000122753
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Cooperative_18",
+        "kimi_k25/default/Cooperative_18"
+      ],
+      "population_pairs": 25,
+      "kind": "self",
+      "seconds": 0.2470467999992252
+    },
+    {
+      "pair": [
+        "kimi_k25/default/Neutral_6",
+        "kimi_k25/default/Neutral_6"
+      ],
+      "population_pairs": 25,
+      "kind": "self",
+      "seconds": 0.30801339999743504
+    },
+    {
+      "pair": [
+        "openai_gpt54mini/default/Aggressive_2",
+        "openai_gpt54mini/default/Aggressive_2"
+      ],
+      "population_pairs": 17,
+      "kind": "self",
+      "seconds": 0.27215179999984684
+    },
+    {
+      "pair": [
+        "openai_gpt54mini/default/Cooperative_15",
+        "openai_gpt54mini/default/Cooperative_15"
+      ],
+      "population_pairs": 25,
+      "kind": "self",
+      "seconds": 0.27881239999987883
+    },
+    {
+      "pair": [
+        "openai_gpt54mini/default/Neutral_11",
+        "openai_gpt54mini/default/Neutral_11"
+      ],
+      "population_pairs": 25,
+      "kind": "self",
+      "seconds": 0.2407941999990726
+    },
+    {
+      "pair": [
+        "qwen3max/default/Aggressive_13",
+        "qwen3max/default/Aggressive_13"
+      ],
+      "population_pairs": 25,
+      "kind": "self",
+      "seconds": 0.22426519999862649
+    },
+    {
+      "pair": [
+        "qwen3max/default/Cooperative_14",
+        "qwen3max/default/Cooperative_14"
+      ],
+      "population_pairs": 25,
+      "kind": "self",
+      "seconds": 0.22409479999987525
+    },
+    {
+      "pair": [
+        "qwen3max/default/Neutral_4",
+        "qwen3max/default/Neutral_4"
+      ],
+      "population_pairs": 25,
+      "kind": "self",
+      "seconds": 0.22401860000172746
+    }
+  ],
+  "seed_checks": [
+    {
+      "id": "gemini_31_pro/default/Aggressive_12",
+      "field": "primary",
+      "opponent": "anthropic_sonnet46/default/Aggressive_1",
+      "trace_hashes": [
+        "b2f495247a60e96e9aa85490489215aae0efc08f1c95432444d329c3d5311506",
+        "b2f495247a60e96e9aa85490489215aae0efc08f1c95432444d329c3d5311506"
+      ],
+      "same": true
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_12",
+      "field": "alternative",
+      "opponent": "anthropic_sonnet46/default/Aggressive_1",
+      "trace_hashes": [
+        "f5e044351f96ddd2f24ca1bb5b60b75e511d19d907da3f31df255be7988226e5",
+        "f5e044351f96ddd2f24ca1bb5b60b75e511d19d907da3f31df255be7988226e5"
+      ],
+      "same": true
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_14",
+      "field": "primary",
+      "opponent": "anthropic_sonnet46/default/Aggressive_1",
+      "trace_hashes": [
+        "b2f495247a60e96e9aa85490489215aae0efc08f1c95432444d329c3d5311506",
+        "b2f495247a60e96e9aa85490489215aae0efc08f1c95432444d329c3d5311506"
+      ],
+      "same": true
+    },
+    {
+      "id": "gemini_31_pro/default/Aggressive_14",
+      "field": "alternative",
+      "opponent": "anthropic_sonnet46/default/Aggressive_1",
+      "trace_hashes": [
+        "f5e044351f96ddd2f24ca1bb5b60b75e511d19d907da3f31df255be7988226e5",
+        "f5e044351f96ddd2f24ca1bb5b60b75e511d19d907da3f31df255be7988226e5"
+      ],
+      "same": true
+    },
+    {
+      "id": "kimi_k25/default/Aggressive_25",
+      "field": "primary",
+      "opponent": "anthropic_sonnet46/default/Aggressive_1",
+      "trace_hashes": [
+        "d5a38245dd4a4dfdb22143111a30bad8b23dfc246139bcda807716fff563ae9a",
+        "d5a38245dd4a4dfdb22143111a30bad8b23dfc246139bcda807716fff563ae9a"
+      ],
+      "same": true
+    },
+    {
+      "id": "kimi_k25/default/Aggressive_25",
+      "field": "alternative",
+      "opponent": "anthropic_sonnet46/default/Aggressive_1",
+      "trace_hashes": [
+        "d5a38245dd4a4dfdb22143111a30bad8b23dfc246139bcda807716fff563ae9a",
+        "d5a38245dd4a4dfdb22143111a30bad8b23dfc246139bcda807716fff563ae9a"
+      ],
+      "same": true
+    },
+    {
+      "id": "glm_51/default/Aggressive_20",
+      "field": "primary",
+      "opponent": "anthropic_sonnet46/default/Aggressive_1",
+      "trace_hashes": [
+        "82b2a49fbdbfc23455be9a5e817b347eb5fb0548851146b587f922b0f1ca07ed",
+        "82b2a49fbdbfc23455be9a5e817b347eb5fb0548851146b587f922b0f1ca07ed"
+      ],
+      "same": true
+    },
+    {
+      "id": "glm_51/default/Aggressive_20",
+      "field": "alternative",
+      "opponent": "anthropic_sonnet46/default/Aggressive_1",
+      "trace_hashes": [
+        "82b2a49fbdbfc23455be9a5e817b347eb5fb0548851146b587f922b0f1ca07ed",
+        "82b2a49fbdbfc23455be9a5e817b347eb5fb0548851146b587f922b0f1ca07ed"
+      ],
+      "same": true
+    }
+  ],
+  "timing_matches": 324,
+  "seed_check_matches": 16,
+  "weighted_full_schedule_seconds": 49364.1106353918,
+  "historical_full_schedule_seconds": 24873.28982068963,
+  "planning_seconds_per_scenario": 148092.33190617542,
+  "planning_rule": "Three times the larger point estimate; engineering reserve, not a statistical bound or guarantee.",
+  "synthetic_permutations": 20,
+  "synthetic_permutation_seconds": 0.13099630000215257,
+  "projected_10000_permutation_seconds": 65.49815000107628,
+  "estimated_sqlite_bytes_per_scenario": 79854923.91724138,
+  "free_disk_bytes": 59937062912,
+  "provenance": {
+    "manifest_sha256": "d5725c7a63125a0cbdee1ddc24e4d2731dc60f6ad0734d3c670d5b23f9181062",
+    "dependencies": {
+      "execute_uniform.py": "b2bb03c596d0706e11962b25180f3814788944f800d85f01ece1fb8bd281ff98",
+      "runtime.py": "1810ac06f74b4677cf83af92a72cf30e02960417bf7e4d5a2a37bd38c76188a7",
+      "uniform_semantics_v3b.py": "3e9bdfdc4f918759dc9d7642a20c90ec8b92e8b3b60de1832d2548ea74e3963b",
+      "validate_pilot.py": "a729966cd8a445a81fb24b71f4d51f0397e6ff8d1404e523c2268029c62abec9"
+    },
+    "python": "3.12.14",
+    "axelrod": "4.14.0",
+    "numpy": "2.5.3"
+  },
+  "dependencies": {
+    "phase3/calibrate_resources_v1.py": "ae252e4dfae90aede6fb8a47d73a3fcfefa038b52262671bfb95b7f68a491128",
+    "phase3/inputs/sensitivity_plan_v1.json": "361d3ade33783e972c8f0fcfe99d285e230e02a696ce0f44a1d9a5fb3154afc7",
+    "phase3/execute_uniform.py": "b2bb03c596d0706e11962b25180f3814788944f800d85f01ece1fb8bd281ff98",
+    "phase3/runtime.py": "1810ac06f74b4677cf83af92a72cf30e02960417bf7e4d5a2a37bd38c76188a7",
+    "phase3/uniform_semantics_v3b.py": "3e9bdfdc4f918759dc9d7642a20c90ec8b92e8b3b60de1832d2548ea74e3963b",
+    "phase3/analyze_phase3.py": "36f0d0e049306f7f5fb13bf8172fb01e9c79b2da2265dc0f28c60e039f6f37d2",
+    "phase3/validation/uniform_integration_v1.json": "2e3f4102ecdeca1e8d44a3be7952ee09530c9463cafbad83e9730cd9c4589fd1"
+  },
+  "api_calls": 0,
+  "confirmatory_matches": 0
+}

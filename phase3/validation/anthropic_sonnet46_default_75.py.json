@@ -1,0 +1,8 @@
+{
+  "library": "anthropic_sonnet46_default_75.py",
+  "sha256": "e6b90f162a3f9396e2e56201d935027ae0bd54a8abfe465981d21555a406e43f",
+  "matches": 825,
+  "failures": [],
+  "failed_strategies": 0,
+  "elapsed_seconds": 27.436999999999898
+}

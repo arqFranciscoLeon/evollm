@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "tests_passed": 29,
+  "pytest_elapsed_seconds": 16.56,
+  "checks": "Executor, analyzer, regression, and complete synthetic schedule-to-H7 bridge",
+  "file_sha256": {
+    "execute_uniform.py": "b2bb03c596d0706e11962b25180f3814788944f800d85f01ece1fb8bd281ff98",
+    "analyze_phase3.py": "36f0d0e049306f7f5fb13bf8172fb01e9c79b2da2265dc0f28c60e039f6f37d2",
+    "tests/test_uniform_executor.py": "6bf682c00eef0c7072266e5884e5d3fcb383416fbf838cb01d83db216ae3f45d",
+    "tests/test_h7_unequal.py": "e0ee9d1182c3bcbec38d3791934690ee8ef308ba98670ef4ce543f7dab8a8f65",
+    "tests/test_phase3.py": "698b0a6fdc076b384297ad85b8fc898fc904bc5ef293d359230c7202ebbd4731",
+    "validation/uniform_integration_v1.json": "2e3f4102ecdeca1e8d44a3be7952ee09530c9463cafbad83e9730cd9c4589fd1",
+    "validation/uniform_integration_v1.sqlite": "ebd8fe9146d1c0a734a11a372f630425d113651b6a3d1590f2d17692479b946e"
+  },
+  "real_diagnostic_matches": 580,
+  "real_diagnostic_participants": 572,
+  "real_diagnostic_rounds": 580000,
+  "failures": 0,
+  "resumption_new_matches": [
+    37,
+    543,
+    0
+  ],
+  "confirmatory_tournament_run": false,
+  "api_calls": 0
+}

@@ -1,0 +1,214 @@
+{
+  "status": "post hoc exact-test sensitivity; not preregistered",
+  "n_per_library": 500,
+  "archives": {
+    "phase2": [
+      {
+        "models": [
+          "deepseek_v4pro",
+          "qwen3max"
+        ],
+        "counts": [
+          46,
+          5
+        ],
+        "normal_p": 3.783370591894073e-09,
+        "normal_reject_holm": true,
+        "fisher_p": 9.768762262509217e-10,
+        "fisher_reject_holm": true,
+        "boschloo_p": 4.499849846407423e-10,
+        "boschloo_reject_holm": true
+      },
+      {
+        "models": [
+          "deepseek_v4pro",
+          "kimi_k25"
+        ],
+        "counts": [
+          46,
+          10
+        ],
+        "normal_p": 7.370532426586832e-07,
+        "normal_reject_holm": true,
+        "fisher_p": 6.334554103809987e-07,
+        "fisher_reject_holm": true,
+        "boschloo_p": 3.3886254236068814e-07,
+        "boschloo_reject_holm": true
+      },
+      {
+        "models": [
+          "deepseek_v4pro",
+          "glm_51"
+        ],
+        "counts": [
+          46,
+          41
+        ],
+        "normal_p": 0.5747868571837494,
+        "normal_reject_holm": false,
+        "fisher_p": 0.6537784305625159,
+        "fisher_reject_holm": false,
+        "boschloo_p": 0.5780577225988949,
+        "boschloo_reject_holm": false
+      },
+      {
+        "models": [
+          "qwen3max",
+          "kimi_k25"
+        ],
+        "counts": [
+          5,
+          10
+        ],
+        "normal_p": 0.19333129953925335,
+        "normal_reject_holm": false,
+        "fisher_p": 0.2980661962096122,
+        "fisher_reject_holm": false,
+        "boschloo_p": 0.21762976882976373,
+        "boschloo_reject_holm": false
+      },
+      {
+        "models": [
+          "qwen3max",
+          "glm_51"
+        ],
+        "counts": [
+          5,
+          41
+        ],
+        "normal_p": 5.498962401153119e-08,
+        "normal_reject_holm": true,
+        "fisher_p": 2.2666411254490938e-08,
+        "fisher_reject_holm": true,
+        "boschloo_p": 1.0821308406892925e-08,
+        "boschloo_reject_holm": true
+      },
+      {
+        "models": [
+          "kimi_k25",
+          "glm_51"
+        ],
+        "counts": [
+          10,
+          41
+        ],
+        "normal_p": 8.35097526233097e-06,
+        "normal_reject_holm": true,
+        "fisher_p": 8.952287255604154e-06,
+        "fisher_reject_holm": true,
+        "boschloo_p": 4.887542594255965e-06,
+        "boschloo_reject_holm": true
+      }
+    ],
+    "phase2_summary": {
+      "normal_rejections": 4,
+      "fisher_rejections": 4,
+      "boschloo_rejections": 4,
+      "same_pairs_rejected_all_methods": true
+    },
+    "robust": [
+      {
+        "models": [
+          "deepseek_v4pro",
+          "qwen3max"
+        ],
+        "counts": [
+          64,
+          4
+        ],
+        "normal_p": 4.8152582420076154e-14,
+        "normal_reject_holm": true,
+        "fisher_p": 8.757879467710106e-16,
+        "fisher_reject_holm": true,
+        "boschloo_p": 3.785051694816275e-16,
+        "boschloo_reject_holm": true
+      },
+      {
+        "models": [
+          "deepseek_v4pro",
+          "kimi_k25"
+        ],
+        "counts": [
+          64,
+          8
+        ],
+        "normal_p": 7.338549110500534e-12,
+        "normal_reject_holm": true,
+        "fisher_p": 1.0885529551186495e-12,
+        "fisher_reject_holm": true,
+        "boschloo_p": 5.236722039998414e-13,
+        "boschloo_reject_holm": true
+      },
+      {
+        "models": [
+          "deepseek_v4pro",
+          "glm_51"
+        ],
+        "counts": [
+          64,
+          50
+        ],
+        "normal_p": 0.16361238755634983,
+        "normal_reject_holm": false,
+        "fisher_p": 0.19565995779114,
+        "fisher_reject_holm": false,
+        "boschloo_p": 0.16477756693035622,
+        "boschloo_reject_holm": false
+      },
+      {
+        "models": [
+          "qwen3max",
+          "kimi_k25"
+        ],
+        "counts": [
+          4,
+          8
+        ],
+        "normal_p": 0.24536070795818624,
+        "normal_reject_holm": false,
+        "fisher_p": 0.3847759339726771,
+        "fisher_reject_holm": false,
+        "boschloo_p": 0.29077412696476557,
+        "boschloo_reject_holm": false
+      },
+      {
+        "models": [
+          "qwen3max",
+          "glm_51"
+        ],
+        "counts": [
+          4,
+          50
+        ],
+        "normal_p": 1.2267083552787366e-10,
+        "normal_reject_holm": true,
+        "fisher_p": 1.2689438825407905e-11,
+        "fisher_reject_holm": true,
+        "boschloo_p": 5.57057965609672e-12,
+        "boschloo_reject_holm": true
+      },
+      {
+        "models": [
+          "kimi_k25",
+          "glm_51"
+        ],
+        "counts": [
+          8,
+          50
+        ],
+        "normal_p": 1.3304095253071109e-08,
+        "normal_reject_holm": true,
+        "fisher_p": 6.251000809514448e-09,
+        "fisher_reject_holm": true,
+        "boschloo_p": 3.152365588200827e-09,
+        "boschloo_reject_holm": true
+      }
+    ],
+    "robust_summary": {
+      "normal_rejections": 4,
+      "fisher_rejections": 4,
+      "boschloo_rejections": 4,
+      "same_pairs_rejected_all_methods": true
+    }
+  }
+}

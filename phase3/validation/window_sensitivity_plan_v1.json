@@ -1,0 +1,44 @@
+{
+  "adapter_sha256": "2392e5cdb0247d9bf64ed82d0827eb502a7d497f0a9bc094d56460cf69ad1233",
+  "adjudication_sha256": "dffb2ca79cd60e33837776644edd578cbbf6748beab6f5fbb15e32177fa69986",
+  "api_calls": 0,
+  "created_at": "2026-09-14T13:03:08.353820+00:00",
+  "future_confirmatory_analysis": "Run the same final tournament protocol with both alternatives substituted together, keeping all other candidates/settings fixed. Report primary and alternative effects regardless of sign/significance; final field and protocol remain pending.",
+  "opponents": [
+    "Cooperator",
+    "Defector",
+    "Random",
+    "TitForTat",
+    "Grudger",
+    "CyclerDDC",
+    "CyclerCCD",
+    "GoByMajority",
+    "SuspiciousTitForTat",
+    "Prober",
+    "WinStayLoseShift"
+  ],
+  "primary_manifest_sha256": "59a1ed46a9a606157d61aebb480f91673bedb19a5e14f00cf4ceea40021b92f2",
+  "protocol": "Compare all rounds 1..1000 and all available last-two-action suffixes. Paired diagnostic matches: 1000 rounds, noise 0, same seed and fresh opponent. Always retain/report both readings; no selection by outcome.",
+  "status": "local_sensitivity_plan_before_diagnostic_matches_not_public_registration",
+  "targets": [
+    {
+      "alternative_path": "phase3\\window_sensitivity_v1\\pro_aggressive_12.py.txt",
+      "alternative_sha256": "5d284696e915aea8c5732d4f51d285c6e85703ebd10a617e633924a41e0a6477",
+      "diff": "--- phase3\\conversion_runs\\expanded_v2\\150\\candidate.py.txt\n+++ phase3\\window_sensitivity_v1\\pro_aggressive_12.py.txt\n@@ -2,10 +2,10 @@\n     if len(self.history) >= 997:\n         return axl.Action.D\n \n-    if len(opponent.history) >= 1 and opponent.history[-1] == axl.Action.D:\n+    if len(opponent.history) >= 2 and opponent.history[-1] == axl.Action.D:\n         return axl.Action.D\n \n     if len(opponent.history) >= 2 and opponent.history[-2] == axl.Action.D:\n         return axl.Action.D\n \n-    return axl.Action.C+    return axl.Action.C\n",
+      "end_round": 998,
+      "id": "gemini_31_pro/default/Aggressive_12",
+      "primary_path": "phase3\\conversion_runs\\expanded_v2\\150\\candidate.py.txt",
+      "primary_sha256": "1db49e4e8e6ead30a3f464c0c880b1f947badb26bb081ebd2ab6fdf22719131d"
+    },
+    {
+      "alternative_path": "phase3\\window_sensitivity_v1\\pro_aggressive_14.py.txt",
+      "alternative_sha256": "476aa51145fb1d51da0fb55d5186b91f5b132e66929cbf1c71e5b04f0e5d29c8",
+      "diff": "--- phase3\\conversion_runs\\expanded_v2\\151\\candidate.py.txt\n+++ phase3\\window_sensitivity_v1\\pro_aggressive_14.py.txt\n@@ -2,10 +2,10 @@\n     if len(self.history) >= 995:\n         return axl.Action.D\n \n-    if len(opponent.history) >= 1 and opponent.history[-1] == axl.Action.D:\n+    if len(opponent.history) >= 2 and opponent.history[-1] == axl.Action.D:\n         return axl.Action.D\n \n     if len(opponent.history) >= 2 and opponent.history[-2] == axl.Action.D:\n         return axl.Action.D\n \n-    return axl.Action.C+    return axl.Action.C\n",
+      "end_round": 996,
+      "id": "gemini_31_pro/default/Aggressive_14",
+      "primary_path": "phase3\\conversion_runs\\expanded_v2\\151\\candidate.py.txt",
+      "primary_sha256": "e67fe8f608095a566bba1c66005e47e79e787fe30cf1a41875402903fbc39117"
+    }
+  ],
+  "validator_sha256": "dbdb9d89d436549ec0870b71a030deb8f23a1bc1549f3c53f408954a244f26cf"
+}
