@@ -1,8 +1,59 @@
 # EvoLLM — Informe de Contexto del Proyecto
-**Fecha de última actualización:** 2026-04-27  
+**Fecha de última actualización:** 2026-10-10
 **Propósito:** Documento de contexto para retomar el trabajo en una nueva conversación con Claude u otra IA.
 
+> **Léase primero la sección 0.** Las secciones 1–12 (abajo) son el contexto
+> histórico de abril de 2026 (Fase 1, GUI Streamlit, entorno Windows). Siguen
+> siendo útiles para la arquitectura del código, pero su estado y sus rutas
+> están desactualizados.
+
 ---
+
+## 0. Estado actual (octubre 2026)
+
+### Fases
+| Fase | Estado | Documentos clave |
+|---|---|---|
+| **1** — 4 modelos frontera occidentales, n=500 Moran | **Publicada**: arXiv:2605.29874, DOI Zenodo (concept) 10.5281/zenodo.20248614 | `EXTENSION.md`, `REPRODUCE.md`, `reproduce_tables.py` |
+| **2** (2a) — 4 modelos chinos (DeepSeek V4 Pro, Qwen3-Max, Kimi K2.5, GLM-5.1) con convertidor fijo GPT-5.4 Mini | **Terminada**; Paper 2 escrito y empaquetado para arXiv (tribunal interno: 72/100). Datos en el repo: 24 librerías, 12 matrices H2H, equilibrios n=500 de las 48 condiciones, chequeo de robustez del convertidor (`*_robust.py`) | `PHASE2_PREREG.md`, `analyze_h2h_tables.py`, `compare_robust.py`, `results/` |
+| **3** — torneo mixto estilo Axelrod, 8 modelos, dos rondas (sin Moran) | **Pre-registro borrador v0.1, 0 datos** | `PHASE3_PREREG.md`, `TRIBUNAL_PHASE3_2026-08-10.md` |
+
+### Veredicto del tribunal sobre Fase 3 v0.1: 63.5/100 — ajustes mayores
+Hallazgos críticos abiertos (todos se cierran escribiendo, sin gastar cómputo):
+
+| ID | Problema |
+|---|---|
+| C1 | H9 sin brazo de control sin-retroalimentación |
+| C2 | H8 correlaciona P_A del código viejo con pagos del nuevo → retirar H8 |
+| C3 | La diagonal (auto-emparejamiento) infla H7 → excluirla |
+| C4 | El campo de 600 tiene composición artificial (200 agresivas por diseño) |
+| C5 | «8 laboratorios» son 8 modelos de 7 laboratorios (Gemini ×2) → definir la unidad |
+| C6 | Sin presupuesto ni sonda de coste para la ronda 2 |
+| C7 | Disponibilidad de los 8 identificadores sin verificar; sin regla de sustitución |
+| C8 | Plantilla del informe de retroalimentación = parámetro libre post-hoc → fijarla |
+
+Decisiones recomendadas por el tribunal sobre las preguntas [OPEN]:
+- **Ruido fuera de la Fase 3** (las estrategias chinas lanzan excepciones bajo ruido y `algorithms.py` las convierte en Defect → mediría fragilidad, no agresión). La tasa de excepciones por laboratorio puede ser un pre-registro/hallazgo aparte.
+- **OPEN-A:** Default primario; Prose y Refine exploratorios.
+- **OPEN-C:** anonimizar los laboratorios en el informe de retroalimentación.
+- **OPEN-D:** H7 sigue como primaria, con C3 y C5 corregidos.
+- **OPEN-E:** Torneo 1 = artículo autónomo; Torneo 2 = extensión condicionada a C6 y C7.
+
+### Próximo paso
+1. Redactar **`PHASE3_PREREG.md` v0.2** cerrando C1–C8 y las recomendaciones anteriores (meta del tribunal: 82–86/100).
+2. Re-convocar el tribunal sobre la v0.2.
+3. Ejecutar el prerrequisito §3: re-convertir las librerías occidentales con el convertidor fijo (GPT-5.4 Mini) y pasar la compuerta de validación.
+4. Correr el Torneo 1.
+
+### Notas para retomar
+- Rama de trabajo actual: `claude/trusting-sagan-7mig7k` (remoto `arqfranciscoleon/evollm`); `main` contiene lo mismo hasta el commit `759b7b0`.
+- El acta de Fase 3 se calibra con `D:\clo-author\paper2\TRIBUNAL_paper2_2026-06-16.md`, que **no está en este repo** (máquina local del Profe).
+- Infraestructura usada en Fase 2: Modal (`modal_moran_*.py`) y VPS Hetzner (`run_hetzner.py`, `convert_hetzner_results.py`). La Fase 3 está pensada para correr en una estación de trabajo, sin financiación de cómputo.
+- Prompt sugerido para una sesión nueva: *"Lee `CONTEXTO_PROYECTO.md`, `PHASE3_PREREG.md` y `TRIBUNAL_PHASE3_2026-08-10.md` y redacta la v0.2 del pre-registro."*
+
+---
+
+# Contexto histórico (abril 2026)
 
 ## 1. ¿Qué es este proyecto?
 
